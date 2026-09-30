@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="InfluRank PL – ranking polskich twórców TikTok oparty na zasięgu, zaangażowaniu, dynamice i regularności." />
+  <title>InfluRank PL — Ranking TikTok Polska</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23111111'/%3E%3Cpath d='M21 44V20h8v24h-8Zm14 0V26h8v18h-8Z' fill='%23fff'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-glow glow-a"></div>
+  <div class="bg-glow glow-b"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="InfluRank PL — strona główna">
+        <span class="brand-mark">IR</span>
+        <span class="brand-text">InfluRank <strong>PL</strong></span>
+      </a>
+      <nav class="top-nav" aria-label="Główna nawigacja">
+        <button class="nav-tab active" data-platform="tiktok">TikTok</button>
+        <button class="nav-tab" data-platform="instagram">Instagram <span>W budowie</span></button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <div class="hero-copy">
+        <div class="eyebrow">Ranking polskich twórców</div>
+        <h1>Nie największy. <br><span>Najsilniejszy wpływ.</span></h1>
+        <p>
+          Ranking TikTok Polska oparty nie tylko na followersach, ale też na realnym zasięgu,
+          zaangażowaniu, dynamice wzrostu i regularności publikacji.
+        </p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#ranking">Zobacz ranking</a>
+          <button class="ghost-btn" id="methodBtn">Jak liczymy wynik?</button>
+        </div>
+      </div>
+      <div class="hero-card" aria-label="Podgląd rankingu">
+        <div class="hero-card-top">
+          <div>
+            <span class="small-label">Influence Score</span>
+            <div class="big-score">94.7</div>
+          </div>
+          <span class="pill">#1 TikTok PL</span>
+        </div>
+        <div class="mini-bars">
+          <div><span>Reach</span><i style="--w:92%"></i><b>92</b></div>
+          <div><span>Engagement</span><i style="--w:96%"></i><b>96</b></div>
+          <div><span>Momentum</span><i style="--w:88%"></i><b>88</b></div>
+          <div><span>Consistency</span><i style="--w:91%"></i><b>91</b></div>
+        </div>
+        <p class="demo-note">Podgląd demonstracyjny — dane zostaną podłączone do źródła API.</p>
+      </div>
+    </section>
+
+    <section class="stats container" aria-label="Statystyki serwisu">
+      <article><span>Platforma</span><strong>TikTok</strong></article>
+      <article><span>Aktualizacja</span><strong>codziennie*</strong></article>
+      <article><span>Skala</span><strong>0–100</strong></article>
+      <article><span>Instagram</span><strong>W budowie</strong></article>
+    </section>
+
+    <section class="ranking-section container" id="ranking">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">TikTok Polska</span>
+          <h2>Ranking twórców</h2>
+        </div>
+        <div class="updated">Ostatnia aktualizacja: <strong id="updatedAt">demo</strong></div>
+      </div>
+
+      <div class="filters">
+        <label class="search-box">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.3-4.3m2.3-5.2A7.5 7.5 0 1 1 4 11.5a7.5 7.5 0 0 1 15 0Z"/></svg>
+          <input id="searchInput" type="search" placeholder="Szukaj twórcy..." />
+        </label>
+        <div class="category-scroll" id="categoryFilters" aria-label="Filtry kategorii"></div>
+      </div>
+
+      <div class="sort-controls" aria-label="Sortowanie rankingu">
+        <span class="sort-label">Sortuj według</span>
+        <select id="sortSelect" class="sort-select">
+          <option value="score">Score</option>
+          <option value="followers">Followers</option>
+          <option value="views">Mediana views</option>
+          <option value="engagement">Engagement</option>
+          <option value="growth">30D</option>
+          <option value="name">Twórca</option>
+          <option value="category">Kategoria</option>
+        </select>
+        <button id="sortDirection" class="sort-direction" type="button">↓ Malejąco</button>
+        <span class="sort-hint">Możesz też kliknąć nazwę kolumny w tabeli.</span>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th class="sortable" data-sort="name"><span class="th-label">Twórca</span></th>
+              <th class="sortable" data-sort="category"><span class="th-label">Kategoria</span></th>
+              <th class="num sortable" data-sort="followers"><span class="th-label">Followers</span></th>
+              <th class="num sortable" data-sort="views"><span class="th-label">Mediana views</span></th>
+              <th class="num sortable" data-sort="engagement"><span class="th-label">Engagement</span></th>
+              <th class="num sortable" data-sort="growth"><span class="th-label">30D</span></th>
+              <th class="num sortable sort-active" data-sort="score"><span class="th-label">Score ↓</span></th>
+            </tr>
+          </thead>
+          <tbody id="rankingBody"></tbody>
+        </table>
+        <div class="empty-state" id="emptyState" hidden>Brak wyników dla wybranego filtra.</div>
+      </div>
+
+      <div class="data-disclaimer" id="dataDisclaimer">
+        <strong>Wersja MVP.</strong> Obecne rekordy są danymi demonstracyjnymi, służącymi do pokazania wyglądu serwisu i logiki rankingu. Po uruchomieniu scannera tabela automatycznie przełączy się na rzeczywisty lokalny snapshot publicznych danych TikToka.
+      </div>
+    </section>
+
+    <section class="instagram-placeholder container" id="instagramSection" hidden>
+      <div class="ig-card">
+        <div class="ig-icon">IG</div>
+        <span class="eyebrow">Instagram Polska</span>
+        <h2>Ranking w budowie.</h2>
+        <p>Instagram otrzyma osobny algorytm i osobny ranking, dopasowany do danych dostępnych na tej platformie.</p>
+        <button class="primary-btn" id="backToTiktok">Wróć do TikToka</button>
+      </div>
+    </section>
+
+    <section class="methodology container" id="methodology">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">Metodologia v0.1</span>
+          <h2>Jak liczymy Influence Score?</h2>
+        </div>
+      </div>
+      <div class="metric-grid">
+        <article>
+          <span class="metric-weight">30%</span>
+          <h3>Reach</h3>
+          <p>Mediana wyświetleń ostatnich materiałów w relacji do wielkości konta.</p>
+        </article>
+        <article>
+          <span class="metric-weight">25%</span>
+          <h3>Engagement</h3>
+          <p>Lajki, komentarze i udostępnienia odniesione do liczby wyświetleń.</p>
+        </article>
+        <article>
+          <span class="metric-weight">20%</span>
+          <h3>Audience</h3>
+          <p>Wielkość audytorium liczona nieliniowo, aby duże konta nie wygrywały automatycznie.</p>
+        </article>
+        <article>
+          <span class="metric-weight">15%</span>
+          <h3>Momentum</h3>
+          <p>Dynamika wzrostu konta i zmiana wyników w ostatnich 30 dniach.</p>
+        </article>
+        <article>
+          <span class="metric-weight">10%</span>
+          <h3>Consistency</h3>
+          <p>Regularność publikacji i powtarzalność wyników zamiast pojedynczych viralowych strzałów.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <strong>InfluRank PL</strong>
+        <span>Ranking siły twórców, nie tylko liczby followersów.</span>
+      </div>
+      <span>© 2026 InfluRank PL</span>
+    </div>
+  </footer>
+
+  <div class="modal-backdrop" id="methodModal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Zamknij">×</button>
+      <span class="eyebrow">Influence Score</span>
+      <h2 id="modalTitle">Ranking ma premiować realny wpływ.</h2>
+      <p>Followers są tylko jednym z elementów. Większą wagę mają zasięg, engagement i jakość bieżącej dystrybucji treści.</p>
+      <div class="formula">30% Reach + 25% Engagement + 20% Audience + 15% Momentum + 10% Consistency</div>
+      <p class="muted">To wersja 0.1. Wagi będą kalibrowane po podłączeniu prawdziwych danych.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
