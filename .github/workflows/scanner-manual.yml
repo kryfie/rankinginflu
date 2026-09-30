@@ -1,0 +1,42 @@
+name: Scanner manual test
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Maximum creators to discover"
+        required: true
+        default: "50"
+      posts:
+        description: "Posts per creator"
+        required: true
+        default: "10"
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r requirements.txt
+
+      - name: Run scanner
+        env:
+          REQUEST_DELAY_SECONDS: "3"
+          MAX_REQUESTS_PER_RUN: "180"
+        run: python -m apps.scanner.scanner.cli discover --limit ${{ inputs.limit }} --posts ${{ inputs.posts }}
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: scanner-output
+          path: |
+            apps/scanner/data/influrank.db
+            apps/web/data/creators.json
+          if-no-files-found: warn
