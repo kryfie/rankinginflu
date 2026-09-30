@@ -1,4 +1,4 @@
-import json, os, time
+import json, os, time, sys
 from datetime import datetime, timezone
 from urllib.parse import quote
 import httpx
@@ -183,6 +183,90 @@ class TikTokPublicProvider(Provider):
 
         return sorted(posts.values(),key=lambda p:p.created_at or '',reverse=True)[:limit]
 
+    def _fetch_posts_api(self, user, handle, limit):
+        """Best-effort call to TikTok's public web post-list endpoint.
+
+        No login, signing, CAPTCHA solving, token forging or restriction bypassing.
+        If the public endpoint refuses the request, return an empty list and keep
+        profile metrics usable.
+        """
+        sec_uid=str(user.get('secUid') or user.get('sec_uid') or '')
+        if not sec_uid or limit <= 0:
+            return []
+        count=max(1,min(int(limit),35))
+        url='https://www.tiktok.com/api/post/item_list/'
+        params={
+            'aid':'1988',
+            'app_language':'pl-PL',
+            'app_name':'tiktok_web',
+            'browser_language':'pl-PL',
+            'browser_name':'Mozilla',
+            'browser_online':'true',
+            'browser_platform':'Win32',
+            'channel':'tiktok_web',
+            'count':str(count),
+            'cursor':'0',
+            'device_platform':'web_pc',
+            'focus_state':'true',
+            'from_page':'user',
+            'history_len':'2',
+            'is_fullscreen':'false',
+            'is_page_visible':'true',
+            'os':'windows',
+            'priority_region':'PL',
+            'referer':'',
+            'region':'PL',
+            'screen_height':'1080',
+            'screen_width':'1920',
+            'secUid':sec_uid,
+            'tz_name':'Europe/Warsaw',
+            'webcast_language':'pl-PL',
+        }
+        if self.requests>=self.max_requests:
+            raise PublicAccessLimitedError('MAX_REQUESTS_PER_RUN reached')
+        if self.requests:
+            time.sleep(self.delay)
+        self.requests+=1
+        try:
+            r=self.client.get(
+                url,
+                params=params,
+                headers={
+                    'Accept':'application/json, text/plain, */*',
+                    'Referer':f'https://www.tiktok.com/@{quote(handle)}',
+                    'Sec-Fetch-Dest':'empty',
+                    'Sec-Fetch-Mode':'cors',
+                    'Sec-Fetch-Site':'same-origin',
+                },
+            )
+        except Exception as e:
+            print(f'POSTS API WARN @{handle}: request error: {e}',file=sys.stderr)
+            return []
+        if r.status_code in (403,429):
+            print(f'POSTS API LIMITED @{handle}: HTTP {r.status_code}; not bypassing restriction.',file=sys.stderr)
+            return []
+        if r.status_code != 200:
+            print(f'POSTS API WARN @{handle}: HTTP {r.status_code}',file=sys.stderr)
+            return []
+        try:
+            data=r.json()
+        except Exception:
+            print(f'POSTS API WARN @{handle}: response was not JSON ({len(r.text)} bytes)',file=sys.stderr)
+            return []
+        status=data.get('status_code')
+        if status not in (None,0):
+            print(f'POSTS API WARN @{handle}: TikTok status_code={status}',file=sys.stderr)
+            return []
+        items=data.get('itemList') or data.get('item_list') or []
+        out={}
+        if isinstance(items,list):
+            for d in items:
+                p=self._post_from_dict(d,handle)
+                if p:
+                    out[p.post_id]=p
+        print(f'POSTS API @{handle}: HTTP 200, items={len(items) if isinstance(items,list) else 0}, parsed={len(out)}',file=sys.stderr)
+        return sorted(out.values(),key=lambda p:p.created_at or '',reverse=True)[:limit]
+
     def discover_from_hashtag(self,hashtag):
         tag=hashtag.lstrip('#').strip()
         html=self._get(f'https://www.tiktok.com/tag/{quote(tag)}')
@@ -210,6 +294,8 @@ class TikTokPublicProvider(Provider):
                 s=stats_v2 or stats
                 avatar=user.get('avatarLarger') or user.get('avatarMedium') or user.get('avatarThumb') or ''
                 posts=self._posts(blobs,real_handle,posts_limit,detail=detail)
+                if not posts and posts_limit:
+                    posts=self._fetch_posts_api(user,real_handle,posts_limit)
                 return CreatorSnapshot(
                     handle=real_handle,
                     display_name=str(user.get('nickname') or real_handle),
