@@ -1,8 +1,14 @@
 import json, os, time, sys
 from datetime import datetime, timezone
 from urllib.parse import quote
+from pathlib import Path
 import httpx
 from bs4 import BeautifulSoup
+
+try:
+    from playwright.sync_api import sync_playwright
+except Exception:
+    sync_playwright = None
 from .provider import Provider, PublicAccessLimitedError
 from packages.shared.models import CreatorSnapshot, PostMetric
 
@@ -267,6 +273,155 @@ class TikTokPublicProvider(Provider):
         print(f'POSTS API @{handle}: HTTP 200, items={len(items) if isinstance(items,list) else 0}, parsed={len(out)}',file=sys.stderr)
         return sorted(out.values(),key=lambda p:p.created_at or '',reverse=True)[:limit]
 
+
+    def _fetch_posts_browser(self, handle, limit):
+        """Fallback using a normal headless Chromium session.
+
+        This does not solve CAPTCHAs, spoof tokens, rotate identities, or bypass
+        access restrictions. It simply lets TikTok's public web page run its own
+        JavaScript and captures public responses / visible video links.
+        """
+        if os.getenv('ENABLE_BROWSER_FALLBACK', '0') != '1' or limit <= 0:
+            return []
+        if sync_playwright is None:
+            print(f'BROWSER POSTS WARN @{handle}: Playwright is not installed', file=sys.stderr)
+            return []
+
+        count=max(1,min(int(limit),10))
+        captured={}
+        video_links=[]
+        diag_dir=os.getenv('DIAGNOSTICS_DIR','').strip()
+
+        try:
+            with sync_playwright() as p:
+                browser=p.chromium.launch(headless=True)
+                context=browser.new_context(
+                    locale='pl-PL',
+                    timezone_id='Europe/Warsaw',
+                    viewport={'width': 1440, 'height': 1000},
+                    user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+                )
+                page=context.new_page()
+
+                def on_response(resp):
+                    try:
+                        if '/api/post/item_list/' not in resp.url or resp.status != 200:
+                            return
+                        body=resp.body()
+                        if not body:
+                            return
+                        data=json.loads(body.decode('utf-8','replace'))
+                        items=data.get('itemList') or data.get('item_list') or []
+                        if isinstance(items,list):
+                            for d in items:
+                                pm=self._post_from_dict(d,handle)
+                                if pm:
+                                    captured[pm.post_id]=pm
+                    except Exception:
+                        return
+
+                page.on('response', on_response)
+                url=f'https://www.tiktok.com/@{quote(handle)}'
+                page.goto(url, wait_until='domcontentloaded', timeout=45000)
+                page.wait_for_timeout(3500)
+
+                content=(page.content() or '')
+                low=content.lower()
+                if 'captcha' in low or 'verify to continue' in low or 'slardarwaf' in low:
+                    print(f'BROWSER POSTS LIMITED @{handle}: TikTok showed a verification/interstitial page; not bypassing it.', file=sys.stderr)
+                    if diag_dir:
+                        Path(diag_dir).mkdir(parents=True, exist_ok=True)
+                        try:
+                            page.screenshot(path=str(Path(diag_dir)/'tiktok-profile.png'), full_page=False)
+                        except Exception:
+                            pass
+                    browser.close()
+                    return []
+
+                # Give the public profile a chance to issue its normal item-list request.
+                for _ in range(2):
+                    page.mouse.wheel(0, 1300)
+                    page.wait_for_timeout(1800)
+
+                # Collect visible public video links as a second fallback.
+                try:
+                    hrefs=page.locator('a[href*="/video/"]').evaluate_all(
+                        "(els) => els.map(e => e.href)"
+                    )
+                    for href in hrefs:
+                        if href and href not in video_links:
+                            video_links.append(href)
+                except Exception:
+                    pass
+
+                if diag_dir:
+                    Path(diag_dir).mkdir(parents=True, exist_ok=True)
+                    try:
+                        page.screenshot(path=str(Path(diag_dir)/'tiktok-profile.png'), full_page=False)
+                    except Exception:
+                        pass
+                    try:
+                        (Path(diag_dir)/'browser-summary.txt').write_text(
+                            f'handle=@{handle}\n'
+                            f'intercepted_posts={len(captured)}\n'
+                            f'video_links={len(video_links)}\n'
+                            f'page_url={page.url}\n'
+                            f'title={page.title()}\n',
+                            encoding='utf-8'
+                        )
+                    except Exception:
+                        pass
+
+                # If TikTok's own browser request gave us posts, use those.
+                if captured:
+                    print(
+                        f'BROWSER POSTS @{handle}: intercepted={len(captured)}, video_links={len(video_links)}',
+                        file=sys.stderr
+                    )
+                    browser.close()
+                    return sorted(
+                        captured.values(),
+                        key=lambda x:x.created_at or '',
+                        reverse=True
+                    )[:count]
+
+                # Otherwise open a few public video pages and read their embedded JSON.
+                out={}
+                for href in video_links[:count]:
+                    try:
+                        page.goto(href, wait_until='domcontentloaded', timeout=35000)
+                        page.wait_for_timeout(1200)
+                        html=page.content() or ''
+                        if 'captcha' in html.lower() or 'verify to continue' in html.lower():
+                            print(f'BROWSER POSTS LIMITED @{handle}: verification page while reading videos; stopping.', file=sys.stderr)
+                            break
+                        blobs=list(self._json_blobs(html))
+                        for blob in blobs:
+                            for d in _walk(blob):
+                                pm=self._post_from_dict(d,handle)
+                                if pm:
+                                    out[pm.post_id]=pm
+                        if len(out) >= count:
+                            break
+                    except Exception as e:
+                        print(f'BROWSER POSTS WARN @{handle}: video page error: {e}', file=sys.stderr)
+
+                print(
+                    f'BROWSER POSTS @{handle}: intercepted=0, video_links={len(video_links)}, parsed_video_pages={len(out)}',
+                    file=sys.stderr
+                )
+                browser.close()
+                return sorted(
+                    out.values(),
+                    key=lambda x:x.created_at or '',
+                    reverse=True
+                )[:count]
+
+        except Exception as e:
+            print(f'BROWSER POSTS WARN @{handle}: {e}', file=sys.stderr)
+            return []
+
+
     def discover_from_hashtag(self,hashtag):
         tag=hashtag.lstrip('#').strip()
         html=self._get(f'https://www.tiktok.com/tag/{quote(tag)}')
@@ -296,6 +451,8 @@ class TikTokPublicProvider(Provider):
                 posts=self._posts(blobs,real_handle,posts_limit,detail=detail)
                 if not posts and posts_limit:
                     posts=self._fetch_posts_api(user,real_handle,posts_limit)
+                if not posts and posts_limit:
+                    posts=self._fetch_posts_browser(real_handle,posts_limit)
                 return CreatorSnapshot(
                     handle=real_handle,
                     display_name=str(user.get('nickname') or real_handle),

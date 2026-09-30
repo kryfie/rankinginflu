@@ -27,7 +27,7 @@ def scan_handles(handles,posts,db_path,seed_context=False):
     return ok
 
 def export_web(db_path):
-    conn=connect(db_path); ranking=build_ranking(conn); conn.close(); payload={'generated_at':utcnow(),'source':'scanner-v0.3','creators':ranking}; WEB_DATA.parent.mkdir(parents=True,exist_ok=True); WEB_DATA.write_text(json.dumps(payload,ensure_ascii=False,indent=2),encoding='utf-8'); print(f'Exported {len(ranking)} creators -> {WEB_DATA}')
+    conn=connect(db_path); ranking=build_ranking(conn); conn.close(); payload={'generated_at':utcnow(),'source':'scanner-v0.4','creators':ranking}; WEB_DATA.parent.mkdir(parents=True,exist_ok=True); WEB_DATA.write_text(json.dumps(payload,ensure_ascii=False,indent=2),encoding='utf-8'); print(f'Exported {len(ranking)} creators -> {WEB_DATA}')
 
 def cmd_discover(args):
     hashtags=_lines(args.hashtags); conn=connect(args.db); run_id=conn.execute('INSERT INTO discovery_runs(started_at,source,status) VALUES(?,?,?)',(utcnow(),'hashtags','running')).lastrowid; conn.commit(); conn.close()
@@ -47,7 +47,7 @@ def cmd_discover(args):
     conn=connect(args.db); conn.execute('UPDATE discovery_runs SET finished_at=?,status=?,discovered_handles=?,scanned_profiles=? WHERE id=?',(utcnow(),'done',len(discovered),ok,run_id)); conn.commit(); conn.close(); export_web(args.db)
 
 def main():
-    p=argparse.ArgumentParser(description='InfluRank TikTok scanner v0.3'); sub=p.add_subparsers(dest='cmd',required=True)
+    p=argparse.ArgumentParser(description='InfluRank TikTok scanner v0.4'); sub=p.add_subparsers(dest='cmd',required=True)
     d=sub.add_parser('discover'); d.add_argument('--hashtags',default=str(CONFIG/'hashtags.txt')); d.add_argument('--limit',type=int,default=100); d.add_argument('--posts',type=int,default=10); d.add_argument('--db',default=str(DEFAULT_DB)); d.set_defaults(func=cmd_discover)
     s=sub.add_parser('scan-seeds'); s.add_argument('--seeds',default=str(CONFIG/'seed_creators.txt')); s.add_argument('--posts',type=int,default=10); s.add_argument('--db',default=str(DEFAULT_DB)); s.set_defaults(func=lambda a:(scan_handles(_lines(a.seeds),a.posts,a.db,False),export_web(a.db)))
     one=sub.add_parser('scan'); one.add_argument('handles',nargs='+'); one.add_argument('--posts',type=int,default=10); one.add_argument('--db',default=str(DEFAULT_DB)); one.set_defaults(func=lambda a:(scan_handles(a.handles,a.posts,a.db,False),export_web(a.db)))
