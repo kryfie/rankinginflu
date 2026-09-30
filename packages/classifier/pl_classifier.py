@@ -28,6 +28,8 @@ CATEGORY_KEYWORDS = {
 def pl_confidence(text: str, seed_context: bool = False) -> float:
     t = (text or "").lower()
     score = 20.0 if seed_context else 0.0
+    if "🇵🇱" in t:
+        score += 35
     if re.search(r"[ąćęłńóśźż]", t):
         score += 25
     tokens = set(re.findall(r"[a-ząćęłńóśźż]+", t))

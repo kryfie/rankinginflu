@@ -27,7 +27,7 @@ def scan_handles(handles,posts,db_path,seed_context=False):
     return ok
 
 def export_web(db_path):
-    conn=connect(db_path); ranking=build_ranking(conn); conn.close(); payload={'generated_at':utcnow(),'source':'scanner-v0.1','creators':ranking}; WEB_DATA.parent.mkdir(parents=True,exist_ok=True); WEB_DATA.write_text(json.dumps(payload,ensure_ascii=False,indent=2),encoding='utf-8'); print(f'Exported {len(ranking)} creators -> {WEB_DATA}')
+    conn=connect(db_path); ranking=build_ranking(conn); conn.close(); payload={'generated_at':utcnow(),'source':'scanner-v0.2','creators':ranking}; WEB_DATA.parent.mkdir(parents=True,exist_ok=True); WEB_DATA.write_text(json.dumps(payload,ensure_ascii=False,indent=2),encoding='utf-8'); print(f'Exported {len(ranking)} creators -> {WEB_DATA}')
 
 def cmd_discover(args):
     hashtags=_lines(args.hashtags); conn=connect(args.db); run_id=conn.execute('INSERT INTO discovery_runs(started_at,source,status) VALUES(?,?,?)',(utcnow(),'hashtags','running')).lastrowid; conn.commit(); conn.close()
