@@ -114,11 +114,24 @@ class GeoTests(unittest.TestCase):
         self.assertEqual(
             geo._poi_city(
                 {
-                    "poiName": "Wisła",
+                    "poiName": "Kraków",
                     "address": "Polska",
                     "cityName": "Warsaw",
                 }
             ),
+            "",
+        )
+
+    def test_gmina_prefix_is_normalized(self):
+        self.assertEqual(geo._normalize_locality_label("Gmina Lesznowola"), "Lesznowola")
+
+    def test_service_area_poi_is_not_a_city(self):
+        self.assertEqual(
+            geo._poi_city({
+                "poiName": "MOR Wrotki Mogilnice",
+                "address": "MOR Wrotki Mogilnice, Mazovia, Poland",
+                "cityName": "",
+            }),
             "",
         )
 

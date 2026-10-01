@@ -21,21 +21,37 @@ PERSON_NAME_RE = re.compile(
 MEDIA_STRONG = (
     "redakcja", "portal informacyjny", "serwis informacyjny", "wiadomości",
     "wiadomosci", "newsroom", "gazeta", "dziennik", "telewizja", "radio ",
-    "stacja radiowa", "magazyn informacyjny",
+    "stacja radiowa", "magazyn informacyjny", "portal news", "breaking news",
 )
 
 MEDIA_WEAK = (
-    " media", "news", "tv24", "24.pl", "portal",
+    " media", "news", "tv24", "24.pl", "portal", "magazyn",
 )
 
 COMPANY_STRONG = (
     "sp. z o.o", "sp z oo", "s.a.", "sklep internetowy", "oficjalny sklep",
-    "firma ", "producent", "dystrybutor", "agencja ",
+    "firma ", "producent", "dystrybutor", "agencja ", "drogeria",
+    "restauracja", "restaurant", "salon ", "klinika", "hotel ",
+    "polityka prywatności", "polityka prywatnosci", "regulamin",
+    "marka ", "nasza marka", "oficjalny profil marki", "official brand",
+    "kup teraz", "zamów", "zamow", "sklep:", "shop now",
+)
+
+COMPANY_NAME_MARKERS = (
+    "cosmetics", "kosmetyki", "sklep", "shop", "store", "market",
+    "pharmacy", "apteka", "restaurant", "pizza hut", "starbucks",
+    "carrefour", "lidl", "kaufland", "biedronka", "żabka", "zabka",
+    "douglas", "sephora", "hebe", "mobilfox", "new yorker",
+)
+
+PERSONAL_POLAND_PHRASES = (
+    "w polsce", "z polski", "polak w", "polka w", "polish in",
+    "living in poland", "życie w polsce", "zycie w polsce",
 )
 
 CREATOR_BRAND_MARKERS = (
     "kanał", "kanal", "projekt", "współpraca", "wspolpraca", "kontakt:",
-    "official account", "youtube", "instagram", "podcast", "duet", "bliźni",
+    "youtube", "instagram", "podcast", "duet", "bliźni",
     "blizni", "ekipa", "banda", "team", "vlog", "karaoke",
 )
 
@@ -156,6 +172,13 @@ def infer_account_type(
     creator: dict[str, Any],
     posts: list[dict[str, Any]],
 ) -> tuple[str, float, list[str]]:
+    """
+    Classify the account owner, not the content category.
+
+    v6 is deliberately stricter for commercial organizations because the
+    public ranking is intended for creators/influencers, not retailers,
+    corporate brand accounts or publishers. Manual overrides still win.
+    """
     manual = str(creator.get("account_type_manual") or "").strip()
     if manual:
         return manual, 100.0, ["manual_override"]
@@ -164,6 +187,7 @@ def infer_account_type(
     username = normalize_username(creator.get("username"))
     bio = str(creator.get("bio") or "")
     identity = f"{display_name} {username} {bio}".lower()
+    name_identity = f"{display_name} {username}".lower()
 
     reasons: list[str] = []
 
@@ -173,20 +197,26 @@ def infer_account_type(
 
     company_score = 0
     company_score += 4 * sum(1 for marker in COMPANY_STRONG if marker in identity)
-    if bool(creator.get("is_organization")):
-        company_score += 4
+    company_score += 3 * sum(1 for marker in COMPANY_NAME_MARKERS if marker in name_identity)
+
+    provider_org = bool(creator.get("is_organization"))
+    provider_commerce = bool(creator.get("is_commerce_user"))
+    provider_seller = bool(creator.get("is_seller"))
+
+    if provider_org:
+        company_score += 6
         reasons.append("provider_is_organization")
-    if bool(creator.get("is_seller")):
-        company_score += 2
-    if bool(creator.get("is_commerce_user")):
-        company_score += 1
+    if provider_seller:
+        company_score += 6
+        reasons.append("provider_is_seller")
+    if provider_commerce:
+        company_score += 3
+        reasons.append("provider_is_commerce_user")
 
     creator_brand_score = sum(
         1 for marker in CREATOR_BRAND_MARKERS if marker in identity
     )
 
-    # Content formats that strongly indicate a creator-led brand, even if the
-    # name contains "TV" (e.g. Melodia TV Polska karaoke).
     content = " ".join(_post_caption(p).lower() for p in posts[:12])
     if any(term in content for term in ("karaoke", "pov", "vlog", "humor", "skecz")):
         creator_brand_score += 3
@@ -194,13 +224,36 @@ def infer_account_type(
     cleaned_name = re.sub(r"[^\wąćęłńóśźżĄĆĘŁŃÓŚŹŻ' -]+", "", display_name).strip()
     looks_personal = bool(PERSON_NAME_RE.match(cleaned_name))
 
-    # Strong publisher/company evidence wins. Generic "TV" is intentionally
-    # insufficient so creator brands are not excluded accidentally.
-    if company_score >= 5:
-        return "company", min(99.0, 65.0 + company_score * 4.0), reasons + ["company_identity"]
+    # Brand-style national accounts are a recurring source of false positives:
+    # Starbucks Polska, Mobilfox Polska, Carrefour Polska, etc. Do not apply
+    # this to personal phrases such as "Jones w Polsce".
+    personal_poland_phrase = any(marker in identity for marker in PERSONAL_POLAND_PHRASES)
+    brand_poland_name = (
+        not personal_poland_phrase
+        and (
+            display_name.lower().endswith(" polska")
+            or display_name.lower().endswith(" poland")
+        )
+        and (
+            username.endswith("polska")
+            or username.endswith("poland")
+            or username.endswith("_pl")
+            or username.endswith(".pl")
+        )
+    )
+    if brand_poland_name:
+        company_score += 5
+        reasons.append("brand_poland_identity")
 
+    # A strong publisher identity should remain media even if TikTok also marks
+    # the profile as an organization.
     if media_score >= 4 and creator_brand_score < 3:
-        return "media", min(99.0, 65.0 + media_score * 4.0), reasons + ["publisher_identity"]
+        return "media", min(99.0, 70.0 + media_score * 4.0), reasons + ["publisher_identity"]
+
+    # Provider organization/seller evidence alone is now enough to exclude a
+    # corporate account. v5 required an extra marker and let obvious brands in.
+    if company_score >= 5:
+        return "company", min(99.0, 70.0 + company_score * 3.0), reasons + ["company_identity"]
 
     if looks_personal and creator_brand_score == 0:
         return "person", 92.0, reasons + ["personal_name"]
@@ -275,7 +328,7 @@ def classify_creator(
             bio=str(row.get("bio") or ""),
             captions=captions,
         )
-        category_source = "auto_v5"
+        category_source = "auto_v6"
 
     account_type, account_type_confidence, account_type_reasons = infer_account_type(
         row,
@@ -316,7 +369,7 @@ def classify_creator(
             "account_type": account_type,
             "account_type_confidence": round(account_type_confidence, 1),
             "account_type_reasons": account_type_reasons,
-            "classification_version": "v5",
+            "classification_version": "v6",
         }
     )
 

@@ -169,13 +169,58 @@ def _text_city_hits(text: Any) -> set[str]:
     return hits
 
 
-def _poi_city(poi: Any) -> str:
-    """
-    Infer a Polish city from TikTok POI metadata conservatively.
 
-    Real provider payloads frequently leave cityName blank. In those cases the
-    city is often still present in poiName or at the start of address.
-    """
+VENUE_MARKERS = (
+    "mor ", "mop ", "restauracja", "restaurant", "hotel", "hostel",
+    "galeria", "centrum handlowe", "shopping", "sklep", "market",
+    "stadion", "arena", "park rozrywki", "dworzec", "lotnisko", "airport",
+    "stacja ", "studio", "salon", "klinika", "szpital", "school", "szkoła",
+    "muzeum", "museum", "bar ", "cafe", "café", "kawiarnia", "club", "klub",
+)
+
+
+def _canonical_known_city(value: Any) -> str:
+    hits = _text_city_hits(value)
+    if len(hits) == 1:
+        return next(iter(hits))
+    return ""
+
+
+def _normalize_locality_label(value: Any) -> str:
+    raw = str(value or "").strip()
+    if not raw:
+        return ""
+
+    low = _norm(raw)
+    for prefix in ("gmina ", "miasto ", "city of "):
+        if low.startswith(prefix):
+            raw = raw[len(prefix):].strip()
+            low = _norm(raw)
+            break
+
+    known = _canonical_known_city(raw)
+    if known:
+        return known
+
+    if any(marker in low for marker in VENUE_MARKERS):
+        return ""
+    if re.search(r"\d", raw):
+        return ""
+    if len(raw) > 48 or len(raw.split()) > 4:
+        return ""
+    if len(raw) < 3:
+        return ""
+
+    # Reject acronym-led road/service-area style POIs such as
+    # "MOR Wrotki Mogilnice" even when no marker matched after punctuation.
+    first = raw.split()[0]
+    if first.isupper() and 2 <= len(first) <= 5:
+        return ""
+
+    return raw
+
+def _poi_city(poi: Any) -> str:
+    """Return a normalized Polish locality from TikTok POI metadata."""
     if not isinstance(poi, dict):
         return ""
 
@@ -183,10 +228,7 @@ def _poi_city(poi: Any) -> str:
     address_raw = str(poi.get("address") or "").strip()
     city_raw = str(poi.get("cityName") or "").strip()
 
-    poi_name = _norm(poi_name_raw)
     address = _norm(address_raw)
-    city_name = _norm(city_raw)
-
     is_pl = "poland" in address or "polska" in address
     if not is_pl:
         is_pl = bool(
@@ -197,57 +239,35 @@ def _poi_city(poi: Any) -> str:
     if not is_pl:
         return ""
 
+    # Explicit cityName is preferred, but normalize it and reject venue-like
+    # strings rather than blindly publishing provider text as a city.
+    city = _normalize_locality_label(city_raw)
     address_hits = _text_city_hits(address_raw)
     name_hits = _text_city_hits(poi_name_raw)
-    city_hits = _text_city_hits(city_raw)
 
-    # 1) Address is the strongest geographic text when it names a city.
-    if len(address_hits) == 1:
-        address_city = next(iter(address_hits))
-        if city_hits and address_city not in city_hits:
+    if city:
+        city_known = _canonical_known_city(city)
+        if address_hits and city_known and city_known not in address_hits:
             return ""
-        return address_city
+        # Conflicting country-only POI metadata is safer left unknown.
+        if address in {"polska", "poland"} and name_hits:
+            name_city = next(iter(name_hits)) if len(name_hits) == 1 else ""
+            if name_city and city_known and name_city != city_known:
+                return ""
+        return city_known or city
 
-    # 2) cityName + poiName agreement is very strong.
-    if city_hits and name_hits:
-        agreed = city_hits & name_hits
-        if len(agreed) == 1:
-            return next(iter(agreed))
-        return ""
+    # A city explicitly present in the address is strong evidence.
+    if len(address_hits) == 1:
+        return next(iter(address_hits))
 
-    # 3) Reject suspicious provider conflicts when the address contains only
-    # a country and poiName disagrees with cityName. This catches cases seen
-    # in the real provider feed such as poiName="Wisła", cityName="Warsaw",
-    # address="Polska".
-    if (
-        city_name
-        and poi_name
-        and address in {"polska", "poland"}
-        and city_name != poi_name
-        and not name_hits
-    ):
-        return ""
+    # Recover smaller localities when POI name equals the first address segment.
+    first_segment = str(address_raw.split(",", 1)[0]).strip()
+    if poi_name_raw and first_segment and _norm(poi_name_raw) == _norm(first_segment):
+        return _normalize_locality_label(poi_name_raw)
 
-    # 4) Explicit cityName in a Polish POI is normally usable.
-    if len(city_hits) == 1:
-        return next(iter(city_hits))
-
-    # 5) Exact POI-name/address agreement can recover smaller Polish cities
-    # not present in CITY_ALIASES.
-    if poi_name and address:
-        first_segment = _norm(address_raw.split(",", 1)[0])
-        if first_segment and first_segment == poi_name:
-            if poi_name == "warsaw":
-                return "Warszawa"
-            return poi_name_raw
-
-    # 6) Known city used as POI name with a region-only Polish address.
+    # Known-city POI names are useful when address only contains region/country.
     if len(name_hits) == 1:
         return next(iter(name_hits))
-
-    # 7) cityName may contain a smaller Polish city not in our dictionary.
-    if city_raw and is_pl and not name_hits:
-        return city_raw
 
     return ""
 

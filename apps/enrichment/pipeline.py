@@ -155,7 +155,6 @@ def select_queue_items(
     *,
     max_profiles: int,
     refresh_all: bool,
-    min_refresh_age_hours: int = 0,
 ) -> list[dict[str, Any]]:
     items = queue_payload.get("items", [])
     if not isinstance(items, list):
@@ -170,46 +169,13 @@ def select_queue_items(
             continue
 
         status = str(item.get("status") or "pending_profile_scan")
-
-        if refresh_all:
-            if min_refresh_age_hours > 0:
-                last_value = item.get("last_profile_scan_at")
-                if last_value:
-                    try:
-                        last_dt = datetime.fromisoformat(
-                            str(last_value).replace("Z", "+00:00")
-                        )
-                        age_hours = (
-                            datetime.now(timezone.utc) - last_dt
-                        ).total_seconds() / 3600.0
-                        if age_hours < min_refresh_age_hours:
-                            continue
-                    except Exception:
-                        pass
-
-            eligible.append(item)
-
-        elif status in {
+        if refresh_all or status in {
             "pending_profile_scan",
             "enrichment_error",
         }:
             eligible.append(item)
 
-    if refresh_all:
-        # Fair rotation for scheduled refreshes: accounts never refreshed or
-        # refreshed longest ago go first. This prevents a fixed top-N subset
-        # from being refreshed forever when the dataset grows.
-        eligible.sort(
-            key=lambda row: (
-                str(row.get("last_profile_scan_at") or ""),
-                safe_int(row.get("priority")) or 10**9,
-            )
-        )
-    else:
-        eligible.sort(
-            key=lambda row: safe_int(row.get("priority")) or 10**9
-        )
-
+    eligible.sort(key=lambda row: safe_int(row.get("priority")) or 10**9)
     if max_profiles > 0:
         eligible = eligible[:max_profiles]
     return eligible
@@ -436,7 +402,7 @@ def enrich_state(
         settings.web_ranking_path,
         {
             "generated_at": run_at,
-            "source": "influRank-enrichment-v5",
+            "source": "influRank-enrichment-v6",
             "score_note": (
                 "Influence Score is provisional until 30-day follower history exists. "
                 "Momentum is omitted and remaining weights are re-normalized. "
