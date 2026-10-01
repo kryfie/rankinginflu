@@ -8,10 +8,15 @@ on:
         required: true
         default: "10"
         type: string
-      max_seeds:
-        description: "How many seeds to run; 0 = all. Free Apify users have a monthly run cap."
+      start_seed:
+        description: "Seed offset: 0 = first seed, 2 = third seed, 4 = fifth seed..."
         required: true
-        default: "1"
+        default: "0"
+        type: string
+      max_seeds:
+        description: "How many seeds to run from start_seed; 0 = all remaining"
+        required: true
+        default: "2"
         type: string
       min_followers:
         description: "Minimum followers for a new candidate"
@@ -48,7 +53,6 @@ permissions:
 
 jobs:
   discovery:
-    # We deliberately run/persist production discovery only from main.
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 30
@@ -75,6 +79,7 @@ jobs:
         run: |
           python -m apps.discovery run \
             --results-per-seed "${{ inputs.results_per_seed }}" \
+            --start-seed "${{ inputs.start_seed }}" \
             --max-seeds "${{ inputs.max_seeds }}" \
             --min-followers "${{ inputs.min_followers }}" \
             --min-pl-signals "${{ inputs.min_pl_signals }}" \
