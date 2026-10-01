@@ -11,8 +11,10 @@ from .pipeline import (
     build_scanner_queue,
     compact_post,
     deduplicate_candidates,
+    is_demo_row,
     load_json,
     merge_candidate_registry,
+    revalidate_registry_from_previous_raw,
     utcnow,
     write_json,
 )
@@ -66,6 +68,16 @@ def _select_seeds(
     return remaining[:max_seeds]
 
 
+def _usable_provider_row(row: dict) -> bool:
+    if not isinstance(row, dict) or is_demo_row(row):
+        return False
+    channel = row.get("channel")
+    return (
+        isinstance(channel, dict)
+        and bool(str(channel.get("username") or "").strip())
+    )
+
+
 def discover(args: argparse.Namespace) -> int:
     settings = Settings.from_env()
 
@@ -85,21 +97,22 @@ def discover(args: argparse.Namespace) -> int:
 
     run_at = utcnow()
     all_posts: list[dict] = []
+    all_provider_rows: list[dict] = []
     seed_stats: list[dict] = []
     errors: list[dict] = []
 
     print(
-        f"InfluRank discovery | seeds={len(keywords)}/{len(all_keywords)} | "
+        f"InfluRank discovery v4 | seeds={len(keywords)}/{len(all_keywords)} | "
         f"startSeed={args.start_seed} | resultsPerSeed={args.results_per_seed} | "
-        f"location={args.location} | "
-        f"minFollowers={args.min_followers} | minPLSignals={args.min_pl_signals}"
+        f"location={args.location} | minFollowers={args.min_followers} | "
+        f"minStrongPLSignals={args.min_pl_signals} | "
+        f"minPLConfidence={args.min_pl_confidence}"
     )
     print(f"Actor: {settings.actor_id}")
     print()
 
     for index, seed in enumerate(keywords, start=1):
         actor_input = {
-            # One keyword per Actor run = real per-seed coverage.
             "keywords": [seed],
             "location": args.location,
             "maxItems": args.results_per_seed,
@@ -111,7 +124,7 @@ def discover(args: argparse.Namespace) -> int:
         print(f"[{index}/{len(keywords)}] seed={seed!r} ...", flush=True)
 
         try:
-            posts = run_actor_sync(
+            rows = run_actor_sync(
                 token=settings.apify_token,
                 actor_id=settings.actor_id,
                 actor_input=actor_input,
@@ -121,38 +134,54 @@ def discover(args: argparse.Namespace) -> int:
             errors.append({"seed": seed, "error": str(exc)})
             print(f"  ERROR: {exc}", file=sys.stderr)
             print(
-                "  Stopping before additional provider runs to avoid repeated "
-                "failures/charges.",
+                "  Stopping before additional provider runs to avoid repeated failures/charges.",
                 file=sys.stderr,
             )
             break
 
-        for post in posts:
+        all_provider_rows.extend(rows)
+
+        demo_rows = [row for row in rows if is_demo_row(row)]
+        usable = [row for row in rows if _usable_provider_row(row)]
+
+        for post in usable:
             post["_discovery_seed"] = seed
 
-        all_posts.extend(posts)
+        all_posts.extend(usable)
+
+        if usable:
+            status = "productive"
+        elif demo_rows:
+            status = "demo_only"
+        else:
+            status = "no_usable_rows"
+
         seed_stats.append(
             {
                 "seed": seed,
-                "posts_returned": len(posts),
+                "rows_returned": len(rows),
+                "usable_posts": len(usable),
+                "demo_rows": len(demo_rows),
+                "status": status,
             }
         )
-        print(f"  returned={len(posts)}")
 
-    if not all_posts:
-        raise RuntimeError(
-            "Discovery returned zero posts. No repository data files were changed."
+        print(
+            f"  rows={len(rows)} usable={len(usable)} "
+            f"demo={len(demo_rows)} status={status}"
         )
 
     candidates, stats = deduplicate_candidates(
         all_posts,
         min_followers=args.min_followers,
         min_pl_signals=args.min_pl_signals,
+        min_pl_confidence=args.min_pl_confidence,
     )
 
     latest_run_meta = {
         "run_at": run_at,
         "actor": settings.actor_id,
+        "filterVersion": "v4-strong-pl-evidence",
         "startSeed": args.start_seed,
         "seeds_requested": keywords,
         "seeds_completed": [row["seed"] for row in seed_stats],
@@ -161,13 +190,29 @@ def discover(args: argparse.Namespace) -> int:
         "dateRange": args.date_range,
         "sortType": args.sort_type,
         "minFollowers": args.min_followers,
-        "minPLSignals": args.min_pl_signals,
+        "minStrongPLSignals": args.min_pl_signals,
+        "minPLConfidence": args.min_pl_confidence,
         "stats": stats,
         "per_seed": seed_stats,
         "errors": errors,
     }
 
     existing_registry = load_json(settings.registry_path, {"creators": []})
+    existing_queue = load_json(settings.queue_path, {"items": []})
+    previous_compact = load_json(settings.compact_raw_path, {"posts": []})
+
+    # Clean up weak-only pending candidates produced by v3 from the immediately
+    # previous compact discovery run before adding new v4 candidates.
+    existing_registry, migration_stats = revalidate_registry_from_previous_raw(
+        existing_registry,
+        previous_compact,
+        existing_queue,
+        min_followers=args.min_followers,
+        min_pl_signals=args.min_pl_signals,
+        min_pl_confidence=args.min_pl_confidence,
+    )
+    latest_run_meta["migration"] = migration_stats
+
     registry_payload = merge_candidate_registry(
         existing_registry,
         candidates,
@@ -175,7 +220,6 @@ def discover(args: argparse.Namespace) -> int:
         latest_run_meta=latest_run_meta,
     )
 
-    existing_queue = load_json(settings.queue_path, {"items": []})
     queue_payload = build_scanner_queue(
         registry_payload,
         existing_queue,
@@ -187,11 +231,16 @@ def discover(args: argparse.Namespace) -> int:
         "posts": [compact_post(post) for post in all_posts],
     }
 
-    # Full provider output is useful for short-lived diagnostics only.
-    # It is gitignored and uploaded by Actions as an artifact.
-    write_json(settings.full_raw_path, all_posts)
+    # Full provider output is diagnostic only. It includes demo rows so we can
+    # inspect provider behavior, but demo rows never enter candidate logic.
+    write_json(
+        settings.full_raw_path,
+        {
+            "meta": latest_run_meta,
+            "provider_rows": all_provider_rows,
+        },
+    )
 
-    # Persistent, compact repository data.
     write_json(settings.compact_raw_path, compact_raw_payload)
     write_json(settings.registry_path, registry_payload)
     write_json(settings.queue_path, queue_payload)
@@ -200,19 +249,24 @@ def discover(args: argparse.Namespace) -> int:
     print("RESULT")
     for key, value in sorted(stats.items()):
         print(f"  {key}: {value}")
+    for key, value in sorted(migration_stats.items()):
+        print(f"  {key}: {value}")
     print(f"  registry_count: {registry_payload['meta']['registry_count']}")
+    print(f"  eligible_registry_count: {registry_payload['meta']['eligible_count']}")
     print(f"  queue_count: {queue_payload['meta']['count']}")
     print(f"  seeds_completed: {len(seed_stats)}")
     print(f"  provider_errors: {len(errors)}")
 
     if candidates:
         print()
-        print("Top candidates from latest run:")
-        for candidate in candidates[:15]:
+        print("Accepted candidates from latest run:")
+        for candidate in candidates[:20]:
             print(
                 f"  @{candidate.username:<24} "
                 f"followers={candidate.followers:<10} "
-                f"PLsignals={candidate.polish_signal_count} "
+                f"PL={candidate.pl_confidence:>5.1f} "
+                f"strong={candidate.polish_strong_signal_count} "
+                f"signals={','.join(candidate.polish_strong_signals)} "
                 f"foundBy={','.join(candidate.found_by)}"
             )
 
@@ -222,8 +276,6 @@ def discover(args: argparse.Namespace) -> int:
     print(f"Compact raw: {settings.compact_raw_path}")
     print(f"Full raw diagnostic: {settings.full_raw_path}")
 
-    # A partial provider error still leaves useful completed-seed data.
-    # Return success so GitHub can persist that completed work.
     return 0
 
 
@@ -250,10 +302,7 @@ def build_parser() -> argparse.ArgumentParser:
         "--start-seed",
         type=int,
         default=0,
-        help=(
-            "Zero-based seed offset. Example: 0 starts at the first seed, "
-            "2 starts at the third seed."
-        ),
+        help="Zero-based seed offset.",
     )
     command.add_argument(
         "--max-seeds",
@@ -271,7 +320,13 @@ def build_parser() -> argparse.ArgumentParser:
         "--min-pl-signals",
         type=int,
         default=Settings.min_pl_signals,
-        help="Minimum number of lightweight Polish discovery signals.",
+        help="Minimum number of STRONG Polish discovery signals.",
+    )
+    command.add_argument(
+        "--min-pl-confidence",
+        type=float,
+        default=Settings.min_pl_confidence,
+        help="Minimum conservative PL confidence (0-100).",
     )
     command.add_argument(
         "--location",
@@ -297,6 +352,7 @@ def build_parser() -> argparse.ArgumentParser:
         default=Settings.sort_type,
     )
     command.set_defaults(func=discover)
+
     return parser
 
 
@@ -315,6 +371,8 @@ def main() -> int:
             parser.error("--min-followers must be >= 0")
         if args.min_pl_signals < 0:
             parser.error("--min-pl-signals must be >= 0")
+        if not (0 <= args.min_pl_confidence <= 100):
+            parser.error("--min-pl-confidence must be between 0 and 100")
 
     return args.func(args)
 

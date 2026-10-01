@@ -16,7 +16,11 @@ class Settings:
     date_range: str = "LAST_THREE_MONTHS"
     sort_type: str = "RELEVANCE"
     min_followers: int = 10_000
+
+    # v4: this means STRONG PL signals, not generic keyword hits.
     min_pl_signals: int = 1
+    min_pl_confidence: float = 50.0
+
     results_per_seed: int = 10
     max_seeds: int = 1
     timeout_seconds: int = 180
@@ -42,6 +46,7 @@ class Settings:
             sort_type=os.getenv("DISCOVERY_SORT_TYPE", "RELEVANCE").strip(),
             min_followers=int(os.getenv("DISCOVERY_MIN_FOLLOWERS", "10000")),
             min_pl_signals=int(os.getenv("DISCOVERY_MIN_PL_SIGNALS", "1")),
+            min_pl_confidence=float(os.getenv("DISCOVERY_MIN_PL_CONFIDENCE", "50")),
             results_per_seed=int(os.getenv("DISCOVERY_RESULTS_PER_SEED", "10")),
             max_seeds=int(os.getenv("DISCOVERY_MAX_SEEDS", "1")),
             timeout_seconds=int(os.getenv("DISCOVERY_TIMEOUT_SECONDS", "180")),

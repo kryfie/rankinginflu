@@ -1,81 +1,126 @@
-# InfluRank Discovery v2
+# InfluRank Discovery v4
 
-Discovery is intentionally separate from the final Influence Score.
+## Goal
 
-## Why v2 is different
+Discovery answers one question:
 
-Each seed is now sent to the provider in a separate Actor run.
+> Which TikTok accounts are worth sending to the more expensive profile/post enrichment stage?
 
-So:
+It is intentionally conservative. A generic `#polska` match is not enough.
+
+## Seed-by-seed
+
+Each seed has its own provider call:
 
 ```text
-polskatiktok -> N results
-tiktokpolska -> N results
-polska beauty -> N results
+polskatiktok → N rows
+tiktokpolska → N rows
+polska       → N rows
 ...
 ```
 
-Only after all completed seeds do we deduplicate creators.
+Then InfluRank deduplicates creators by TikTok user ID.
 
-This fixes the v1 problem where `maxItems=10` applied to the whole list of
-keywords and the provider could fill the entire quota from the first seed.
+## Strong vs weak Polish evidence
 
-## Persistent creator universe
+### Strong
 
-`discovery_candidates.json` is an upsert registry, not a one-run replacement.
-Creators found in earlier runs are kept.
-
-`scanner_queue.json` also preserves downstream statuses.
-
-## Files
-
-Committed:
-- `apps/web/data/discovery_candidates.json`
-- `apps/web/data/scanner_queue.json`
-- `apps/web/data/discovery_raw.json` (compact diagnostic data)
-
-Not committed:
-- `apps/discovery/data/discovery_raw_full.json`
-
-The full provider payload is uploaded as a short-lived GitHub Actions artifact.
-
-## Provider verification flag
-
-The discovery provider's `verified` value is not considered authoritative.
-InfluRank must confirm the TikTok badge independently during profile enrichment.
-
-
-## Discovery v3: start_seed
-
-To avoid scanning the same first seeds over and over, discovery now supports a
-zero-based `start_seed` offset.
-
-Examples with the default seed list:
+Any of these can qualify a candidate:
 
 ```text
-start_seed=0, max_seeds=2
-→ polskatiktok
-→ tiktokpolska
-
-start_seed=2, max_seeds=2
-→ polska
-→ polandtiktok
-
-start_seed=4, max_seeds=2
-→ polishtiktok
-→ polski humor
+subtitle_pl   TikTok captions marked as Polish
+poi_pl        TikTok POI explicitly in Poland
+flag_pl       🇵🇱 in title/channel/hashtags
+polish_text   Polish-language text detected in the post caption
 ```
 
-`max_seeds=0` means "all remaining seeds starting from start_seed".
+### Weak
 
-Recommended batch pattern:
+These remain useful for diagnostics/discovery, but do NOT qualify alone:
 
 ```text
-0 / 2
-2 / 2
-4 / 2
-6 / 2
-...
+#polska / #polish / #polskatiktok
+word Polska / Poland / Polish
+Polish marker in channel name
 ```
 
-The candidate registry is cumulative, so duplicates across batches are merged.
+This is deliberate. The query `polska` can return foreign content where
+"Polska" is a person's/name/topic rather than Polish content.
+
+Default gate:
+
+```text
+followers >= 10,000
+strong PL signals >= 1
+PL confidence >= 50
+```
+
+## Demo rows
+
+Provider rows such as:
+
+```json
+{"demo": true}
+```
+
+are never treated as posts or creators.
+
+Per-seed metadata records:
+
+```text
+rows_returned
+usable_posts
+demo_rows
+status = productive | demo_only | no_usable_rows
+```
+
+The full diagnostic artifact still keeps provider rows so we can see what the
+provider returned.
+
+## v3 cleanup
+
+When v4 runs for the first time, it re-evaluates creators from the immediately
+previous compact discovery file.
+
+Weak-only pending creators are marked `discovery_eligible=false` and removed
+from `scanner_queue.json`.
+
+Already enriched/profile-scanned creators are preserved.
+
+## Seed list
+
+`polandtiktok` was removed after returning demo-only rows in the tested provider.
+
+Current indices:
+
+```text
+0 polskatiktok
+1 tiktokpolska
+2 polska
+3 polishtiktok
+4 polski humor
+5 polska beauty
+6 polska moda
+7 polska fitness
+8 polska gaming
+9 polska tech
+10 polska edukacja
+11 polska jedzenie
+12 polska podróże
+13 polska muzyka
+14 polska finanse
+```
+
+After the already completed 0/1/2 searches, the next batch is:
+
+```text
+start_seed = 3
+max_seeds = 2
+```
+
+which runs:
+
+```text
+polishtiktok
+polski humor
+```

@@ -211,3 +211,17 @@ Actions → Rebuild InfluRank ranking → Run workflow
 
 It rebuilds `apps/web/data/creators.json` from the already stored normalized
 profile/post/snapshot files and costs no provider run.
+
+
+## Discovery v4 quality gate
+
+Discovery now distinguishes strong Polish evidence (PL subtitles, Polish POI,
+🇵🇱, or detected Polish-language caption text) from weak keyword matches such
+as `#polska`.
+
+Weak-only matches are not sent to enrichment. Provider demo rows are ignored.
+The first v4 run also revalidates the previous compact discovery batch so weak
+v3 false positives do not remain pending in `scanner_queue.json`.
+
+`polandtiktok` was removed from the default seeds after returning demo-only
+provider rows in the tested run.

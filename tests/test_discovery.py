@@ -1,12 +1,14 @@
 import unittest
 
 from apps.discovery.models import Candidate
-from apps.discovery.cli import _select_seeds
+from apps.discovery.cli import _select_seeds, _usable_provider_row
 from apps.discovery.pipeline import (
     build_scanner_queue,
     compact_post,
     deduplicate_candidates,
     merge_candidate_registry,
+    polish_evidence,
+    revalidate_registry_from_previous_raw,
 )
 
 
@@ -18,16 +20,25 @@ class DiscoveryTests(unittest.TestCase):
         followers=20000,
         seed="polskatiktok",
         views=100000,
+        title="#polska test",
+        subtitles=None,
+        hashtags=None,
+        poi=None,
     ):
+        if subtitles is None:
+            subtitles = [{"language_code": "pl", "lang": "pol-PL"}]
+        if hashtags is None:
+            hashtags = ["polska", "polskatiktok"]
+
         return {
             "_discovery_seed": seed,
             "id": f"post-{seed}-{user_id}",
-            "title": "#polska test",
+            "title": title,
             "views": views,
             "likes": 1000,
             "comments": 20,
             "shares": 10,
-            "hashtags": ["polska", "polskatiktok"],
+            "hashtags": hashtags,
             "uploadedAtFormatted": "2026-09-30T10:00:00.000Z",
             "channel": {
                 "id": user_id,
@@ -37,9 +48,8 @@ class DiscoveryTests(unittest.TestCase):
                 "followers": followers,
                 "verified": False,
             },
-            "subtitleInformation": [
-                {"language_code": "pl", "lang": "pol-PL"}
-            ],
+            "subtitleInformation": subtitles,
+            "poi": poi,
             "video": {"url": "https://large-ephemeral-video-url.example/video.mp4"},
             "song": {"title": "unused"},
         }
@@ -53,6 +63,7 @@ class DiscoveryTests(unittest.TestCase):
             posts,
             min_followers=10000,
             min_pl_signals=1,
+            min_pl_confidence=50,
         )
 
         self.assertEqual(len(creators), 1)
@@ -62,6 +73,7 @@ class DiscoveryTests(unittest.TestCase):
             ["polskatiktok", "tiktokpolska"],
         )
         self.assertEqual(creators[0].max_views_seen, 200000)
+        self.assertGreaterEqual(creators[0].pl_confidence, 50)
         self.assertEqual(stats["unique_creators"], 1)
 
     def test_follower_filter(self):
@@ -70,6 +82,7 @@ class DiscoveryTests(unittest.TestCase):
             posts,
             min_followers=10000,
             min_pl_signals=1,
+            min_pl_confidence=50,
         )
         self.assertEqual(creators, [])
         self.assertEqual(stats["below_min_followers"], 1)
@@ -79,6 +92,99 @@ class DiscoveryTests(unittest.TestCase):
         self.assertNotIn("video", row)
         self.assertNotIn("song", row)
         self.assertEqual(row["channel"]["username"], "creator")
+        self.assertIn("pl_evidence", row)
+
+    def test_foreign_polska_keyword_is_rejected(self):
+        # Mirrors the real false-positive pattern: French/English content that
+        # happens to contain Polska/#polska.
+        post = self.sample_post(
+            username="speed_salami1",
+            followers=98940,
+            seed="polska",
+            title="HUMOUR / série française #polska",
+            subtitles=[
+                {"language_code": "en", "lang": "eng-US"},
+                {"language_code": "fr", "lang": "fra-FR"},
+            ],
+            hashtags=["polska"],
+        )
+        evidence = polish_evidence(post)
+        self.assertEqual(evidence["strong_signals"], [])
+        self.assertLess(evidence["pl_confidence"], 50)
+
+        creators, _ = deduplicate_candidates(
+            [post],
+            min_followers=10000,
+            min_pl_signals=1,
+            min_pl_confidence=50,
+        )
+        self.assertEqual(creators, [])
+
+    def test_foreign_person_named_polska_is_rejected(self):
+        post = self.sample_post(
+            username="w9lachaine",
+            followers=2757849,
+            seed="polska",
+            title="Trahie par son entourage, Polska prend la parole",
+            subtitles=[
+                {"language_code": "en", "lang": "eng-US"},
+                {"language_code": "fr", "lang": "fra-FR"},
+            ],
+            hashtags=[],
+        )
+        creators, _ = deduplicate_candidates(
+            [post],
+            min_followers=10000,
+            min_pl_signals=1,
+            min_pl_confidence=50,
+        )
+        self.assertEqual(creators, [])
+
+    def test_polish_language_without_subtitles_is_accepted(self):
+        post = self.sample_post(
+            username="iskra_polan",
+            followers=43170,
+            seed="polska",
+            title="Tzg będzie jutro, musieliśmy to dodać xdddd #polska",
+            subtitles=[],
+            hashtags=["polska", "taniec"],
+        )
+        evidence = polish_evidence(post)
+        self.assertIn("polish_text", evidence["strong_signals"])
+
+        creators, _ = deduplicate_candidates(
+            [post],
+            min_followers=10000,
+            min_pl_signals=1,
+            min_pl_confidence=50,
+        )
+        self.assertEqual(len(creators), 1)
+
+    def test_polish_flag_overrides_foreign_poi(self):
+        post = self.sample_post(
+            username="turystyka.stadionowa",
+            followers=22843,
+            seed="polska",
+            title="Na trybunach nie mamy sobie równych 🇵🇱 #polska",
+            subtitles=[],
+            hashtags=["polska", "kibice"],
+            poi={"address": "Solna, Sweden"},
+        )
+        evidence = polish_evidence(post)
+        self.assertIn("flag_pl", evidence["strong_signals"])
+        self.assertIn("poi_foreign", evidence["negative_signals"])
+        self.assertGreaterEqual(evidence["pl_confidence"], 50)
+
+    def test_demo_row_is_not_usable(self):
+        self.assertFalse(_usable_provider_row({"demo": True}))
+        creators, stats = deduplicate_candidates(
+            [{"demo": True}],
+            min_followers=0,
+            min_pl_signals=1,
+            min_pl_confidence=50,
+        )
+        self.assertEqual(creators, [])
+        self.assertEqual(stats["demo_rows_ignored"], 1)
 
     def test_registry_is_cumulative(self):
         old = {
@@ -88,7 +194,7 @@ class DiscoveryTests(unittest.TestCase):
                     "username": "old_creator",
                     "followers": 50000,
                     "found_by": ["oldseed"],
-                    "polish_signals": ["hashtag"],
+                    "polish_signals": ["subtitle_pl"],
                     "polish_signal_count": 1,
                 }
             ]
@@ -108,7 +214,10 @@ class DiscoveryTests(unittest.TestCase):
                 max_likes_seen=100,
                 latest_post_at="2026-09-30T00:00:00Z",
                 polish_signal_count=1,
-                polish_signals=["hashtag"],
+                polish_signals=["subtitle_pl"],
+                polish_strong_signal_count=1,
+                polish_strong_signals=["subtitle_pl"],
+                pl_confidence=80.0,
             )
         ]
 
@@ -127,7 +236,10 @@ class DiscoveryTests(unittest.TestCase):
                     "tiktok_id": "1",
                     "username": "creator",
                     "followers": 20000,
-                    "polish_signals": ["hashtag"],
+                    "polish_signals": ["subtitle_pl"],
+                    "polish_strong_signals": ["subtitle_pl"],
+                    "pl_confidence": 80,
+                    "discovery_eligible": True,
                     "found_by": ["polskatiktok"],
                     "last_discovered_at": "2026-10-01T00:00:00Z",
                 }
@@ -154,6 +266,83 @@ class DiscoveryTests(unittest.TestCase):
             "2026-09-30T00:00:00Z",
         )
 
+    def test_weak_pending_candidate_is_removed_from_queue(self):
+        registry = {
+            "creators": [
+                {
+                    "tiktok_id": "1",
+                    "username": "foreign_false_positive",
+                    "followers": 100000,
+                    "discovery_eligible": False,
+                }
+            ]
+        }
+        old_queue = {
+            "items": [
+                {
+                    "tiktok_id": "1",
+                    "username": "foreign_false_positive",
+                    "status": "pending_profile_scan",
+                }
+            ]
+        }
+        queue = build_scanner_queue(
+            registry,
+            old_queue,
+            updated_at="2026-10-01T00:00:00Z",
+        )
+        self.assertEqual(queue["items"], [])
+
+    def test_revalidation_quarantines_previous_weak_false_positive(self):
+        registry = {
+            "creators": [
+                {
+                    "tiktok_id": "1",
+                    "username": "w9lachaine",
+                    "followers": 2757849,
+                    "discovery_eligible": True,
+                }
+            ]
+        }
+        queue = {
+            "items": [
+                {
+                    "tiktok_id": "1",
+                    "username": "w9lachaine",
+                    "status": "pending_profile_scan",
+                }
+            ]
+        }
+        previous = {
+            "posts": [
+                {
+                    "seed": "polska",
+                    "id": "p1",
+                    "title": "Polska prend la parole",
+                    "hashtags": [],
+                    "views": 100,
+                    "channel": {
+                        "id": "1",
+                        "username": "w9lachaine",
+                        "name": "W9",
+                        "followers": 2757849,
+                    },
+                    "subtitle_languages": ["en", "fr"],
+                    "poi": None,
+                }
+            ]
+        }
+
+        cleaned, stats = revalidate_registry_from_previous_raw(
+            registry,
+            previous,
+            queue,
+            min_followers=10000,
+            min_pl_signals=1,
+            min_pl_confidence=50,
+        )
+        self.assertFalse(cleaned["creators"][0]["discovery_eligible"])
+        self.assertEqual(stats["legacy_rows_quarantined"], 1)
 
     def test_seed_window(self):
         seeds = ["a", "b", "c", "d", "e"]
