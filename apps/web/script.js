@@ -68,6 +68,9 @@ function compareCreators(a, b){
     bv = String(bv).toLocaleLowerCase('pl');
     return sortDirection === 'asc' ? av.localeCompare(bv, 'pl') : bv.localeCompare(av, 'pl');
   }
+  if (av == null && bv == null) return 0;
+  if (av == null) return 1;
+  if (bv == null) return -1;
   return sortDirection === 'asc' ? av - bv : bv - av;
 }
 
@@ -110,8 +113,8 @@ function render(){
       <td class="num">${compactNumber(c.followers)}</td>
       <td class="num">${compactNumber(c.views)}</td>
       <td class="num">${c.engagement.toFixed(1)}%</td>
-      <td class="num ${c.growth >= 0 ? 'growth-up' : 'growth-down'}">${c.growth >= 0 ? '+' : ''}${c.growth.toFixed(1)}%</td>
-      <td class="num score-cell">${c.score.toFixed(1)}<span class="score-bar"><i style="width:${c.score}%"></i></span></td>
+      <td class="num ${c.growth == null ? '' : (c.growth >= 0 ? 'growth-up' : 'growth-down')}">${c.growth == null ? '—' : `${c.growth >= 0 ? '+' : ''}${c.growth.toFixed(1)}%`}</td>
+      <td class="num score-cell" title="${c.scoreStatus === 'provisional_no_30d_history' ? 'Score tymczasowy: brak pełnej historii 30D' : 'Influence Score'}">${c.score.toFixed(1)}${c.scoreStatus === 'provisional_no_30d_history' ? '<sup>*</sup>' : ''}<span class="score-bar"><i style="width:${c.score}%"></i></span></td>
     </tr>
   `).join('');
 
@@ -206,8 +209,9 @@ async function loadRealData(){
         followers: Number(c.followers || 0),
         views: Number(c.views || 0),
         engagement: Number(c.engagement || 0),
-        growth: Number(c.growth || 0),
+        growth: c.growth == null ? null : Number(c.growth),
         score: Number(c.score || 0),
+        scoreStatus: c.score_status || '',
         verified: Boolean(c.verified)
       }));
       const updated = document.getElementById('updatedAt');

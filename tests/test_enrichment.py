@@ -1,0 +1,165 @@
+import unittest
+from pathlib import Path
+from tempfile import TemporaryDirectory
+
+from apps.enrichment.pipeline import enrich_state, select_queue_items
+from apps.enrichment.ranking import build_web_ranking
+
+
+class DummySettings:
+    actor_id = "simple.actor~tiktok-profile-posts"
+
+    def __init__(self, root):
+        root = Path(root)
+        self.queue_path = root / "scanner_queue.json"
+        self.web_ranking_path = root / "creators.json"
+        self.creators_path = root / "enriched_creators.json"
+        self.posts_path = root / "posts.json"
+        self.snapshots_path = root / "snapshots.json"
+        self.raw_path = root / "raw.json"
+
+
+class EnrichmentTests(unittest.TestCase):
+    def actor_row(self, username="creator", post_id="p1", views=1000, pinned=False):
+        return {
+            "inputUrl": f"https://www.tiktok.com/@{username}",
+            "id": post_id,
+            "url": f"https://www.tiktok.com/@{username}/video/{post_id}",
+            "type": "video",
+            "caption": "Polski humor #polska",
+            "hashtags": ["polska"],
+            "mentions": [],
+            "timestamp": "2026-09-30T10:00:00.000Z",
+            "timestampUnix": 1790762400,
+            "playCount": views,
+            "likeCount": 100,
+            "commentCount": 10,
+            "shareCount": 5,
+            "ownerUsername": username,
+            "ownerId": "u1",
+            "ownerNickname": "Creator",
+            "ownerIsVerified": True,
+            "createdInRegion": "PL",
+            "profileUrl": f"https://www.tiktok.com/@{username}",
+            "scrapedAt": "2026-10-01T08:00:00.000Z",
+            "isPinned": pinned,
+            "isAd": False,
+            "isBrandedContent": False,
+            "author": {
+                "username": username,
+                "userId": "u1",
+                "nickname": "Creator",
+                "profileUrl": f"https://www.tiktok.com/@{username}",
+                "biography": "Twórca z Polski 🇵🇱",
+                "isVerified": True,
+                "isPrivate": False,
+                "followerCount": 20000,
+                "followingCount": 100,
+                "heartCount": 500000,
+                "postCount": 200,
+                "friendCount": 20,
+                "followersAreExact": True,
+                "avatarUrl": "https://example.com/a.jpg",
+                "accountCreatedAt": "2020-01-01T00:00:00.000Z",
+                "isOrganization": False,
+                "isCommerceUser": False,
+                "isSeller": False,
+                "language": "pl",
+                "recentActivity": {"postsMeasured": 13},
+            },
+        }
+
+    def test_queue_selection_pending_only(self):
+        q = {
+            "items": [
+                {"username": "a", "priority": 1, "status": "pending_profile_scan"},
+                {"username": "b", "priority": 2, "status": "enriched"},
+                {"username": "c", "priority": 3, "status": "enrichment_error"},
+            ]
+        }
+        selected = select_queue_items(q, max_profiles=10, refresh_all=False)
+        self.assertEqual([x["username"] for x in selected], ["a", "c"])
+
+    def test_enrichment_writes_normalized_state(self):
+        with TemporaryDirectory() as td:
+            s = DummySettings(td)
+            s.queue_path.write_text(
+                '{"meta":{},"items":[{"username":"creator","priority":1,"polish_signals":["hashtag"],"status":"pending_profile_scan"}]}',
+                encoding="utf-8",
+            )
+            rows = [
+                self.actor_row(post_id="p1", views=1000),
+                self.actor_row(post_id="p2", views=2000),
+                self.actor_row(post_id="p3", views=3000),
+            ]
+            result = enrich_state(
+                settings=s,
+                actor_rows=rows,
+                selected_items=[
+                    {
+                        "username": "creator",
+                        "priority": 1,
+                        "polish_signals": ["hashtag"],
+                        "status": "pending_profile_scan",
+                    }
+                ],
+                run_at="2026-10-01T08:00:00+00:00",
+            )
+            self.assertEqual(result["successful"], 1)
+            self.assertEqual(result["posts_total"], 3)
+            self.assertTrue(s.web_ranking_path.exists())
+
+    def test_ranking_omits_missing_momentum(self):
+        creators = [
+            {
+                "username": "creator",
+                "display_name": "Creator",
+                "followers": 20000,
+                "verified": True,
+                "category": "Entertainment",
+                "last_enriched_at": "2026-10-01T08:00:00+00:00",
+            }
+        ]
+        posts = [
+            {
+                "id": "1",
+                "username": "creator",
+                "timestamp": "2026-09-30T00:00:00Z",
+                "views": 1000,
+                "likes": 100,
+                "comments": 10,
+                "shares": 5,
+                "is_pinned": False,
+            },
+            {
+                "id": "2",
+                "username": "creator",
+                "timestamp": "2026-09-29T00:00:00Z",
+                "views": 2000,
+                "likes": 150,
+                "comments": 10,
+                "shares": 5,
+                "is_pinned": False,
+            },
+            {
+                "id": "3",
+                "username": "creator",
+                "timestamp": "2026-09-28T00:00:00Z",
+                "views": 3000,
+                "likes": 200,
+                "comments": 10,
+                "shares": 5,
+                "is_pinned": False,
+            },
+        ]
+        ranking = build_web_ranking(creators, posts, [])
+        self.assertEqual(ranking[0]["growth"], None)
+        self.assertEqual(
+            ranking[0]["score_status"],
+            "provisional_no_30d_history",
+        )
+        self.assertEqual(ranking[0]["views"], 2000.0)
+
+
+if __name__ == "__main__":
+    unittest.main()

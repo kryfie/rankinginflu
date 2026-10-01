@@ -149,3 +149,40 @@ Po stabilnym discovery:
 4. kategorie,
 5. ostatnie 10–30 postów,
 6. ranking + historia dzienna.
+
+
+## Enrichment v1
+
+After discovery, run:
+
+```text
+Actions → InfluRank enrichment
+```
+
+Recommended first test:
+
+```text
+max_profiles = 5
+max_posts = 13
+refresh_all = false
+```
+
+The workflow reads `scanner_queue.json`, batches the pending handles into the
+profile/post Actor, normalizes profile and post data, writes daily follower
+snapshots, calculates InfluRank's own recent-post metrics, and regenerates:
+
+```text
+apps/web/data/creators.json
+```
+
+Persistent normalized data is stored in:
+
+```text
+database/data/enriched_creators.json
+database/data/posts.json
+database/data/creator_snapshots.json
+```
+
+During the first ~30 days, momentum is unavailable. Influence Score is therefore
+marked provisional and the remaining score weights are re-normalized rather
+than inventing a momentum value.
