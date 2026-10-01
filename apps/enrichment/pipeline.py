@@ -150,26 +150,83 @@ def _normalized_post(row: dict[str, Any], username: str) -> dict[str, Any] | Non
     }
 
 
+def _parse_iso_datetime(value: Any) -> datetime | None:
+    if not value:
+        return None
+    try:
+        dt = datetime.fromisoformat(str(value).replace("Z", "+00:00"))
+    except (TypeError, ValueError):
+        return None
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=timezone.utc)
+    return dt.astimezone(timezone.utc)
+
+
 def select_queue_items(
     queue_payload: dict[str, Any],
     *,
     max_profiles: int,
     refresh_all: bool,
+    min_refresh_age_hours: float = 0,
+    now: datetime | None = None,
 ) -> list[dict[str, Any]]:
+    """Select enrichment work without re-scraping fresh profiles.
+
+    Normal runs select new/pending creators and retry enrichment errors.
+    Refresh runs without an age threshold preserve the historical
+    ``--refresh-all`` behaviour.
+
+    When ``min_refresh_age_hours`` is positive, the call is treated as the
+    scheduled "refresh existing" phase: only already-enriched profiles whose
+    last successful profile scan is old enough are selected. Pending/error
+    items are intentionally left for the normal enrichment phase.
+    """
     items = queue_payload.get("items", [])
     if not isinstance(items, list):
         return []
 
+    current_time = now or datetime.now(timezone.utc)
+    if current_time.tzinfo is None:
+        current_time = current_time.replace(tzinfo=timezone.utc)
+    current_time = current_time.astimezone(timezone.utc)
+
+    min_age = max(0.0, float(min_refresh_age_hours or 0))
     eligible = []
+
     for item in items:
         if not isinstance(item, dict):
             continue
+
         username = normalize_username(item.get("username"))
         if not username:
             continue
 
         status = str(item.get("status") or "pending_profile_scan")
-        if refresh_all or status in {
+
+        if refresh_all:
+            if min_age > 0:
+                # The 7-day refresh phase is for existing, successfully
+                # enriched profiles only. New/error accounts are handled by
+                # the preceding normal enrichment phase.
+                if status != "enriched":
+                    continue
+
+                scanned_at = _parse_iso_datetime(
+                    item.get("last_profile_scan_at")
+                    or item.get("last_enriched_at")
+                )
+
+                # Missing timestamp on an enriched row means we cannot prove
+                # that it is fresh, so allow a one-time refresh.
+                if scanned_at is not None:
+                    age_hours = (current_time - scanned_at).total_seconds() / 3600.0
+                    if age_hours < min_age:
+                        continue
+
+                eligible.append(item)
+            else:
+                eligible.append(item)
+        elif status in {
             "pending_profile_scan",
             "enrichment_error",
         }:
