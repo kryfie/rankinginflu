@@ -1,15 +1,62 @@
 {
   "meta": {
     "purpose": "Queue for authoritative profile enrichment",
-    "count": 154,
-    "updated_at": "2026-10-01T11:32:55.308248+00:00",
+    "count": 329,
+    "updated_at": "2026-10-01T11:58:05.512106+00:00",
     "discovery_filter_version": "v4-strong-pl-evidence"
   },
   "items": [
     {
+      "username": "monika.kociolek",
+      "tiktok_id": "80546969009434624",
+      "priority": 1,
+      "discovery_followers": 3941278,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "dzień z życia polska",
+        "skincare polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T11:17:48.873574+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
+    },
+    {
+      "username": "pavlloo",
+      "tiktok_id": "52843457572007936",
+      "priority": 2,
+      "discovery_followers": 2440594,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "codzienność polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "macioseu",
       "tiktok_id": "6620773331991789574",
-      "priority": 1,
+      "priority": 3,
       "discovery_followers": 2257019,
       "polish_signals": [
         "hashtag_pl",
@@ -33,7 +80,7 @@
     {
       "username": "ewa.masterchef",
       "tiktok_id": "7027389497621562374",
-      "priority": 2,
+      "priority": 4,
       "discovery_followers": 1459106,
       "polish_signals": [
         "flag_pl",
@@ -59,8 +106,8 @@
     {
       "username": "wydarzenia_24",
       "tiktok_id": "7214049440318112774",
-      "priority": 3,
-      "discovery_followers": 1141371,
+      "priority": 5,
+      "discovery_followers": 1141400,
       "polish_signals": [
         "hashtag_pl",
         "polish_text",
@@ -73,9 +120,10 @@
       ],
       "discovery_pl_confidence": 100.0,
       "found_by": [
-        "polska edukacja"
+        "polska edukacja",
+        "uroda polska"
       ],
-      "last_discovered_at": "2026-10-01T10:41:14.725838+00:00",
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
       "last_profile_scan_at": "2026-10-01T11:17:48.873574+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
@@ -83,7 +131,7 @@
     {
       "username": "goniec.pl",
       "tiktok_id": "6930317965603374085",
-      "priority": 4,
+      "priority": 6,
       "discovery_followers": 1100471,
       "polish_signals": [
         "hashtag_pl",
@@ -105,10 +153,32 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "skolimlatino",
+      "tiktok_id": "7106608421168432133",
+      "priority": 7,
+      "discovery_followers": 1041105,
+      "polish_signals": [
+        "flag_pl",
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "flag_pl",
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "perfumy polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "thepolishdad",
       "tiktok_id": "7130342762519839749",
-      "priority": 5,
-      "discovery_followers": 982097,
+      "priority": 8,
+      "discovery_followers": 981975,
       "polish_signals": [
         "channel_marker_pl",
         "flag_pl",
@@ -124,9 +194,10 @@
       ],
       "discovery_pl_confidence": 100.0,
       "found_by": [
+        "polski tata",
         "pov polska"
       ],
-      "last_discovered_at": "2026-10-01T10:41:14.725838+00:00",
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
       "last_profile_scan_at": "2026-10-01T11:17:48.873574+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
@@ -134,7 +205,7 @@
     {
       "username": "the_foodini",
       "tiktok_id": "6854206588006614021",
-      "priority": 6,
+      "priority": 9,
       "discovery_followers": 906685,
       "polish_signals": [
         "hashtag_pl",
@@ -158,9 +229,31 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "kitka00",
+      "tiktok_id": "113835460983930880",
+      "priority": 10,
+      "discovery_followers": 871923,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "pielęgnacja polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "lukas.tv",
       "tiktok_id": "6743683248050865158",
-      "priority": 7,
+      "priority": 11,
       "discovery_followers": 762317,
       "polish_signals": [
         "hashtag_pl",
@@ -182,9 +275,121 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "wydarzenia.polsat",
+      "tiktok_id": "7229352238975910938",
+      "priority": 12,
+      "discovery_followers": 719503,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "rodzina polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "aqatalewandowska",
+      "tiktok_id": "7184507764746650630",
+      "priority": 13,
+      "discovery_followers": 581774,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "outfit polska",
+        "perfumy polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "agastruskamua",
+      "tiktok_id": "6902880041119220741",
+      "priority": 14,
+      "discovery_followers": 565530,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "makeup polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "victoriaemilieee",
+      "tiktok_id": "6692077925922079750",
+      "priority": 15,
+      "discovery_followers": 520946,
+      "polish_signals": [
+        "flag_pl",
+        "hashtag_pl",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "flag_pl",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "makeup polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "dominik_wiecek",
+      "tiktok_id": "6809018386643977222",
+      "priority": 16,
+      "discovery_followers": 409159,
+      "polish_signals": [
+        "flag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "flag_pl",
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "codzienność polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "fajna.kucharka",
       "tiktok_id": "6875050703090435078",
-      "priority": 8,
+      "priority": 17,
       "discovery_followers": 399622,
       "polish_signals": [
         "hashtag_pl",
@@ -208,7 +413,7 @@
     {
       "username": "krakowiakiwlondynie",
       "tiktok_id": "6809347814150374405",
-      "priority": 9,
+      "priority": 18,
       "discovery_followers": 378158,
       "polish_signals": [
         "channel_marker_pl",
@@ -231,9 +436,32 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "wirtualnapolska",
+      "tiktok_id": "6693933034675291141",
+      "priority": 19,
+      "discovery_followers": 362059,
+      "polish_signals": [
+        "channel_marker_pl",
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "uroda polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "milosc_od_kuchni",
       "tiktok_id": "6930708127177032710",
-      "priority": 10,
+      "priority": 20,
       "discovery_followers": 349399,
       "polish_signals": [
         "hashtag_pl",
@@ -255,9 +483,121 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "kozaczek_pl",
+      "tiktok_id": "6794785279543772166",
+      "priority": 21,
+      "discovery_followers": 333722,
+      "polish_signals": [
+        "flag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "flag_pl",
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "polski tata"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "nikola.horbatiuk",
+      "tiktok_id": "7399364870460146721",
+      "priority": 22,
+      "discovery_followers": 326250,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "skincare polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "starsfromthestars",
+      "tiktok_id": "6988949349977015302",
+      "priority": 23,
+      "discovery_followers": 311294,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "paznokcie polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "karina_kozuszko",
+      "tiktok_id": "7032940683695506438",
+      "priority": 24,
+      "discovery_followers": 309448,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "pielęgnacja polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "dwcreativegroup",
+      "tiktok_id": "6548472438550696975",
+      "priority": 25,
+      "discovery_followers": 292906,
+      "polish_signals": [
+        "channel_marker_pl",
+        "poi_pl",
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "poi_pl",
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "włosy polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "miloneiro",
       "tiktok_id": "6623322122113335302",
-      "priority": 11,
+      "priority": 26,
       "discovery_followers": 288790,
       "polish_signals": [
         "hashtag_pl",
@@ -279,9 +619,53 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "33majkaaa_",
+      "tiktok_id": "7166700850382046214",
+      "priority": 27,
+      "discovery_followers": 285495,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "organizacja domu polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "lesscalm",
+      "tiktok_id": "6843736280704418821",
+      "priority": 28,
+      "discovery_followers": 249107,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "organizacja domu polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "furajedzenia",
       "tiktok_id": "7017528543982683141",
-      "priority": 12,
+      "priority": 29,
       "discovery_followers": 242161,
       "polish_signals": [
         "poi_pl",
@@ -303,10 +687,34 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
-      "username": "grzegorz.jankowski",
-      "tiktok_id": "7283253284864164896",
-      "priority": 13,
-      "discovery_followers": 227795,
+      "username": "stylovewarkocze",
+      "tiktok_id": "6781546713368396805",
+      "priority": 30,
+      "discovery_followers": 236776,
+      "polish_signals": [
+        "hashtag_pl",
+        "poi_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "poi_pl",
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "fryzury polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "dominikauznanskaa",
+      "tiktok_id": "149062616118632451",
+      "priority": 31,
+      "discovery_followers": 236029,
       "polish_signals": [
         "hashtag_pl",
         "polish_text",
@@ -319,17 +727,85 @@
       ],
       "discovery_pl_confidence": 100.0,
       "found_by": [
+        "pielęgnacja polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "joneswpolsce",
+      "tiktok_id": "7506665483824940054",
+      "priority": 32,
+      "discovery_followers": 231288,
+      "polish_signals": [
+        "poi_pl",
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "poi_pl",
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "włosy polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "grzegorz.jankowski",
+      "tiktok_id": "7283253284864164896",
+      "priority": 33,
+      "discovery_followers": 227833,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "codzienność polska",
         "polska edukacja"
       ],
-      "last_discovered_at": "2026-10-01T10:41:14.725838+00:00",
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
       "last_profile_scan_at": "2026-10-01T11:17:48.873574+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "hebe_poland",
+      "tiktok_id": "7260080802213708827",
+      "priority": 34,
+      "discovery_followers": 222252,
+      "polish_signals": [
+        "channel_marker_pl",
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "skincare polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "cyprianmajcherpodcast",
       "tiktok_id": "7332959472640312352",
-      "priority": 14,
+      "priority": 35,
       "discovery_followers": 219704,
       "polish_signals": [
         "hashtag_pl",
@@ -354,7 +830,7 @@
     {
       "username": "matisowy",
       "tiktok_id": "94466805426962432",
-      "priority": 15,
+      "priority": 36,
       "discovery_followers": 207169,
       "polish_signals": [
         "hashtag_pl",
@@ -376,9 +852,33 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "sephorapolska",
+      "tiktok_id": "7090518248676246533",
+      "priority": 37,
+      "discovery_followers": 203683,
+      "polish_signals": [
+        "channel_marker_pl",
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "kosmetyki polska",
+        "makijaż polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "amazingpolandtrip",
       "tiktok_id": "6641509200390406149",
-      "priority": 16,
+      "priority": 38,
       "discovery_followers": 175475,
       "polish_signals": [
         "channel_marker_pl",
@@ -401,9 +901,103 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "barbershopskc",
+      "tiktok_id": "7047625512998552581",
+      "priority": 39,
+      "discovery_followers": 154092,
+      "polish_signals": [
+        "hashtag_pl",
+        "poi_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "poi_pl",
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "włosy polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "czech_guy_in_warsaw",
+      "tiktok_id": "6846800779963008006",
+      "priority": 40,
+      "discovery_followers": 147879,
+      "polish_signals": [
+        "channel_marker_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "fashion polska",
+        "stylizacje polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "polskie.seriale63",
+      "tiktok_id": "7491037986919908374",
+      "priority": 41,
+      "discovery_followers": 134012,
+      "polish_signals": [
+        "channel_marker_pl",
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "codzienność polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "oriflame.poland",
+      "tiktok_id": "7063387335833043973",
+      "priority": 42,
+      "discovery_followers": 129246,
+      "polish_signals": [
+        "channel_marker_pl",
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "makijaż polska",
+        "skincare polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "jahasie_",
       "tiktok_id": "7053687631817573381",
-      "priority": 17,
+      "priority": 43,
       "discovery_followers": 129049,
       "polish_signals": [
         "hashtag_pl",
@@ -429,7 +1023,7 @@
     {
       "username": "zobacz.wow.show",
       "tiktok_id": "7281319648070894624",
-      "priority": 18,
+      "priority": 44,
       "discovery_followers": 123180,
       "polish_signals": [
         "hashtag_pl",
@@ -451,9 +1045,33 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "chefleooo",
+      "tiktok_id": "6997478878998840325",
+      "priority": 45,
+      "discovery_followers": 121669,
+      "polish_signals": [
+        "hashtag_pl",
+        "poi_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "poi_pl",
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "włosy polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "schagii_official",
       "tiktok_id": "6617360911341076486",
-      "priority": 19,
+      "priority": 46,
       "discovery_followers": 117430,
       "polish_signals": [
         "poi_pl",
@@ -477,7 +1095,7 @@
     {
       "username": "maciej.brudzewski",
       "tiktok_id": "6779333408990692358",
-      "priority": 20,
+      "priority": 47,
       "discovery_followers": 115231,
       "polish_signals": [
         "hashtag_pl",
@@ -499,9 +1117,31 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "hrustyqs",
+      "tiktok_id": "7259467260838200346",
+      "priority": 48,
+      "discovery_followers": 114964,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "makeup polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "juliee.2010",
       "tiktok_id": "6912548580847584262",
-      "priority": 21,
+      "priority": 49,
       "discovery_followers": 103991,
       "polish_signals": [
         "hashtag_pl",
@@ -525,7 +1165,7 @@
     {
       "username": "sara.cwalina",
       "tiktok_id": "141607849159241728",
-      "priority": 22,
+      "priority": 50,
       "discovery_followers": 100614,
       "polish_signals": [
         "hashtag_pl",
@@ -547,9 +1187,31 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "aniaaiken",
+      "tiktok_id": "6892227655446643718",
+      "priority": 51,
+      "discovery_followers": 99846,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "paznokcie polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "rozrywkasw",
       "tiktok_id": "7478627432078935062",
-      "priority": 23,
+      "priority": 52,
       "discovery_followers": 98960,
       "polish_signals": [
         "hashtag_pl",
@@ -573,7 +1235,7 @@
     {
       "username": "viki.waskowiak",
       "tiktok_id": "6641894665153527814",
-      "priority": 24,
+      "priority": 53,
       "discovery_followers": 95438,
       "polish_signals": [
         "hashtag_pl",
@@ -595,9 +1257,76 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "cetaphil_polska",
+      "tiktok_id": "7138372852071515142",
+      "priority": 54,
+      "discovery_followers": 88143,
+      "polish_signals": [
+        "channel_marker_pl",
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "skincare polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "monikaporajrozanska",
+      "tiktok_id": "6816449479144752133",
+      "priority": 55,
+      "discovery_followers": 85792,
+      "polish_signals": [
+        "hashtag_pl",
+        "poi_pl",
+        "polish_text",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "poi_pl",
+        "polish_text"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "moda polska tiktok"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "nat.warot",
+      "tiktok_id": "6838153386416882693",
+      "priority": 56,
+      "discovery_followers": 84541,
+      "polish_signals": [
+        "poi_pl",
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "poi_pl",
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "pielęgnacja polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "konsp1ra",
       "tiktok_id": "7414935407307588640",
-      "priority": 25,
+      "priority": 57,
       "discovery_followers": 79460,
       "polish_signals": [
         "flag_pl",
@@ -614,17 +1343,65 @@
       "discovery_pl_confidence": 100.0,
       "found_by": [
         "polska muzyka",
-        "pov polska"
+        "pov polska",
+        "rodzina polska"
       ],
-      "last_discovered_at": "2026-10-01T10:41:14.725838+00:00",
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
       "last_profile_scan_at": "2026-10-01T11:17:48.873574+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "thepolishsyn",
+      "tiktok_id": "7391143883335992353",
+      "priority": 58,
+      "discovery_followers": 77099,
+      "polish_signals": [
+        "channel_marker_pl",
+        "flag_pl",
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "flag_pl",
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "polski tata"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "bogna.sworowska",
+      "tiktok_id": "7223858810308658202",
+      "priority": 59,
+      "discovery_followers": 70111,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "codzienność polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "ola.jozwiak",
       "tiktok_id": "167185954481303552",
-      "priority": 26,
+      "priority": 60,
       "discovery_followers": 69411,
       "polish_signals": [
         "hashtag_pl",
@@ -646,17 +1423,37 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "joannigal",
+      "tiktok_id": "7334830865762026529",
+      "priority": 61,
+      "discovery_followers": 63614,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "buty polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "menelgeographic",
       "tiktok_id": "6921706513291969541",
-      "priority": 27,
+      "priority": 62,
       "discovery_followers": 63377,
       "polish_signals": [
-        "hashtag",
         "hashtag_pl",
         "poi_pl",
         "polish_text",
         "subtitle_pl",
-        "title",
         "title_marker_pl"
       ],
       "polish_strong_signals": [
@@ -677,7 +1474,7 @@
     {
       "username": "icampolska",
       "tiktok_id": "6967210079804392453",
-      "priority": 28,
+      "priority": 63,
       "discovery_followers": 62522,
       "polish_signals": [
         "channel_marker_pl",
@@ -700,9 +1497,76 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "edyta.baranowska",
+      "tiktok_id": "118121004253466624",
+      "priority": 64,
+      "discovery_followers": 59038,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "skincare polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "tutajroksana",
+      "tiktok_id": "7342550383367062560",
+      "priority": 65,
+      "discovery_followers": 58291,
+      "polish_signals": [
+        "poi_pl",
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "poi_pl",
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "organizacja domu polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "zbigniewboguckipl",
+      "tiktok_id": "7360644854495314976",
+      "priority": 66,
+      "discovery_followers": 58247,
+      "polish_signals": [
+        "flag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "flag_pl",
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "buty polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "melodiatvpolska_",
       "tiktok_id": "6640941950349099014",
-      "priority": 29,
+      "priority": 67,
       "discovery_followers": 56853,
       "polish_signals": [
         "channel_marker_pl",
@@ -725,7 +1589,7 @@
     {
       "username": "kamilzaprasza",
       "tiktok_id": "7611038699002381334",
-      "priority": 30,
+      "priority": 68,
       "discovery_followers": 54016,
       "polish_signals": [
         "channel_marker_pl",
@@ -750,7 +1614,7 @@
     {
       "username": "malgo_official",
       "tiktok_id": "6738102138214269957",
-      "priority": 31,
+      "priority": 69,
       "discovery_followers": 51748,
       "polish_signals": [
         "hashtag_pl",
@@ -774,7 +1638,7 @@
     {
       "username": "onelife_photo",
       "tiktok_id": "6927404593215505413",
-      "priority": 32,
+      "priority": 70,
       "discovery_followers": 49195,
       "polish_signals": [
         "hashtag_pl",
@@ -798,7 +1662,7 @@
     {
       "username": "rafal.rutkowski",
       "tiktok_id": "7096403006182163462",
-      "priority": 33,
+      "priority": 71,
       "discovery_followers": 48794,
       "polish_signals": [
         "hashtag_pl",
@@ -820,9 +1684,31 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "olavogaa",
+      "tiktok_id": "6859656607853298693",
+      "priority": 72,
+      "discovery_followers": 47922,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "fashion polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "original_ryszardmazur",
       "tiktok_id": "7297951105684816929",
-      "priority": 34,
+      "priority": 73,
       "discovery_followers": 46944,
       "polish_signals": [
         "hashtag_pl",
@@ -846,7 +1732,7 @@
     {
       "username": "jakwfinanse",
       "tiktok_id": "7210022548825244677",
-      "priority": 35,
+      "priority": 74,
       "discovery_followers": 46920,
       "polish_signals": [
         "poi_pl",
@@ -870,7 +1756,7 @@
     {
       "username": "zolwieksiazkowe",
       "tiktok_id": "7107601009652139013",
-      "priority": 36,
+      "priority": 75,
       "discovery_followers": 46432,
       "polish_signals": [
         "hashtag_pl",
@@ -894,7 +1780,7 @@
     {
       "username": "lukaszwolosowicz",
       "tiktok_id": "7190360913849222150",
-      "priority": 37,
+      "priority": 76,
       "discovery_followers": 44454,
       "polish_signals": [
         "hashtag_pl",
@@ -918,7 +1804,7 @@
     {
       "username": "trueboyzz",
       "tiktok_id": "7534056507521549334",
-      "priority": 38,
+      "priority": 77,
       "discovery_followers": 40064,
       "polish_signals": [
         "hashtag_pl",
@@ -940,9 +1826,33 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "bezprzepraszam",
+      "tiktok_id": "7533232588643697697",
+      "priority": 78,
+      "discovery_followers": 39332,
+      "polish_signals": [
+        "flag_pl",
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "flag_pl",
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "uroda polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "kontrowersyjnymarek",
       "tiktok_id": "6959202934471738374",
-      "priority": 39,
+      "priority": 79,
       "discovery_followers": 39043,
       "polish_signals": [
         "hashtag_pl",
@@ -964,9 +1874,31 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "bites_family",
+      "tiktok_id": "7582319676623094807",
+      "priority": 80,
+      "discovery_followers": 34412,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "skincare polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "2cytramon2",
       "tiktok_id": "7615521098349151254",
-      "priority": 40,
+      "priority": 81,
       "discovery_followers": 34118,
       "polish_signals": [
         "hashtag_pl",
@@ -992,7 +1924,7 @@
     {
       "username": "maddy.bijou",
       "tiktok_id": "7497664484066214934",
-      "priority": 41,
+      "priority": 82,
       "discovery_followers": 32166,
       "polish_signals": [
         "hashtag_pl",
@@ -1016,8 +1948,8 @@
     {
       "username": "archiwum.tajemnic",
       "tiktok_id": "7621279833331418134",
-      "priority": 42,
-      "discovery_followers": 31568,
+      "priority": 83,
+      "discovery_followers": 31573,
       "polish_signals": [
         "flag_pl",
         "hashtag_pl",
@@ -1032,9 +1964,10 @@
       ],
       "discovery_pl_confidence": 100.0,
       "found_by": [
+        "codzienność polska",
         "polska beauty"
       ],
-      "last_discovered_at": "2026-10-01T10:41:14.725838+00:00",
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
       "last_profile_scan_at": "2026-10-01T11:17:48.873574+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
@@ -1042,7 +1975,7 @@
     {
       "username": "k_sajdutka",
       "tiktok_id": "6601331071571918853",
-      "priority": 43,
+      "priority": 84,
       "discovery_followers": 30220,
       "polish_signals": [
         "poi_pl",
@@ -1067,7 +2000,7 @@
     {
       "username": "laurencja111",
       "tiktok_id": "7657955101774971906",
-      "priority": 44,
+      "priority": 85,
       "discovery_followers": 28241,
       "polish_signals": [
         "hashtag_pl",
@@ -1089,9 +2022,55 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "cococollection_anita",
+      "tiktok_id": "7171148545830192134",
+      "priority": 86,
+      "discovery_followers": 27204,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "pielęgnacja polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "dm_polska",
+      "tiktok_id": "7263374976664519712",
+      "priority": 87,
+      "discovery_followers": 27165,
+      "polish_signals": [
+        "channel_marker_pl",
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "makijaż polska",
+        "szafa polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "galeria.krakowska",
       "tiktok_id": "7184440864684639237",
-      "priority": 45,
+      "priority": 88,
       "discovery_followers": 26869,
       "polish_signals": [
         "channel_marker_pl",
@@ -1113,9 +2092,31 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "zu.wis",
+      "tiktok_id": "6803323323184235526",
+      "priority": 89,
+      "discovery_followers": 26209,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "rodzina polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "dzunglahumoru",
       "tiktok_id": "6977685494500033541",
-      "priority": 46,
+      "priority": 90,
       "discovery_followers": 25974,
       "polish_signals": [
         "hashtag_pl",
@@ -1138,9 +2139,58 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "nudy_z_zycia",
+      "tiktok_id": "7054881014799418374",
+      "priority": 91,
+      "discovery_followers": 25589,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "makeup polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "adrianwalkalone",
+      "tiktok_id": "6762628260549231621",
+      "priority": 92,
+      "discovery_followers": 25113,
+      "polish_signals": [
+        "hashtag_pl",
+        "poi_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "poi_pl",
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "codzienność polska",
+        "humor polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T11:17:48.873574+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
+    },
+    {
       "username": "70sboy",
       "tiktok_id": "7568110595765978134",
-      "priority": 47,
+      "priority": 93,
       "discovery_followers": 24964,
       "polish_signals": [
         "hashtag_pl",
@@ -1154,9 +2204,10 @@
       ],
       "discovery_pl_confidence": 100.0,
       "found_by": [
+        "moda polska tiktok",
         "polska moda"
       ],
-      "last_discovered_at": "2026-10-01T10:41:14.725838+00:00",
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
       "last_profile_scan_at": "2026-10-01T11:17:48.873574+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
@@ -1164,7 +2215,7 @@
     {
       "username": "pier_dolle",
       "tiktok_id": "7479063440197125153",
-      "priority": 48,
+      "priority": 94,
       "discovery_followers": 24735,
       "polish_signals": [
         "hashtag_pl",
@@ -1188,14 +2239,12 @@
     {
       "username": "andrzej9448",
       "tiktok_id": "7364679484983165985",
-      "priority": 49,
+      "priority": 95,
       "discovery_followers": 24506,
       "polish_signals": [
-        "hashtag",
         "hashtag_pl",
         "polish_text",
         "subtitle_pl",
-        "title",
         "title_marker_pl"
       ],
       "polish_strong_signals": [
@@ -1212,9 +2261,31 @@
       "last_profile_scan_at": "2026-10-01T08:32:12.336106+00:00"
     },
     {
+      "username": "wika.dunajj",
+      "tiktok_id": "6894355514571801602",
+      "priority": 96,
+      "discovery_followers": 24449,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "buty polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "darkskies_media",
       "tiktok_id": "7545836097364837398",
-      "priority": 50,
+      "priority": 97,
       "discovery_followers": 23604,
       "polish_signals": [
         "flag_pl",
@@ -1240,9 +2311,77 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "klatt.ania",
+      "tiktok_id": "6623739386566967301",
+      "priority": 98,
+      "discovery_followers": 23590,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "moda polska tiktok"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "saway.official",
+      "tiktok_id": "7055268197880726534",
+      "priority": 99,
+      "discovery_followers": 23560,
+      "polish_signals": [
+        "hashtag_pl",
+        "poi_pl",
+        "polish_text",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "poi_pl",
+        "polish_text"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "buty polska",
+        "stylizacje polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "ufryzjerow",
+      "tiktok_id": "6693843965123101701",
+      "priority": 100,
+      "discovery_followers": 21559,
+      "polish_signals": [
+        "poi_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "poi_pl",
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "fryzury polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "techkominfo_pl",
       "tiktok_id": "6970276880943744006",
-      "priority": 51,
+      "priority": 101,
       "discovery_followers": 21307,
       "polish_signals": [
         "poi_pl",
@@ -1267,7 +2406,7 @@
     {
       "username": "polskieforumrodzicow",
       "tiktok_id": "7376631020987647009",
-      "priority": 52,
+      "priority": 102,
       "discovery_followers": 20956,
       "polish_signals": [
         "channel_marker_pl",
@@ -1292,7 +2431,7 @@
     {
       "username": "oghalina",
       "tiktok_id": "6867878539145004037",
-      "priority": 53,
+      "priority": 103,
       "discovery_followers": 20588,
       "polish_signals": [
         "poi_pl",
@@ -1316,7 +2455,7 @@
     {
       "username": "tuzawszejestproblem",
       "tiktok_id": "7545479851147412502",
-      "priority": 54,
+      "priority": 104,
       "discovery_followers": 20390,
       "polish_signals": [
         "hashtag_pl",
@@ -1342,7 +2481,7 @@
     {
       "username": "luxcreator1",
       "tiktok_id": "7677653524570473494",
-      "priority": 55,
+      "priority": 105,
       "discovery_followers": 19983,
       "polish_signals": [
         "hashtag_pl",
@@ -1370,7 +2509,7 @@
     {
       "username": "polskawieszhumorem",
       "tiktok_id": "7658672586657776662",
-      "priority": 56,
+      "priority": 106,
       "discovery_followers": 19674,
       "polish_signals": [
         "channel_marker_pl",
@@ -1400,7 +2539,7 @@
     {
       "username": "druzynazycia",
       "tiktok_id": "7294350048959317025",
-      "priority": 57,
+      "priority": 107,
       "discovery_followers": 19491,
       "polish_signals": [
         "hashtag_pl",
@@ -1422,9 +2561,31 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "mariazjava_mua",
+      "tiktok_id": "205125864282632192",
+      "priority": 108,
+      "discovery_followers": 18549,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "skincare polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "martinskolsky",
       "tiktok_id": "6809938703025554437",
-      "priority": 58,
+      "priority": 109,
       "discovery_followers": 18137,
       "polish_signals": [
         "flag_pl",
@@ -1450,9 +2611,77 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "bbgawronska",
+      "tiktok_id": "7033897983305974789",
+      "priority": 110,
+      "discovery_followers": 18037,
+      "polish_signals": [
+        "hashtag_pl",
+        "poi_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "poi_pl",
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "rodzina polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "tomonikaa",
+      "tiktok_id": "7366730602136749088",
+      "priority": 111,
+      "discovery_followers": 17874,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "pielęgnacja polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "olgaperczakbuda",
+      "tiktok_id": "6791837538069382149",
+      "priority": 112,
+      "discovery_followers": 17383,
+      "polish_signals": [
+        "poi_pl",
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "poi_pl",
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "fashion polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "enemel6986",
       "tiktok_id": "7350803505948738593",
-      "priority": 59,
+      "priority": 113,
       "discovery_followers": 17043,
       "polish_signals": [
         "hashtag_pl",
@@ -1475,9 +2704,31 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "pixxo1994",
+      "tiktok_id": "7006788491607098373",
+      "priority": 114,
+      "discovery_followers": 16892,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "fryzury polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "amourzworld",
       "tiktok_id": "6644954688360038406",
-      "priority": 60,
+      "priority": 115,
       "discovery_followers": 16845,
       "polish_signals": [
         "flag_pl",
@@ -1501,7 +2752,7 @@
     {
       "username": "motywujemywas.pl",
       "tiktok_id": "7473595597535429654",
-      "priority": 61,
+      "priority": 116,
       "discovery_followers": 16478,
       "polish_signals": [
         "hashtag_pl",
@@ -1526,7 +2777,7 @@
     {
       "username": "byli.widzieli",
       "tiktok_id": "7402963077380080672",
-      "priority": 62,
+      "priority": 117,
       "discovery_followers": 15820,
       "polish_signals": [
         "poi_pl",
@@ -1551,7 +2802,7 @@
     {
       "username": "tatiana84497",
       "tiktok_id": "7220308047032812549",
-      "priority": 63,
+      "priority": 118,
       "discovery_followers": 15614,
       "polish_signals": [
         "flag_pl",
@@ -1577,7 +2828,7 @@
     {
       "username": "polishwithgreg",
       "tiktok_id": "7562619678532273184",
-      "priority": 64,
+      "priority": 119,
       "discovery_followers": 15075,
       "polish_signals": [
         "channel_marker_pl",
@@ -1604,7 +2855,7 @@
     {
       "username": "trendingtodaypl",
       "tiktok_id": "7502555980255544342",
-      "priority": 65,
+      "priority": 120,
       "discovery_followers": 14057,
       "polish_signals": [
         "hashtag_pl",
@@ -1626,9 +2877,33 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "nasticaropl",
+      "tiktok_id": "7664977345564673046",
+      "priority": 121,
+      "discovery_followers": 13358,
+      "polish_signals": [
+        "flag_pl",
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "flag_pl",
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "makijaż polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "kinga.kosidowska",
       "tiktok_id": "150712698056511488",
-      "priority": 66,
+      "priority": 122,
       "discovery_followers": 13129,
       "polish_signals": [
         "hashtag_pl",
@@ -1650,9 +2925,31 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "wierawier",
+      "tiktok_id": "7245390680872731674",
+      "priority": 123,
+      "discovery_followers": 13114,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "fashion polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "jestem_legenda1803",
       "tiktok_id": "7371734928285336609",
-      "priority": 67,
+      "priority": 124,
       "discovery_followers": 12906,
       "polish_signals": [
         "hashtag_pl",
@@ -1676,7 +2973,7 @@
     {
       "username": "polski.gringo",
       "tiktok_id": "7023713326723367941",
-      "priority": 68,
+      "priority": 125,
       "discovery_followers": 12835,
       "polish_signals": [
         "channel_marker_pl",
@@ -1691,9 +2988,10 @@
       ],
       "discovery_pl_confidence": 100.0,
       "found_by": [
-        "polski humor"
+        "polski humor",
+        "polski tata"
       ],
-      "last_discovered_at": "2026-10-01T10:41:14.725838+00:00",
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
       "last_profile_scan_at": "2026-10-01T11:17:48.873574+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
@@ -1701,7 +2999,7 @@
     {
       "username": "hasky2111",
       "tiktok_id": "7057335016430863365",
-      "priority": 69,
+      "priority": 126,
       "discovery_followers": 12627,
       "polish_signals": [
         "hashtag_pl",
@@ -1723,16 +3021,14 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
-      "username": "mateusz_macierakowski",
-      "tiktok_id": "7009565484010849286",
-      "priority": 70,
-      "discovery_followers": 12060,
+      "username": "szuzia01",
+      "tiktok_id": "7291943961068078112",
+      "priority": 127,
+      "discovery_followers": 12110,
       "polish_signals": [
-        "hashtag",
         "hashtag_pl",
         "polish_text",
         "subtitle_pl",
-        "title",
         "title_marker_pl"
       ],
       "polish_strong_signals": [
@@ -1741,19 +3037,42 @@
       ],
       "discovery_pl_confidence": 100.0,
       "found_by": [
+        "kosmetyki polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "mateusz_macierakowski",
+      "tiktok_id": "7009565484010849286",
+      "priority": 128,
+      "discovery_followers": 12061,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "codzienność polska",
         "dzień z życia polska",
         "lifestyle polska",
         "polska edukacja",
         "polskatiktok"
       ],
-      "last_discovered_at": "2026-10-01T10:41:14.725838+00:00",
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
       "last_profile_scan_at": "2026-10-01T08:32:12.336106+00:00"
     },
     {
       "username": "bebe__blu",
       "tiktok_id": "7358361638463947808",
-      "priority": 71,
+      "priority": 129,
       "discovery_followers": 12059,
       "polish_signals": [
         "hashtag_pl",
@@ -1777,7 +3096,7 @@
     {
       "username": "knorrpolska",
       "tiktok_id": "7329501951674483745",
-      "priority": 72,
+      "priority": 130,
       "discovery_followers": 11415,
       "polish_signals": [
         "channel_marker_pl",
@@ -1801,7 +3120,7 @@
     {
       "username": "andri.nesti",
       "tiktok_id": "6763288907104617477",
-      "priority": 73,
+      "priority": 131,
       "discovery_followers": 10249,
       "polish_signals": [
         "hashtag_pl",
@@ -1823,9 +3142,117 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "mistrzkulkopczyns",
+      "tiktok_id": "7173694284997248006",
+      "priority": 132,
+      "discovery_followers": 10143,
+      "polish_signals": [
+        "hashtag_pl",
+        "poi_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "poi_pl",
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
+      "found_by": [
+        "dom polska tiktok"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "jeleniewska",
+      "tiktok_id": "6514356205987599375",
+      "priority": 133,
+      "discovery_followers": 13534575,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 97.5,
+      "found_by": [
+        "makijaż polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "kladwisia",
+      "tiktok_id": "6560383051125538822",
+      "priority": 134,
+      "discovery_followers": 719378,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 97.5,
+      "found_by": [
+        "makeup polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "rocksankaroxi",
+      "tiktok_id": "6810008393450488837",
+      "priority": 135,
+      "discovery_followers": 615944,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 97.5,
+      "found_by": [
+        "włosy polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "emilka.kostyk",
+      "tiktok_id": "6804928822540223494",
+      "priority": 136,
+      "discovery_followers": 548768,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 97.5,
+      "found_by": [
+        "makeup polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "dla_pieniedzy",
       "tiktok_id": "7081177836397282310",
-      "priority": 74,
+      "priority": 137,
       "discovery_followers": 412116,
       "polish_signals": [
         "polish_text",
@@ -1847,9 +3274,94 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "liszotee",
+      "tiktok_id": "6775115031157212166",
+      "priority": 138,
+      "discovery_followers": 381683,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 97.5,
+      "found_by": [
+        "kosmetyki polska",
+        "makeup polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "kamilalapa",
+      "tiktok_id": "6573993364190134277",
+      "priority": 139,
+      "discovery_followers": 359158,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 97.5,
+      "found_by": [
+        "makijaż polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "katarzyna.pieczynska",
+      "tiktok_id": "7033865699672130565",
+      "priority": 140,
+      "discovery_followers": 282490,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 97.5,
+      "found_by": [
+        "makijaż polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "piotrsierpinskihair",
+      "tiktok_id": "6894265712551658497",
+      "priority": 141,
+      "discovery_followers": 266954,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 97.5,
+      "found_by": [
+        "fryzury polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "suziebandit",
       "tiktok_id": "6764832126191518725",
-      "priority": 75,
+      "priority": 142,
       "discovery_followers": 264315,
       "polish_signals": [
         "polish_text",
@@ -1870,10 +3382,10 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
-      "username": "podrozezesmakiem",
-      "tiktok_id": "7197037400421811205",
-      "priority": 76,
-      "discovery_followers": 85598,
+      "username": "samplestore.pl",
+      "tiktok_id": "7028980640020792325",
+      "priority": 143,
+      "discovery_followers": 178844,
       "polish_signals": [
         "polish_text",
         "subtitle_pl",
@@ -1885,17 +3397,123 @@
       ],
       "discovery_pl_confidence": 97.5,
       "found_by": [
-        "polska jedzenie"
+        "streetwear polska"
       ],
-      "last_discovered_at": "2026-10-01T10:41:14.725838+00:00",
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "katarzyna.lech",
+      "tiktok_id": "135883672360046592",
+      "priority": 144,
+      "discovery_followers": 130016,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 97.5,
+      "found_by": [
+        "kosmetyki polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "ciekawus",
+      "tiktok_id": "7597494984908932118",
+      "priority": 145,
+      "discovery_followers": 120208,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 97.5,
+      "found_by": [
+        "kosmetyki polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "patrykwhale",
+      "tiktok_id": "7134315586581955589",
+      "priority": 146,
+      "discovery_followers": 111153,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 97.5,
+      "found_by": [
+        "perfumy polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "podrozezesmakiem",
+      "tiktok_id": "7197037400421811205",
+      "priority": 147,
+      "discovery_followers": 85608,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 97.5,
+      "found_by": [
+        "polska jedzenie",
+        "uroda polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
       "last_profile_scan_at": "2026-10-01T11:17:48.873574+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "justbeckofficial",
+      "tiktok_id": "6760665217560560646",
+      "priority": 148,
+      "discovery_followers": 80589,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 97.5,
+      "found_by": [
+        "makeup polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "geopolitai",
       "tiktok_id": "7470426330208142358",
-      "priority": 77,
+      "priority": 149,
       "discovery_followers": 72101,
       "polish_signals": [
         "polish_text",
@@ -1918,7 +3536,7 @@
     {
       "username": "siodmywswiecie.pl",
       "tiktok_id": "7113957817064817669",
-      "priority": 78,
+      "priority": 150,
       "discovery_followers": 71784,
       "polish_signals": [
         "polish_text",
@@ -1939,9 +3557,72 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "patrycja.skin",
+      "tiktok_id": "6793828188021572613",
+      "priority": 151,
+      "discovery_followers": 66748,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 97.5,
+      "found_by": [
+        "makeup polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "lvx.angel",
+      "tiktok_id": "92372577326624768",
+      "priority": 152,
+      "discovery_followers": 66310,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 97.5,
+      "found_by": [
+        "skincare polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "prabunek",
+      "tiktok_id": "7371647348030489632",
+      "priority": 153,
+      "discovery_followers": 52993,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 97.5,
+      "found_by": [
+        "codzienność polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "autosmiech",
       "tiktok_id": "7490086969218188321",
-      "priority": 79,
+      "priority": 154,
       "discovery_followers": 50587,
       "polish_signals": [
         "polish_text",
@@ -1965,7 +3646,7 @@
     {
       "username": "behave.polska",
       "tiktok_id": "7626858919736771607",
-      "priority": 80,
+      "priority": 155,
       "discovery_followers": 48574,
       "polish_signals": [
         "channel_marker_pl",
@@ -1986,9 +3667,51 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "agakle_",
+      "tiktok_id": "6864825774035092485",
+      "priority": 156,
+      "discovery_followers": 44772,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 97.5,
+      "found_by": [
+        "makijaż polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "victorianiedzwiedz",
+      "tiktok_id": "6632319464363278338",
+      "priority": 157,
+      "discovery_followers": 36639,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 97.5,
+      "found_by": [
+        "kosmetyki polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "mocne.sceny.pl",
       "tiktok_id": "7651718048424018966",
-      "priority": 81,
+      "priority": 158,
       "discovery_followers": 26686,
       "polish_signals": [
         "polish_text",
@@ -2009,10 +3732,31 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "jula_chrobot",
+      "tiktok_id": "6814171688050476037",
+      "priority": 159,
+      "discovery_followers": 16889,
+      "polish_signals": [
+        "channel_marker_pl",
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 97.5,
+      "found_by": [
+        "paznokcie polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "veronika.bernat",
       "tiktok_id": "7152970258151490565",
-      "priority": 82,
-      "discovery_followers": 15191,
+      "priority": 160,
+      "discovery_followers": 15618,
       "polish_signals": [
         "polish_text",
         "subtitle_pl",
@@ -2024,17 +3768,39 @@
       ],
       "discovery_pl_confidence": 97.5,
       "found_by": [
+        "pielęgnacja polska",
         "vlog polska"
       ],
-      "last_discovered_at": "2026-10-01T10:41:14.725838+00:00",
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
       "last_profile_scan_at": "2026-10-01T11:17:48.873574+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "klaudasiak",
+      "tiktok_id": "6992685435073053702",
+      "priority": 161,
+      "discovery_followers": 11631,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 97.5,
+      "found_by": [
+        "kosmetyki polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "kabaret.tv",
       "tiktok_id": "7358441842424349729",
-      "priority": 83,
+      "priority": 162,
       "discovery_followers": 11050,
       "polish_signals": [
         "polish_text",
@@ -2057,7 +3823,7 @@
     {
       "username": "zaklinamaria",
       "tiktok_id": "6803217642255451141",
-      "priority": 84,
+      "priority": 163,
       "discovery_followers": 10434,
       "polish_signals": [
         "polish_text",
@@ -2080,7 +3846,7 @@
     {
       "username": "hot_chocolate_11",
       "tiktok_id": "6842970717841015814",
-      "priority": 85,
+      "priority": 164,
       "discovery_followers": 794892,
       "polish_signals": [
         "hashtag_pl",
@@ -2100,9 +3866,29 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "j.tere",
+      "tiktok_id": "6611555526009913349",
+      "priority": 165,
+      "discovery_followers": 407368,
+      "polish_signals": [
+        "hashtag_pl",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 95.0,
+      "found_by": [
+        "makijaż polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "kabaretczwartafala",
       "tiktok_id": "6900893293656376325",
-      "priority": 86,
+      "priority": 166,
       "discovery_followers": 263529,
       "polish_signals": [
         "hashtag_pl",
@@ -2123,10 +3909,10 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
-      "username": "mocnabanda",
-      "tiktok_id": "7575906498481996822",
-      "priority": 87,
-      "discovery_followers": 168071,
+      "username": "bigkolcz",
+      "tiktok_id": "6754804132454614021",
+      "priority": 167,
+      "discovery_followers": 259710,
       "polish_signals": [
         "hashtag_pl",
         "subtitle_pl",
@@ -2137,19 +3923,80 @@
       ],
       "discovery_pl_confidence": 95.0,
       "found_by": [
+        "codzienność polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "mocnabanda",
+      "tiktok_id": "7575906498481996822",
+      "priority": 168,
+      "discovery_followers": 168107,
+      "polish_signals": [
+        "hashtag_pl",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 95.0,
+      "found_by": [
+        "buty polska",
         "polska",
         "pov polska"
       ],
-      "last_discovered_at": "2026-10-01T10:41:14.725838+00:00",
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
       "last_profile_scan_at": "2026-10-01T09:15:43.432474+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
-      "username": "loooovefashion",
-      "tiktok_id": "223297240629637120",
-      "priority": 88,
-      "discovery_followers": 51112,
+      "username": "klaudigrab",
+      "tiktok_id": "6941843677920953349",
+      "priority": 169,
+      "discovery_followers": 137623,
+      "polish_signals": [
+        "hashtag_pl",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 95.0,
+      "found_by": [
+        "fashion polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "glamourpoland",
+      "tiktok_id": "6783773402663699461",
+      "priority": 170,
+      "discovery_followers": 104425,
+      "polish_signals": [
+        "channel_marker_pl",
+        "poi_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "poi_pl"
+      ],
+      "discovery_pl_confidence": 95.0,
+      "found_by": [
+        "stylizacje polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "stanislav_lastochkin",
+      "tiktok_id": "6830838705429070854",
+      "priority": 171,
+      "discovery_followers": 80606,
       "polish_signals": [
         "flag_pl",
         "hashtag_pl",
@@ -2162,33 +4009,78 @@
       ],
       "discovery_pl_confidence": 95.0,
       "found_by": [
-        "polska moda"
+        "uroda polska"
       ],
-      "last_discovered_at": "2026-10-01T10:41:14.725838+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-10-01T11:17:48.873574+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
     },
     {
-      "username": "adrianwalkalone",
-      "tiktok_id": "6762628260549231621",
-      "priority": 89,
-      "discovery_followers": 25100,
+      "username": "pl_igorek",
+      "tiktok_id": "7003837121715930118",
+      "priority": 172,
+      "discovery_followers": 65680,
       "polish_signals": [
+        "flag_pl",
+        "hashtag_pl",
+        "polish_text",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "flag_pl",
+        "polish_text"
+      ],
+      "discovery_pl_confidence": 95.0,
+      "found_by": [
+        "szafa polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "dompolak00",
+      "tiktok_id": "7570485852970501123",
+      "priority": 173,
+      "discovery_followers": 64959,
+      "polish_signals": [
+        "flag_pl",
         "hashtag_pl",
         "polish_text",
         "subtitle_pl",
         "title_marker_pl"
       ],
       "polish_strong_signals": [
+        "flag_pl",
         "polish_text",
         "subtitle_pl"
       ],
       "discovery_pl_confidence": 95.0,
       "found_by": [
-        "humor polska"
+        "dom polska tiktok"
       ],
-      "last_discovered_at": "2026-10-01T10:41:14.725838+00:00",
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "loooovefashion",
+      "tiktok_id": "223297240629637120",
+      "priority": 174,
+      "discovery_followers": 51114,
+      "polish_signals": [
+        "flag_pl",
+        "hashtag_pl",
+        "polish_text",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "flag_pl",
+        "polish_text"
+      ],
+      "discovery_pl_confidence": 95.0,
+      "found_by": [
+        "moda polska tiktok",
+        "polska moda"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
       "last_profile_scan_at": "2026-10-01T11:17:48.873574+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
@@ -2196,7 +4088,7 @@
     {
       "username": "series_aii",
       "tiktok_id": "7604537158775047190",
-      "priority": 90,
+      "priority": 175,
       "discovery_followers": 23733,
       "polish_signals": [
         "hashtag_pl",
@@ -2218,7 +4110,7 @@
     {
       "username": "bzenkabrendonka",
       "tiktok_id": "6935504384089195526",
-      "priority": 91,
+      "priority": 176,
       "discovery_followers": 17290,
       "polish_signals": [
         "hashtag_pl",
@@ -2234,13 +4126,12 @@
       ],
       "last_discovered_at": "2026-10-01T10:41:14.725838+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-10-01T11:17:48.873574+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-10-01T11:17:48.873574+00:00"
     },
     {
       "username": "thetravelwalk",
       "tiktok_id": "7464379952348365846",
-      "priority": 92,
+      "priority": 177,
       "discovery_followers": 16263,
       "polish_signals": [
         "hashtag_pl",
@@ -2262,7 +4153,7 @@
     {
       "username": "willa.szczawniczanka",
       "tiktok_id": "7552273757235102742",
-      "priority": 93,
+      "priority": 178,
       "discovery_followers": 13522,
       "polish_signals": [
         "flag_pl",
@@ -2286,8 +4177,8 @@
     {
       "username": "annsnesar",
       "tiktok_id": "7558909111313056790",
-      "priority": 94,
-      "discovery_followers": 12804,
+      "priority": 179,
+      "discovery_followers": 12803,
       "polish_signals": [
         "hashtag_pl",
         "poi_pl",
@@ -2298,10 +4189,11 @@
       ],
       "discovery_pl_confidence": 95.0,
       "found_by": [
+        "fashion polska",
         "polishtiktok",
         "polska beauty"
       ],
-      "last_discovered_at": "2026-10-01T10:41:14.725838+00:00",
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
       "last_profile_scan_at": "2026-10-01T11:17:48.873574+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
@@ -2309,7 +4201,7 @@
     {
       "username": "tommyysheelby",
       "tiktok_id": "7001504517561549829",
-      "priority": 95,
+      "priority": 180,
       "discovery_followers": 10972,
       "polish_signals": [
         "hashtag_pl",
@@ -2329,10 +4221,10 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
-      "username": "monika.kociolek",
-      "tiktok_id": "80546969009434624",
-      "priority": 96,
-      "discovery_followers": 3941596,
+      "username": "tojahania",
+      "tiktok_id": "105856541659942912",
+      "priority": 181,
+      "discovery_followers": 2278650,
       "polish_signals": [
         "polish_text",
         "subtitle_pl"
@@ -2343,17 +4235,55 @@
       ],
       "discovery_pl_confidence": 90.0,
       "found_by": [
-        "dzień z życia polska"
+        "outfit polska"
       ],
-      "last_discovered_at": "2026-10-01T10:41:14.725838+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-10-01T11:17:48.873574+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "karolinabyrgiel2",
+      "tiktok_id": "6648715847199195142",
+      "priority": 182,
+      "discovery_followers": 1847009,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 90.0,
+      "found_by": [
+        "polski tata"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "klatex",
+      "tiktok_id": "6532808481731253248",
+      "priority": 183,
+      "discovery_followers": 1357030,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 90.0,
+      "found_by": [
+        "pielęgnacja polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
     },
     {
       "username": "polsat",
       "tiktok_id": "6802716268405228549",
-      "priority": 97,
+      "priority": 184,
       "discovery_followers": 1274230,
       "polish_signals": [
         "polish_text",
@@ -2373,9 +4303,49 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "paulina.hornik",
+      "tiktok_id": "6583730974897487877",
+      "priority": 185,
+      "discovery_followers": 954139,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 90.0,
+      "found_by": [
+        "pielęgnacja polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "projektant_butow",
+      "tiktok_id": "6892533004993315841",
+      "priority": 186,
+      "discovery_followers": 864489,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 90.0,
+      "found_by": [
+        "buty polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "zojaskubis",
       "tiktok_id": "6955022935502029830",
-      "priority": 98,
+      "priority": 187,
       "discovery_followers": 773791,
       "polish_signals": [
         "polish_text",
@@ -2395,9 +4365,129 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "official_julia_pytel",
+      "tiktok_id": "6960042783013504006",
+      "priority": 188,
+      "discovery_followers": 561874,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 90.0,
+      "found_by": [
+        "pielęgnacja polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "thelongerstory",
+      "tiktok_id": "7266713651091571745",
+      "priority": 189,
+      "discovery_followers": 486393,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 90.0,
+      "found_by": [
+        "buty polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "xkleoox",
+      "tiktok_id": "6811581533763421190",
+      "priority": 190,
+      "discovery_followers": 454869,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 90.0,
+      "found_by": [
+        "pielęgnacja polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "haykhair",
+      "tiktok_id": "6871639177873572866",
+      "priority": 191,
+      "discovery_followers": 333574,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 90.0,
+      "found_by": [
+        "fryzury polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "wesolabudowlanka5",
+      "tiktok_id": "7314370238854022176",
+      "priority": 192,
+      "discovery_followers": 305101,
+      "polish_signals": [
+        "poi_pl",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "poi_pl",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 90.0,
+      "found_by": [
+        "buty polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "plotek..pl",
+      "tiktok_id": "6572504857322722304",
+      "priority": 193,
+      "discovery_followers": 231141,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 90.0,
+      "found_by": [
+        "moda polska tiktok"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "pinkcooker11",
       "tiktok_id": "7188132829519528965",
-      "priority": 99,
+      "priority": 194,
       "discovery_followers": 211786,
       "polish_signals": [
         "polish_text",
@@ -2417,9 +4507,49 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "nswnansn",
+      "tiktok_id": "6952902381261882374",
+      "priority": 195,
+      "discovery_followers": 204769,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 90.0,
+      "found_by": [
+        "włosy polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "grela.domcia",
+      "tiktok_id": "6656458352937254918",
+      "priority": 196,
+      "discovery_followers": 176815,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 90.0,
+      "found_by": [
+        "buty polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "mandoriapl",
       "tiktok_id": "6816198803097240582",
-      "priority": 100,
+      "priority": 197,
       "discovery_followers": 172641,
       "polish_signals": [
         "polish_text",
@@ -2441,7 +4571,7 @@
     {
       "username": "niedaltowskifinanse",
       "tiktok_id": "6823760608628114438",
-      "priority": 101,
+      "priority": 198,
       "discovery_followers": 168965,
       "polish_signals": [
         "polish_text",
@@ -2461,9 +4591,29 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "kamixx4",
+      "tiktok_id": "6904707345441702918",
+      "priority": 199,
+      "discovery_followers": 149651,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 90.0,
+      "found_by": [
+        "organizacja domu polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "polsatboxgo",
       "tiktok_id": "7454129191001523222",
-      "priority": 102,
+      "priority": 200,
       "discovery_followers": 147869,
       "polish_signals": [
         "polish_text",
@@ -2483,9 +4633,110 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "oliwkasliwkahaha",
+      "tiktok_id": "6584324238320533510",
+      "priority": 201,
+      "discovery_followers": 138604,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 90.0,
+      "found_by": [
+        "organizacja domu polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "basia.gawryluk",
+      "tiktok_id": "6827805852922102790",
+      "priority": 202,
+      "discovery_followers": 97459,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 90.0,
+      "found_by": [
+        "stylizacje polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "magda__inspire",
+      "tiktok_id": "6635611215857303557",
+      "priority": 203,
+      "discovery_followers": 89522,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 90.0,
+      "found_by": [
+        "paznokcie polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "hannarchya",
+      "tiktok_id": "7276703586254898182",
+      "priority": 204,
+      "discovery_followers": 86612,
+      "polish_signals": [
+        "flag_pl",
+        "poi_pl"
+      ],
+      "polish_strong_signals": [
+        "flag_pl",
+        "poi_pl"
+      ],
+      "discovery_pl_confidence": 90.0,
+      "found_by": [
+        "outfit polska",
+        "stylizacje polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "werr7504",
+      "tiktok_id": "7663837150996530209",
+      "priority": 205,
+      "discovery_followers": 64533,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 90.0,
+      "found_by": [
+        "fryzury polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "uzdrowiciel_",
       "tiktok_id": "7508456558147503126",
-      "priority": 103,
+      "priority": 206,
       "discovery_followers": 60897,
       "polish_signals": [
         "polish_text",
@@ -2505,9 +4756,69 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "majapadzik",
+      "tiktok_id": "6774485951655232517",
+      "priority": 207,
+      "discovery_followers": 45532,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 90.0,
+      "found_by": [
+        "stylizacje polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "noowakpatrycja",
+      "tiktok_id": "7148719007016092677",
+      "priority": 208,
+      "discovery_followers": 45033,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 90.0,
+      "found_by": [
+        "pielęgnacja polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "glowskin_marta",
+      "tiktok_id": "7443439646094378017",
+      "priority": 209,
+      "discovery_followers": 38274,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 90.0,
+      "found_by": [
+        "pielęgnacja polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "mdanekk",
       "tiktok_id": "6931643266934096902",
-      "priority": 104,
+      "priority": 210,
       "discovery_followers": 34327,
       "polish_signals": [
         "polish_text",
@@ -2527,9 +4838,49 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "videoplejbak",
+      "tiktok_id": "7256395129732056090",
+      "priority": 211,
+      "discovery_followers": 33993,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 90.0,
+      "found_by": [
+        "codzienność polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "hair.by.jul",
+      "tiktok_id": "7094232028057846789",
+      "priority": 212,
+      "discovery_followers": 33556,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 90.0,
+      "found_by": [
+        "włosy polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "odklejkaa",
       "tiktok_id": "7598626523877737505",
-      "priority": 105,
+      "priority": 213,
       "discovery_followers": 33069,
       "polish_signals": [
         "poi_pl",
@@ -2549,9 +4900,29 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "akademiastudio7",
+      "tiktok_id": "6883096961609991174",
+      "priority": 214,
+      "discovery_followers": 33035,
+      "polish_signals": [
+        "poi_pl",
+        "polish_text"
+      ],
+      "polish_strong_signals": [
+        "poi_pl",
+        "polish_text"
+      ],
+      "discovery_pl_confidence": 90.0,
+      "found_by": [
+        "fryzury polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "bieganieuskrzydlapl",
       "tiktok_id": "7054861862081758213",
-      "priority": 106,
+      "priority": 215,
       "discovery_followers": 32765,
       "polish_signals": [
         "polish_text",
@@ -2571,9 +4942,69 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "fishyourkicks",
+      "tiktok_id": "7133143073945191430",
+      "priority": 216,
+      "discovery_followers": 25821,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 90.0,
+      "found_by": [
+        "streetwear polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "ewa.szrajber.daily",
+      "tiktok_id": "7431542545005986838",
+      "priority": 217,
+      "discovery_followers": 24488,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 90.0,
+      "found_by": [
+        "organizacja domu polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "kanal_tak",
+      "tiktok_id": "7554322345075803169",
+      "priority": 218,
+      "discovery_followers": 23043,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 90.0,
+      "found_by": [
+        "codzienność polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "ola.adwent",
       "tiktok_id": "15487760",
-      "priority": 107,
+      "priority": 219,
       "discovery_followers": 21291,
       "polish_signals": [
         "polish_text",
@@ -2595,7 +5026,7 @@
     {
       "username": "kabmoralnegoniepokoju",
       "tiktok_id": "7173668648983397381",
-      "priority": 108,
+      "priority": 220,
       "discovery_followers": 19607,
       "polish_signals": [
         "polish_text",
@@ -2615,9 +5046,49 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "bywiki",
+      "tiktok_id": "6972182102310716421",
+      "priority": 221,
+      "discovery_followers": 19033,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 90.0,
+      "found_by": [
+        "buty polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "liwia_szewczyk",
+      "tiktok_id": "7418145259429921824",
+      "priority": 222,
+      "discovery_followers": 18307,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 90.0,
+      "found_by": [
+        "makijaż polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "adriannaferreiraaa",
       "tiktok_id": "7181199606846653445",
-      "priority": 109,
+      "priority": 223,
       "discovery_followers": 16004,
       "polish_signals": [
         "polish_text",
@@ -2637,9 +5108,29 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "its.kajucha",
+      "tiktok_id": "7257842695061144602",
+      "priority": 224,
+      "discovery_followers": 13528,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 90.0,
+      "found_by": [
+        "organizacja domu polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "kaszub9710",
       "tiktok_id": "7579300332449924119",
-      "priority": 110,
+      "priority": 225,
       "discovery_followers": 12420,
       "polish_signals": [
         "polish_text",
@@ -2659,9 +5150,88 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "dealdlaciebie",
+      "tiktok_id": "7473218674335204374",
+      "priority": 226,
+      "discovery_followers": 12121,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 90.0,
+      "found_by": [
+        "perfumy polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "check_in_klaudia_michal",
+      "tiktok_id": "7019983217156441093",
+      "priority": 227,
+      "discovery_followers": 12001,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 90.0,
+      "found_by": [
+        "uroda polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "ubranasandra",
+      "tiktok_id": "6900224226905965569",
+      "priority": 228,
+      "discovery_followers": 11298,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 90.0,
+      "found_by": [
+        "second hand polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "mobilfoxpolska",
+      "tiktok_id": "6996386796758844421",
+      "priority": 229,
+      "discovery_followers": 2807027,
+      "polish_signals": [
+        "channel_marker_pl",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 87.5,
+      "found_by": [
+        "buty polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "blanka_chm5",
       "tiktok_id": "7439043255725802518",
-      "priority": 111,
+      "priority": 230,
       "discovery_followers": 204383,
       "polish_signals": [
         "subtitle_pl",
@@ -2680,9 +5250,66 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "oliwia.girlz",
+      "tiktok_id": "6813335512109073414",
+      "priority": 231,
+      "discovery_followers": 70249,
+      "polish_signals": [
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 87.5,
+      "found_by": [
+        "kosmetyki polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "basia_mlp",
+      "tiktok_id": "7489476178731074582",
+      "priority": 232,
+      "discovery_followers": 41293,
+      "polish_signals": [
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 87.5,
+      "found_by": [
+        "makeup polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "polskiemedia",
+      "tiktok_id": "7314379600561243168",
+      "priority": 233,
+      "discovery_followers": 33084,
+      "polish_signals": [
+        "channel_marker_pl",
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 87.5,
+      "found_by": [
+        "polski tata"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "polskalifepl",
       "tiktok_id": "6869878753049920517",
-      "priority": 112,
+      "priority": 234,
       "discovery_followers": 15106,
       "polish_signals": [
         "channel_marker_pl",
@@ -2705,7 +5332,7 @@
     {
       "username": "mk_muzycznyklimat",
       "tiktok_id": "7588971576251630614",
-      "priority": 113,
+      "priority": 235,
       "discovery_followers": 11901,
       "polish_signals": [
         "flag_pl",
@@ -2726,9 +5353,28 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "quadcross1",
+      "tiktok_id": "7034588951814095877",
+      "priority": 236,
+      "discovery_followers": 11027,
+      "polish_signals": [
+        "poi_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "poi_pl"
+      ],
+      "discovery_pl_confidence": 87.5,
+      "found_by": [
+        "szafa polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "tanya_inyshina",
       "tiktok_id": "6774460105826173957",
-      "priority": 114,
+      "priority": 237,
       "discovery_followers": 3027019,
       "polish_signals": [
         "flag_pl",
@@ -2750,8 +5396,8 @@
     {
       "username": "kauflandpolska",
       "tiktok_id": "6976174413936296965",
-      "priority": 115,
-      "discovery_followers": 480564,
+      "priority": 238,
+      "discovery_followers": 480569,
       "polish_signals": [
         "channel_marker_pl",
         "hashtag_pl",
@@ -2763,9 +5409,10 @@
       ],
       "discovery_pl_confidence": 85.0,
       "found_by": [
-        "polska moda"
+        "polska moda",
+        "stylizacje polska"
       ],
-      "last_discovered_at": "2026-10-01T10:41:14.725838+00:00",
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
       "last_profile_scan_at": "2026-10-01T11:32:55.308248+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
@@ -2773,7 +5420,7 @@
     {
       "username": "itzcrazynaze",
       "tiktok_id": "6808163696733570054",
-      "priority": 116,
+      "priority": 239,
       "discovery_followers": 359249,
       "polish_signals": [
         "flag_pl",
@@ -2795,7 +5442,7 @@
     {
       "username": "x109070yz",
       "tiktok_id": "6648231096848220165",
-      "priority": 117,
+      "priority": 240,
       "discovery_followers": 31596,
       "polish_signals": [
         "flag_pl",
@@ -2817,7 +5464,7 @@
     {
       "username": "turystyka.stadionowa",
       "tiktok_id": "7449663868860679190",
-      "priority": 118,
+      "priority": 241,
       "discovery_followers": 22843,
       "polish_signals": [
         "flag_pl",
@@ -2841,7 +5488,7 @@
     {
       "username": "redbullpolska",
       "tiktok_id": "6768475065983730694",
-      "priority": 119,
+      "priority": 242,
       "discovery_followers": 1363256,
       "polish_signals": [
         "channel_marker_pl",
@@ -2863,7 +5510,7 @@
     {
       "username": "danielmidas",
       "tiktok_id": "6798435172498310150",
-      "priority": 120,
+      "priority": 243,
       "discovery_followers": 855725,
       "polish_signals": [
         "subtitle_pl"
@@ -2881,9 +5528,29 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "krawczyk.mateusz",
+      "tiktok_id": "6652822275107094534",
+      "priority": 244,
+      "discovery_followers": 462857,
+      "polish_signals": [
+        "flag_pl",
+        "polish_text"
+      ],
+      "polish_strong_signals": [
+        "flag_pl",
+        "polish_text"
+      ],
+      "discovery_pl_confidence": 80.0,
+      "found_by": [
+        "uroda polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "kustoszowy",
       "tiktok_id": "7134807206331466757",
-      "priority": 121,
+      "priority": 245,
       "discovery_followers": 199167,
       "polish_signals": [
         "hashtag_pl",
@@ -2905,7 +5572,7 @@
     {
       "username": "mooomeczeeek",
       "tiktok_id": "7054564165847794693",
-      "priority": 122,
+      "priority": 246,
       "discovery_followers": 195746,
       "polish_signals": [
         "hashtag_pl",
@@ -2925,9 +5592,29 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "kasiamvp",
+      "tiktok_id": "125797377902288896",
+      "priority": 247,
+      "discovery_followers": 192408,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text"
+      ],
+      "discovery_pl_confidence": 80.0,
+      "found_by": [
+        "perfumy polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "swojskie_gotowanie",
       "tiktok_id": "7172594537180922885",
-      "priority": 123,
+      "priority": 248,
       "discovery_followers": 166387,
       "polish_signals": [
         "subtitle_pl"
@@ -2947,7 +5634,7 @@
     {
       "username": "koldunu_gang_backup",
       "tiktok_id": "7200029782754952198",
-      "priority": 124,
+      "priority": 249,
       "discovery_followers": 109408,
       "polish_signals": [
         "subtitle_pl"
@@ -2965,9 +5652,27 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "rekinway",
+      "tiktok_id": "7326235301588173856",
+      "priority": 250,
+      "discovery_followers": 103451,
+      "polish_signals": [
+        "subtitle_pl"
+      ],
+      "polish_strong_signals": [
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 80.0,
+      "found_by": [
+        "stylizacje polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "amelia.czechanowska",
       "tiktok_id": "6802487159887692806",
-      "priority": 125,
+      "priority": 251,
       "discovery_followers": 84713,
       "polish_signals": [
         "subtitle_pl"
@@ -2987,7 +5692,7 @@
     {
       "username": "em.nalepa",
       "tiktok_id": "7169622700293850118",
-      "priority": 126,
+      "priority": 252,
       "discovery_followers": 75429,
       "polish_signals": [
         "hashtag_pl",
@@ -3007,9 +5712,69 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "claudies.diaries",
+      "tiktok_id": "7465776581576524832",
+      "priority": 253,
+      "discovery_followers": 58250,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text"
+      ],
+      "discovery_pl_confidence": 80.0,
+      "found_by": [
+        "perfumy polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "ljnml",
+      "tiktok_id": "6664224556573835269",
+      "priority": 254,
+      "discovery_followers": 55324,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text"
+      ],
+      "discovery_pl_confidence": 80.0,
+      "found_by": [
+        "makijaż polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "co.mysli.maggie",
+      "tiktok_id": "6639678227919732741",
+      "priority": 255,
+      "discovery_followers": 51088,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text"
+      ],
+      "discovery_pl_confidence": 80.0,
+      "found_by": [
+        "polska mama"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "iskra_polan",
       "tiktok_id": "7456151839731057686",
-      "priority": 127,
+      "priority": 256,
       "discovery_followers": 43170,
       "polish_signals": [
         "hashtag_pl",
@@ -3031,7 +5796,7 @@
     {
       "username": "mnie_stac",
       "tiktok_id": "7057991438592082949",
-      "priority": 128,
+      "priority": 257,
       "discovery_followers": 41227,
       "polish_signals": [
         "subtitle_pl"
@@ -3049,9 +5814,29 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "candytm.pl",
+      "tiktok_id": "6903172249760433158",
+      "priority": 258,
+      "discovery_followers": 40849,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text"
+      ],
+      "discovery_pl_confidence": 80.0,
+      "found_by": [
+        "fashion polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "nikodem_sliwinski",
       "tiktok_id": "7373034403067610144",
-      "priority": 129,
+      "priority": 259,
       "discovery_followers": 40471,
       "polish_signals": [
         "hashtag_pl",
@@ -3073,7 +5858,7 @@
     {
       "username": "agassja",
       "tiktok_id": "7277592660956660769",
-      "priority": 130,
+      "priority": 260,
       "discovery_followers": 40465,
       "polish_signals": [
         "hashtag_pl",
@@ -3095,7 +5880,7 @@
     {
       "username": "panklasyczek",
       "tiktok_id": "7324375378511332384",
-      "priority": 131,
+      "priority": 261,
       "discovery_followers": 38392,
       "polish_signals": [
         "subtitle_pl"
@@ -3113,9 +5898,29 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "strefa_plus_size",
+      "tiktok_id": "7048655990145287173",
+      "priority": 262,
+      "discovery_followers": 33894,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text"
+      ],
+      "discovery_pl_confidence": 80.0,
+      "found_by": [
+        "second hand polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "darkmagikca_live",
       "tiktok_id": "7385580187008730144",
-      "priority": 132,
+      "priority": 263,
       "discovery_followers": 30825,
       "polish_signals": [
         "hashtag_pl",
@@ -3135,9 +5940,29 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "kraemerdaria",
+      "tiktok_id": "7293269209482773536",
+      "priority": 264,
+      "discovery_followers": 30721,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text"
+      ],
+      "discovery_pl_confidence": 80.0,
+      "found_by": [
+        "stylizacje polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "purzalife",
       "tiktok_id": "7521459875882370070",
-      "priority": 133,
+      "priority": 265,
       "discovery_followers": 21493,
       "polish_signals": [
         "subtitle_pl"
@@ -3157,7 +5982,7 @@
     {
       "username": "dari_chups",
       "tiktok_id": "6637167644217311237",
-      "priority": 134,
+      "priority": 266,
       "discovery_followers": 20818,
       "polish_signals": [
         "subtitle_pl"
@@ -3177,7 +6002,7 @@
     {
       "username": "morixofficial",
       "tiktok_id": "6908091696858661893",
-      "priority": 135,
+      "priority": 267,
       "discovery_followers": 20726,
       "polish_signals": [
         "hashtag_pl",
@@ -3197,9 +6022,29 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "zanimbylinternet",
+      "tiktok_id": "7525073040557540374",
+      "priority": 268,
+      "discovery_followers": 18782,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text"
+      ],
+      "discovery_pl_confidence": 80.0,
+      "found_by": [
+        "codzienność polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "finansowe_zdrowie",
       "tiktok_id": "7164834882940732421",
-      "priority": 136,
+      "priority": 269,
       "discovery_followers": 17821,
       "polish_signals": [
         "subtitle_pl"
@@ -3217,9 +6062,29 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "kk.juleczkaa",
+      "tiktok_id": "7466088187410269206",
+      "priority": 270,
+      "discovery_followers": 16960,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text"
+      ],
+      "discovery_pl_confidence": 80.0,
+      "found_by": [
+        "skincare polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "musclekatja",
       "tiktok_id": "6745151480065868806",
-      "priority": 137,
+      "priority": 271,
       "discovery_followers": 16816,
       "polish_signals": [
         "hashtag_pl",
@@ -3235,13 +6100,32 @@
       ],
       "last_discovered_at": "2026-10-01T10:41:14.725838+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-10-01T11:32:55.308248+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-10-01T11:32:55.308248+00:00"
+    },
+    {
+      "username": "agachicofstyleee",
+      "tiktok_id": "6759831664086500358",
+      "priority": 272,
+      "discovery_followers": 16669,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text"
+      ],
+      "discovery_pl_confidence": 80.0,
+      "found_by": [
+        "skincare polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
     },
     {
       "username": "0_kubzanek_0",
       "tiktok_id": "7059898637787579397",
-      "priority": 138,
+      "priority": 273,
       "discovery_followers": 16511,
       "polish_signals": [
         "hashtag_pl",
@@ -3261,9 +6145,29 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "la_lump_",
+      "tiktok_id": "7163965818471515141",
+      "priority": 274,
+      "discovery_followers": 16381,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text"
+      ],
+      "discovery_pl_confidence": 80.0,
+      "found_by": [
+        "second hand polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "fitdarka",
       "tiktok_id": "7387540859228603424",
-      "priority": 139,
+      "priority": 275,
       "discovery_followers": 15166,
       "polish_signals": [
         "hashtag_pl",
@@ -3285,7 +6189,7 @@
     {
       "username": "p4vvlak",
       "tiktok_id": "6916440309304525829",
-      "priority": 140,
+      "priority": 276,
       "discovery_followers": 15062,
       "polish_signals": [
         "hashtag_pl",
@@ -3307,7 +6211,7 @@
     {
       "username": "o_tysiuuula",
       "tiktok_id": "6998597898016130053",
-      "priority": 141,
+      "priority": 277,
       "discovery_followers": 11780,
       "polish_signals": [
         "hashtag_pl",
@@ -3329,7 +6233,7 @@
     {
       "username": "zooliday",
       "tiktok_id": "6963923829463024645",
-      "priority": 142,
+      "priority": 278,
       "discovery_followers": 11382,
       "polish_signals": [
         "hashtag_pl",
@@ -3351,7 +6255,7 @@
     {
       "username": "sarushkan",
       "tiktok_id": "101096711489540098",
-      "priority": 143,
+      "priority": 279,
       "discovery_followers": 11301,
       "polish_signals": [
         "hashtag_pl",
@@ -3376,7 +6280,7 @@
     {
       "username": "miss.marzenka",
       "tiktok_id": "7561491871764431894",
-      "priority": 144,
+      "priority": 280,
       "discovery_followers": 11036,
       "polish_signals": [
         "hashtag_pl",
@@ -3398,8 +6302,8 @@
     {
       "username": "hereforthelikes595",
       "tiktok_id": "7604932871556088854",
-      "priority": 145,
-      "discovery_followers": 10732,
+      "priority": 281,
+      "discovery_followers": 10733,
       "polish_signals": [
         "hashtag_pl",
         "polish_text",
@@ -3410,17 +6314,37 @@
       ],
       "discovery_pl_confidence": 80.0,
       "found_by": [
-        "memy polska"
+        "memy polska",
+        "rodzina polska"
       ],
-      "last_discovered_at": "2026-10-01T10:41:14.725838+00:00",
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
       "last_profile_scan_at": "2026-10-01T11:32:55.308248+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "kanalmuzyczny",
+      "tiktok_id": "7036010298717389830",
+      "priority": 282,
+      "discovery_followers": 419651,
+      "polish_signals": [
+        "polish_text",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text"
+      ],
+      "discovery_pl_confidence": 72.5,
+      "found_by": [
+        "szafa polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "oliwiajezak",
       "tiktok_id": "6817758364845835269",
-      "priority": 146,
+      "priority": 283,
       "discovery_followers": 169873,
       "polish_signals": [
         "polish_text",
@@ -3439,9 +6363,28 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "jozmuu",
+      "tiktok_id": "7210906787242148869",
+      "priority": 284,
+      "discovery_followers": 76228,
+      "polish_signals": [
+        "polish_text",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text"
+      ],
+      "discovery_pl_confidence": 72.5,
+      "found_by": [
+        "fashion polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "warto_zobaczycc",
       "tiktok_id": "7049804720375153669",
-      "priority": 147,
+      "priority": 285,
       "discovery_followers": 33906,
       "polish_signals": [
         "polish_text",
@@ -3460,9 +6403,139 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "mightbesandra",
+      "tiktok_id": "6563094991761276934",
+      "priority": 286,
+      "discovery_followers": 26312,
+      "polish_signals": [
+        "polish_text",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text"
+      ],
+      "discovery_pl_confidence": 72.5,
+      "found_by": [
+        "skincare polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "juliett.msc",
+      "tiktok_id": "6952831201430586373",
+      "priority": 287,
+      "discovery_followers": 17227,
+      "polish_signals": [
+        "polish_text",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text"
+      ],
+      "discovery_pl_confidence": 72.5,
+      "found_by": [
+        "kosmetyki polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "lirene_pl",
+      "tiktok_id": "7351061119220220961",
+      "priority": 288,
+      "discovery_followers": 14501,
+      "polish_signals": [
+        "polish_text",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text"
+      ],
+      "discovery_pl_confidence": 72.5,
+      "found_by": [
+        "makijaż polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "gberska",
+      "tiktok_id": "7594836491265573920",
+      "priority": 289,
+      "discovery_followers": 10663,
+      "polish_signals": [
+        "polish_text",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text"
+      ],
+      "discovery_pl_confidence": 72.5,
+      "found_by": [
+        "makijaż polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "sonja_extrah",
+      "tiktok_id": "7324059004320236577",
+      "priority": 290,
+      "discovery_followers": 57271,
+      "polish_signals": [
+        "flag_pl"
+      ],
+      "polish_strong_signals": [
+        "flag_pl"
+      ],
+      "discovery_pl_confidence": 70.0,
+      "found_by": [
+        "second hand polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "_angelikagrabowska",
+      "tiktok_id": "6726990434319795206",
+      "priority": 291,
+      "discovery_followers": 237101,
+      "polish_signals": [
+        "polish_text"
+      ],
+      "polish_strong_signals": [
+        "polish_text"
+      ],
+      "discovery_pl_confidence": 65.0,
+      "found_by": [
+        "pielęgnacja polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "ziwanowska",
+      "tiktok_id": "184439329308495872",
+      "priority": 292,
+      "discovery_followers": 205411,
+      "polish_signals": [
+        "polish_text"
+      ],
+      "polish_strong_signals": [
+        "polish_text"
+      ],
+      "discovery_pl_confidence": 65.0,
+      "found_by": [
+        "makijaż polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "jeszczeniedaleko",
       "tiktok_id": "7332522920910226464",
-      "priority": 148,
+      "priority": 293,
       "discovery_followers": 39221,
       "polish_signals": [
         "polish_text"
@@ -3480,9 +6553,27 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "kasia.twarogowska_",
+      "tiktok_id": "7363946822585812001",
+      "priority": 294,
+      "discovery_followers": 32977,
+      "polish_signals": [
+        "polish_text"
+      ],
+      "polish_strong_signals": [
+        "polish_text"
+      ],
+      "discovery_pl_confidence": 65.0,
+      "found_by": [
+        "organizacja domu polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "kanalkomediowy",
       "tiktok_id": "7320229661617931297",
-      "priority": 149,
+      "priority": 295,
       "discovery_followers": 29472,
       "polish_signals": [
         "polish_text"
@@ -3500,9 +6591,81 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "izkabela",
+      "tiktok_id": "7231081531229455387",
+      "priority": 296,
+      "discovery_followers": 27653,
+      "polish_signals": [
+        "polish_text"
+      ],
+      "polish_strong_signals": [
+        "polish_text"
+      ],
+      "discovery_pl_confidence": 65.0,
+      "found_by": [
+        "pielęgnacja polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "m.turczynka",
+      "tiktok_id": "7157748623894414341",
+      "priority": 297,
+      "discovery_followers": 27632,
+      "polish_signals": [
+        "polish_text"
+      ],
+      "polish_strong_signals": [
+        "polish_text"
+      ],
+      "discovery_pl_confidence": 65.0,
+      "found_by": [
+        "outfit polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "oliwka.malgorzata",
+      "tiktok_id": "6919498053369136133",
+      "priority": 298,
+      "discovery_followers": 27333,
+      "polish_signals": [
+        "polish_text"
+      ],
+      "polish_strong_signals": [
+        "polish_text"
+      ],
+      "discovery_pl_confidence": 65.0,
+      "found_by": [
+        "stylizacje polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "butosklep.pl",
+      "tiktok_id": "6843699346996691974",
+      "priority": 299,
+      "discovery_followers": 19137,
+      "polish_signals": [
+        "polish_text"
+      ],
+      "polish_strong_signals": [
+        "polish_text"
+      ],
+      "discovery_pl_confidence": 65.0,
+      "found_by": [
+        "buty polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "niko.renders",
       "tiktok_id": "7423484038207620099",
-      "priority": 150,
+      "priority": 300,
       "discovery_followers": 17339,
       "polish_signals": [
         "polish_text"
@@ -3522,7 +6685,7 @@
     {
       "username": "auroraa_glow",
       "tiktok_id": "7222360942750630939",
-      "priority": 151,
+      "priority": 301,
       "discovery_followers": 13822,
       "polish_signals": [
         "polish_text"
@@ -3540,9 +6703,48 @@
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "julapoleca",
+      "tiktok_id": "7483095577971016726",
+      "priority": 302,
+      "discovery_followers": 11040,
+      "polish_signals": [
+        "polish_text"
+      ],
+      "polish_strong_signals": [
+        "polish_text"
+      ],
+      "discovery_pl_confidence": 65.0,
+      "found_by": [
+        "buty polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "sklepfuria",
+      "tiktok_id": "7121246339728802821",
+      "priority": 303,
+      "discovery_followers": 39929,
+      "polish_signals": [
+        "flag_pl",
+        "polish_text",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "flag_pl",
+        "polish_text"
+      ],
+      "discovery_pl_confidence": 62.5,
+      "found_by": [
+        "streetwear polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "patrykwxjcik",
       "tiktok_id": "6734772202631758853",
-      "priority": 152,
+      "priority": 304,
       "discovery_followers": 1599274,
       "polish_signals": [
         "flag_pl",
@@ -3554,18 +6756,19 @@
       ],
       "discovery_pl_confidence": 60.0,
       "found_by": [
+        "buty polska",
         "dzień z życia polska"
       ],
-      "last_discovered_at": "2026-10-01T10:41:14.725838+00:00",
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
       "last_profile_scan_at": "2026-10-01T11:32:55.308248+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
-      "username": "oneandonlydorkas",
-      "tiktok_id": "7203003536221144070",
-      "priority": 153,
-      "discovery_followers": 23816,
+      "username": "1islamheer",
+      "tiktok_id": "6848540152262312966",
+      "priority": 305,
+      "discovery_followers": 226727,
       "polish_signals": [
         "flag_pl",
         "hashtag_pl",
@@ -3576,17 +6779,78 @@
       ],
       "discovery_pl_confidence": 60.0,
       "found_by": [
-        "polska beauty"
+        "second hand polska"
       ],
-      "last_discovered_at": "2026-10-01T10:41:14.725838+00:00",
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "aleksandramoralewska",
+      "tiktok_id": "6873107918389134342",
+      "priority": 306,
+      "discovery_followers": 50133,
+      "polish_signals": [
+        "flag_pl",
+        "hashtag_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "flag_pl"
+      ],
+      "discovery_pl_confidence": 60.0,
+      "found_by": [
+        "polski tata"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "oneandonlydorkas",
+      "tiktok_id": "7203003536221144070",
+      "priority": 307,
+      "discovery_followers": 23820,
+      "polish_signals": [
+        "flag_pl",
+        "hashtag_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "flag_pl"
+      ],
+      "discovery_pl_confidence": 60.0,
+      "found_by": [
+        "polska beauty",
+        "skincare polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
       "last_profile_scan_at": "2026-10-01T11:32:55.308248+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
+      "username": "charissekenion",
+      "tiktok_id": "6808539810967438341",
+      "priority": 308,
+      "discovery_followers": 56670,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text"
+      ],
+      "discovery_pl_confidence": 55.0,
+      "found_by": [
+        "fashion polska"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "wolnoscslowa2.0",
       "tiktok_id": "7156902889259860998",
-      "priority": 154,
+      "priority": 309,
       "discovery_followers": 216557,
       "polish_signals": [
         "hashtag",
@@ -3602,6 +6866,391 @@
       "last_discovered_at": "2026-10-01T08:15:06.603181+00:00",
       "status": "enriched",
       "last_profile_scan_at": "2026-10-01T08:32:12.336106+00:00"
+    },
+    {
+      "username": "skyscannerpolska",
+      "tiktok_id": null,
+      "priority": 310,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.217892+00:00",
+      "status": "pending_profile_scan",
+      "source": "related_mentions",
+      "related_score": 17.0,
+      "related_source_creators": [
+        "byli.widzieli",
+        "siodmywswiecie.pl",
+        "warto_zobaczycc"
+      ]
+    },
+    {
+      "username": "sinsay",
+      "tiktok_id": null,
+      "priority": 311,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.217892+00:00",
+      "status": "pending_profile_scan",
+      "source": "related_mentions",
+      "related_score": 13.0,
+      "related_source_creators": [
+        "k_sajdutka",
+        "oghalina"
+      ]
+    },
+    {
+      "username": "golden_bow_solutions",
+      "tiktok_id": null,
+      "priority": 312,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.217892+00:00",
+      "status": "pending_profile_scan",
+      "source": "related_mentions",
+      "related_score": 11.0,
+      "related_source_creators": [
+        "mocnabanda",
+        "trueboyzz"
+      ]
+    },
+    {
+      "username": "evelinecosmetics",
+      "tiktok_id": null,
+      "priority": 313,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.217892+00:00",
+      "status": "pending_profile_scan",
+      "source": "related_mentions",
+      "related_score": 10.0,
+      "related_source_creators": [
+        "em.nalepa",
+        "oghalina"
+      ]
+    },
+    {
+      "username": "djlucas_retroklimaty2",
+      "tiktok_id": null,
+      "priority": 314,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.217892+00:00",
+      "status": "pending_profile_scan",
+      "source": "related_mentions",
+      "related_score": 9.0,
+      "related_source_creators": [
+        "lukaszwolosowicz"
+      ]
+    },
+    {
+      "username": "obserwujacy__9.6",
+      "tiktok_id": null,
+      "priority": 315,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.217892+00:00",
+      "status": "pending_profile_scan",
+      "source": "related_mentions",
+      "related_score": 9.0,
+      "related_source_creators": [
+        "martinskolsky"
+      ]
+    },
+    {
+      "username": "amd",
+      "tiktok_id": null,
+      "priority": 316,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.217892+00:00",
+      "status": "pending_profile_scan",
+      "source": "related_mentions",
+      "related_score": 9.0,
+      "related_source_creators": [
+        "techkominfo_pl"
+      ]
+    },
+    {
+      "username": "sandisk",
+      "tiktok_id": null,
+      "priority": 317,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.217892+00:00",
+      "status": "pending_profile_scan",
+      "source": "related_mentions",
+      "related_score": 9.0,
+      "related_source_creators": [
+        "techkominfo_pl"
+      ]
+    },
+    {
+      "username": "msi_polska",
+      "tiktok_id": null,
+      "priority": 318,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.217892+00:00",
+      "status": "pending_profile_scan",
+      "source": "related_mentions",
+      "related_score": 9.0,
+      "related_source_creators": [
+        "techkominfo_pl"
+      ]
+    },
+    {
+      "username": "polsatnews.pl",
+      "tiktok_id": null,
+      "priority": 319,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.217892+00:00",
+      "status": "pending_profile_scan",
+      "source": "related_mentions",
+      "related_score": 9.0,
+      "related_source_creators": [
+        "grzegorz.jankowski"
+      ]
+    },
+    {
+      "username": "blast.energy",
+      "tiktok_id": null,
+      "priority": 320,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.217892+00:00",
+      "status": "pending_profile_scan",
+      "source": "related_mentions",
+      "related_score": 9.0,
+      "related_source_creators": [
+        "hot_chocolate_11"
+      ]
+    },
+    {
+      "username": "lale.girlsband",
+      "tiktok_id": null,
+      "priority": 321,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.217892+00:00",
+      "status": "pending_profile_scan",
+      "source": "related_mentions",
+      "related_score": 9.0,
+      "related_source_creators": [
+        "monika.kociolek"
+      ]
+    },
+    {
+      "username": "foodiniodkuchni",
+      "tiktok_id": null,
+      "priority": 322,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.217892+00:00",
+      "status": "pending_profile_scan",
+      "source": "related_mentions",
+      "related_score": 9.0,
+      "related_source_creators": [
+        "the_foodini"
+      ]
+    },
+    {
+      "username": "alekschm6",
+      "tiktok_id": null,
+      "priority": 323,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.217892+00:00",
+      "status": "pending_profile_scan",
+      "source": "related_mentions",
+      "related_score": 8.0,
+      "related_source_creators": [
+        "blanka_chm5"
+      ]
+    },
+    {
+      "username": "tomypolacy_org",
+      "tiktok_id": null,
+      "priority": 324,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.217892+00:00",
+      "status": "pending_profile_scan",
+      "source": "related_mentions",
+      "related_score": 8.0,
+      "related_source_creators": [
+        "turystyka.stadionowa"
+      ]
+    },
+    {
+      "username": "jakwfinanse_sonia",
+      "tiktok_id": null,
+      "priority": 325,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.217892+00:00",
+      "status": "pending_profile_scan",
+      "source": "related_mentions",
+      "related_score": 7.0,
+      "related_source_creators": [
+        "jakwfinanse"
+      ]
+    },
+    {
+      "username": "enyoagency",
+      "tiktok_id": null,
+      "priority": 326,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.217892+00:00",
+      "status": "pending_profile_scan",
+      "source": "related_mentions",
+      "related_score": 7.0,
+      "related_source_creators": [
+        "zaklinamaria"
+      ]
+    },
+    {
+      "username": "lexarmemory",
+      "tiktok_id": null,
+      "priority": 327,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.217892+00:00",
+      "status": "pending_profile_scan",
+      "source": "related_mentions",
+      "related_score": 7.0,
+      "related_source_creators": [
+        "techkominfo_pl"
+      ]
+    },
+    {
+      "username": "holizm",
+      "tiktok_id": null,
+      "priority": 328,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.217892+00:00",
+      "status": "pending_profile_scan",
+      "source": "related_mentions",
+      "related_score": 7.0,
+      "related_source_creators": [
+        "mateusz_macierakowski"
+      ]
+    },
+    {
+      "username": "xaaniis",
+      "tiktok_id": null,
+      "priority": 329,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T11:58:05.217892+00:00",
+      "status": "pending_profile_scan",
+      "source": "related_mentions",
+      "related_score": 7.0,
+      "related_source_creators": [
+        "mooomeczeeek"
+      ]
     }
   ]
 }
