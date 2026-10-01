@@ -1,9 +1,10 @@
 {
   "meta": {
     "purpose": "Queue for authoritative profile enrichment",
-    "count": 475,
-    "updated_at": "2026-10-01T14:23:52.261170+00:00",
-    "discovery_filter_version": "v4-strong-pl-evidence"
+    "count": 495,
+    "updated_at": "2026-10-01T15:20:58.369822+00:00",
+    "discovery_filter_version": "v4-strong-pl-evidence",
+    "related_mentions_enabled": true
   },
   "items": [
     {
@@ -356,7 +357,9 @@
         "test jedzenia polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "aqatalewandowska",
@@ -556,7 +559,9 @@
         "trening polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "milosc_od_kuchni",
@@ -655,7 +660,9 @@
         "streamer polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "starsfromthestars",
@@ -725,7 +732,9 @@
         "gaming polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "dwcreativegroup",
@@ -845,7 +854,9 @@
         "trening polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "furajedzenia",
@@ -1119,7 +1130,9 @@
         "street food polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "barbershopskc",
@@ -1169,7 +1182,9 @@
         "vinted polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "czech_guy_in_warsaw",
@@ -1216,7 +1231,9 @@
         "street food polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "polskie.seriale63",
@@ -1368,7 +1385,9 @@
         "restauracje polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "schagii_official",
@@ -1463,7 +1482,9 @@
         "street food polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "juliee.2010",
@@ -1630,7 +1651,9 @@
         "przepisy polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "monikaporajrozanska",
@@ -1727,7 +1750,9 @@
         "gotowanie polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "thepolishsyn",
@@ -1824,7 +1849,9 @@
         "foodie polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "folwarr",
@@ -1846,7 +1873,9 @@
         "valorant polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "joannigal",
@@ -2041,7 +2070,9 @@
         "test jedzenia polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "kamilzaprasza",
@@ -2114,7 +2145,9 @@
         "streamer polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "onelife_photo",
@@ -2208,7 +2241,9 @@
         "trening polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "original_ryszardmazur",
@@ -2302,7 +2337,9 @@
         "esport polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "beautyboy.jpg",
@@ -2324,7 +2361,9 @@
         "trendy moda polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "franekjones",
@@ -2346,7 +2385,9 @@
         "kuchnia polska tiktok"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "saykamstar",
@@ -2370,7 +2411,9 @@
         "roblox polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "lukaszwolosowicz",
@@ -2490,7 +2533,9 @@
         "roblox polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "kasia_22ttv",
@@ -2516,7 +2561,9 @@
         "streamer polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "bites_family",
@@ -2589,7 +2636,9 @@
         "league of legends polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "mami_i_leos",
@@ -2612,7 +2661,9 @@
         "desery polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "maddy.bijou",
@@ -2711,7 +2762,9 @@
         "test jedzenia polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "laurencja111",
@@ -2809,7 +2862,9 @@
         "foodie polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "galeria.krakowska",
@@ -2880,7 +2935,9 @@
         "gotowanie polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "dzunglahumoru",
@@ -2931,7 +2988,9 @@
         "desery polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "nudy_z_zycia",
@@ -3156,7 +3215,9 @@
         "pizza polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "ufryzjerow",
@@ -3303,7 +3364,9 @@
         "roblox polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "luxcreator1",
@@ -3657,7 +3720,9 @@
         "desery polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "tatiana84497",
@@ -3978,7 +4043,9 @@
         "minecraft polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "knorrpolska",
@@ -4024,7 +4091,9 @@
         "restauracje polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "lodzkiedlaciebie",
@@ -4046,7 +4115,9 @@
         "vinted polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "hexokod",
@@ -4068,7 +4139,9 @@
         "fortnite polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "andri.nesti",
@@ -4144,7 +4217,9 @@
         "przepisy polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "jeleniewska",
@@ -4188,7 +4263,9 @@
         "foodie polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "kladwisia",
@@ -4255,7 +4332,9 @@
         "siłownia polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "dla_pieniedzy",
@@ -4348,7 +4427,9 @@
         "przepisy polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "pawlak_luberson",
@@ -4369,7 +4450,9 @@
         "kuchnia polska tiktok"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "katarzyna.pieczynska",
@@ -4459,7 +4542,9 @@
         "test jedzenia polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "samplestore.pl",
@@ -4503,7 +4588,9 @@
         "przepisy polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "katarzyna.lech",
@@ -4593,7 +4680,9 @@
         "jedzenie polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "podrozezesmakiem",
@@ -4755,7 +4844,9 @@
         "przepisy polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "prabunek",
@@ -4869,7 +4960,9 @@
         "fortnite polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "victorianiedzwiedz",
@@ -4913,7 +5006,9 @@
         "pizza polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "papito.energy",
@@ -4934,7 +5029,9 @@
         "esport polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "zarazsienajem",
@@ -4955,7 +5052,9 @@
         "restauracje polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "mocne.sceny.pl",
@@ -4999,7 +5098,9 @@
         "streamer polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "gregkot_official",
@@ -5020,7 +5121,9 @@
         "fitness polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "jula_chrobot",
@@ -5064,7 +5167,9 @@
         "fitness polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "kohersenpolska",
@@ -5085,7 +5190,9 @@
         "desery polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "veronika.bernat",
@@ -5130,7 +5237,9 @@
         "restauracje polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "klaudasiak",
@@ -5264,7 +5373,9 @@
         "kuchnia polska tiktok"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "kabaretczwartafala",
@@ -5329,7 +5440,9 @@
         "minecraft polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "mocnabanda",
@@ -5517,7 +5630,9 @@
         "vinted polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "_n33xt_",
@@ -5537,7 +5652,9 @@
         "minecraft polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "series_aii",
@@ -5581,7 +5698,9 @@
         "cs2 polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "roadrob",
@@ -5601,7 +5720,9 @@
         "kuchnia polska tiktok"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "bzenkabrendonka",
@@ -5622,7 +5743,8 @@
       ],
       "last_discovered_at": "2026-10-01T10:41:14.725838+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-10-01T12:45:17.037018+00:00"
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "mohamedxkade",
@@ -5642,7 +5764,9 @@
         "foodie polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "thetravelwalk",
@@ -5690,7 +5814,9 @@
         "trendy moda polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "og.olaaa",
@@ -5710,7 +5836,9 @@
         "siłownia polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "willa.szczawniczanka",
@@ -5888,7 +6016,9 @@
         "vinted polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "nathallae",
@@ -5908,7 +6038,9 @@
         "restauracje polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "paulina.hornik",
@@ -6061,7 +6193,9 @@
         "siłownia polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "sarkamoritz",
@@ -6082,7 +6216,9 @@
         "przepisy polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "haykhair",
@@ -6146,7 +6282,9 @@
         "gotowanie polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "kulinarneprzygody_",
@@ -6166,7 +6304,9 @@
         "przepisy polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "plotek..pl",
@@ -6208,7 +6348,9 @@
         "desery polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "pinkcooker11",
@@ -6338,7 +6480,9 @@
         "cs2 polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "kamixx4",
@@ -6380,7 +6524,9 @@
         "gotowanie polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "polsatboxgo",
@@ -6444,7 +6590,9 @@
         "przepisy polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "olapersak",
@@ -6464,7 +6612,9 @@
         "siłownia polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "teamzuzannkov",
@@ -6484,7 +6634,9 @@
         "pizza polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "basia.gawryluk",
@@ -6548,7 +6700,9 @@
         "desery polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "hannarchya",
@@ -6591,7 +6745,9 @@
         "przepisy polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "werr7504",
@@ -6677,8 +6833,9 @@
         "pielęgnacja polska"
       ],
       "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
-      "status": "enrichment_error",
-      "last_profile_scan_at": "2026-10-01T13:19:12.639891+00:00"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "glowskin_marta",
@@ -6720,7 +6877,9 @@
         "pizza polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "mdanekk",
@@ -6784,7 +6943,9 @@
         "fitness polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "hair.by.jul",
@@ -6893,7 +7054,9 @@
         "przepisy polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "spizarniababcijadzi",
@@ -6913,7 +7076,9 @@
         "test jedzenia polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "fishyourkicks",
@@ -7109,7 +7274,9 @@
         "restauracje polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "bialykolnierzykpl",
@@ -7129,7 +7296,9 @@
         "cs2 polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "its.kajucha",
@@ -7237,7 +7406,9 @@
         "przepisy polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "ubranasandra",
@@ -7279,7 +7450,9 @@
         "przepisy polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "mobilfoxpolska",
@@ -7405,7 +7578,9 @@
         "restauracje polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "polskalifepl",
@@ -7560,7 +7735,9 @@
         "siłownia polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "bte.poland",
@@ -7581,7 +7758,9 @@
         "minecraft polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "x109070yz",
@@ -7795,7 +7974,9 @@
         "trening polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "kristen__blog",
@@ -7813,7 +7994,9 @@
         "gotowanie polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "koldunu_gang_backup",
@@ -7893,7 +8076,9 @@
         "siłownia polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "em.nalepa",
@@ -8109,7 +8294,9 @@
         "street food polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "panklasyczek",
@@ -8236,7 +8423,9 @@
         "desery polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "salamann_pl",
@@ -8254,7 +8443,9 @@
         "cs2 polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "purzalife",
@@ -8401,7 +8592,8 @@
       ],
       "last_discovered_at": "2026-10-01T10:41:14.725838+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-10-01T11:32:55.308248+00:00"
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "agachicofstyleee",
@@ -8466,7 +8658,8 @@
       ],
       "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-10-01T13:19:12.639891+00:00"
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "fitdarka",
@@ -8793,7 +8986,9 @@
         "vinted polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "michalkoperboks",
@@ -8812,7 +9007,9 @@
         "trening polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T14:59:26.184658+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "gberska",
@@ -8853,7 +9050,9 @@
         "esport polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "sonja_extrah",
@@ -8892,7 +9091,9 @@
         "trening polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "_angelikagrabowska",
@@ -8950,7 +9151,9 @@
         "siłownia polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "jablkogruszkaipietruszka",
@@ -8968,7 +9171,9 @@
         "przepisy polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "diet_and_training_by_ann",
@@ -8986,7 +9191,9 @@
         "trening polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "jeszczeniedaleko",
@@ -9127,7 +9334,9 @@
         "desery polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "butosklep.pl",
@@ -9273,7 +9482,9 @@
         "jedzenie polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "1islamheer",
@@ -9361,7 +9572,9 @@
         "restauracje polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "wavyute",
@@ -9381,7 +9594,9 @@
         "foodie polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "amandabananapanda",
@@ -9401,7 +9616,9 @@
         "kuchnia polska tiktok"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "charissekenion",
@@ -9442,7 +9659,9 @@
         "esport polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "wolnoscslowa2.0",
@@ -10347,7 +10566,7 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-01T14:23:51.914342+00:00",
-      "status": "pending_profile_scan",
+      "status": "enriched",
       "source": "related_mentions",
       "related_score": 20.0,
       "related_source_creators": [
@@ -10355,7 +10574,9 @@
         "agachicofstyleee",
         "jozmuu",
         "victorianiedzwiedz"
-      ]
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "poppyhead.pl",
@@ -10369,14 +10590,16 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-01T14:23:51.914342+00:00",
-      "status": "pending_profile_scan",
+      "status": "enriched",
       "source": "related_mentions",
       "related_score": 17.0,
       "related_source_creators": [
         "agakle_",
         "liwia_szewczyk",
         "magda__inspire"
-      ]
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "zara",
@@ -10390,14 +10613,16 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-01T14:23:51.914342+00:00",
-      "status": "pending_profile_scan",
+      "status": "enriched",
       "source": "related_mentions",
       "related_score": 16.0,
       "related_source_creators": [
         "basia.gawryluk",
         "klatt.ania",
         "monikaporajrozanska"
-      ]
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "pullandbear",
@@ -10411,14 +10636,16 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-01T14:23:51.914342+00:00",
-      "status": "pending_profile_scan",
+      "status": "enriched",
       "source": "related_mentions",
       "related_score": 16.0,
       "related_source_creators": [
         "agachicofstyleee",
         "basia.gawryluk",
         "galeria.krakowska"
-      ]
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "douglas_polska",
@@ -10432,14 +10659,16 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-01T14:23:51.914342+00:00",
-      "status": "pending_profile_scan",
+      "status": "enriched",
       "source": "related_mentions",
       "related_score": 15.0,
       "related_source_creators": [
         "alekschm6",
         "kamilalapa",
         "patrykwhale"
-      ]
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "nyxcosmetics_pl",
@@ -10453,14 +10682,16 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-01T14:23:51.914342+00:00",
-      "status": "pending_profile_scan",
+      "status": "enriched",
       "source": "related_mentions",
       "related_score": 15.0,
       "related_source_creators": [
         "joneswpolsce",
         "kamilalapa",
         "oliwia.girlz"
-      ]
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "matrix",
@@ -10474,14 +10705,16 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-01T14:23:51.914342+00:00",
-      "status": "pending_profile_scan",
+      "status": "enriched",
       "source": "related_mentions",
       "related_score": 15.0,
       "related_source_creators": [
         "kamilalapa",
         "magda__inspire",
         "zaklinamaria"
-      ]
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "bielenda",
@@ -10495,14 +10728,16 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-01T14:23:51.914342+00:00",
-      "status": "pending_profile_scan",
+      "status": "enriched",
       "source": "related_mentions",
       "related_score": 15.0,
       "related_source_creators": [
         "gberska",
         "magda__inspire",
         "veronika.bernat"
-      ]
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "inglotcosmetics",
@@ -10516,14 +10751,16 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-01T14:23:51.914342+00:00",
-      "status": "pending_profile_scan",
+      "status": "enriched",
       "source": "related_mentions",
       "related_score": 15.0,
       "related_source_creators": [
         "ewa.szrajber.daily",
         "klaudasiak",
         "szuzia01"
-      ]
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "kerastase.official",
@@ -10537,14 +10774,16 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-01T14:23:51.914342+00:00",
-      "status": "pending_profile_scan",
+      "status": "enriched",
       "source": "related_mentions",
       "related_score": 15.0,
       "related_source_creators": [
         "agachicofstyleee",
         "kamilalapa",
         "klaudasiak"
-      ]
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "balagan_studio",
@@ -10558,13 +10797,15 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-01T14:23:51.914342+00:00",
-      "status": "pending_profile_scan",
+      "status": "enriched",
       "source": "related_mentions",
       "related_score": 13.0,
       "related_source_creators": [
         "bogna.sworowska",
         "claudies.diaries"
-      ]
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "huda",
@@ -10578,13 +10819,15 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-01T14:23:51.914342+00:00",
-      "status": "pending_profile_scan",
+      "status": "enriched",
       "source": "related_mentions",
       "related_score": 12.0,
       "related_source_creators": [
         "agachicofstyleee",
         "liszotee"
-      ]
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "bershka",
@@ -10598,13 +10841,15 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-01T14:23:51.914342+00:00",
-      "status": "pending_profile_scan",
+      "status": "enriched",
       "source": "related_mentions",
       "related_score": 11.0,
       "related_source_creators": [
         "agachicofstyleee",
         "zaklinamaria"
-      ]
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "chumkpop",
@@ -10618,13 +10863,15 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-01T14:23:51.914342+00:00",
-      "status": "pending_profile_scan",
+      "status": "enriched",
       "source": "related_mentions",
       "related_score": 11.0,
       "related_source_creators": [
         "lale.girlsband",
         "monika.kociolek"
-      ]
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "lunicheparfums",
@@ -10638,13 +10885,15 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-01T14:23:51.914342+00:00",
-      "status": "pending_profile_scan",
+      "status": "enriched",
       "source": "related_mentions",
       "related_score": 11.0,
       "related_source_creators": [
         "agachicofstyleee",
         "hebe_poland"
-      ]
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "oliviakopiec",
@@ -10658,13 +10907,15 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-01T14:23:51.914342+00:00",
-      "status": "pending_profile_scan",
+      "status": "enriched",
       "source": "related_mentions",
       "related_score": 11.0,
       "related_source_creators": [
         "lale.girlsband",
         "monika.kociolek"
-      ]
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "mimiermakeup",
@@ -10678,13 +10929,15 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-01T14:23:51.914342+00:00",
-      "status": "pending_profile_scan",
+      "status": "enriched",
       "source": "related_mentions",
       "related_score": 11.0,
       "related_source_creators": [
         "evelinecosmetics",
         "joneswpolsce"
-      ]
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "danielrenemusic",
@@ -10698,13 +10951,15 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-01T14:23:51.914342+00:00",
-      "status": "pending_profile_scan",
+      "status": "enriched",
       "source": "related_mentions",
       "related_score": 11.0,
       "related_source_creators": [
         "agachicofstyleee",
         "hebe_poland"
-      ]
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "juliaczesak5",
@@ -10718,13 +10973,15 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-01T14:23:51.914342+00:00",
-      "status": "pending_profile_scan",
+      "status": "enriched",
       "source": "related_mentions",
       "related_score": 11.0,
       "related_source_creators": [
         "lale.girlsband",
         "monika.kociolek"
-      ]
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "carrefourpolska",
@@ -10738,13 +10995,462 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-01T14:23:51.914342+00:00",
-      "status": "pending_profile_scan",
+      "status": "enriched",
       "source": "related_mentions",
       "related_score": 11.0,
       "related_source_creators": [
         "blast.energy",
         "hot_chocolate_11"
-      ]
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
+    },
+    {
+      "username": "essence.cosmetics",
+      "tiktok_id": null,
+      "priority": 476,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T14:59:29.802847+00:00",
+      "status": "enriched",
+      "source": "related_mentions",
+      "related_score": 20.0,
+      "related_source_creators": [
+        "liwia_szewczyk",
+        "og.olaaa",
+        "oghalina",
+        "olapersak"
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
+    },
+    {
+      "username": "lidlpolska",
+      "tiktok_id": null,
+      "priority": 477,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T14:59:29.802847+00:00",
+      "status": "enrichment_error",
+      "source": "related_mentions",
+      "related_score": 15.0,
+      "related_source_creators": [
+        "olapersak",
+        "trueboyzz",
+        "zarazsienajem"
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_error": "No public profile/post rows returned."
+    },
+    {
+      "username": "benefitpoland",
+      "tiktok_id": null,
+      "priority": 478,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T14:59:29.802847+00:00",
+      "status": "enriched",
+      "source": "related_mentions",
+      "related_score": 15.0,
+      "related_source_creators": [
+        "olapersak",
+        "veronika.bernat",
+        "victorianiedzwiedz"
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
+    },
+    {
+      "username": "wkdzik.pl",
+      "tiktok_id": null,
+      "priority": 479,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T14:59:29.802847+00:00",
+      "status": "enriched",
+      "source": "related_mentions",
+      "related_score": 15.0,
+      "related_source_creators": [
+        "berzerker_scmz",
+        "olapersak",
+        "purzalife"
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
+    },
+    {
+      "username": "bell.cosmetics",
+      "tiktok_id": null,
+      "priority": 480,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T14:59:29.802847+00:00",
+      "status": "enriched",
+      "source": "related_mentions",
+      "related_score": 15.0,
+      "related_source_creators": [
+        "juliapotz",
+        "kamilalapa",
+        "oghalina"
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
+    },
+    {
+      "username": "yope_soap",
+      "tiktok_id": null,
+      "priority": 481,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T14:59:29.802847+00:00",
+      "status": "enriched",
+      "source": "related_mentions",
+      "related_score": 15.0,
+      "related_source_creators": [
+        "kamixx4",
+        "wiktorianiekalo",
+        "zaklinamaria"
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
+    },
+    {
+      "username": "endorfypolska",
+      "tiktok_id": null,
+      "priority": 482,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T14:59:29.802847+00:00",
+      "status": "enriched",
+      "source": "related_mentions",
+      "related_score": 12.0,
+      "related_source_creators": [
+        "kasia_22ttv",
+        "techkominfo_pl"
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
+    },
+    {
+      "username": "bestpan_polska",
+      "tiktok_id": null,
+      "priority": 483,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T14:59:29.802847+00:00",
+      "status": "enriched",
+      "source": "related_mentions",
+      "related_score": 11.0,
+      "related_source_creators": [
+        "gotowaczka_",
+        "serekszop_w_kuchni"
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
+    },
+    {
+      "username": "zabkapolska",
+      "tiktok_id": null,
+      "priority": 484,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T14:59:29.802847+00:00",
+      "status": "enriched",
+      "source": "related_mentions",
+      "related_score": 11.0,
+      "related_source_creators": [
+        "golden_bow_solutions",
+        "sylwia_testuje"
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
+    },
+    {
+      "username": "catrice.cosmetics",
+      "tiktok_id": null,
+      "priority": 485,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T14:59:29.802847+00:00",
+      "status": "enriched",
+      "source": "related_mentions",
+      "related_score": 10.0,
+      "related_source_creators": [
+        "agakle_",
+        "olapersak"
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
+    },
+    {
+      "username": "beskidzkiepl",
+      "tiktok_id": null,
+      "priority": 486,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T14:59:29.802847+00:00",
+      "status": "enriched",
+      "source": "related_mentions",
+      "related_score": 10.0,
+      "related_source_creators": [
+        "em.nalepa",
+        "kamixx4"
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
+    },
+    {
+      "username": "starbuckspolska",
+      "tiktok_id": null,
+      "priority": 487,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T14:59:29.802847+00:00",
+      "status": "enriched",
+      "source": "related_mentions",
+      "related_score": 10.0,
+      "related_source_creators": [
+        "lukaszkonior.jpg",
+        "zaklinamaria"
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
+    },
+    {
+      "username": "newyorkeronline",
+      "tiktok_id": null,
+      "priority": 488,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T14:59:29.802847+00:00",
+      "status": "enriched",
+      "source": "related_mentions",
+      "related_score": 10.0,
+      "related_source_creators": [
+        "agachicofstyleee",
+        "m.turczynka"
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
+    },
+    {
+      "username": "mamonde.official",
+      "tiktok_id": null,
+      "priority": 489,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T14:59:29.802847+00:00",
+      "status": "enriched",
+      "source": "related_mentions",
+      "related_score": 10.0,
+      "related_source_creators": [
+        "hebe_poland",
+        "karina_kozuszko"
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
+    },
+    {
+      "username": "biedronka",
+      "tiktok_id": null,
+      "priority": 490,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T14:59:29.802847+00:00",
+      "status": "enriched",
+      "source": "related_mentions",
+      "related_score": 10.0,
+      "related_source_creators": [
+        "ciekawus",
+        "oghalina"
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
+    },
+    {
+      "username": "emiliamup",
+      "tiktok_id": null,
+      "priority": 491,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T14:59:29.802847+00:00",
+      "status": "enriched",
+      "source": "related_mentions",
+      "related_score": 10.0,
+      "related_source_creators": [
+        "juliapotz",
+        "paulina.hornik"
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
+    },
+    {
+      "username": "swederm",
+      "tiktok_id": null,
+      "priority": 492,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T14:59:29.802847+00:00",
+      "status": "enriched",
+      "source": "related_mentions",
+      "related_score": 10.0,
+      "related_source_creators": [
+        "gberska",
+        "oliwka.malgorzata"
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
+    },
+    {
+      "username": "soflowpl",
+      "tiktok_id": null,
+      "priority": 493,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T14:59:29.802847+00:00",
+      "status": "enriched",
+      "source": "related_mentions",
+      "related_score": 10.0,
+      "related_source_creators": [
+        "katarzyna.lech",
+        "kitka00"
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
+    },
+    {
+      "username": "neboa.pl",
+      "tiktok_id": null,
+      "priority": 494,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T14:59:29.802847+00:00",
+      "status": "enriched",
+      "source": "related_mentions",
+      "related_score": 10.0,
+      "related_source_creators": [
+        "kamilalapa",
+        "kitka00"
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
+    },
+    {
+      "username": "dermacol_cz_sk",
+      "tiktok_id": null,
+      "priority": 495,
+      "discovery_followers": null,
+      "polish_signals": [],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "related_mentions"
+      ],
+      "last_discovered_at": "2026-10-01T14:59:29.802847+00:00",
+      "status": "enriched",
+      "source": "related_mentions",
+      "related_score": 10.0,
+      "related_source_creators": [
+        "agastruskamua",
+        "j.tere"
+      ],
+      "last_profile_scan_at": "2026-10-01T15:20:58.369822+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     }
   ]
 }
