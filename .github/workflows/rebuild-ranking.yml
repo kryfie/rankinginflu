@@ -33,6 +33,9 @@ jobs:
       - name: Re-apply creator geo signals
         run: python -m apps.automation.geo harvest
 
+      - name: Build data quality report
+        run: python -m apps.automation.quality report
+
       - name: Commit reclassified creators and rebuilt ranking
         shell: bash
         run: |
@@ -42,6 +45,7 @@ jobs:
           git add \
             database/data/enriched_creators.json \
             database/data/geo_evidence.json \
+            database/data/quality_report.json \
             apps/web/data/creators.json
 
           if git diff --cached --quiet; then

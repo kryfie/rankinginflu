@@ -1,4 +1,4 @@
-name: InfluRank autopilot v3
+name: InfluRank autopilot v4
 
 on:
   schedule:
@@ -42,7 +42,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: influrank-autopilot-v2
+  group: influrank-autopilot-v4
   cancel-in-progress: false
 
 jobs:
@@ -142,7 +142,10 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add \
+            apps/discovery/seeds.json \
             database/data/seed_state.json \
+            database/data/dynamic_seed_meta.json \
+            database/data/related_handles.json \
             apps/web/data/discovery_candidates.json \
             apps/web/data/scanner_queue.json \
             apps/web/data/discovery_raw.json
@@ -187,6 +190,11 @@ jobs:
         run: |
           python -m apps.automation.geo harvest
 
+
+      - name: Build data quality report
+        run: |
+          python -m apps.automation.quality report
+
       - name: Upload provider diagnostics
         if: always()
         uses: actions/upload-artifact@v4
@@ -210,6 +218,7 @@ jobs:
             database/data/dynamic_seed_meta.json \
             database/data/related_handles.json \
             database/data/geo_evidence.json \
+            database/data/quality_report.json \
             database/data/enriched_creators.json \
             database/data/posts.json \
             database/data/creator_snapshots.json \
@@ -223,7 +232,7 @@ jobs:
             exit 0
           fi
 
-          git commit -m "data: run InfluRank autopilot v3"
+          git commit -m "data: run InfluRank autopilot v4"
           git push origin HEAD:main
 
 
