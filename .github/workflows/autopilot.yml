@@ -25,7 +25,7 @@ on:
       bootstrap_target:
         description: "Stop aggressive bootstrap around this many eligible candidates"
         required: true
-        default: "250"
+        default: "1000"
         type: string
       new_enrichment_limit:
         description: "Maximum new profiles enriched in this run"
@@ -79,7 +79,7 @@ jobs:
 
           [ -n "$MODE" ] || MODE="auto"
           [ -n "$MAX_SEEDS" ] || MAX_SEEDS="25"
-          [ -n "$TARGET" ] || TARGET="250"
+          [ -n "$TARGET" ] || TARGET="1000"
           [ -n "$NEW_LIMIT" ] || NEW_LIMIT="100"
           [ -n "$REFRESH_LIMIT" ] || REFRESH_LIMIT="100"
 
@@ -205,7 +205,11 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add \
+            apps/discovery/seeds.json \
             database/data/seed_state.json \
+            database/data/dynamic_seed_meta.json \
+            database/data/related_handles.json \
+            database/data/geo_evidence.json \
             database/data/enriched_creators.json \
             database/data/posts.json \
             database/data/creator_snapshots.json \
@@ -221,3 +225,45 @@ jobs:
 
           git commit -m "data: run InfluRank autopilot v3"
           git push origin HEAD:main
+
+
+      - name: Sync public ranking data to dev
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          echo "Syncing apps/web/data/creators.json from main to dev..."
+
+          # Keep the DEV frontend exactly as it is. Only the public ranking
+          # snapshot is copied from main.
+          cp apps/web/data/creators.json /tmp/influrank-creators.json
+
+          if ! git ls-remote --exit-code --heads origin dev >/dev/null 2>&1; then
+            echo "Branch dev does not exist. Skipping DEV data sync."
+            exit 0
+          fi
+
+          git fetch origin dev
+
+          rm -rf /tmp/influrank-dev
+          git worktree add --detach /tmp/influrank-dev origin/dev
+
+          mkdir -p /tmp/influrank-dev/apps/web/data
+          cp /tmp/influrank-creators.json /tmp/influrank-dev/apps/web/data/creators.json
+
+          cd /tmp/influrank-dev
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add apps/web/data/creators.json
+
+          if git diff --cached --quiet; then
+            echo "DEV already has the current creators.json."
+            exit 0
+          fi
+
+          git commit -m "data: sync ranking snapshot from main"
+          git push origin HEAD:dev
+
+          echo "DEV ranking data synced successfully."
