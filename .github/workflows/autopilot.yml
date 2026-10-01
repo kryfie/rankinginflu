@@ -1,4 +1,4 @@
-name: InfluRank autopilot v2
+name: InfluRank autopilot v3
 
 on:
   schedule:
@@ -89,6 +89,15 @@ jobs:
           echo "NEW_LIMIT=$NEW_LIMIT" >> "$GITHUB_OUTPUT"
           echo "REFRESH_LIMIT=$REFRESH_LIMIT" >> "$GITHUB_OUTPUT"
 
+
+      - name: Expand discovery from existing creator graph
+        run: |
+          python -m apps.automation.expansion harvest \
+            --max-new-seeds 25 \
+            --max-dynamic-seeds-total 500 \
+            --max-related-handles 20 \
+            --min-seed-score 4
+
       - name: Plan cost-aware discovery
         id: plan
         shell: bash
@@ -154,6 +163,15 @@ jobs:
             --max-profiles "${{ steps.settings.outputs.NEW_LIMIT }}" \
             --max-posts 13
 
+
+      - name: Learn new hashtags and related creators from enriched posts
+        run: |
+          python -m apps.automation.expansion harvest \
+            --max-new-seeds 25 \
+            --max-dynamic-seeds-total 500 \
+            --max-related-handles 20 \
+            --min-seed-score 4
+
       - name: Refresh existing creators only when 7+ days old
         env:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
@@ -197,5 +215,5 @@ jobs:
             exit 0
           fi
 
-          git commit -m "data: run InfluRank autopilot v2"
+          git commit -m "data: run InfluRank autopilot v3"
           git push origin HEAD:main
