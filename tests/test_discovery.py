@@ -1,6 +1,7 @@
 import unittest
 
 from apps.discovery.models import Candidate
+from apps.discovery.cli import _select_seeds
 from apps.discovery.pipeline import (
     build_scanner_queue,
     compact_post,
@@ -151,6 +152,28 @@ class DiscoveryTests(unittest.TestCase):
         self.assertEqual(
             queue["items"][0]["last_profile_scan_at"],
             "2026-09-30T00:00:00Z",
+        )
+
+
+    def test_seed_window(self):
+        seeds = ["a", "b", "c", "d", "e"]
+        self.assertEqual(
+            _select_seeds(seeds, start_seed=2, max_seeds=2),
+            ["c", "d"],
+        )
+
+    def test_seed_window_all_remaining(self):
+        seeds = ["a", "b", "c", "d"]
+        self.assertEqual(
+            _select_seeds(seeds, start_seed=1, max_seeds=0),
+            ["b", "c", "d"],
+        )
+
+    def test_seed_window_past_end_is_empty(self):
+        seeds = ["a", "b"]
+        self.assertEqual(
+            _select_seeds(seeds, start_seed=2, max_seeds=2),
+            [],
         )
 
 

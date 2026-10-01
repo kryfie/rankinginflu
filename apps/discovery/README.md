@@ -43,3 +43,39 @@ The full provider payload is uploaded as a short-lived GitHub Actions artifact.
 
 The discovery provider's `verified` value is not considered authoritative.
 InfluRank must confirm the TikTok badge independently during profile enrichment.
+
+
+## Discovery v3: start_seed
+
+To avoid scanning the same first seeds over and over, discovery now supports a
+zero-based `start_seed` offset.
+
+Examples with the default seed list:
+
+```text
+start_seed=0, max_seeds=2
+→ polskatiktok
+→ tiktokpolska
+
+start_seed=2, max_seeds=2
+→ polska
+→ polandtiktok
+
+start_seed=4, max_seeds=2
+→ polishtiktok
+→ polski humor
+```
+
+`max_seeds=0` means "all remaining seeds starting from start_seed".
+
+Recommended batch pattern:
+
+```text
+0 / 2
+2 / 2
+4 / 2
+6 / 2
+...
+```
+
+The candidate registry is cumulative, so duplicates across batches are merged.

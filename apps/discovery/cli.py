@@ -46,10 +46,24 @@ def _load_keywords(path: Path) -> list[str]:
     return clean
 
 
-def _select_seeds(keywords: list[str], max_seeds: int) -> list[str]:
+def _select_seeds(
+    keywords: list[str],
+    *,
+    start_seed: int,
+    max_seeds: int,
+) -> list[str]:
+    if start_seed < 0:
+        raise ValueError("start_seed must be >= 0")
+
+    if start_seed >= len(keywords):
+        return []
+
+    remaining = keywords[start_seed:]
+
     if max_seeds <= 0:
-        return keywords
-    return keywords[:max_seeds]
+        return remaining
+
+    return remaining[:max_seeds]
 
 
 def discover(args: argparse.Namespace) -> int:
@@ -57,10 +71,17 @@ def discover(args: argparse.Namespace) -> int:
 
     seeds_path = Path(args.seeds).resolve()
     all_keywords = _load_keywords(seeds_path)
-    keywords = _select_seeds(all_keywords, args.max_seeds)
+    keywords = _select_seeds(
+        all_keywords,
+        start_seed=args.start_seed,
+        max_seeds=args.max_seeds,
+    )
 
     if not keywords:
-        raise RuntimeError("No discovery seeds selected.")
+        raise RuntimeError(
+            f"No discovery seeds selected. start_seed={args.start_seed}, "
+            f"available={len(all_keywords)}."
+        )
 
     run_at = utcnow()
     all_posts: list[dict] = []
@@ -69,7 +90,8 @@ def discover(args: argparse.Namespace) -> int:
 
     print(
         f"InfluRank discovery | seeds={len(keywords)}/{len(all_keywords)} | "
-        f"resultsPerSeed={args.results_per_seed} | location={args.location} | "
+        f"startSeed={args.start_seed} | resultsPerSeed={args.results_per_seed} | "
+        f"location={args.location} | "
         f"minFollowers={args.min_followers} | minPLSignals={args.min_pl_signals}"
     )
     print(f"Actor: {settings.actor_id}")
@@ -131,6 +153,7 @@ def discover(args: argparse.Namespace) -> int:
     latest_run_meta = {
         "run_at": run_at,
         "actor": settings.actor_id,
+        "startSeed": args.start_seed,
         "seeds_requested": keywords,
         "seeds_completed": [row["seed"] for row in seed_stats],
         "resultsPerSeed": args.results_per_seed,
@@ -224,10 +247,19 @@ def build_parser() -> argparse.ArgumentParser:
         help="Maximum posts requested separately for each seed.",
     )
     command.add_argument(
+        "--start-seed",
+        type=int,
+        default=0,
+        help=(
+            "Zero-based seed offset. Example: 0 starts at the first seed, "
+            "2 starts at the third seed."
+        ),
+    )
+    command.add_argument(
         "--max-seeds",
         type=int,
         default=Settings.max_seeds,
-        help="How many seeds to run. 0 means all configured seeds.",
+        help="How many seeds to run from start_seed. 0 means all remaining seeds.",
     )
     command.add_argument(
         "--min-followers",
@@ -275,6 +307,8 @@ def main() -> int:
     if args.command == "run":
         if args.results_per_seed < 1:
             parser.error("--results-per-seed must be >= 1")
+        if args.start_seed < 0:
+            parser.error("--start-seed must be >= 0")
         if args.max_seeds < 0:
             parser.error("--max-seeds must be >= 0")
         if args.min_followers < 0:
