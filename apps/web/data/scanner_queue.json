@@ -1,15 +1,15 @@
 {
   "meta": {
     "purpose": "Queue for authoritative profile enrichment",
-    "count": 3,
-    "updated_at": "2026-10-01T08:07:25.169332+00:00"
+    "count": 5,
+    "updated_at": "2026-10-01T08:15:06.603181+00:00"
   },
   "items": [
     {
       "username": "menelgeographic",
       "tiktok_id": "6921706513291969541",
       "priority": 1,
-      "discovery_followers": 63342,
+      "discovery_followers": 63346,
       "polish_signals": [
         "hashtag",
         "poi_pl",
@@ -19,13 +19,30 @@
       "found_by": [
         "polskatiktok"
       ],
-      "last_discovered_at": "2026-10-01T08:07:25.169332+00:00",
+      "last_discovered_at": "2026-10-01T08:15:06.603181+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "wolnoscslowa2.0",
+      "tiktok_id": "7156902889259860998",
+      "priority": 2,
+      "discovery_followers": 216557,
+      "polish_signals": [
+        "hashtag",
+        "subtitle_pl",
+        "title"
+      ],
+      "found_by": [
+        "polskatiktok",
+        "tiktokpolska"
+      ],
+      "last_discovered_at": "2026-10-01T08:15:06.603181+00:00",
       "status": "pending_profile_scan"
     },
     {
       "username": "2cytramon2",
       "tiktok_id": "7615521098349151254",
-      "priority": 2,
+      "priority": 3,
       "discovery_followers": 34112,
       "polish_signals": [
         "hashtag",
@@ -33,15 +50,16 @@
         "title"
       ],
       "found_by": [
-        "polskatiktok"
+        "polskatiktok",
+        "tiktokpolska"
       ],
-      "last_discovered_at": "2026-10-01T08:07:25.169332+00:00",
+      "last_discovered_at": "2026-10-01T08:15:06.603181+00:00",
       "status": "pending_profile_scan"
     },
     {
       "username": "andrzej9448",
       "tiktok_id": "7364679484983165985",
-      "priority": 3,
+      "priority": 4,
       "discovery_followers": 24474,
       "polish_signals": [
         "hashtag",
@@ -52,6 +70,22 @@
         "polskatiktok"
       ],
       "last_discovered_at": null,
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "mateusz_macierakowski",
+      "tiktok_id": "7009565484010849286",
+      "priority": 5,
+      "discovery_followers": 12056,
+      "polish_signals": [
+        "hashtag",
+        "subtitle_pl",
+        "title"
+      ],
+      "found_by": [
+        "polskatiktok"
+      ],
+      "last_discovered_at": "2026-10-01T08:15:06.603181+00:00",
       "status": "pending_profile_scan"
     }
   ]

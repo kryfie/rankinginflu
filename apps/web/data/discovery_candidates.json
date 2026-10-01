@@ -1,13 +1,15 @@
 {
   "meta": {
     "latest_run": {
-      "run_at": "2026-10-01T08:07:25.169332+00:00",
+      "run_at": "2026-10-01T08:15:06.603181+00:00",
       "actor": "apidojo~tiktok-scraper-api",
       "seeds_requested": [
-        "polskatiktok"
+        "polskatiktok",
+        "tiktokpolska"
       ],
       "seeds_completed": [
-        "polskatiktok"
+        "polskatiktok",
+        "tiktokpolska"
       ],
       "resultsPerSeed": 10,
       "location": "PL",
@@ -16,21 +18,25 @@
       "minFollowers": 10000,
       "minPLSignals": 1,
       "stats": {
-        "posts_in": 10,
-        "unique_creators": 10,
-        "below_min_followers": 8,
-        "accepted_candidates_latest_run": 2
+        "posts_in": 20,
+        "unique_creators": 14,
+        "below_min_followers": 10,
+        "accepted_candidates_latest_run": 4
       },
       "per_seed": [
         {
           "seed": "polskatiktok",
           "posts_returned": 10
+        },
+        {
+          "seed": "tiktokpolska",
+          "posts_returned": 10
         }
       ],
       "errors": []
     },
-    "registry_count": 3,
-    "updated_at": "2026-10-01T08:07:25.169332+00:00"
+    "registry_count": 5,
+    "updated_at": "2026-10-01T08:15:06.603181+00:00"
   },
   "creators": [
     {
@@ -38,15 +44,15 @@
       "username": "menelgeographic",
       "display_name": "Menel Geographic",
       "profile_url": "https://www.tiktok.com/@menelgeographic",
-      "avatar_url": "https://p16-common-sign.tiktokcdn-eu.com/tos-no1a-avt-0068c001-no/fcf8c6094d20200395bedb6ed1c88746~tplv-tiktokx-cropcenter-q:1080:1080:q70.heic?dr=9608&refresh_token=b22802f3&x-expires=1790928000&x-signature=rMXzGfARYEI9lotc6nz%2B%2BSkd3mw%3D&t=223449c4&ps=87d6e48a&shp=d05b14bd&shcp=c1333099&idc=no1a&sc=avatar&s=SEARCH",
-      "followers": 63342,
+      "avatar_url": "https://p19-common-sign.tiktokcdn-eu.com/tos-no1a-avt-0068c001-no/fcf8c6094d20200395bedb6ed1c88746~tplv-tiktokx-cropcenter-q:1080:1080:q70.heic?dr=9608&refresh_token=30027757&x-expires=1790928000&x-signature=cLZa%2BIwUtBybL9HvMi%2FZgCG%2FsN0%3D&t=223449c4&ps=87d6e48a&shp=d05b14bd&shcp=c1333099&idc=no1a&sc=avatar&s=SEARCH",
+      "followers": 63346,
       "provider_verified": true,
       "found_by": [
         "polskatiktok"
       ],
       "posts_seen": 1,
-      "max_views_seen": 2009109,
-      "max_likes_seen": 132452,
+      "max_views_seen": 2009207,
+      "max_likes_seen": 132456,
       "latest_post_at": "2026-09-19T02:26:38.000Z",
       "polish_signal_count": 4,
       "polish_signals": [
@@ -56,26 +62,56 @@
         "title"
       ],
       "first_discovered_at": "2026-10-01T08:07:25.169332+00:00",
-      "last_discovered_at": "2026-10-01T08:07:25.169332+00:00",
-      "discovery_runs_seen": 1,
+      "last_discovered_at": "2026-10-01T08:15:06.603181+00:00",
+      "discovery_runs_seen": 2,
       "posts_seen_latest_run": 1,
-      "posts_seen_total": 1,
-      "followers_max_seen": 63342
+      "posts_seen_total": 2,
+      "followers_max_seen": 63346
+    },
+    {
+      "tiktok_id": "7156902889259860998",
+      "username": "wolnoscslowa2.0",
+      "display_name": "Wolność Słowa 2.0",
+      "profile_url": "https://www.tiktok.com/@wolnoscslowa2.0",
+      "avatar_url": "https://p16-common-sign.tiktokcdn-eu.com/tos-no1a-avt-0068c001-no/161c715fa694daf32f7a48ae4b867f22~tplv-tiktokx-cropcenter-q:1080:1080:q70.heic?dr=9608&refresh_token=10511ae6&x-expires=1790928000&x-signature=PGba%2Fjq1i7ZcsPpM8DrwsQAgIJo%3D&t=223449c4&ps=87d6e48a&shp=d05b14bd&shcp=c1333099&idc=no1a&sc=avatar&s=SEARCH",
+      "followers": 216557,
+      "provider_verified": true,
+      "found_by": [
+        "polskatiktok",
+        "tiktokpolska"
+      ],
+      "posts_seen": 4,
+      "max_views_seen": 489496,
+      "max_likes_seen": 11088,
+      "latest_post_at": "2026-09-29T06:59:29.000Z",
+      "polish_signal_count": 3,
+      "polish_signals": [
+        "hashtag",
+        "subtitle_pl",
+        "title"
+      ],
+      "first_discovered_at": "2026-10-01T08:15:06.603181+00:00",
+      "last_discovered_at": "2026-10-01T08:15:06.603181+00:00",
+      "discovery_runs_seen": 1,
+      "posts_seen_latest_run": 4,
+      "posts_seen_total": 4,
+      "followers_max_seen": 216557
     },
     {
       "tiktok_id": "7615521098349151254",
       "username": "2cytramon2",
       "display_name": "2Cytramon",
       "profile_url": "https://www.tiktok.com/@2cytramon2",
-      "avatar_url": "https://p16-common-sign.tiktokcdn-eu.com/tos-no1a-avt-0068c001-no/617e927823bfb088d916bf6593fe6b13~tplv-tiktokx-cropcenter-q:1080:1080:q70.heic?dr=9608&refresh_token=4dfbc285&x-expires=1790928000&x-signature=iNQAqRnwosDJpU7SXDR7V8%2BFExc%3D&t=223449c4&ps=87d6e48a&shp=d05b14bd&shcp=c1333099&idc=no1a&sc=avatar&s=SEARCH",
+      "avatar_url": "https://p16-common-sign.tiktokcdn-eu.com/tos-no1a-avt-0068c001-no/617e927823bfb088d916bf6593fe6b13~tplv-tiktokx-cropcenter-q:1080:1080:q70.heic?dr=9608&refresh_token=4dfbc285&x-expires=1790928000&x-signature=iNQAqRnwosDJpU7SXDR7V8%2BFExc%3D&t=223449c4&ps=87d6e48a&shp=d05b14bd&shcp=c1333099&idc=no1a&s=SEARCH&sc=avatar",
       "followers": 34112,
       "provider_verified": true,
       "found_by": [
-        "polskatiktok"
+        "polskatiktok",
+        "tiktokpolska"
       ],
-      "posts_seen": 1,
-      "max_views_seen": 1975714,
-      "max_likes_seen": 105499,
+      "posts_seen": 2,
+      "max_views_seen": 1976316,
+      "max_likes_seen": 105529,
       "latest_post_at": "2026-09-26T09:38:48.000Z",
       "polish_signal_count": 3,
       "polish_signals": [
@@ -84,10 +120,10 @@
         "title"
       ],
       "first_discovered_at": "2026-10-01T08:07:25.169332+00:00",
-      "last_discovered_at": "2026-10-01T08:07:25.169332+00:00",
-      "discovery_runs_seen": 1,
-      "posts_seen_latest_run": 1,
-      "posts_seen_total": 2,
+      "last_discovered_at": "2026-10-01T08:15:06.603181+00:00",
+      "discovery_runs_seen": 2,
+      "posts_seen_latest_run": 2,
+      "posts_seen_total": 4,
       "followers_max_seen": 34112
     },
     {
@@ -111,6 +147,34 @@
         "subtitle_pl",
         "title"
       ]
+    },
+    {
+      "tiktok_id": "7009565484010849286",
+      "username": "mateusz_macierakowski",
+      "display_name": "Mateusz Macierakowski",
+      "profile_url": "https://www.tiktok.com/@mateusz_macierakowski",
+      "avatar_url": "https://p16-common-sign.tiktokcdn-eu.com/tos-useast2a-avt-0068-euttp/d09f51ede04c5a68c0bdefbcaed4d137~tplv-tiktokx-cropcenter-q:1080:1080:q70.heic?dr=9608&refresh_token=14f3da85&x-expires=1790928000&x-signature=DQqCcjBYFfGKHeHw2QAwDpVZRiQ%3D&t=223449c4&ps=87d6e48a&shp=d05b14bd&shcp=c1333099&idc=no1a&sc=avatar&s=SEARCH",
+      "followers": 12056,
+      "provider_verified": true,
+      "found_by": [
+        "polskatiktok"
+      ],
+      "posts_seen": 1,
+      "max_views_seen": 541911,
+      "max_likes_seen": 12588,
+      "latest_post_at": "2026-09-29T09:22:45.000Z",
+      "polish_signal_count": 3,
+      "polish_signals": [
+        "hashtag",
+        "subtitle_pl",
+        "title"
+      ],
+      "first_discovered_at": "2026-10-01T08:15:06.603181+00:00",
+      "last_discovered_at": "2026-10-01T08:15:06.603181+00:00",
+      "discovery_runs_seen": 1,
+      "posts_seen_latest_run": 1,
+      "posts_seen_total": 1,
+      "followers_max_seen": 12056
     }
   ]
 }

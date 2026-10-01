@@ -1,12 +1,14 @@
 {
   "meta": {
-    "run_at": "2026-10-01T08:07:25.169332+00:00",
+    "run_at": "2026-10-01T08:15:06.603181+00:00",
     "actor": "apidojo~tiktok-scraper-api",
     "seeds_requested": [
-      "polskatiktok"
+      "polskatiktok",
+      "tiktokpolska"
     ],
     "seeds_completed": [
-      "polskatiktok"
+      "polskatiktok",
+      "tiktokpolska"
     ],
     "resultsPerSeed": 10,
     "location": "PL",
@@ -15,14 +17,18 @@
     "minFollowers": 10000,
     "minPLSignals": 1,
     "stats": {
-      "posts_in": 10,
-      "unique_creators": 10,
-      "below_min_followers": 8,
-      "accepted_candidates_latest_run": 2
+      "posts_in": 20,
+      "unique_creators": 14,
+      "below_min_followers": 10,
+      "accepted_candidates_latest_run": 4
     },
     "per_seed": [
       {
         "seed": "polskatiktok",
+        "posts_returned": 10
+      },
+      {
+        "seed": "tiktokpolska",
         "posts_returned": 10
       }
     ],
@@ -31,128 +37,28 @@
   "posts": [
     {
       "seed": "polskatiktok",
-      "id": "7689776112024571168",
-      "title": "Kiedy nie masz KuKirin… robisz sobie własny 😂🛴 #p#polskitiktokt#tiktokpolskar#rodzinnytiktokd#dziecihumor ",
-      "views": 1975714,
-      "likes": 105499,
-      "comments": 1168,
-      "shares": 90294,
-      "bookmarks": 11460,
+      "id": "7690520564477234464",
+      "title": "🥲😂 #polska #tiktokpolska #dlaciebie #viral #rek ",
+      "views": 242225,
+      "likes": 27081,
+      "comments": 64,
+      "shares": 22791,
+      "bookmarks": 1328,
       "hashtags": [
-        "polskitiktok",
-        "tiktokpolska",
-        "rodzinnytiktok",
-        "dzieci"
-      ],
-      "uploadedAtFormatted": "2026-09-26T09:38:48.000Z",
-      "channel": {
-        "id": "7615521098349151254",
-        "name": "2Cytramon",
-        "username": "2cytramon2",
-        "profile_url": "https://www.tiktok.com/@2cytramon2",
-        "followers": 34112,
-        "following": 45,
-        "provider_verified": true
-      },
-      "subtitle_languages": [
-        "pl"
-      ],
-      "poi": null,
-      "polish_signals": [
-        "hashtag",
-        "subtitle_pl",
-        "title"
-      ]
-    },
-    {
-      "seed": "polskatiktok",
-      "id": "7686551087498710305",
-      "title": "Praca… #dlaciebie #polskitiktok #viral #malik #polska ",
-      "views": 136236,
-      "likes": 4891,
-      "comments": 115,
-      "shares": 386,
-      "bookmarks": 278,
-      "hashtags": [
-        "dlaciebie",
-        "polskitiktok",
-        "viral",
-        "malik",
-        "polska"
-      ],
-      "uploadedAtFormatted": "2026-09-17T17:03:59.000Z",
-      "channel": {
-        "id": "6637882979119562757",
-        "name": "__urbas__",
-        "username": "__urbas__",
-        "profile_url": "https://www.tiktok.com/@__urbas__",
-        "followers": 2749,
-        "following": 63,
-        "provider_verified": true
-      },
-      "subtitle_languages": [],
-      "poi": null,
-      "polish_signals": [
-        "hashtag",
-        "title"
-      ]
-    },
-    {
-      "seed": "polskatiktok",
-      "id": "7687982722479852833",
-      "title": "#praca #Meme #tiktokpoland #polskiememy  ",
-      "views": 273615,
-      "likes": 20641,
-      "comments": 37,
-      "shares": 12284,
-      "bookmarks": 2078,
-      "hashtags": [
-        "praca",
-        "meme",
-        "tiktokpoland",
-        "polskiememy"
-      ],
-      "uploadedAtFormatted": "2026-09-21T13:39:30.000Z",
-      "channel": {
-        "id": "7532502430618207254",
-        "name": "Opsik",
-        "username": "opsik91",
-        "profile_url": "https://www.tiktok.com/@opsik91",
-        "followers": 1357,
-        "following": 6,
-        "provider_verified": true
-      },
-      "subtitle_languages": [],
-      "poi": null,
-      "polish_signals": [
-        "hashtag",
-        "title"
-      ]
-    },
-    {
-      "seed": "polskatiktok",
-      "id": "7690850560110644512",
-      "title": "Kiedyś wózeczek na zakupy był symbolem starości. Dzisiaj jest symbolem tego, że nie będę nosił 12 kg ziemniaków jak debil. #polskitiktok #polska #tiktokpolska #viral #dc ",
-      "views": 52363,
-      "likes": 2583,
-      "comments": 188,
-      "shares": 1045,
-      "bookmarks": 101,
-      "hashtags": [
-        "polskitiktok",
         "polska",
         "tiktokpolska",
+        "dlaciebie",
         "viral",
-        "dc"
+        "rek"
       ],
-      "uploadedAtFormatted": "2026-09-29T07:08:23.000Z",
+      "uploadedAtFormatted": "2026-09-28T09:47:43.000Z",
       "channel": {
-        "id": "6708365733338563589",
-        "name": "Dziewica z Zamtuzu",
-        "username": "zamtuz",
-        "profile_url": "https://www.tiktok.com/@zamtuz",
-        "followers": 946,
-        "following": 254,
+        "id": "7683557562440418326",
+        "name": "auvira",
+        "username": "auvira1",
+        "profile_url": "https://www.tiktok.com/@auvira1",
+        "followers": 99,
+        "following": 29,
         "provider_verified": true
       },
       "subtitle_languages": [],
@@ -164,84 +70,36 @@
     },
     {
       "seed": "polskatiktok",
-      "id": "7690904330190228769",
-      "title": "Praca zmianowa jest niesprawiedliwa… 😭😂.                     @Hebe Polska  #pracawhebe #hebe #dc #fyp #polskitiktok ",
-      "views": 82274,
-      "likes": 5047,
-      "comments": 21,
-      "shares": 1281,
-      "bookmarks": 295,
+      "id": "7690848283702431008",
+      "title": "#wolnośćsłowa #dlaciebie #polska #polska🇵🇱 #tiktokpolska ",
+      "views": 489496,
+      "likes": 11088,
+      "comments": 1030,
+      "shares": 8783,
+      "bookmarks": 2040,
       "hashtags": [
-        "pracawhebe",
-        "hebe",
-        "dc",
-        "fyp",
-        "polskitiktok"
+        "wolnośćsłowa",
+        "dlaciebie",
+        "polska",
+        "polska🇵🇱",
+        "tiktokpolska"
       ],
-      "uploadedAtFormatted": "2026-09-29T10:36:52.000Z",
+      "uploadedAtFormatted": "2026-09-29T06:59:29.000Z",
       "channel": {
-        "id": "7686591969858274326",
-        "name": "Hebowskie Scyzoryki z Korony",
-        "username": "hebowskie.scyzory",
-        "profile_url": "https://www.tiktok.com/@hebowskie.scyzory",
-        "followers": 82,
-        "following": 2,
+        "id": "7156902889259860998",
+        "name": "Wolność Słowa 2.0",
+        "username": "wolnoscslowa2.0",
+        "profile_url": "https://www.tiktok.com/@wolnoscslowa2.0",
+        "followers": 216557,
+        "following": 28,
         "provider_verified": true
       },
       "subtitle_languages": [
         "pl"
       ],
-      "poi": {
-        "poiName": "Galeria Korona",
-        "address": "Warszawska 26, 25-312 Kielce, Poland",
-        "cityName": "Kielce",
-        "regionCode": "798544"
-      },
+      "poi": null,
       "polish_signals": [
         "hashtag",
-        "poi_pl",
-        "subtitle_pl",
-        "title"
-      ]
-    },
-    {
-      "seed": "polskatiktok",
-      "id": "7687067025608428832",
-      "title": "😂 „Dla zwykłego człowieka — śmieć. Dla wizjonera — kolekcja jesień–zima” #MenelGeographic #PolskiTikTok #Humor #MiejskaDzungla #Memy ",
-      "views": 2009109,
-      "likes": 132452,
-      "comments": 1574,
-      "shares": 200652,
-      "bookmarks": 17606,
-      "hashtags": [
-        "menelgeographic",
-        "polskitiktok",
-        "humor",
-        "miejskadzungla",
-        "memy"
-      ],
-      "uploadedAtFormatted": "2026-09-19T02:26:38.000Z",
-      "channel": {
-        "id": "6921706513291969541",
-        "name": "Menel Geographic",
-        "username": "menelgeographic",
-        "profile_url": "https://www.tiktok.com/@menelgeographic",
-        "followers": 63342,
-        "following": 36,
-        "provider_verified": true
-      },
-      "subtitle_languages": [
-        "pl"
-      ],
-      "poi": {
-        "poiName": "Warsaw",
-        "address": "Warsaw, Masovian, Poland",
-        "cityName": "",
-        "regionCode": "798544"
-      },
-      "polish_signals": [
-        "hashtag",
-        "poi_pl",
         "subtitle_pl",
         "title"
       ]
@@ -250,7 +108,7 @@
       "seed": "polskatiktok",
       "id": "7689512288449088800",
       "title": "warszawa 🇵🇱  #warsaw #polska🇵🇱 #tiktokpoland #polska #warszawa ",
-      "views": 6587,
+      "views": 6589,
       "likes": 517,
       "comments": 112,
       "shares": 17,
@@ -288,61 +146,64 @@
     },
     {
       "seed": "polskatiktok",
-      "id": "7682060705293421838",
-      "title": "#dlaciebie #fyp #polskitiktok #polska #trend ",
-      "views": 572148,
-      "likes": 22572,
-      "comments": 2221,
-      "shares": 382,
-      "bookmarks": 1106,
+      "id": "7690885227731815713",
+      "title": "🆕⚠️📺 Z jednej strony mówi się, że mamy nadprodukcję magistrów i inflację wykształcenia, ludzie pracują poniżej swoich kwalifikacji. Z drugiej strony od lat trwa dyskusja, żeby przejść na zawodowstwo. Przyszłości szkół branżowych jednak nie będzie, bo wszystko jest w rękach i aspiracjach rodziców - ponad 80 proc. rodziców chce wykształcenia wyższego dla swoich dzieci, więc mało osób z własnej woli pośle dziecko do zawodówki. Dziś około 12 proc. uczniów po podstawówce idzie do szkół zawodowych. Jednocześnie prowadzenie takich szkół wydaje się kompletnie nieopłacalne. Tworzenie klas, profili czy szkół zawodowych pod lokalnego, dużego pracodawcę, mającego konkretne miejsca pracy, jest ryzykowne, ponieważ w każdej chwili może przyjść decyzja o znacznej redukcji zatrudnienia. Ponadto szkoły zawodowe generują o wiele większe koszty niż szkoły ogólnokształcące. Klasa ogólna przewidziana na 30 uczniów jest o wiele tańsza od klasy branżowej, w której może być 15 uczniów i którym trzeba zapewnić odpowiednie pomoce oraz zaplecze. Ponadto przemysł w Polsce umiera coraz szybciej i na pewno nie po cichu. Ale młodzi chcą też mieć coraz lepsze życie, dobrą pracę i bezpieczeństwo. Zmieniły się nasze ambicje. Tutaj dane są bezkompromisowe. Według raportu PZH 30-latek z wykształceniem gimnazjalnym i niższym będzie żyć o 9 lat (kobiety) lub nawet o 13 lat (mężczyźni) krócej od osoby z wykształceniem wyższym. Ma też dużo większe ryzyko zapadnięcia na choroby cywilizacyjne i dużo mniejsze szanse na zbudowanie trwałego związku. A może ludzie poszliby do zawodówki, gdyby były one bardziej opłacalne gospodarczo, finansowo lepsze wyplaty, i korzystniej przedstawiane w mediach od lat? O to i nie tylko pytam ludzi🆕📺⚠️☝️ #shorts #sonda #szkoła #polska #student ",
+      "views": 541911,
+      "likes": 12588,
+      "comments": 1484,
+      "shares": 1199,
+      "bookmarks": 1584,
       "hashtags": [
-        "dlaciebie",
-        "fyp",
-        "polskitiktok",
+        "shorts",
+        "sonda",
+        "szkoła",
         "polska",
-        "trend"
+        "student"
       ],
-      "uploadedAtFormatted": "2026-09-05T14:39:14.000Z",
+      "uploadedAtFormatted": "2026-09-29T09:22:45.000Z",
       "channel": {
-        "id": "7452384040258847790",
-        "name": "bezslow0",
-        "username": "bezslow0",
-        "profile_url": "https://www.tiktok.com/@bezslow0",
-        "followers": 135,
-        "following": 0,
+        "id": "7009565484010849286",
+        "name": "Mateusz Macierakowski",
+        "username": "mateusz_macierakowski",
+        "profile_url": "https://www.tiktok.com/@mateusz_macierakowski",
+        "followers": 12056,
+        "following": 3,
         "provider_verified": true
       },
-      "subtitle_languages": [],
+      "subtitle_languages": [
+        "pl"
+      ],
       "poi": null,
       "polish_signals": [
         "hashtag",
+        "subtitle_pl",
         "title"
       ]
     },
     {
       "seed": "polskatiktok",
-      "id": "7690714659212643616",
-      "title": "Podeślij tej jednej koleżance🥲😂 #polska #tiktokpolska #dlaciebie #viral #funny",
-      "views": 275472,
-      "likes": 10614,
-      "comments": 26,
-      "shares": 13410,
-      "bookmarks": 1482,
+      "id": "7690850560110644512",
+      "title": "Kiedyś wózeczek na zakupy był symbolem starości. Dzisiaj jest symbolem tego, że nie będę nosił 12 kg ziemniaków jak debil. #polskitiktok #polska #tiktokpolska #viral #dc ",
+      "views": 52393,
+      "likes": 2588,
+      "comments": 189,
+      "shares": 1046,
+      "bookmarks": 102,
       "hashtags": [
+        "polskitiktok",
         "polska",
         "tiktokpolska",
-        "dlaciebie",
         "viral",
-        "funny"
+        "dc"
       ],
-      "uploadedAtFormatted": "2026-09-28T22:20:52.000Z",
+      "uploadedAtFormatted": "2026-09-29T07:08:23.000Z",
       "channel": {
-        "id": "7683557562440418326",
-        "name": "auvira",
-        "username": "auvira1",
-        "profile_url": "https://www.tiktok.com/@auvira1",
-        "followers": 99,
-        "following": 29,
+        "id": "6708365733338563589",
+        "name": "Dziewica z Zamtuzu",
+        "username": "zamtuz",
+        "profile_url": "https://www.tiktok.com/@zamtuz",
+        "followers": 946,
+        "following": 254,
         "provider_verified": true
       },
       "subtitle_languages": [],
@@ -354,37 +215,531 @@
     },
     {
       "seed": "polskatiktok",
-      "id": "7686433448549993761",
-      "title": "#szkoła #school #polskitiktok #fyp ",
-      "views": 727707,
-      "likes": 80692,
-      "comments": 19,
-      "shares": 25705,
-      "bookmarks": 5135,
+      "id": "7691261324667522337",
+      "title": "Tylko w Polsce tak #polska #smieszne #meme #zabawne #dlaciebie ",
+      "views": 358207,
+      "likes": 7416,
+      "comments": 188,
+      "shares": 4408,
+      "bookmarks": 943,
       "hashtags": [
-        "szkoła",
-        "school",
-        "polskitiktok",
-        "fyp"
+        "polska",
+        "smieszne",
+        "meme",
+        "zabawne",
+        "dlaciebie"
       ],
-      "uploadedAtFormatted": "2026-09-17T09:27:33.000Z",
+      "uploadedAtFormatted": "2026-09-30T09:42:12.000Z",
       "channel": {
-        "id": "7057134318951711750",
-        "name": "zstkwlublinie",
-        "username": "zstkwlublinie",
-        "profile_url": "https://www.tiktok.com/@zstkwlublinie",
-        "followers": 2002,
-        "following": 1,
+        "id": "6798633379081372678",
+        "name": "Ig:Dyskusjaa",
+        "username": "igdyskusja",
+        "profile_url": "https://www.tiktok.com/@igdyskusja",
+        "followers": 1377,
+        "following": 154,
+        "provider_verified": true
+      },
+      "subtitle_languages": [
+        "pl"
+      ],
+      "poi": null,
+      "polish_signals": [
+        "hashtag",
+        "subtitle_pl",
+        "title"
+      ]
+    },
+    {
+      "seed": "polskatiktok",
+      "id": "7685930451566955808",
+      "title": "??#dc #dlaciebie #tiktokpolska #rell ",
+      "views": 861016,
+      "likes": 121852,
+      "comments": 291,
+      "shares": 35168,
+      "bookmarks": 3876,
+      "hashtags": [
+        "dc",
+        "dlaciebie",
+        "tiktokpolska",
+        "rell"
+      ],
+      "uploadedAtFormatted": "2026-09-16T00:55:47.000Z",
+      "channel": {
+        "id": "7597625448218641430",
+        "name": "drewnetic",
+        "username": "drewnetic_",
+        "profile_url": "https://www.tiktok.com/@drewnetic_",
+        "followers": 2059,
+        "following": 30,
+        "provider_verified": true
+      },
+      "subtitle_languages": [],
+      "poi": null,
+      "polish_signals": [
+        "hashtag",
+        "title"
+      ]
+    },
+    {
+      "seed": "polskatiktok",
+      "id": "7686551087498710305",
+      "title": "Praca… #dlaciebie #polskitiktok #viral #malik #polska ",
+      "views": 136238,
+      "likes": 4891,
+      "comments": 115,
+      "shares": 386,
+      "bookmarks": 278,
+      "hashtags": [
+        "dlaciebie",
+        "polskitiktok",
+        "viral",
+        "malik",
+        "polska"
+      ],
+      "uploadedAtFormatted": "2026-09-17T17:03:59.000Z",
+      "channel": {
+        "id": "6637882979119562757",
+        "name": "__urbas__",
+        "username": "__urbas__",
+        "profile_url": "https://www.tiktok.com/@__urbas__",
+        "followers": 2749,
+        "following": 63,
+        "provider_verified": true
+      },
+      "subtitle_languages": [],
+      "poi": null,
+      "polish_signals": [
+        "hashtag",
+        "title"
+      ]
+    },
+    {
+      "seed": "polskatiktok",
+      "id": "7687067025608428832",
+      "title": "😂 „Dla zwykłego człowieka — śmieć. Dla wizjonera — kolekcja jesień–zima” #MenelGeographic #PolskiTikTok #Humor #MiejskaDzungla #Memy ",
+      "views": 2009207,
+      "likes": 132456,
+      "comments": 1574,
+      "shares": 200657,
+      "bookmarks": 17607,
+      "hashtags": [
+        "menelgeographic",
+        "polskitiktok",
+        "humor",
+        "miejskadzungla",
+        "memy"
+      ],
+      "uploadedAtFormatted": "2026-09-19T02:26:38.000Z",
+      "channel": {
+        "id": "6921706513291969541",
+        "name": "Menel Geographic",
+        "username": "menelgeographic",
+        "profile_url": "https://www.tiktok.com/@menelgeographic",
+        "followers": 63346,
+        "following": 36,
+        "provider_verified": true
+      },
+      "subtitle_languages": [
+        "pl"
+      ],
+      "poi": {
+        "poiName": "Warsaw",
+        "address": "Warsaw, Masovian, Poland",
+        "cityName": "",
+        "regionCode": "798544"
+      },
+      "polish_signals": [
+        "hashtag",
+        "poi_pl",
+        "subtitle_pl",
+        "title"
+      ]
+    },
+    {
+      "seed": "polskatiktok",
+      "id": "7689776112024571168",
+      "title": "Kiedy nie masz KuKirin… robisz sobie własny 😂🛴 #p#polskitiktokt#tiktokpolskar#rodzinnytiktokd#dziecihumor ",
+      "views": 1976254,
+      "likes": 105526,
+      "comments": 1168,
+      "shares": 90314,
+      "bookmarks": 11462,
+      "hashtags": [
+        "polskitiktok",
+        "tiktokpolska",
+        "rodzinnytiktok",
+        "dzieci"
+      ],
+      "uploadedAtFormatted": "2026-09-26T09:38:48.000Z",
+      "channel": {
+        "id": "7615521098349151254",
+        "name": "2Cytramon",
+        "username": "2cytramon2",
+        "profile_url": "https://www.tiktok.com/@2cytramon2",
+        "followers": 34112,
+        "following": 45,
+        "provider_verified": true
+      },
+      "subtitle_languages": [
+        "pl"
+      ],
+      "poi": null,
+      "polish_signals": [
+        "hashtag",
+        "subtitle_pl",
+        "title"
+      ]
+    },
+    {
+      "seed": "tiktokpolska",
+      "id": "7688767837992652065",
+      "title": "Ludzie, to jest nierówna walka  #dc #dlaciebie #tiktokpoland #adhd ",
+      "views": 142673,
+      "likes": 9424,
+      "comments": 187,
+      "shares": 6759,
+      "bookmarks": 929,
+      "hashtags": [
+        "dc",
+        "dlaciebie",
+        "tiktokpoland",
+        "adhd"
+      ],
+      "uploadedAtFormatted": "2026-09-23T16:26:08.000Z",
+      "channel": {
+        "id": "7075697964157928453",
+        "name": "aleksandraszostak",
+        "username": "aleksandraszostak_",
+        "profile_url": "https://www.tiktok.com/@aleksandraszostak_",
+        "followers": 2338,
+        "following": 322,
+        "provider_verified": true
+      },
+      "subtitle_languages": [
+        "pl"
+      ],
+      "poi": null,
+      "polish_signals": [
+        "hashtag",
+        "subtitle_pl",
+        "title"
+      ]
+    },
+    {
+      "seed": "tiktokpolska",
+      "id": "7689776112024571168",
+      "title": "Kiedy nie masz KuKirin… robisz sobie własny 😂🛴 #p#polskitiktokt#tiktokpolskar#rodzinnytiktokd#dziecihumor ",
+      "views": 1976316,
+      "likes": 105529,
+      "comments": 1168,
+      "shares": 90315,
+      "bookmarks": 11463,
+      "hashtags": [
+        "polskitiktok",
+        "tiktokpolska",
+        "rodzinnytiktok",
+        "dzieci"
+      ],
+      "uploadedAtFormatted": "2026-09-26T09:38:48.000Z",
+      "channel": {
+        "id": "7615521098349151254",
+        "name": "2Cytramon",
+        "username": "2cytramon2",
+        "profile_url": "https://www.tiktok.com/@2cytramon2",
+        "followers": 34112,
+        "following": 45,
+        "provider_verified": true
+      },
+      "subtitle_languages": [
+        "pl"
+      ],
+      "poi": null,
+      "polish_signals": [
+        "hashtag",
+        "subtitle_pl",
+        "title"
+      ]
+    },
+    {
+      "seed": "tiktokpolska",
+      "id": "7689553837593742614",
+      "title": "#wolnośćsłowa #dlaciebie #polska #polska🇵🇱 #tiktokpolska ",
+      "views": 225793,
+      "likes": 6576,
+      "comments": 885,
+      "shares": 2426,
+      "bookmarks": 1218,
+      "hashtags": [
+        "wolnośćsłowa",
+        "dlaciebie",
+        "polska",
+        "polska🇵🇱",
+        "tiktokpolska"
+      ],
+      "uploadedAtFormatted": "2026-09-25T19:16:17.000Z",
+      "channel": {
+        "id": "7156902889259860998",
+        "name": "Wolność Słowa 2.0",
+        "username": "wolnoscslowa2.0",
+        "profile_url": "https://www.tiktok.com/@wolnoscslowa2.0",
+        "followers": 216557,
+        "following": 28,
+        "provider_verified": true
+      },
+      "subtitle_languages": [
+        "pl"
+      ],
+      "poi": null,
+      "polish_signals": [
+        "hashtag",
+        "subtitle_pl",
+        "title"
+      ]
+    },
+    {
+      "seed": "tiktokpolska",
+      "id": "7687982722479852833",
+      "title": "#praca #Meme #tiktokpoland #polskiememy  ",
+      "views": 273618,
+      "likes": 20642,
+      "comments": 37,
+      "shares": 12284,
+      "bookmarks": 2078,
+      "hashtags": [
+        "praca",
+        "meme",
+        "tiktokpoland",
+        "polskiememy"
+      ],
+      "uploadedAtFormatted": "2026-09-21T13:39:30.000Z",
+      "channel": {
+        "id": "7532502430618207254",
+        "name": "Opsik",
+        "username": "opsik91",
+        "profile_url": "https://www.tiktok.com/@opsik91",
+        "followers": 1357,
+        "following": 6,
+        "provider_verified": true
+      },
+      "subtitle_languages": [],
+      "poi": null,
+      "polish_signals": [
+        "hashtag",
+        "title"
+      ]
+    },
+    {
+      "seed": "tiktokpolska",
+      "id": "7684330073821826337",
+      "title": "#relatable #dc #humor #polska #meme ",
+      "views": 387694,
+      "likes": 76899,
+      "comments": 195,
+      "shares": 7457,
+      "bookmarks": 3590,
+      "hashtags": [
+        "relatable",
+        "dc",
+        "humor",
+        "polska",
+        "meme"
+      ],
+      "uploadedAtFormatted": "2026-09-11T17:25:19.000Z",
+      "channel": {
+        "id": "7681757863807419414",
+        "name": "Agata Stolarska",
+        "username": "agatelasto",
+        "profile_url": "https://www.tiktok.com/@agatelasto",
+        "followers": 257,
+        "following": 20,
         "provider_verified": true
       },
       "subtitle_languages": [],
       "poi": {
-        "poiName": "Transport and Communication School Complex in Lublin named after Tadeusz Kościuszko",
-        "address": "Zemborzycka 82, 20-445 Majdanek concentration camp, Poland",
-        "cityName": "Lublin",
+        "poiName": "Kielce",
+        "address": "Kielce, Kielce, Holy Cross, Poland",
+        "cityName": "",
         "regionCode": "798544"
       },
       "polish_signals": [
+        "hashtag",
+        "poi_pl",
+        "title"
+      ]
+    },
+    {
+      "seed": "tiktokpolska",
+      "id": "7685924496263482657",
+      "title": "🤭#dc #dlaciebie #tiktokpolska #polskijezyk ",
+      "views": 370850,
+      "likes": 7757,
+      "comments": 14,
+      "shares": 5265,
+      "bookmarks": 1170,
+      "hashtags": [
+        "dc",
+        "dlaciebie",
+        "tiktokpolska",
+        "polskijezyk"
+      ],
+      "uploadedAtFormatted": "2026-09-16T00:32:41.000Z",
+      "channel": {
+        "id": "7597625448218641430",
+        "name": "drewnetic",
+        "username": "drewnetic_",
+        "profile_url": "https://www.tiktok.com/@drewnetic_",
+        "followers": 2059,
+        "following": 30,
+        "provider_verified": true
+      },
+      "subtitle_languages": [],
+      "poi": null,
+      "polish_signals": [
+        "hashtag",
+        "title"
+      ]
+    },
+    {
+      "seed": "tiktokpolska",
+      "id": "7689351583582407958",
+      "title": "#wolnośćsłowa #dlaciebie #polska #polska🇵🇱 #tiktokpolska ",
+      "views": 248556,
+      "likes": 3123,
+      "comments": 871,
+      "shares": 2944,
+      "bookmarks": 1134,
+      "hashtags": [
+        "wolnośćsłowa",
+        "dlaciebie",
+        "polska",
+        "polska🇵🇱",
+        "tiktokpolska"
+      ],
+      "uploadedAtFormatted": "2026-09-25T06:11:34.000Z",
+      "channel": {
+        "id": "7156902889259860998",
+        "name": "Wolność Słowa 2.0",
+        "username": "wolnoscslowa2.0",
+        "profile_url": "https://www.tiktok.com/@wolnoscslowa2.0",
+        "followers": 216557,
+        "following": 28,
+        "provider_verified": true
+      },
+      "subtitle_languages": [
+        "pl"
+      ],
+      "poi": null,
+      "polish_signals": [
+        "hashtag",
+        "subtitle_pl",
+        "title"
+      ]
+    },
+    {
+      "seed": "tiktokpolska",
+      "id": "7682078532096347425",
+      "title": "No to sprawdźmy… 😉 #facet #meskistyl #Lifestyle #single #tiktokpolska ",
+      "views": 12670,
+      "likes": 743,
+      "comments": 54,
+      "shares": 10,
+      "bookmarks": 21,
+      "hashtags": [
+        "facet",
+        "meskistyl",
+        "lifestyle",
+        "single",
+        "tiktokpolska"
+      ],
+      "uploadedAtFormatted": "2026-09-05T15:48:14.000Z",
+      "channel": {
+        "id": "6563639913391800325",
+        "name": "Mariusz | PL",
+        "username": "mariusztymi",
+        "profile_url": "https://www.tiktok.com/@mariusztymi",
+        "followers": 301,
+        "following": 206,
+        "provider_verified": true
+      },
+      "subtitle_languages": [],
+      "poi": null,
+      "polish_signals": [
+        "hashtag",
+        "title"
+      ]
+    },
+    {
+      "seed": "tiktokpolska",
+      "id": "7690125173034372374",
+      "title": "#wolnośćsłowa #dlaciebie #polska #polska🇵🇱 #tiktokpolska ",
+      "views": 138224,
+      "likes": 4056,
+      "comments": 347,
+      "shares": 855,
+      "bookmarks": 617,
+      "hashtags": [
+        "wolnośćsłowa",
+        "dlaciebie",
+        "polska",
+        "polska🇵🇱",
+        "tiktokpolska"
+      ],
+      "uploadedAtFormatted": "2026-09-27T08:13:23.000Z",
+      "channel": {
+        "id": "7156902889259860998",
+        "name": "Wolność Słowa 2.0",
+        "username": "wolnoscslowa2.0",
+        "profile_url": "https://www.tiktok.com/@wolnoscslowa2.0",
+        "followers": 216557,
+        "following": 28,
+        "provider_verified": true
+      },
+      "subtitle_languages": [
+        "pl"
+      ],
+      "poi": null,
+      "polish_signals": [
+        "hashtag",
+        "subtitle_pl",
+        "title"
+      ]
+    },
+    {
+      "seed": "tiktokpolska",
+      "id": "7689512288449088800",
+      "title": "warszawa 🇵🇱  #warsaw #polska🇵🇱 #tiktokpoland #polska #warszawa ",
+      "views": 6589,
+      "likes": 517,
+      "comments": 112,
+      "shares": 17,
+      "bookmarks": 43,
+      "hashtags": [
+        "warsaw",
+        "polska🇵🇱",
+        "tiktokpoland",
+        "polska",
+        "warszawa"
+      ],
+      "uploadedAtFormatted": "2026-09-25T16:35:00.000Z",
+      "channel": {
+        "id": "7572507644851651606",
+        "name": "ilyes warszawa 🇩🇿🇵🇱",
+        "username": "ilyes.pl6",
+        "profile_url": "https://www.tiktok.com/@ilyes.pl6",
+        "followers": 2478,
+        "following": 53,
+        "provider_verified": true
+      },
+      "subtitle_languages": [],
+      "poi": {
+        "poiName": "Warszawskie Centrum Atletyki",
+        "address": "Zofii Roesler 2, 01-991 Warszawa, Poland",
+        "cityName": "Warsaw",
+        "regionCode": "798544"
+      },
+      "polish_signals": [
+        "channel",
         "hashtag",
         "poi_pl",
         "title"
