@@ -4,14 +4,14 @@ on:
   workflow_dispatch:
     inputs:
       results_per_seed:
-        description: "Posts per seed (Free Apify demo caps a run at 10)"
+        description: "Posts per seed"
         required: true
         default: "10"
         type: string
       start_seed:
-        description: "Seed offset: 0 = first seed, 2 = third seed, 4 = fifth seed..."
+        description: "Seed offset: 0 = first seed, 3 = fourth seed..."
         required: true
-        default: "0"
+        default: "3"
         type: string
       max_seeds:
         description: "How many seeds to run from start_seed; 0 = all remaining"
@@ -24,9 +24,14 @@ on:
         default: "10000"
         type: string
       min_pl_signals:
-        description: "Minimum lightweight PL signals before profile enrichment"
+        description: "Minimum STRONG PL signals (subtitle/POI/flag/language)"
         required: true
         default: "1"
+        type: string
+      min_pl_confidence:
+        description: "Minimum conservative PL confidence (0-100)"
+        required: true
+        default: "50"
         type: string
       sort_type:
         description: "TikTok search sort"
@@ -83,6 +88,7 @@ jobs:
             --max-seeds "${{ inputs.max_seeds }}" \
             --min-followers "${{ inputs.min_followers }}" \
             --min-pl-signals "${{ inputs.min_pl_signals }}" \
+            --min-pl-confidence "${{ inputs.min_pl_confidence }}" \
             --sort-type "${{ inputs.sort_type }}" \
             --date-range "${{ inputs.date_range }}"
 
