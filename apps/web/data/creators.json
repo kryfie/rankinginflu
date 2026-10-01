@@ -1,8 +1,33 @@
 {
-  "generated_at": "2026-10-01T08:42:15.410204+00:00",
-  "source": "influRank-rebuild-v2",
-  "score_note": "Influence Score uses InfluRank-calculated raw-post metrics. Consistency uses log-view MAD. Momentum is omitted until approximately 30 days of follower history exist.",
+  "generated_at": "2026-10-01T09:15:43.432474+00:00",
+  "source": "influRank-enrichment-v1",
+  "score_note": "Influence Score is provisional until 30-day follower history exists. Momentum is omitted and remaining weights are re-normalized.",
   "creators": [
+    {
+      "handle": "mocnabanda",
+      "name": "MocnaBanda",
+      "avatar": "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/4f8663a236351735c692939dde9d1223~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=002cf2df&x-expires=1791018000&x-signature=VvN1%2BKpMmwLN7KMYZTnYAqfZvno%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
+      "verified": false,
+      "category": "Lifestyle",
+      "pl_confidence": 100.0,
+      "followers": 168024,
+      "views": 639150.0,
+      "engagement": 15.275796747935534,
+      "growth": null,
+      "consistency_index": 58.65,
+      "posts_measured": 10,
+      "updated_at": "2026-10-01T09:15:43.432474+00:00",
+      "score": 84.4,
+      "score_status": "provisional_no_30d_history",
+      "components": {
+        "audience": 75.0,
+        "reach": 85.0,
+        "engagement": 95.0,
+        "momentum": null,
+        "consistency": 75.0
+      },
+      "rank": 1
+    },
     {
       "handle": "menelgeographic",
       "name": "Menel Geographic",
@@ -17,16 +42,41 @@
       "consistency_index": 60.07,
       "posts_measured": 10,
       "updated_at": "2026-10-01T08:32:12.336106+00:00",
-      "score": 68.8,
+      "score": 66.2,
       "score_status": "provisional_no_30d_history",
       "components": {
-        "audience": 70.0,
-        "reach": 50.0,
-        "engagement": 90.0,
+        "audience": 65.0,
+        "reach": 45.0,
+        "engagement": 85.0,
         "momentum": null,
-        "consistency": 70.0
+        "consistency": 85.0
       },
-      "rank": 1
+      "rank": 2
+    },
+    {
+      "handle": "dla_pieniedzy",
+      "name": "dla_pieniedzy",
+      "avatar": "https://p16-common-sign.tiktokcdn-eu.com/tos-no1a-avt-0068c001-no/8955371e4c55a0d664f20101b146521c~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=10399&refresh_token=8ccbc6f2&x-expires=1791018000&x-signature=dujjveVdP0mU5rrxeJlckrqZIrc%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=no1a",
+      "verified": false,
+      "category": "Finance",
+      "pl_confidence": 100.0,
+      "followers": 412090,
+      "views": 68250.0,
+      "engagement": 6.5899150065508785,
+      "growth": null,
+      "consistency_index": 58.03,
+      "posts_measured": 10,
+      "updated_at": "2026-10-01T09:15:43.432474+00:00",
+      "score": 57.4,
+      "score_status": "provisional_no_30d_history",
+      "components": {
+        "audience": 95.0,
+        "reach": 15.0,
+        "engagement": 75.0,
+        "momentum": null,
+        "consistency": 65.0
+      },
+      "rank": 3
     },
     {
       "handle": "2cytramon2",
@@ -42,16 +92,91 @@
       "consistency_index": 71.08,
       "posts_measured": 10,
       "updated_at": "2026-10-01T08:32:12.336106+00:00",
-      "score": 57.1,
+      "score": 54.4,
       "score_status": "provisional_no_30d_history",
       "components": {
-        "audience": 50.0,
-        "reach": 90.0,
-        "engagement": 10.0,
+        "audience": 35.0,
+        "reach": 95.0,
+        "engagement": 5.0,
         "momentum": null,
-        "consistency": 90.0
+        "consistency": 95.0
       },
-      "rank": 2
+      "rank": 4
+    },
+    {
+      "handle": "turystyka.stadionowa",
+      "name": "Turystyka Stadionowa",
+      "avatar": "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/414c77386df299b3451731b82d3137b5~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=f13a80c6&x-expires=1791018000&x-signature=kRUZATXGDqJaWjmnlNON%2FaGlljs%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
+      "verified": false,
+      "category": "Sport & Fitness",
+      "pl_confidence": 100.0,
+      "followers": 22845,
+      "views": 65800.0,
+      "engagement": 5.0187473713819735,
+      "growth": null,
+      "consistency_index": 52.83,
+      "posts_measured": 10,
+      "updated_at": "2026-10-01T09:15:43.432474+00:00",
+      "score": 51.5,
+      "score_status": "provisional_no_30d_history",
+      "components": {
+        "audience": 15.0,
+        "reach": 75.0,
+        "engagement": 55.0,
+        "momentum": null,
+        "consistency": 45.0
+      },
+      "rank": 5
+    },
+    {
+      "handle": "iskra_polan",
+      "name": "Iskra&Polan",
+      "avatar": "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/e41c12bae40ca77bd455f18bd928d342~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=c77c61b7&x-expires=1791018000&x-signature=3sIGypBNKRQ2bwPDRglOUklYYOk%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
+      "verified": false,
+      "category": "Education",
+      "pl_confidence": 100.0,
+      "followers": 43172,
+      "views": 27100.0,
+      "engagement": 5.472,
+      "growth": null,
+      "consistency_index": 55.63,
+      "posts_measured": 9,
+      "updated_at": "2026-10-01T09:15:43.432474+00:00",
+      "score": 48.5,
+      "score_status": "provisional_no_30d_history",
+      "components": {
+        "audience": 45.0,
+        "reach": 35.0,
+        "engagement": 65.0,
+        "momentum": null,
+        "consistency": 55.0
+      },
+      "rank": 6
+    },
+    {
+      "handle": "melodiatvpolska_",
+      "name": "Melodia TV Polska",
+      "avatar": "https://p16-common-sign.tiktokcdn-eu.com/tos-no1a-avt-0068c001-no/011c781aaa94bfafb8bc71d3f71e6686~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=10399&refresh_token=ae2d896f&x-expires=1791018000&x-signature=63vqvsBWZXVu%2FpMrA%2FOPuwOU%2B4A%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=no1a",
+      "verified": false,
+      "category": "Tech",
+      "pl_confidence": 100.0,
+      "followers": 56858,
+      "views": 85100.0,
+      "engagement": 3.2726118414752143,
+      "growth": null,
+      "consistency_index": 52.82,
+      "posts_measured": 10,
+      "updated_at": "2026-10-01T09:15:43.432474+00:00",
+      "score": 46.8,
+      "score_status": "provisional_no_30d_history",
+      "components": {
+        "audience": 55.0,
+        "reach": 55.0,
+        "engagement": 35.0,
+        "momentum": null,
+        "consistency": 35.0
+      },
+      "rank": 7
     },
     {
       "handle": "wolnoscslowa2.0",
@@ -67,41 +192,16 @@
       "consistency_index": 42.45,
       "posts_measured": 10,
       "updated_at": "2026-10-01T08:32:12.336106+00:00",
-      "score": 48.8,
+      "score": 36.8,
       "score_status": "provisional_no_30d_history",
       "components": {
-        "audience": 90.0,
-        "reach": 10.0,
-        "engagement": 70.0,
+        "audience": 85.0,
+        "reach": 5.0,
+        "engagement": 45.0,
         "momentum": null,
-        "consistency": 30.0
+        "consistency": 15.0
       },
-      "rank": 3
-    },
-    {
-      "handle": "andrzej9448",
-      "name": "❤️🍀ANDRZEJ",
-      "avatar": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-avt-0068-euttp/e3de6983beee6543f8f132fa23682722~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=4d72085d&x-expires=1791014400&x-signature=1IWGitGUVmH5l0e7S%2FVKVgiiP2w%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
-      "verified": false,
-      "category": "Entertainment",
-      "pl_confidence": 100.0,
-      "followers": 24474,
-      "views": 7551.0,
-      "engagement": 2.2499813988095236,
-      "growth": null,
-      "consistency_index": 46.07,
-      "posts_measured": 10,
-      "updated_at": "2026-10-01T08:32:12.336106+00:00",
-      "score": 38.2,
-      "score_status": "provisional_no_30d_history",
-      "components": {
-        "audience": 30.0,
-        "reach": 30.0,
-        "engagement": 50.0,
-        "momentum": null,
-        "consistency": 50.0
-      },
-      "rank": 4
+      "rank": 8
     },
     {
       "handle": "mateusz_macierakowski",
@@ -117,16 +217,41 @@
       "consistency_index": 27.47,
       "posts_measured": 10,
       "updated_at": "2026-10-01T08:32:12.336106+00:00",
-      "score": 37.1,
+      "score": 29.1,
       "score_status": "provisional_no_30d_history",
       "components": {
-        "audience": 10.0,
-        "reach": 70.0,
-        "engagement": 30.0,
+        "audience": 5.0,
+        "reach": 65.0,
+        "engagement": 15.0,
         "momentum": null,
-        "consistency": 10.0
+        "consistency": 5.0
       },
-      "rank": 5
+      "rank": 9
+    },
+    {
+      "handle": "andrzej9448",
+      "name": "❤️🍀ANDRZEJ",
+      "avatar": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-avt-0068-euttp/e3de6983beee6543f8f132fa23682722~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=4d72085d&x-expires=1791014400&x-signature=1IWGitGUVmH5l0e7S%2FVKVgiiP2w%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
+      "verified": false,
+      "category": "Entertainment",
+      "pl_confidence": 100.0,
+      "followers": 24474,
+      "views": 7551.0,
+      "engagement": 2.2499813988095236,
+      "growth": null,
+      "consistency_index": 46.07,
+      "posts_measured": 10,
+      "updated_at": "2026-10-01T08:32:12.336106+00:00",
+      "score": 25.0,
+      "score_status": "provisional_no_30d_history",
+      "components": {
+        "audience": 25.0,
+        "reach": 25.0,
+        "engagement": 25.0,
+        "momentum": null,
+        "consistency": 25.0
+      },
+      "rank": 10
     }
   ]
 }

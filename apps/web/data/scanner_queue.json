@@ -2,7 +2,7 @@
   "meta": {
     "purpose": "Queue for authoritative profile enrichment",
     "count": 10,
-    "updated_at": "2026-10-01T09:07:53.275135+00:00",
+    "updated_at": "2026-10-01T09:15:43.432474+00:00",
     "discovery_filter_version": "v4-strong-pl-evidence"
   },
   "items": [
@@ -25,7 +25,9 @@
         "polska"
       ],
       "last_discovered_at": "2026-10-01T08:51:24.754518+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T09:15:43.432474+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "2cytramon2",
@@ -71,7 +73,9 @@
         "polska"
       ],
       "last_discovered_at": "2026-10-01T08:51:24.754518+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T09:15:43.432474+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "mocnabanda",
@@ -91,7 +95,9 @@
         "polska"
       ],
       "last_discovered_at": "2026-10-01T08:51:24.754518+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T09:15:43.432474+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "turystyka.stadionowa",
@@ -113,7 +119,9 @@
         "polska"
       ],
       "last_discovered_at": "2026-10-01T08:51:24.754518+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T09:15:43.432474+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "iskra_polan",
@@ -133,7 +141,9 @@
         "polska"
       ],
       "last_discovered_at": "2026-10-01T08:51:24.754518+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T09:15:43.432474+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "wolnoscslowa2.0",
