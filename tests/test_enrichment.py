@@ -3,7 +3,7 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 
 from apps.enrichment.pipeline import enrich_state, select_queue_items
-from apps.enrichment.ranking import build_web_ranking
+from apps.enrichment.ranking import build_web_ranking, robust_consistency_index
 
 
 class DummySettings:
@@ -159,6 +159,24 @@ class EnrichmentTests(unittest.TestCase):
             "provisional_no_30d_history",
         )
         self.assertEqual(ranking[0]["views"], 2000.0)
+
+
+    def test_robust_consistency_does_not_collapse_on_one_viral_post(self):
+        stable_with_viral = [
+            31100, 31400, 31500, 40100, 44900,
+            74000, 223000, 396900, 1600000, 2000000
+        ]
+        score = robust_consistency_index(stable_with_viral)
+        self.assertGreater(score, 40.0)
+        self.assertLessEqual(score, 100.0)
+
+    def test_more_stable_series_scores_higher(self):
+        stable = [90000, 95000, 100000, 105000, 110000, 115000]
+        volatile = [500, 1500, 60000, 180000, 500000, 2000000]
+        self.assertGreater(
+            robust_consistency_index(stable),
+            robust_consistency_index(volatile),
+        )
 
 
 if __name__ == "__main__":

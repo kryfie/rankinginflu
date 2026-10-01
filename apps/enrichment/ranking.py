@@ -2,10 +2,10 @@ from __future__ import annotations
 
 from datetime import datetime, timedelta, timezone
 from math import log10
-from statistics import mean, median, pstdev
+from statistics import median
 from typing import Any
 
-from .store import normalize_username, safe_float, safe_int
+from .store import normalize_username, safe_int
 
 
 WEIGHTS = {
@@ -23,9 +23,41 @@ def _percentile(values: list[float], value: float) -> float:
         return 50.0
     if len(vals) == 1:
         return 50.0
+
     below = sum(1 for v in vals if v < value)
     equal = sum(1 for v in vals if v == value)
     return 100.0 * (below + 0.5 * equal) / len(vals)
+
+
+def robust_consistency_index(views: list[int]) -> float:
+    """
+    Robust 0-100 consistency index for TikTok views.
+
+    TikTok distributions are heavy-tailed: a normal viral post should not make
+    consistency collapse to zero. We therefore measure dispersion on log10
+    views and use the median absolute deviation (MAD), which is resistant to
+    outliers.
+
+    Approximate interpretation:
+      - 100: nearly identical reach on measured posts
+      - 60-80: reasonably stable with normal viral variation
+      - 30-60: volatile
+      - <30: very volatile
+
+    This is an absolute diagnostic index. The final score component is its
+    percentile inside the current ranking cohort.
+    """
+    clean = [max(1, safe_int(v)) for v in views if safe_int(v) > 0]
+    if len(clean) < 3:
+        return 50.0
+
+    logs = [log10(v) for v in clean]
+    center = median(logs)
+    mad = median(abs(x - center) for x in logs)
+
+    # Rational decay is deliberately forgiving of a few viral outliers.
+    score = 100.0 / (1.0 + 2.5 * mad)
+    return round(max(0.0, min(100.0, score)), 2)
 
 
 def _parse_dt(value: Any) -> datetime | None:
@@ -44,12 +76,14 @@ def _latest_snapshot_before(
 ) -> dict[str, Any] | None:
     username = normalize_username(username)
     eligible = []
+
     for row in snapshots:
         if normalize_username(row.get("username")) != username:
             continue
         dt = _parse_dt(row.get("collected_at"))
         if dt and dt <= target:
             eligible.append((dt, row))
+
     return max(eligible, key=lambda x: x[0])[1] if eligible else None
 
 
@@ -59,10 +93,10 @@ def build_web_ranking(
     snapshots: list[dict[str, Any]],
 ) -> list[dict[str, Any]]:
     """
-    Build a provisional ranking from InfluRank-owned normalized raw data.
+    Build InfluRank from normalized raw data.
 
-    The provider's precomputed engagement/median fields are deliberately ignored.
-    We calculate medians ourselves from raw posts.
+    Provider-calculated engagement, medians and scores are ignored.
+    InfluRank calculates its own metrics from raw posts.
     """
     posts_by_user: dict[str, list[dict[str, Any]]] = {}
     for post in posts:
@@ -83,17 +117,26 @@ def build_web_ranking(
             reverse=True,
         )
 
-        # Pinned posts can be much older and distort "recent" performance.
-        metric_posts = [p for p in creator_posts if not bool(p.get("is_pinned"))][:13]
+        # Pinned posts can be old and can badly distort current performance.
+        metric_posts = [
+            p for p in creator_posts
+            if not bool(p.get("is_pinned"))
+        ][:13]
         if not metric_posts:
             metric_posts = creator_posts[:13]
 
-        views = [safe_int(p.get("views")) for p in metric_posts if safe_int(p.get("views")) > 0]
-        engagements = []
+        views = [
+            safe_int(p.get("views"))
+            for p in metric_posts
+            if safe_int(p.get("views")) > 0
+        ]
+
+        engagements: list[float] = []
         for p in metric_posts:
             v = safe_int(p.get("views"))
             if v <= 0:
                 continue
+
             total = (
                 safe_int(p.get("likes"))
                 + safe_int(p.get("comments"))
@@ -105,19 +148,18 @@ def build_web_ranking(
         median_views = float(median(views)) if views else 0.0
         median_engagement = float(median(engagements)) if engagements else 0.0
         reach_ratio = median_views / max(1, followers)
+        consistency_index = robust_consistency_index(views)
 
-        if len(views) >= 3 and mean(views) > 0:
-            cv = pstdev(views) / mean(views)
-            consistency = max(0.0, min(100.0, 100.0 * (1.0 - min(cv, 1.0))))
-        else:
-            consistency = 50.0
-
-        current_dt = _parse_dt(creator.get("last_enriched_at")) or datetime.now(timezone.utc)
+        current_dt = (
+            _parse_dt(creator.get("last_enriched_at"))
+            or datetime.now(timezone.utc)
+        )
         older = _latest_snapshot_before(
             snapshots,
             username,
             current_dt - timedelta(days=30),
         )
+
         growth = None
         if older and safe_int(older.get("followers")) > 0:
             old_followers = safe_int(older.get("followers"))
@@ -136,7 +178,7 @@ def build_web_ranking(
                 "engagement": median_engagement,
                 "growth": growth,
                 "reach_ratio": reach_ratio,
-                "consistency_raw": consistency,
+                "consistency_index": consistency_index,
                 "posts_measured": len(metric_posts),
                 "updated_at": creator.get("last_enriched_at"),
             }
@@ -145,10 +187,15 @@ def build_web_ranking(
     if not raw:
         return []
 
-    audience_vals = [log10(max(1, x["followers"])) for x in raw]
-    reach_vals = [x["reach_ratio"] for x in raw]
-    engagement_vals = [x["engagement"] for x in raw]
-    growth_vals = [x["growth"] for x in raw if x["growth"] is not None]
+    audience_vals = [log10(max(1, row["followers"])) for row in raw]
+    reach_vals = [row["reach_ratio"] for row in raw]
+    engagement_vals = [row["engagement"] for row in raw]
+    consistency_vals = [row["consistency_index"] for row in raw]
+    growth_vals = [
+        row["growth"]
+        for row in raw
+        if row["growth"] is not None
+    ]
 
     for row in raw:
         components: dict[str, float | None] = {
@@ -156,14 +203,25 @@ def build_web_ranking(
                 audience_vals,
                 log10(max(1, row["followers"])),
             ),
-            "reach": _percentile(reach_vals, row["reach_ratio"]),
-            "engagement": _percentile(engagement_vals, row["engagement"]),
+            "reach": _percentile(
+                reach_vals,
+                row["reach_ratio"],
+            ),
+            "engagement": _percentile(
+                engagement_vals,
+                row["engagement"],
+            ),
             "momentum": (
                 _percentile(growth_vals, row["growth"])
                 if row["growth"] is not None
                 else None
             ),
-            "consistency": row["consistency_raw"],
+            # Use relative consistency in the final score. Keep the absolute
+            # robust index separately for transparency/debugging.
+            "consistency": _percentile(
+                consistency_vals,
+                row["consistency_index"],
+            ),
         }
 
         available_weight = sum(
@@ -176,21 +234,29 @@ def build_web_ranking(
             for name, value in components.items()
             if value is not None
         )
-        row["score"] = round(weighted / max(available_weight, 1e-9), 1)
+
+        row["score"] = round(
+            weighted / max(available_weight, 1e-9),
+            1,
+        )
         row["score_status"] = (
             "provisional_no_30d_history"
             if components["momentum"] is None
             else "full"
         )
         row["components"] = {
-            name: (round(value, 1) if value is not None else None)
+            name: (
+                round(value, 1)
+                if value is not None
+                else None
+            )
             for name, value in components.items()
         }
 
         row.pop("reach_ratio", None)
-        row.pop("consistency_raw", None)
 
-    raw.sort(key=lambda x: x["score"], reverse=True)
+    raw.sort(key=lambda row: row["score"], reverse=True)
+
     for index, row in enumerate(raw, start=1):
         row["rank"] = index
 

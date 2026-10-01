@@ -186,3 +186,28 @@ database/data/creator_snapshots.json
 During the first ~30 days, momentum is unavailable. Influence Score is therefore
 marked provisional and the remaining score weights are re-normalized rather
 than inventing a momentum value.
+
+
+## Ranking rebuild / consistency v2
+
+Consistency no longer uses raw coefficient-of-variation on views. TikTok view
+distributions are heavy-tailed, so one viral post could previously collapse
+consistency toward zero.
+
+InfluRank now uses:
+1. log10(view count),
+2. median,
+3. median absolute deviation (MAD),
+4. a robust 0-100 consistency index.
+
+The final consistency component is then normalized against the current cohort.
+
+After updating the ranking code you do **not** need to call Apify again.
+Use:
+
+```text
+Actions → Rebuild InfluRank ranking → Run workflow
+```
+
+It rebuilds `apps/web/data/creators.json` from the already stored normalized
+profile/post/snapshot files and costs no provider run.
