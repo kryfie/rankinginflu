@@ -24,7 +24,7 @@ recent posts / metrics
 Influence Score
         ↓
 Netlify frontend
-``
+```
 
 ## Najważniejsze katalogi
 
