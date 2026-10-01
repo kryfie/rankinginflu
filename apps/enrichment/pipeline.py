@@ -155,6 +155,7 @@ def select_queue_items(
     *,
     max_profiles: int,
     refresh_all: bool,
+    min_refresh_age_hours: int = 0,
 ) -> list[dict[str, Any]]:
     items = queue_payload.get("items", [])
     if not isinstance(items, list):
@@ -169,7 +170,26 @@ def select_queue_items(
             continue
 
         status = str(item.get("status") or "pending_profile_scan")
-        if refresh_all or status in {
+
+        if refresh_all:
+            if min_refresh_age_hours > 0:
+                last_value = item.get("last_profile_scan_at")
+                if last_value:
+                    try:
+                        last_dt = datetime.fromisoformat(
+                            str(last_value).replace("Z", "+00:00")
+                        )
+                        age_hours = (
+                            datetime.now(timezone.utc) - last_dt
+                        ).total_seconds() / 3600.0
+                        if age_hours < min_refresh_age_hours:
+                            continue
+                    except Exception:
+                        pass
+
+            eligible.append(item)
+
+        elif status in {
             "pending_profile_scan",
             "enrichment_error",
         }:

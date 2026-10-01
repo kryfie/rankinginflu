@@ -1,7 +1,7 @@
 import unittest
 
 from apps.discovery.models import Candidate
-from apps.discovery.cli import _select_seeds, _usable_provider_row
+from apps.discovery.cli import _parse_seed_indices, _select_seeds, _usable_provider_row
 from apps.discovery.pipeline import (
     build_scanner_queue,
     compact_post,
@@ -363,6 +363,19 @@ class DiscoveryTests(unittest.TestCase):
         self.assertEqual(
             _select_seeds(seeds, start_seed=2, max_seeds=2),
             [],
+        )
+
+
+    def test_explicit_seed_indices(self):
+        self.assertEqual(
+            _parse_seed_indices("5,7,9", 12),
+            [5, 7, 9],
+        )
+
+    def test_explicit_seed_indices_dedupe(self):
+        self.assertEqual(
+            _parse_seed_indices("2,2,3", 5),
+            [2, 3],
         )
 
 

@@ -17,6 +17,7 @@ def run(args: argparse.Namespace) -> int:
         queue_payload,
         max_profiles=args.max_profiles,
         refresh_all=args.refresh_all,
+        min_refresh_age_hours=args.min_refresh_age_hours,
     )
 
     if not selected:
@@ -115,6 +116,15 @@ def build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="Refresh already enriched accounts too.",
     )
+    command.add_argument(
+        "--min-refresh-age-hours",
+        type=int,
+        default=0,
+        help=(
+            "With --refresh-all, skip profiles refreshed more recently "
+            "than this many hours."
+        ),
+    )
     command.set_defaults(func=run)
 
     return parser
@@ -128,6 +138,8 @@ def main() -> int:
             parser.error("--max-profiles must be >= 0")
         if not (1 <= args.max_posts <= 13):
             parser.error("--max-posts must be between 1 and 13")
+        if args.min_refresh_age_hours < 0:
+            parser.error("--min-refresh-age-hours must be >= 0")
     return args.func(args)
 
 

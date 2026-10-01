@@ -318,3 +318,78 @@ starve the rest of the dataset.
 
 Manual `InfluRank discovery`, `InfluRank enrichment`, and
 `Rebuild InfluRank ranking` workflows remain available as recovery/debug tools.
+
+
+## Autopilot v2 — cost-aware bootstrap + steady state
+
+Autopilot no longer loops blindly through a short seed list.
+
+### Bootstrap
+
+After upgrading the provider plan, use `mode=auto` or `mode=bootstrap`.
+
+Defaults:
+
+```text
+20 search results per seed
+max 25 discovery queries per run
+bootstrap target: 250 eligible candidates
+max 100 new profile enrichments per run
+```
+
+The seed universe has been expanded to 120+ Polish/category-specific queries.
+
+The first bootstrap prefers:
+1. seeds blocked earlier by Free-plan demo mode,
+2. never-scanned seeds,
+3. only then due re-scans.
+
+### Steady state
+
+Each seed stores:
+
+```text
+attempts
+successful_scans
+demo_only_count
+provider_error_count
+accepted_total
+new_creators_total
+last_new_rate
+last_successful_at
+next_due_at
+```
+
+Cooldown is based on yield:
+
+```text
+high yield        → ~14 days
+medium yield      → ~30 days
+one new creator   → ~60 days
+zero new creators → ~90 days
+no usable rows    → ~60 days
+demo/provider cap → retry soon, NOT counted as successful
+```
+
+This means we do not keep paying for the same low-yield query every few days.
+
+State:
+
+```text
+database/data/seed_state.json
+```
+
+### Profile refresh
+
+Existing creators are only eligible for a scheduled refresh when their last
+profile scan is at least 168 hours (7 days) old. The oldest profiles are
+refreshed first.
+
+This keeps follower snapshots growing while avoiding daily duplicate reads.
+
+### Safety / scale checkpoint
+
+The bootstrap target defaults to 250 candidates on purpose. At that point the
+JSON/GitHub storage model and snapshot cadence should be reviewed before
+pushing toward thousands of creators (e.g. move historical data to a database
+and use lighter profile-only snapshot reads).

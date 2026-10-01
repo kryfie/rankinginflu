@@ -48,6 +48,30 @@ def _load_keywords(path: Path) -> list[str]:
     return clean
 
 
+
+def _parse_seed_indices(value: str | None, total: int) -> list[int]:
+    if not value:
+        return []
+
+    out: list[int] = []
+    seen: set[int] = set()
+
+    for raw in str(value).split(","):
+        raw = raw.strip()
+        if not raw:
+            continue
+        index = int(raw)
+        if index < 0 or index >= total:
+            raise ValueError(
+                f"Seed index {index} is outside 0..{max(total - 1, 0)}."
+            )
+        if index not in seen:
+            seen.add(index)
+            out.append(index)
+
+    return out
+
+
 def _select_seeds(
     keywords: list[str],
     *,
@@ -83,16 +107,28 @@ def discover(args: argparse.Namespace) -> int:
 
     seeds_path = Path(args.seeds).resolve()
     all_keywords = _load_keywords(seeds_path)
-    keywords = _select_seeds(
-        all_keywords,
-        start_seed=args.start_seed,
-        max_seeds=args.max_seeds,
+
+    selected_indices = _parse_seed_indices(
+        args.seed_indices,
+        len(all_keywords),
     )
+
+    if selected_indices:
+        keywords = [all_keywords[index] for index in selected_indices]
+    else:
+        keywords = _select_seeds(
+            all_keywords,
+            start_seed=args.start_seed,
+            max_seeds=args.max_seeds,
+        )
+        selected_indices = [
+            all_keywords.index(keyword)
+            for keyword in keywords
+        ]
 
     if not keywords:
         raise RuntimeError(
-            f"No discovery seeds selected. start_seed={args.start_seed}, "
-            f"available={len(all_keywords)}."
+            "No discovery seeds selected."
         )
 
     run_at = utcnow()
@@ -103,7 +139,8 @@ def discover(args: argparse.Namespace) -> int:
 
     print(
         f"InfluRank discovery v4 | seeds={len(keywords)}/{len(all_keywords)} | "
-        f"startSeed={args.start_seed} | resultsPerSeed={args.results_per_seed} | "
+        f"seedIndices={','.join(map(str, selected_indices))} | "
+        f"resultsPerSeed={args.results_per_seed} | "
         f"location={args.location} | minFollowers={args.min_followers} | "
         f"minStrongPLSignals={args.min_pl_signals} | "
         f"minPLConfidence={args.min_pl_confidence}"
@@ -178,13 +215,19 @@ def discover(args: argparse.Namespace) -> int:
         min_pl_confidence=args.min_pl_confidence,
     )
 
+    completed_seed_stats = [
+        row for row in seed_stats
+        if row.get("status") != "demo_only"
+    ]
+
     latest_run_meta = {
         "run_at": run_at,
         "actor": settings.actor_id,
         "filterVersion": "v4-strong-pl-evidence",
-        "startSeed": args.start_seed,
+        "seedIndices": selected_indices,
+        "startSeed": selected_indices[0] if selected_indices else args.start_seed,
         "seeds_requested": keywords,
-        "seeds_completed": [row["seed"] for row in seed_stats],
+        "seeds_completed": [row["seed"] for row in completed_seed_stats],
         "resultsPerSeed": args.results_per_seed,
         "location": args.location,
         "dateRange": args.date_range,
@@ -200,6 +243,63 @@ def discover(args: argparse.Namespace) -> int:
     existing_registry = load_json(settings.registry_path, {"creators": []})
     existing_queue = load_json(settings.queue_path, {"items": []})
     previous_compact = load_json(settings.compact_raw_path, {"posts": []})
+
+    existing_rows = existing_registry.get("creators", [])
+    if not isinstance(existing_rows, list):
+        existing_rows = []
+
+    existing_keys = set()
+    for row in existing_rows:
+        if not isinstance(row, dict):
+            continue
+        key = str(row.get("tiktok_id") or "").strip() or str(
+            row.get("username") or ""
+        ).strip().lstrip("@").lower()
+        if key:
+            existing_keys.add(key)
+
+    seed_order = {seed: idx for idx, seed in enumerate(keywords)}
+
+    # Attribute a brand-new candidate to the first selected seed that found it.
+    # This avoids giving multiple seeds full "new creator" credit for the same
+    # person discovered in the same batch.
+    candidate_first_seed: dict[str, str] = {}
+    for candidate in candidates:
+        candidate_key = candidate.tiktok_id or candidate.username
+        found = [
+            seed for seed in candidate.found_by
+            if seed in seed_order
+        ]
+        if found:
+            candidate_first_seed[candidate_key] = min(
+                found,
+                key=lambda seed: seed_order[seed],
+            )
+
+    for row in seed_stats:
+        seed = row["seed"]
+        accepted_here = [
+            candidate for candidate in candidates
+            if seed in candidate.found_by
+        ]
+
+        new_here = 0
+        for candidate in accepted_here:
+            candidate_key = candidate.tiktok_id or candidate.username
+            if (
+                candidate_key not in existing_keys
+                and candidate_first_seed.get(candidate_key) == seed
+            ):
+                new_here += 1
+
+        row["accepted_candidates"] = len(accepted_here)
+        row["new_candidates"] = new_here
+        row["known_or_cross_seed_candidates"] = max(
+            0,
+            len(accepted_here) - new_here,
+        )
+
+    latest_run_meta["per_seed"] = seed_stats
 
     # Clean up weak-only pending candidates produced by v3 from the immediately
     # previous compact discovery run before adding new v4 candidates.
@@ -297,6 +397,14 @@ def build_parser() -> argparse.ArgumentParser:
         type=int,
         default=Settings.results_per_seed,
         help="Maximum posts requested separately for each seed.",
+    )
+    command.add_argument(
+        "--seed-indices",
+        default="",
+        help=(
+            "Optional comma-separated seed indices selected by the scheduler. "
+            "When provided, start-seed/max-seeds are ignored."
+        ),
     )
     command.add_argument(
         "--start-seed",
