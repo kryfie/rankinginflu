@@ -393,3 +393,20 @@ The bootstrap target defaults to 250 candidates on purpose. At that point the
 JSON/GitHub storage model and snapshot cadence should be reviewed before
 pushing toward thousands of creators (e.g. move historical data to a database
 and use lighter profile-only snapshot reads).
+
+
+## Autopilot v2.1 — durable enrichment
+
+Large enrichment batches no longer use Apify's synchronous
+`run-sync-get-dataset-items` HTTP request.
+
+The enrichment client now:
+- starts Actor runs asynchronously,
+- polls run status,
+- fetches the completed dataset,
+- uses batches of at most 50 handles,
+- preserves successful batches if another batch fails.
+
+Autopilot also commits a discovery checkpoint before enrichment. Therefore a
+paid discovery run is not lost if profile enrichment later has a transient
+network/provider failure.

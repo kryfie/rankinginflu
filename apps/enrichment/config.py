@@ -12,7 +12,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 class Settings:
     apify_token: str
     actor_id: str = "simple.actor~tiktok-profile-posts"
-    timeout_seconds: int = 600
+    timeout_seconds: int = 3600
 
     queue_path: Path = REPO_ROOT / "apps" / "web" / "data" / "scanner_queue.json"
     web_ranking_path: Path = REPO_ROOT / "apps" / "web" / "data" / "creators.json"
@@ -37,5 +37,5 @@ class Settings:
                 "APIFY_PROFILE_ACTOR",
                 "simple.actor~tiktok-profile-posts",
             ).strip(),
-            timeout_seconds=int(os.getenv("ENRICHMENT_TIMEOUT_SECONDS", "600")),
+            timeout_seconds=int(os.getenv("ENRICHMENT_TIMEOUT_SECONDS", "3600")),
         )
