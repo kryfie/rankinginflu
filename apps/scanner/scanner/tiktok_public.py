@@ -87,8 +87,14 @@ class TikTokPublicProvider(Provider):
         html=r.text
         # TikTok can return an HTTP 200 WAF/interstitial page instead of profile data.
         low=html.lower()
-        if 'slardarwaf' in low or ('please wait' in low and '__universal_data_for_rehydration__' not in low):
-            raise PublicAccessLimitedError('TikTok returned a WAF/interstitial page (HTTP 200).')
+        # Do not treat the harmless `slardarwaf` string inside normal TikTok
+        # JavaScript as a block. Stop only when the returned page actually looks
+        # like an interstitial and profile data is absent.
+        if (
+            ('please wait' in low or 'verify to continue' in low)
+            and '__universal_data_for_rehydration__' not in low
+        ):
+            raise PublicAccessLimitedError('TikTok returned a visible/interstitial access page (HTTP 200).')
         return html
 
     @staticmethod
@@ -294,7 +300,8 @@ class TikTokPublicProvider(Provider):
 
         try:
             with sync_playwright() as p:
-                browser=p.chromium.launch(headless=True)
+                headless=os.getenv('BROWSER_HEADLESS','1').strip().lower() not in ('0','false','no')
+                browser=p.chromium.launch(headless=headless)
                 context=browser.new_context(
                     locale='pl-PL',
                     timezone_id='Europe/Warsaw',
@@ -326,9 +333,28 @@ class TikTokPublicProvider(Provider):
                 page.wait_for_timeout(3500)
 
                 content=(page.content() or '')
-                low=content.lower()
-                if 'captcha' in low or 'verify to continue' in low or 'slardarwaf' in low:
-                    print(f'BROWSER POSTS LIMITED @{handle}: TikTok showed a verification/interstitial page; not bypassing it.', file=sys.stderr)
+                try:
+                    visible_text=(page.locator('body').inner_text(timeout=5000) or '').lower()
+                except Exception:
+                    visible_text=''
+                current_url=(page.url or '').lower()
+
+                # Only stop on an actually visible verification/challenge page.
+                # v0.4 incorrectly treated the harmless "slardarwaf" string in normal
+                # TikTok HTML/JS as proof of a block, causing a false positive.
+                challenge_phrases=(
+                    'verify to continue',
+                    'verification required',
+                    'complete the captcha',
+                    'security verification',
+                    'przeciągnij suwak',
+                    'potwierdź, że jesteś człowiekiem',
+                    'zweryfikuj, aby kontynuować',
+                )
+                challenge_visible=any(x in visible_text for x in challenge_phrases)
+                challenge_url=('captcha' in current_url or '/verify' in current_url)
+                if challenge_visible or challenge_url:
+                    print(f'BROWSER POSTS LIMITED @{handle}: TikTok showed a visible verification/challenge page; not bypassing it.', file=sys.stderr)
                     if diag_dir:
                         Path(diag_dir).mkdir(parents=True, exist_ok=True)
                         try:
@@ -363,10 +389,12 @@ class TikTokPublicProvider(Provider):
                     try:
                         (Path(diag_dir)/'browser-summary.txt').write_text(
                             f'handle=@{handle}\n'
+                            f'headless={headless}\n'
                             f'intercepted_posts={len(captured)}\n'
                             f'video_links={len(video_links)}\n'
                             f'page_url={page.url}\n'
-                            f'title={page.title()}\n',
+                            f'title={page.title()}\n'
+                            f'visible_text_sample={(visible_text[:1200] if visible_text else "")}\n',
                             encoding='utf-8'
                         )
                     except Exception:

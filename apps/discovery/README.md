@@ -1,118 +1,45 @@
-# InfluRank Discovery v1
+# InfluRank Discovery v2
 
-This module discovers TikTok creator candidates and prepares them for the existing InfluRank profile scanner.
+Discovery is intentionally separate from the final Influence Score.
 
-## What it does
+## Why v2 is different
 
-1. Sends a list of Polish TikTok search seeds to the configured Apify Actor.
-2. Receives TikTok post/search results.
-3. Deduplicates creators by stable TikTok user ID (username fallback).
-4. Keeps discovery signals such as Polish subtitles, Polish hashtags and Polish POI.
-5. Filters by a configurable minimum follower count.
-6. Writes:
-   - `apps/web/data/discovery_raw.json`
-   - `apps/web/data/discovery_candidates.json`
-   - `apps/web/data/scanner_queue.json`
+Each seed is now sent to the provider in a separate Actor run.
 
-## Important
-
-`channel.verified` returned by the discovery provider is stored only for diagnostics.
-It is NOT authoritative and must not be used as the verified badge in InfluRank.
-
-The existing InfluRank profile scanner should be the authoritative source for:
-- verified status,
-- current follower count,
-- bio,
-- total likes,
-- post count,
-- other profile fields.
-
-## Setup
-
-From the repository root:
-
-```powershell
-python -m pip install -r apps/discovery/requirements.txt
-$env:APIFY_TOKEN="YOUR_TOKEN"
-python -m apps.discovery run --max-items 100 --min-followers 10000
-```
-
-Larger run:
-
-```powershell
-python -m apps.discovery run --max-items 1000 --min-followers 10000
-```
-
-Alternative sort test:
-
-```powershell
-python -m apps.discovery run --max-items 1000 --sort-type MOST_LIKED
-```
-
-## Seeds
-
-Edit:
+So:
 
 ```text
-apps/discovery/seeds.json
+polskatiktok -> N results
+tiktokpolska -> N results
+polska beauty -> N results
+...
 ```
 
-The default list deliberately mixes broad Polish discovery terms and category-oriented searches.
+Only after all completed seeds do we deduplicate creators.
 
-## Environment variables
+This fixes the v1 problem where `maxItems=10` applied to the whole list of
+keywords and the provider could fill the entire quota from the first seed.
 
-```text
-APIFY_TOKEN                       required
-APIFY_DISCOVERY_ACTOR             default: apidojo~tiktok-scraper-api
-DISCOVERY_LOCATION                default: PL
-DISCOVERY_DATE_RANGE              default: LAST_THREE_MONTHS
-DISCOVERY_SORT_TYPE               default: RELEVANCE
-DISCOVERY_MIN_FOLLOWERS           default: 10000
-DISCOVERY_MAX_ITEMS               default: 1000
-DISCOVERY_TIMEOUT_SECONDS         default: 180
-```
+## Persistent creator universe
 
-CLI arguments override the main discovery settings for a run.
+`discovery_candidates.json` is an upsert registry, not a one-run replacement.
+Creators found in earlier runs are kept.
 
-## Output example
+`scanner_queue.json` also preserves downstream statuses.
 
-`discovery_candidates.json`:
+## Files
 
-```json
-{
-  "meta": {
-    "stats": {
-      "posts_in": 1000,
-      "unique_creators": 650,
-      "below_min_followers": 300,
-      "accepted_candidates": 350
-    }
-  },
-  "creators": [
-    {
-      "tiktok_id": "123",
-      "username": "creator",
-      "followers": 120000,
-      "found_by": ["polskatiktok", "polska beauty"],
-      "posts_seen": 3,
-      "polish_signal_count": 2,
-      "polish_signals": ["hashtag", "subtitle_pl"]
-    }
-  ]
-}
-```
+Committed:
+- `apps/web/data/discovery_candidates.json`
+- `apps/web/data/scanner_queue.json`
+- `apps/web/data/discovery_raw.json` (compact diagnostic data)
 
-The numbers above are only an output-format example, not expected benchmark values.
+Not committed:
+- `apps/discovery/data/discovery_raw_full.json`
 
-## Next integration step
+The full provider payload is uploaded as a short-lived GitHub Actions artifact.
 
-`scanner_queue.json` is intentionally provider-agnostic. Each item starts with:
+## Provider verification flag
 
-```json
-{
-  "username": "creator",
-  "status": "pending_profile_scan"
-}
-```
-
-Do not automatically loop the current profile scanner until its output behavior is confirmed to append/upsert rather than overwrite `creators.json`.
+The discovery provider's `verified` value is not considered authoritative.
+InfluRank must confirm the TikTok badge independently during profile enrichment.

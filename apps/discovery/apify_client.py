@@ -17,15 +17,14 @@ def run_actor_sync(
     timeout_seconds: int = 180,
 ) -> list[dict[str, Any]]:
     """
-    Runs an Apify Actor synchronously and returns its default dataset items.
+    Run one Apify Actor invocation synchronously and return default dataset items.
 
-    Actor IDs in the HTTP endpoint use '~' instead of '/'.
+    We intentionally call the actor once per discovery seed. This makes
+    `results_per_seed` a real per-seed limit instead of a global limit shared
+    by all keywords.
     """
     actor_id = actor_id.replace("/", "~")
-    url = (
-        f"https://api.apify.com/v2/acts/{actor_id}/"
-        f"run-sync-get-dataset-items"
-    )
+    url = f"https://api.apify.com/v2/acts/{actor_id}/run-sync-get-dataset-items"
 
     response = requests.post(
         url,
@@ -39,7 +38,7 @@ def run_actor_sync(
     )
 
     if not response.ok:
-        body = response.text[:1500]
+        body = response.text[:1600]
         raise ApifyError(
             f"Apify request failed: HTTP {response.status_code}\n{body}"
         )

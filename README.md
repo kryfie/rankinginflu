@@ -1,60 +1,151 @@
-# InfluRank PL — starter repo
+# InfluRank PL
 
-Monorepo dla MVP rankingu polskich twórców TikTok.
+MVP polskiego rankingu twórców TikTok.
 
-## W środku
-- `apps/web` — obecny frontend Netlify.
-- `apps/scanner` — scanner v0.1 publicznych stron TikToka.
-- `packages/classifier` — PL Confidence + kategorie v0.1.
-- `packages/ranking` — Influence Score v0.1.
-- `database` — SQLite na etap eksperymentalny.
-- `.github/workflows` — CI i ręczny test scannera.
+## Aktualna architektura
 
-## Ważne
-`TikTokPublicProvider` czyta tylko dane osadzone w publicznie dostępnych stronach WWW. Nie loguje się, nie rozwiązuje CAPTCHA, nie obchodzi 403/429 i nie rotuje tożsamości. Jeśli TikTok ograniczy dostęp, skaner się zatrzymuje. Provider jest celowo wymienny.
-
-## Pierwszy test lokalny
-```bash
-python -m venv .venv
+```text
+Apify search discovery
+        ↓
+seed-by-seed discovery
+        ↓
+deduplikacja po TikTok user ID
+        ↓
+lekki PL filter + min followers
+        ↓
+cumulative candidate registry
+        ↓
+scanner_queue.json
+        ↓
+public profile enrichment (kolejny etap)
+        ↓
+recent posts / metrics
+        ↓
+Influence Score
+        ↓
+Netlify frontend
 ```
-Windows PowerShell:
-```powershell
-.\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
+
+## Najważniejsze katalogi
+
+```text
+apps/web/          frontend Netlify + dane publikowane
+apps/discovery/    discovery nowych kandydatów
+apps/scanner/      własny public-profile scanner
+packages/          klasyfikacja, modele i ranking
+database/          eksperymentalny schemat SQLite
+.github/workflows/ GitHub Actions
 ```
-Następnie przetestuj 1–3 znane publiczne konta:
-```bash
-python -m apps.scanner.scanner.cli scan @HANDLE --posts 10
+
+## Discovery v2
+
+Najważniejsza zmiana: **każdy seed ma osobny request do providera**.
+
+`results_per_seed=10` oznacza faktycznie do 10 wyników z każdego wykonanego seeda,
+a nie 10 wyników łącznie dla całej listy.
+
+Lista seedów:
+
+```text
+apps/discovery/seeds.json
 ```
-Powstaną:
-- `apps/scanner/data/influrank.db`
-- `apps/web/data/creators.json`
 
-## Discovery z hashtagów
-Hashtagi startowe: `apps/scanner/config/hashtags.txt`
-```bash
-python -m apps.scanner.scanner.cli discover --limit 30 --posts 10
+### Dane są kumulowane
+
+`apps/web/data/discovery_candidates.json` jest rejestrem kandydatów.
+Kolejny run dopisuje/aktualizuje twórców zamiast kasować wcześniejsze odkrycia.
+
+`apps/web/data/scanner_queue.json` zachowuje status profilu pomiędzy runami.
+
+### Raw data
+
+Do repo trafia tylko kompaktowy:
+
+```text
+apps/web/data/discovery_raw.json
 ```
-Najpierw testuj małą skalę. Publiczny HTML TikToka jest zmienny.
 
-## Frontend
-Frontend automatycznie próbuje wczytać `apps/web/data/creators.json`. Jeśli plik jest pusty, pokazuje dane demo. Po realnym skanie przełączy się na realny snapshot.
+Pełny payload providera jest tylko 7-dniowym artifactem GitHub Actions.
 
-## Influence Score v0.1
-- Reach 30%
-- Engagement 25%
-- Audience 20%
-- Momentum 15%
-- Consistency 10%
+## Jak uruchomić discovery
 
-Na pierwszym dniu Momentum ma neutralne 50/100. Po 30 dniach liczymy growth z własnej historii.
+GitHub:
+
+```text
+Actions
+→ InfluRank discovery
+→ Run workflow
+→ Branch: main
+```
+
+Parametry:
+
+```text
+results_per_seed = 10
+max_seeds = 1        # bezpieczny test; 0 = wszystkie seedy
+min_followers = 10000
+min_pl_signals = 1
+sort_type = RELEVANCE
+date_range = LAST_THREE_MONTHS
+```
+
+Workflow wykonuje się i zapisuje dane wyłącznie na branchu `main`.
+
+## APIFY_TOKEN
+
+GitHub:
+
+```text
+Settings
+→ Secrets and variables
+→ Actions
+→ Repository secrets
+→ APIFY_TOKEN
+```
+
+Nie zapisuj prawdziwego tokena w repo.
+
+## Ważne o verified
+
+Pole `verified` z discovery providera nie jest traktowane jako wiarygodne.
+InfluRank ma potwierdzać badge podczas niezależnego profile enrichment.
+
+## Public profile scanner
+
+Ręczny test:
+
+```text
+Actions → Test TikTok profile
+```
+
+Domyślnie `posts=0`, czyli sprawdzamy profil bez próby pobierania postów przez
+browser fallback. TikTok może ograniczać publiczny dostęp; scanner nie rozwiązuje
+CAPTCHA i nie obchodzi 403/429.
+
+## Influence Score
+
+Obecny kod ma wersję eksperymentalną. Finalny score powinien być liczony dopiero
+po zebraniu reprezentatywnej grupy creatorów i historii snapshotów.
+
+Planowane filary:
+- reach,
+- engagement,
+- audience,
+- momentum,
+- consistency.
+
+Dla metryk postów używamy median, nie średnich.
 
 ## Netlify
-Podłącz całe repo. `netlify.toml` publikuje tylko `apps/web`.
 
-## Najbliższy milestone
-1. 3 znane realne konta,
-2. sprawdzenie followers / verified / posts / views / likes / comments / shares,
-3. discovery 30–100 kont,
-4. ręczna ocena PL Confidence,
-5. dopiero potem Supabase i codzienny harmonogram.
+`netlify.toml` publikuje `apps/web`.
+
+## Kolejny etap
+
+Po stabilnym discovery:
+1. automatyczny profile enrichment z `scanner_queue.json`,
+2. jednoznaczny PL Confidence,
+3. creator vs firma/media,
+4. kategorie,
+5. ostatnie 10–30 postów,
+6. ranking + historia dzienna.
