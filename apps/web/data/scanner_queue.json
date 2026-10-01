@@ -1,73 +1,26 @@
 {
   "meta": {
     "purpose": "Queue for authoritative profile enrichment",
-    "count": 12,
-    "updated_at": "2026-10-01T08:51:24.754518+00:00"
+    "count": 10,
+    "updated_at": "2026-10-01T09:07:53.275135+00:00",
+    "discovery_filter_version": "v4-strong-pl-evidence"
   },
   "items": [
     {
-      "username": "menelgeographic",
-      "tiktok_id": "6921706513291969541",
-      "priority": 1,
-      "discovery_followers": 63346,
-      "polish_signals": [
-        "hashtag",
-        "poi_pl",
-        "subtitle_pl",
-        "title"
-      ],
-      "found_by": [
-        "polskatiktok"
-      ],
-      "last_discovered_at": "2026-10-01T08:15:06.603181+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-10-01T08:32:12.336106+00:00"
-    },
-    {
       "username": "melodiatvpolska_",
       "tiktok_id": "6640941950349099014",
-      "priority": 2,
+      "priority": 1,
       "discovery_followers": 56853,
       "polish_signals": [
-        "channel",
-        "hashtag",
+        "channel_marker_pl",
+        "hashtag_pl",
         "subtitle_pl",
-        "title"
+        "title_marker_pl"
       ],
-      "found_by": [
-        "polska"
+      "polish_strong_signals": [
+        "subtitle_pl"
       ],
-      "last_discovered_at": "2026-10-01T08:51:24.754518+00:00",
-      "status": "pending_profile_scan"
-    },
-    {
-      "username": "wolnoscslowa2.0",
-      "tiktok_id": "7156902889259860998",
-      "priority": 3,
-      "discovery_followers": 216557,
-      "polish_signals": [
-        "hashtag",
-        "subtitle_pl",
-        "title"
-      ],
-      "found_by": [
-        "polskatiktok",
-        "tiktokpolska"
-      ],
-      "last_discovered_at": "2026-10-01T08:15:06.603181+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-10-01T08:32:12.336106+00:00"
-    },
-    {
-      "username": "mocnabanda",
-      "tiktok_id": "7575906498481996822",
-      "priority": 4,
-      "discovery_followers": 168015,
-      "polish_signals": [
-        "hashtag",
-        "subtitle_pl",
-        "title"
-      ],
+      "discovery_pl_confidence": 100.0,
       "found_by": [
         "polska"
       ],
@@ -77,13 +30,19 @@
     {
       "username": "2cytramon2",
       "tiktok_id": "7615521098349151254",
-      "priority": 5,
+      "priority": 2,
       "discovery_followers": 34113,
       "polish_signals": [
-        "hashtag",
+        "hashtag_pl",
+        "polish_text",
         "subtitle_pl",
-        "title"
+        "title_marker_pl"
       ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 100.0,
       "found_by": [
         "polska",
         "polskatiktok",
@@ -94,15 +53,140 @@
       "last_profile_scan_at": "2026-10-01T08:32:12.336106+00:00"
     },
     {
+      "username": "dla_pieniedzy",
+      "tiktok_id": "7081177836397282310",
+      "priority": 3,
+      "discovery_followers": 412099,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 97.5,
+      "found_by": [
+        "polska"
+      ],
+      "last_discovered_at": "2026-10-01T08:51:24.754518+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "mocnabanda",
+      "tiktok_id": "7575906498481996822",
+      "priority": 4,
+      "discovery_followers": 168015,
+      "polish_signals": [
+        "hashtag_pl",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "subtitle_pl"
+      ],
+      "discovery_pl_confidence": 95.0,
+      "found_by": [
+        "polska"
+      ],
+      "last_discovered_at": "2026-10-01T08:51:24.754518+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "turystyka.stadionowa",
+      "tiktok_id": "7449663868860679190",
+      "priority": 5,
+      "discovery_followers": 22843,
+      "polish_signals": [
+        "flag_pl",
+        "hashtag_pl",
+        "polish_text",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "flag_pl",
+        "polish_text"
+      ],
+      "discovery_pl_confidence": 85.0,
+      "found_by": [
+        "polska"
+      ],
+      "last_discovered_at": "2026-10-01T08:51:24.754518+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "iskra_polan",
+      "tiktok_id": "7456151839731057686",
+      "priority": 6,
+      "discovery_followers": 43170,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "title_marker_pl"
+      ],
+      "polish_strong_signals": [
+        "polish_text"
+      ],
+      "discovery_pl_confidence": 80.0,
+      "found_by": [
+        "polska"
+      ],
+      "last_discovered_at": "2026-10-01T08:51:24.754518+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "wolnoscslowa2.0",
+      "tiktok_id": "7156902889259860998",
+      "priority": 7,
+      "discovery_followers": 216557,
+      "polish_signals": [
+        "hashtag",
+        "subtitle_pl",
+        "title"
+      ],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "polskatiktok",
+        "tiktokpolska"
+      ],
+      "last_discovered_at": "2026-10-01T08:15:06.603181+00:00",
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T08:32:12.336106+00:00"
+    },
+    {
+      "username": "menelgeographic",
+      "tiktok_id": "6921706513291969541",
+      "priority": 8,
+      "discovery_followers": 63346,
+      "polish_signals": [
+        "hashtag",
+        "poi_pl",
+        "subtitle_pl",
+        "title"
+      ],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
+      "found_by": [
+        "polskatiktok"
+      ],
+      "last_discovered_at": "2026-10-01T08:15:06.603181+00:00",
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T08:32:12.336106+00:00"
+    },
+    {
       "username": "andrzej9448",
       "tiktok_id": "7364679484983165985",
-      "priority": 6,
+      "priority": 9,
       "discovery_followers": 24474,
       "polish_signals": [
         "hashtag",
         "subtitle_pl",
         "title"
       ],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
       "found_by": [
         "polskatiktok"
       ],
@@ -113,93 +197,21 @@
     {
       "username": "mateusz_macierakowski",
       "tiktok_id": "7009565484010849286",
-      "priority": 7,
+      "priority": 10,
       "discovery_followers": 12056,
       "polish_signals": [
         "hashtag",
         "subtitle_pl",
         "title"
       ],
+      "polish_strong_signals": [],
+      "discovery_pl_confidence": null,
       "found_by": [
         "polskatiktok"
       ],
       "last_discovered_at": "2026-10-01T08:15:06.603181+00:00",
       "status": "enriched",
       "last_profile_scan_at": "2026-10-01T08:32:12.336106+00:00"
-    },
-    {
-      "username": "dla_pieniedzy",
-      "tiktok_id": "7081177836397282310",
-      "priority": 8,
-      "discovery_followers": 412099,
-      "polish_signals": [
-        "subtitle_pl",
-        "title"
-      ],
-      "found_by": [
-        "polska"
-      ],
-      "last_discovered_at": "2026-10-01T08:51:24.754518+00:00",
-      "status": "pending_profile_scan"
-    },
-    {
-      "username": "speed_salami1",
-      "tiktok_id": "7121370253166478342",
-      "priority": 9,
-      "discovery_followers": 98940,
-      "polish_signals": [
-        "hashtag",
-        "title"
-      ],
-      "found_by": [
-        "polska"
-      ],
-      "last_discovered_at": "2026-10-01T08:51:24.754518+00:00",
-      "status": "pending_profile_scan"
-    },
-    {
-      "username": "iskra_polan",
-      "tiktok_id": "7456151839731057686",
-      "priority": 10,
-      "discovery_followers": 43170,
-      "polish_signals": [
-        "hashtag",
-        "title"
-      ],
-      "found_by": [
-        "polska"
-      ],
-      "last_discovered_at": "2026-10-01T08:51:24.754518+00:00",
-      "status": "pending_profile_scan"
-    },
-    {
-      "username": "turystyka.stadionowa",
-      "tiktok_id": "7449663868860679190",
-      "priority": 11,
-      "discovery_followers": 22843,
-      "polish_signals": [
-        "hashtag",
-        "title"
-      ],
-      "found_by": [
-        "polska"
-      ],
-      "last_discovered_at": "2026-10-01T08:51:24.754518+00:00",
-      "status": "pending_profile_scan"
-    },
-    {
-      "username": "w9lachaine",
-      "tiktok_id": "6649731761114103814",
-      "priority": 12,
-      "discovery_followers": 2757849,
-      "polish_signals": [
-        "title"
-      ],
-      "found_by": [
-        "polska"
-      ],
-      "last_discovered_at": "2026-10-01T08:51:24.754518+00:00",
-      "status": "pending_profile_scan"
     }
   ]
 }

@@ -1,75 +1,56 @@
 {
   "meta": {
     "latest_run": {
-      "run_at": "2026-10-01T08:51:24.754518+00:00",
+      "run_at": "2026-10-01T09:07:53.275135+00:00",
       "actor": "apidojo~tiktok-scraper-api",
-      "startSeed": 2,
+      "filterVersion": "v4-strong-pl-evidence",
+      "startSeed": 3,
       "seeds_requested": [
-        "polska",
-        "polandtiktok"
+        "polishtiktok",
+        "polski humor"
       ],
       "seeds_completed": [
-        "polska",
-        "polandtiktok"
+        "polishtiktok",
+        "polski humor"
       ],
       "resultsPerSeed": 10,
       "location": "PL",
       "dateRange": "LAST_THREE_MONTHS",
       "sortType": "RELEVANCE",
       "minFollowers": 10000,
-      "minPLSignals": 1,
+      "minStrongPLSignals": 1,
+      "minPLConfidence": 50.0,
       "stats": {
-        "posts_in": 20,
-        "missing_channel": 10,
-        "unique_creators": 10,
-        "below_min_followers": 2,
-        "accepted_candidates_latest_run": 8
+        "unique_creators": 0,
+        "accepted_candidates_latest_run": 0
       },
       "per_seed": [
         {
-          "seed": "polska",
-          "posts_returned": 10
+          "seed": "polishtiktok",
+          "rows_returned": 10,
+          "usable_posts": 0,
+          "demo_rows": 10,
+          "status": "demo_only"
         },
         {
-          "seed": "polandtiktok",
-          "posts_returned": 10
+          "seed": "polski humor",
+          "rows_returned": 10,
+          "usable_posts": 0,
+          "demo_rows": 10,
+          "status": "demo_only"
         }
       ],
-      "errors": []
+      "errors": [],
+      "migration": {
+        "legacy_rows_revalidated": 8,
+        "legacy_rows_quarantined": 2
+      }
     },
     "registry_count": 12,
-    "updated_at": "2026-10-01T08:51:24.754518+00:00"
+    "eligible_count": 10,
+    "updated_at": "2026-10-01T09:07:53.275135+00:00"
   },
   "creators": [
-    {
-      "tiktok_id": "6921706513291969541",
-      "username": "menelgeographic",
-      "display_name": "Menel Geographic",
-      "profile_url": "https://www.tiktok.com/@menelgeographic",
-      "avatar_url": "https://p19-common-sign.tiktokcdn-eu.com/tos-no1a-avt-0068c001-no/fcf8c6094d20200395bedb6ed1c88746~tplv-tiktokx-cropcenter-q:1080:1080:q70.heic?dr=9608&refresh_token=30027757&x-expires=1790928000&x-signature=cLZa%2BIwUtBybL9HvMi%2FZgCG%2FsN0%3D&t=223449c4&ps=87d6e48a&shp=d05b14bd&shcp=c1333099&idc=no1a&sc=avatar&s=SEARCH",
-      "followers": 63346,
-      "provider_verified": true,
-      "found_by": [
-        "polskatiktok"
-      ],
-      "posts_seen": 1,
-      "max_views_seen": 2009207,
-      "max_likes_seen": 132456,
-      "latest_post_at": "2026-09-19T02:26:38.000Z",
-      "polish_signal_count": 4,
-      "polish_signals": [
-        "hashtag",
-        "poi_pl",
-        "subtitle_pl",
-        "title"
-      ],
-      "first_discovered_at": "2026-10-01T08:07:25.169332+00:00",
-      "last_discovered_at": "2026-10-01T08:15:06.603181+00:00",
-      "discovery_runs_seen": 2,
-      "posts_seen_latest_run": 1,
-      "posts_seen_total": 2,
-      "followers_max_seen": 63346
-    },
     {
       "tiktok_id": "6640941950349099014",
       "username": "melodiatvpolska_",
@@ -87,17 +68,224 @@
       "latest_post_at": "2026-09-21T15:13:41.000Z",
       "polish_signal_count": 4,
       "polish_signals": [
-        "channel",
-        "hashtag",
+        "channel_marker_pl",
+        "hashtag_pl",
         "subtitle_pl",
-        "title"
+        "title_marker_pl"
       ],
       "first_discovered_at": "2026-10-01T08:51:24.754518+00:00",
       "last_discovered_at": "2026-10-01T08:51:24.754518+00:00",
       "discovery_runs_seen": 1,
       "posts_seen_latest_run": 1,
       "posts_seen_total": 1,
-      "followers_max_seen": 56853
+      "followers_max_seen": 56853,
+      "polish_strong_signal_count": 1,
+      "polish_strong_signals": [
+        "subtitle_pl"
+      ],
+      "polish_weak_signals": [
+        "channel_marker_pl",
+        "hashtag_pl",
+        "title_marker_pl"
+      ],
+      "pl_confidence": 100.0,
+      "discovery_eligible": true
+    },
+    {
+      "tiktok_id": "7615521098349151254",
+      "username": "2cytramon2",
+      "display_name": "2Cytramon",
+      "profile_url": "https://www.tiktok.com/@2cytramon2",
+      "avatar_url": "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/617e927823bfb088d916bf6593fe6b13~tplv-tiktokx-cropcenter-q:1080:1080:q70.heic?dr=8837&refresh_token=a1652ba1&x-expires=1790928000&x-signature=62peOxL12wzbzwj2b1YVmkOR2gU%3D&t=223449c4&ps=87d6e48a&shp=d05b14bd&shcp=c1333099&idc=useast5&s=SEARCH&sc=avatar",
+      "followers": 34113,
+      "provider_verified": false,
+      "found_by": [
+        "polska",
+        "polskatiktok",
+        "tiktokpolska"
+      ],
+      "posts_seen": 1,
+      "max_views_seen": 1979153,
+      "max_likes_seen": 105650,
+      "latest_post_at": "2026-09-26T09:38:48.000Z",
+      "polish_signal_count": 4,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "first_discovered_at": "2026-10-01T08:07:25.169332+00:00",
+      "last_discovered_at": "2026-10-01T08:51:24.754518+00:00",
+      "discovery_runs_seen": 3,
+      "posts_seen_latest_run": 1,
+      "posts_seen_total": 5,
+      "followers_max_seen": 34113,
+      "polish_strong_signal_count": 2,
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_weak_signals": [
+        "hashtag_pl",
+        "title_marker_pl"
+      ],
+      "pl_confidence": 100.0,
+      "discovery_eligible": true
+    },
+    {
+      "tiktok_id": "7081177836397282310",
+      "username": "dla_pieniedzy",
+      "display_name": "dla_pieniedzy",
+      "profile_url": "https://www.tiktok.com/@dla_pieniedzy",
+      "avatar_url": "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/8955371e4c55a0d664f20101b146521c~tplv-tiktokx-cropcenter-q:1080:1080:q70.heic?dr=8837&refresh_token=4fa1c0f8&x-expires=1790928000&x-signature=jNkOSFAIDHLF5%2BAUpFijC%2BQeeoY%3D&t=223449c4&ps=87d6e48a&shp=d05b14bd&shcp=c1333099&idc=useast5&sc=avatar&s=SEARCH",
+      "followers": 412099,
+      "provider_verified": false,
+      "found_by": [
+        "polska"
+      ],
+      "posts_seen": 1,
+      "max_views_seen": 212859,
+      "max_likes_seen": 16436,
+      "latest_post_at": "2026-09-30T13:30:00.000Z",
+      "polish_signal_count": 3,
+      "polish_signals": [
+        "polish_text",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "first_discovered_at": "2026-10-01T08:51:24.754518+00:00",
+      "last_discovered_at": "2026-10-01T08:51:24.754518+00:00",
+      "discovery_runs_seen": 1,
+      "posts_seen_latest_run": 1,
+      "posts_seen_total": 1,
+      "followers_max_seen": 412099,
+      "polish_strong_signal_count": 2,
+      "polish_strong_signals": [
+        "polish_text",
+        "subtitle_pl"
+      ],
+      "polish_weak_signals": [
+        "title_marker_pl"
+      ],
+      "pl_confidence": 97.5,
+      "discovery_eligible": true
+    },
+    {
+      "tiktok_id": "7575906498481996822",
+      "username": "mocnabanda",
+      "display_name": "MocnaBanda",
+      "profile_url": "https://www.tiktok.com/@mocnabanda",
+      "avatar_url": "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/4f8663a236351735c692939dde9d1223~tplv-tiktokx-cropcenter-q:1080:1080:q70.heic?dr=8837&refresh_token=49bb9859&x-expires=1790928000&x-signature=YNiwjKhA6SbpjmYEp8FxfCxS%2BOQ%3D&t=223449c4&ps=87d6e48a&shp=d05b14bd&shcp=c1333099&idc=useast5&sc=avatar&s=SEARCH",
+      "followers": 168015,
+      "provider_verified": false,
+      "found_by": [
+        "polska"
+      ],
+      "posts_seen": 1,
+      "max_views_seen": 191030,
+      "max_likes_seen": 23427,
+      "latest_post_at": "2026-09-30T10:01:15.000Z",
+      "polish_signal_count": 3,
+      "polish_signals": [
+        "hashtag_pl",
+        "subtitle_pl",
+        "title_marker_pl"
+      ],
+      "first_discovered_at": "2026-10-01T08:51:24.754518+00:00",
+      "last_discovered_at": "2026-10-01T08:51:24.754518+00:00",
+      "discovery_runs_seen": 1,
+      "posts_seen_latest_run": 1,
+      "posts_seen_total": 1,
+      "followers_max_seen": 168015,
+      "polish_strong_signal_count": 1,
+      "polish_strong_signals": [
+        "subtitle_pl"
+      ],
+      "polish_weak_signals": [
+        "hashtag_pl",
+        "title_marker_pl"
+      ],
+      "pl_confidence": 95.0,
+      "discovery_eligible": true
+    },
+    {
+      "tiktok_id": "7449663868860679190",
+      "username": "turystyka.stadionowa",
+      "display_name": "Turystyka Stadionowa",
+      "profile_url": "https://www.tiktok.com/@turystyka.stadionowa",
+      "avatar_url": "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/414c77386df299b3451731b82d3137b5~tplv-tiktokx-cropcenter-q:1080:1080:q70.heic?dr=8837&refresh_token=0322194b&x-expires=1790928000&x-signature=c0BIbQ9djcGWb9tWp8OzU3ljBAI%3D&t=223449c4&ps=87d6e48a&shp=d05b14bd&shcp=c1333099&idc=useast5&sc=avatar&s=SEARCH",
+      "followers": 22843,
+      "provider_verified": false,
+      "found_by": [
+        "polska"
+      ],
+      "posts_seen": 1,
+      "max_views_seen": 454565,
+      "max_likes_seen": 29622,
+      "latest_post_at": "2026-09-28T19:10:33.000Z",
+      "polish_signal_count": 4,
+      "polish_signals": [
+        "flag_pl",
+        "hashtag_pl",
+        "polish_text",
+        "title_marker_pl"
+      ],
+      "first_discovered_at": "2026-10-01T08:51:24.754518+00:00",
+      "last_discovered_at": "2026-10-01T08:51:24.754518+00:00",
+      "discovery_runs_seen": 1,
+      "posts_seen_latest_run": 1,
+      "posts_seen_total": 1,
+      "followers_max_seen": 22843,
+      "polish_strong_signal_count": 2,
+      "polish_strong_signals": [
+        "flag_pl",
+        "polish_text"
+      ],
+      "polish_weak_signals": [
+        "hashtag_pl",
+        "title_marker_pl"
+      ],
+      "pl_confidence": 85.0,
+      "discovery_eligible": true
+    },
+    {
+      "tiktok_id": "7456151839731057686",
+      "username": "iskra_polan",
+      "display_name": "Iskra&Polan",
+      "profile_url": "https://www.tiktok.com/@iskra_polan",
+      "avatar_url": "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/e41c12bae40ca77bd455f18bd928d342~tplv-tiktokx-cropcenter-q:1080:1080:q70.heic?dr=8837&refresh_token=4365851e&x-expires=1790928000&x-signature=92hPxvo7kvRzl2eUZEBtCHW0arI%3D&t=223449c4&ps=87d6e48a&shp=d05b14bd&shcp=c1333099&idc=useast5&sc=avatar&s=SEARCH",
+      "followers": 43170,
+      "provider_verified": false,
+      "found_by": [
+        "polska"
+      ],
+      "posts_seen": 1,
+      "max_views_seen": 256710,
+      "max_likes_seen": 16653,
+      "latest_post_at": "2026-09-29T12:05:43.000Z",
+      "polish_signal_count": 3,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "title_marker_pl"
+      ],
+      "first_discovered_at": "2026-10-01T08:51:24.754518+00:00",
+      "last_discovered_at": "2026-10-01T08:51:24.754518+00:00",
+      "discovery_runs_seen": 1,
+      "posts_seen_latest_run": 1,
+      "posts_seen_total": 1,
+      "followers_max_seen": 43170,
+      "polish_strong_signal_count": 1,
+      "polish_strong_signals": [
+        "polish_text"
+      ],
+      "polish_weak_signals": [
+        "hashtag_pl",
+        "title_marker_pl"
+      ],
+      "pl_confidence": 80.0,
+      "discovery_eligible": true
     },
     {
       "tiktok_id": "7156902889259860998",
@@ -129,62 +317,33 @@
       "followers_max_seen": 216557
     },
     {
-      "tiktok_id": "7575906498481996822",
-      "username": "mocnabanda",
-      "display_name": "MocnaBanda",
-      "profile_url": "https://www.tiktok.com/@mocnabanda",
-      "avatar_url": "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/4f8663a236351735c692939dde9d1223~tplv-tiktokx-cropcenter-q:1080:1080:q70.heic?dr=8837&refresh_token=49bb9859&x-expires=1790928000&x-signature=YNiwjKhA6SbpjmYEp8FxfCxS%2BOQ%3D&t=223449c4&ps=87d6e48a&shp=d05b14bd&shcp=c1333099&idc=useast5&sc=avatar&s=SEARCH",
-      "followers": 168015,
-      "provider_verified": false,
+      "tiktok_id": "6921706513291969541",
+      "username": "menelgeographic",
+      "display_name": "Menel Geographic",
+      "profile_url": "https://www.tiktok.com/@menelgeographic",
+      "avatar_url": "https://p19-common-sign.tiktokcdn-eu.com/tos-no1a-avt-0068c001-no/fcf8c6094d20200395bedb6ed1c88746~tplv-tiktokx-cropcenter-q:1080:1080:q70.heic?dr=9608&refresh_token=30027757&x-expires=1790928000&x-signature=cLZa%2BIwUtBybL9HvMi%2FZgCG%2FsN0%3D&t=223449c4&ps=87d6e48a&shp=d05b14bd&shcp=c1333099&idc=no1a&sc=avatar&s=SEARCH",
+      "followers": 63346,
+      "provider_verified": true,
       "found_by": [
-        "polska"
+        "polskatiktok"
       ],
       "posts_seen": 1,
-      "max_views_seen": 191030,
-      "max_likes_seen": 23427,
-      "latest_post_at": "2026-09-30T10:01:15.000Z",
-      "polish_signal_count": 3,
+      "max_views_seen": 2009207,
+      "max_likes_seen": 132456,
+      "latest_post_at": "2026-09-19T02:26:38.000Z",
+      "polish_signal_count": 4,
       "polish_signals": [
         "hashtag",
-        "subtitle_pl",
-        "title"
-      ],
-      "first_discovered_at": "2026-10-01T08:51:24.754518+00:00",
-      "last_discovered_at": "2026-10-01T08:51:24.754518+00:00",
-      "discovery_runs_seen": 1,
-      "posts_seen_latest_run": 1,
-      "posts_seen_total": 1,
-      "followers_max_seen": 168015
-    },
-    {
-      "tiktok_id": "7615521098349151254",
-      "username": "2cytramon2",
-      "display_name": "2Cytramon",
-      "profile_url": "https://www.tiktok.com/@2cytramon2",
-      "avatar_url": "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/617e927823bfb088d916bf6593fe6b13~tplv-tiktokx-cropcenter-q:1080:1080:q70.heic?dr=8837&refresh_token=a1652ba1&x-expires=1790928000&x-signature=62peOxL12wzbzwj2b1YVmkOR2gU%3D&t=223449c4&ps=87d6e48a&shp=d05b14bd&shcp=c1333099&idc=useast5&s=SEARCH&sc=avatar",
-      "followers": 34113,
-      "provider_verified": false,
-      "found_by": [
-        "polska",
-        "polskatiktok",
-        "tiktokpolska"
-      ],
-      "posts_seen": 1,
-      "max_views_seen": 1979153,
-      "max_likes_seen": 105650,
-      "latest_post_at": "2026-09-26T09:38:48.000Z",
-      "polish_signal_count": 3,
-      "polish_signals": [
-        "hashtag",
+        "poi_pl",
         "subtitle_pl",
         "title"
       ],
       "first_discovered_at": "2026-10-01T08:07:25.169332+00:00",
-      "last_discovered_at": "2026-10-01T08:51:24.754518+00:00",
-      "discovery_runs_seen": 3,
+      "last_discovered_at": "2026-10-01T08:15:06.603181+00:00",
+      "discovery_runs_seen": 2,
       "posts_seen_latest_run": 1,
-      "posts_seen_total": 5,
-      "followers_max_seen": 34113
+      "posts_seen_total": 2,
+      "followers_max_seen": 63346
     },
     {
       "tiktok_id": "7364679484983165985",
@@ -237,23 +396,22 @@
       "followers_max_seen": 12056
     },
     {
-      "tiktok_id": "7081177836397282310",
-      "username": "dla_pieniedzy",
-      "display_name": "dla_pieniedzy",
-      "profile_url": "https://www.tiktok.com/@dla_pieniedzy",
-      "avatar_url": "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/8955371e4c55a0d664f20101b146521c~tplv-tiktokx-cropcenter-q:1080:1080:q70.heic?dr=8837&refresh_token=4fa1c0f8&x-expires=1790928000&x-signature=jNkOSFAIDHLF5%2BAUpFijC%2BQeeoY%3D&t=223449c4&ps=87d6e48a&shp=d05b14bd&shcp=c1333099&idc=useast5&sc=avatar&s=SEARCH",
-      "followers": 412099,
+      "tiktok_id": "6649731761114103814",
+      "username": "w9lachaine",
+      "display_name": "w9officiel",
+      "profile_url": "https://www.tiktok.com/@w9lachaine",
+      "avatar_url": "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/cf597ab09fd6656619d4582ea4c3893f~tplv-tiktokx-cropcenter-q:1080:1080:q70.heic?dr=8837&refresh_token=a9bdeb7c&x-expires=1790928000&x-signature=71a%2FORElSE2iwUSkTxTRUCb%2BrPM%3D&t=223449c4&ps=87d6e48a&shp=d05b14bd&shcp=c1333099&idc=useast5&sc=avatar&s=SEARCH",
+      "followers": 2757849,
       "provider_verified": false,
       "found_by": [
         "polska"
       ],
       "posts_seen": 1,
-      "max_views_seen": 212859,
-      "max_likes_seen": 16436,
-      "latest_post_at": "2026-09-30T13:30:00.000Z",
-      "polish_signal_count": 2,
+      "max_views_seen": 3010516,
+      "max_likes_seen": 212031,
+      "latest_post_at": "2026-09-29T21:03:36.000Z",
+      "polish_signal_count": 1,
       "polish_signals": [
-        "subtitle_pl",
         "title"
       ],
       "first_discovered_at": "2026-10-01T08:51:24.754518+00:00",
@@ -261,7 +419,9 @@
       "discovery_runs_seen": 1,
       "posts_seen_latest_run": 1,
       "posts_seen_total": 1,
-      "followers_max_seen": 412099
+      "followers_max_seen": 2757849,
+      "discovery_eligible": false,
+      "discovery_rejection_reason": "weak_pl_evidence_revalidated_v4"
     },
     {
       "tiktok_id": "7121370253166478342",
@@ -288,87 +448,9 @@
       "discovery_runs_seen": 1,
       "posts_seen_latest_run": 1,
       "posts_seen_total": 1,
-      "followers_max_seen": 98940
-    },
-    {
-      "tiktok_id": "7456151839731057686",
-      "username": "iskra_polan",
-      "display_name": "Iskra&Polan",
-      "profile_url": "https://www.tiktok.com/@iskra_polan",
-      "avatar_url": "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/e41c12bae40ca77bd455f18bd928d342~tplv-tiktokx-cropcenter-q:1080:1080:q70.heic?dr=8837&refresh_token=4365851e&x-expires=1790928000&x-signature=92hPxvo7kvRzl2eUZEBtCHW0arI%3D&t=223449c4&ps=87d6e48a&shp=d05b14bd&shcp=c1333099&idc=useast5&sc=avatar&s=SEARCH",
-      "followers": 43170,
-      "provider_verified": false,
-      "found_by": [
-        "polska"
-      ],
-      "posts_seen": 1,
-      "max_views_seen": 256710,
-      "max_likes_seen": 16653,
-      "latest_post_at": "2026-09-29T12:05:43.000Z",
-      "polish_signal_count": 2,
-      "polish_signals": [
-        "hashtag",
-        "title"
-      ],
-      "first_discovered_at": "2026-10-01T08:51:24.754518+00:00",
-      "last_discovered_at": "2026-10-01T08:51:24.754518+00:00",
-      "discovery_runs_seen": 1,
-      "posts_seen_latest_run": 1,
-      "posts_seen_total": 1,
-      "followers_max_seen": 43170
-    },
-    {
-      "tiktok_id": "7449663868860679190",
-      "username": "turystyka.stadionowa",
-      "display_name": "Turystyka Stadionowa",
-      "profile_url": "https://www.tiktok.com/@turystyka.stadionowa",
-      "avatar_url": "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/414c77386df299b3451731b82d3137b5~tplv-tiktokx-cropcenter-q:1080:1080:q70.heic?dr=8837&refresh_token=0322194b&x-expires=1790928000&x-signature=c0BIbQ9djcGWb9tWp8OzU3ljBAI%3D&t=223449c4&ps=87d6e48a&shp=d05b14bd&shcp=c1333099&idc=useast5&sc=avatar&s=SEARCH",
-      "followers": 22843,
-      "provider_verified": false,
-      "found_by": [
-        "polska"
-      ],
-      "posts_seen": 1,
-      "max_views_seen": 454565,
-      "max_likes_seen": 29622,
-      "latest_post_at": "2026-09-28T19:10:33.000Z",
-      "polish_signal_count": 2,
-      "polish_signals": [
-        "hashtag",
-        "title"
-      ],
-      "first_discovered_at": "2026-10-01T08:51:24.754518+00:00",
-      "last_discovered_at": "2026-10-01T08:51:24.754518+00:00",
-      "discovery_runs_seen": 1,
-      "posts_seen_latest_run": 1,
-      "posts_seen_total": 1,
-      "followers_max_seen": 22843
-    },
-    {
-      "tiktok_id": "6649731761114103814",
-      "username": "w9lachaine",
-      "display_name": "w9officiel",
-      "profile_url": "https://www.tiktok.com/@w9lachaine",
-      "avatar_url": "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/cf597ab09fd6656619d4582ea4c3893f~tplv-tiktokx-cropcenter-q:1080:1080:q70.heic?dr=8837&refresh_token=a9bdeb7c&x-expires=1790928000&x-signature=71a%2FORElSE2iwUSkTxTRUCb%2BrPM%3D&t=223449c4&ps=87d6e48a&shp=d05b14bd&shcp=c1333099&idc=useast5&sc=avatar&s=SEARCH",
-      "followers": 2757849,
-      "provider_verified": false,
-      "found_by": [
-        "polska"
-      ],
-      "posts_seen": 1,
-      "max_views_seen": 3010516,
-      "max_likes_seen": 212031,
-      "latest_post_at": "2026-09-29T21:03:36.000Z",
-      "polish_signal_count": 1,
-      "polish_signals": [
-        "title"
-      ],
-      "first_discovered_at": "2026-10-01T08:51:24.754518+00:00",
-      "last_discovered_at": "2026-10-01T08:51:24.754518+00:00",
-      "discovery_runs_seen": 1,
-      "posts_seen_latest_run": 1,
-      "posts_seen_total": 1,
-      "followers_max_seen": 2757849
+      "followers_max_seen": 98940,
+      "discovery_eligible": false,
+      "discovery_rejection_reason": "weak_pl_evidence_revalidated_v4"
     }
   ]
 }
