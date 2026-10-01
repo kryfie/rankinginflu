@@ -1,31 +1,57 @@
 {
   "meta": {
     "purpose": "Queue for authoritative profile enrichment",
-    "count": 2
+    "count": 3,
+    "updated_at": "2026-10-01T08:07:25.169332+00:00"
   },
   "items": [
     {
+      "username": "menelgeographic",
+      "tiktok_id": "6921706513291969541",
+      "priority": 1,
+      "discovery_followers": 63342,
+      "polish_signals": [
+        "hashtag",
+        "poi_pl",
+        "subtitle_pl",
+        "title"
+      ],
+      "found_by": [
+        "polskatiktok"
+      ],
+      "last_discovered_at": "2026-10-01T08:07:25.169332+00:00",
+      "status": "pending_profile_scan"
+    },
+    {
       "username": "2cytramon2",
       "tiktok_id": "7615521098349151254",
-      "priority": 1,
-      "discovery_followers": 34111,
+      "priority": 2,
+      "discovery_followers": 34112,
       "polish_signals": [
         "hashtag",
         "subtitle_pl",
         "title"
       ],
+      "found_by": [
+        "polskatiktok"
+      ],
+      "last_discovered_at": "2026-10-01T08:07:25.169332+00:00",
       "status": "pending_profile_scan"
     },
     {
       "username": "andrzej9448",
       "tiktok_id": "7364679484983165985",
-      "priority": 2,
+      "priority": 3,
       "discovery_followers": 24474,
       "polish_signals": [
         "hashtag",
         "subtitle_pl",
         "title"
       ],
+      "found_by": [
+        "polskatiktok"
+      ],
+      "last_discovered_at": null,
       "status": "pending_profile_scan"
     }
   ]

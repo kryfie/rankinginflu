@@ -1,58 +1,94 @@
 {
   "meta": {
-    "actor": "apidojo~tiktok-scraper-api",
-    "keywords": [
-      "polskatiktok",
-      "tiktokpolska",
-      "polska",
-      "polandtiktok",
-      "polishtiktok",
-      "polski humor",
-      "polska beauty",
-      "polska moda",
-      "polska fitness",
-      "polska gaming",
-      "polska tech",
-      "polska edukacja",
-      "polska jedzenie",
-      "polska podróże",
-      "polska muzyka",
-      "polska finanse"
-    ],
-    "location": "PL",
-    "dateRange": "LAST_THREE_MONTHS",
-    "sortType": "RELEVANCE",
-    "maxItemsRequested": 10,
-    "minFollowers": 10000,
-    "stats": {
-      "posts_in": 10,
-      "unique_creators": 10,
-      "below_min_followers": 8,
-      "accepted_candidates": 2
-    }
+    "latest_run": {
+      "run_at": "2026-10-01T08:07:25.169332+00:00",
+      "actor": "apidojo~tiktok-scraper-api",
+      "seeds_requested": [
+        "polskatiktok"
+      ],
+      "seeds_completed": [
+        "polskatiktok"
+      ],
+      "resultsPerSeed": 10,
+      "location": "PL",
+      "dateRange": "LAST_THREE_MONTHS",
+      "sortType": "RELEVANCE",
+      "minFollowers": 10000,
+      "minPLSignals": 1,
+      "stats": {
+        "posts_in": 10,
+        "unique_creators": 10,
+        "below_min_followers": 8,
+        "accepted_candidates_latest_run": 2
+      },
+      "per_seed": [
+        {
+          "seed": "polskatiktok",
+          "posts_returned": 10
+        }
+      ],
+      "errors": []
+    },
+    "registry_count": 3,
+    "updated_at": "2026-10-01T08:07:25.169332+00:00"
   },
   "creators": [
+    {
+      "tiktok_id": "6921706513291969541",
+      "username": "menelgeographic",
+      "display_name": "Menel Geographic",
+      "profile_url": "https://www.tiktok.com/@menelgeographic",
+      "avatar_url": "https://p16-common-sign.tiktokcdn-eu.com/tos-no1a-avt-0068c001-no/fcf8c6094d20200395bedb6ed1c88746~tplv-tiktokx-cropcenter-q:1080:1080:q70.heic?dr=9608&refresh_token=b22802f3&x-expires=1790928000&x-signature=rMXzGfARYEI9lotc6nz%2B%2BSkd3mw%3D&t=223449c4&ps=87d6e48a&shp=d05b14bd&shcp=c1333099&idc=no1a&sc=avatar&s=SEARCH",
+      "followers": 63342,
+      "provider_verified": true,
+      "found_by": [
+        "polskatiktok"
+      ],
+      "posts_seen": 1,
+      "max_views_seen": 2009109,
+      "max_likes_seen": 132452,
+      "latest_post_at": "2026-09-19T02:26:38.000Z",
+      "polish_signal_count": 4,
+      "polish_signals": [
+        "hashtag",
+        "poi_pl",
+        "subtitle_pl",
+        "title"
+      ],
+      "first_discovered_at": "2026-10-01T08:07:25.169332+00:00",
+      "last_discovered_at": "2026-10-01T08:07:25.169332+00:00",
+      "discovery_runs_seen": 1,
+      "posts_seen_latest_run": 1,
+      "posts_seen_total": 1,
+      "followers_max_seen": 63342
+    },
     {
       "tiktok_id": "7615521098349151254",
       "username": "2cytramon2",
       "display_name": "2Cytramon",
       "profile_url": "https://www.tiktok.com/@2cytramon2",
-      "avatar_url": "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/617e927823bfb088d916bf6593fe6b13~tplv-tiktokx-cropcenter-q:1080:1080:q70.heic?dr=8837&refresh_token=ec897af8&x-expires=1790924400&x-signature=iasV1yq45Tjp6U3Ez7T4fPtuO9Q%3D&t=223449c4&ps=87d6e48a&shp=d05b14bd&shcp=c1333099&idc=useast5&sc=avatar&s=SEARCH",
-      "followers": 34111,
-      "provider_verified": false,
+      "avatar_url": "https://p16-common-sign.tiktokcdn-eu.com/tos-no1a-avt-0068c001-no/617e927823bfb088d916bf6593fe6b13~tplv-tiktokx-cropcenter-q:1080:1080:q70.heic?dr=9608&refresh_token=4dfbc285&x-expires=1790928000&x-signature=iNQAqRnwosDJpU7SXDR7V8%2BFExc%3D&t=223449c4&ps=87d6e48a&shp=d05b14bd&shcp=c1333099&idc=no1a&sc=avatar&s=SEARCH",
+      "followers": 34112,
+      "provider_verified": true,
       "found_by": [
         "polskatiktok"
       ],
       "posts_seen": 1,
-      "max_views_seen": 1973227,
-      "max_likes_seen": 105391,
+      "max_views_seen": 1975714,
+      "max_likes_seen": 105499,
       "latest_post_at": "2026-09-26T09:38:48.000Z",
       "polish_signal_count": 3,
       "polish_signals": [
         "hashtag",
         "subtitle_pl",
         "title"
-      ]
+      ],
+      "first_discovered_at": "2026-10-01T08:07:25.169332+00:00",
+      "last_discovered_at": "2026-10-01T08:07:25.169332+00:00",
+      "discovery_runs_seen": 1,
+      "posts_seen_latest_run": 1,
+      "posts_seen_total": 2,
+      "followers_max_seen": 34112
     },
     {
       "tiktok_id": "7364679484983165985",
