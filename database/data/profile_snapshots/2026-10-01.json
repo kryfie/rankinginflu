@@ -1,0 +1,4626 @@
+{
+  "date": "2026-10-01",
+  "source": "tiktok_public_profile_html",
+  "source_note": "Light public profile snapshot only: followers, following, total likes, video count and verified. No posts and no Apify.",
+  "started_at": "2026-10-01T19:10:22.270419+00:00",
+  "finished_at": "2026-10-01T19:11:20.784705+00:00",
+  "status": "partial",
+  "stopped_by_rate_limit": false,
+  "stop_reason": null,
+  "current_creator_count": 556,
+  "successful_current_profiles": 20,
+  "missing_current_profiles": 536,
+  "attempted_this_run": 20,
+  "success_this_run": 20,
+  "failed_this_run": 0,
+  "creators": {
+    "s.dziura": {
+      "handle": "s.dziura",
+      "name": "s.dziura",
+      "rank": 1,
+      "score": 88.9,
+      "category": "Other",
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-01T19:10:22.954778+00:00",
+      "followers": 1034383,
+      "following": 236,
+      "total_likes": 45628615,
+      "video_count": 362,
+      "verified": false
+    },
+    "aqatalewandowska": {
+      "handle": "aqatalewandowska",
+      "name": "agatalewandowska",
+      "rank": 2,
+      "score": 85.6,
+      "category": "Beauty",
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-01T19:10:25.933619+00:00",
+      "followers": 581482,
+      "following": 255,
+      "total_likes": 46801050,
+      "video_count": 810,
+      "verified": false
+    },
+    "mocnabanda": {
+      "handle": "mocnabanda",
+      "name": "MocnaBanda",
+      "rank": 3,
+      "score": 85.5,
+      "category": "Entertainment",
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-01T19:10:28.790115+00:00",
+      "followers": 168426,
+      "following": 6,
+      "total_likes": 11632099,
+      "video_count": 175,
+      "verified": false
+    },
+    "haykhair": {
+      "handle": "haykhair",
+      "name": "HAYKHAIR",
+      "rank": 4,
+      "score": 83.5,
+      "category": "Tech",
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-01T19:10:31.733909+00:00",
+      "followers": 333845,
+      "following": 518,
+      "total_likes": 10197367,
+      "video_count": 290,
+      "verified": false
+    },
+    "dominik_wiecek": {
+      "handle": "dominik_wiecek",
+      "name": "Dominik Więcek",
+      "rank": 5,
+      "score": 83.3,
+      "category": "Travel",
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-01T19:10:34.742551+00:00",
+      "followers": 409268,
+      "following": 233,
+      "total_likes": 23453827,
+      "video_count": 1425,
+      "verified": false
+    },
+    "wierzbicka_kinga": {
+      "handle": "wierzbicka_kinga",
+      "name": "wierzbicka_kinga",
+      "rank": 6,
+      "score": 80.7,
+      "category": "Food",
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-01T19:10:37.749236+00:00",
+      "followers": 1028768,
+      "following": 337,
+      "total_likes": 46926371,
+      "video_count": 830,
+      "verified": true
+    },
+    "33majkaaa_": {
+      "handle": "33majkaaa_",
+      "name": "ig : 33majkaaa𐙚 ˚",
+      "rank": 7,
+      "score": 80.6,
+      "category": "Lifestyle",
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-01T19:10:41.424524+00:00",
+      "followers": 285349,
+      "following": 946,
+      "total_likes": 19760811,
+      "video_count": 1097,
+      "verified": false
+    },
+    "satyryan": {
+      "handle": "satyryan",
+      "name": "jano",
+      "rank": 8,
+      "score": 80.0,
+      "category": "Other",
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-01T19:10:44.247642+00:00",
+      "followers": 642596,
+      "following": 250,
+      "total_likes": 78703528,
+      "video_count": 2105,
+      "verified": false
+    },
+    "salamann_pl": {
+      "handle": "salamann_pl",
+      "name": "salamann_pl",
+      "rank": 9,
+      "score": 79.8,
+      "category": "Other",
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-01T19:10:47.453853+00:00",
+      "followers": 23570,
+      "following": 9,
+      "total_likes": 692226,
+      "video_count": 38,
+      "verified": false
+    },
+    "liszotee": {
+      "handle": "liszotee",
+      "name": "Kamil Lichota",
+      "rank": 10,
+      "score": 79.7,
+      "category": "Beauty",
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-01T19:10:50.484015+00:00",
+      "followers": 381872,
+      "following": 665,
+      "total_likes": 12800338,
+      "video_count": 749,
+      "verified": false
+    },
+    "tojahania": {
+      "handle": "tojahania",
+      "name": "Hi Hania",
+      "rank": 11,
+      "score": 78.9,
+      "category": "Other",
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-01T19:10:53.453548+00:00",
+      "followers": 2278605,
+      "following": 215,
+      "total_likes": 86405065,
+      "video_count": 848,
+      "verified": true
+    },
+    "aniadubinska": {
+      "handle": "aniadubinska",
+      "name": "annamaria",
+      "rank": 12,
+      "score": 78.9,
+      "category": "Entertainment",
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-01T19:10:56.333811+00:00",
+      "followers": 494611,
+      "following": 207,
+      "total_likes": 33210043,
+      "video_count": 1324,
+      "verified": false
+    },
+    "laurencja111": {
+      "handle": "laurencja111",
+      "name": "Laurencja111",
+      "rank": 13,
+      "score": 78.7,
+      "category": "Lifestyle",
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-01T19:10:59.242057+00:00",
+      "followers": 28241,
+      "following": 0,
+      "total_likes": 229013,
+      "video_count": 16,
+      "verified": false
+    },
+    "amelia.czechanowska": {
+      "handle": "amelia.czechanowska",
+      "name": "amelia.czechanowska",
+      "rank": 14,
+      "score": 78.5,
+      "category": "Lifestyle",
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-01T19:11:02.353730+00:00",
+      "followers": 84740,
+      "following": 116,
+      "total_likes": 2635888,
+      "video_count": 310,
+      "verified": false
+    },
+    "suziebandit": {
+      "handle": "suziebandit",
+      "name": "zuzia bmw",
+      "rank": 15,
+      "score": 78.2,
+      "category": "Lifestyle",
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-01T19:11:05.830302+00:00",
+      "followers": 264337,
+      "following": 656,
+      "total_likes": 16744484,
+      "video_count": 1607,
+      "verified": false
+    },
+    "dominikauznanskaa": {
+      "handle": "dominikauznanskaa",
+      "name": "Dominika Uznańska",
+      "rank": 16,
+      "score": 77.8,
+      "category": "Lifestyle",
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-01T19:11:08.792460+00:00",
+      "followers": 235849,
+      "following": 784,
+      "total_likes": 13652717,
+      "video_count": 1379,
+      "verified": false
+    },
+    "ddyg0966": {
+      "handle": "ddyg0966",
+      "name": "Ddyg",
+      "rank": 17,
+      "score": 77.5,
+      "category": "Music",
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-01T19:11:12.061760+00:00",
+      "followers": 14314,
+      "following": 3,
+      "total_likes": 608738,
+      "video_count": 13,
+      "verified": false
+    },
+    "iwanxoczko": {
+      "handle": "iwanxoczko",
+      "name": "iwanxoczko",
+      "rank": 18,
+      "score": 77.4,
+      "category": "Other",
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-01T19:11:15.000016+00:00",
+      "followers": 510994,
+      "following": 354,
+      "total_likes": 19273500,
+      "video_count": 379,
+      "verified": false
+    },
+    "aniaaiken": {
+      "handle": "aniaaiken",
+      "name": "Ania Aiken",
+      "rank": 19,
+      "score": 77.4,
+      "category": "Lifestyle",
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-01T19:11:17.841053+00:00",
+      "followers": 99887,
+      "following": 1672,
+      "total_likes": 3370116,
+      "video_count": 771,
+      "verified": false
+    },
+    "0_kubzanek_0": {
+      "handle": "0_kubzanek_0",
+      "name": "kubzanek",
+      "rank": 20,
+      "score": 76.8,
+      "category": "Entertainment",
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-01T19:11:20.784231+00:00",
+      "followers": 16583,
+      "following": 22,
+      "total_likes": 229440,
+      "video_count": 40,
+      "verified": false
+    },
+    "olapersak": {
+      "handle": "olapersak",
+      "name": "PRO OLA | ig: olapersak",
+      "rank": 21,
+      "score": 76.7,
+      "category": "Beauty",
+      "city": null
+    },
+    "zojaskubis": {
+      "handle": "zojaskubis",
+      "name": "ZOJA SKUBIS",
+      "rank": 22,
+      "score": 76.6,
+      "category": "Lifestyle",
+      "city": "Kraków"
+    },
+    "grapedia": {
+      "handle": "grapedia",
+      "name": "GRApedia",
+      "rank": 23,
+      "score": 76.5,
+      "category": "Education",
+      "city": null
+    },
+    "kladwisia": {
+      "handle": "kladwisia",
+      "name": "kladwisia",
+      "rank": 24,
+      "score": 76.1,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "pl_igorek": {
+      "handle": "pl_igorek",
+      "name": "Białorusin w Polsce 🇵🇱",
+      "rank": 25,
+      "score": 75.8,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "futbolokiempitera": {
+      "handle": "futbolokiempitera",
+      "name": "Futbol okiem Pitera ⚽️❤",
+      "rank": 26,
+      "score": 75.3,
+      "category": "Sport & Fitness",
+      "city": null
+    },
+    "nikola.horbatiuk": {
+      "handle": "nikola.horbatiuk",
+      "name": "nikola horbatiuk",
+      "rank": 27,
+      "score": 75.3,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "menelgeographic": {
+      "handle": "menelgeographic",
+      "name": "Menel Geographic",
+      "rank": 28,
+      "score": 75.2,
+      "category": "Entertainment",
+      "city": null
+    },
+    "vollite": {
+      "handle": "vollite",
+      "name": "vollite",
+      "rank": 29,
+      "score": 74.0,
+      "category": "Other",
+      "city": null
+    },
+    "modekoty": {
+      "handle": "modekoty",
+      "name": "MłodeKoty",
+      "rank": 30,
+      "score": 73.9,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "katarzyna.pieczynska": {
+      "handle": "katarzyna.pieczynska",
+      "name": "Katarzyna Pieczyńska",
+      "rank": 31,
+      "score": 73.3,
+      "category": "Gaming",
+      "city": null
+    },
+    "jahasie_": {
+      "handle": "jahasie_",
+      "name": "jahasie (robimy za ciebie)",
+      "rank": 32,
+      "score": 73.2,
+      "category": "Education",
+      "city": null
+    },
+    "_polishspeedsounds_": {
+      "handle": "_polishspeedsounds_",
+      "name": "polish speed sounds 🇵🇱",
+      "rank": 33,
+      "score": 73.1,
+      "category": "Music",
+      "city": null
+    },
+    "weronika.jagus": {
+      "handle": "weronika.jagus",
+      "name": "Weronika Jaguś | makijaż",
+      "rank": 34,
+      "score": 73.0,
+      "category": "Beauty",
+      "city": null
+    },
+    "oliwia.girlz": {
+      "handle": "oliwia.girlz",
+      "name": "oliwia.girlz",
+      "rank": 35,
+      "score": 72.7,
+      "category": "Travel",
+      "city": null
+    },
+    "basia_mlp": {
+      "handle": "basia_mlp",
+      "name": "basia 🦄",
+      "rank": 36,
+      "score": 72.5,
+      "category": "Other",
+      "city": null
+    },
+    "skurveny.kokot": {
+      "handle": "skurveny.kokot",
+      "name": "Endrju",
+      "rank": 37,
+      "score": 72.3,
+      "category": "Food",
+      "city": null
+    },
+    "lale.girlsband": {
+      "handle": "lale.girlsband",
+      "name": "LALE",
+      "rank": 38,
+      "score": 71.9,
+      "category": "Other",
+      "city": null
+    },
+    "mdanekk": {
+      "handle": "mdanekk",
+      "name": "Maciek",
+      "rank": 39,
+      "score": 71.5,
+      "category": "Education",
+      "city": null
+    },
+    "grela.domcia": {
+      "handle": "grela.domcia",
+      "name": "grela.domcia 🪽",
+      "rank": 40,
+      "score": 71.4,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "emilka.kostyk": {
+      "handle": "emilka.kostyk",
+      "name": "Emilka Kostyk 💗",
+      "rank": 41,
+      "score": 71.3,
+      "category": "Beauty",
+      "city": null
+    },
+    "piwnysliwka": {
+      "handle": "piwnysliwka",
+      "name": "og sliwa",
+      "rank": 42,
+      "score": 71.3,
+      "category": "Sport & Fitness",
+      "city": null
+    },
+    "dzikiezyczenia": {
+      "handle": "dzikiezyczenia",
+      "name": "DzikieZyczenia",
+      "rank": 43,
+      "score": 71.2,
+      "category": "Entertainment",
+      "city": null
+    },
+    "akumi720": {
+      "handle": "akumi720",
+      "name": "Nie Akumi",
+      "rank": 44,
+      "score": 71.2,
+      "category": "Other",
+      "city": null
+    },
+    "besstronny": {
+      "handle": "besstronny",
+      "name": "Besstronny",
+      "rank": 45,
+      "score": 71.0,
+      "category": "Entertainment",
+      "city": null
+    },
+    "mooomeczeeek": {
+      "handle": "mooomeczeeek",
+      "name": "Monika",
+      "rank": 46,
+      "score": 71.0,
+      "category": "Other",
+      "city": null
+    },
+    "dwcreativegroup": {
+      "handle": "dwcreativegroup",
+      "name": "DWCREATIVEGROUP_Warszawa",
+      "rank": 47,
+      "score": 70.7,
+      "category": "Other",
+      "city": "Warszawa"
+    },
+    "trueboyzz": {
+      "handle": "trueboyzz",
+      "name": "TrueBoyzz",
+      "rank": 48,
+      "score": 70.4,
+      "category": "Entertainment",
+      "city": null
+    },
+    "alaszpaq": {
+      "handle": "alaszpaq",
+      "name": "alicja szpakiewicz ⭐️",
+      "rank": 49,
+      "score": 70.3,
+      "category": "Sport & Fitness",
+      "city": null
+    },
+    "technowrozka": {
+      "handle": "technowrozka",
+      "name": "✩𝒩𝒶𝓉𝒶𝓈𝓏𝒾✩‧₊˚♌︎",
+      "rank": 50,
+      "score": 70.2,
+      "category": "Other",
+      "city": null
+    },
+    "patrycja.haras": {
+      "handle": "patrycja.haras",
+      "name": "patrycja.haras",
+      "rank": 51,
+      "score": 69.7,
+      "category": "Food",
+      "city": null
+    },
+    "burmistrz_mariusz": {
+      "handle": "burmistrz_mariusz",
+      "name": "burmistrz_mariusz",
+      "rank": 52,
+      "score": 69.6,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "natasza.baszczyj": {
+      "handle": "natasza.baszczyj",
+      "name": "Natasza Baszczyj",
+      "rank": 53,
+      "score": 69.5,
+      "category": "Other",
+      "city": null
+    },
+    "macioseu": {
+      "handle": "macioseu",
+      "name": "Maciek Zalech/Macios",
+      "rank": 54,
+      "score": 69.4,
+      "category": "Other",
+      "city": null
+    },
+    "kasiamvp": {
+      "handle": "kasiamvp",
+      "name": "Kasia Markiewicz 🫧",
+      "rank": 55,
+      "score": 69.3,
+      "category": "Other",
+      "city": null
+    },
+    "rocksankaroxi": {
+      "handle": "rocksankaroxi",
+      "name": "Rocksanka",
+      "rank": 56,
+      "score": 69.2,
+      "category": "Food",
+      "city": null
+    },
+    "bialykolnierzykpl": {
+      "handle": "bialykolnierzykpl",
+      "name": "bialykolnierzyk",
+      "rank": 57,
+      "score": 69.2,
+      "category": "Other",
+      "city": null
+    },
+    "czech_guy_in_warsaw": {
+      "handle": "czech_guy_in_warsaw",
+      "name": "Matěj - FashionGuy",
+      "rank": 58,
+      "score": 68.8,
+      "category": "Fashion",
+      "city": null
+    },
+    "archiwum.tajemnic": {
+      "handle": "archiwum.tajemnic",
+      "name": "Archiwum Tajemnic",
+      "rank": 59,
+      "score": 68.8,
+      "category": "Other",
+      "city": null
+    },
+    "em.nalepa": {
+      "handle": "em.nalepa",
+      "name": "Magda Nalepa",
+      "rank": 60,
+      "score": 68.6,
+      "category": "Food",
+      "city": null
+    },
+    "truebeautyofficial": {
+      "handle": "truebeautyofficial",
+      "name": "Dusia",
+      "rank": 61,
+      "score": 68.4,
+      "category": "Other",
+      "city": null
+    },
+    "malablondyna___": {
+      "handle": "malablondyna___",
+      "name": "mała blondyna",
+      "rank": 62,
+      "score": 68.3,
+      "category": "Beauty",
+      "city": null
+    },
+    "malgo_official": {
+      "handle": "malgo_official",
+      "name": "MAŁGO",
+      "rank": 63,
+      "score": 68.3,
+      "category": "Entertainment",
+      "city": null
+    },
+    "ola.zmijska": {
+      "handle": "ola.zmijska",
+      "name": "Olka🤍",
+      "rank": 64,
+      "score": 68.1,
+      "category": "Beauty",
+      "city": null
+    },
+    "anex_rezi0": {
+      "handle": "anex_rezi0",
+      "name": "ANEX",
+      "rank": 65,
+      "score": 68.1,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "mohamedxkade": {
+      "handle": "mohamedxkade",
+      "name": "Moffe04",
+      "rank": 66,
+      "score": 67.7,
+      "category": "Food",
+      "city": null
+    },
+    "kapitanburgerpolice": {
+      "handle": "kapitanburgerpolice",
+      "name": "kaPITAnBurger",
+      "rank": 67,
+      "score": 67.5,
+      "category": "Other",
+      "city": null
+    },
+    "purzalife": {
+      "handle": "purzalife",
+      "name": "purzalife",
+      "rank": 68,
+      "score": 67.5,
+      "category": "Other",
+      "city": null
+    },
+    "nswnansn": {
+      "handle": "nswnansn",
+      "name": "wikus | ig: v.orlowska",
+      "rank": 69,
+      "score": 67.4,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "bestiessclub": {
+      "handle": "bestiessclub",
+      "name": "besties club",
+      "rank": 70,
+      "score": 67.4,
+      "category": "Other",
+      "city": null
+    },
+    "folwarr": {
+      "handle": "folwarr",
+      "name": "folwarr",
+      "rank": 71,
+      "score": 67.2,
+      "category": "Gaming",
+      "city": null
+    },
+    "paulina.hornik": {
+      "handle": "paulina.hornik",
+      "name": "paulina.hornik",
+      "rank": 72,
+      "score": 67.0,
+      "category": "Beauty",
+      "city": null
+    },
+    "rafal.rutkowski": {
+      "handle": "rafal.rutkowski",
+      "name": "rafal.rutkowski",
+      "rank": 73,
+      "score": 67.0,
+      "category": "Entertainment",
+      "city": null
+    },
+    "joneswpolsce": {
+      "handle": "joneswpolsce",
+      "name": "Jones w Polsce",
+      "rank": 74,
+      "score": 66.8,
+      "category": "Beauty",
+      "city": null
+    },
+    "dari_chups": {
+      "handle": "dari_chups",
+      "name": "Твой отчим",
+      "rank": 75,
+      "score": 66.7,
+      "category": "Other",
+      "city": null
+    },
+    "jozmuu": {
+      "handle": "jozmuu",
+      "name": "jozmu",
+      "rank": 76,
+      "score": 66.5,
+      "category": "Beauty",
+      "city": null
+    },
+    "uzdrowiciel_": {
+      "handle": "uzdrowiciel_",
+      "name": "Uzdro",
+      "rank": 77,
+      "score": 66.5,
+      "category": "Entertainment",
+      "city": null
+    },
+    "ewa.szwedzinska": {
+      "handle": "ewa.szwedzinska",
+      "name": "Ewa Szwed",
+      "rank": 78,
+      "score": 66.4,
+      "category": "Beauty",
+      "city": null
+    },
+    "holizm": {
+      "handle": "holizm",
+      "name": "Jakub Żynis",
+      "rank": 79,
+      "score": 66.4,
+      "category": "Other",
+      "city": null
+    },
+    "rekinway": {
+      "handle": "rekinway",
+      "name": "rekinway",
+      "rank": 80,
+      "score": 66.3,
+      "category": "Other",
+      "city": null
+    },
+    "o_tysiuuula": {
+      "handle": "o_tysiuuula",
+      "name": "Martyna Wesołowska 🎤",
+      "rank": 81,
+      "score": 66.1,
+      "category": "Music",
+      "city": null
+    },
+    "natanielmaturalni": {
+      "handle": "natanielmaturalni",
+      "name": "Nataniel | Maturalni",
+      "rank": 82,
+      "score": 66.0,
+      "category": "Education",
+      "city": null
+    },
+    "sarkamoritz": {
+      "handle": "sarkamoritz",
+      "name": "SarkaMoritz",
+      "rank": 83,
+      "score": 66.0,
+      "category": "Food",
+      "city": null
+    },
+    "italiantastepl": {
+      "handle": "italiantastepl",
+      "name": "Beata Maciejec",
+      "rank": 84,
+      "score": 65.9,
+      "category": "Beauty",
+      "city": null
+    },
+    "pawlak_luberson": {
+      "handle": "pawlak_luberson",
+      "name": "Pawlak&Luberson",
+      "rank": 85,
+      "score": 65.7,
+      "category": "Entertainment",
+      "city": null
+    },
+    "autosmiech": {
+      "handle": "autosmiech",
+      "name": "AutoŚmiech PL",
+      "rank": 86,
+      "score": 65.7,
+      "category": "Entertainment",
+      "city": null
+    },
+    "filipexo": {
+      "handle": "filipexo",
+      "name": "Ig: fuckfilipexo",
+      "rank": 87,
+      "score": 65.7,
+      "category": "Music",
+      "city": null
+    },
+    "chumkpop": {
+      "handle": "chumkpop",
+      "name": "Maja Ciesielska",
+      "rank": 88,
+      "score": 65.3,
+      "category": "Music",
+      "city": null
+    },
+    "podrozezesmakiem": {
+      "handle": "podrozezesmakiem",
+      "name": "PODRÓŻE ZE SMAKIEM",
+      "rank": 89,
+      "score": 65.3,
+      "category": "Travel",
+      "city": null
+    },
+    "czosn3k_ftbl": {
+      "handle": "czosn3k_ftbl",
+      "name": "𝖈 𝖟 𝖔 𝖘 𝖓 𝖊 𝖐🇵🇱",
+      "rank": 90,
+      "score": 65.3,
+      "category": "Sport & Fitness",
+      "city": null
+    },
+    "superstas027": {
+      "handle": "superstas027",
+      "name": "superstas027",
+      "rank": 91,
+      "score": 65.1,
+      "category": "Food",
+      "city": null
+    },
+    "kacpermarciniak_": {
+      "handle": "kacpermarciniak_",
+      "name": "Kacper Marciniak",
+      "rank": 92,
+      "score": 65.1,
+      "category": "Sport & Fitness",
+      "city": null
+    },
+    "grytsakv": {
+      "handle": "grytsakv",
+      "name": "OnlyGo",
+      "rank": 93,
+      "score": 65.1,
+      "category": "Other",
+      "city": "Warszawa"
+    },
+    "blanka_chm5": {
+      "handle": "blanka_chm5",
+      "name": "blanka_chm",
+      "rank": 94,
+      "score": 65.0,
+      "category": "Other",
+      "city": null
+    },
+    "kris_chmurka.ai": {
+      "handle": "kris_chmurka.ai",
+      "name": "kris_chmurka.ai",
+      "rank": 95,
+      "score": 65.0,
+      "category": "Tech",
+      "city": null
+    },
+    "weiyi42": {
+      "handle": "weiyi42",
+      "name": "🇨🇳🇵🇱 Weiyi 🐝🎹",
+      "rank": 96,
+      "score": 64.9,
+      "category": "Beauty",
+      "city": null
+    },
+    "miloneiro": {
+      "handle": "miloneiro",
+      "name": "Milo Darski • miloneiro",
+      "rank": 97,
+      "score": 64.8,
+      "category": "Education",
+      "city": null
+    },
+    "wiktorianiekalo": {
+      "handle": "wiktorianiekalo",
+      "name": "Wiktoria Niekało",
+      "rank": 98,
+      "score": 64.6,
+      "category": "Sport & Fitness",
+      "city": null
+    },
+    "claudies.diaries": {
+      "handle": "claudies.diaries",
+      "name": "Claudie ⋆｡°✩ 🐇",
+      "rank": 99,
+      "score": 64.3,
+      "category": "Other",
+      "city": null
+    },
+    "max_niemiec": {
+      "handle": "max_niemiec",
+      "name": "Max Niemiec",
+      "rank": 100,
+      "score": 64.3,
+      "category": "Music",
+      "city": null
+    },
+    "emiliamup": {
+      "handle": "emiliamup",
+      "name": "emilia nowotka✩‧₊˚",
+      "rank": 101,
+      "score": 64.1,
+      "category": "Travel",
+      "city": null
+    },
+    "tutajroksana": {
+      "handle": "tutajroksana",
+      "name": "ja,Roksana",
+      "rank": 102,
+      "score": 64.0,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "rmasny": {
+      "handle": "rmasny",
+      "name": "rmasny",
+      "rank": 103,
+      "score": 63.7,
+      "category": "Tech",
+      "city": null
+    },
+    "jeszczeniedaleko": {
+      "handle": "jeszczeniedaleko",
+      "name": "jeszczeniedaleko",
+      "rank": 104,
+      "score": 63.7,
+      "category": "Education",
+      "city": null
+    },
+    "monika.kociolek": {
+      "handle": "monika.kociolek",
+      "name": "MONA",
+      "rank": 105,
+      "score": 63.6,
+      "category": "Music",
+      "city": null
+    },
+    "itzcrazynaze": {
+      "handle": "itzcrazynaze",
+      "name": "itzNaze",
+      "rank": 106,
+      "score": 63.6,
+      "category": "Entertainment",
+      "city": null
+    },
+    "kamixx4": {
+      "handle": "kamixx4",
+      "name": "Kamix - selfcare & cleaning",
+      "rank": 107,
+      "score": 63.4,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "natalia_wojciechowska_": {
+      "handle": "natalia_wojciechowska_",
+      "name": "natalia_wojciechowska_",
+      "rank": 108,
+      "score": 63.2,
+      "category": "Music",
+      "city": null
+    },
+    "kustoszowy": {
+      "handle": "kustoszowy",
+      "name": "ig: kustoszowy_",
+      "rank": 109,
+      "score": 63.1,
+      "category": "Entertainment",
+      "city": null
+    },
+    "salamon.r": {
+      "handle": "salamon.r",
+      "name": "Salamon",
+      "rank": 110,
+      "score": 62.9,
+      "category": "Food",
+      "city": null
+    },
+    "xkleoox": {
+      "handle": "xkleoox",
+      "name": "Klaudia Majewska",
+      "rank": 111,
+      "score": 62.5,
+      "category": "Beauty",
+      "city": null
+    },
+    "series_aii": {
+      "handle": "series_aii",
+      "name": "Zwierzęta na L4",
+      "rank": 112,
+      "score": 62.5,
+      "category": "Other",
+      "city": null
+    },
+    "its.kajucha": {
+      "handle": "its.kajucha",
+      "name": "kajucha 🌺",
+      "rank": 113,
+      "score": 62.5,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "thinkaboutpl": {
+      "handle": "thinkaboutpl",
+      "name": "Think-About | Piotr Opulski",
+      "rank": 114,
+      "score": 62.4,
+      "category": "Education",
+      "city": null
+    },
+    "byli.widzieli": {
+      "handle": "byli.widzieli",
+      "name": "Byli widzieli",
+      "rank": 115,
+      "score": 62.4,
+      "category": "Travel",
+      "city": null
+    },
+    "kk.juleczkaa": {
+      "handle": "kk.juleczkaa",
+      "name": "kk.juleczkaa",
+      "rank": 116,
+      "score": 62.3,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "lukaszkonior.jpg": {
+      "handle": "lukaszkonior.jpg",
+      "name": "Torpeda",
+      "rank": 117,
+      "score": 62.0,
+      "category": "Other",
+      "city": "Opole"
+    },
+    "soltys.lubelszczyzny": {
+      "handle": "soltys.lubelszczyzny",
+      "name": "Sołtys Lubelszczyzny",
+      "rank": 118,
+      "score": 61.9,
+      "category": "Lifestyle",
+      "city": "Lublin"
+    },
+    "starsfromthestars": {
+      "handle": "starsfromthestars",
+      "name": "STARS.PL",
+      "rank": 119,
+      "score": 61.9,
+      "category": "Beauty",
+      "city": null
+    },
+    "michal.gotuje": {
+      "handle": "michal.gotuje",
+      "name": "michal.gotuje",
+      "rank": 120,
+      "score": 61.8,
+      "category": "Food",
+      "city": null
+    },
+    "domek_smakow": {
+      "handle": "domek_smakow",
+      "name": "Domek Smaków Mielno Ewelina",
+      "rank": 121,
+      "score": 61.8,
+      "category": "Food",
+      "city": "Mielno"
+    },
+    "official_julia_pytel": {
+      "handle": "official_julia_pytel",
+      "name": "Julia",
+      "rank": 122,
+      "score": 61.7,
+      "category": "Beauty",
+      "city": null
+    },
+    "iklocus": {
+      "handle": "iklocus",
+      "name": "iKlocus",
+      "rank": 123,
+      "score": 61.6,
+      "category": "Tech",
+      "city": null
+    },
+    "oklahomaburgerpolska": {
+      "handle": "oklahomaburgerpolska",
+      "name": "Oklahoma Burger",
+      "rank": 124,
+      "score": 61.5,
+      "category": "Other",
+      "city": "Bydgoszcz"
+    },
+    "ogniktv": {
+      "handle": "ogniktv",
+      "name": "OGNIK | IG: ogniktv",
+      "rank": 125,
+      "score": 61.5,
+      "category": "Music",
+      "city": null
+    },
+    "minimind_edu": {
+      "handle": "minimind_edu",
+      "name": "minimind_edu",
+      "rank": 126,
+      "score": 61.4,
+      "category": "Education",
+      "city": null
+    },
+    "dla_pieniedzy": {
+      "handle": "dla_pieniedzy",
+      "name": "dla_pieniedzy",
+      "rank": 127,
+      "score": 61.3,
+      "category": "Finance",
+      "city": null
+    },
+    "amelianabiolchemie": {
+      "handle": "amelianabiolchemie",
+      "name": "amelka⭒",
+      "rank": 128,
+      "score": 61.3,
+      "category": "Education",
+      "city": null
+    },
+    "sara.cwalina": {
+      "handle": "sara.cwalina",
+      "name": "Sara Cwalina",
+      "rank": 129,
+      "score": 61.2,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "szymon_mrozek": {
+      "handle": "szymon_mrozek",
+      "name": "Szymon Mrozek",
+      "rank": 130,
+      "score": 61.1,
+      "category": "Music",
+      "city": null
+    },
+    "nowakuje": {
+      "handle": "nowakuje",
+      "name": "Patka Nowak 🌸 @nowakuje",
+      "rank": 131,
+      "score": 61.1,
+      "category": "Food",
+      "city": null
+    },
+    "sileslbc": {
+      "handle": "sileslbc",
+      "name": "Siles",
+      "rank": 132,
+      "score": 61.0,
+      "category": "Music",
+      "city": null
+    },
+    "ola.adwent": {
+      "handle": "ola.adwent",
+      "name": "Ola 🍒",
+      "rank": 133,
+      "score": 61.0,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "barbershopskc": {
+      "handle": "barbershopskc",
+      "name": "Gentleman's Club Skierniewice",
+      "rank": 134,
+      "score": 60.8,
+      "category": "Other",
+      "city": "Warszawa"
+    },
+    "oliviakopiec": {
+      "handle": "oliviakopiec",
+      "name": "Olivia 🎶",
+      "rank": 135,
+      "score": 60.8,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "wierawier": {
+      "handle": "wierawier",
+      "name": "WIERA",
+      "rank": 136,
+      "score": 60.8,
+      "category": "Fashion",
+      "city": null
+    },
+    "sybupigwa": {
+      "handle": "sybupigwa",
+      "name": "Sybau Wielka pigwa 🥀",
+      "rank": 137,
+      "score": 60.8,
+      "category": "Other",
+      "city": null
+    },
+    "danielmidas": {
+      "handle": "danielmidas",
+      "name": "danielmidas",
+      "rank": 138,
+      "score": 60.7,
+      "category": "Other",
+      "city": null
+    },
+    "politykasiwego": {
+      "handle": "politykasiwego",
+      "name": "Polityka Siwego",
+      "rank": 139,
+      "score": 60.4,
+      "category": "Other",
+      "city": null
+    },
+    "og.olaaa": {
+      "handle": "og.olaaa",
+      "name": "og ola",
+      "rank": 140,
+      "score": 60.1,
+      "category": "Other",
+      "city": null
+    },
+    "kamil.marques": {
+      "handle": "kamil.marques",
+      "name": "kamil.marques",
+      "rank": 141,
+      "score": 60.0,
+      "category": "Food",
+      "city": null
+    },
+    "mako_ceo_": {
+      "handle": "mako_ceo_",
+      "name": "MaKo CEO",
+      "rank": 142,
+      "score": 59.9,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "hiimadk": {
+      "handle": "hiimadk",
+      "name": "Hi_im_AdK",
+      "rank": 143,
+      "score": 59.8,
+      "category": "Gaming",
+      "city": null
+    },
+    "70sboy": {
+      "handle": "70sboy",
+      "name": "70sboy",
+      "rank": 144,
+      "score": 59.5,
+      "category": "Fashion",
+      "city": null
+    },
+    "miloszskierski": {
+      "handle": "miloszskierski",
+      "name": "MIŁOSZ SKIΣRSKI",
+      "rank": 145,
+      "score": 59.4,
+      "category": "Music",
+      "city": null
+    },
+    "mami_i_leos": {
+      "handle": "mami_i_leos",
+      "name": "Mami_i_Leoś",
+      "rank": 146,
+      "score": 59.4,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "stanislav_lastochkin": {
+      "handle": "stanislav_lastochkin",
+      "name": "Lastochkin",
+      "rank": 147,
+      "score": 59.2,
+      "category": "Other",
+      "city": null
+    },
+    "jasperrr55": {
+      "handle": "jasperrr55",
+      "name": "Kacper JASPER Porębski",
+      "rank": 148,
+      "score": 59.0,
+      "category": "Other",
+      "city": null
+    },
+    "thepolishsyn": {
+      "handle": "thepolishsyn",
+      "name": "🌵ThePolishSyn🇵🇱🌵",
+      "rank": 149,
+      "score": 59.0,
+      "category": "Entertainment",
+      "city": null
+    },
+    "nikodem_sliwinski": {
+      "handle": "nikodem_sliwinski",
+      "name": "nikodem_sliwinski",
+      "rank": 150,
+      "score": 58.8,
+      "category": "Other",
+      "city": null
+    },
+    "zu.wis": {
+      "handle": "zu.wis",
+      "name": "zu | ur funny ocd bff 🌻",
+      "rank": 151,
+      "score": 58.8,
+      "category": "Entertainment",
+      "city": null
+    },
+    "tatiana84497": {
+      "handle": "tatiana84497",
+      "name": "🪷Tatiana🪷",
+      "rank": 152,
+      "score": 58.8,
+      "category": "Food",
+      "city": "Warszawa"
+    },
+    "gastrobesties": {
+      "handle": "gastrobesties",
+      "name": "GastroBesties",
+      "rank": 153,
+      "score": 58.7,
+      "category": "Food",
+      "city": "Kraków"
+    },
+    "marlenasojka": {
+      "handle": "marlenasojka",
+      "name": "MARLEY",
+      "rank": 154,
+      "score": 58.6,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "kraemerdaria": {
+      "handle": "kraemerdaria",
+      "name": "Daria Kraemer",
+      "rank": 155,
+      "score": 58.6,
+      "category": "Fashion",
+      "city": null
+    },
+    "iskra_polan": {
+      "handle": "iskra_polan",
+      "name": "Iskra&Polan",
+      "rank": 156,
+      "score": 58.4,
+      "category": "Sport & Fitness",
+      "city": null
+    },
+    "monikaporajrozanska": {
+      "handle": "monikaporajrozanska",
+      "name": "Monika Poraj-Rożańska",
+      "rank": 157,
+      "score": 58.3,
+      "category": "Fashion",
+      "city": null
+    },
+    "patrycja.skin": {
+      "handle": "patrycja.skin",
+      "name": "Patrycja • @patrycja.skin",
+      "rank": 158,
+      "score": 58.3,
+      "category": "Beauty",
+      "city": null
+    },
+    "strefamroku_pl": {
+      "handle": "strefamroku_pl",
+      "name": "StrefaMroku",
+      "rank": 159,
+      "score": 58.2,
+      "category": "Education",
+      "city": null
+    },
+    "nathallae": {
+      "handle": "nathallae",
+      "name": "Natalia Maszkowska",
+      "rank": 160,
+      "score": 58.1,
+      "category": "Food",
+      "city": null
+    },
+    "skolimlatino": {
+      "handle": "skolimlatino",
+      "name": "SkolimLATINO",
+      "rank": 161,
+      "score": 58.0,
+      "category": "Beauty",
+      "city": null
+    },
+    "oliwiajezak": {
+      "handle": "oliwiajezak",
+      "name": "OLIWKA 🧚 hotel paradise 13",
+      "rank": 162,
+      "score": 58.0,
+      "category": "Travel",
+      "city": null
+    },
+    "schagii_official": {
+      "handle": "schagii_official",
+      "name": "Schagii",
+      "rank": 163,
+      "score": 58.0,
+      "category": "Entertainment",
+      "city": null
+    },
+    "bezprzepraszam": {
+      "handle": "bezprzepraszam",
+      "name": "bez przepraszam",
+      "rank": 164,
+      "score": 58.0,
+      "category": "Other",
+      "city": null
+    },
+    "topowa_piona1": {
+      "handle": "topowa_piona1",
+      "name": "topowa_piona1",
+      "rank": 165,
+      "score": 58.0,
+      "category": "Education",
+      "city": null
+    },
+    "grubsonofficial": {
+      "handle": "grubsonofficial",
+      "name": "GrubSon 🇵🇱",
+      "rank": 166,
+      "score": 57.9,
+      "category": "Other",
+      "city": null
+    },
+    "bigkolcz": {
+      "handle": "bigkolcz",
+      "name": "bigkolcz",
+      "rank": 167,
+      "score": 57.8,
+      "category": "Finance",
+      "city": null
+    },
+    "papito.energy": {
+      "handle": "papito.energy",
+      "name": "Papito Energy",
+      "rank": 168,
+      "score": 57.8,
+      "category": "Gaming",
+      "city": null
+    },
+    "czlowiekodjedzenia": {
+      "handle": "czlowiekodjedzenia",
+      "name": "Szymon Dudek",
+      "rank": 169,
+      "score": 57.7,
+      "category": "Food",
+      "city": "Warszawa"
+    },
+    "nasticaropl": {
+      "handle": "nasticaropl",
+      "name": "NASTICARO 🇵🇱",
+      "rank": 170,
+      "score": 57.6,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "nati_manka": {
+      "handle": "nati_manka",
+      "name": "nati_manka_przepisy",
+      "rank": 171,
+      "score": 57.4,
+      "category": "Food",
+      "city": null
+    },
+    "turystyka.stadionowa": {
+      "handle": "turystyka.stadionowa",
+      "name": "Turystyka Stadionowa",
+      "rank": 172,
+      "score": 57.3,
+      "category": "Sport & Fitness",
+      "city": null
+    },
+    "muza13059": {
+      "handle": "muza13059",
+      "name": "MUZA",
+      "rank": 173,
+      "score": 57.3,
+      "category": "Music",
+      "city": null
+    },
+    "spizarniababcijadzi": {
+      "handle": "spizarniababcijadzi",
+      "name": "Spiżarnia Babci Jadzi",
+      "rank": 174,
+      "score": 57.2,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "victoriaemilieee": {
+      "handle": "victoriaemilieee",
+      "name": "Victoria Emilie Løken",
+      "rank": 175,
+      "score": 57.1,
+      "category": "Beauty",
+      "city": null
+    },
+    "super_filmiki89": {
+      "handle": "super_filmiki89",
+      "name": "super_filmiki",
+      "rank": 176,
+      "score": 57.1,
+      "category": "Entertainment",
+      "city": null
+    },
+    "lili.antoniak": {
+      "handle": "lili.antoniak",
+      "name": "Lili.Antoniak",
+      "rank": 177,
+      "score": 56.9,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "xmichaldaniel": {
+      "handle": "xmichaldaniel",
+      "name": "Michał Daniel",
+      "rank": 178,
+      "score": 56.9,
+      "category": "Sport & Fitness",
+      "city": null
+    },
+    "paluchoficjalnie": {
+      "handle": "paluchoficjalnie",
+      "name": "PaluchOficjalnie",
+      "rank": 179,
+      "score": 56.9,
+      "category": "Music",
+      "city": null
+    },
+    "lesscalm": {
+      "handle": "lesscalm",
+      "name": "gabriela",
+      "rank": 180,
+      "score": 56.8,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "1islamheer": {
+      "handle": "1islamheer",
+      "name": "🇵🇰 islam AHeer | Europe 🇵🇱",
+      "rank": 181,
+      "score": 56.8,
+      "category": "Other",
+      "city": null
+    },
+    "niko.renders": {
+      "handle": "niko.renders",
+      "name": "Nikodem.czerniak",
+      "rank": 182,
+      "score": 56.8,
+      "category": "Entertainment",
+      "city": null
+    },
+    "alekschm6": {
+      "handle": "alekschm6",
+      "name": "alekschm",
+      "rank": 183,
+      "score": 56.7,
+      "category": "Beauty",
+      "city": null
+    },
+    "odklejkaa": {
+      "handle": "odklejkaa",
+      "name": "odklejkaa",
+      "rank": 184,
+      "score": 56.7,
+      "category": "Entertainment",
+      "city": null
+    },
+    "marta.rentel": {
+      "handle": "marta.rentel",
+      "name": "Marta Rentel",
+      "rank": 185,
+      "score": 56.6,
+      "category": "Music",
+      "city": null
+    },
+    "agassja": {
+      "handle": "agassja",
+      "name": "𝑨𝑮𝑨𝑺𝑺𝑱𝑨 💙🎤🎻",
+      "rank": 186,
+      "score": 56.6,
+      "category": "Music",
+      "city": null
+    },
+    "ewa.masterchef": {
+      "handle": "ewa.masterchef",
+      "name": "Ewa Szczesna",
+      "rank": 187,
+      "score": 56.4,
+      "category": "Food",
+      "city": null
+    },
+    "samplestore.pl": {
+      "handle": "samplestore.pl",
+      "name": "samplestore.pl",
+      "rank": 188,
+      "score": 56.2,
+      "category": "Fashion",
+      "city": "Białystok"
+    },
+    "muciotrabacho.tt": {
+      "handle": "muciotrabacho.tt",
+      "name": "Muciotrabacho Smaki",
+      "rank": 189,
+      "score": 56.2,
+      "category": "Food",
+      "city": null
+    },
+    "jeleniewska": {
+      "handle": "jeleniewska",
+      "name": "ig: Jeleniewska 🩵",
+      "rank": 190,
+      "score": 56.0,
+      "category": "Beauty",
+      "city": null
+    },
+    "luxcreator1": {
+      "handle": "luxcreator1",
+      "name": "LuxCreator",
+      "rank": 191,
+      "score": 56.0,
+      "category": "Entertainment",
+      "city": null
+    },
+    "martaaniemczak": {
+      "handle": "martaaniemczak",
+      "name": "Marta Niemczak",
+      "rank": 192,
+      "score": 55.9,
+      "category": "Beauty",
+      "city": null
+    },
+    "karolinabyrgiel2": {
+      "handle": "karolinabyrgiel2",
+      "name": "Caroline",
+      "rank": 193,
+      "score": 55.8,
+      "category": "Music",
+      "city": null
+    },
+    "klaudigrab": {
+      "handle": "klaudigrab",
+      "name": "Klaudia Grabowska",
+      "rank": 194,
+      "score": 55.8,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "ewa.szrajber.daily": {
+      "handle": "ewa.szrajber.daily",
+      "name": "ewa.szrajber.daily",
+      "rank": 195,
+      "score": 55.8,
+      "category": "Beauty",
+      "city": null
+    },
+    "amadeusz_braksator": {
+      "handle": "amadeusz_braksator",
+      "name": "Amadeusz Braksator 🍔",
+      "rank": 196,
+      "score": 55.7,
+      "category": "Food",
+      "city": null
+    },
+    "joannigal": {
+      "handle": "joannigal",
+      "name": "Jo annie_podcast",
+      "rank": 197,
+      "score": 55.7,
+      "category": "Other",
+      "city": null
+    },
+    "qyaklav": {
+      "handle": "qyaklav",
+      "name": "zeus",
+      "rank": 198,
+      "score": 55.7,
+      "category": "Fashion",
+      "city": null
+    },
+    "armia_juk_": {
+      "handle": "armia_juk_",
+      "name": "armiajuk",
+      "rank": 199,
+      "score": 55.6,
+      "category": "Lifestyle",
+      "city": "Nowy Sącz"
+    },
+    "swojskiejedzonko.com": {
+      "handle": "swojskiejedzonko.com",
+      "name": "Swojskie jedzonko",
+      "rank": 200,
+      "score": 55.5,
+      "category": "Food",
+      "city": null
+    },
+    "darkmagikca_live": {
+      "handle": "darkmagikca_live",
+      "name": "Darkmagikca",
+      "rank": 201,
+      "score": 55.4,
+      "category": "Gaming",
+      "city": null
+    },
+    "soniazugaj": {
+      "handle": "soniazugaj",
+      "name": "sonia żugaj ˚⊹",
+      "rank": 202,
+      "score": 55.3,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "melodiatvpolska_": {
+      "handle": "melodiatvpolska_",
+      "name": "Melodia TV Polska",
+      "rank": 203,
+      "score": 55.2,
+      "category": "Music",
+      "city": null
+    },
+    "polishwithmimi": {
+      "handle": "polishwithmimi",
+      "name": "🌸Mimi🌸",
+      "rank": 204,
+      "score": 55.2,
+      "category": "Other",
+      "city": null
+    },
+    "katarzyna.lech": {
+      "handle": "katarzyna.lech",
+      "name": "katarzyna.lech",
+      "rank": 205,
+      "score": 55.1,
+      "category": "Beauty",
+      "city": null
+    },
+    "adriannaferreiraaa": {
+      "handle": "adriannaferreiraaa",
+      "name": "adrianna_ferreira",
+      "rank": 206,
+      "score": 55.1,
+      "category": "Entertainment",
+      "city": null
+    },
+    "nikki_beautify": {
+      "handle": "nikki_beautify",
+      "name": "nikki_beautify",
+      "rank": 207,
+      "score": 55.0,
+      "category": "Beauty",
+      "city": null
+    },
+    "konsp1ra": {
+      "handle": "konsp1ra",
+      "name": "KONSP1RA",
+      "rank": 208,
+      "score": 55.0,
+      "category": "Entertainment",
+      "city": null
+    },
+    "lusia.grooming": {
+      "handle": "lusia.grooming",
+      "name": "Klaudia Sękowska",
+      "rank": 209,
+      "score": 55.0,
+      "category": "Beauty",
+      "city": "Zielona Góra"
+    },
+    "zarazsienajem": {
+      "handle": "zarazsienajem",
+      "name": "zarazsienajem",
+      "rank": 210,
+      "score": 55.0,
+      "category": "Food",
+      "city": null
+    },
+    "pier_dolle": {
+      "handle": "pier_dolle",
+      "name": "Pier Dolle",
+      "rank": 211,
+      "score": 54.9,
+      "category": "Entertainment",
+      "city": null
+    },
+    "co.mysli.maggie": {
+      "handle": "co.mysli.maggie",
+      "name": "co.mysli.maggie",
+      "rank": 212,
+      "score": 54.8,
+      "category": "Entertainment",
+      "city": null
+    },
+    "2cytramon2": {
+      "handle": "2cytramon2",
+      "name": "2Cytramon",
+      "rank": 213,
+      "score": 54.7,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "kristen__blog": {
+      "handle": "kristen__blog",
+      "name": "Ig: Kristen__blog",
+      "rank": 214,
+      "score": 54.6,
+      "category": "Other",
+      "city": null
+    },
+    "tanya_inyshina": {
+      "handle": "tanya_inyshina",
+      "name": "Tatyna Inyshina",
+      "rank": 215,
+      "score": 54.5,
+      "category": "Other",
+      "city": null
+    },
+    "nieuczesana_shoty": {
+      "handle": "nieuczesana_shoty",
+      "name": "nieuczesana_shoty",
+      "rank": 216,
+      "score": 54.5,
+      "category": "Gaming",
+      "city": null
+    },
+    "agastruskamua": {
+      "handle": "agastruskamua",
+      "name": "agastruskamua | makijaż",
+      "rank": 217,
+      "score": 54.3,
+      "category": "Beauty",
+      "city": null
+    },
+    "takzwanyjules": {
+      "handle": "takzwanyjules",
+      "name": "julesgranie 🦋",
+      "rank": 218,
+      "score": 54.3,
+      "category": "Gaming",
+      "city": null
+    },
+    "ciekawskiludek": {
+      "handle": "ciekawskiludek",
+      "name": "Ciekawski Ludek",
+      "rank": 219,
+      "score": 54.3,
+      "category": "Education",
+      "city": null
+    },
+    "kabaretczwartafala": {
+      "handle": "kabaretczwartafala",
+      "name": "Kabaret Czwarta Fala",
+      "rank": 220,
+      "score": 54.2,
+      "category": "Entertainment",
+      "city": null
+    },
+    "yourswagstore": {
+      "handle": "yourswagstore",
+      "name": "yourswagstore",
+      "rank": 221,
+      "score": 54.1,
+      "category": "Other",
+      "city": null
+    },
+    "liwia_szewczyk": {
+      "handle": "liwia_szewczyk",
+      "name": "liwia_szewczyk",
+      "rank": 222,
+      "score": 53.9,
+      "category": "Beauty",
+      "city": null
+    },
+    "elifstachera": {
+      "handle": "elifstachera",
+      "name": "elifka",
+      "rank": 223,
+      "score": 53.8,
+      "category": "Beauty",
+      "city": null
+    },
+    "juliee.2010": {
+      "handle": "juliee.2010",
+      "name": "Julie🖤🎭📚",
+      "rank": 224,
+      "score": 53.8,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "gotowaczka_": {
+      "handle": "gotowaczka_",
+      "name": "Gotowaczka Marta Przestrzelska",
+      "rank": 225,
+      "score": 53.8,
+      "category": "Food",
+      "city": null
+    },
+    "pavlloo": {
+      "handle": "pavlloo",
+      "name": "Paweł ,,PAVLLOO” Szwed",
+      "rank": 226,
+      "score": 53.6,
+      "category": "Education",
+      "city": null
+    },
+    "lukas.tv": {
+      "handle": "lukas.tv",
+      "name": "LukasTV",
+      "rank": 227,
+      "score": 53.4,
+      "category": "Entertainment",
+      "city": null
+    },
+    "juliapotz": {
+      "handle": "juliapotz",
+      "name": "Julia Potz",
+      "rank": 228,
+      "score": 53.4,
+      "category": "Beauty",
+      "city": null
+    },
+    "foodiniodkuchni": {
+      "handle": "foodiniodkuchni",
+      "name": "Foodini od Kuchni",
+      "rank": 229,
+      "score": 53.4,
+      "category": "Food",
+      "city": null
+    },
+    "_precelq": {
+      "handle": "_precelq",
+      "name": "precel",
+      "rank": 230,
+      "score": 53.4,
+      "category": "Other",
+      "city": null
+    },
+    "promkowe.hity": {
+      "handle": "promkowe.hity",
+      "name": "promkowe.hity",
+      "rank": 231,
+      "score": 53.3,
+      "category": "Beauty",
+      "city": null
+    },
+    "grochal.aleksandra": {
+      "handle": "grochal.aleksandra",
+      "name": "Aleksandra",
+      "rank": 232,
+      "score": 53.3,
+      "category": "Food",
+      "city": null
+    },
+    "p4vvlak": {
+      "handle": "p4vvlak",
+      "name": "p4vvlak",
+      "rank": 233,
+      "score": 53.2,
+      "category": "Other",
+      "city": null
+    },
+    "fornaltv": {
+      "handle": "fornaltv",
+      "name": "🌵🐸Fornal TV🐸🌵",
+      "rank": 234,
+      "score": 53.0,
+      "category": "Food",
+      "city": null
+    },
+    "stylovewarkocze": {
+      "handle": "stylovewarkocze",
+      "name": "StyLOVE Warkocze Halyna",
+      "rank": 235,
+      "score": 52.9,
+      "category": "Education",
+      "city": "Poznań"
+    },
+    "majapadzik": {
+      "handle": "majapadzik",
+      "name": "maja padzik",
+      "rank": 236,
+      "score": 52.9,
+      "category": "Food",
+      "city": null
+    },
+    "galeria.krakowska": {
+      "handle": "galeria.krakowska",
+      "name": "Galeria Krakowska",
+      "rank": 237,
+      "score": 52.9,
+      "category": "Beauty",
+      "city": null
+    },
+    "gberska": {
+      "handle": "gberska",
+      "name": "gabrielka",
+      "rank": 238,
+      "score": 52.9,
+      "category": "Beauty",
+      "city": null
+    },
+    "patrycjaperline": {
+      "handle": "patrycjaperline",
+      "name": "PatrycjaPerline",
+      "rank": 239,
+      "score": 52.8,
+      "category": "Other",
+      "city": null
+    },
+    "mnie_stac": {
+      "handle": "mnie_stac",
+      "name": "Dr Marcin Rychlak - Stać Mnie",
+      "rank": 240,
+      "score": 52.6,
+      "category": "Finance",
+      "city": null
+    },
+    "zooliday": {
+      "handle": "zooliday",
+      "name": "Zooliday",
+      "rank": 241,
+      "score": 52.6,
+      "category": "Travel",
+      "city": null
+    },
+    "kitka00": {
+      "handle": "kitka00",
+      "name": "Klaudia 🧖🏻‍♀️💄👗",
+      "rank": 242,
+      "score": 52.5,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "x109070yz": {
+      "handle": "x109070yz",
+      "name": "x109070yz",
+      "rank": 243,
+      "score": 52.5,
+      "category": "Beauty",
+      "city": null
+    },
+    "pinkcooker11": {
+      "handle": "pinkcooker11",
+      "name": "Ania Sowa",
+      "rank": 244,
+      "score": 52.4,
+      "category": "Food",
+      "city": null
+    },
+    "oliwka.malgorzata": {
+      "handle": "oliwka.malgorzata",
+      "name": "Oliwka",
+      "rank": 245,
+      "score": 52.4,
+      "category": "Beauty",
+      "city": null
+    },
+    "bartoszkopica": {
+      "handle": "bartoszkopica",
+      "name": "bartoszkopica",
+      "rank": 246,
+      "score": 52.3,
+      "category": "Food",
+      "city": null
+    },
+    "yaotzin_": {
+      "handle": "yaotzin_",
+      "name": "Liquid yaotziN.",
+      "rank": 247,
+      "score": 52.3,
+      "category": "Other",
+      "city": null
+    },
+    "thepolishdad": {
+      "handle": "thepolishdad",
+      "name": "🌵ThePolishDad🇵🇱🌵",
+      "rank": 248,
+      "score": 52.2,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "anya.hh": {
+      "handle": "anya.hh",
+      "name": "ig: anyahryshchenko",
+      "rank": 249,
+      "score": 52.2,
+      "category": "Fashion",
+      "city": null
+    },
+    "kasia_22ttv": {
+      "handle": "kasia_22ttv",
+      "name": "Kasia_22 | twitch",
+      "rank": 250,
+      "score": 52.2,
+      "category": "Gaming",
+      "city": null
+    },
+    "jula_chrobot": {
+      "handle": "jula_chrobot",
+      "name": "Julia | UGC Polska | lifestyle",
+      "rank": 251,
+      "score": 52.2,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "gargocynical": {
+      "handle": "gargocynical",
+      "name": "gargocynical",
+      "rank": 252,
+      "score": 52.2,
+      "category": "Education",
+      "city": "Wrocław"
+    },
+    "milosc_od_kuchni": {
+      "handle": "milosc_od_kuchni",
+      "name": "Miłość od Kuchni",
+      "rank": 253,
+      "score": 52.1,
+      "category": "Food",
+      "city": null
+    },
+    "behave.polska": {
+      "handle": "behave.polska",
+      "name": "Behave.Polska",
+      "rank": 254,
+      "score": 52.1,
+      "category": "Entertainment",
+      "city": null
+    },
+    "mlody.fifii": {
+      "handle": "mlody.fifii",
+      "name": "Filip.",
+      "rank": 255,
+      "score": 52.0,
+      "category": "Education",
+      "city": null
+    },
+    "victorianiedzwiedz": {
+      "handle": "victorianiedzwiedz",
+      "name": "Vic👼🏼 ig:victoria_niedzwiedz",
+      "rank": 256,
+      "score": 51.9,
+      "category": "Beauty",
+      "city": null
+    },
+    "okiememigrantauk": {
+      "handle": "okiememigrantauk",
+      "name": "Okiem emigranta",
+      "rank": 257,
+      "score": 51.8,
+      "category": "Education",
+      "city": null
+    },
+    "hair.by.jul": {
+      "handle": "hair.by.jul",
+      "name": "Fryzury | cienkie włosy",
+      "rank": 258,
+      "score": 51.8,
+      "category": "Fashion",
+      "city": null
+    },
+    "bartoszdreamwalkerwolf": {
+      "handle": "bartoszdreamwalkerwolf",
+      "name": "Obserwator zycia🐺🐺🐺",
+      "rank": 259,
+      "score": 51.7,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "wpodrozyzapilka": {
+      "handle": "wpodrozyzapilka",
+      "name": "W podróży za piłką",
+      "rank": 260,
+      "score": 51.7,
+      "category": "Sport & Fitness",
+      "city": null
+    },
+    "olgaperczakbuda": {
+      "handle": "olgaperczakbuda",
+      "name": "Olga Perczak-Buda",
+      "rank": 261,
+      "score": 51.7,
+      "category": "Food",
+      "city": "Kielce"
+    },
+    "phil_konieczny": {
+      "handle": "phil_konieczny",
+      "name": "phil_konieczny",
+      "rank": 262,
+      "score": 51.6,
+      "category": "Finance",
+      "city": null
+    },
+    "czarnekprzemyslaw": {
+      "handle": "czarnekprzemyslaw",
+      "name": "Przemysław Czarnek",
+      "rank": 263,
+      "score": 51.5,
+      "category": "Education",
+      "city": null
+    },
+    "morixofficial": {
+      "handle": "morixofficial",
+      "name": "MORIX",
+      "rank": 264,
+      "score": 51.5,
+      "category": "Music",
+      "city": null
+    },
+    "werojuszczak": {
+      "handle": "werojuszczak",
+      "name": "Weronika Juszczak",
+      "rank": 265,
+      "score": 51.4,
+      "category": "Music",
+      "city": null
+    },
+    "amazingpolandtrip": {
+      "handle": "amazingpolandtrip",
+      "name": "Amazing Poland Trip",
+      "rank": 266,
+      "score": 51.4,
+      "category": "Travel",
+      "city": null
+    },
+    "druzynazycia": {
+      "handle": "druzynazycia",
+      "name": "Drużyna Życia",
+      "rank": 267,
+      "score": 51.4,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "thetravelwalk": {
+      "handle": "thetravelwalk",
+      "name": "The travel walk",
+      "rank": 268,
+      "score": 51.2,
+      "category": "Travel",
+      "city": "Warszawa"
+    },
+    "golden_bow_solutions": {
+      "handle": "golden_bow_solutions",
+      "name": "GBS ☕️",
+      "rank": 269,
+      "score": 51.1,
+      "category": "Education",
+      "city": null
+    },
+    "nataliasisik": {
+      "handle": "nataliasisik",
+      "name": "❤️ Natalia Sisik ❤️🎥🗞",
+      "rank": 270,
+      "score": 50.9,
+      "category": "Finance",
+      "city": null
+    },
+    "mocnedeale": {
+      "handle": "mocnedeale",
+      "name": "Mocne deale 💪",
+      "rank": 271,
+      "score": 50.9,
+      "category": "Other",
+      "city": null
+    },
+    "karina_kozuszko": {
+      "handle": "karina_kozuszko",
+      "name": "karina_kozuszko",
+      "rank": 272,
+      "score": 50.8,
+      "category": "Travel",
+      "city": null
+    },
+    "ychedd": {
+      "handle": "ychedd",
+      "name": "yched • Martyna •",
+      "rank": 273,
+      "score": 50.7,
+      "category": "Food",
+      "city": null
+    },
+    "wkdzik.pl": {
+      "handle": "wkdzik.pl",
+      "name": "WKDZIK",
+      "rank": 274,
+      "score": 50.5,
+      "category": "Other",
+      "city": null
+    },
+    "ten_z_dobra_kuchnia": {
+      "handle": "ten_z_dobra_kuchnia",
+      "name": "Ten z dobrą kuchnią",
+      "rank": 275,
+      "score": 50.5,
+      "category": "Food",
+      "city": null
+    },
+    "klatt.ania": {
+      "handle": "klatt.ania",
+      "name": "klatt.ania",
+      "rank": 276,
+      "score": 50.5,
+      "category": "Fashion",
+      "city": null
+    },
+    "zaklinamaria": {
+      "handle": "zaklinamaria",
+      "name": "Żaklina ⭐️",
+      "rank": 277,
+      "score": 50.4,
+      "category": "Beauty",
+      "city": "Poznań"
+    },
+    "curlybrownieee": {
+      "handle": "curlybrownieee",
+      "name": "CURLYBROWNIE• hair, GRWM •",
+      "rank": 278,
+      "score": 50.3,
+      "category": "Beauty",
+      "city": null
+    },
+    "pamietnikivintedziary": {
+      "handle": "pamietnikivintedziary",
+      "name": "pamietnikivintedziary",
+      "rank": 279,
+      "score": 50.3,
+      "category": "Fashion",
+      "city": null
+    },
+    "warto_zobaczycc": {
+      "handle": "warto_zobaczycc",
+      "name": "Warto_zobaczyć",
+      "rank": 280,
+      "score": 50.3,
+      "category": "Travel",
+      "city": null
+    },
+    "juliett.msc": {
+      "handle": "juliett.msc",
+      "name": "Juliett✨",
+      "rank": 281,
+      "score": 50.3,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "polisz_meme_": {
+      "handle": "polisz_meme_",
+      "name": "polisz_meme_",
+      "rank": 282,
+      "score": 50.3,
+      "category": "Entertainment",
+      "city": null
+    },
+    "kamilalapa": {
+      "handle": "kamilalapa",
+      "name": "Kamila",
+      "rank": 283,
+      "score": 50.1,
+      "category": "Beauty",
+      "city": null
+    },
+    "niedaltowskifinanse": {
+      "handle": "niedaltowskifinanse",
+      "name": "niedaltowskifinanse",
+      "rank": 284,
+      "score": 50.0,
+      "category": "Finance",
+      "city": null
+    },
+    "aleksandramoralewska": {
+      "handle": "aleksandramoralewska",
+      "name": "Olka",
+      "rank": 285,
+      "score": 50.0,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "kohersenpolska": {
+      "handle": "kohersenpolska",
+      "name": "Kohersen Polska 🥘",
+      "rank": 286,
+      "score": 50.0,
+      "category": "Food",
+      "city": null
+    },
+    "hrustyqs": {
+      "handle": "hrustyqs",
+      "name": "hrustyqs",
+      "rank": 287,
+      "score": 49.9,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "eugeneus8": {
+      "handle": "eugeneus8",
+      "name": "eugeneus",
+      "rank": 288,
+      "score": 49.9,
+      "category": "Other",
+      "city": null
+    },
+    "2mundoos": {
+      "handle": "2mundoos",
+      "name": "2Mundos",
+      "rank": 289,
+      "score": 49.8,
+      "category": "Entertainment",
+      "city": "Częstochowa"
+    },
+    "klaudasiak": {
+      "handle": "klaudasiak",
+      "name": "Klaudasiak",
+      "rank": 290,
+      "score": 49.8,
+      "category": "Beauty",
+      "city": null
+    },
+    "hot_chocolate_11": {
+      "handle": "hot_chocolate_11",
+      "name": "Hot chocolate 🍫",
+      "rank": 291,
+      "score": 49.6,
+      "category": "Sport & Fitness",
+      "city": null
+    },
+    "thelongerstory": {
+      "handle": "thelongerstory",
+      "name": "Paulina👠",
+      "rank": 292,
+      "score": 49.4,
+      "category": "Beauty",
+      "city": null
+    },
+    "magda__inspire": {
+      "handle": "magda__inspire",
+      "name": "Magda__Inspire🩷",
+      "rank": 293,
+      "score": 49.3,
+      "category": "Beauty",
+      "city": null
+    },
+    "lvx.angel": {
+      "handle": "lvx.angel",
+      "name": "🔱Lvx.angel🔱",
+      "rank": 294,
+      "score": 49.3,
+      "category": "Sport & Fitness",
+      "city": null
+    },
+    "franekjones": {
+      "handle": "franekjones",
+      "name": "Franek Jones",
+      "rank": 295,
+      "score": 49.3,
+      "category": "Food",
+      "city": null
+    },
+    "kulinarneprzygody_": {
+      "handle": "kulinarneprzygody_",
+      "name": "Kulinarneprzygody",
+      "rank": 296,
+      "score": 49.2,
+      "category": "Food",
+      "city": null
+    },
+    "beautyboy.jpg": {
+      "handle": "beautyboy.jpg",
+      "name": "Władek ★ BeautyBoy",
+      "rank": 297,
+      "score": 49.2,
+      "category": "Beauty",
+      "city": null
+    },
+    "swojskie_gotowanie": {
+      "handle": "swojskie_gotowanie",
+      "name": "Swojskie_gotowanie z humorem",
+      "rank": 298,
+      "score": 49.1,
+      "category": "Entertainment",
+      "city": null
+    },
+    "maciej.brudzewski": {
+      "handle": "maciej.brudzewski",
+      "name": "Maciej Brudzewski Stand-up",
+      "rank": 299,
+      "score": 48.9,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "beskidzkiepl": {
+      "handle": "beskidzkiepl",
+      "name": "beskidzkie",
+      "rank": 300,
+      "score": 48.8,
+      "category": "Travel",
+      "city": null
+    },
+    "patrykwxjcik": {
+      "handle": "patrykwxjcik",
+      "name": "Pat",
+      "rank": 301,
+      "score": 48.7,
+      "category": "Music",
+      "city": null
+    },
+    "macramebyagii": {
+      "handle": "macramebyagii",
+      "name": "agik_",
+      "rank": 302,
+      "score": 48.7,
+      "category": "Sport & Fitness",
+      "city": "Legnica"
+    },
+    "finansowe_zdrowie": {
+      "handle": "finansowe_zdrowie",
+      "name": "finansowe_zdrowie",
+      "rank": 303,
+      "score": 48.7,
+      "category": "Finance",
+      "city": null
+    },
+    "izkabela": {
+      "handle": "izkabela",
+      "name": "majeranka 🐩",
+      "rank": 304,
+      "score": 48.6,
+      "category": "Beauty",
+      "city": null
+    },
+    "oghalina": {
+      "handle": "oghalina",
+      "name": "ᴋᴀʀᴏʟɪɴᴀ | ᴏɢʜᴀʟɪɴᴀ 🍒",
+      "rank": 305,
+      "score": 48.5,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "basia.gawryluk": {
+      "handle": "basia.gawryluk",
+      "name": "basiagawryluk",
+      "rank": 306,
+      "score": 48.2,
+      "category": "Food",
+      "city": null
+    },
+    "loooovefashion": {
+      "handle": "loooovefashion",
+      "name": "Butik Love Fashion",
+      "rank": 307,
+      "score": 48.2,
+      "category": "Fashion",
+      "city": null
+    },
+    "justynaczajkaplusmodel": {
+      "handle": "justynaczajkaplusmodel",
+      "name": "JustynaCzajkaPlusSizeModel",
+      "rank": 308,
+      "score": 48.1,
+      "category": "Fashion",
+      "city": null
+    },
+    "mg2002_13": {
+      "handle": "mg2002_13",
+      "name": "mg2002_13",
+      "rank": 309,
+      "score": 48.0,
+      "category": "Sport & Fitness",
+      "city": "Chorzów"
+    },
+    "andri.nesti": {
+      "handle": "andri.nesti",
+      "name": "Nesti",
+      "rank": 310,
+      "score": 47.9,
+      "category": "Other",
+      "city": null
+    },
+    "oneandonlydorkas": {
+      "handle": "oneandonlydorkas",
+      "name": "Dorkas",
+      "rank": 311,
+      "score": 47.7,
+      "category": "Beauty",
+      "city": null
+    },
+    "furajedzenia": {
+      "handle": "furajedzenia",
+      "name": "Aleksandra Fura",
+      "rank": 312,
+      "score": 47.6,
+      "category": "Food",
+      "city": null
+    },
+    "dzunglahumoru": {
+      "handle": "dzunglahumoru",
+      "name": "Dżungla humoru",
+      "rank": 313,
+      "score": 47.6,
+      "category": "Entertainment",
+      "city": null
+    },
+    "nudy_z_zycia": {
+      "handle": "nudy_z_zycia",
+      "name": "nudy_z_zycia",
+      "rank": 314,
+      "score": 47.6,
+      "category": "Beauty",
+      "city": null
+    },
+    "mk_muzycznyklimat": {
+      "handle": "mk_muzycznyklimat",
+      "name": "mk_MuzycznyKlimat",
+      "rank": 315,
+      "score": 47.5,
+      "category": "Music",
+      "city": null
+    },
+    "krawczyk.mateusz": {
+      "handle": "krawczyk.mateusz",
+      "name": "Mateusz Krawczyk 📲",
+      "rank": 316,
+      "score": 47.4,
+      "category": "Tech",
+      "city": null
+    },
+    "sarushkan": {
+      "handle": "sarushkan",
+      "name": "Sara",
+      "rank": 317,
+      "score": 47.4,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "berzerker_scmz": {
+      "handle": "berzerker_scmz",
+      "name": "Berzerker",
+      "rank": 318,
+      "score": 47.3,
+      "category": "Gaming",
+      "city": null
+    },
+    "agachicofstyleee": {
+      "handle": "agachicofstyleee",
+      "name": "Chicofstylee ♡ྀི",
+      "rank": 319,
+      "score": 47.3,
+      "category": "Beauty",
+      "city": null
+    },
+    "hakerumyslu": {
+      "handle": "hakerumyslu",
+      "name": "Haker Umysłu",
+      "rank": 320,
+      "score": 47.0,
+      "category": "Entertainment",
+      "city": null
+    },
+    "edyta.baranowska": {
+      "handle": "edyta.baranowska",
+      "name": "Edyta Baranowska",
+      "rank": 321,
+      "score": 47.0,
+      "category": "Beauty",
+      "city": null
+    },
+    "annsnesar": {
+      "handle": "annsnesar",
+      "name": "ann_snesar",
+      "rank": 322,
+      "score": 47.0,
+      "category": "Other",
+      "city": "Warszawa"
+    },
+    "polishwithme": {
+      "handle": "polishwithme",
+      "name": "Polish with Me",
+      "rank": 323,
+      "score": 46.9,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "maserwawer": {
+      "handle": "maserwawer",
+      "name": "Grzegorz Wawro",
+      "rank": 324,
+      "score": 46.7,
+      "category": "Finance",
+      "city": null
+    },
+    "zaton_athletic": {
+      "handle": "zaton_athletic",
+      "name": "ig: zaton_athletic",
+      "rank": 325,
+      "score": 46.6,
+      "category": "Sport & Fitness",
+      "city": null
+    },
+    "nat.warot": {
+      "handle": "nat.warot",
+      "name": "NATALIA ✨SKINCARE | BEAUTY ✨",
+      "rank": 326,
+      "score": 46.6,
+      "category": "Beauty",
+      "city": null
+    },
+    "agamosier": {
+      "handle": "agamosier",
+      "name": "Agnieszka Mosier",
+      "rank": 327,
+      "score": 46.6,
+      "category": "Food",
+      "city": null
+    },
+    "maddy.bijou": {
+      "handle": "maddy.bijou",
+      "name": "Maddy",
+      "rank": 328,
+      "score": 46.5,
+      "category": "Sport & Fitness",
+      "city": null
+    },
+    "katarajsiemanko": {
+      "handle": "katarajsiemanko",
+      "name": "🇵🇱𓀫KATARAJSiemanko🇵🇱𓀫",
+      "rank": 329,
+      "score": 46.5,
+      "category": "Sport & Fitness",
+      "city": null
+    },
+    "fitdarka": {
+      "handle": "fitdarka",
+      "name": "fitdarka",
+      "rank": 330,
+      "score": 46.5,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "miloszicelodowski": {
+      "handle": "miloszicelodowski",
+      "name": "MiloszLodowski",
+      "rank": 331,
+      "score": 46.4,
+      "category": "Finance",
+      "city": null
+    },
+    "johnyyysancze": {
+      "handle": "johnyyysancze",
+      "name": "sarraczezz",
+      "rank": 332,
+      "score": 46.4,
+      "category": "Other",
+      "city": null
+    },
+    "motywujemywas.pl": {
+      "handle": "motywujemywas.pl",
+      "name": "MotywujemyWas.pl",
+      "rank": 333,
+      "score": 46.4,
+      "category": "Entertainment",
+      "city": null
+    },
+    "chefleooo": {
+      "handle": "chefleooo",
+      "name": "chefLeo🧑🏻‍🍳🇻🇳",
+      "rank": 334,
+      "score": 46.3,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "piotrsierpinskihair": {
+      "handle": "piotrsierpinskihair",
+      "name": "✨ Piotr Sierpiński, Hair ✨",
+      "rank": 335,
+      "score": 46.2,
+      "category": "Education",
+      "city": "Poznań"
+    },
+    "zajaczkowska.ewa": {
+      "handle": "zajaczkowska.ewa",
+      "name": "Ewa Zajączkowska-Hernik",
+      "rank": 336,
+      "score": 46.0,
+      "category": "Finance",
+      "city": null
+    },
+    "zofsz": {
+      "handle": "zofsz",
+      "name": "zofijaaa",
+      "rank": 337,
+      "score": 46.0,
+      "category": "Tech",
+      "city": null
+    },
+    "lostinnature.pl": {
+      "handle": "lostinnature.pl",
+      "name": "LOST IN NATURE.PL",
+      "rank": 338,
+      "score": 45.9,
+      "category": "Travel",
+      "city": null
+    },
+    "szuzia01": {
+      "handle": "szuzia01",
+      "name": "Zuzia Zamiara",
+      "rank": 339,
+      "score": 45.9,
+      "category": "Beauty",
+      "city": null
+    },
+    "ziwanowska": {
+      "handle": "ziwanowska",
+      "name": "Zuzia Iwanowska",
+      "rank": 340,
+      "score": 45.8,
+      "category": "Beauty",
+      "city": null
+    },
+    "variaty99": {
+      "handle": "variaty99",
+      "name": "VARiATY",
+      "rank": 341,
+      "score": 45.7,
+      "category": "Sport & Fitness",
+      "city": null
+    },
+    "kamilzaprasza": {
+      "handle": "kamilzaprasza",
+      "name": "Polskibutik Sklep Alanya",
+      "rank": 342,
+      "score": 45.6,
+      "category": "Fashion",
+      "city": null
+    },
+    "bigbulapolishstreetfood": {
+      "handle": "bigbulapolishstreetfood",
+      "name": "Big Bula - Polish Street Food",
+      "rank": 343,
+      "score": 45.3,
+      "category": "Food",
+      "city": null
+    },
+    "w_krainie_jezior": {
+      "handle": "w_krainie_jezior",
+      "name": "Wakacje na Warmii i Mazurach",
+      "rank": 344,
+      "score": 45.2,
+      "category": "Travel",
+      "city": null
+    },
+    "ultrasworld77": {
+      "handle": "ultrasworld77",
+      "name": "𝑼𝙡𝙩𝙧𝙖𝙨 𝟽𝟽",
+      "rank": 345,
+      "score": 45.0,
+      "category": "Other",
+      "city": null
+    },
+    "mazamnyam": {
+      "handle": "mazamnyam",
+      "name": "torczamo",
+      "rank": 346,
+      "score": 45.0,
+      "category": "Food",
+      "city": "Warszawa"
+    },
+    "matisowy": {
+      "handle": "matisowy",
+      "name": "matisowy",
+      "rank": 347,
+      "score": 44.9,
+      "category": "Tech",
+      "city": null
+    },
+    "panklasyczek": {
+      "handle": "panklasyczek",
+      "name": "Panklasyczek",
+      "rank": 348,
+      "score": 44.6,
+      "category": "Entertainment",
+      "city": null
+    },
+    "powarszawsku": {
+      "handle": "powarszawsku",
+      "name": "PoWarszawsku",
+      "rank": 349,
+      "score": 44.6,
+      "category": "Education",
+      "city": "Warszawa"
+    },
+    "k_sajdutka": {
+      "handle": "k_sajdutka",
+      "name": "𝑲𝒂𝒓𝒐𝒍𝒊𝒏𝒂 ౨ৎ",
+      "rank": 350,
+      "score": 44.6,
+      "category": "Fashion",
+      "city": null
+    },
+    "j.tere": {
+      "handle": "j.tere",
+      "name": "J.tere  | Justyna Tomasik",
+      "rank": 351,
+      "score": 44.5,
+      "category": "Beauty",
+      "city": null
+    },
+    "podlasie.znasie": {
+      "handle": "podlasie.znasie",
+      "name": "Podlasie.znasie",
+      "rank": 352,
+      "score": 44.5,
+      "category": "Lifestyle",
+      "city": "Suwałki"
+    },
+    "bogna.sworowska": {
+      "handle": "bogna.sworowska",
+      "name": "Bogna Sworowska",
+      "rank": 353,
+      "score": 44.3,
+      "category": "Fashion",
+      "city": null
+    },
+    "wesolabudowlanka5": {
+      "handle": "wesolabudowlanka5",
+      "name": "WesolaBudowlanka",
+      "rank": 354,
+      "score": 44.2,
+      "category": "Entertainment",
+      "city": null
+    },
+    "yanakonotopova": {
+      "handle": "yanakonotopova",
+      "name": "Mom’s Cake Cukiernia wLublinie",
+      "rank": 355,
+      "score": 44.2,
+      "category": "Other",
+      "city": null
+    },
+    "assenstein": {
+      "handle": "assenstein",
+      "name": "assenstein",
+      "rank": 356,
+      "score": 44.2,
+      "category": "Gaming",
+      "city": null
+    },
+    "trendingtodaypl": {
+      "handle": "trendingtodaypl",
+      "name": "TRENDING TODAY PL.",
+      "rank": 357,
+      "score": 44.2,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "popkillerpl": {
+      "handle": "popkillerpl",
+      "name": "PopkillerPL",
+      "rank": 358,
+      "score": 44.0,
+      "category": "Music",
+      "city": null
+    },
+    "zolwieksiazkowe": {
+      "handle": "zolwieksiazkowe",
+      "name": "INSTA zolwieksiazkowe",
+      "rank": 359,
+      "score": 44.0,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "dompolak00": {
+      "handle": "dompolak00",
+      "name": "DomPolak",
+      "rank": 360,
+      "score": 43.9,
+      "category": "Sport & Fitness",
+      "city": null
+    },
+    "wszamto": {
+      "handle": "wszamto",
+      "name": "Paula Golec",
+      "rank": 361,
+      "score": 43.7,
+      "category": "Food",
+      "city": null
+    },
+    "kochamlodz": {
+      "handle": "kochamlodz",
+      "name": "Łódź 🦄",
+      "rank": 362,
+      "score": 43.7,
+      "category": "Food",
+      "city": "Łódź"
+    },
+    "telemar.serwis": {
+      "handle": "telemar.serwis",
+      "name": "Tele-Mar Serwis",
+      "rank": 363,
+      "score": 43.7,
+      "category": "Tech",
+      "city": "Radom"
+    },
+    "kanalmuzyczny": {
+      "handle": "kanalmuzyczny",
+      "name": "Muzyczny TikTok",
+      "rank": 364,
+      "score": 43.6,
+      "category": "Music",
+      "city": null
+    },
+    "marina.polski_": {
+      "handle": "marina.polski_",
+      "name": "marina.polski",
+      "rank": 365,
+      "score": 43.6,
+      "category": "Other",
+      "city": null
+    },
+    "onelife_photo": {
+      "handle": "onelife_photo",
+      "name": "Onelife_photostory",
+      "rank": 366,
+      "score": 43.5,
+      "category": "Tech",
+      "city": "Rzeszów"
+    },
+    "willa.szczawniczanka": {
+      "handle": "willa.szczawniczanka",
+      "name": "Szczawniczanka",
+      "rank": 367,
+      "score": 43.5,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "ciekawsza.strona.miasta": {
+      "handle": "ciekawsza.strona.miasta",
+      "name": "Ciekawsza Strona Miasta",
+      "rank": 368,
+      "score": 43.4,
+      "category": "Education",
+      "city": "Warszawa"
+    },
+    "homies.inside": {
+      "handle": "homies.inside",
+      "name": "Homies Inside",
+      "rank": 369,
+      "score": 43.4,
+      "category": "Other",
+      "city": "Warszawa"
+    },
+    "siodmywswiecie.pl": {
+      "handle": "siodmywswiecie.pl",
+      "name": "Siódmy w Świecie 🌍",
+      "rank": 370,
+      "score": 43.3,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "bethanysturman": {
+      "handle": "bethanysturman",
+      "name": "BellaVista Travels ✨",
+      "rank": 371,
+      "score": 43.3,
+      "category": "Travel",
+      "city": "Kraków"
+    },
+    "aniapotok_": {
+      "handle": "aniapotok_",
+      "name": "✨Ania Potok✨UGC✨Związki",
+      "rank": 372,
+      "score": 43.2,
+      "category": "Sport & Fitness",
+      "city": null
+    },
+    "polishwithgreg": {
+      "handle": "polishwithgreg",
+      "name": "PolishWithGreg",
+      "rank": 373,
+      "score": 43.2,
+      "category": "Other",
+      "city": null
+    },
+    "krakowiakiwlondynie": {
+      "handle": "krakowiakiwlondynie",
+      "name": "🐲krakowiakiwlondynie🐲",
+      "rank": 374,
+      "score": 43.1,
+      "category": "Entertainment",
+      "city": null
+    },
+    "original_ryszardmazur": {
+      "handle": "original_ryszardmazur",
+      "name": "Ryszard Mazur",
+      "rank": 375,
+      "score": 43.1,
+      "category": "Entertainment",
+      "city": null
+    },
+    "zanimbylinternet": {
+      "handle": "zanimbylinternet",
+      "name": "zanimbylinternet",
+      "rank": 376,
+      "score": 43.1,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "ljnml": {
+      "handle": "ljnml",
+      "name": "Maria Połczi 🌸",
+      "rank": 377,
+      "score": 43.0,
+      "category": "Beauty",
+      "city": null
+    },
+    "polskalifepl": {
+      "handle": "polskalifepl",
+      "name": "Polska Life 🇵🇱",
+      "rank": 378,
+      "score": 42.7,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "cetaphil_polska": {
+      "handle": "cetaphil_polska",
+      "name": "Cetaphil",
+      "rank": 379,
+      "score": 42.6,
+      "category": "Beauty",
+      "city": null
+    },
+    "wika.dunajj": {
+      "handle": "wika.dunajj",
+      "name": "Wiktoria",
+      "rank": 380,
+      "score": 42.6,
+      "category": "Beauty",
+      "city": null
+    },
+    "kaszub9710": {
+      "handle": "kaszub9710",
+      "name": "Kaszub97",
+      "rank": 381,
+      "score": 42.6,
+      "category": "Entertainment",
+      "city": null
+    },
+    "ciekawus": {
+      "handle": "ciekawus",
+      "name": "ciekawus",
+      "rank": 382,
+      "score": 42.3,
+      "category": "Beauty",
+      "city": null
+    },
+    "katythegoddess": {
+      "handle": "katythegoddess",
+      "name": "LUNA SELENE",
+      "rank": 383,
+      "score": 42.2,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "lodzkiedlaciebie": {
+      "handle": "lodzkiedlaciebie",
+      "name": "Łódzkie dla Ciebie",
+      "rank": 384,
+      "score": 42.0,
+      "category": "Travel",
+      "city": "Łódź"
+    },
+    "blyskawiczneprzepisy": {
+      "handle": "blyskawiczneprzepisy",
+      "name": "blyskawiczneprzepisy",
+      "rank": 385,
+      "score": 41.9,
+      "category": "Food",
+      "city": null
+    },
+    "partyzancilubelszczyzny": {
+      "handle": "partyzancilubelszczyzny",
+      "name": "Partyzanci Lubelszczyzny",
+      "rank": 386,
+      "score": 41.6,
+      "category": "Education",
+      "city": null
+    },
+    "kanal_tak": {
+      "handle": "kanal_tak",
+      "name": "Kanał Tak!",
+      "rank": 387,
+      "score": 41.6,
+      "category": "Other",
+      "city": null
+    },
+    "ania_travel_": {
+      "handle": "ania_travel_",
+      "name": "ania_travel_",
+      "rank": 388,
+      "score": 41.5,
+      "category": "Travel",
+      "city": null
+    },
+    "giniginaa": {
+      "handle": "giniginaa",
+      "name": "gini.gina",
+      "rank": 389,
+      "score": 41.4,
+      "category": "Education",
+      "city": null
+    },
+    "primevideopl": {
+      "handle": "primevideopl",
+      "name": "Prime Video Polska",
+      "rank": 390,
+      "score": 41.3,
+      "category": "Finance",
+      "city": null
+    },
+    "olavogaa": {
+      "handle": "olavogaa",
+      "name": "OLAVOGA",
+      "rank": 391,
+      "score": 41.3,
+      "category": "Fashion",
+      "city": null
+    },
+    "_angelikagrabowska": {
+      "handle": "_angelikagrabowska",
+      "name": "Angelika kosmetolożka 💅🏻",
+      "rank": 392,
+      "score": 41.1,
+      "category": "Beauty",
+      "city": null
+    },
+    "wewlasnymstylu": {
+      "handle": "wewlasnymstylu",
+      "name": "Angelika Testerka Hoteli⭐️🤍",
+      "rank": 393,
+      "score": 40.9,
+      "category": "Travel",
+      "city": null
+    },
+    "studygraminaczej": {
+      "handle": "studygraminaczej",
+      "name": "studygraminaczej",
+      "rank": 394,
+      "score": 40.6,
+      "category": "Education",
+      "city": null
+    },
+    "onetstylzycia": {
+      "handle": "onetstylzycia",
+      "name": "Onet Styl Życia",
+      "rank": 395,
+      "score": 40.4,
+      "category": "Travel",
+      "city": null
+    },
+    "cossiegotuje": {
+      "handle": "cossiegotuje",
+      "name": "Anna Gorgol",
+      "rank": 396,
+      "score": 40.1,
+      "category": "Food",
+      "city": null
+    },
+    "jablkogruszkaipietruszka": {
+      "handle": "jablkogruszkaipietruszka",
+      "name": "Kasia Pietruszka",
+      "rank": 397,
+      "score": 40.0,
+      "category": "Food",
+      "city": null
+    },
+    "dobronianka": {
+      "handle": "dobronianka",
+      "name": "Dobronianka",
+      "rank": 398,
+      "score": 39.9,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "hereforthelikes595": {
+      "handle": "hereforthelikes595",
+      "name": "🫶MemiczneDni 🫶",
+      "rank": 399,
+      "score": 39.9,
+      "category": "Entertainment",
+      "city": null
+    },
+    "serekszop_w_kuchni": {
+      "handle": "serekszop_w_kuchni",
+      "name": "serekszop",
+      "rank": 400,
+      "score": 39.8,
+      "category": "Food",
+      "city": null
+    },
+    "michalkoperboks": {
+      "handle": "michalkoperboks",
+      "name": "michalkoperboks",
+      "rank": 401,
+      "score": 39.7,
+      "category": "Other",
+      "city": null
+    },
+    "babaodpolskiego": {
+      "handle": "babaodpolskiego",
+      "name": "polski • matura • E8 • kursy",
+      "rank": 402,
+      "score": 39.6,
+      "category": "Education",
+      "city": null
+    },
+    "pixxo1994": {
+      "handle": "pixxo1994",
+      "name": "Picollobarber",
+      "rank": 403,
+      "score": 39.4,
+      "category": "Entertainment",
+      "city": null
+    },
+    "gdziewpolscenaweekend": {
+      "handle": "gdziewpolscenaweekend",
+      "name": "Gdzie w Polsce na weekend",
+      "rank": 404,
+      "score": 39.3,
+      "category": "Travel",
+      "city": null
+    },
+    "glowskin_marta": {
+      "handle": "glowskin_marta",
+      "name": "GlowSkin Marta ✨",
+      "rank": 405,
+      "score": 39.1,
+      "category": "Beauty",
+      "city": null
+    },
+    "zurnalista.pl": {
+      "handle": "zurnalista.pl",
+      "name": "zurnalista.pl",
+      "rank": 406,
+      "score": 39.0,
+      "category": "Other",
+      "city": null
+    },
+    "bbgawronska": {
+      "handle": "bbgawronska",
+      "name": "Gawrońscy",
+      "rank": 407,
+      "score": 38.9,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "podroze_za_grosze": {
+      "handle": "podroze_za_grosze",
+      "name": "Podróże za grosze",
+      "rank": 408,
+      "score": 38.8,
+      "category": "Travel",
+      "city": null
+    },
+    "check_in_klaudia_michal": {
+      "handle": "check_in_klaudia_michal",
+      "name": "Check_In_Klaudia_Michal",
+      "rank": 409,
+      "score": 38.6,
+      "category": "Food",
+      "city": null
+    },
+    "magdalenaadamczykmua": {
+      "handle": "magdalenaadamczykmua",
+      "name": "Magdalena Adamczyk MUA🇵🇱",
+      "rank": 410,
+      "score": 38.6,
+      "category": "Beauty",
+      "city": "Kraków"
+    },
+    "wolnoscslowa2.0": {
+      "handle": "wolnoscslowa2.0",
+      "name": "Wolność Słowa 2.0",
+      "rank": 411,
+      "score": 38.5,
+      "category": "Other",
+      "city": null
+    },
+    "bieganieuskrzydlapl": {
+      "handle": "bieganieuskrzydlapl",
+      "name": "Bieganie Uskrzydla PL",
+      "rank": 412,
+      "score": 38.5,
+      "category": "Sport & Fitness",
+      "city": null
+    },
+    "auroraa_glow": {
+      "handle": "auroraa_glow",
+      "name": "MS🧠&beauty🤝🏼",
+      "rank": 413,
+      "score": 38.5,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "hannarchya": {
+      "handle": "hannarchya",
+      "name": "hannarchya",
+      "rank": 414,
+      "score": 38.4,
+      "category": "Other",
+      "city": null
+    },
+    "amjapan5": {
+      "handle": "amjapan5",
+      "name": "AMJAPAN",
+      "rank": 415,
+      "score": 38.4,
+      "category": "Entertainment",
+      "city": "Tarnowo Podgorne"
+    },
+    "djspider2000": {
+      "handle": "djspider2000",
+      "name": "DJ SPIDER",
+      "rank": 416,
+      "score": 38.4,
+      "category": "Music",
+      "city": "Gdańsk"
+    },
+    "gresoutlet_targowisko": {
+      "handle": "gresoutlet_targowisko",
+      "name": "TANIE PŁYTKI POD KRAKOWEM",
+      "rank": 417,
+      "score": 38.4,
+      "category": "Food",
+      "city": "Kraków"
+    },
+    "polskiemedia": {
+      "handle": "polskiemedia",
+      "name": "TerazPoska",
+      "rank": 418,
+      "score": 38.3,
+      "category": "Other",
+      "city": null
+    },
+    "polskawieszhumorem": {
+      "handle": "polskawieszhumorem",
+      "name": "Polska Wieś z Humorem",
+      "rank": 419,
+      "score": 38.2,
+      "category": "Entertainment",
+      "city": null
+    },
+    "jexsuyt": {
+      "handle": "jexsuyt",
+      "name": "Jexsu_Yt",
+      "rank": 420,
+      "score": 38.2,
+      "category": "Entertainment",
+      "city": null
+    },
+    "zabojczopyszne": {
+      "handle": "zabojczopyszne",
+      "name": "Michał Mirlak",
+      "rank": 421,
+      "score": 38.1,
+      "category": "Food",
+      "city": null
+    },
+    "nietylkopasta.pl": {
+      "handle": "nietylkopasta.pl",
+      "name": "nietylkopasta.pl",
+      "rank": 422,
+      "score": 38.1,
+      "category": "Food",
+      "city": null
+    },
+    "wieczniewolni": {
+      "handle": "wieczniewolni",
+      "name": "Wiecznie Wolni 🌴",
+      "rank": 423,
+      "score": 38.1,
+      "category": "Travel",
+      "city": null
+    },
+    "kabmoralnegoniepokoju": {
+      "handle": "kabmoralnegoniepokoju",
+      "name": "Kabaret Moralnego Niepokoju",
+      "rank": 424,
+      "score": 38.1,
+      "category": "Entertainment",
+      "city": null
+    },
+    "mocne.sceny.pl": {
+      "handle": "mocne.sceny.pl",
+      "name": "MocneSceny_PL",
+      "rank": 425,
+      "score": 38.0,
+      "category": "Entertainment",
+      "city": null
+    },
+    "ola.jozwiak": {
+      "handle": "ola.jozwiak",
+      "name": "Ola Jóźwiak",
+      "rank": 426,
+      "score": 37.9,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "techkominfo_pl": {
+      "handle": "techkominfo_pl",
+      "name": "Techkominfo.pl",
+      "rank": 427,
+      "score": 37.9,
+      "category": "Gaming",
+      "city": null
+    },
+    "tuzawszejestproblem": {
+      "handle": "tuzawszejestproblem",
+      "name": "Tu Zawsze Jest Problem",
+      "rank": 428,
+      "score": 37.9,
+      "category": "Entertainment",
+      "city": null
+    },
+    "pawel.przystawa": {
+      "handle": "pawel.przystawa",
+      "name": "Paweł PRZYSTAWA",
+      "rank": 429,
+      "score": 37.9,
+      "category": "Sport & Fitness",
+      "city": null
+    },
+    "knorrpolska": {
+      "handle": "knorrpolska",
+      "name": "KnorrPolska",
+      "rank": 430,
+      "score": 37.9,
+      "category": "Food",
+      "city": null
+    },
+    "klatex": {
+      "handle": "klatex",
+      "name": "Klaudia Tarka @klatex",
+      "rank": 431,
+      "score": 37.8,
+      "category": "Beauty",
+      "city": null
+    },
+    "auto_boss_9999": {
+      "handle": "auto_boss_9999",
+      "name": "AUTO _BOSS_9999",
+      "rank": 432,
+      "score": 37.8,
+      "category": "Lifestyle",
+      "city": "Warszawa"
+    },
+    "kwas517": {
+      "handle": "kwas517",
+      "name": "🤪Kwas517🤪",
+      "rank": 433,
+      "score": 37.7,
+      "category": "Sport & Fitness",
+      "city": null
+    },
+    "viki.waskowiak": {
+      "handle": "viki.waskowiak",
+      "name": "Vikiwaskowiak",
+      "rank": 434,
+      "score": 37.7,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "petercoleslanguages": {
+      "handle": "petercoleslanguages",
+      "name": "PeterColesLanguages",
+      "rank": 435,
+      "score": 37.6,
+      "category": "Education",
+      "city": null
+    },
+    "andrzejkoo": {
+      "handle": "andrzejkoo",
+      "name": "andrzejkoo",
+      "rank": 436,
+      "score": 37.6,
+      "category": "Other",
+      "city": null
+    },
+    "xmarcok": {
+      "handle": "xmarcok",
+      "name": "XMARCOK",
+      "rank": 437,
+      "score": 37.5,
+      "category": "Music",
+      "city": "Zakopane"
+    },
+    "bebe__blu": {
+      "handle": "bebe__blu",
+      "name": "BebeBlu",
+      "rank": 438,
+      "score": 37.5,
+      "category": "Gaming",
+      "city": null
+    },
+    "asia_jakubiec": {
+      "handle": "asia_jakubiec",
+      "name": "asia_jakubiec",
+      "rank": 439,
+      "score": 37.4,
+      "category": "Travel",
+      "city": null
+    },
+    "fishyourkicks": {
+      "handle": "fishyourkicks",
+      "name": "fishyourkicks.com",
+      "rank": 440,
+      "score": 37.4,
+      "category": "Fashion",
+      "city": null
+    },
+    "mateusz_macierakowski": {
+      "handle": "mateusz_macierakowski",
+      "name": "Mateusz Macierakowski",
+      "rank": 441,
+      "score": 37.4,
+      "category": "Education",
+      "city": null
+    },
+    "amourzworld": {
+      "handle": "amourzworld",
+      "name": "Amour",
+      "rank": 442,
+      "score": 37.1,
+      "category": "Music",
+      "city": null
+    },
+    "werr7504": {
+      "handle": "werr7504",
+      "name": "Werr",
+      "rank": 443,
+      "score": 37.0,
+      "category": "Entertainment",
+      "city": null
+    },
+    "icampolska": {
+      "handle": "icampolska",
+      "name": "iCamPolska",
+      "rank": 444,
+      "score": 37.0,
+      "category": "Tech",
+      "city": null
+    },
+    "lukaszwolosowicz": {
+      "handle": "lukaszwolosowicz",
+      "name": "Dj Lucas ®",
+      "rank": 445,
+      "score": 37.0,
+      "category": "Music",
+      "city": null
+    },
+    "kanalkomediowy": {
+      "handle": "kanalkomediowy",
+      "name": "Kanał Komediowy",
+      "rank": 446,
+      "score": 37.0,
+      "category": "Entertainment",
+      "city": null
+    },
+    "younews_pl": {
+      "handle": "younews_pl",
+      "name": "YouNewsPL",
+      "rank": 447,
+      "score": 36.8,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "noowakpatrycja": {
+      "handle": "noowakpatrycja",
+      "name": "Patrycja Nowak ღ",
+      "rank": 448,
+      "score": 36.6,
+      "category": "Beauty",
+      "city": null
+    },
+    "bake_with_coffy": {
+      "handle": "bake_with_coffy",
+      "name": "Bake_with_Coffy",
+      "rank": 449,
+      "score": 36.5,
+      "category": "Food",
+      "city": null
+    },
+    "wiciuuuuuuuuuuu": {
+      "handle": "wiciuuuuuuuuuuu",
+      "name": "Witek_Mondry",
+      "rank": 450,
+      "score": 36.3,
+      "category": "Food",
+      "city": null
+    },
+    "kinga.kosidowska": {
+      "handle": "kinga.kosidowska",
+      "name": "Kinga Kosidowska|MasterChef15",
+      "rank": 451,
+      "score": 36.2,
+      "category": "Food",
+      "city": null
+    },
+    "tomonikaa": {
+      "handle": "tomonikaa",
+      "name": "MONIKA",
+      "rank": 452,
+      "score": 36.1,
+      "category": "Beauty",
+      "city": null
+    },
+    "veronika.bernat": {
+      "handle": "veronika.bernat",
+      "name": "veronika.bernat",
+      "rank": 453,
+      "score": 36.1,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "maste_official": {
+      "handle": "maste_official",
+      "name": "Maste Wasza Marcysia",
+      "rank": 454,
+      "score": 36.0,
+      "category": "Food",
+      "city": null
+    },
+    "adrianwalkalone": {
+      "handle": "adrianwalkalone",
+      "name": "Adrian",
+      "rank": 455,
+      "score": 36.0,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "sylwia_testuje": {
+      "handle": "sylwia_testuje",
+      "name": "Sylwia_Testuje YT",
+      "rank": 456,
+      "score": 35.7,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "akademiastudio7": {
+      "handle": "akademiastudio7",
+      "name": "Akademia Studio7 Kijowska 11",
+      "rank": 457,
+      "score": 35.6,
+      "category": "Beauty",
+      "city": "Warszawa"
+    },
+    "suwerennapolskapl": {
+      "handle": "suwerennapolskapl",
+      "name": "Suwerenna Polska",
+      "rank": 458,
+      "score": 35.5,
+      "category": "Finance",
+      "city": null
+    },
+    "piotrleepeck": {
+      "handle": "piotrleepeck",
+      "name": "Piotr Lipka",
+      "rank": 459,
+      "score": 35.3,
+      "category": "Education",
+      "city": null
+    },
+    "food_farmer": {
+      "handle": "food_farmer",
+      "name": "FOOD FARMER",
+      "rank": 460,
+      "score": 35.2,
+      "category": "Food",
+      "city": null
+    },
+    "theamerykanka": {
+      "handle": "theamerykanka",
+      "name": "TheAmerykanka 👩‍🍳🍲",
+      "rank": 461,
+      "score": 35.2,
+      "category": "Food",
+      "city": null
+    },
+    "wheretravelmarta": {
+      "handle": "wheretravelmarta",
+      "name": "Where Travel Marta",
+      "rank": 462,
+      "score": 35.2,
+      "category": "Travel",
+      "city": "Kraków"
+    },
+    "soflowpl": {
+      "handle": "soflowpl",
+      "name": "soflowpl.kosmetyki",
+      "rank": 463,
+      "score": 35.1,
+      "category": "Beauty",
+      "city": null
+    },
+    "kontrowersyjnymarek": {
+      "handle": "kontrowersyjnymarek",
+      "name": "kontrowersyjnymarek",
+      "rank": 464,
+      "score": 35.0,
+      "category": "Finance",
+      "city": null
+    },
+    "martinskolsky": {
+      "handle": "martinskolsky",
+      "name": "MartinSkolSKY",
+      "rank": 465,
+      "score": 35.0,
+      "category": "Entertainment",
+      "city": null
+    },
+    "oludzibudzi": {
+      "handle": "oludzibudzi",
+      "name": "oludzi",
+      "rank": 466,
+      "score": 34.9,
+      "category": "Entertainment",
+      "city": null
+    },
+    "mojedomowejedzenie": {
+      "handle": "mojedomowejedzenie",
+      "name": "Moje Domowe Jedzenie",
+      "rank": 467,
+      "score": 34.5,
+      "category": "Food",
+      "city": null
+    },
+    "canalplus_sport_polska": {
+      "handle": "canalplus_sport_polska",
+      "name": "CANAL+ SPORT",
+      "rank": 468,
+      "score": 34.3,
+      "category": "Sport & Fitness",
+      "city": null
+    },
+    "diet_and_training_by_ann": {
+      "handle": "diet_and_training_by_ann",
+      "name": "Diet & Training by Ann app",
+      "rank": 469,
+      "score": 34.2,
+      "category": "Sport & Fitness",
+      "city": null
+    },
+    "patrycjaxsobolewska": {
+      "handle": "patrycjaxsobolewska",
+      "name": "Patrycja Sobolewska",
+      "rank": 470,
+      "score": 33.6,
+      "category": "Beauty",
+      "city": null
+    },
+    "kuchniaizy": {
+      "handle": "kuchniaizy",
+      "name": "Kuchnia Izy",
+      "rank": 471,
+      "score": 33.6,
+      "category": "Food",
+      "city": null
+    },
+    "rmf_24": {
+      "handle": "rmf_24",
+      "name": "RMF24",
+      "rank": 472,
+      "score": 33.4,
+      "category": "Other",
+      "city": null
+    },
+    "biznesodpoczatku": {
+      "handle": "biznesodpoczatku",
+      "name": "Biznes Od Początku",
+      "rank": 473,
+      "score": 33.3,
+      "category": "Finance",
+      "city": null
+    },
+    "bites_family": {
+      "handle": "bites_family",
+      "name": "𝐅𝐚𝐦𝐢𝐥𝐲 𝐁𝐢𝐭𝐞𝐬 🍕",
+      "rank": 474,
+      "score": 33.3,
+      "category": "Beauty",
+      "city": null
+    },
+    "m.turczynka": {
+      "handle": "m.turczynka",
+      "name": "Turczynka 💕",
+      "rank": 475,
+      "score": 33.0,
+      "category": "Food",
+      "city": null
+    },
+    "andrzej9448": {
+      "handle": "andrzej9448",
+      "name": "❤️🍀ANDRZEJ",
+      "rank": 476,
+      "score": 32.9,
+      "category": "Entertainment",
+      "city": null
+    },
+    "karolkowe_domowe": {
+      "handle": "karolkowe_domowe",
+      "name": "karolkowe_domowe",
+      "rank": 477,
+      "score": 32.7,
+      "category": "Food",
+      "city": null
+    },
+    "krzysztof.oleksy27": {
+      "handle": "krzysztof.oleksy27",
+      "name": "Krzysztof Oleksy",
+      "rank": 478,
+      "score": 32.6,
+      "category": "Education",
+      "city": null
+    },
+    "wesolezlomowisko": {
+      "handle": "wesolezlomowisko",
+      "name": "WesołeZłomowisko",
+      "rank": 479,
+      "score": 32.6,
+      "category": "Entertainment",
+      "city": null
+    },
+    "m3ga____": {
+      "handle": "m3ga____",
+      "name": "M3GA",
+      "rank": 480,
+      "score": 32.5,
+      "category": "Entertainment",
+      "city": null
+    },
+    "ciekawe_fakty_polska": {
+      "handle": "ciekawe_fakty_polska",
+      "name": "ciekawe_fakty_polska",
+      "rank": 481,
+      "score": 32.4,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "korba.tv": {
+      "handle": "korba.tv",
+      "name": "KORBA🇵🇱",
+      "rank": 482,
+      "score": 32.3,
+      "category": "Entertainment",
+      "city": null
+    },
+    "sztucznerozmowypodcast": {
+      "handle": "sztucznerozmowypodcast",
+      "name": "Sztuczne Rozmowy Podcast",
+      "rank": 483,
+      "score": 32.3,
+      "category": "Food",
+      "city": null
+    },
+    "sobol740": {
+      "handle": "sobol740",
+      "name": "sobol740",
+      "rank": 484,
+      "score": 32.3,
+      "category": "Education",
+      "city": null
+    },
+    "polskieforumrodzicow": {
+      "handle": "polskieforumrodzicow",
+      "name": "Polskie Forum Rodziców",
+      "rank": 485,
+      "score": 32.3,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "mariazjava_mua": {
+      "handle": "mariazjava_mua",
+      "name": "Maria Zjava MUA",
+      "rank": 486,
+      "score": 31.7,
+      "category": "Beauty",
+      "city": null
+    },
+    "polskie.seriale63": {
+      "handle": "polskie.seriale63",
+      "name": "Polskie Seriale",
+      "rank": 487,
+      "score": 31.6,
+      "category": "Other",
+      "city": null
+    },
+    "agakle_": {
+      "handle": "agakle_",
+      "name": "Agakle",
+      "rank": 488,
+      "score": 31.6,
+      "category": "Beauty",
+      "city": null
+    },
+    "marcello.bojano": {
+      "handle": "marcello.bojano",
+      "name": "autohandel.marcello.bojano",
+      "rank": 489,
+      "score": 31.5,
+      "category": "Travel",
+      "city": null
+    },
+    "pandavideostudio": {
+      "handle": "pandavideostudio",
+      "name": "PandaVideoStudio",
+      "rank": 490,
+      "score": 31.4,
+      "category": "Entertainment",
+      "city": null
+    },
+    "zobacz.wow.show": {
+      "handle": "zobacz.wow.show",
+      "name": "WOW.SHOW",
+      "rank": 491,
+      "score": 31.3,
+      "category": "Entertainment",
+      "city": null
+    },
+    "_n33xt_": {
+      "handle": "_n33xt_",
+      "name": "ッN33xtッ",
+      "rank": 492,
+      "score": 31.3,
+      "category": "Gaming",
+      "city": null
+    },
+    "enemel6986": {
+      "handle": "enemel6986",
+      "name": "Nie Ma Lipy 🎄",
+      "rank": 493,
+      "score": 31.3,
+      "category": "Entertainment",
+      "city": null
+    },
+    "jestem_legenda1803": {
+      "handle": "jestem_legenda1803",
+      "name": "💙P⸽r⸽o⸽c⸽e⸽d⸽e⸽r💙C⸽h⸽a⸽d⸽a💙",
+      "rank": 494,
+      "score": 31.2,
+      "category": "Entertainment",
+      "city": null
+    },
+    "mistrzkulkopczyns": {
+      "handle": "mistrzkulkopczyns",
+      "name": "CałkiemNoweOblicze",
+      "rank": 495,
+      "score": 31.2,
+      "category": "Other",
+      "city": null
+    },
+    "klubnauer": {
+      "handle": "klubnauer",
+      "name": "Katarzyna Lubnauer",
+      "rank": 496,
+      "score": 31.0,
+      "category": "Education",
+      "city": null
+    },
+    "tytanowydominik": {
+      "handle": "tytanowydominik",
+      "name": "Tytanowydominik",
+      "rank": 497,
+      "score": 30.9,
+      "category": "Entertainment",
+      "city": null
+    },
+    "quadcross1": {
+      "handle": "quadcross1",
+      "name": "Quad-Cross",
+      "rank": 498,
+      "score": 30.7,
+      "category": "Other",
+      "city": null
+    },
+    "grzegorz.jankowski": {
+      "handle": "grzegorz.jankowski",
+      "name": "Grzegorz Jankowski",
+      "rank": 499,
+      "score": 30.5,
+      "category": "Tech",
+      "city": null
+    },
+    "tommyysheelby": {
+      "handle": "tommyysheelby",
+      "name": "TommyySheelby",
+      "rank": 500,
+      "score": 30.5,
+      "category": "Gaming",
+      "city": null
+    },
+    "batterycheckpro": {
+      "handle": "batterycheckpro",
+      "name": "BatteryCheckPro",
+      "rank": 501,
+      "score": 30.3,
+      "category": "Tech",
+      "city": null
+    },
+    "hexokod": {
+      "handle": "hexokod",
+      "name": "hexo",
+      "rank": 502,
+      "score": 30.3,
+      "category": "Gaming",
+      "city": null
+    },
+    "19.30_tvp": {
+      "handle": "19.30_tvp",
+      "name": "19.30_tvp",
+      "rank": 503,
+      "score": 29.9,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "kozaczek_pl": {
+      "handle": "kozaczek_pl",
+      "name": "KOZACZEK",
+      "rank": 504,
+      "score": 29.7,
+      "category": "Education",
+      "city": null
+    },
+    "cyprianmajcherpodcast": {
+      "handle": "cyprianmajcherpodcast",
+      "name": "cyprianmajcherpodcast",
+      "rank": 505,
+      "score": 29.7,
+      "category": "Sport & Fitness",
+      "city": null
+    },
+    "kocham.wroclaw": {
+      "handle": "kocham.wroclaw",
+      "name": "Kocham Wrocław",
+      "rank": 506,
+      "score": 29.7,
+      "category": "Food",
+      "city": "Wrocław"
+    },
+    "saykamstar": {
+      "handle": "saykamstar",
+      "name": "Kamstar",
+      "rank": 507,
+      "score": 29.5,
+      "category": "Gaming",
+      "city": null
+    },
+    "mariusz_misarko": {
+      "handle": "mariusz_misarko",
+      "name": "Misarko Nieruchomości &Finanse",
+      "rank": 508,
+      "score": 29.1,
+      "category": "Finance",
+      "city": "Białystok"
+    },
+    "candytm.pl": {
+      "handle": "candytm.pl",
+      "name": "WWW.CANDYTM.PL",
+      "rank": 509,
+      "score": 29.0,
+      "category": "Fashion",
+      "city": null
+    },
+    "darkskies_media": {
+      "handle": "darkskies_media",
+      "name": "DarkSkies_Media",
+      "rank": 510,
+      "score": 29.0,
+      "category": "Entertainment",
+      "city": null
+    },
+    "oksi.cleaning": {
+      "handle": "oksi.cleaning",
+      "name": "oksi.cleaning",
+      "rank": 511,
+      "score": 29.0,
+      "category": "Other",
+      "city": null
+    },
+    "roadrob": {
+      "handle": "roadrob",
+      "name": "Rob.1711",
+      "rank": 512,
+      "score": 29.0,
+      "category": "Other",
+      "city": null
+    },
+    "gregkot_official": {
+      "handle": "gregkot_official",
+      "name": "Greg Kot Officiall",
+      "rank": 513,
+      "score": 29.0,
+      "category": "Sport & Fitness",
+      "city": "Warszawa"
+    },
+    "hasky2111": {
+      "handle": "hasky2111",
+      "name": "🔱🅷🅰🆂🅺🆈🔱",
+      "rank": 514,
+      "score": 29.0,
+      "category": "Entertainment",
+      "city": null
+    },
+    "kabaret.tv": {
+      "handle": "kabaret.tv",
+      "name": "Kabaret TV",
+      "rank": 515,
+      "score": 29.0,
+      "category": "Entertainment",
+      "city": null
+    },
+    "teamzuzannkov": {
+      "handle": "teamzuzannkov",
+      "name": "Team Zuzannkov",
+      "rank": 516,
+      "score": 28.8,
+      "category": "Food",
+      "city": null
+    },
+    "ufryzjerow": {
+      "handle": "ufryzjerow",
+      "name": "U Fryzjerów",
+      "rank": 517,
+      "score": 28.8,
+      "category": "Education",
+      "city": "Warszawa"
+    },
+    "blast.energy": {
+      "handle": "blast.energy",
+      "name": "BLAST Energy",
+      "rank": 518,
+      "score": 28.8,
+      "category": "Tech",
+      "city": null
+    },
+    "tuskowesprawy85greg": {
+      "handle": "tuskowesprawy85greg",
+      "name": "🔥⚡️greg85greg🌝🌞",
+      "rank": 519,
+      "score": 28.7,
+      "category": "Entertainment",
+      "city": null
+    },
+    "polski.gringo": {
+      "handle": "polski.gringo",
+      "name": "Polski Gringo",
+      "rank": 520,
+      "score": 28.5,
+      "category": "Entertainment",
+      "city": null
+    },
+    "geopolitai": {
+      "handle": "geopolitai",
+      "name": "GeoPolitAI",
+      "rank": 521,
+      "score": 28.3,
+      "category": "Tech",
+      "city": null
+    },
+    "dm_polska": {
+      "handle": "dm_polska",
+      "name": "dm_polska",
+      "rank": 522,
+      "score": 28.1,
+      "category": "Beauty",
+      "city": null
+    },
+    "videoplejbak": {
+      "handle": "videoplejbak",
+      "name": "videoplayback",
+      "rank": 523,
+      "score": 27.8,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "kacperbisanz": {
+      "handle": "kacperbisanz",
+      "name": "Kacper Bisanz",
+      "rank": 524,
+      "score": 27.7,
+      "category": "Tech",
+      "city": null
+    },
+    "bywiki": {
+      "handle": "bywiki",
+      "name": "Wiki",
+      "rank": 525,
+      "score": 27.7,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "matmazguziorem": {
+      "handle": "matmazguziorem",
+      "name": "MatmaZGuziorem",
+      "rank": 526,
+      "score": 27.6,
+      "category": "Education",
+      "city": null
+    },
+    "djanbublack": {
+      "handle": "djanbublack",
+      "name": "DJ Anbublack 🇵🇱",
+      "rank": 527,
+      "score": 27.5,
+      "category": "Music",
+      "city": "Gdańsk"
+    },
+    "tylko_pytam": {
+      "handle": "tylko_pytam",
+      "name": "Tylko Pytam",
+      "rank": 528,
+      "score": 27.4,
+      "category": "Other",
+      "city": null
+    },
+    "strefa_plus_size": {
+      "handle": "strefa_plus_size",
+      "name": "Strefa Plus Size",
+      "rank": 529,
+      "score": 27.3,
+      "category": "Fashion",
+      "city": null
+    },
+    "newsprawicy": {
+      "handle": "newsprawicy",
+      "name": "newsprawicy",
+      "rank": 530,
+      "score": 27.2,
+      "category": "Education",
+      "city": "Kraków"
+    },
+    "polityczny.bajzel": {
+      "handle": "polityczny.bajzel",
+      "name": "Polityczny Bajzel",
+      "rank": 531,
+      "score": 27.0,
+      "category": "Music",
+      "city": null
+    },
+    "rafadventures": {
+      "handle": "rafadventures",
+      "name": "RAFadventures",
+      "rank": 532,
+      "score": 26.4,
+      "category": "Lifestyle",
+      "city": null
+    },
+    "patryk.z.niemiec": {
+      "handle": "patryk.z.niemiec",
+      "name": "Patryk z Niemiec",
+      "rank": 533,
+      "score": 26.1,
+      "category": "Beauty",
+      "city": null
+    },
+    "_przemyslaw_": {
+      "handle": "_przemyslaw_",
+      "name": "Przemysław",
+      "rank": 534,
+      "score": 25.7,
+      "category": "Entertainment",
+      "city": null
+    },
+    "saway.official": {
+      "handle": "saway.official",
+      "name": "SAWAY | Skórzane buty 🤎",
+      "rank": 535,
+      "score": 25.7,
+      "category": "Fashion",
+      "city": null
+    },
+    "blogo.pl": {
+      "handle": "blogo.pl",
+      "name": "Błogo",
+      "rank": 536,
+      "score": 25.5,
+      "category": "Travel",
+      "city": null
+    },
+    "jakwfinanse": {
+      "handle": "jakwfinanse",
+      "name": "Paweł Kopeć Doradca Finansowy",
+      "rank": 537,
+      "score": 25.5,
+      "category": "Finance",
+      "city": null
+    },
+    "polskicaravaning": {
+      "handle": "polskicaravaning",
+      "name": "Polski Caravaning",
+      "rank": 538,
+      "score": 25.3,
+      "category": "Travel",
+      "city": null
+    },
+    "latwy.polski": {
+      "handle": "latwy.polski",
+      "name": "łatwy.polski",
+      "rank": 539,
+      "score": 25.2,
+      "category": "Education",
+      "city": null
+    },
+    "oniszczukassociates": {
+      "handle": "oniszczukassociates",
+      "name": "Oniszczuk&Associates",
+      "rank": 540,
+      "score": 25.0,
+      "category": "Education",
+      "city": null
+    },
+    "plotek..pl": {
+      "handle": "plotek..pl",
+      "name": "Plotek.pl",
+      "rank": 541,
+      "score": 24.7,
+      "category": "Fashion",
+      "city": null
+    },
+    "ubranasandra": {
+      "handle": "ubranasandra",
+      "name": "Ubrana_Sandra",
+      "rank": 542,
+      "score": 24.6,
+      "category": "Fashion",
+      "city": null
+    },
+    "brajan_00_": {
+      "handle": "brajan_00_",
+      "name": "Brajan_👤",
+      "rank": 543,
+      "score": 24.1,
+      "category": "Other",
+      "city": null
+    },
+    "kanal_nasi": {
+      "handle": "kanal_nasi",
+      "name": "kanał NASI",
+      "rank": 544,
+      "score": 24.0,
+      "category": "Other",
+      "city": null
+    },
+    "dealdlaciebie": {
+      "handle": "dealdlaciebie",
+      "name": "dealdlaciebie",
+      "rank": 545,
+      "score": 24.0,
+      "category": "Other",
+      "city": null
+    },
+    "jakwfinanse_sonia": {
+      "handle": "jakwfinanse_sonia",
+      "name": "jakwfinanse_sonia",
+      "rank": 546,
+      "score": 23.9,
+      "category": "Finance",
+      "city": null
+    },
+    "mariuszguzera": {
+      "handle": "mariuszguzera",
+      "name": "Mariusz Guzera",
+      "rank": 547,
+      "score": 23.6,
+      "category": "Finance",
+      "city": null
+    },
+    "kamilbelzofficial": {
+      "handle": "kamilbelzofficial",
+      "name": "Kamil Belz",
+      "rank": 548,
+      "score": 23.5,
+      "category": "Education",
+      "city": null
+    },
+    "cococollection_anita": {
+      "handle": "cococollection_anita",
+      "name": "COCO COLLECTION",
+      "rank": 549,
+      "score": 22.9,
+      "category": "Beauty",
+      "city": null
+    },
+    "oliwkasliwkahaha": {
+      "handle": "oliwkasliwkahaha",
+      "name": "🌻Oliwkasliwka🌻",
+      "rank": 550,
+      "score": 22.6,
+      "category": "Beauty",
+      "city": null
+    },
+    "kanal.gefmo": {
+      "handle": "kanal.gefmo",
+      "name": "Kanał Gefmo",
+      "rank": 551,
+      "score": 22.6,
+      "category": "Finance",
+      "city": null
+    },
+    "instalki.pl": {
+      "handle": "instalki.pl",
+      "name": "Instalki.pl",
+      "rank": 552,
+      "score": 22.1,
+      "category": "Tech",
+      "city": null
+    },
+    "julapoleca": {
+      "handle": "julapoleca",
+      "name": "polecajki 🫶",
+      "rank": 553,
+      "score": 21.9,
+      "category": "Other",
+      "city": null
+    },
+    "prabunek": {
+      "handle": "prabunek",
+      "name": "Prabun",
+      "rank": 554,
+      "score": 20.8,
+      "category": "Education",
+      "city": null
+    },
+    "julitabuczek": {
+      "handle": "julitabuczek",
+      "name": "jb✨ IG: @julitabuczek",
+      "rank": 555,
+      "score": 19.9,
+      "category": "Fashion",
+      "city": null
+    },
+    "kasia.twarogowska_": {
+      "handle": "kasia.twarogowska_",
+      "name": "kasia.twarogowska",
+      "rank": 556,
+      "score": 19.6,
+      "category": "Lifestyle",
+      "city": null
+    }
+  }
+}
