@@ -1,17 +1,17 @@
 {
   "meta": {
     "latest_run": {
-      "run_at": "2026-10-01T09:07:53.275135+00:00",
+      "run_at": "2026-10-01T09:47:37.952770+00:00",
       "actor": "apidojo~tiktok-scraper-api",
       "filterVersion": "v4-strong-pl-evidence",
-      "startSeed": 3,
+      "startSeed": 5,
       "seeds_requested": [
-        "polishtiktok",
-        "polski humor"
+        "polska beauty",
+        "polska moda"
       ],
       "seeds_completed": [
-        "polishtiktok",
-        "polski humor"
+        "polska beauty",
+        "polska moda"
       ],
       "resultsPerSeed": 10,
       "location": "PL",
@@ -26,14 +26,14 @@
       },
       "per_seed": [
         {
-          "seed": "polishtiktok",
+          "seed": "polska beauty",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
           "status": "demo_only"
         },
         {
-          "seed": "polski humor",
+          "seed": "polska moda",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -42,13 +42,13 @@
       ],
       "errors": [],
       "migration": {
-        "legacy_rows_revalidated": 8,
-        "legacy_rows_quarantined": 2
+        "legacy_rows_revalidated": 0,
+        "legacy_rows_quarantined": 0
       }
     },
     "registry_count": 12,
     "eligible_count": 10,
-    "updated_at": "2026-10-01T09:07:53.275135+00:00"
+    "updated_at": "2026-10-01T09:47:37.952770+00:00"
   },
   "creators": [
     {
