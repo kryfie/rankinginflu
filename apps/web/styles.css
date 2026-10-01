@@ -1652,3 +1652,36 @@ button, a {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* InfluRank logo test — selected crown / play / analytics mark */
+.brand-logo-mark {
+  width: 43px;
+  height: 43px;
+  flex: 0 0 43px;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 8px 20px rgba(111, 67, 255, 0.24));
+}
+
+.brand:hover .brand-logo-mark {
+  transform: translateY(-1px);
+}
+
+.brand-logo-mark {
+  transition: transform 0.2s ease;
+}
+
+.footer-brand .brand-logo-mark {
+  width: 33px;
+  height: 33px;
+  flex-basis: 33px;
+}
+
+@media (max-width: 640px) {
+  .brand-logo-mark {
+    width: 39px;
+    height: 39px;
+    flex-basis: 39px;
+  }
+}
