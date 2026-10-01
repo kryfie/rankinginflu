@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-01T08:32:12.336106+00:00",
-  "source": "influRank-enrichment-v1",
-  "score_note": "Influence Score is provisional until 30-day follower history exists. Momentum is omitted and remaining weights are re-normalized.",
+  "generated_at": "2026-10-01T08:42:15.410204+00:00",
+  "source": "influRank-rebuild-v2",
+  "score_note": "Influence Score uses InfluRank-calculated raw-post metrics. Consistency uses log-view MAD. Momentum is omitted until approximately 30 days of follower history exist.",
   "creators": [
     {
       "handle": "menelgeographic",
@@ -14,16 +14,17 @@
       "views": 59450.0,
       "engagement": 10.470113691272932,
       "growth": null,
+      "consistency_index": 60.07,
       "posts_measured": 10,
       "updated_at": "2026-10-01T08:32:12.336106+00:00",
-      "score": 60.6,
+      "score": 68.8,
       "score_status": "provisional_no_30d_history",
       "components": {
         "audience": 70.0,
         "reach": 50.0,
         "engagement": 90.0,
         "momentum": null,
-        "consistency": 0.0
+        "consistency": 70.0
       },
       "rank": 1
     },
@@ -38,16 +39,17 @@
       "views": 163550.0,
       "engagement": 1.7852746480305104,
       "growth": null,
+      "consistency_index": 71.08,
       "posts_measured": 10,
       "updated_at": "2026-10-01T08:32:12.336106+00:00",
-      "score": 46.5,
+      "score": 57.1,
       "score_status": "provisional_no_30d_history",
       "components": {
         "audience": 50.0,
         "reach": 90.0,
         "engagement": 10.0,
         "momentum": null,
-        "consistency": 0.0
+        "consistency": 90.0
       },
       "rank": 2
     },
@@ -62,42 +64,19 @@
       "views": 14650.0,
       "engagement": 3.7196827835662036,
       "growth": null,
+      "consistency_index": 42.45,
       "posts_measured": 10,
       "updated_at": "2026-10-01T08:32:12.336106+00:00",
-      "score": 45.3,
+      "score": 48.8,
       "score_status": "provisional_no_30d_history",
       "components": {
         "audience": 90.0,
         "reach": 10.0,
         "engagement": 70.0,
         "momentum": null,
-        "consistency": 0.0
+        "consistency": 30.0
       },
       "rank": 3
-    },
-    {
-      "handle": "mateusz_macierakowski",
-      "name": "Mateusz Macierakowski",
-      "avatar": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-avt-0068-euttp/d09f51ede04c5a68c0bdefbcaed4d137~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=049f2815&x-expires=1791014400&x-signature=f513XALWRyr0y4CS1foBZre%2FmYE%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
-      "verified": false,
-      "category": "Lifestyle",
-      "pl_confidence": 100.0,
-      "followers": 12054,
-      "views": 32518.5,
-      "engagement": 2.021691738543749,
-      "growth": null,
-      "posts_measured": 10,
-      "updated_at": "2026-10-01T08:32:12.336106+00:00",
-      "score": 35.9,
-      "score_status": "provisional_no_30d_history",
-      "components": {
-        "audience": 10.0,
-        "reach": 70.0,
-        "engagement": 30.0,
-        "momentum": null,
-        "consistency": 0.0
-      },
-      "rank": 4
     },
     {
       "handle": "andrzej9448",
@@ -110,16 +89,42 @@
       "views": 7551.0,
       "engagement": 2.2499813988095236,
       "growth": null,
+      "consistency_index": 46.07,
       "posts_measured": 10,
       "updated_at": "2026-10-01T08:32:12.336106+00:00",
-      "score": 32.4,
+      "score": 38.2,
       "score_status": "provisional_no_30d_history",
       "components": {
         "audience": 30.0,
         "reach": 30.0,
         "engagement": 50.0,
         "momentum": null,
-        "consistency": 0.0
+        "consistency": 50.0
+      },
+      "rank": 4
+    },
+    {
+      "handle": "mateusz_macierakowski",
+      "name": "Mateusz Macierakowski",
+      "avatar": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-avt-0068-euttp/d09f51ede04c5a68c0bdefbcaed4d137~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=049f2815&x-expires=1791014400&x-signature=f513XALWRyr0y4CS1foBZre%2FmYE%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
+      "verified": false,
+      "category": "Lifestyle",
+      "pl_confidence": 100.0,
+      "followers": 12054,
+      "views": 32518.5,
+      "engagement": 2.021691738543749,
+      "growth": null,
+      "consistency_index": 27.47,
+      "posts_measured": 10,
+      "updated_at": "2026-10-01T08:32:12.336106+00:00",
+      "score": 37.1,
+      "score_status": "provisional_no_30d_history",
+      "components": {
+        "audience": 10.0,
+        "reach": 70.0,
+        "engagement": 30.0,
+        "momentum": null,
+        "consistency": 10.0
       },
       "rank": 5
     }
