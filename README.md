@@ -225,3 +225,58 @@ v3 false positives do not remain pending in `scanner_queue.json`.
 
 `polandtiktok` was removed from the default seeds after returning demo-only
 provider rows in the tested run.
+
+
+## Creator classification / eligibility v5
+
+Before a creator can enter the public ranking, InfluRank now stores:
+
+```text
+discovery_pl_confidence
+enrichment_pl_confidence
+pl_confidence
+category
+category_confidence
+account_type
+account_type_confidence
+ranking_eligible
+eligibility_reasons
+```
+
+PL confidence is no longer overwritten by a loose enrichment heuristic.
+Discovery confidence is preserved and combined with independent profile/post
+evidence.
+
+Account types:
+
+```text
+person
+creator_brand
+media
+company
+```
+
+Only `person` and `creator_brand` are included in the influencer ranking.
+Media/company accounts remain in the normalized dataset and are exported under
+`excluded_creators` in the web JSON instead of silently disappearing.
+
+Eligibility also requires:
+- public account,
+- at least 10k followers,
+- PL confidence >= 50,
+- at least 5 measurable recent posts,
+- recent activity within ~180 days.
+
+Category matching now uses token/root boundaries, so short terms such as `ai`
+no longer match inside unrelated words. `Other` is used when there is not
+enough category evidence.
+
+After uploading this patch, run:
+
+```text
+Actions → Rebuild InfluRank ranking
+```
+
+No Apify call is needed. The rebuild reclassifies all already stored creators,
+updates `database/data/enriched_creators.json`, and regenerates the public
+ranking.

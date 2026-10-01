@@ -4,9 +4,8 @@ from collections import Counter
 from datetime import datetime, timezone
 from typing import Any
 
-from packages.classifier.pl_classifier import infer_category, pl_confidence
-
-from .ranking import build_web_ranking
+from .classification import classify_all_creators
+from .ranking import build_excluded_creators, build_web_ranking
 from .store import (
     load_json,
     normalize_username,
@@ -55,35 +54,17 @@ def _profile_from_rows(
     if not isinstance(author, dict):
         return None
 
-    captions = [
-        str(row.get("caption") or "")
-        for row in rows
-        if str(row.get("caption") or "").strip()
-    ]
     bio = str(author.get("biography") or "")
-    classification_text = "\n".join([bio, *captions])
 
     discovery_signals = []
+    discovery_strong_signals = []
+    discovery_pl_confidence = None
     if isinstance(queue_item, dict):
         discovery_signals = list(queue_item.get("polish_signals") or [])
-
-    base_pl = pl_confidence(classification_text, seed_context=True)
-
-    regions = [
-        str(row.get("createdInRegion") or "").upper()
-        for row in rows
-        if row.get("createdInRegion")
-    ]
-    pl_regions = sum(1 for region in regions if region == "PL")
-    if regions:
-        ratio = pl_regions / len(regions)
-        if ratio >= 0.5:
-            base_pl += 20
-        elif pl_regions:
-            base_pl += 10
-
-    base_pl += min(15, 5 * len(set(discovery_signals)))
-    final_pl = max(0.0, min(100.0, base_pl))
+        discovery_strong_signals = list(
+            queue_item.get("polish_strong_signals") or []
+        )
+        discovery_pl_confidence = queue_item.get("discovery_pl_confidence")
 
     previous = previous or {}
 
@@ -118,9 +99,11 @@ def _profile_from_rows(
         "is_seller": bool(author.get("isSeller")),
         "language": author.get("language"),
         "recent_activity_provider": author.get("recentActivity"),
-        "pl_confidence": round(final_pl, 1),
-        "category": infer_category(classification_text),
+        "discovery_pl_confidence": discovery_pl_confidence,
         "discovery_signals": sorted(set(discovery_signals)),
+        "discovery_strong_signals": sorted(set(discovery_strong_signals)),
+        "category_manual": previous.get("category_manual"),
+        "account_type_manual": previous.get("account_type_manual"),
         "first_enriched_at": previous.get("first_enriched_at") or run_at,
         "last_enriched_at": run_at,
         "source": source,
@@ -346,7 +329,7 @@ def enrich_state(
             row["enrichment_error"] = failures[username]
         updated_queue.append(row)
 
-    creators_out = sorted(
+    creators_out_unclassified = sorted(
         creators_by_username.values(),
         key=lambda row: safe_int(row.get("followers")),
         reverse=True,
@@ -364,7 +347,14 @@ def enrich_state(
         ),
     )
 
+    creators_out = classify_all_creators(
+        creators_out_unclassified,
+        posts_out,
+        updated_queue,
+    )
+
     ranking = build_web_ranking(creators_out, posts_out, snapshots_out)
+    excluded = build_excluded_creators(creators_out)
 
     write_json(
         settings.creators_path,
@@ -412,12 +402,14 @@ def enrich_state(
         settings.web_ranking_path,
         {
             "generated_at": run_at,
-            "source": "influRank-enrichment-v1",
+            "source": "influRank-enrichment-v5",
             "score_note": (
                 "Influence Score is provisional until 30-day follower history exists. "
-                "Momentum is omitted and remaining weights are re-normalized."
+                "Momentum is omitted and remaining weights are re-normalized. "
+                "Only ranking-eligible person/creator_brand accounts are scored."
             ),
             "creators": ranking,
+            "excluded_creators": excluded,
         },
     )
 
@@ -429,5 +421,6 @@ def enrich_state(
         "posts_total": len(posts_out),
         "snapshots_total": len(snapshots_out),
         "ranking_count": len(ranking),
+        "excluded_count": len(excluded),
         "failures": failures,
     }

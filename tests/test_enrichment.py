@@ -3,6 +3,11 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 
 from apps.enrichment.pipeline import enrich_state, select_queue_items
+from apps.enrichment.classification import (
+    classify_creator,
+    combine_pl_confidence,
+)
+
 from apps.enrichment.ranking import build_web_ranking, robust_consistency_index
 
 
@@ -177,6 +182,79 @@ class EnrichmentTests(unittest.TestCase):
             robust_consistency_index(stable),
             robust_consistency_index(volatile),
         )
+
+
+    def test_pl_confidence_preserves_discovery_signal(self):
+        combined = combine_pl_confidence(80.0, 90.0)
+        self.assertEqual(combined, 84.0)
+        self.assertLess(combined, 100.0)
+
+    def test_melodia_tv_is_creator_brand_music_not_media(self):
+        creator = {
+            "username": "melodiatvpolska_",
+            "display_name": "Melodia TV Polska",
+            "bio": (
+                "Melodia TV polska / Official account. "
+                "Drive-by karaoke across the whole of 🇵🇱"
+            ),
+            "followers": 56858,
+            "private": False,
+            "language": "en",
+            "is_organization": False,
+            "is_commerce_user": False,
+            "is_seller": False,
+            "last_enriched_at": "2026-10-01T09:15:43+00:00",
+        }
+        posts = [
+            {
+                "caption": "Karaoke z samochodu #piosenka #polska",
+                "created_in_region": "PL",
+                "views": 100000 + i,
+                "timestamp": f"2026-09-{20+i:02d}T12:00:00Z",
+                "is_pinned": False,
+            }
+            for i in range(8)
+        ]
+        result = classify_creator(
+            creator,
+            posts,
+            {
+                "discovery_pl_confidence": 85.0,
+                "polish_strong_signals": ["flag_pl", "polish_text"],
+            },
+        )
+        self.assertEqual(result["account_type"], "creator_brand")
+        self.assertEqual(result["category"], "Music")
+        self.assertTrue(result["ranking_eligible"])
+        self.assertLess(result["pl_confidence"], 100.0)
+
+    def test_company_is_excluded(self):
+        creator = {
+            "username": "example_company",
+            "display_name": "Example Company",
+            "bio": "Oficjalny sklep internetowy firmy Example sp. z o.o.",
+            "followers": 50000,
+            "private": False,
+            "language": "pl",
+            "is_organization": True,
+            "is_commerce_user": True,
+            "is_seller": True,
+            "last_enriched_at": "2026-10-01T09:15:43+00:00",
+        }
+        posts = [
+            {
+                "caption": "Nowy produkt dla Was #polska",
+                "created_in_region": "PL",
+                "views": 10000,
+                "timestamp": f"2026-09-{20+i:02d}T12:00:00Z",
+                "is_pinned": False,
+            }
+            for i in range(8)
+        ]
+        result = classify_creator(creator, posts, {"discovery_pl_confidence": 80})
+        self.assertEqual(result["account_type"], "company")
+        self.assertFalse(result["ranking_eligible"])
+        self.assertIn("account_type_company", result["eligibility_reasons"])
 
 
 if __name__ == "__main__":

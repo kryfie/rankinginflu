@@ -110,6 +110,8 @@ def build_web_ranking(
         username = normalize_username(creator.get("username"))
         if not username:
             continue
+        if creator.get("ranking_eligible") is False:
+            continue
 
         creator_posts = sorted(
             posts_by_user.get(username, []),
@@ -171,8 +173,10 @@ def build_web_ranking(
                 "name": creator.get("display_name") or username,
                 "avatar": creator.get("avatar_url") or "",
                 "verified": bool(creator.get("verified")),
-                "category": creator.get("category") or "",
+                "category": creator.get("category") or "Other",
                 "pl_confidence": creator.get("pl_confidence"),
+                "account_type": creator.get("account_type") or "creator_brand",
+                "ranking_eligible": True,
                 "followers": followers,
                 "views": median_views,
                 "engagement": median_engagement,
@@ -261,3 +265,36 @@ def build_web_ranking(
         row["rank"] = index
 
     return raw
+
+
+
+def build_excluded_creators(
+    creators: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    out = []
+
+    for creator in creators:
+        if creator.get("ranking_eligible") is not False:
+            continue
+
+        out.append(
+            {
+                "handle": normalize_username(creator.get("username")),
+                "name": creator.get("display_name")
+                or normalize_username(creator.get("username")),
+                "followers": safe_int(creator.get("followers")),
+                "category": creator.get("category") or "Other",
+                "account_type": creator.get("account_type") or "unknown",
+                "pl_confidence": creator.get("pl_confidence"),
+                "eligibility_reasons": list(
+                    creator.get("eligibility_reasons") or []
+                ),
+                "updated_at": creator.get("last_enriched_at"),
+            }
+        )
+
+    return sorted(
+        out,
+        key=lambda row: row["followers"],
+        reverse=True,
+    )

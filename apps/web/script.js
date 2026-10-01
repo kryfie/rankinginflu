@@ -31,7 +31,8 @@ const categoryList = [
   'Education',
   'Travel',
   'Music',
-  'Finance'
+  'Finance',
+  'Other'
 ];
 
 const rankingBody = document.getElementById('rankingBody');
