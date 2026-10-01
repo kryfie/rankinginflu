@@ -175,7 +175,21 @@ def select_queue_items(
         }:
             eligible.append(item)
 
-    eligible.sort(key=lambda row: safe_int(row.get("priority")) or 10**9)
+    if refresh_all:
+        # Fair rotation for scheduled refreshes: accounts never refreshed or
+        # refreshed longest ago go first. This prevents a fixed top-N subset
+        # from being refreshed forever when the dataset grows.
+        eligible.sort(
+            key=lambda row: (
+                str(row.get("last_profile_scan_at") or ""),
+                safe_int(row.get("priority")) or 10**9,
+            )
+        )
+    else:
+        eligible.sort(
+            key=lambda row: safe_int(row.get("priority")) or 10**9
+        )
+
     if max_profiles > 0:
         eligible = eligible[:max_profiles]
     return eligible

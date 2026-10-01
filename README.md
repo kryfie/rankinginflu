@@ -280,3 +280,41 @@ Actions → Rebuild InfluRank ranking
 No Apify call is needed. The rebuild reclassifies all already stored creators,
 updates `database/data/enriched_creators.json`, and regenerates the public
 ranking.
+
+
+## Autopilot
+
+InfluRank can now run without manual GitHub clicks.
+
+`InfluRank autopilot` has two schedules:
+
+```text
+Daily 04:17 UTC
+- scans the next 2 discovery seeds
+- advances a persistent seed cursor
+- enriches up to 10 new pending creators
+- recalculates the public ranking
+- commits all updated data automatically
+
+Sunday 04:47 UTC
+- refreshes up to 25 oldest creator profiles
+- stores a new follower snapshot
+- keeps 30D momentum history growing
+- recalculates the ranking
+```
+
+The discovery cursor lives in:
+
+```text
+database/data/pipeline_state.json
+```
+
+It wraps around the seed list automatically. If a provider run fails after only
+one seed, only that completed seed is advanced; the failed seed is retried on
+the next run.
+
+Weekly refresh uses oldest-profile-first ordering so a fixed top-N group cannot
+starve the rest of the dataset.
+
+Manual `InfluRank discovery`, `InfluRank enrichment`, and
+`Rebuild InfluRank ranking` workflows remain available as recovery/debug tools.
