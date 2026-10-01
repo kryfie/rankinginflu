@@ -1,0 +1,219 @@
+name: InfluRank autopilot v3
+
+on:
+  schedule:
+    # One daily run. During bootstrap it prioritizes never-scanned seeds.
+    # After the target is reached it switches to due/cooldown scheduling.
+    - cron: "17 4 * * *"
+
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "auto = bootstrap until target, then steady"
+        required: true
+        default: auto
+        type: choice
+        options:
+          - auto
+          - bootstrap
+          - steady
+      max_discovery_seeds:
+        description: "Maximum paid search queries in this run"
+        required: true
+        default: "25"
+        type: string
+      bootstrap_target:
+        description: "Stop aggressive bootstrap around this many eligible candidates"
+        required: true
+        default: "250"
+        type: string
+      new_enrichment_limit:
+        description: "Maximum new profiles enriched in this run"
+        required: true
+        default: "100"
+        type: string
+      refresh_existing_limit:
+        description: "Maximum existing profiles refreshed if 7+ days old"
+        required: true
+        default: "100"
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: influrank-autopilot-v2
+  cancel-in-progress: false
+
+jobs:
+  autopilot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install -r apps/discovery/requirements.txt
+          python -m pip install -r apps/enrichment/requirements.txt
+
+      - name: Resolve run settings
+        id: settings
+        shell: bash
+        run: |
+          MODE="${{ inputs.mode }}"
+          MAX_SEEDS="${{ inputs.max_discovery_seeds }}"
+          TARGET="${{ inputs.bootstrap_target }}"
+          NEW_LIMIT="${{ inputs.new_enrichment_limit }}"
+          REFRESH_LIMIT="${{ inputs.refresh_existing_limit }}"
+
+          [ -n "$MODE" ] || MODE="auto"
+          [ -n "$MAX_SEEDS" ] || MAX_SEEDS="25"
+          [ -n "$TARGET" ] || TARGET="250"
+          [ -n "$NEW_LIMIT" ] || NEW_LIMIT="100"
+          [ -n "$REFRESH_LIMIT" ] || REFRESH_LIMIT="100"
+
+          echo "MODE=$MODE" >> "$GITHUB_OUTPUT"
+          echo "MAX_SEEDS=$MAX_SEEDS" >> "$GITHUB_OUTPUT"
+          echo "TARGET=$TARGET" >> "$GITHUB_OUTPUT"
+          echo "NEW_LIMIT=$NEW_LIMIT" >> "$GITHUB_OUTPUT"
+          echo "REFRESH_LIMIT=$REFRESH_LIMIT" >> "$GITHUB_OUTPUT"
+
+
+      - name: Expand discovery from existing creator graph
+        run: |
+          python -m apps.automation.expansion harvest \
+            --max-new-seeds 25 \
+            --max-dynamic-seeds-total 500 \
+            --max-related-handles 20 \
+            --min-seed-score 4
+
+      - name: Plan cost-aware discovery
+        id: plan
+        shell: bash
+        run: |
+          python -m apps.automation.scheduler plan \
+            --mode "${{ steps.settings.outputs.MODE }}" \
+            --max-seeds "${{ steps.settings.outputs.MAX_SEEDS }}" \
+            --bootstrap-target "${{ steps.settings.outputs.TARGET }}" \
+            | tee /tmp/influrank_plan
+
+          grep -E '^(MODE|SELECTED_INDICES|SELECTED_COUNT|ELIGIBLE_REGISTRY_COUNT)=' \
+            /tmp/influrank_plan >> "$GITHUB_OUTPUT"
+
+          cat /tmp/influrank_plan
+
+      - name: Discover selected seeds
+        if: steps.plan.outputs.SELECTED_COUNT != '0'
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          PYTHONUNBUFFERED: "1"
+        run: |
+          python -m apps.discovery run \
+            --seed-indices "${{ steps.plan.outputs.SELECTED_INDICES }}" \
+            --results-per-seed 20 \
+            --min-followers 10000 \
+            --min-pl-signals 1 \
+            --min-pl-confidence 50 \
+            --sort-type RELEVANCE \
+            --date-range LAST_THREE_MONTHS
+
+      - name: Record seed efficiency and cooldowns
+        if: steps.plan.outputs.SELECTED_COUNT != '0'
+        run: |
+          python -m apps.automation.scheduler record \
+            --planned-indices "${{ steps.plan.outputs.SELECTED_INDICES }}"
+
+
+      - name: Checkpoint discovery before enrichment
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add \
+            database/data/seed_state.json \
+            apps/web/data/discovery_candidates.json \
+            apps/web/data/scanner_queue.json \
+            apps/web/data/discovery_raw.json
+
+          if git diff --cached --quiet; then
+            echo "No discovery changes to checkpoint."
+          else
+            git commit -m "data: checkpoint InfluRank discovery"
+            git push origin HEAD:main
+          fi
+
+      - name: Enrich new pending creators
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          PYTHONUNBUFFERED: "1"
+        run: |
+          python -m apps.enrichment run \
+            --max-profiles "${{ steps.settings.outputs.NEW_LIMIT }}" \
+            --max-posts 13
+
+
+      - name: Learn new hashtags and related creators from enriched posts
+        run: |
+          python -m apps.automation.expansion harvest \
+            --max-new-seeds 25 \
+            --max-dynamic-seeds-total 500 \
+            --max-related-handles 20 \
+            --min-seed-score 4
+
+      - name: Refresh existing creators only when 7+ days old
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          PYTHONUNBUFFERED: "1"
+        run: |
+          python -m apps.enrichment run \
+            --max-profiles "${{ steps.settings.outputs.REFRESH_LIMIT }}" \
+            --max-posts 13 \
+            --refresh-all \
+            --min-refresh-age-hours 168
+
+      - name: Upload provider diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: autopilot-v2-provider-raw
+          path: |
+            apps/discovery/data/discovery_raw_full.json
+            apps/enrichment/data/enrichment_raw_full.json
+          if-no-files-found: ignore
+          retention-days: 7
+
+      - name: Commit pipeline state and data
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add \
+            database/data/seed_state.json \
+            database/data/enriched_creators.json \
+            database/data/posts.json \
+            database/data/creator_snapshots.json \
+            apps/web/data/discovery_candidates.json \
+            apps/web/data/scanner_queue.json \
+            apps/web/data/discovery_raw.json \
+            apps/web/data/creators.json
+
+          if git diff --cached --quiet; then
+            echo "No autopilot changes to commit."
+            exit 0
+          fi
+
+          git commit -m "data: run InfluRank autopilot v3"
+          git push origin HEAD:main

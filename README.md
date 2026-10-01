@@ -410,3 +410,84 @@ The enrichment client now:
 Autopilot also commits a discovery checkpoint before enrichment. Therefore a
 paid discovery run is not lost if profile enrichment later has a transient
 network/provider failure.
+
+
+## Autopilot v3 — self-expanding discovery graph
+
+InfluRank no longer relies only on the hand-written seed list.
+
+Every autopilot cycle learns from already accepted creators:
+
+### Hashtag expansion
+
+Recent posts from ranking-eligible creators are scanned for hashtags.
+
+A specific hashtag is promoted to a new discovery seed when it has enough
+evidence, especially when multiple eligible creators use it.
+
+Generic tags such as:
+
+```text
+fyp
+viral
+tiktok
+polska
+polskatiktok
+dlaciebie
+```
+
+are blocked from automatic promotion.
+
+Dynamic seed metadata is stored in:
+
+```text
+database/data/dynamic_seed_meta.json
+```
+
+The discovery seed universe can grow automatically up to 500 dynamic seeds.
+Only up to 25 new dynamic seeds are added in one harvest.
+
+### Related creator expansion
+
+@mentions in posts build a lightweight creator graph.
+
+An unknown handle is promoted to profile enrichment only when:
+- it is mentioned by at least two eligible creators, or
+- it appears in at least two separate posts.
+
+This avoids paying for every one-off mention.
+
+State is stored in:
+
+```text
+database/data/related_handles.json
+```
+
+Up to 20 related handles are promoted per harvest.
+
+### Autopilot cycle
+
+```text
+existing creators
+      ↓
+hashtags + mentions
+      ↓
+new dynamic seeds / related handles
+      ↓
+cost-aware discovery scheduler
+      ↓
+TikTok discovery
+      ↓
+new creators
+      ↓
+profile + post enrichment
+      ↓
+new hashtags + mentions
+      ↓
+next cycle becomes smarter
+```
+
+This is not ML; it is a controlled discovery graph with explicit cost caps and
+quality thresholds. Static/category seeds remain as the stable foundation,
+while the graph expands into topics and creator neighborhoods discovered in
+real data.
