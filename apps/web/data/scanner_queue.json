@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "purpose": "Queue for authoritative profile enrichment",
+    "count": 2
+  },
+  "items": [
+    {
+      "username": "2cytramon2",
+      "tiktok_id": "7615521098349151254",
+      "priority": 1,
+      "discovery_followers": 34111,
+      "polish_signals": [
+        "hashtag",
+        "subtitle_pl",
+        "title"
+      ],
+      "status": "pending_profile_scan"
+    },
+    {
+      "username": "andrzej9448",
+      "tiktok_id": "7364679484983165985",
+      "priority": 2,
+      "discovery_followers": 24474,
+      "polish_signals": [
+        "hashtag",
+        "subtitle_pl",
+        "title"
+      ],
+      "status": "pending_profile_scan"
+    }
+  ]
+}
