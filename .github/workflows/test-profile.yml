@@ -4,26 +4,29 @@ on:
   workflow_dispatch:
     inputs:
       handle:
-        description: "TikTok username, np. @jeleniewska"
+        description: "TikTok username, e.g. @jeleniewska"
         required: true
         default: "@jeleniewska"
         type: string
       posts:
-        description: "Ile ostatnich filmów pobrać"
+        description: "Public posts to request. Use 0 for profile-only validation."
         required: true
-        default: "10"
+        default: "0"
         type: string
 
 jobs:
   test-profile:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 10
     permissions:
       contents: read
 
     steps:
-      - name: Checkout repository
+      - name: Checkout main
         uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -32,21 +35,17 @@ jobs:
           cache: "pip"
 
       - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          python -m playwright install --with-deps chromium
+        run: python -m pip install -r requirements.txt
 
       - name: Prepare output directories
-        run: |
-          mkdir -p apps/scanner/data apps/web/data diagnostics
+        run: mkdir -p apps/scanner/data apps/web/data diagnostics
 
-      - name: Scan TikTok profile
+      - name: Scan public TikTok profile
         env:
           REQUEST_DELAY_SECONDS: "3"
-          MAX_REQUESTS_PER_RUN: "50"
+          MAX_REQUESTS_PER_RUN: "20"
           PYTHONUNBUFFERED: "1"
-          ENABLE_BROWSER_FALLBACK: "1"
+          ENABLE_BROWSER_FALLBACK: "0"
           DIAGNOSTICS_DIR: "diagnostics"
         shell: bash
         run: |
@@ -55,34 +54,8 @@ jobs:
             "${{ inputs.handle }}" \
             --posts "${{ inputs.posts }}" \
             2>&1 | tee diagnostics/profile-scan.log
-            diagnostics/tiktok-profile.png
-            diagnostics/browser-summary.txt
 
-      - name: Show generated creators.json
-        if: always()
-        shell: bash
-        run: |
-          echo "===== CREATORS.JSON ====="
-          if [ -f apps/web/data/creators.json ]; then cat apps/web/data/creators.json; else echo "creators.json was not created"; fi
-
-      - name: Save diagnostic information
-        if: always()
-        shell: bash
-        run: |
-          {
-            echo ""
-            echo "===== RUN INFORMATION ====="
-            echo "Handle: ${{ inputs.handle }}"
-            echo "Requested posts: ${{ inputs.posts }}"
-            echo "Runner OS: $RUNNER_OS"
-            python --version
-            echo "Generated files:"
-            find apps/scanner/data apps/web/data -maxdepth 2 -type f -printf '%p %s bytes\n' 2>/dev/null || true
-          } >> diagnostics/profile-scan.log
-            diagnostics/tiktok-profile.png
-            diagnostics/browser-summary.txt
-
-      - name: Upload scanner output
+      - name: Upload profile test output
         if: always()
         uses: actions/upload-artifact@v4
         with:
@@ -91,7 +64,5 @@ jobs:
           retention-days: 7
           path: |
             diagnostics/profile-scan.log
-            diagnostics/tiktok-profile.png
-            diagnostics/browser-summary.txt
             apps/scanner/data/
             apps/web/data/creators.json
