@@ -379,5 +379,34 @@ class DiscoveryTests(unittest.TestCase):
         )
 
 
+    def test_queue_preserves_related_mentions(self):
+        registry = {"creators": []}
+        old_queue = {
+            "items": [
+                {
+                    "username": "related_creator",
+                    "status": "pending_profile_scan",
+                    "source": "related_mentions",
+                    "priority": 1,
+                }
+            ]
+        }
+
+        queue = build_scanner_queue(
+            registry,
+            old_queue,
+            updated_at="2026-10-01T00:00:00Z",
+        )
+
+        self.assertEqual(
+            queue["items"][0]["username"],
+            "related_creator",
+        )
+        self.assertEqual(
+            queue["items"][0]["source"],
+            "related_mentions",
+        )
+
+
 if __name__ == "__main__":
     unittest.main()

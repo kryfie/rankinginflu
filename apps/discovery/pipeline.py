@@ -765,6 +765,38 @@ def build_scanner_queue(
             }
         )
 
+    # Preserve externally discovered related handles. They are not in the
+    # discovery registry yet because they came from creator mentions rather
+    # than search-result posts.
+    present_usernames = {
+        _normalize_username(item.get("username"))
+        for item in items
+        if _normalize_username(item.get("username"))
+    }
+
+    for old in existing_items:
+        if not isinstance(old, dict):
+            continue
+
+        username = _normalize_username(old.get("username"))
+        if not username or username in present_usernames:
+            continue
+
+        if str(old.get("source") or "") != "related_mentions":
+            continue
+
+        status = str(old.get("status") or "pending_profile_scan")
+        if status not in {
+            "pending_profile_scan",
+            "enrichment_error",
+            "enriched",
+            "profile_scanned",
+        }:
+            continue
+
+        items.append(dict(old))
+        present_usernames.add(username)
+
     for priority, item in enumerate(items, start=1):
         item["priority"] = priority
 
