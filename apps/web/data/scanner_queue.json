@@ -2,7 +2,7 @@
   "meta": {
     "purpose": "Queue for authoritative profile enrichment",
     "count": 5,
-    "updated_at": "2026-10-01T08:15:06.603181+00:00"
+    "updated_at": "2026-10-01T08:32:12.336106+00:00"
   },
   "items": [
     {
@@ -20,7 +20,9 @@
         "polskatiktok"
       ],
       "last_discovered_at": "2026-10-01T08:15:06.603181+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T08:32:12.336106+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "wolnoscslowa2.0",
@@ -37,7 +39,9 @@
         "tiktokpolska"
       ],
       "last_discovered_at": "2026-10-01T08:15:06.603181+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T08:32:12.336106+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "2cytramon2",
@@ -54,7 +58,9 @@
         "tiktokpolska"
       ],
       "last_discovered_at": "2026-10-01T08:15:06.603181+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T08:32:12.336106+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "andrzej9448",
@@ -70,7 +76,9 @@
         "polskatiktok"
       ],
       "last_discovered_at": null,
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T08:32:12.336106+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "mateusz_macierakowski",
@@ -86,7 +94,9 @@
         "polskatiktok"
       ],
       "last_discovered_at": "2026-10-01T08:15:06.603181+00:00",
-      "status": "pending_profile_scan"
+      "status": "enriched",
+      "last_profile_scan_at": "2026-10-01T08:32:12.336106+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     }
   ]
 }
