@@ -1,8 +1,9 @@
 {
   "meta": {
-    "updated_at": "2026-10-01T09:15:43.432474+00:00",
+    "updated_at": "2026-10-01T09:31:08.894203+00:00",
     "count": 10,
-    "source": "simple.actor/tiktok-profile-posts"
+    "source": "simple.actor/tiktok-profile-posts",
+    "classification_version": "v5"
   },
   "creators": [
     {
@@ -38,7 +39,7 @@
         "medianShareCount": 149,
         "medianEngagementRatePercent": 5.95
       },
-      "pl_confidence": 100.0,
+      "pl_confidence": 95.7,
       "category": "Finance",
       "discovery_signals": [
         "polish_text",
@@ -47,7 +48,21 @@
       ],
       "first_enriched_at": "2026-10-01T09:15:43.432474+00:00",
       "last_enriched_at": "2026-10-01T09:15:43.432474+00:00",
-      "source": "simple.actor/tiktok-profile-posts"
+      "source": "simple.actor/tiktok-profile-posts",
+      "discovery_pl_confidence": 97.5,
+      "enrichment_pl_confidence": 93.0,
+      "category_confidence": 99.0,
+      "category_source": "auto_v5",
+      "account_type": "creator_brand",
+      "account_type_confidence": 72.0,
+      "account_type_reasons": [
+        "creator_identity"
+      ],
+      "classification_version": "v5",
+      "ranking_eligible": true,
+      "eligibility_reasons": [],
+      "last_post_at": "2026-09-30T17:17:50+00:00",
+      "measurable_post_count": 10
     },
     {
       "tiktok_id": "7156902889259860998",
@@ -82,8 +97,8 @@
         "medianShareCount": 13,
         "medianEngagementRatePercent": 3.72
       },
-      "pl_confidence": 100.0,
-      "category": "",
+      "pl_confidence": 97.0,
+      "category": "Other",
       "discovery_signals": [
         "hashtag",
         "subtitle_pl",
@@ -91,7 +106,21 @@
       ],
       "first_enriched_at": "2026-10-01T08:32:12.336106+00:00",
       "last_enriched_at": "2026-10-01T08:32:12.336106+00:00",
-      "source": "simple.actor/tiktok-profile-posts"
+      "source": "simple.actor/tiktok-profile-posts",
+      "discovery_pl_confidence": null,
+      "enrichment_pl_confidence": 97.0,
+      "category_confidence": 0.0,
+      "category_source": "auto_v5",
+      "account_type": "creator_brand",
+      "account_type_confidence": 75.0,
+      "account_type_reasons": [
+        "creator_identity"
+      ],
+      "classification_version": "v5",
+      "ranking_eligible": true,
+      "eligibility_reasons": [],
+      "last_post_at": "2026-10-01T07:43:49+00:00",
+      "measurable_post_count": 10
     },
     {
       "tiktok_id": "7575906498481996822",
@@ -126,8 +155,8 @@
         "medianShareCount": 19400,
         "medianEngagementRatePercent": 14.49
       },
-      "pl_confidence": 100.0,
-      "category": "Lifestyle",
+      "pl_confidence": 93.2,
+      "category": "Entertainment",
       "discovery_signals": [
         "hashtag_pl",
         "subtitle_pl",
@@ -135,7 +164,21 @@
       ],
       "first_enriched_at": "2026-10-01T09:15:43.432474+00:00",
       "last_enriched_at": "2026-10-01T09:15:43.432474+00:00",
-      "source": "simple.actor/tiktok-profile-posts"
+      "source": "simple.actor/tiktok-profile-posts",
+      "discovery_pl_confidence": 95.0,
+      "enrichment_pl_confidence": 90.5,
+      "category_confidence": 99.0,
+      "category_source": "auto_v5",
+      "account_type": "creator_brand",
+      "account_type_confidence": 93.0,
+      "account_type_reasons": [
+        "creator_identity"
+      ],
+      "classification_version": "v5",
+      "ranking_eligible": true,
+      "eligibility_reasons": [],
+      "last_post_at": "2026-09-30T10:01:15+00:00",
+      "measurable_post_count": 10
     },
     {
       "tiktok_id": "6921706513291969541",
@@ -170,7 +213,7 @@
         "medianShareCount": 10231,
         "medianEngagementRatePercent": 11.05
       },
-      "pl_confidence": 100.0,
+      "pl_confidence": 90.0,
       "category": "Entertainment",
       "discovery_signals": [
         "hashtag",
@@ -180,7 +223,21 @@
       ],
       "first_enriched_at": "2026-10-01T08:32:12.336106+00:00",
       "last_enriched_at": "2026-10-01T08:32:12.336106+00:00",
-      "source": "simple.actor/tiktok-profile-posts"
+      "source": "simple.actor/tiktok-profile-posts",
+      "discovery_pl_confidence": null,
+      "enrichment_pl_confidence": 90.0,
+      "category_confidence": 99.0,
+      "category_source": "auto_v5",
+      "account_type": "creator_brand",
+      "account_type_confidence": 87.0,
+      "account_type_reasons": [
+        "creator_identity"
+      ],
+      "classification_version": "v5",
+      "ranking_eligible": true,
+      "eligibility_reasons": [],
+      "last_post_at": "2026-09-22T09:36:15+00:00",
+      "measurable_post_count": 10
     },
     {
       "tiktok_id": "6640941950349099014",
@@ -215,8 +272,8 @@
         "medianShareCount": 204,
         "medianEngagementRatePercent": 3.27
       },
-      "pl_confidence": 100.0,
-      "category": "Tech",
+      "pl_confidence": 95.0,
+      "category": "Music",
       "discovery_signals": [
         "channel_marker_pl",
         "hashtag_pl",
@@ -225,7 +282,21 @@
       ],
       "first_enriched_at": "2026-10-01T09:15:43.432474+00:00",
       "last_enriched_at": "2026-10-01T09:15:43.432474+00:00",
-      "source": "simple.actor/tiktok-profile-posts"
+      "source": "simple.actor/tiktok-profile-posts",
+      "discovery_pl_confidence": 100.0,
+      "enrichment_pl_confidence": 87.5,
+      "category_confidence": 99.0,
+      "category_source": "auto_v5",
+      "account_type": "creator_brand",
+      "account_type_confidence": 87.0,
+      "account_type_reasons": [
+        "creator_identity"
+      ],
+      "classification_version": "v5",
+      "ranking_eligible": true,
+      "eligibility_reasons": [],
+      "last_post_at": "2026-09-30T11:07:35+00:00",
+      "measurable_post_count": 10
     },
     {
       "tiktok_id": "7456151839731057686",
@@ -260,8 +331,8 @@
         "medianShareCount": 186,
         "medianEngagementRatePercent": 5.36
       },
-      "pl_confidence": 100.0,
-      "category": "Education",
+      "pl_confidence": 85.2,
+      "category": "Sport & Fitness",
       "discovery_signals": [
         "hashtag_pl",
         "polish_text",
@@ -269,7 +340,21 @@
       ],
       "first_enriched_at": "2026-10-01T09:15:43.432474+00:00",
       "last_enriched_at": "2026-10-01T09:15:43.432474+00:00",
-      "source": "simple.actor/tiktok-profile-posts"
+      "source": "simple.actor/tiktok-profile-posts",
+      "discovery_pl_confidence": 80.0,
+      "enrichment_pl_confidence": 93.0,
+      "category_confidence": 86.0,
+      "category_source": "auto_v5",
+      "account_type": "creator_brand",
+      "account_type_confidence": 72.0,
+      "account_type_reasons": [
+        "creator_identity"
+      ],
+      "classification_version": "v5",
+      "ranking_eligible": true,
+      "eligibility_reasons": [],
+      "last_post_at": "2026-10-01T07:29:18+00:00",
+      "measurable_post_count": 9
     },
     {
       "tiktok_id": "7615521098349151254",
@@ -304,8 +389,8 @@
         "medianShareCount": 501,
         "medianEngagementRatePercent": 2.1
       },
-      "pl_confidence": 100.0,
-      "category": "Entertainment",
+      "pl_confidence": 96.2,
+      "category": "Lifestyle",
       "discovery_signals": [
         "hashtag",
         "subtitle_pl",
@@ -313,7 +398,21 @@
       ],
       "first_enriched_at": "2026-10-01T08:32:12.336106+00:00",
       "last_enriched_at": "2026-10-01T08:32:12.336106+00:00",
-      "source": "simple.actor/tiktok-profile-posts"
+      "source": "simple.actor/tiktok-profile-posts",
+      "discovery_pl_confidence": 100.0,
+      "enrichment_pl_confidence": 90.5,
+      "category_confidence": 98.0,
+      "category_source": "auto_v5",
+      "account_type": "creator_brand",
+      "account_type_confidence": 87.0,
+      "account_type_reasons": [
+        "creator_identity"
+      ],
+      "classification_version": "v5",
+      "ranking_eligible": true,
+      "eligibility_reasons": [],
+      "last_post_at": "2026-09-26T09:38:48+00:00",
+      "measurable_post_count": 10
     },
     {
       "tiktok_id": "7364679484983165985",
@@ -348,7 +447,7 @@
         "medianShareCount": 21,
         "medianEngagementRatePercent": 2.25
       },
-      "pl_confidence": 100.0,
+      "pl_confidence": 75.0,
       "category": "Entertainment",
       "discovery_signals": [
         "hashtag",
@@ -357,7 +456,21 @@
       ],
       "first_enriched_at": "2026-10-01T08:32:12.336106+00:00",
       "last_enriched_at": "2026-10-01T08:32:12.336106+00:00",
-      "source": "simple.actor/tiktok-profile-posts"
+      "source": "simple.actor/tiktok-profile-posts",
+      "discovery_pl_confidence": null,
+      "enrichment_pl_confidence": 75.0,
+      "category_confidence": 98.0,
+      "category_source": "auto_v5",
+      "account_type": "creator_brand",
+      "account_type_confidence": 81.0,
+      "account_type_reasons": [
+        "creator_identity"
+      ],
+      "classification_version": "v5",
+      "ranking_eligible": true,
+      "eligibility_reasons": [],
+      "last_post_at": "2026-10-01T04:15:46+00:00",
+      "measurable_post_count": 10
     },
     {
       "tiktok_id": "7449663868860679190",
@@ -392,7 +505,7 @@
         "medianShareCount": 564,
         "medianEngagementRatePercent": 5.11
       },
-      "pl_confidence": 100.0,
+      "pl_confidence": 87.0,
       "category": "Sport & Fitness",
       "discovery_signals": [
         "flag_pl",
@@ -402,7 +515,21 @@
       ],
       "first_enriched_at": "2026-10-01T09:15:43.432474+00:00",
       "last_enriched_at": "2026-10-01T09:15:43.432474+00:00",
-      "source": "simple.actor/tiktok-profile-posts"
+      "source": "simple.actor/tiktok-profile-posts",
+      "discovery_pl_confidence": 85.0,
+      "enrichment_pl_confidence": 90.0,
+      "category_confidence": 80.0,
+      "category_source": "auto_v5",
+      "account_type": "creator_brand",
+      "account_type_confidence": 78.0,
+      "account_type_reasons": [
+        "creator_identity"
+      ],
+      "classification_version": "v5",
+      "ranking_eligible": true,
+      "eligibility_reasons": [],
+      "last_post_at": "2026-09-30T15:55:12+00:00",
+      "measurable_post_count": 10
     },
     {
       "tiktok_id": "7009565484010849286",
@@ -437,8 +564,8 @@
         "medianShareCount": 248,
         "medianEngagementRatePercent": 2.48
       },
-      "pl_confidence": 100.0,
-      "category": "Lifestyle",
+      "pl_confidence": 93.0,
+      "category": "Education",
       "discovery_signals": [
         "hashtag",
         "subtitle_pl",
@@ -446,7 +573,21 @@
       ],
       "first_enriched_at": "2026-10-01T08:32:12.336106+00:00",
       "last_enriched_at": "2026-10-01T08:32:12.336106+00:00",
-      "source": "simple.actor/tiktok-profile-posts"
+      "source": "simple.actor/tiktok-profile-posts",
+      "discovery_pl_confidence": null,
+      "enrichment_pl_confidence": 93.0,
+      "category_confidence": 99.0,
+      "category_source": "auto_v5",
+      "account_type": "creator_brand",
+      "account_type_confidence": 75.0,
+      "account_type_reasons": [
+        "creator_identity"
+      ],
+      "classification_version": "v5",
+      "ranking_eligible": true,
+      "eligibility_reasons": [],
+      "last_post_at": "2026-09-29T09:22:45+00:00",
+      "measurable_post_count": 10
     }
   ]
 }
