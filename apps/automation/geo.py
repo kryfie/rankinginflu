@@ -477,14 +477,63 @@ def _score_username(
         reverse=True,
     )
 
-    primary = scored[0] if scored else None
+    # IMPORTANT: a TikTok POI describes the location of a post, not the
+    # creator's home/base. A single POI must therefore never become the
+    # public "city" by itself. Promote a city only when the evidence is
+    # stable enough to describe the creator rather than one piece of content.
+    primary_candidates = []
+    for row in scored:
+        sources = set(row.get("sources") or [])
+        evidence_count = int(row.get("evidence_count") or 0)
+        post_count = int(row.get("post_count") or 0)
+
+        stable = False
+
+        # Explicit profile bio is the strongest home/base signal.
+        if row.get("home_city_signal"):
+            stable = True
+
+        # Two or more distinct POI posts in the same city indicate a
+        # recurring location rather than a one-off visit.
+        elif "poi" in sources:
+            poi_rows = [
+                event for event in by_city.get(row["city"], [])
+                if event.get("source") == "poi"
+            ]
+            poi_post_refs = {
+                str(event.get("ref") or "")
+                for event in poi_rows
+                if event.get("ref")
+            }
+            if len(poi_post_refs) >= 2:
+                stable = True
+
+            # Independent agreement between POI and textual evidence is also
+            # enough to promote the city.
+            if any(
+                source in sources
+                for source in {"post_text", "discovery_text"}
+            ):
+                stable = True
+
+        # Repeated textual mentions across several distinct posts can also
+        # establish a stable content/base association.
+        elif post_count >= 4 and evidence_count >= 4:
+            stable = True
+
+        if stable and float(row.get("confidence") or 0) >= 60:
+            primary_candidates.append(row)
+
+    primary = primary_candidates[0] if primary_candidates else None
     home = next(
         (row for row in scored if row.get("home_city_signal")),
         None,
     )
 
     return {
-        "primary_city": primary["city"] if primary and primary["confidence"] >= 60 else None,
+        "primary_city": primary["city"] if primary else None,
+        # Top-level confidence/sources describe the published primary city.
+        # One-off content evidence keeps its own confidence in content_cities.
         "geo_confidence": primary["confidence"] if primary else 0.0,
         "geo_sources": primary["sources"] if primary else [],
         "home_city": home["city"] if home and home["confidence"] >= 90 else None,
@@ -594,8 +643,9 @@ def harvest() -> dict[str, Any]:
 
     web_payload["creators"] = public_out
     web_payload["geo_note"] = (
-        "City is inferred conservatively from public profile bio, repeated post "
-        "text and TikTok POI metadata. Missing/low-confidence city remains null."
+        "City is inferred conservatively from stable public profile/content signals. "
+        "A single TikTok POI is treated only as a content location and does not "
+        "become the creator city by itself."
     )
     web_payload["geo_updated_at"] = run_at
     _write(WEB_RANKING_PATH, web_payload)

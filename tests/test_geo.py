@@ -25,7 +25,7 @@ class GeoTests(unittest.TestCase):
         self.assertEqual(result["home_city"], "Szczecin")
         self.assertGreaterEqual(result["geo_confidence"], 90)
 
-    def test_single_poi_creates_content_city_but_not_home_city(self):
+    def test_single_poi_is_content_only_not_primary_city(self):
         events = {}
         geo._add_event(
             events,
@@ -36,9 +36,48 @@ class GeoTests(unittest.TestCase):
             weight=75,
         )
         result = geo._score_username("creator", list(events.values()))
-        self.assertEqual(result["primary_city"], "Warszawa")
+        self.assertIsNone(result["primary_city"])
         self.assertIsNone(result["home_city"])
+        self.assertEqual(result["geo_confidence"], 0.0)
+        self.assertEqual(result["content_cities"][0]["city"], "Warszawa")
+        self.assertGreaterEqual(result["content_cities"][0]["confidence"], 60)
+
+    def test_two_distinct_poi_posts_can_promote_primary_city(self):
+        events = {}
+        for ref in ("post1", "post2"):
+            geo._add_event(
+                events,
+                username="creator",
+                city="Warszawa",
+                source="poi",
+                ref=ref,
+                weight=75,
+            )
+        result = geo._score_username("creator", list(events.values()))
+        self.assertEqual(result["primary_city"], "Warszawa")
         self.assertGreaterEqual(result["geo_confidence"], 60)
+
+    def test_single_poi_plus_text_agreement_can_promote_primary_city(self):
+        events = {}
+        geo._add_event(
+            events,
+            username="creator",
+            city="Kraków",
+            source="poi",
+            ref="post1",
+            weight=75,
+        )
+        geo._add_event(
+            events,
+            username="creator",
+            city="Kraków",
+            source="post_text",
+            ref="post2",
+            weight=18,
+        )
+        result = geo._score_username("creator", list(events.values()))
+        self.assertEqual(result["primary_city"], "Kraków")
+        self.assertIn("poi", result["geo_sources"])
 
     def test_repeated_text_can_promote_city(self):
         events = {}
