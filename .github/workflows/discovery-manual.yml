@@ -1,0 +1,69 @@
+name: InfluRank discovery
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_items:
+        description: "Maximum TikTok posts to request"
+        required: true
+        default: "100"
+      min_followers:
+        description: "Minimum followers for candidate queue"
+        required: true
+        default: "10000"
+      sort_type:
+        description: "Search sort"
+        required: true
+        type: choice
+        options:
+          - RELEVANCE
+          - MOST_LIKED
+          - DATE_POSTED
+        default: RELEVANCE
+      date_range:
+        description: "TikTok search date range"
+        required: true
+        type: choice
+        options:
+          - THIS_MONTH
+          - LAST_THREE_MONTHS
+          - LAST_SIX_MONTHS
+          - ALL_TIME
+        default: LAST_THREE_MONTHS
+
+permissions:
+  contents: write
+
+jobs:
+  discovery:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install discovery dependencies
+        run: python -m pip install -r apps/discovery/requirements.txt
+
+      - name: Run discovery
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+        run: |
+          python -m apps.discovery run \
+            --max-items "${{ inputs.max_items }}" \
+            --min-followers "${{ inputs.min_followers }}" \
+            --sort-type "${{ inputs.sort_type }}" \
+            --date-range "${{ inputs.date_range }}"
+
+      - name: Commit discovery outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add apps/web/data/discovery_candidates.json apps/web/data/scanner_queue.json apps/web/data/discovery_raw.json
+          git diff --cached --quiet || git commit -m "data: update TikTok discovery"
+          git push
