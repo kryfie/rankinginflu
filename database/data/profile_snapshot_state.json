@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-10-02T06:56:40.007876+00:00",
+  "updated_at": "2026-10-02T07:53:26.333290+00:00",
   "latest_snapshot_date": "2026-10-02",
   "latest_snapshot_file": "database/data/profile_snapshots/2026-10-02.json",
-  "status": "partial",
+  "status": "complete",
   "current_creator_count": 556,
-  "successful_current_profiles": 321,
-  "missing_current_profiles": 235,
-  "stopped_by_rate_limit": true,
-  "stop_reason": "TikTok returned a WAF/interstitial page."
+  "successful_current_profiles": 556,
+  "missing_current_profiles": 0,
+  "stopped_by_rate_limit": false,
+  "stop_reason": null
 }

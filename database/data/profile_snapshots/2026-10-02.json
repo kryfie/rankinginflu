@@ -3,16 +3,16 @@
   "source": "tiktok_public_profile_html",
   "source_note": "Light public profile snapshot only: followers, following, total likes, video count and verified. No posts and no Apify.",
   "started_at": "2026-10-02T06:41:27.905829+00:00",
-  "finished_at": "2026-10-02T06:56:40.001768+00:00",
-  "status": "partial",
-  "stopped_by_rate_limit": true,
-  "stop_reason": "TikTok returned a WAF/interstitial page.",
+  "finished_at": "2026-10-02T07:53:26.328167+00:00",
+  "status": "complete",
+  "stopped_by_rate_limit": false,
+  "stop_reason": null,
   "current_creator_count": 556,
-  "successful_current_profiles": 321,
-  "missing_current_profiles": 235,
-  "attempted_this_run": 324,
-  "success_this_run": 321,
-  "failed_this_run": 3,
+  "successful_current_profiles": 556,
+  "missing_current_profiles": 0,
+  "attempted_this_run": 235,
+  "success_this_run": 235,
+  "failed_this_run": 0,
   "creators": {
     "s.dziura": {
       "handle": "s.dziura",
@@ -453,9 +453,15 @@
       "score": 75.2,
       "category": "Entertainment",
       "city": null,
-      "profile_status": "not_found",
-      "profile_error": "No public profile payload found",
-      "last_attempt_at": "2026-10-02T06:42:44.662717+00:00"
+      "profile_status": "ok",
+      "profile_error": null,
+      "last_attempt_at": "2026-10-02T06:42:44.662717+00:00",
+      "collected_at": "2026-10-02T07:36:16.920239+00:00",
+      "followers": 63609,
+      "following": 24,
+      "total_likes": 472967,
+      "video_count": 27,
+      "verified": false
     },
     "vollite": {
       "handle": "vollite",
@@ -592,9 +598,15 @@
       "score": 72.3,
       "category": "Food",
       "city": null,
-      "profile_status": "not_found",
-      "profile_error": "No public profile payload found",
-      "last_attempt_at": "2026-10-02T06:43:09.906500+00:00"
+      "profile_status": "ok",
+      "profile_error": null,
+      "last_attempt_at": "2026-10-02T06:43:09.906500+00:00",
+      "collected_at": "2026-10-02T07:36:21.462190+00:00",
+      "followers": 28736,
+      "following": 724,
+      "total_likes": 404504,
+      "video_count": 38,
+      "verified": false
     },
     "lale.girlsband": {
       "handle": "lale.girlsband",
@@ -5179,9 +5191,15 @@
       "score": 46.7,
       "category": "Finance",
       "city": null,
-      "profile_status": "limited",
-      "profile_error": "TikTok returned a WAF/interstitial page.",
-      "last_attempt_at": "2026-10-02T06:56:40.001471+00:00"
+      "profile_status": "ok",
+      "profile_error": null,
+      "last_attempt_at": "2026-10-02T06:56:40.001471+00:00",
+      "collected_at": "2026-10-02T07:36:25.865432+00:00",
+      "followers": 58568,
+      "following": 35,
+      "total_likes": 1437204,
+      "video_count": 1468,
+      "verified": false
     },
     "zaton_athletic": {
       "handle": "zaton_athletic",
@@ -5189,7 +5207,15 @@
       "rank": 325,
       "score": 46.6,
       "category": "Sport & Fitness",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:36:30.334467+00:00",
+      "followers": 246282,
+      "following": 1462,
+      "total_likes": 8576806,
+      "video_count": 1192,
+      "verified": false
     },
     "nat.warot": {
       "handle": "nat.warot",
@@ -5197,7 +5223,15 @@
       "rank": 326,
       "score": 46.6,
       "category": "Beauty",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:36:34.665166+00:00",
+      "followers": 84342,
+      "following": 627,
+      "total_likes": 1405330,
+      "video_count": 892,
+      "verified": false
     },
     "agamosier": {
       "handle": "agamosier",
@@ -5205,7 +5239,15 @@
       "rank": 327,
       "score": 46.6,
       "category": "Food",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:36:38.942475+00:00",
+      "followers": 79144,
+      "following": 51,
+      "total_likes": 1335875,
+      "video_count": 581,
+      "verified": false
     },
     "maddy.bijou": {
       "handle": "maddy.bijou",
@@ -5213,7 +5255,15 @@
       "rank": 328,
       "score": 46.5,
       "category": "Sport & Fitness",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:36:43.351380+00:00",
+      "followers": 32241,
+      "following": 0,
+      "total_likes": 314773,
+      "video_count": 527,
+      "verified": false
     },
     "katarajsiemanko": {
       "handle": "katarajsiemanko",
@@ -5221,7 +5271,15 @@
       "rank": 329,
       "score": 46.5,
       "category": "Sport & Fitness",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:36:47.972058+00:00",
+      "followers": 15626,
+      "following": 446,
+      "total_likes": 378047,
+      "video_count": 2873,
+      "verified": false
     },
     "fitdarka": {
       "handle": "fitdarka",
@@ -5229,7 +5287,15 @@
       "rank": 330,
       "score": 46.5,
       "category": "Lifestyle",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:36:52.363946+00:00",
+      "followers": 15176,
+      "following": 112,
+      "total_likes": 1079483,
+      "video_count": 502,
+      "verified": false
     },
     "miloszicelodowski": {
       "handle": "miloszicelodowski",
@@ -5237,7 +5303,15 @@
       "rank": 331,
       "score": 46.4,
       "category": "Finance",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:36:56.676299+00:00",
+      "followers": 17972,
+      "following": 128,
+      "total_likes": 460006,
+      "video_count": 955,
+      "verified": false
     },
     "johnyyysancze": {
       "handle": "johnyyysancze",
@@ -5245,7 +5319,15 @@
       "rank": 332,
       "score": 46.4,
       "category": "Other",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:37:00.949299+00:00",
+      "followers": 16999,
+      "following": 6,
+      "total_likes": 467966,
+      "video_count": 520,
+      "verified": false
     },
     "motywujemywas.pl": {
       "handle": "motywujemywas.pl",
@@ -5253,7 +5335,15 @@
       "rank": 333,
       "score": 46.4,
       "category": "Entertainment",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:37:05.319803+00:00",
+      "followers": 16476,
+      "following": 35,
+      "total_likes": 732216,
+      "video_count": 87,
+      "verified": false
     },
     "chefleooo": {
       "handle": "chefleooo",
@@ -5261,7 +5351,15 @@
       "rank": 334,
       "score": 46.3,
       "category": "Lifestyle",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:37:09.638116+00:00",
+      "followers": 121695,
+      "following": 4,
+      "total_likes": 2512888,
+      "video_count": 293,
+      "verified": false
     },
     "piotrsierpinskihair": {
       "handle": "piotrsierpinskihair",
@@ -5269,7 +5367,15 @@
       "rank": 335,
       "score": 46.2,
       "category": "Education",
-      "city": "Poznań"
+      "city": "Poznań",
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:37:14.066870+00:00",
+      "followers": 266984,
+      "following": 0,
+      "total_likes": 5666399,
+      "video_count": 594,
+      "verified": false
     },
     "zajaczkowska.ewa": {
       "handle": "zajaczkowska.ewa",
@@ -5277,7 +5383,15 @@
       "rank": 336,
       "score": 46.0,
       "category": "Finance",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:37:18.855254+00:00",
+      "followers": 49454,
+      "following": 2,
+      "total_likes": 626640,
+      "video_count": 62,
+      "verified": false
     },
     "zofsz": {
       "handle": "zofsz",
@@ -5285,7 +5399,15 @@
       "rank": 337,
       "score": 46.0,
       "category": "Tech",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:37:23.216485+00:00",
+      "followers": 37435,
+      "following": 1629,
+      "total_likes": 2071475,
+      "video_count": 1289,
+      "verified": false
     },
     "lostinnature.pl": {
       "handle": "lostinnature.pl",
@@ -5293,7 +5415,15 @@
       "rank": 338,
       "score": 45.9,
       "category": "Travel",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:37:27.515973+00:00",
+      "followers": 189856,
+      "following": 0,
+      "total_likes": 3520412,
+      "video_count": 775,
+      "verified": false
     },
     "szuzia01": {
       "handle": "szuzia01",
@@ -5301,7 +5431,15 @@
       "rank": 339,
       "score": 45.9,
       "category": "Beauty",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:37:31.810354+00:00",
+      "followers": 12131,
+      "following": 446,
+      "total_likes": 664690,
+      "video_count": 538,
+      "verified": false
     },
     "ziwanowska": {
       "handle": "ziwanowska",
@@ -5309,7 +5447,15 @@
       "rank": 340,
       "score": 45.8,
       "category": "Beauty",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:37:36.119694+00:00",
+      "followers": 205398,
+      "following": 207,
+      "total_likes": 7684940,
+      "video_count": 2151,
+      "verified": false
     },
     "variaty99": {
       "handle": "variaty99",
@@ -5317,7 +5463,15 @@
       "rank": 341,
       "score": 45.7,
       "category": "Sport & Fitness",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:37:40.416601+00:00",
+      "followers": 24110,
+      "following": 3,
+      "total_likes": 1307327,
+      "video_count": 1021,
+      "verified": false
     },
     "kamilzaprasza": {
       "handle": "kamilzaprasza",
@@ -5325,7 +5479,15 @@
       "rank": 342,
       "score": 45.6,
       "category": "Fashion",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:37:44.731399+00:00",
+      "followers": 54481,
+      "following": 109,
+      "total_likes": 630612,
+      "video_count": 224,
+      "verified": false
     },
     "bigbulapolishstreetfood": {
       "handle": "bigbulapolishstreetfood",
@@ -5333,7 +5495,15 @@
       "rank": 343,
       "score": 45.3,
       "category": "Food",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:37:49.523456+00:00",
+      "followers": 135892,
+      "following": 256,
+      "total_likes": 2144829,
+      "video_count": 406,
+      "verified": false
     },
     "w_krainie_jezior": {
       "handle": "w_krainie_jezior",
@@ -5341,7 +5511,15 @@
       "rank": 344,
       "score": 45.2,
       "category": "Travel",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:37:53.882631+00:00",
+      "followers": 64277,
+      "following": 1447,
+      "total_likes": 540393,
+      "video_count": 582,
+      "verified": false
     },
     "ultrasworld77": {
       "handle": "ultrasworld77",
@@ -5349,7 +5527,15 @@
       "rank": 345,
       "score": 45.0,
       "category": "Other",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:37:58.182868+00:00",
+      "followers": 56514,
+      "following": 8936,
+      "total_likes": 2728715,
+      "video_count": 2828,
+      "verified": false
     },
     "mazamnyam": {
       "handle": "mazamnyam",
@@ -5357,7 +5543,15 @@
       "rank": 346,
       "score": 45.0,
       "category": "Food",
-      "city": "Warszawa"
+      "city": "Warszawa",
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:38:02.473748+00:00",
+      "followers": 25839,
+      "following": 33,
+      "total_likes": 755126,
+      "video_count": 212,
+      "verified": false
     },
     "matisowy": {
       "handle": "matisowy",
@@ -5365,7 +5559,15 @@
       "rank": 347,
       "score": 44.9,
       "category": "Tech",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:38:06.741481+00:00",
+      "followers": 207158,
+      "following": 697,
+      "total_likes": 10565422,
+      "video_count": 980,
+      "verified": true
     },
     "panklasyczek": {
       "handle": "panklasyczek",
@@ -5373,7 +5575,15 @@
       "rank": 348,
       "score": 44.6,
       "category": "Entertainment",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:38:11.074448+00:00",
+      "followers": 38426,
+      "following": 8,
+      "total_likes": 2160100,
+      "video_count": 543,
+      "verified": false
     },
     "powarszawsku": {
       "handle": "powarszawsku",
@@ -5381,7 +5591,15 @@
       "rank": 349,
       "score": 44.6,
       "category": "Education",
-      "city": "Warszawa"
+      "city": "Warszawa",
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:38:15.464643+00:00",
+      "followers": 37476,
+      "following": 1,
+      "total_likes": 366830,
+      "video_count": 442,
+      "verified": false
     },
     "k_sajdutka": {
       "handle": "k_sajdutka",
@@ -5389,7 +5607,15 @@
       "rank": 350,
       "score": 44.6,
       "category": "Fashion",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:38:19.733479+00:00",
+      "followers": 30254,
+      "following": 794,
+      "total_likes": 2630404,
+      "video_count": 760,
+      "verified": false
     },
     "j.tere": {
       "handle": "j.tere",
@@ -5397,7 +5623,15 @@
       "rank": 351,
       "score": 44.5,
       "category": "Beauty",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:38:24.051198+00:00",
+      "followers": 407329,
+      "following": 904,
+      "total_likes": 12340547,
+      "video_count": 2931,
+      "verified": false
     },
     "podlasie.znasie": {
       "handle": "podlasie.znasie",
@@ -5405,7 +5639,15 @@
       "rank": 352,
       "score": 44.5,
       "category": "Lifestyle",
-      "city": "Suwałki"
+      "city": "Suwałki",
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:38:28.336752+00:00",
+      "followers": 16172,
+      "following": 71,
+      "total_likes": 168222,
+      "video_count": 75,
+      "verified": false
     },
     "bogna.sworowska": {
       "handle": "bogna.sworowska",
@@ -5413,7 +5655,15 @@
       "rank": 353,
       "score": 44.3,
       "category": "Fashion",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:38:32.668445+00:00",
+      "followers": 70140,
+      "following": 49,
+      "total_likes": 929885,
+      "video_count": 327,
+      "verified": false
     },
     "wesolabudowlanka5": {
       "handle": "wesolabudowlanka5",
@@ -5421,7 +5671,15 @@
       "rank": 354,
       "score": 44.2,
       "category": "Entertainment",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:38:36.973675+00:00",
+      "followers": 304946,
+      "following": 147,
+      "total_likes": 13651104,
+      "video_count": 2870,
+      "verified": false
     },
     "yanakonotopova": {
       "handle": "yanakonotopova",
@@ -5429,7 +5687,15 @@
       "rank": 355,
       "score": 44.2,
       "category": "Other",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:38:41.335527+00:00",
+      "followers": 221193,
+      "following": 76,
+      "total_likes": 7489515,
+      "video_count": 1648,
+      "verified": false
     },
     "assenstein": {
       "handle": "assenstein",
@@ -5437,7 +5703,15 @@
       "rank": 356,
       "score": 44.2,
       "category": "Gaming",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:38:45.717454+00:00",
+      "followers": 20493,
+      "following": 3,
+      "total_likes": 662261,
+      "video_count": 231,
+      "verified": false
     },
     "trendingtodaypl": {
       "handle": "trendingtodaypl",
@@ -5445,7 +5719,15 @@
       "rank": 357,
       "score": 44.2,
       "category": "Lifestyle",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:38:50.065206+00:00",
+      "followers": 14046,
+      "following": 0,
+      "total_likes": 310116,
+      "video_count": 201,
+      "verified": false
     },
     "popkillerpl": {
       "handle": "popkillerpl",
@@ -5453,7 +5735,15 @@
       "rank": 358,
       "score": 44.0,
       "category": "Music",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:38:54.329968+00:00",
+      "followers": 169990,
+      "following": 196,
+      "total_likes": 6509292,
+      "video_count": 737,
+      "verified": true
     },
     "zolwieksiazkowe": {
       "handle": "zolwieksiazkowe",
@@ -5461,7 +5751,15 @@
       "rank": 359,
       "score": 44.0,
       "category": "Lifestyle",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:38:58.641136+00:00",
+      "followers": 46436,
+      "following": 154,
+      "total_likes": 1435917,
+      "video_count": 1003,
+      "verified": false
     },
     "dompolak00": {
       "handle": "dompolak00",
@@ -5469,7 +5767,15 @@
       "rank": 360,
       "score": 43.9,
       "category": "Sport & Fitness",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:39:02.944329+00:00",
+      "followers": 65060,
+      "following": 29,
+      "total_likes": 1665300,
+      "video_count": 475,
+      "verified": false
     },
     "wszamto": {
       "handle": "wszamto",
@@ -5477,7 +5783,15 @@
       "rank": 361,
       "score": 43.7,
       "category": "Food",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:39:07.238264+00:00",
+      "followers": 604088,
+      "following": 171,
+      "total_likes": 15144363,
+      "video_count": 689,
+      "verified": false
     },
     "kochamlodz": {
       "handle": "kochamlodz",
@@ -5485,7 +5799,15 @@
       "rank": 362,
       "score": 43.7,
       "category": "Food",
-      "city": "Łódź"
+      "city": "Łódź",
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:39:11.750843+00:00",
+      "followers": 258049,
+      "following": 106,
+      "total_likes": 9263377,
+      "video_count": 2563,
+      "verified": false
     },
     "telemar.serwis": {
       "handle": "telemar.serwis",
@@ -5493,7 +5815,15 @@
       "rank": 363,
       "score": 43.7,
       "category": "Tech",
-      "city": "Radom"
+      "city": "Radom",
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:39:16.101231+00:00",
+      "followers": 42664,
+      "following": 80,
+      "total_likes": 651168,
+      "video_count": 340,
+      "verified": false
     },
     "kanalmuzyczny": {
       "handle": "kanalmuzyczny",
@@ -5501,7 +5831,15 @@
       "rank": 364,
       "score": 43.6,
       "category": "Music",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:39:20.369994+00:00",
+      "followers": 420009,
+      "following": 0,
+      "total_likes": 12384980,
+      "video_count": 1698,
+      "verified": false
     },
     "marina.polski_": {
       "handle": "marina.polski_",
@@ -5509,7 +5847,15 @@
       "rank": 365,
       "score": 43.6,
       "category": "Other",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:39:24.632670+00:00",
+      "followers": 97410,
+      "following": 0,
+      "total_likes": 1906915,
+      "video_count": 720,
+      "verified": false
     },
     "onelife_photo": {
       "handle": "onelife_photo",
@@ -5517,7 +5863,15 @@
       "rank": 366,
       "score": 43.5,
       "category": "Tech",
-      "city": "Rzeszów"
+      "city": "Rzeszów",
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:39:28.955236+00:00",
+      "followers": 49205,
+      "following": 85,
+      "total_likes": 1013972,
+      "video_count": 190,
+      "verified": false
     },
     "willa.szczawniczanka": {
       "handle": "willa.szczawniczanka",
@@ -5525,7 +5879,15 @@
       "rank": 367,
       "score": 43.5,
       "category": "Lifestyle",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:39:33.425511+00:00",
+      "followers": 13486,
+      "following": 0,
+      "total_likes": 489997,
+      "video_count": 249,
+      "verified": false
     },
     "ciekawsza.strona.miasta": {
       "handle": "ciekawsza.strona.miasta",
@@ -5533,7 +5895,15 @@
       "rank": 368,
       "score": 43.4,
       "category": "Education",
-      "city": "Warszawa"
+      "city": "Warszawa",
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:39:37.739711+00:00",
+      "followers": 31158,
+      "following": 130,
+      "total_likes": 678348,
+      "video_count": 884,
+      "verified": false
     },
     "homies.inside": {
       "handle": "homies.inside",
@@ -5541,7 +5911,15 @@
       "rank": 369,
       "score": 43.4,
       "category": "Other",
-      "city": "Warszawa"
+      "city": "Warszawa",
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:39:42.060797+00:00",
+      "followers": 10953,
+      "following": 1,
+      "total_likes": 199035,
+      "video_count": 36,
+      "verified": false
     },
     "siodmywswiecie.pl": {
       "handle": "siodmywswiecie.pl",
@@ -5549,7 +5927,15 @@
       "rank": 370,
       "score": 43.3,
       "category": "Lifestyle",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:39:46.372142+00:00",
+      "followers": 71782,
+      "following": 8,
+      "total_likes": 777657,
+      "video_count": 395,
+      "verified": false
     },
     "bethanysturman": {
       "handle": "bethanysturman",
@@ -5557,7 +5943,15 @@
       "rank": 371,
       "score": 43.3,
       "category": "Travel",
-      "city": "Kraków"
+      "city": "Kraków",
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:39:50.730388+00:00",
+      "followers": 11517,
+      "following": 7785,
+      "total_likes": 86095,
+      "video_count": 80,
+      "verified": false
     },
     "aniapotok_": {
       "handle": "aniapotok_",
@@ -5565,7 +5959,15 @@
       "rank": 372,
       "score": 43.2,
       "category": "Sport & Fitness",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:39:55.013103+00:00",
+      "followers": 47646,
+      "following": 589,
+      "total_likes": 4464635,
+      "video_count": 1191,
+      "verified": false
     },
     "polishwithgreg": {
       "handle": "polishwithgreg",
@@ -5573,7 +5975,15 @@
       "rank": 373,
       "score": 43.2,
       "category": "Other",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:39:59.486178+00:00",
+      "followers": 15427,
+      "following": 0,
+      "total_likes": 808266,
+      "video_count": 197,
+      "verified": false
     },
     "krakowiakiwlondynie": {
       "handle": "krakowiakiwlondynie",
@@ -5581,7 +5991,15 @@
       "rank": 374,
       "score": 43.1,
       "category": "Entertainment",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:40:03.948169+00:00",
+      "followers": 378184,
+      "following": 1529,
+      "total_likes": 8668368,
+      "video_count": 1991,
+      "verified": false
     },
     "original_ryszardmazur": {
       "handle": "original_ryszardmazur",
@@ -5589,7 +6007,15 @@
       "rank": 375,
       "score": 43.1,
       "category": "Entertainment",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:40:08.334506+00:00",
+      "followers": 46909,
+      "following": 16,
+      "total_likes": 1587940,
+      "video_count": 229,
+      "verified": false
     },
     "zanimbylinternet": {
       "handle": "zanimbylinternet",
@@ -5597,7 +6023,15 @@
       "rank": 376,
       "score": 43.1,
       "category": "Lifestyle",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:40:12.689404+00:00",
+      "followers": 18791,
+      "following": 0,
+      "total_likes": 525672,
+      "video_count": 126,
+      "verified": false
     },
     "ljnml": {
       "handle": "ljnml",
@@ -5605,7 +6039,15 @@
       "rank": 377,
       "score": 43.0,
       "category": "Beauty",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:40:17.124809+00:00",
+      "followers": 55328,
+      "following": 90,
+      "total_likes": 3453668,
+      "video_count": 1281,
+      "verified": false
     },
     "polskalifepl": {
       "handle": "polskalifepl",
@@ -5613,7 +6055,15 @@
       "rank": 378,
       "score": 42.7,
       "category": "Lifestyle",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:40:21.790525+00:00",
+      "followers": 15146,
+      "following": 22,
+      "total_likes": 373631,
+      "video_count": 202,
+      "verified": false
     },
     "cetaphil_polska": {
       "handle": "cetaphil_polska",
@@ -5621,7 +6071,15 @@
       "rank": 379,
       "score": 42.6,
       "category": "Beauty",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:40:26.448935+00:00",
+      "followers": 88141,
+      "following": 99,
+      "total_likes": 1222876,
+      "video_count": 747,
+      "verified": true
     },
     "wika.dunajj": {
       "handle": "wika.dunajj",
@@ -5629,7 +6087,15 @@
       "rank": 380,
       "score": 42.6,
       "category": "Beauty",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:40:30.912978+00:00",
+      "followers": 24459,
+      "following": 1648,
+      "total_likes": 899806,
+      "video_count": 296,
+      "verified": false
     },
     "kaszub9710": {
       "handle": "kaszub9710",
@@ -5637,7 +6103,15 @@
       "rank": 381,
       "score": 42.6,
       "category": "Entertainment",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:40:35.573373+00:00",
+      "followers": 12434,
+      "following": 3588,
+      "total_likes": 300793,
+      "video_count": 527,
+      "verified": false
     },
     "ciekawus": {
       "handle": "ciekawus",
@@ -5645,7 +6119,15 @@
       "rank": 382,
       "score": 42.3,
       "category": "Beauty",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:40:40.056052+00:00",
+      "followers": 120203,
+      "following": 50,
+      "total_likes": 963557,
+      "video_count": 56,
+      "verified": false
     },
     "katythegoddess": {
       "handle": "katythegoddess",
@@ -5653,7 +6135,15 @@
       "rank": 383,
       "score": 42.2,
       "category": "Lifestyle",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:40:44.511178+00:00",
+      "followers": 34786,
+      "following": 11,
+      "total_likes": 409193,
+      "video_count": 1624,
+      "verified": false
     },
     "lodzkiedlaciebie": {
       "handle": "lodzkiedlaciebie",
@@ -5661,7 +6151,15 @@
       "rank": 384,
       "score": 42.0,
       "category": "Travel",
-      "city": "Łódź"
+      "city": "Łódź",
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:40:49.018477+00:00",
+      "followers": 10761,
+      "following": 260,
+      "total_likes": 282744,
+      "video_count": 450,
+      "verified": false
     },
     "blyskawiczneprzepisy": {
       "handle": "blyskawiczneprzepisy",
@@ -5669,7 +6167,15 @@
       "rank": 385,
       "score": 41.9,
       "category": "Food",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:40:53.378948+00:00",
+      "followers": 29025,
+      "following": 26,
+      "total_likes": 287028,
+      "video_count": 98,
+      "verified": false
     },
     "partyzancilubelszczyzny": {
       "handle": "partyzancilubelszczyzny",
@@ -5677,7 +6183,15 @@
       "rank": 386,
       "score": 41.6,
       "category": "Education",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:40:57.954833+00:00",
+      "followers": 196042,
+      "following": 8,
+      "total_likes": 2456315,
+      "video_count": 1106,
+      "verified": false
     },
     "kanal_tak": {
       "handle": "kanal_tak",
@@ -5685,7 +6199,15 @@
       "rank": 387,
       "score": 41.6,
       "category": "Other",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:41:02.299140+00:00",
+      "followers": 23108,
+      "following": 0,
+      "total_likes": 445063,
+      "video_count": 500,
+      "verified": false
     },
     "ania_travel_": {
       "handle": "ania_travel_",
@@ -5693,7 +6215,15 @@
       "rank": 388,
       "score": 41.5,
       "category": "Travel",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:41:06.642086+00:00",
+      "followers": 25545,
+      "following": 680,
+      "total_likes": 382971,
+      "video_count": 1165,
+      "verified": false
     },
     "giniginaa": {
       "handle": "giniginaa",
@@ -5701,7 +6231,15 @@
       "rank": 389,
       "score": 41.4,
       "category": "Education",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:41:10.959759+00:00",
+      "followers": 153498,
+      "following": 126,
+      "total_likes": 4597840,
+      "video_count": 1138,
+      "verified": false
     },
     "primevideopl": {
       "handle": "primevideopl",
@@ -5709,7 +6247,15 @@
       "rank": 390,
       "score": 41.3,
       "category": "Finance",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:41:15.604627+00:00",
+      "followers": 1026166,
+      "following": 117,
+      "total_likes": 25758151,
+      "video_count": 2332,
+      "verified": true
     },
     "olavogaa": {
       "handle": "olavogaa",
@@ -5717,7 +6263,15 @@
       "rank": 391,
       "score": 41.3,
       "category": "Fashion",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:41:20.070298+00:00",
+      "followers": 47916,
+      "following": 240,
+      "total_likes": 129911,
+      "video_count": 863,
+      "verified": false
     },
     "_angelikagrabowska": {
       "handle": "_angelikagrabowska",
@@ -5725,7 +6279,15 @@
       "rank": 392,
       "score": 41.1,
       "category": "Beauty",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:41:24.563138+00:00",
+      "followers": 237185,
+      "following": 376,
+      "total_likes": 8183530,
+      "video_count": 1379,
+      "verified": false
     },
     "wewlasnymstylu": {
       "handle": "wewlasnymstylu",
@@ -5733,7 +6295,15 @@
       "rank": 393,
       "score": 40.9,
       "category": "Travel",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:41:28.860001+00:00",
+      "followers": 241672,
+      "following": 20,
+      "total_likes": 7092022,
+      "video_count": 1004,
+      "verified": false
     },
     "studygraminaczej": {
       "handle": "studygraminaczej",
@@ -5741,7 +6311,15 @@
       "rank": 394,
       "score": 40.6,
       "category": "Education",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:41:33.193973+00:00",
+      "followers": 16939,
+      "following": 855,
+      "total_likes": 1005962,
+      "video_count": 605,
+      "verified": false
     },
     "onetstylzycia": {
       "handle": "onetstylzycia",
@@ -5749,7 +6327,15 @@
       "rank": 395,
       "score": 40.4,
       "category": "Travel",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:41:37.611288+00:00",
+      "followers": 24076,
+      "following": 9,
+      "total_likes": 875117,
+      "video_count": 1045,
+      "verified": false
     },
     "cossiegotuje": {
       "handle": "cossiegotuje",
@@ -5757,7 +6343,15 @@
       "rank": 396,
       "score": 40.1,
       "category": "Food",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:41:41.923793+00:00",
+      "followers": 163468,
+      "following": 85,
+      "total_likes": 3239305,
+      "video_count": 945,
+      "verified": false
     },
     "jablkogruszkaipietruszka": {
       "handle": "jablkogruszkaipietruszka",
@@ -5765,7 +6359,15 @@
       "rank": 397,
       "score": 40.0,
       "category": "Food",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:41:46.384346+00:00",
+      "followers": 102405,
+      "following": 28,
+      "total_likes": 2429818,
+      "video_count": 619,
+      "verified": false
     },
     "dobronianka": {
       "handle": "dobronianka",
@@ -5773,7 +6375,15 @@
       "rank": 398,
       "score": 39.9,
       "category": "Lifestyle",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:41:50.917524+00:00",
+      "followers": 22378,
+      "following": 14,
+      "total_likes": 336058,
+      "video_count": 285,
+      "verified": false
     },
     "hereforthelikes595": {
       "handle": "hereforthelikes595",
@@ -5781,7 +6391,15 @@
       "rank": 399,
       "score": 39.9,
       "category": "Entertainment",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:41:55.366953+00:00",
+      "followers": 10736,
+      "following": 0,
+      "total_likes": 650825,
+      "video_count": 527,
+      "verified": false
     },
     "serekszop_w_kuchni": {
       "handle": "serekszop_w_kuchni",
@@ -5789,7 +6407,15 @@
       "rank": 400,
       "score": 39.8,
       "category": "Food",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:41:59.687808+00:00",
+      "followers": 141340,
+      "following": 165,
+      "total_likes": 1281961,
+      "video_count": 662,
+      "verified": false
     },
     "michalkoperboks": {
       "handle": "michalkoperboks",
@@ -5797,7 +6423,15 @@
       "rank": 401,
       "score": 39.7,
       "category": "Other",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:42:03.973097+00:00",
+      "followers": 12951,
+      "following": 4,
+      "total_likes": 581204,
+      "video_count": 574,
+      "verified": false
     },
     "babaodpolskiego": {
       "handle": "babaodpolskiego",
@@ -5805,7 +6439,15 @@
       "rank": 402,
       "score": 39.6,
       "category": "Education",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:42:08.339246+00:00",
+      "followers": 52400,
+      "following": 110,
+      "total_likes": 1469860,
+      "video_count": 1980,
+      "verified": false
     },
     "pixxo1994": {
       "handle": "pixxo1994",
@@ -5813,7 +6455,15 @@
       "rank": 403,
       "score": 39.4,
       "category": "Entertainment",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:42:12.732090+00:00",
+      "followers": 16936,
+      "following": 2,
+      "total_likes": 275661,
+      "video_count": 86,
+      "verified": false
     },
     "gdziewpolscenaweekend": {
       "handle": "gdziewpolscenaweekend",
@@ -5821,7 +6471,15 @@
       "rank": 404,
       "score": 39.3,
       "category": "Travel",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:42:17.222443+00:00",
+      "followers": 23857,
+      "following": 22,
+      "total_likes": 183930,
+      "video_count": 322,
+      "verified": false
     },
     "glowskin_marta": {
       "handle": "glowskin_marta",
@@ -5829,7 +6487,15 @@
       "rank": 405,
       "score": 39.1,
       "category": "Beauty",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:42:21.555233+00:00",
+      "followers": 38154,
+      "following": 41,
+      "total_likes": 311559,
+      "video_count": 399,
+      "verified": false
     },
     "zurnalista.pl": {
       "handle": "zurnalista.pl",
@@ -5837,7 +6503,15 @@
       "rank": 406,
       "score": 39.0,
       "category": "Other",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:42:25.902389+00:00",
+      "followers": 553002,
+      "following": 133,
+      "total_likes": 35512664,
+      "video_count": 1605,
+      "verified": false
     },
     "bbgawronska": {
       "handle": "bbgawronska",
@@ -5845,7 +6519,15 @@
       "rank": 407,
       "score": 38.9,
       "category": "Lifestyle",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:42:30.292868+00:00",
+      "followers": 18100,
+      "following": 20,
+      "total_likes": 329298,
+      "video_count": 1341,
+      "verified": false
     },
     "podroze_za_grosze": {
       "handle": "podroze_za_grosze",
@@ -5853,7 +6535,15 @@
       "rank": 408,
       "score": 38.8,
       "category": "Travel",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:42:34.619736+00:00",
+      "followers": 65425,
+      "following": 34,
+      "total_likes": 508230,
+      "video_count": 331,
+      "verified": false
     },
     "check_in_klaudia_michal": {
       "handle": "check_in_klaudia_michal",
@@ -5861,7 +6551,15 @@
       "rank": 409,
       "score": 38.6,
       "category": "Food",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:42:38.966713+00:00",
+      "followers": 12023,
+      "following": 0,
+      "total_likes": 152187,
+      "video_count": 222,
+      "verified": false
     },
     "magdalenaadamczykmua": {
       "handle": "magdalenaadamczykmua",
@@ -5869,7 +6567,15 @@
       "rank": 410,
       "score": 38.6,
       "category": "Beauty",
-      "city": "Kraków"
+      "city": "Kraków",
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:42:43.404623+00:00",
+      "followers": 10525,
+      "following": 472,
+      "total_likes": 217452,
+      "video_count": 533,
+      "verified": false
     },
     "wolnoscslowa2.0": {
       "handle": "wolnoscslowa2.0",
@@ -5877,7 +6583,15 @@
       "rank": 411,
       "score": 38.5,
       "category": "Other",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:42:47.766645+00:00",
+      "followers": 216559,
+      "following": 28,
+      "total_likes": 11609451,
+      "video_count": 2734,
+      "verified": false
     },
     "bieganieuskrzydlapl": {
       "handle": "bieganieuskrzydlapl",
@@ -5885,7 +6599,15 @@
       "rank": 412,
       "score": 38.5,
       "category": "Sport & Fitness",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:42:52.178348+00:00",
+      "followers": 32753,
+      "following": 54,
+      "total_likes": 875227,
+      "video_count": 1088,
+      "verified": false
     },
     "auroraa_glow": {
       "handle": "auroraa_glow",
@@ -5893,7 +6615,15 @@
       "rank": 413,
       "score": 38.5,
       "category": "Lifestyle",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:42:56.567126+00:00",
+      "followers": 13819,
+      "following": 227,
+      "total_likes": 781506,
+      "video_count": 452,
+      "verified": false
     },
     "hannarchya": {
       "handle": "hannarchya",
@@ -5901,7 +6631,15 @@
       "rank": 414,
       "score": 38.4,
       "category": "Other",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:43:00.859525+00:00",
+      "followers": 86519,
+      "following": 74,
+      "total_likes": 2695252,
+      "video_count": 1871,
+      "verified": false
     },
     "amjapan5": {
       "handle": "amjapan5",
@@ -5909,7 +6647,15 @@
       "rank": 415,
       "score": 38.4,
       "category": "Entertainment",
-      "city": "Tarnowo Podgorne"
+      "city": "Tarnowo Podgorne",
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:43:05.224077+00:00",
+      "followers": 63202,
+      "following": 72,
+      "total_likes": 1049876,
+      "video_count": 1067,
+      "verified": false
     },
     "djspider2000": {
       "handle": "djspider2000",
@@ -5917,7 +6663,15 @@
       "rank": 416,
       "score": 38.4,
       "category": "Music",
-      "city": "Gdańsk"
+      "city": "Gdańsk",
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:43:09.558833+00:00",
+      "followers": 19378,
+      "following": 197,
+      "total_likes": 453481,
+      "video_count": 449,
+      "verified": false
     },
     "gresoutlet_targowisko": {
       "handle": "gresoutlet_targowisko",
@@ -5925,7 +6679,15 @@
       "rank": 417,
       "score": 38.4,
       "category": "Food",
-      "city": "Kraków"
+      "city": "Kraków",
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:43:14.030718+00:00",
+      "followers": 11685,
+      "following": 438,
+      "total_likes": 85117,
+      "video_count": 331,
+      "verified": false
     },
     "polskiemedia": {
       "handle": "polskiemedia",
@@ -5933,7 +6695,15 @@
       "rank": 418,
       "score": 38.3,
       "category": "Other",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:43:18.334886+00:00",
+      "followers": 33178,
+      "following": 30,
+      "total_likes": 746957,
+      "video_count": 1152,
+      "verified": false
     },
     "polskawieszhumorem": {
       "handle": "polskawieszhumorem",
@@ -5941,7 +6711,15 @@
       "rank": 419,
       "score": 38.2,
       "category": "Entertainment",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:43:23.056031+00:00",
+      "followers": 19850,
+      "following": 0,
+      "total_likes": 349554,
+      "video_count": 145,
+      "verified": false
     },
     "jexsuyt": {
       "handle": "jexsuyt",
@@ -5949,7 +6727,15 @@
       "rank": 420,
       "score": 38.2,
       "category": "Entertainment",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:43:27.401643+00:00",
+      "followers": 11996,
+      "following": 51,
+      "total_likes": 17198,
+      "video_count": 49,
+      "verified": false
     },
     "zabojczopyszne": {
       "handle": "zabojczopyszne",
@@ -5957,7 +6743,15 @@
       "rank": 421,
       "score": 38.1,
       "category": "Food",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:43:31.806433+00:00",
+      "followers": 317082,
+      "following": 1173,
+      "total_likes": 4686159,
+      "video_count": 874,
+      "verified": false
     },
     "nietylkopasta.pl": {
       "handle": "nietylkopasta.pl",
@@ -5965,7 +6759,15 @@
       "rank": 422,
       "score": 38.1,
       "category": "Food",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:43:36.168355+00:00",
+      "followers": 105674,
+      "following": 178,
+      "total_likes": 794102,
+      "video_count": 674,
+      "verified": false
     },
     "wieczniewolni": {
       "handle": "wieczniewolni",
@@ -5973,7 +6775,15 @@
       "rank": 423,
       "score": 38.1,
       "category": "Travel",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:43:40.563049+00:00",
+      "followers": 90642,
+      "following": 44,
+      "total_likes": 1176783,
+      "video_count": 1534,
+      "verified": false
     },
     "kabmoralnegoniepokoju": {
       "handle": "kabmoralnegoniepokoju",
@@ -5981,7 +6791,15 @@
       "rank": 424,
       "score": 38.1,
       "category": "Entertainment",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:43:44.902892+00:00",
+      "followers": 19612,
+      "following": 0,
+      "total_likes": 210235,
+      "video_count": 230,
+      "verified": false
     },
     "mocne.sceny.pl": {
       "handle": "mocne.sceny.pl",
@@ -5989,7 +6807,15 @@
       "rank": 425,
       "score": 38.0,
       "category": "Entertainment",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:43:49.285534+00:00",
+      "followers": 26918,
+      "following": 0,
+      "total_likes": 1358290,
+      "video_count": 686,
+      "verified": false
     },
     "ola.jozwiak": {
       "handle": "ola.jozwiak",
@@ -5997,7 +6823,15 @@
       "rank": 426,
       "score": 37.9,
       "category": "Lifestyle",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:43:53.622773+00:00",
+      "followers": 69411,
+      "following": 586,
+      "total_likes": 1941372,
+      "video_count": 297,
+      "verified": false
     },
     "techkominfo_pl": {
       "handle": "techkominfo_pl",
@@ -6005,7 +6839,15 @@
       "rank": 427,
       "score": 37.9,
       "category": "Gaming",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:43:58.037417+00:00",
+      "followers": 21308,
+      "following": 9,
+      "total_likes": 64527,
+      "video_count": 331,
+      "verified": false
     },
     "tuzawszejestproblem": {
       "handle": "tuzawszejestproblem",
@@ -6013,7 +6855,15 @@
       "rank": 428,
       "score": 37.9,
       "category": "Entertainment",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:44:02.476333+00:00",
+      "followers": 20400,
+      "following": 0,
+      "total_likes": 422510,
+      "video_count": 286,
+      "verified": false
     },
     "pawel.przystawa": {
       "handle": "pawel.przystawa",
@@ -6021,7 +6871,15 @@
       "rank": 429,
       "score": 37.9,
       "category": "Sport & Fitness",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:44:06.826662+00:00",
+      "followers": 13787,
+      "following": 518,
+      "total_likes": 911752,
+      "video_count": 462,
+      "verified": false
     },
     "knorrpolska": {
       "handle": "knorrpolska",
@@ -6029,7 +6887,15 @@
       "rank": 430,
       "score": 37.9,
       "category": "Food",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:44:11.271829+00:00",
+      "followers": 11415,
+      "following": 14,
+      "total_likes": 72128,
+      "video_count": 91,
+      "verified": false
     },
     "klatex": {
       "handle": "klatex",
@@ -6037,7 +6903,15 @@
       "rank": 431,
       "score": 37.8,
       "category": "Beauty",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:44:15.626432+00:00",
+      "followers": 1357080,
+      "following": 499,
+      "total_likes": 33130901,
+      "video_count": 1171,
+      "verified": true
     },
     "auto_boss_9999": {
       "handle": "auto_boss_9999",
@@ -6045,7 +6919,15 @@
       "rank": 432,
       "score": 37.8,
       "category": "Lifestyle",
-      "city": "Warszawa"
+      "city": "Warszawa",
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:44:20.659047+00:00",
+      "followers": 92168,
+      "following": 8746,
+      "total_likes": 631420,
+      "video_count": 1593,
+      "verified": false
     },
     "kwas517": {
       "handle": "kwas517",
@@ -6053,7 +6935,15 @@
       "rank": 433,
       "score": 37.7,
       "category": "Sport & Fitness",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:44:25.016587+00:00",
+      "followers": 600365,
+      "following": 674,
+      "total_likes": 15894979,
+      "video_count": 6530,
+      "verified": false
     },
     "viki.waskowiak": {
       "handle": "viki.waskowiak",
@@ -6061,7 +6951,15 @@
       "rank": 434,
       "score": 37.7,
       "category": "Lifestyle",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:44:29.326852+00:00",
+      "followers": 95448,
+      "following": 61,
+      "total_likes": 6108495,
+      "video_count": 968,
+      "verified": false
     },
     "petercoleslanguages": {
       "handle": "petercoleslanguages",
@@ -6069,7 +6967,15 @@
       "rank": 435,
       "score": 37.6,
       "category": "Education",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:44:33.622786+00:00",
+      "followers": 71887,
+      "following": 57,
+      "total_likes": 7826670,
+      "video_count": 1816,
+      "verified": false
     },
     "andrzejkoo": {
       "handle": "andrzejkoo",
@@ -6077,7 +6983,15 @@
       "rank": 436,
       "score": 37.6,
       "category": "Other",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:44:37.959721+00:00",
+      "followers": 20057,
+      "following": 17,
+      "total_likes": 212920,
+      "video_count": 218,
+      "verified": false
     },
     "xmarcok": {
       "handle": "xmarcok",
@@ -6085,7 +6999,15 @@
       "rank": 437,
       "score": 37.5,
       "category": "Music",
-      "city": "Zakopane"
+      "city": "Zakopane",
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:44:42.266703+00:00",
+      "followers": 27740,
+      "following": 164,
+      "total_likes": 157859,
+      "video_count": 440,
+      "verified": false
     },
     "bebe__blu": {
       "handle": "bebe__blu",
@@ -6093,7 +7015,15 @@
       "rank": 438,
       "score": 37.5,
       "category": "Gaming",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:44:46.774032+00:00",
+      "followers": 12058,
+      "following": 143,
+      "total_likes": 104295,
+      "video_count": 93,
+      "verified": false
     },
     "asia_jakubiec": {
       "handle": "asia_jakubiec",
@@ -6101,7 +7031,15 @@
       "rank": 439,
       "score": 37.4,
       "category": "Travel",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:44:51.053666+00:00",
+      "followers": 116824,
+      "following": 127,
+      "total_likes": 3931128,
+      "video_count": 825,
+      "verified": false
     },
     "fishyourkicks": {
       "handle": "fishyourkicks",
@@ -6109,7 +7047,15 @@
       "rank": 440,
       "score": 37.4,
       "category": "Fashion",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:44:55.384701+00:00",
+      "followers": 25818,
+      "following": 4,
+      "total_likes": 1162772,
+      "video_count": 400,
+      "verified": false
     },
     "mateusz_macierakowski": {
       "handle": "mateusz_macierakowski",
@@ -6117,7 +7063,15 @@
       "rank": 441,
       "score": 37.4,
       "category": "Education",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:44:59.631244+00:00",
+      "followers": 12086,
+      "following": 3,
+      "total_likes": 414425,
+      "video_count": 195,
+      "verified": false
     },
     "amourzworld": {
       "handle": "amourzworld",
@@ -6125,7 +7079,15 @@
       "rank": 442,
       "score": 37.1,
       "category": "Music",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:45:03.939440+00:00",
+      "followers": 16864,
+      "following": 33,
+      "total_likes": 1251778,
+      "video_count": 544,
+      "verified": false
     },
     "werr7504": {
       "handle": "werr7504",
@@ -6133,7 +7095,15 @@
       "rank": 443,
       "score": 37.0,
       "category": "Entertainment",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:45:08.244085+00:00",
+      "followers": 65858,
+      "following": 20,
+      "total_likes": 319666,
+      "video_count": 241,
+      "verified": false
     },
     "icampolska": {
       "handle": "icampolska",
@@ -6141,7 +7111,15 @@
       "rank": 444,
       "score": 37.0,
       "category": "Tech",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:45:12.648658+00:00",
+      "followers": 62489,
+      "following": 30,
+      "total_likes": 253698,
+      "video_count": 136,
+      "verified": false
     },
     "lukaszwolosowicz": {
       "handle": "lukaszwolosowicz",
@@ -6149,7 +7127,15 @@
       "rank": 445,
       "score": 37.0,
       "category": "Music",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:45:17.035488+00:00",
+      "followers": 44377,
+      "following": 2431,
+      "total_likes": 1021328,
+      "video_count": 4240,
+      "verified": false
     },
     "kanalkomediowy": {
       "handle": "kanalkomediowy",
@@ -6157,7 +7143,15 @@
       "rank": 446,
       "score": 37.0,
       "category": "Entertainment",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:45:21.433444+00:00",
+      "followers": 29485,
+      "following": 1,
+      "total_likes": 397340,
+      "video_count": 657,
+      "verified": false
     },
     "younews_pl": {
       "handle": "younews_pl",
@@ -6165,7 +7159,15 @@
       "rank": 447,
       "score": 36.8,
       "category": "Lifestyle",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:45:25.745084+00:00",
+      "followers": 27242,
+      "following": 0,
+      "total_likes": 1073219,
+      "video_count": 557,
+      "verified": false
     },
     "noowakpatrycja": {
       "handle": "noowakpatrycja",
@@ -6173,7 +7175,15 @@
       "rank": 448,
       "score": 36.6,
       "category": "Beauty",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:45:30.199178+00:00",
+      "followers": 45018,
+      "following": 314,
+      "total_likes": 1336316,
+      "video_count": 614,
+      "verified": false
     },
     "bake_with_coffy": {
       "handle": "bake_with_coffy",
@@ -6181,7 +7191,15 @@
       "rank": 449,
       "score": 36.5,
       "category": "Food",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:45:34.640437+00:00",
+      "followers": 10194,
+      "following": 0,
+      "total_likes": 265790,
+      "video_count": 165,
+      "verified": false
     },
     "wiciuuuuuuuuuuu": {
       "handle": "wiciuuuuuuuuuuu",
@@ -6189,7 +7207,15 @@
       "rank": 450,
       "score": 36.3,
       "category": "Food",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:45:38.954983+00:00",
+      "followers": 36832,
+      "following": 103,
+      "total_likes": 598705,
+      "video_count": 343,
+      "verified": false
     },
     "kinga.kosidowska": {
       "handle": "kinga.kosidowska",
@@ -6197,7 +7223,15 @@
       "rank": 451,
       "score": 36.2,
       "category": "Food",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:45:43.267206+00:00",
+      "followers": 13232,
+      "following": 329,
+      "total_likes": 152226,
+      "video_count": 125,
+      "verified": false
     },
     "tomonikaa": {
       "handle": "tomonikaa",
@@ -6205,7 +7239,15 @@
       "rank": 452,
       "score": 36.1,
       "category": "Beauty",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:45:47.675592+00:00",
+      "followers": 17821,
+      "following": 26,
+      "total_likes": 488931,
+      "video_count": 288,
+      "verified": false
     },
     "veronika.bernat": {
       "handle": "veronika.bernat",
@@ -6213,7 +7255,15 @@
       "rank": 453,
       "score": 36.1,
       "category": "Lifestyle",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:45:52.070267+00:00",
+      "followers": 15182,
+      "following": 158,
+      "total_likes": 462229,
+      "video_count": 187,
+      "verified": false
     },
     "maste_official": {
       "handle": "maste_official",
@@ -6221,7 +7271,15 @@
       "rank": 454,
       "score": 36.0,
       "category": "Food",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:45:56.356214+00:00",
+      "followers": 209883,
+      "following": 260,
+      "total_likes": 4124647,
+      "video_count": 1491,
+      "verified": false
     },
     "adrianwalkalone": {
       "handle": "adrianwalkalone",
@@ -6229,7 +7287,15 @@
       "rank": 455,
       "score": 36.0,
       "category": "Lifestyle",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:46:00.742190+00:00",
+      "followers": 25308,
+      "following": 968,
+      "total_likes": 834474,
+      "video_count": 923,
+      "verified": false
     },
     "sylwia_testuje": {
       "handle": "sylwia_testuje",
@@ -6237,7 +7303,15 @@
       "rank": 456,
       "score": 35.7,
       "category": "Lifestyle",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:46:05.082680+00:00",
+      "followers": 54245,
+      "following": 1581,
+      "total_likes": 1452389,
+      "video_count": 1316,
+      "verified": false
     },
     "akademiastudio7": {
       "handle": "akademiastudio7",
@@ -6245,7 +7319,15 @@
       "rank": 457,
       "score": 35.6,
       "category": "Beauty",
-      "city": "Warszawa"
+      "city": "Warszawa",
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:46:09.383325+00:00",
+      "followers": 33040,
+      "following": 1655,
+      "total_likes": 869094,
+      "video_count": 1166,
+      "verified": false
     },
     "suwerennapolskapl": {
       "handle": "suwerennapolskapl",
@@ -6253,7 +7335,15 @@
       "rank": 458,
       "score": 35.5,
       "category": "Finance",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:46:13.725450+00:00",
+      "followers": 91313,
+      "following": 46,
+      "total_likes": 3148186,
+      "video_count": 5172,
+      "verified": false
     },
     "piotrleepeck": {
       "handle": "piotrleepeck",
@@ -6261,7 +7351,15 @@
       "rank": 459,
       "score": 35.3,
       "category": "Education",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:46:18.292186+00:00",
+      "followers": 50574,
+      "following": 0,
+      "total_likes": 997214,
+      "video_count": 731,
+      "verified": false
     },
     "food_farmer": {
       "handle": "food_farmer",
@@ -6269,7 +7367,15 @@
       "rank": 460,
       "score": 35.2,
       "category": "Food",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:46:22.757863+00:00",
+      "followers": 54341,
+      "following": 678,
+      "total_likes": 358178,
+      "video_count": 259,
+      "verified": false
     },
     "theamerykanka": {
       "handle": "theamerykanka",
@@ -6277,7 +7383,15 @@
       "rank": 461,
       "score": 35.2,
       "category": "Food",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:46:27.263441+00:00",
+      "followers": 26919,
+      "following": 585,
+      "total_likes": 1219912,
+      "video_count": 1023,
+      "verified": false
     },
     "wheretravelmarta": {
       "handle": "wheretravelmarta",
@@ -6285,7 +7399,15 @@
       "rank": 462,
       "score": 35.2,
       "category": "Travel",
-      "city": "Kraków"
+      "city": "Kraków",
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:46:31.551875+00:00",
+      "followers": 21919,
+      "following": 25,
+      "total_likes": 290742,
+      "video_count": 165,
+      "verified": false
     },
     "soflowpl": {
       "handle": "soflowpl",
@@ -6293,7 +7415,15 @@
       "rank": 463,
       "score": 35.1,
       "category": "Beauty",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:46:35.927908+00:00",
+      "followers": 11944,
+      "following": 88,
+      "total_likes": 168869,
+      "video_count": 529,
+      "verified": false
     },
     "kontrowersyjnymarek": {
       "handle": "kontrowersyjnymarek",
@@ -6301,7 +7431,15 @@
       "rank": 464,
       "score": 35.0,
       "category": "Finance",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:46:40.251878+00:00",
+      "followers": 39476,
+      "following": 57,
+      "total_likes": 406321,
+      "video_count": 438,
+      "verified": false
     },
     "martinskolsky": {
       "handle": "martinskolsky",
@@ -6309,7 +7447,15 @@
       "rank": 465,
       "score": 35.0,
       "category": "Entertainment",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:46:44.589190+00:00",
+      "followers": 18215,
+      "following": 386,
+      "total_likes": 727807,
+      "video_count": 1517,
+      "verified": false
     },
     "oludzibudzi": {
       "handle": "oludzibudzi",
@@ -6317,7 +7463,15 @@
       "rank": 466,
       "score": 34.9,
       "category": "Entertainment",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:46:48.876278+00:00",
+      "followers": 36290,
+      "following": 51,
+      "total_likes": 1595571,
+      "video_count": 656,
+      "verified": false
     },
     "mojedomowejedzenie": {
       "handle": "mojedomowejedzenie",
@@ -6325,7 +7479,15 @@
       "rank": 467,
       "score": 34.5,
       "category": "Food",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:46:53.873863+00:00",
+      "followers": 186344,
+      "following": 68,
+      "total_likes": 1718847,
+      "video_count": 776,
+      "verified": false
     },
     "canalplus_sport_polska": {
       "handle": "canalplus_sport_polska",
@@ -6333,7 +7495,15 @@
       "rank": 468,
       "score": 34.3,
       "category": "Sport & Fitness",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:46:58.357068+00:00",
+      "followers": 678843,
+      "following": 39,
+      "total_likes": 48778017,
+      "video_count": 5096,
+      "verified": true
     },
     "diet_and_training_by_ann": {
       "handle": "diet_and_training_by_ann",
@@ -6341,7 +7511,15 @@
       "rank": 469,
       "score": 34.2,
       "category": "Sport & Fitness",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:47:02.767474+00:00",
+      "followers": 97005,
+      "following": 44,
+      "total_likes": 772902,
+      "video_count": 728,
+      "verified": false
     },
     "patrycjaxsobolewska": {
       "handle": "patrycjaxsobolewska",
@@ -6349,7 +7527,15 @@
       "rank": 470,
       "score": 33.6,
       "category": "Beauty",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:47:07.100442+00:00",
+      "followers": 101501,
+      "following": 520,
+      "total_likes": 944258,
+      "video_count": 107,
+      "verified": false
     },
     "kuchniaizy": {
       "handle": "kuchniaizy",
@@ -6357,7 +7543,15 @@
       "rank": 471,
       "score": 33.6,
       "category": "Food",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:47:11.451878+00:00",
+      "followers": 85310,
+      "following": 627,
+      "total_likes": 927324,
+      "video_count": 916,
+      "verified": false
     },
     "rmf_24": {
       "handle": "rmf_24",
@@ -6365,7 +7559,15 @@
       "rank": 472,
       "score": 33.4,
       "category": "Other",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:47:15.865467+00:00",
+      "followers": 38169,
+      "following": 3,
+      "total_likes": 1237330,
+      "video_count": 1193,
+      "verified": false
     },
     "biznesodpoczatku": {
       "handle": "biznesodpoczatku",
@@ -6373,7 +7575,15 @@
       "rank": 473,
       "score": 33.3,
       "category": "Finance",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:47:20.174043+00:00",
+      "followers": 75606,
+      "following": 0,
+      "total_likes": 778204,
+      "video_count": 772,
+      "verified": false
     },
     "bites_family": {
       "handle": "bites_family",
@@ -6381,7 +7591,15 @@
       "rank": 474,
       "score": 33.3,
       "category": "Beauty",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:47:24.533392+00:00",
+      "followers": 34620,
+      "following": 101,
+      "total_likes": 2322961,
+      "video_count": 151,
+      "verified": false
     },
     "m.turczynka": {
       "handle": "m.turczynka",
@@ -6389,7 +7607,15 @@
       "rank": 475,
       "score": 33.0,
       "category": "Food",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:47:29.073065+00:00",
+      "followers": 27657,
+      "following": 115,
+      "total_likes": 467917,
+      "video_count": 773,
+      "verified": false
     },
     "andrzej9448": {
       "handle": "andrzej9448",
@@ -6397,7 +7623,15 @@
       "rank": 476,
       "score": 32.9,
       "category": "Entertainment",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:47:33.371180+00:00",
+      "followers": 24481,
+      "following": 918,
+      "total_likes": 1794797,
+      "video_count": 993,
+      "verified": false
     },
     "karolkowe_domowe": {
       "handle": "karolkowe_domowe",
@@ -6405,7 +7639,15 @@
       "rank": 477,
       "score": 32.7,
       "category": "Food",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:47:37.669389+00:00",
+      "followers": 11658,
+      "following": 29,
+      "total_likes": 152464,
+      "video_count": 422,
+      "verified": false
     },
     "krzysztof.oleksy27": {
       "handle": "krzysztof.oleksy27",
@@ -6413,7 +7655,15 @@
       "rank": 478,
       "score": 32.6,
       "category": "Education",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:47:42.016476+00:00",
+      "followers": 63560,
+      "following": 471,
+      "total_likes": 4801984,
+      "video_count": 3487,
+      "verified": false
     },
     "wesolezlomowisko": {
       "handle": "wesolezlomowisko",
@@ -6421,7 +7671,15 @@
       "rank": 479,
       "score": 32.6,
       "category": "Entertainment",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:47:46.344176+00:00",
+      "followers": 13040,
+      "following": 0,
+      "total_likes": 233049,
+      "video_count": 675,
+      "verified": false
     },
     "m3ga____": {
       "handle": "m3ga____",
@@ -6429,7 +7687,15 @@
       "rank": 480,
       "score": 32.5,
       "category": "Entertainment",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:47:50.636474+00:00",
+      "followers": 20123,
+      "following": 16,
+      "total_likes": 2310716,
+      "video_count": 809,
+      "verified": false
     },
     "ciekawe_fakty_polska": {
       "handle": "ciekawe_fakty_polska",
@@ -6437,7 +7703,15 @@
       "rank": 481,
       "score": 32.4,
       "category": "Lifestyle",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:47:55.114400+00:00",
+      "followers": 15717,
+      "following": 0,
+      "total_likes": 352510,
+      "video_count": 277,
+      "verified": false
     },
     "korba.tv": {
       "handle": "korba.tv",
@@ -6445,7 +7719,15 @@
       "rank": 482,
       "score": 32.3,
       "category": "Entertainment",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:47:59.537974+00:00",
+      "followers": 356569,
+      "following": 6216,
+      "total_likes": 3732444,
+      "video_count": 6340,
+      "verified": false
     },
     "sztucznerozmowypodcast": {
       "handle": "sztucznerozmowypodcast",
@@ -6453,7 +7735,15 @@
       "rank": 483,
       "score": 32.3,
       "category": "Food",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:48:04.078078+00:00",
+      "followers": 85661,
+      "following": 0,
+      "total_likes": 2075661,
+      "video_count": 1997,
+      "verified": false
     },
     "sobol740": {
       "handle": "sobol740",
@@ -6461,7 +7751,15 @@
       "rank": 484,
       "score": 32.3,
       "category": "Education",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:48:08.535224+00:00",
+      "followers": 27454,
+      "following": 4255,
+      "total_likes": 292941,
+      "video_count": 516,
+      "verified": false
     },
     "polskieforumrodzicow": {
       "handle": "polskieforumrodzicow",
@@ -6469,7 +7767,15 @@
       "rank": 485,
       "score": 32.3,
       "category": "Lifestyle",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:48:12.924366+00:00",
+      "followers": 20838,
+      "following": 43,
+      "total_likes": 231015,
+      "video_count": 759,
+      "verified": false
     },
     "mariazjava_mua": {
       "handle": "mariazjava_mua",
@@ -6477,7 +7783,15 @@
       "rank": 486,
       "score": 31.7,
       "category": "Beauty",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:48:17.245607+00:00",
+      "followers": 18556,
+      "following": 148,
+      "total_likes": 72105,
+      "video_count": 202,
+      "verified": false
     },
     "polskie.seriale63": {
       "handle": "polskie.seriale63",
@@ -6485,7 +7799,15 @@
       "rank": 487,
       "score": 31.6,
       "category": "Other",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:48:21.571783+00:00",
+      "followers": 133814,
+      "following": 5,
+      "total_likes": 2794682,
+      "video_count": 20,
+      "verified": false
     },
     "agakle_": {
       "handle": "agakle_",
@@ -6493,7 +7815,15 @@
       "rank": 488,
       "score": 31.6,
       "category": "Beauty",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:48:25.882044+00:00",
+      "followers": 44838,
+      "following": 323,
+      "total_likes": 1264634,
+      "video_count": 2996,
+      "verified": false
     },
     "marcello.bojano": {
       "handle": "marcello.bojano",
@@ -6501,7 +7831,15 @@
       "rank": 489,
       "score": 31.5,
       "category": "Travel",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:48:30.408041+00:00",
+      "followers": 243192,
+      "following": 23,
+      "total_likes": 4956937,
+      "video_count": 16480,
+      "verified": false
     },
     "pandavideostudio": {
       "handle": "pandavideostudio",
@@ -6509,7 +7847,15 @@
       "rank": 490,
       "score": 31.4,
       "category": "Entertainment",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:48:34.725720+00:00",
+      "followers": 29139,
+      "following": 0,
+      "total_likes": 1884099,
+      "video_count": 364,
+      "verified": false
     },
     "zobacz.wow.show": {
       "handle": "zobacz.wow.show",
@@ -6517,7 +7863,15 @@
       "rank": 491,
       "score": 31.3,
       "category": "Entertainment",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:48:39.209913+00:00",
+      "followers": 123124,
+      "following": 3,
+      "total_likes": 3535888,
+      "video_count": 2648,
+      "verified": false
     },
     "_n33xt_": {
       "handle": "_n33xt_",
@@ -6525,7 +7879,15 @@
       "rank": 492,
       "score": 31.3,
       "category": "Gaming",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:48:43.525733+00:00",
+      "followers": 27562,
+      "following": 67,
+      "total_likes": 201163,
+      "video_count": 28,
+      "verified": false
     },
     "enemel6986": {
       "handle": "enemel6986",
@@ -6533,7 +7895,15 @@
       "rank": 493,
       "score": 31.3,
       "category": "Entertainment",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:48:47.827465+00:00",
+      "followers": 16903,
+      "following": 7,
+      "total_likes": 1136431,
+      "video_count": 708,
+      "verified": false
     },
     "jestem_legenda1803": {
       "handle": "jestem_legenda1803",
@@ -6541,7 +7911,15 @@
       "rank": 494,
       "score": 31.2,
       "category": "Entertainment",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:48:52.134158+00:00",
+      "followers": 12972,
+      "following": 9150,
+      "total_likes": 1447129,
+      "video_count": 17470,
+      "verified": false
     },
     "mistrzkulkopczyns": {
       "handle": "mistrzkulkopczyns",
@@ -6549,7 +7927,15 @@
       "rank": 495,
       "score": 31.2,
       "category": "Other",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:48:56.448104+00:00",
+      "followers": 10156,
+      "following": 672,
+      "total_likes": 72810,
+      "video_count": 1154,
+      "verified": false
     },
     "klubnauer": {
       "handle": "klubnauer",
@@ -6557,7 +7943,15 @@
       "rank": 496,
       "score": 31.0,
       "category": "Education",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:49:00.764976+00:00",
+      "followers": 60417,
+      "following": 251,
+      "total_likes": 1020622,
+      "video_count": 568,
+      "verified": false
     },
     "tytanowydominik": {
       "handle": "tytanowydominik",
@@ -6565,7 +7959,15 @@
       "rank": 497,
       "score": 30.9,
       "category": "Entertainment",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:49:05.135256+00:00",
+      "followers": 136786,
+      "following": 105,
+      "total_likes": 8739703,
+      "video_count": 1642,
+      "verified": false
     },
     "quadcross1": {
       "handle": "quadcross1",
@@ -6573,7 +7975,15 @@
       "rank": 498,
       "score": 30.7,
       "category": "Other",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:49:09.467608+00:00",
+      "followers": 11034,
+      "following": 2523,
+      "total_likes": 131298,
+      "video_count": 442,
+      "verified": false
     },
     "grzegorz.jankowski": {
       "handle": "grzegorz.jankowski",
@@ -6581,7 +7991,15 @@
       "rank": 499,
       "score": 30.5,
       "category": "Tech",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:49:13.809243+00:00",
+      "followers": 228024,
+      "following": 3,
+      "total_likes": 4133838,
+      "video_count": 1097,
+      "verified": false
     },
     "tommyysheelby": {
       "handle": "tommyysheelby",
@@ -6589,7 +8007,15 @@
       "rank": 500,
       "score": 30.5,
       "category": "Gaming",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:49:18.191629+00:00",
+      "followers": 10973,
+      "following": 100,
+      "total_likes": 268795,
+      "video_count": 434,
+      "verified": false
     },
     "batterycheckpro": {
       "handle": "batterycheckpro",
@@ -6597,7 +8023,15 @@
       "rank": 501,
       "score": 30.3,
       "category": "Tech",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:49:22.543951+00:00",
+      "followers": 15831,
+      "following": 10,
+      "total_likes": 129105,
+      "video_count": 334,
+      "verified": false
     },
     "hexokod": {
       "handle": "hexokod",
@@ -6605,7 +8039,15 @@
       "rank": 502,
       "score": 30.3,
       "category": "Gaming",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:49:26.880940+00:00",
+      "followers": 10486,
+      "following": 19,
+      "total_likes": 140336,
+      "video_count": 390,
+      "verified": false
     },
     "19.30_tvp": {
       "handle": "19.30_tvp",
@@ -6613,7 +8055,15 @@
       "rank": 503,
       "score": 29.9,
       "category": "Lifestyle",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:49:31.157683+00:00",
+      "followers": 31133,
+      "following": 0,
+      "total_likes": 865897,
+      "video_count": 841,
+      "verified": false
     },
     "kozaczek_pl": {
       "handle": "kozaczek_pl",
@@ -6621,7 +8071,15 @@
       "rank": 504,
       "score": 29.7,
       "category": "Education",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:49:35.472134+00:00",
+      "followers": 333971,
+      "following": 30,
+      "total_likes": 29775118,
+      "video_count": 5967,
+      "verified": false
     },
     "cyprianmajcherpodcast": {
       "handle": "cyprianmajcherpodcast",
@@ -6629,7 +8087,15 @@
       "rank": 505,
       "score": 29.7,
       "category": "Sport & Fitness",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:49:39.757237+00:00",
+      "followers": 219510,
+      "following": 0,
+      "total_likes": 8600318,
+      "video_count": 1192,
+      "verified": false
     },
     "kocham.wroclaw": {
       "handle": "kocham.wroclaw",
@@ -6637,7 +8103,15 @@
       "rank": 506,
       "score": 29.7,
       "category": "Food",
-      "city": "Wrocław"
+      "city": "Wrocław",
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:49:44.021599+00:00",
+      "followers": 118230,
+      "following": 45,
+      "total_likes": 1944574,
+      "video_count": 379,
+      "verified": false
     },
     "saykamstar": {
       "handle": "saykamstar",
@@ -6645,7 +8119,15 @@
       "rank": 507,
       "score": 29.5,
       "category": "Gaming",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:49:48.337673+00:00",
+      "followers": 44700,
+      "following": 748,
+      "total_likes": 1313571,
+      "video_count": 1026,
+      "verified": false
     },
     "mariusz_misarko": {
       "handle": "mariusz_misarko",
@@ -6653,7 +8135,15 @@
       "rank": 508,
       "score": 29.1,
       "category": "Finance",
-      "city": "Białystok"
+      "city": "Białystok",
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:49:52.678382+00:00",
+      "followers": 44287,
+      "following": 311,
+      "total_likes": 548457,
+      "video_count": 1622,
+      "verified": false
     },
     "candytm.pl": {
       "handle": "candytm.pl",
@@ -6661,7 +8151,15 @@
       "rank": 509,
       "score": 29.0,
       "category": "Fashion",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:49:57.120188+00:00",
+      "followers": 40872,
+      "following": 47,
+      "total_likes": 355699,
+      "video_count": 1245,
+      "verified": false
     },
     "darkskies_media": {
       "handle": "darkskies_media",
@@ -6669,7 +8167,15 @@
       "rank": 510,
       "score": 29.0,
       "category": "Entertainment",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:50:01.397354+00:00",
+      "followers": 23571,
+      "following": 68,
+      "total_likes": 914316,
+      "video_count": 562,
+      "verified": false
     },
     "oksi.cleaning": {
       "handle": "oksi.cleaning",
@@ -6677,7 +8183,15 @@
       "rank": 511,
       "score": 29.0,
       "category": "Other",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:50:05.709835+00:00",
+      "followers": 23084,
+      "following": 1149,
+      "total_likes": 324260,
+      "video_count": 1833,
+      "verified": false
     },
     "roadrob": {
       "handle": "roadrob",
@@ -6685,7 +8199,15 @@
       "rank": 512,
       "score": 29.0,
       "category": "Other",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:50:10.114354+00:00",
+      "followers": 18997,
+      "following": 4579,
+      "total_likes": 189843,
+      "video_count": 751,
+      "verified": false
     },
     "gregkot_official": {
       "handle": "gregkot_official",
@@ -6693,7 +8215,15 @@
       "rank": 513,
       "score": 29.0,
       "category": "Sport & Fitness",
-      "city": "Warszawa"
+      "city": "Warszawa",
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:50:14.404465+00:00",
+      "followers": 17017,
+      "following": 731,
+      "total_likes": 82705,
+      "video_count": 809,
+      "verified": false
     },
     "hasky2111": {
       "handle": "hasky2111",
@@ -6701,7 +8231,15 @@
       "rank": 514,
       "score": 29.0,
       "category": "Entertainment",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:50:18.716104+00:00",
+      "followers": 12625,
+      "following": 203,
+      "total_likes": 350064,
+      "video_count": 1279,
+      "verified": false
     },
     "kabaret.tv": {
       "handle": "kabaret.tv",
@@ -6709,7 +8247,15 @@
       "rank": 515,
       "score": 29.0,
       "category": "Entertainment",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:50:23.142702+00:00",
+      "followers": 11056,
+      "following": 2,
+      "total_likes": 142690,
+      "video_count": 268,
+      "verified": false
     },
     "teamzuzannkov": {
       "handle": "teamzuzannkov",
@@ -6717,7 +8263,15 @@
       "rank": 516,
       "score": 28.8,
       "category": "Food",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:50:27.481058+00:00",
+      "followers": 103029,
+      "following": 1,
+      "total_likes": 1018733,
+      "video_count": 395,
+      "verified": false
     },
     "ufryzjerow": {
       "handle": "ufryzjerow",
@@ -6725,7 +8279,15 @@
       "rank": 517,
       "score": 28.8,
       "category": "Education",
-      "city": "Warszawa"
+      "city": "Warszawa",
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:50:31.824357+00:00",
+      "followers": 21561,
+      "following": 63,
+      "total_likes": 611420,
+      "video_count": 617,
+      "verified": false
     },
     "blast.energy": {
       "handle": "blast.energy",
@@ -6733,7 +8295,15 @@
       "rank": 518,
       "score": 28.8,
       "category": "Tech",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:50:36.523550+00:00",
+      "followers": 15884,
+      "following": 118,
+      "total_likes": 324709,
+      "video_count": 233,
+      "verified": false
     },
     "tuskowesprawy85greg": {
       "handle": "tuskowesprawy85greg",
@@ -6741,7 +8311,15 @@
       "rank": 519,
       "score": 28.7,
       "category": "Entertainment",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:50:40.875594+00:00",
+      "followers": 38946,
+      "following": 1050,
+      "total_likes": 2449870,
+      "video_count": 9292,
+      "verified": false
     },
     "polski.gringo": {
       "handle": "polski.gringo",
@@ -6749,7 +8327,15 @@
       "rank": 520,
       "score": 28.5,
       "category": "Entertainment",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:50:45.192967+00:00",
+      "followers": 12859,
+      "following": 512,
+      "total_likes": 321002,
+      "video_count": 189,
+      "verified": false
     },
     "geopolitai": {
       "handle": "geopolitai",
@@ -6757,7 +8343,15 @@
       "rank": 521,
       "score": 28.3,
       "category": "Tech",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:50:49.580157+00:00",
+      "followers": 72118,
+      "following": 300,
+      "total_likes": 1009668,
+      "video_count": 3791,
+      "verified": false
     },
     "dm_polska": {
       "handle": "dm_polska",
@@ -6765,7 +8359,15 @@
       "rank": 522,
       "score": 28.1,
       "category": "Beauty",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:50:53.921730+00:00",
+      "followers": 27158,
+      "following": 65,
+      "total_likes": 180398,
+      "video_count": 449,
+      "verified": false
     },
     "videoplejbak": {
       "handle": "videoplejbak",
@@ -6773,7 +8375,15 @@
       "rank": 523,
       "score": 27.8,
       "category": "Lifestyle",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:50:58.254952+00:00",
+      "followers": 34939,
+      "following": 1902,
+      "total_likes": 798859,
+      "video_count": 1105,
+      "verified": false
     },
     "kacperbisanz": {
       "handle": "kacperbisanz",
@@ -6781,7 +8391,15 @@
       "rank": 524,
       "score": 27.7,
       "category": "Tech",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:51:02.526575+00:00",
+      "followers": 119976,
+      "following": 316,
+      "total_likes": 1978985,
+      "video_count": 1544,
+      "verified": false
     },
     "bywiki": {
       "handle": "bywiki",
@@ -6789,7 +8407,15 @@
       "rank": 525,
       "score": 27.7,
       "category": "Lifestyle",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:51:06.943472+00:00",
+      "followers": 19229,
+      "following": 246,
+      "total_likes": 839289,
+      "video_count": 776,
+      "verified": false
     },
     "matmazguziorem": {
       "handle": "matmazguziorem",
@@ -6797,7 +8423,15 @@
       "rank": 526,
       "score": 27.6,
       "category": "Education",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:51:11.392654+00:00",
+      "followers": 15533,
+      "following": 3,
+      "total_likes": 102231,
+      "video_count": 175,
+      "verified": false
     },
     "djanbublack": {
       "handle": "djanbublack",
@@ -6805,7 +8439,15 @@
       "rank": 527,
       "score": 27.5,
       "category": "Music",
-      "city": "Gdańsk"
+      "city": "Gdańsk",
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:51:15.743354+00:00",
+      "followers": 14675,
+      "following": 76,
+      "total_likes": 587819,
+      "video_count": 1531,
+      "verified": false
     },
     "tylko_pytam": {
       "handle": "tylko_pytam",
@@ -6813,7 +8455,15 @@
       "rank": 528,
       "score": 27.4,
       "category": "Other",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:51:20.023083+00:00",
+      "followers": 32112,
+      "following": 85,
+      "total_likes": 1004733,
+      "video_count": 113,
+      "verified": false
     },
     "strefa_plus_size": {
       "handle": "strefa_plus_size",
@@ -6821,7 +8471,15 @@
       "rank": 529,
       "score": 27.3,
       "category": "Fashion",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:51:24.923889+00:00",
+      "followers": 33895,
+      "following": 648,
+      "total_likes": 54023,
+      "video_count": 464,
+      "verified": false
     },
     "newsprawicy": {
       "handle": "newsprawicy",
@@ -6829,7 +8487,15 @@
       "rank": 530,
       "score": 27.2,
       "category": "Education",
-      "city": "Kraków"
+      "city": "Kraków",
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:51:29.275141+00:00",
+      "followers": 13449,
+      "following": 0,
+      "total_likes": 345008,
+      "video_count": 922,
+      "verified": false
     },
     "polityczny.bajzel": {
       "handle": "polityczny.bajzel",
@@ -6837,7 +8503,15 @@
       "rank": 531,
       "score": 27.0,
       "category": "Music",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:51:33.587635+00:00",
+      "followers": 17113,
+      "following": 96,
+      "total_likes": 462313,
+      "video_count": 1077,
+      "verified": false
     },
     "rafadventures": {
       "handle": "rafadventures",
@@ -6845,7 +8519,15 @@
       "rank": 532,
       "score": 26.4,
       "category": "Lifestyle",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:51:37.871465+00:00",
+      "followers": 12056,
+      "following": 295,
+      "total_likes": 342383,
+      "video_count": 99,
+      "verified": false
     },
     "patryk.z.niemiec": {
       "handle": "patryk.z.niemiec",
@@ -6853,7 +8535,15 @@
       "rank": 533,
       "score": 26.1,
       "category": "Beauty",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:51:42.256170+00:00",
+      "followers": 233618,
+      "following": 0,
+      "total_likes": 1136162,
+      "video_count": 548,
+      "verified": false
     },
     "_przemyslaw_": {
       "handle": "_przemyslaw_",
@@ -6861,7 +8551,15 @@
       "rank": 534,
       "score": 25.7,
       "category": "Entertainment",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:51:46.616216+00:00",
+      "followers": 50611,
+      "following": 9561,
+      "total_likes": 1395658,
+      "video_count": 982,
+      "verified": false
     },
     "saway.official": {
       "handle": "saway.official",
@@ -6869,7 +8567,15 @@
       "rank": 535,
       "score": 25.7,
       "category": "Fashion",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:51:51.018455+00:00",
+      "followers": 23785,
+      "following": 0,
+      "total_likes": 149906,
+      "video_count": 517,
+      "verified": false
     },
     "blogo.pl": {
       "handle": "blogo.pl",
@@ -6877,7 +8583,15 @@
       "rank": 536,
       "score": 25.5,
       "category": "Travel",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:51:55.369144+00:00",
+      "followers": 76165,
+      "following": 23,
+      "total_likes": 610102,
+      "video_count": 175,
+      "verified": false
     },
     "jakwfinanse": {
       "handle": "jakwfinanse",
@@ -6885,7 +8599,15 @@
       "rank": 537,
       "score": 25.5,
       "category": "Finance",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:51:59.871170+00:00",
+      "followers": 46921,
+      "following": 53,
+      "total_likes": 413690,
+      "video_count": 435,
+      "verified": false
     },
     "polskicaravaning": {
       "handle": "polskicaravaning",
@@ -6893,7 +8615,15 @@
       "rank": 538,
       "score": 25.3,
       "category": "Travel",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:52:04.332398+00:00",
+      "followers": 21830,
+      "following": 1087,
+      "total_likes": 196891,
+      "video_count": 1066,
+      "verified": false
     },
     "latwy.polski": {
       "handle": "latwy.polski",
@@ -6901,7 +8631,15 @@
       "rank": 539,
       "score": 25.2,
       "category": "Education",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:52:08.736623+00:00",
+      "followers": 30630,
+      "following": 7,
+      "total_likes": 264459,
+      "video_count": 970,
+      "verified": false
     },
     "oniszczukassociates": {
       "handle": "oniszczukassociates",
@@ -6909,7 +8647,15 @@
       "rank": 540,
       "score": 25.0,
       "category": "Education",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:52:13.147799+00:00",
+      "followers": 10971,
+      "following": 58,
+      "total_likes": 131679,
+      "video_count": 476,
+      "verified": false
     },
     "plotek..pl": {
       "handle": "plotek..pl",
@@ -6917,7 +8663,15 @@
       "rank": 541,
       "score": 24.7,
       "category": "Fashion",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:52:18.491066+00:00",
+      "followers": 231181,
+      "following": 148,
+      "total_likes": 12479357,
+      "video_count": 1297,
+      "verified": false
     },
     "ubranasandra": {
       "handle": "ubranasandra",
@@ -6925,7 +8679,15 @@
       "rank": 542,
       "score": 24.6,
       "category": "Fashion",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:52:23.035254+00:00",
+      "followers": 11298,
+      "following": 144,
+      "total_likes": 134213,
+      "video_count": 384,
+      "verified": false
     },
     "brajan_00_": {
       "handle": "brajan_00_",
@@ -6933,7 +8695,15 @@
       "rank": 543,
       "score": 24.1,
       "category": "Other",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:52:27.325325+00:00",
+      "followers": 20993,
+      "following": 66,
+      "total_likes": 421949,
+      "video_count": 90,
+      "verified": false
     },
     "kanal_nasi": {
       "handle": "kanal_nasi",
@@ -6941,7 +8711,15 @@
       "rank": 544,
       "score": 24.0,
       "category": "Other",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:52:31.717700+00:00",
+      "followers": 40082,
+      "following": 39,
+      "total_likes": 652101,
+      "video_count": 858,
+      "verified": false
     },
     "dealdlaciebie": {
       "handle": "dealdlaciebie",
@@ -6949,7 +8727,15 @@
       "rank": 545,
       "score": 24.0,
       "category": "Other",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:52:36.175419+00:00",
+      "followers": 12125,
+      "following": 8,
+      "total_likes": 316630,
+      "video_count": 113,
+      "verified": false
     },
     "jakwfinanse_sonia": {
       "handle": "jakwfinanse_sonia",
@@ -6957,7 +8743,15 @@
       "rank": 546,
       "score": 23.9,
       "category": "Finance",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:52:40.631677+00:00",
+      "followers": 13436,
+      "following": 41,
+      "total_likes": 144415,
+      "video_count": 342,
+      "verified": false
     },
     "mariuszguzera": {
       "handle": "mariuszguzera",
@@ -6965,7 +8759,15 @@
       "rank": 547,
       "score": 23.6,
       "category": "Finance",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:52:44.982021+00:00",
+      "followers": 10690,
+      "following": 610,
+      "total_likes": 89983,
+      "video_count": 566,
+      "verified": false
     },
     "kamilbelzofficial": {
       "handle": "kamilbelzofficial",
@@ -6973,7 +8775,15 @@
       "rank": 548,
       "score": 23.5,
       "category": "Education",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:52:49.479553+00:00",
+      "followers": 99512,
+      "following": 5,
+      "total_likes": 1215496,
+      "video_count": 1952,
+      "verified": false
     },
     "cococollection_anita": {
       "handle": "cococollection_anita",
@@ -6981,7 +8791,15 @@
       "rank": 549,
       "score": 22.9,
       "category": "Beauty",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:52:54.055797+00:00",
+      "followers": 27210,
+      "following": 94,
+      "total_likes": 98740,
+      "video_count": 718,
+      "verified": false
     },
     "oliwkasliwkahaha": {
       "handle": "oliwkasliwkahaha",
@@ -6989,7 +8807,15 @@
       "rank": 550,
       "score": 22.6,
       "category": "Beauty",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:52:58.571629+00:00",
+      "followers": 138735,
+      "following": 3014,
+      "total_likes": 1829824,
+      "video_count": 444,
+      "verified": false
     },
     "kanal.gefmo": {
       "handle": "kanal.gefmo",
@@ -6997,7 +8823,15 @@
       "rank": 551,
       "score": 22.6,
       "category": "Finance",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:53:03.082048+00:00",
+      "followers": 45085,
+      "following": 61,
+      "total_likes": 955718,
+      "video_count": 1272,
+      "verified": false
     },
     "instalki.pl": {
       "handle": "instalki.pl",
@@ -7005,7 +8839,15 @@
       "rank": 552,
       "score": 22.1,
       "category": "Tech",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:53:07.459404+00:00",
+      "followers": 143081,
+      "following": 3,
+      "total_likes": 3063725,
+      "video_count": 992,
+      "verified": false
     },
     "julapoleca": {
       "handle": "julapoleca",
@@ -7013,7 +8855,15 @@
       "rank": 553,
       "score": 21.9,
       "category": "Other",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:53:12.395890+00:00",
+      "followers": 11111,
+      "following": 10,
+      "total_likes": 724919,
+      "video_count": 602,
+      "verified": false
     },
     "prabunek": {
       "handle": "prabunek",
@@ -7021,7 +8871,15 @@
       "rank": 554,
       "score": 20.8,
       "category": "Education",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:53:17.080917+00:00",
+      "followers": 53115,
+      "following": 74,
+      "total_likes": 1129391,
+      "video_count": 507,
+      "verified": false
     },
     "julitabuczek": {
       "handle": "julitabuczek",
@@ -7029,7 +8887,15 @@
       "rank": 555,
       "score": 19.9,
       "category": "Fashion",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:53:21.681895+00:00",
+      "followers": 16622,
+      "following": 63,
+      "total_likes": 749294,
+      "video_count": 2238,
+      "verified": false
     },
     "kasia.twarogowska_": {
       "handle": "kasia.twarogowska_",
@@ -7037,7 +8903,15 @@
       "rank": 556,
       "score": 19.6,
       "category": "Lifestyle",
-      "city": null
+      "city": null,
+      "profile_status": "ok",
+      "profile_error": null,
+      "collected_at": "2026-10-02T07:53:26.327579+00:00",
+      "followers": 32901,
+      "following": 23,
+      "total_likes": 372451,
+      "video_count": 333,
+      "verified": false
     }
   }
 }
