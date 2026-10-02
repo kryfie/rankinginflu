@@ -1700,3 +1700,124 @@ button, a {
     margin-left: 0;
   }
 }
+
+/* KtoWybija — prosty moduł B2B */
+.brands-section { padding-top: 34px; padding-bottom: 34px; }
+.brands-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.95fr);
+  gap: 56px;
+  padding: 48px;
+  border: 1px solid var(--line-strong);
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 0% 0%, rgba(55, 231, 196, 0.10), transparent 28rem),
+    linear-gradient(145deg, rgba(16, 34, 57, 0.96), rgba(9, 23, 39, 0.96));
+  box-shadow: var(--shadow);
+}
+.brands-copy h2 {
+  margin: 0 0 18px;
+  font-size: clamp(34px, 4vw, 52px);
+  line-height: 1.02;
+  letter-spacing: -0.045em;
+}
+.brands-copy > p {
+  margin: 0;
+  max-width: 650px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.75;
+}
+.brands-points { display: grid; gap: 12px; margin: 28px 0; }
+.brands-points div {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(5, 16, 29, 0.34);
+}
+.brands-points span {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  border-radius: 9px;
+  color: var(--accent);
+  background: var(--accent-soft);
+  font-size: 10px;
+  font-weight: 900;
+}
+.brands-points strong { font-size: 14px; }
+.brands-beta-note {
+  padding-top: 4px;
+  color: var(--muted-2) !important;
+  font-size: 13px !important;
+}
+.brands-form {
+  position: relative;
+  padding: 28px;
+  border: 1px solid var(--line-strong);
+  border-radius: 22px;
+  background: rgba(7, 17, 31, 0.72);
+}
+.form-heading { margin-bottom: 22px; }
+.form-kicker {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--accent);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.form-heading h3 { margin: 0 0 7px; font-size: 24px; letter-spacing: -0.03em; }
+.form-heading p { margin: 0; color: var(--muted); font-size: 13px; }
+.form-field { display: grid; gap: 7px; margin-top: 15px; }
+.form-field > span { color: #c9d6e5; font-size: 12px; font-weight: 750; }
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  border: 1px solid var(--line-strong);
+  border-radius: 12px;
+  outline: none;
+  background: #0a1829;
+  color: var(--text);
+  padding: 12px 13px;
+}
+.form-field textarea { min-height: 102px; resize: vertical; }
+.form-field input::placeholder,
+.form-field textarea::placeholder { color: #5f7690; }
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  border-color: rgba(55, 231, 196, 0.58);
+  box-shadow: 0 0 0 3px rgba(55, 231, 196, 0.08);
+}
+.brands-submit { width: 100%; margin-top: 18px; border: 0; cursor: pointer; }
+.form-note {
+  display: block;
+  margin-top: 10px;
+  color: var(--muted-2);
+  font-size: 10px;
+  line-height: 1.5;
+  text-align: center;
+}
+.form-honeypot {
+  position: absolute !important;
+  left: -10000px !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+}
+@media (max-width: 900px) {
+  .brands-card { grid-template-columns: 1fr; gap: 34px; padding: 34px; }
+}
+@media (max-width: 640px) {
+  .brands-section { padding-top: 18px; }
+  .brands-card { padding: 24px 18px; border-radius: 22px; }
+  .brands-form { padding: 20px 16px; }
+}

@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#07111f">
-  <meta name="description" content="InfluRank PL — ranking polskich twórców TikTok oparty na zasięgu, zaangażowaniu, regularności i wzroście.">
-  <title>InfluRank PL — Ranking twórców TikTok</title>
+  <meta name="description" content="KtoWybija — ranking i radar polskich twórców TikTok oparty na zasięgu, zaangażowaniu, regularności i wzroście.">
+  <title>KtoWybija — Ranking TikTok Polska</title>
   <link rel="icon" href="./favicon.png" type="image/png">
   <link rel="stylesheet" href="./styles.css">
 </head>
@@ -15,7 +15,7 @@
 
   <header class="site-header">
     <div class="shell nav">
-      <a class="brand brand-with-full-logo" href="#" aria-label="InfluRank PL">
+      <a class="brand brand-with-full-logo" href="#" aria-label="KtoWybija">
         <img class="brand-logo-full" src="./assets/ktowybija-logo.png" alt="KtoWybija">
         <span class="beta-pill">BETA</span>
       </a>
@@ -23,6 +23,7 @@
       <nav class="nav-links" aria-label="Główna nawigacja">
         <a href="#ranking">Ranking</a>
         <a href="#methodology">Metodologia</a>
+        <a href="#brands">Dla marek</a>
         <a href="#about">O projekcie</a>
       </nav>
 
@@ -57,7 +58,7 @@
       </div>
 
       <div class="hero-panel">
-        <div class="panel-kicker">InfluRank Score</div>
+        <div class="panel-kicker">KtoWybija Score</div>
         <div class="score-orbit">
           <div class="score-ring">
             <div class="score-ring-inner">
@@ -145,10 +146,10 @@
             <label class="select-wrap">
               <span>Sortuj</span>
               <select id="sortSelect">
-                <option value="rank">InfluRank</option>
+                <option value="rank">KtoWybija Score</option>
                 <option value="followers">Followers</option>
                 <option value="views">Mediana wyświetleń</option>
-                <option value="engagement">Engagement</option>
+                <option value="engagement">Zaangażowanie</option>
               </select>
             </label>
 
@@ -177,9 +178,9 @@
                 <th>Miasto</th>
                 <th class="numeric">Followers</th>
                 <th class="numeric">Mediana views</th>
-                <th class="numeric">Engagement</th>
+                <th class="numeric">Zaangażowanie</th>
                 <th class="numeric">30D</th>
-                <th class="numeric score-col">InfluRank</th>
+                <th class="numeric score-col">KtoWybija Score</th>
               </tr>
             </thead>
             <tbody id="rankingBody"></tbody>
@@ -209,7 +210,7 @@
         <div class="eyebrow">METODOLOGIA</div>
         <h2>Nie liczymy tylko followersów.</h2>
         <p>
-          Influence Score łączy kilka wymiarów profilu. Dzięki temu konto z mniejszą
+          KtoWybija Score łączy kilka wymiarów profilu. Dzięki temu konto z mniejszą
           widownią, ale wysokim realnym zaangażowaniem i zasięgiem, może wyprzedzić
           większe konto o słabszej jakości odbioru.
         </p>
@@ -232,7 +233,7 @@
         </article>
         <article class="method-card">
           <div class="method-icon">03</div>
-          <h3>Engagement</h3>
+          <h3>Zaangażowanie</h3>
           <p>Interakcje względem realnego zasięgu, nie tylko followersów.</p>
         </article>
         <article class="method-card">
@@ -248,14 +249,90 @@
       </div>
     </section>
 
+
+    <section class="shell brands-section" id="brands">
+      <div class="brands-card">
+        <div class="brands-copy">
+          <div class="eyebrow">DLA MAREK I AGENCJI</div>
+          <h2>Szukasz twórców do kampanii?</h2>
+          <p>
+            KtoWybija buduje radar polskiego TikToka — nie tylko największych kont,
+            ale też twórców, którzy właśnie zaczynają rosnąć. Jeśli szukasz profili
+            według kategorii, miasta, zasięgu lub zaangażowania, napisz czego potrzebujesz.
+          </p>
+
+          <div class="brands-points">
+            <div><span>01</span><strong>Twórcy dopasowani do branży</strong></div>
+            <div><span>02</span><strong>Profile lokalne i mikroinfluencerzy</strong></div>
+            <div><span>03</span><strong>Rosnące konta zanim staną się oczywiste</strong></div>
+          </div>
+
+          <p class="brands-beta-note">
+            Jesteśmy w wersji beta. Na początku zapytania obsługujemy ręcznie —
+            dzięki temu możesz od razu napisać, jakich twórców szukasz.
+          </p>
+        </div>
+
+        <form
+          class="brands-form"
+          name="marki"
+          method="POST"
+          action="/dziekujemy.html"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+        >
+          <input type="hidden" name="form-name" value="marki">
+          <p class="form-honeypot" aria-hidden="true">
+            <label>Nie wypełniaj tego pola <input name="bot-field"></label>
+          </p>
+
+          <div class="form-heading">
+            <span class="form-kicker">Kontakt B2B</span>
+            <h3>Opisz, czego szukasz</h3>
+            <p>Odezwę się z informacją, co możemy znaleźć w obecnej bazie.</p>
+          </div>
+
+          <label class="form-field">
+            <span>Firma / agencja</span>
+            <input type="text" name="firma" placeholder="Nazwa firmy" required>
+          </label>
+
+          <label class="form-field">
+            <span>E-mail</span>
+            <input type="email" name="email" placeholder="twoj@email.pl" required>
+          </label>
+
+          <label class="form-field">
+            <span>Czego szukasz?</span>
+            <select name="potrzeba" required>
+              <option value="" selected disabled>Wybierz</option>
+              <option>Twórcy do kampanii</option>
+              <option>Mikroinfluencerzy / rosnące konta</option>
+              <option>Twórcy lokalni</option>
+              <option>Ranking / dane / raport</option>
+              <option>Inne</option>
+            </select>
+          </label>
+
+          <label class="form-field">
+            <span>Krótka wiadomość</span>
+            <textarea name="wiadomosc" rows="4" placeholder="Np. szukamy twórców Food ze Szczecina, 10–100 tys. followersów"></textarea>
+          </label>
+
+          <button class="button button-primary brands-submit" type="submit">Wyślij zapytanie</button>
+          <small class="form-note">Bez zobowiązań. Formularz służy do kontaktu w sprawie współpracy B2B.</small>
+        </form>
+      </div>
+    </section>
+
     <section class="shell about-section" id="about">
       <div class="about-card">
         <div>
-          <div class="eyebrow">INFLURANK PL</div>
+          <div class="eyebrow">KTOWYBIJA</div>
           <h2>Baza budowana na żywo</h2>
         </div>
         <p>
-          InfluRank automatycznie odkrywa kolejne polskie profile, analizuje ich
+          KtoWybija automatycznie odkrywa kolejne polskie profile, analizuje ich
           dane i rozszerza ranking. Z publicznego bio, treści i POI budujemy też
           ostrożne powiązania z miastami. Nowi twórcy mogą więc pojawiać się pomiędzy
           aktualizacjami i zmieniać pozycje całej tabeli.

@@ -367,7 +367,7 @@ function componentRows(components = {}) {
   const rows = [
     ["Audience", components.audience],
     ["Reach", components.reach],
-    ["Engagement", components.engagement],
+    ["Zaangażowanie", components.engagement],
     ["Consistency", components.consistency],
     ["Momentum 30D", components.momentum],
   ];
@@ -454,7 +454,7 @@ function openDrawer(handle) {
 
     <div class="drawer-stats">
       <div class="drawer-stat">
-        <span>InfluRank Score</span>
+        <span>KtoWybija Score</span>
         <strong>${formatScore(c.score)}</strong>
       </div>
       <div class="drawer-stat">
@@ -466,7 +466,7 @@ function openDrawer(handle) {
         <strong>${formatNumber(c.views)}</strong>
       </div>
       <div class="drawer-stat">
-        <span>Engagement</span>
+        <span>Zaangażowanie</span>
         <strong>${formatPercent(c.engagement)}</strong>
       </div>
     </div>
@@ -474,7 +474,7 @@ function openDrawer(handle) {
     ${geoDetailsMarkup(c)}
 
     <div class="component-section">
-      <h4>Składniki Influence Score</h4>
+      <h4>Składniki KtoWybija Score</h4>
       ${componentRows(c.components || {})}
     </div>
 
