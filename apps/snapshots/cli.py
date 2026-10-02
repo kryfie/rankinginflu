@@ -17,6 +17,11 @@ SNAPSHOT_DIR = ROOT / "database/data/profile_snapshots"
 STATE_FILE = ROOT / "database/data/profile_snapshot_state.json"
 GROWTH_FILE = ROOT / "database/data/growth_metrics.json"
 
+# These statuses mean "this profile has been processed for this day".
+# not_found does NOT provide follower data, but it must not cause an
+# infinite same-day retry loop. It will be tried again on the next day.
+TERMINAL_PROFILE_STATUSES = {"ok", "not_found"}
+
 
 def _utcnow():
     return datetime.now(timezone.utc).isoformat()
@@ -68,11 +73,30 @@ def _creator_rows(public_payload):
     return out
 
 
+def _status_counts(creators, current_handles):
+    ok_count = 0
+    unavailable_count = 0
+    terminal_count = 0
+
+    for handle in current_handles:
+        status = creators.get(handle, {}).get("profile_status")
+        if status == "ok":
+            ok_count += 1
+        elif status == "not_found":
+            unavailable_count += 1
+
+        if status in TERMINAL_PROFILE_STATUSES:
+            terminal_count += 1
+
+    missing_count = len(current_handles) - terminal_count
+    return ok_count, unavailable_count, terminal_count, missing_count
+
+
 def run_snapshot(
     *,
     snapshot_day=None,
     max_profiles=0,
-    delay_seconds=2.5,
+    delay_seconds=4.0,
     public_creators=PUBLIC_CREATORS,
     snapshot_dir=SNAPSHOT_DIR,
     state_file=STATE_FILE,
@@ -80,7 +104,7 @@ def run_snapshot(
     reader_factory=TikTokPublicProfileReader,
 ):
     snapshot_day = snapshot_day or date.today().isoformat()
-    date.fromisoformat(snapshot_day)  # validate
+    date.fromisoformat(snapshot_day)  # validate YYYY-MM-DD
 
     public_payload = _read_json(public_creators, {})
     rows = _creator_rows(public_payload)
@@ -101,8 +125,7 @@ def run_snapshot(
 
     started_at = payload.get("started_at") or _utcnow()
 
-    # Always refresh free ranking metadata from the latest public ranking,
-    # even if the profile itself was already successfully scanned today.
+    # Always refresh ranking metadata from today's public ranking.
     current_handles = []
     for row in rows:
         handle = row["handle"]
@@ -123,13 +146,14 @@ def run_snapshot(
         )
         creators[handle] = existing
 
-    # Keep historical rows if a creator disappeared from today's public
-    # ranking during a same-day rerun, but only current handles count toward
-    # today's completion statistics.
+    # Resume logic:
+    # - ok / not_found = done for this day
+    # - error / limited / no status = retryable
     pending = [
         handle
         for handle in current_handles
-        if creators.get(handle, {}).get("profile_status") != "ok"
+        if creators.get(handle, {}).get("profile_status")
+        not in TERMINAL_PROFILE_STATUSES
     ]
 
     if max_profiles and max_profiles > 0:
@@ -137,6 +161,7 @@ def run_snapshot(
 
     attempted_this_run = 0
     success_this_run = 0
+    unavailable_this_run = 0
     failed_this_run = 0
     stopped_by_rate_limit = False
     stop_reason = None
@@ -146,13 +171,11 @@ def run_snapshot(
     try:
         for index, handle in enumerate(pending, start=1):
             attempted_this_run += 1
-            print(
-                f"[{index}/{len(pending)}] snapshot @{handle}",
-                flush=True,
-            )
+            print(f"[{index}/{len(pending)}] snapshot @{handle}", flush=True)
 
             try:
                 profile = reader.get_profile(handle)
+
             except PublicAccessLimitedError as exc:
                 failed_this_run += 1
                 stopped_by_rate_limit = True
@@ -166,6 +189,7 @@ def run_snapshot(
                 )
                 print(f"STOP @{handle}: {exc}", file=sys.stderr, flush=True)
                 break
+
             except Exception as exc:
                 failed_this_run += 1
                 creators[handle].update(
@@ -179,7 +203,7 @@ def run_snapshot(
                 continue
 
             if not profile:
-                failed_this_run += 1
+                unavailable_this_run += 1
                 creators[handle].update(
                     {
                         "profile_status": "not_found",
@@ -188,7 +212,7 @@ def run_snapshot(
                     }
                 )
                 print(
-                    f"WARN @{handle}: no public profile payload found",
+                    f"INFO @{handle}: no public profile payload found",
                     file=sys.stderr,
                     flush=True,
                 )
@@ -208,9 +232,7 @@ def run_snapshot(
             )
             success_this_run += 1
 
-            # Checkpoint locally every 25 successes. The workflow commits
-            # only at the end, but this protects the file during normal
-            # Python-level errors and makes reruns resumable.
+            # Local checkpoint every 25 successes.
             if success_this_run % 25 == 0:
                 checkpoint = {
                     "date": snapshot_day,
@@ -224,14 +246,14 @@ def run_snapshot(
     finally:
         reader.close()
 
-    successful_current = sum(
-        1
-        for handle in current_handles
-        if creators.get(handle, {}).get("profile_status") == "ok"
-    )
-    failed_current = len(current_handles) - successful_current
+    (
+        ok_count,
+        unavailable_count,
+        processed_count,
+        missing_count,
+    ) = _status_counts(creators, current_handles)
 
-    complete = successful_current == len(current_handles)
+    complete = missing_count == 0
 
     payload = {
         "date": snapshot_day,
@@ -246,10 +268,13 @@ def run_snapshot(
         "stopped_by_rate_limit": stopped_by_rate_limit,
         "stop_reason": stop_reason,
         "current_creator_count": len(current_handles),
-        "successful_current_profiles": successful_current,
-        "missing_current_profiles": failed_current,
+        "processed_current_profiles": processed_count,
+        "successful_current_profiles": ok_count,
+        "unavailable_current_profiles": unavailable_count,
+        "missing_current_profiles": missing_count,
         "attempted_this_run": attempted_this_run,
         "success_this_run": success_this_run,
+        "unavailable_this_run": unavailable_this_run,
         "failed_this_run": failed_this_run,
         "creators": creators,
     }
@@ -263,8 +288,10 @@ def run_snapshot(
         else str(snapshot_path),
         "status": payload["status"],
         "current_creator_count": len(current_handles),
-        "successful_current_profiles": successful_current,
-        "missing_current_profiles": failed_current,
+        "processed_current_profiles": processed_count,
+        "successful_current_profiles": ok_count,
+        "unavailable_current_profiles": unavailable_count,
+        "missing_current_profiles": missing_count,
         "stopped_by_rate_limit": stopped_by_rate_limit,
         "stop_reason": stop_reason,
     }
@@ -277,14 +304,18 @@ def run_snapshot(
         f"date={snapshot_day} "
         f"status={payload['status']} "
         f"creators={len(current_handles)} "
-        f"ok={successful_current} "
-        f"missing={failed_current} "
+        f"processed={processed_count} "
+        f"ok={ok_count} "
+        f"unavailable={unavailable_count} "
+        f"missing={missing_count} "
         f"attempted_this_run={attempted_this_run} "
         f"rate_limited={stopped_by_rate_limit}",
         flush=True,
     )
     print(
-        f"GROWTH days={growth.get('available_snapshot_days')} "
+        "GROWTH "
+        f"complete_days={growth.get('available_snapshot_days')} "
+        f"ignored_partial={growth.get('ignored_partial_snapshot_days')} "
         f"latest={growth.get('latest_date')}",
         flush=True,
     )
@@ -313,11 +344,11 @@ def main():
     run.add_argument(
         "--delay-seconds",
         type=float,
-        default=2.5,
+        default=4.0,
         help="Delay between public TikTok profile requests",
     )
 
-    growth = sub.add_parser("build-growth")
+    sub.add_parser("build-growth")
 
     args = parser.parse_args()
 
@@ -330,8 +361,9 @@ def main():
     elif args.command == "build-growth":
         payload = build_growth(SNAPSHOT_DIR, GROWTH_FILE)
         print(
-            f"Growth metrics rebuilt: "
-            f"{payload.get('available_snapshot_days')} snapshot days"
+            "Growth metrics rebuilt: "
+            f"{payload.get('available_snapshot_days')} complete snapshot days; "
+            f"{payload.get('ignored_partial_snapshot_days')} partial ignored"
         )
 
 

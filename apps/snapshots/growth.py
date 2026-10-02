@@ -13,7 +13,7 @@ def _load(path):
 def _pct(current, old):
     if current is None or old in (None, 0):
         return None
-    return round((current - old) / old * 100.0, 4)
+    return round((int(current) - int(old)) / int(old) * 100.0, 4)
 
 
 def _delta(current, old):
@@ -23,32 +23,55 @@ def _delta(current, old):
 
 
 def build_growth(snapshot_dir, output_path):
+    """Build official growth metrics only from COMPLETE daily snapshots.
+
+    A partial day must never become the baseline for 1D / 7D / 30D.
+    This prevents a test/limited scan from producing misleading public growth.
+    """
     snapshot_dir = Path(snapshot_dir)
     files = sorted(snapshot_dir.glob("*.json"))
 
-    by_day = {}
+    complete_by_day = {}
+    partial_dates = []
+    invalid_dates = []
+
     for path in files:
         try:
             day = date.fromisoformat(path.stem)
         except ValueError:
+            invalid_dates.append(path.name)
             continue
 
         payload = _load(path)
         if not isinstance(payload, dict):
+            invalid_dates.append(path.name)
             continue
 
         creators = payload.get("creators")
-        if isinstance(creators, dict):
-            by_day[day] = creators
+        if not isinstance(creators, dict):
+            invalid_dates.append(path.name)
+            continue
+
+        # IMPORTANT: old/test/limited snapshots are not accepted unless
+        # they explicitly declare status == complete.
+        if payload.get("status") != "complete":
+            partial_dates.append(day.isoformat())
+            continue
+
+        complete_by_day[day] = creators
 
     output = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "latest_date": None,
-        "available_snapshot_days": len(by_day),
+        "available_snapshot_days": len(complete_by_day),
+        "total_snapshot_files": len(files),
+        "ignored_partial_snapshot_days": len(partial_dates),
+        "ignored_partial_dates": sorted(partial_dates),
+        "invalid_snapshot_files": sorted(invalid_dates),
         "creators": {},
     }
 
-    if not by_day:
+    if not complete_by_day:
         Path(output_path).parent.mkdir(parents=True, exist_ok=True)
         Path(output_path).write_text(
             json.dumps(output, ensure_ascii=False, indent=2),
@@ -56,24 +79,26 @@ def build_growth(snapshot_dir, output_path):
         )
         return output
 
-    latest_day = max(by_day)
-    latest = by_day[latest_day]
+    latest_day = max(complete_by_day)
+    latest = complete_by_day[latest_day]
     output["latest_date"] = latest_day.isoformat()
 
     for handle, current in latest.items():
         if not isinstance(current, dict):
             continue
 
+        current_followers = current.get("followers")
+
         row = {
             "as_of": latest_day.isoformat(),
-            "followers": current.get("followers"),
+            "followers": current_followers,
             "rank": current.get("rank"),
             "score": current.get("score"),
         }
 
         for days in (1, 7, 30):
             old_day = latest_day - timedelta(days=days)
-            old = by_day.get(old_day, {}).get(handle)
+            old = complete_by_day.get(old_day, {}).get(handle)
 
             if not isinstance(old, dict):
                 row[f"followers_delta_{days}d"] = None
@@ -82,11 +107,11 @@ def build_growth(snapshot_dir, output_path):
                 continue
 
             row[f"followers_delta_{days}d"] = _delta(
-                current.get("followers"),
+                current_followers,
                 old.get("followers"),
             )
             row[f"followers_growth_{days}d_pct"] = _pct(
-                current.get("followers"),
+                current_followers,
                 old.get("followers"),
             )
 
@@ -95,11 +120,11 @@ def build_growth(snapshot_dir, output_path):
             if current_rank is None or old_rank is None:
                 row[f"rank_change_{days}d"] = None
             else:
-                # Positive = moved up in the ranking.
+                # Positive = moved UP in the ranking.
                 row[f"rank_change_{days}d"] = int(old_rank) - int(current_rank)
 
         historical_ranks = []
-        for creators in by_day.values():
+        for creators in complete_by_day.values():
             candidate = creators.get(handle)
             if not isinstance(candidate, dict):
                 continue
