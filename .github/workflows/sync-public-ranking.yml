@@ -1,0 +1,89 @@
+name: KtoWybija sync public ranking
+
+on:
+  workflow_run:
+    workflows:
+      - "InfluRank autopilot v4"
+      - "InfluRank autopilot v3"
+    types:
+      - completed
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ktowybija-public-ranking-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Sync creators.json to dev and release
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          SOURCE="apps/web/data/creators.json"
+
+          if [ ! -f "$SOURCE" ]; then
+            echo "::error::Missing $SOURCE on main."
+            exit 1
+          fi
+
+          cp "$SOURCE" /tmp/ktowybija-creators.json
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          sync_branch () {
+            BRANCH="$1"
+            WORKTREE="/tmp/ktowybija-${BRANCH}"
+
+            echo "=== Syncing public ranking to ${BRANCH} ==="
+
+            if ! git ls-remote --exit-code --heads origin "$BRANCH" >/dev/null 2>&1; then
+              echo "Branch ${BRANCH} does not exist. Skipping."
+              return 0
+            fi
+
+            git fetch origin "$BRANCH"
+            rm -rf "$WORKTREE"
+            git worktree add --detach "$WORKTREE" "origin/$BRANCH"
+
+            mkdir -p "$WORKTREE/apps/web/data"
+            cp /tmp/ktowybija-creators.json "$WORKTREE/apps/web/data/creators.json"
+
+            cd "$WORKTREE"
+            git add apps/web/data/creators.json
+
+            if git diff --cached --quiet; then
+              echo "${BRANCH} already has current creators.json."
+              cd "$GITHUB_WORKSPACE"
+              git worktree remove "$WORKTREE" --force || true
+              return 0
+            fi
+
+            git commit -m "data: sync public ranking from main"
+            git push origin "HEAD:${BRANCH}"
+
+            cd "$GITHUB_WORKSPACE"
+            git worktree remove "$WORKTREE" --force || true
+
+            echo "${BRANCH} ranking data synced."
+          }
+
+          sync_branch dev
+          sync_branch release
