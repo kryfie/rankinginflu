@@ -318,7 +318,7 @@ function renderTable() {
     els.body.innerHTML = visibleRows.map((c) => {
       const growth = Number.isFinite(Number(c.growth))
         ? `<span class="${Number(c.growth) >= 0 ? "engagement-good" : ""}">${formatPercent(c.growth)}</span>`
-        : `<span class="muted-value" title="Momentum 30D pojawi się po zebraniu historii">—</span>`;
+        : `<span class="muted-value" title="Wzrost 30D pojawi się po zebraniu historii">—</span>`;
 
       const city = c.city
         ? `<span class="city-badge" title="Powiązanie z miastem na podstawie publicznych sygnałów GEO">${escapeHtml(c.city)}</span>`
@@ -365,11 +365,11 @@ function renderTable() {
 
 function componentRows(components = {}) {
   const rows = [
-    ["Audience", components.audience],
-    ["Reach", components.reach],
+    ["Widownia", components.audience],
+    ["Zasięg", components.reach],
     ["Zaangażowanie", components.engagement],
-    ["Consistency", components.consistency],
-    ["Momentum 30D", components.momentum],
+    ["Regularność", components.consistency],
+    ["Wzrost 30D", components.momentum],
   ];
 
   return rows.map(([label, value]) => {
@@ -479,7 +479,7 @@ function openDrawer(handle) {
     </div>
 
     <p class="drawer-disclaimer">
-      Score jest obecnie prowizoryczny. Momentum 30D nie jest jeszcze wliczane,
+      Score jest obecnie prowizoryczny. Wzrost 30D nie jest jeszcze wliczane,
       dopóki profil nie ma wystarczającej historii followerów.
       Pomiar obejmuje ${escapeHtml(c.posts_measured || "—")} ostatnich postów.
     </p>
