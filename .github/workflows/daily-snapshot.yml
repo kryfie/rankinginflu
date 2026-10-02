@@ -19,6 +19,11 @@ on:
         required: true
         default: "2.5"
         type: string
+      snapshot_date:
+        description: "Optional UTC date YYYY-MM-DD; leave blank for today"
+        required: false
+        default: ""
+        type: string
 
 permissions:
   contents: write
@@ -55,12 +60,19 @@ jobs:
         run: |
           MAX_PROFILES="${{ inputs.max_profiles }}"
           DELAY_SECONDS="${{ inputs.delay_seconds }}"
+          SNAPSHOT_DATE="${{ inputs.snapshot_date }}"
 
           [ -n "$MAX_PROFILES" ] || MAX_PROFILES="0"
           [ -n "$DELAY_SECONDS" ] || DELAY_SECONDS="2.5"
 
+          # Scheduled runs have no workflow_dispatch input, so use current UTC day.
+          if [ -z "$SNAPSHOT_DATE" ]; then
+            SNAPSHOT_DATE="$(date -u +%F)"
+          fi
+
           echo "MAX_PROFILES=$MAX_PROFILES" >> "$GITHUB_OUTPUT"
           echo "DELAY_SECONDS=$DELAY_SECONDS" >> "$GITHUB_OUTPUT"
+          echo "SNAPSHOT_DATE=$SNAPSHOT_DATE" >> "$GITHUB_OUTPUT"
 
       - name: Snapshot current creators
         env:
@@ -69,6 +81,7 @@ jobs:
           SNAPSHOT_REQUEST_TIMEOUT_SECONDS: "25"
         run: |
           python -m apps.snapshots.cli run \
+            --date "${{ steps.settings.outputs.SNAPSHOT_DATE }}" \
             --max-profiles "${{ steps.settings.outputs.MAX_PROFILES }}" \
             --delay-seconds "${{ steps.settings.outputs.DELAY_SECONDS }}"
 
@@ -92,11 +105,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # Autopilot and snapshot write different data files, but pull
-          # the latest main before committing in case another workflow
-          # finished while this scan was running.
-          git pull --rebase origin main
-
           git add \
             database/data/profile_snapshots \
             database/data/profile_snapshot_state.json \
@@ -107,8 +115,16 @@ jobs:
             exit 0
           fi
 
-          SNAPSHOT_DATE="$(date -u +%F)"
+          # IMPORTANT:
+          # Commit first, then rebase. The old workflow tried
+          # `git pull --rebase` while snapshot files were still modified,
+          # which caused:
+          #   error: cannot pull with rebase: You have unstaged changes.
+          SNAPSHOT_DATE="${{ steps.settings.outputs.SNAPSHOT_DATE }}"
           git commit -m "data: daily creator snapshot ${SNAPSHOT_DATE}"
+
+          # Bring in any main changes that appeared while scanning.
+          git pull --rebase origin main
 
           # Small retry protects against a normal non-fast-forward race.
           if ! git push origin HEAD:main; then
