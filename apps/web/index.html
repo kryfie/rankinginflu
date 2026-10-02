@@ -1,193 +1,389 @@
 <!doctype html>
 <html lang="pl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="InfluRank PL – ranking polskich twórców TikTok oparty na zasięgu, zaangażowaniu, dynamice i regularności." />
-  <title>InfluRank PL — Ranking TikTok Polska</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23111111'/%3E%3Cpath d='M21 44V20h8v24h-8Zm14 0V26h8v18h-8Z' fill='%23fff'/%3E%3C/svg%3E" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07111f">
+  <meta name="description" content="KtoWybija — ranking i radar polskich twórców TikTok oparty na zasięgu, zaangażowaniu, regularności i wzroście.">
+
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://ktowybija.pl/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:site_name" content="KtoWybija">
+<meta property="og:title" content="KtoWybija — Ranking TikTok Polska">
+<meta property="og:description" content="Ranking i radar polskich twórców TikTok. Zobacz, kto rośnie, kto zdobywa uwagę i które profile warto obserwować.">
+<meta property="og:url" content="https://ktowybija.pl/">
+<meta property="og:image" content="https://ktowybija.pl/assets/ktowybija-logo.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="KtoWybija — Ranking TikTok Polska">
+<meta name="twitter:description" content="Ranking i radar polskich twórców TikTok. Zobacz, kto rośnie i które profile warto obserwować.">
+<meta name="twitter:image" content="https://ktowybija.pl/assets/ktowybija-logo.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "KtoWybija",
+  "url": "https://ktowybija.pl/",
+  "description": "Ranking i radar polskich twórców TikTok oparty na zasięgu, zaangażowaniu, regularności i wzroście."
+}
+</script>
+  <title>KtoWybija — Ranking TikTok Polska</title>
+  <link rel="icon" href="./favicon.png" type="image/png">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <div class="bg-glow glow-a"></div>
-  <div class="bg-glow glow-b"></div>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
 
   <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="InfluRank PL — strona główna">
-        <span class="brand-mark">IR</span>
-        <span class="brand-text">InfluRank <strong>PL</strong></span>
+    <div class="shell nav">
+      <a class="brand brand-with-full-logo" href="#" aria-label="KtoWybija">
+        <img class="brand-logo-full" src="./assets/ktowybija-logo.png" alt="KtoWybija">
+        <span class="beta-pill">BETA</span>
       </a>
-      <nav class="top-nav" aria-label="Główna nawigacja">
-        <button class="nav-tab active" data-platform="tiktok">TikTok</button>
-        <button class="nav-tab" data-platform="instagram">Instagram <span>W budowie</span></button>
+
+      <nav class="nav-links" aria-label="Główna nawigacja">
+        <a href="#ranking">Ranking</a>
+        <a href="#methodology">Metodologia</a>
+        <a href="#brands">Dla marek</a>
+        <a href="#about">O projekcie</a>
       </nav>
+
+      <div class="update-badge" id="headerUpdate">
+        <span class="status-dot"></span>
+        <span>Ładowanie danych…</span>
+      </div>
     </div>
   </header>
 
-  <main id="top">
-    <section class="hero container">
+  <main>
+    <section class="hero shell">
       <div class="hero-copy">
-        <div class="eyebrow">Ranking polskich twórców</div>
-        <h1>Nie największy. <br><span>Najsilniejszy wpływ.</span></h1>
-        <p>
-          Ranking TikTok Polska oparty nie tylko na followersach, ale też na realnym zasięgu,
-          zaangażowaniu, dynamice wzrostu i regularności publikacji.
+        <div class="eyebrow">POLSKI TIKTOK • LIVE DATASET</div>
+        <h1>Ranking polskich<br><span>twórców TikTok</span></h1>
+        <p class="hero-lead">
+          Porównujemy twórców na podstawie realnych danych o widowni,
+          zasięgu, zaangażowaniu i regularności. Baza rośnie automatycznie.
         </p>
+
         <div class="hero-actions">
-          <a class="primary-btn" href="#ranking">Zobacz ranking</a>
-          <button class="ghost-btn" id="methodBtn">Jak liczymy wynik?</button>
+          <a href="#ranking" class="button button-primary">Zobacz ranking</a>
+          <a href="#methodology" class="button button-secondary">Jak liczymy score?</a>
+        </div>
+
+        <div class="beta-note">
+          <span class="info-icon">i</span>
+          <span>
+            Wersja beta. Wzrost 30D pojawi się po zebraniu wystarczającej historii.
+          </span>
         </div>
       </div>
-      <div class="hero-card" aria-label="Podgląd rankingu">
-        <div class="hero-card-top">
-          <div>
-            <span class="small-label">Influence Score</span>
-            <div class="big-score">94.7</div>
+
+      <div class="hero-panel">
+        <div class="panel-kicker">KtoWybija Score</div>
+        <div class="score-orbit">
+          <div class="score-ring">
+            <div class="score-ring-inner">
+              <span id="heroTopScore">—</span>
+              <small>/ 100</small>
+            </div>
           </div>
-          <span class="pill">#1 TikTok PL</span>
+          <div>
+            <div class="hero-top-label">Aktualny lider</div>
+            <div class="hero-top-name" id="heroTopName">Ładowanie…</div>
+            <div class="hero-top-handle" id="heroTopHandle"></div>
+          </div>
         </div>
-        <div class="mini-bars">
-          <div><span>Reach</span><i style="--w:92%"></i><b>92</b></div>
-          <div><span>Engagement</span><i style="--w:96%"></i><b>96</b></div>
-          <div><span>Momentum</span><i style="--w:88%"></i><b>88</b></div>
-          <div><span>Consistency</span><i style="--w:91%"></i><b>91</b></div>
+        <div class="panel-divider"></div>
+        <div class="panel-grid">
+          <div>
+            <span class="panel-value" id="heroCreators">—</span>
+            <span class="panel-label">twórców</span>
+          </div>
+          <div>
+            <span class="panel-value" id="heroCategories">—</span>
+            <span class="panel-label">kategorii</span>
+          </div>
+          <div>
+            <span class="panel-value" id="heroFollowers">—</span>
+            <span class="panel-label">followers łącznie</span>
+          </div>
         </div>
-        <p class="demo-note">Podgląd demonstracyjny — dane zostaną podłączone do źródła API.</p>
       </div>
     </section>
 
-    <section class="stats container" aria-label="Statystyki serwisu">
-      <article><span>Platforma</span><strong>TikTok</strong></article>
-      <article><span>Aktualizacja</span><strong>codziennie*</strong></article>
-      <article><span>Skala</span><strong>0–100</strong></article>
-      <article><span>Instagram</span><strong>W budowie</strong></article>
+    <section class="shell stats-strip" aria-label="Statystyki rankingu">
+      <div class="stat-card">
+        <span class="stat-label">Twórcy w rankingu</span>
+        <strong id="statCreators">—</strong>
+        <small>po filtrze jakości</small>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Twórcy z miastem</span>
+        <strong id="statGeo">—</strong>
+        <small id="statGeoNote">publiczne sygnały GEO</small>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Mediana followersów</span>
+        <strong id="statMedianFollowers">—</strong>
+        <small>w aktualnym rankingu</small>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Ostatnia aktualizacja</span>
+        <strong class="stat-date" id="statUpdated">—</strong>
+        <small>automatyczny pipeline</small>
+      </div>
     </section>
 
-    <section class="ranking-section container" id="ranking">
+    <section class="shell ranking-section" id="ranking">
       <div class="section-heading">
         <div>
-          <span class="eyebrow">TikTok Polska</span>
-          <h2>Ranking twórców</h2>
+          <div class="eyebrow">RANKING</div>
+          <h2>Najbardziej wpływowi twórcy</h2>
+          <p>Ranking jest przeliczany na podstawie aktualnie dostępnej bazy.</p>
         </div>
-        <div class="updated">Ostatnia aktualizacja: <strong id="updatedAt">demo</strong></div>
+        <div class="dataset-label">
+          <span class="status-dot"></span>
+          <span id="datasetLabel">Dane aktualne</span>
+        </div>
       </div>
 
-      <div class="filters">
-        <label class="search-box">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.3-4.3m2.3-5.2A7.5 7.5 0 1 1 4 11.5a7.5 7.5 0 0 1 15 0Z"/></svg>
-          <input id="searchInput" type="search" placeholder="Szukaj twórcy..." />
-        </label>
-        <div class="category-scroll" id="categoryFilters" aria-label="Filtry kategorii"></div>
-      </div>
+      <div class="top-three" id="topThree" aria-label="Top 3 twórców"></div>
 
-      <div class="sort-controls" aria-label="Sortowanie rankingu">
-        <span class="sort-label">Sortuj według</span>
-        <select id="sortSelect" class="sort-select">
-          <option value="score">Score</option>
-          <option value="followers">Followers</option>
-          <option value="views">Mediana views</option>
-          <option value="engagement">Engagement</option>
-          <option value="growth">30D</option>
-          <option value="name">Twórca</option>
-          <option value="category">Kategoria</option>
-        </select>
-        <button id="sortDirection" class="sort-direction" type="button">↓ Malejąco</button>
-        <span class="sort-hint">Możesz też kliknąć nazwę kolumny w tabeli.</span>
-      </div>
+      <div class="ranking-card">
+        <div class="toolbar">
+          <label class="search-box">
+            <span class="search-icon">⌕</span>
+            <input id="searchInput" type="search" placeholder="Szukaj twórcy lub @username…" autocomplete="off">
+          </label>
 
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>#</th>
-              <th class="sortable" data-sort="name"><span class="th-label">Twórca</span></th>
-              <th class="sortable" data-sort="category"><span class="th-label">Kategoria</span></th>
-              <th class="num sortable" data-sort="followers"><span class="th-label">Followers</span></th>
-              <th class="num sortable" data-sort="views"><span class="th-label">Mediana views</span></th>
-              <th class="num sortable" data-sort="engagement"><span class="th-label">Engagement</span></th>
-              <th class="num sortable" data-sort="growth"><span class="th-label">30D</span></th>
-              <th class="num sortable sort-active" data-sort="score"><span class="th-label">Score ↓</span></th>
-            </tr>
-          </thead>
-          <tbody id="rankingBody"></tbody>
-        </table>
-        <div class="empty-state" id="emptyState" hidden>Brak wyników dla wybranego filtra.</div>
-      </div>
+          <div class="toolbar-right">
+            <label class="select-wrap city-select-wrap">
+              <span>Miasto</span>
+              <select id="citySelect">
+                <option value="Wszystkie">Wszystkie miasta</option>
+              </select>
+            </label>
 
-      <div class="data-disclaimer" id="dataDisclaimer">
-        <strong>Wersja MVP.</strong> Obecne rekordy są danymi demonstracyjnymi, służącymi do pokazania wyglądu serwisu i logiki rankingu. Po uruchomieniu scannera tabela automatycznie przełączy się na rzeczywisty lokalny snapshot publicznych danych TikToka.
+            <label class="select-wrap">
+              <span>Sortuj</span>
+              <select id="sortSelect">
+                <option value="rank">KtoWybija Score</option>
+                <option value="followers">Followers</option>
+                <option value="views">Mediana wyświetleń</option>
+                <option value="engagement">Zaangażowanie</option>
+              </select>
+            </label>
+
+            <label class="verified-toggle">
+              <input id="verifiedOnly" type="checkbox">
+              <span class="toggle-ui"></span>
+              <span>Tylko verified</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="category-scroller" id="categoryFilters" aria-label="Kategorie"></div>
+
+        <div class="results-meta">
+          <span id="resultsCount">—</span>
+          <span class="results-hint">Miasto = publiczne powiązanie GEO, nie zawsze miejsce zamieszkania</span>
+        </div>
+
+        <div class="table-wrap">
+          <table class="ranking-table">
+            <thead>
+              <tr>
+                <th class="rank-col">#</th>
+                <th>Twórca</th>
+                <th>Kategoria</th>
+                <th>Miasto</th>
+                <th class="numeric">Followers</th>
+                <th class="numeric">Mediana views</th>
+                <th class="numeric">Zaangażowanie</th>
+                <th class="numeric">30D</th>
+                <th class="numeric score-col">KtoWybija Score</th>
+              </tr>
+            </thead>
+            <tbody id="rankingBody"></tbody>
+          </table>
+        </div>
+
+        <div class="pagination" id="pagination">
+          <div class="pagination-meta">
+            <span id="pageRange">—</span>
+            <label class="page-size-select">
+              <span>Na stronę</span>
+              <select id="pageSizeSelect">
+                <option value="50">50</option>
+                <option value="100" selected>100</option>
+                <option value="250">250</option>
+                <option value="500">500</option>
+              </select>
+            </label>
+          </div>
+          <div class="pagination-buttons" id="paginationButtons" aria-label="Stronicowanie rankingu"></div>
+        </div>
       </div>
     </section>
 
-    <section class="instagram-placeholder container" id="instagramSection" hidden>
-      <div class="ig-card">
-        <div class="ig-icon">IG</div>
-        <span class="eyebrow">Instagram Polska</span>
-        <h2>Ranking w budowie.</h2>
-        <p>Instagram otrzyma osobny algorytm i osobny ranking, dopasowany do danych dostępnych na tej platformie.</p>
-        <button class="primary-btn" id="backToTiktok">Wróć do TikToka</button>
+    <section class="shell methodology" id="methodology">
+      <div class="methodology-copy">
+        <div class="eyebrow">METODOLOGIA</div>
+        <h2>Nie liczymy tylko followersów.</h2>
+        <p>
+          KtoWybija Score łączy kilka wymiarów profilu. Dzięki temu konto z mniejszą
+          widownią, ale wysokim realnym zaangażowaniem i zasięgiem, może wyprzedzić
+          większe konto o słabszej jakości odbioru.
+        </p>
+        <p class="methodology-note">
+          Obecny score jest prowizoryczny: komponent Momentum zostanie włączony,
+          gdy zbierzemy około 30 dni historii followerów.
+        </p>
+      </div>
+
+      <div class="method-grid">
+        <article class="method-card">
+          <div class="method-icon">01</div>
+          <h3>Widownia</h3>
+          <p>Wielkość obecnej widowni twórcy.</p>
+        </article>
+        <article class="method-card">
+          <div class="method-icon">02</div>
+          <h3>Zasięg</h3>
+          <p>Mediana wyświetleń z ostatnich zmierzonych postów.</p>
+        </article>
+        <article class="method-card">
+          <div class="method-icon">03</div>
+          <h3>Zaangażowanie</h3>
+          <p>Interakcje względem realnego zasięgu, nie tylko followersów.</p>
+        </article>
+        <article class="method-card">
+          <div class="method-icon">04</div>
+          <h3>Regularność</h3>
+          <p>Stabilność wyników między kolejnymi publikacjami.</p>
+        </article>
+        <article class="method-card method-card-muted">
+          <div class="method-icon">05</div>
+          <h3>Wzrost 30D</h3>
+          <p>Tempo wzrostu widowni — aktywuje się po zebraniu historii.</p>
+        </article>
       </div>
     </section>
 
-    <section class="methodology container" id="methodology">
-      <div class="section-heading">
+
+    <section class="shell brands-section" id="brands">
+      <div class="brands-card">
+        <div class="brands-copy">
+          <div class="eyebrow">DLA MAREK I AGENCJI</div>
+          <h2>Szukasz twórców do kampanii?</h2>
+          <p>
+            KtoWybija buduje radar polskiego TikToka — nie tylko największych kont,
+            ale też twórców, którzy właśnie zaczynają rosnąć. Jeśli szukasz profili
+            według kategorii, miasta, zasięgu lub zaangażowania, napisz czego potrzebujesz.
+          </p>
+
+          <div class="brands-points">
+            <div><span>01</span><strong>Twórcy dopasowani do branży</strong></div>
+            <div><span>02</span><strong>Profile lokalne i mikroinfluencerzy</strong></div>
+            <div><span>03</span><strong>Rosnące konta zanim staną się oczywiste</strong></div>
+          </div>
+
+          <p class="brands-beta-note">
+            Jesteśmy w wersji beta. Na początku zapytania obsługujemy ręcznie —
+            dzięki temu możesz od razu napisać, jakich twórców szukasz.
+          </p>
+        </div>
+
+        <form
+          class="brands-form"
+          name="marki"
+          method="POST"
+          action="/dziekujemy.html"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+        >
+          <input type="hidden" name="form-name" value="marki">
+          <p class="form-honeypot" aria-hidden="true">
+            <label>Nie wypełniaj tego pola <input name="bot-field"></label>
+          </p>
+
+          <div class="form-heading">
+            <span class="form-kicker">Kontakt B2B</span>
+            <h3>Opisz, czego szukasz</h3>
+            <p>Odezwę się z informacją, co możemy znaleźć w obecnej bazie.</p>
+          </div>
+
+          <label class="form-field">
+            <span>Firma / agencja</span>
+            <input type="text" name="firma" placeholder="Nazwa firmy" required>
+          </label>
+
+          <label class="form-field">
+            <span>E-mail</span>
+            <input type="email" name="email" placeholder="twoj@email.pl" required>
+          </label>
+
+          <label class="form-field">
+            <span>Czego szukasz?</span>
+            <select name="potrzeba" required>
+              <option value="" selected disabled>Wybierz</option>
+              <option>Twórcy do kampanii</option>
+              <option>Mikroinfluencerzy / rosnące konta</option>
+              <option>Twórcy lokalni</option>
+              <option>Ranking / dane / raport</option>
+              <option>Inne</option>
+            </select>
+          </label>
+
+          <label class="form-field">
+            <span>Krótka wiadomość</span>
+            <textarea name="wiadomosc" rows="4" placeholder="Np. szukamy twórców Food ze Szczecina, 10–100 tys. followersów"></textarea>
+          </label>
+
+          <button class="button button-primary brands-submit" type="submit">Wyślij zapytanie</button>
+          <small class="form-note">Bez zobowiązań. Formularz służy do kontaktu w sprawie współpracy B2B.</small>
+        </form>
+      </div>
+    </section>
+
+    <section class="shell about-section" id="about">
+      <div class="about-card">
         <div>
-          <span class="eyebrow">Metodologia v0.1</span>
-          <h2>Jak liczymy Influence Score?</h2>
+          <div class="eyebrow">KTOWYBIJA</div>
+          <h2>Baza budowana na żywo</h2>
         </div>
-      </div>
-      <div class="metric-grid">
-        <article>
-          <span class="metric-weight">30%</span>
-          <h3>Reach</h3>
-          <p>Mediana wyświetleń ostatnich materiałów w relacji do wielkości konta.</p>
-        </article>
-        <article>
-          <span class="metric-weight">25%</span>
-          <h3>Engagement</h3>
-          <p>Lajki, komentarze i udostępnienia odniesione do liczby wyświetleń.</p>
-        </article>
-        <article>
-          <span class="metric-weight">20%</span>
-          <h3>Audience</h3>
-          <p>Wielkość audytorium liczona nieliniowo, aby duże konta nie wygrywały automatycznie.</p>
-        </article>
-        <article>
-          <span class="metric-weight">15%</span>
-          <h3>Momentum</h3>
-          <p>Dynamika wzrostu konta i zmiana wyników w ostatnich 30 dniach.</p>
-        </article>
-        <article>
-          <span class="metric-weight">10%</span>
-          <h3>Consistency</h3>
-          <p>Regularność publikacji i powtarzalność wyników zamiast pojedynczych viralowych strzałów.</p>
-        </article>
+        <p>
+          KtoWybija automatycznie odkrywa kolejne polskie profile, analizuje ich
+          dane i rozszerza ranking. Z publicznego bio, treści i POI budujemy też
+          ostrożne powiązania z miastami. Nowi twórcy mogą więc pojawiać się pomiędzy
+          aktualizacjami i zmieniać pozycje całej tabeli.
+        </p>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container footer-inner">
-      <div>
-        <strong>InfluRank PL</strong>
-        <span>Ranking siły twórców, nie tylko liczby followersów.</span>
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <div class="brand footer-brand footer-brand-with-full-logo">
+        <img class="brand-logo-full footer-logo-full" src="./assets/ktowybija-logo.png" alt="KtoWybija">
       </div>
-      <span>© 2026 InfluRank PL</span>
+      <span>Ranking w wersji beta • dane publiczne TikTok</span>
     </div>
   </footer>
 
-  <div class="modal-backdrop" id="methodModal" hidden>
-    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-      <button class="modal-close" id="modalClose" aria-label="Zamknij">×</button>
-      <span class="eyebrow">Influence Score</span>
-      <h2 id="modalTitle">Ranking ma premiować realny wpływ.</h2>
-      <p>Followers są tylko jednym z elementów. Większą wagę mają zasięg, engagement i jakość bieżącej dystrybucji treści.</p>
-      <div class="formula">30% Reach + 25% Engagement + 20% Audience + 15% Momentum + 10% Consistency</div>
-      <p class="muted">To wersja 0.1. Wagi będą kalibrowane po podłączeniu prawdziwych danych.</p>
-    </div>
-  </div>
+  <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+  <aside class="creator-drawer" id="creatorDrawer" aria-hidden="true" aria-label="Szczegóły twórcy">
+    <button class="drawer-close" id="drawerClose" type="button" aria-label="Zamknij">×</button>
+    <div id="drawerContent"></div>
+  </aside>
 
-  <script src="script.js"></script>
+  <div class="toast" id="toast" hidden></div>
+
+  <script src="./app.js" defer></script>
 </body>
 </html>
