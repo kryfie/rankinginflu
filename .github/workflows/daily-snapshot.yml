@@ -3,8 +3,7 @@ name: InfluRank daily snapshot
 on:
   schedule:
     # Autopilot v4 is scheduled at 04:17 UTC.
-    # Snapshot runs three hours later to reduce the chance of both
-    # workflows writing to main at the same time.
+    # Snapshot starts later to reduce write races with main.
     - cron: "17 7 * * *"
 
   workflow_dispatch:
@@ -17,7 +16,7 @@ on:
       delay_seconds:
         description: "Delay between public TikTok profile requests"
         required: true
-        default: "2.5"
+        default: "4.0"
         type: string
       snapshot_date:
         description: "Optional UTC date YYYY-MM-DD; leave blank for today"
@@ -63,9 +62,8 @@ jobs:
           SNAPSHOT_DATE="${{ inputs.snapshot_date }}"
 
           [ -n "$MAX_PROFILES" ] || MAX_PROFILES="0"
-          [ -n "$DELAY_SECONDS" ] || DELAY_SECONDS="2.5"
+          [ -n "$DELAY_SECONDS" ] || DELAY_SECONDS="4.0"
 
-          # Scheduled runs have no workflow_dispatch input, so use current UTC day.
           if [ -z "$SNAPSHOT_DATE" ]; then
             SNAPSHOT_DATE="$(date -u +%F)"
           fi
@@ -75,15 +73,73 @@ jobs:
           echo "SNAPSHOT_DATE=$SNAPSHOT_DATE" >> "$GITHUB_OUTPUT"
 
       - name: Snapshot current creators
+        shell: bash
         env:
           PYTHONUNBUFFERED: "1"
           SNAPSHOT_MAX_REQUESTS_PER_RUN: "2000"
           SNAPSHOT_REQUEST_TIMEOUT_SECONDS: "25"
         run: |
-          python -m apps.snapshots.cli run \
-            --date "${{ steps.settings.outputs.SNAPSHOT_DATE }}" \
-            --max-profiles "${{ steps.settings.outputs.MAX_PROFILES }}" \
-            --delay-seconds "${{ steps.settings.outputs.DELAY_SECONDS }}"
+          set -euo pipefail
+
+          SNAPSHOT_DATE="${{ steps.settings.outputs.SNAPSHOT_DATE }}"
+          MAX_PROFILES="${{ steps.settings.outputs.MAX_PROFILES }}"
+          DELAY_SECONDS="${{ steps.settings.outputs.DELAY_SECONDS }}"
+
+          # Up to 3 passes on the SAME day.
+          # A WAF/interstitial is respected: we stop requests, cool down,
+          # then resume only still-pending profiles.
+          for PASS in 1 2 3; do
+            echo "=== Snapshot pass ${PASS}/3 for ${SNAPSHOT_DATE} ==="
+
+            python -m apps.snapshots.cli run \
+              --date "$SNAPSHOT_DATE" \
+              --max-profiles "$MAX_PROFILES" \
+              --delay-seconds "$DELAY_SECONDS"
+
+            STATUS="$(python - <<'PY'
+          import json
+          with open("database/data/profile_snapshot_state.json", encoding="utf-8") as f:
+              state = json.load(f)
+          print(state.get("status", "partial"))
+          PY
+          )"
+
+            LIMITED="$(python - <<'PY'
+          import json
+          with open("database/data/profile_snapshot_state.json", encoding="utf-8") as f:
+              state = json.load(f)
+          print("true" if state.get("stopped_by_rate_limit") else "false")
+          PY
+          )"
+
+            MISSING="$(python - <<'PY'
+          import json
+          with open("database/data/profile_snapshot_state.json", encoding="utf-8") as f:
+              state = json.load(f)
+          print(state.get("missing_current_profiles", 0))
+          PY
+          )"
+
+            echo "pass=${PASS} status=${STATUS} missing=${MISSING} limited=${LIMITED}"
+
+            if [ "$STATUS" = "complete" ]; then
+              echo "Daily snapshot complete."
+              break
+            fi
+
+            if [ "$PASS" -eq 3 ]; then
+              echo "Snapshot remains partial after 3 passes; partial data will be committed safely."
+              break
+            fi
+
+            if [ "$LIMITED" = "true" ]; then
+              echo "Public TikTok access limited. Cooling down for 10 minutes before resume."
+              sleep 600
+            else
+              echo "Some retryable profiles remain. Waiting 90 seconds before resume."
+              sleep 90
+            fi
+          done
 
       - name: Upload snapshot diagnostics
         if: always()
@@ -96,6 +152,32 @@ jobs:
             database/data/profile_snapshots/
           if-no-files-found: warn
           retention-days: 7
+
+      - name: Write run summary
+        if: always()
+        shell: bash
+        run: |
+          if [ ! -f database/data/profile_snapshot_state.json ]; then
+            exit 0
+          fi
+
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          from pathlib import Path
+
+          state = json.loads(Path("database/data/profile_snapshot_state.json").read_text(encoding="utf-8"))
+
+          print("## InfluRank daily snapshot")
+          print()
+          print(f"- Date: **{state.get('latest_snapshot_date', '—')}**")
+          print(f"- Status: **{state.get('status', '—')}**")
+          print(f"- Creators: **{state.get('current_creator_count', 0)}**")
+          print(f"- Processed: **{state.get('processed_current_profiles', 0)}**")
+          print(f"- OK: **{state.get('successful_current_profiles', 0)}**")
+          print(f"- Unavailable/not found: **{state.get('unavailable_current_profiles', 0)}**")
+          print(f"- Missing/retryable: **{state.get('missing_current_profiles', 0)}**")
+          print(f"- Rate limited: **{state.get('stopped_by_rate_limit', False)}**")
+          PY
 
       - name: Commit daily snapshot history
         shell: bash
@@ -115,18 +197,13 @@ jobs:
             exit 0
           fi
 
-          # IMPORTANT:
-          # Commit first, then rebase. The old workflow tried
-          # `git pull --rebase` while snapshot files were still modified,
-          # which caused:
-          #   error: cannot pull with rebase: You have unstaged changes.
           SNAPSHOT_DATE="${{ steps.settings.outputs.SNAPSHOT_DATE }}"
           git commit -m "data: daily creator snapshot ${SNAPSHOT_DATE}"
 
-          # Bring in any main changes that appeared while scanning.
+          # Commit first, rebase second: avoids the old
+          # "cannot pull with rebase: You have unstaged changes" failure.
           git pull --rebase origin main
 
-          # Small retry protects against a normal non-fast-forward race.
           if ! git push origin HEAD:main; then
             echo "Push raced with another main update; rebasing once and retrying."
             git pull --rebase origin main
