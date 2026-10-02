@@ -12,7 +12,7 @@ Paczka celowo NIE zawiera apps/web/data/creators.json.
 Dzięki temu nie nadpisuje danych. Autopilot może dalej synchronizować
 najnowszy creators.json z main → dev.
 
-Co nowego:
+Co nowego :
 - kolumna Miasto w rankingu,
 - filtr po mieście,
 - wyszukiwarka znajduje też miasta,
