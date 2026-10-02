@@ -1,0 +1,85 @@
+name: KtoWybija autopilot watchdog
+
+on:
+  schedule:
+    # Primary autopilot is scheduled for 04:17 UTC.
+    # This watchdog checks six hours later and only intervenes if
+    # today's autopilot has neither succeeded nor is currently running.
+    - cron: "17 10 * * *"
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write
+
+concurrency:
+  group: ktowybija-autopilot-watchdog
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check today's autopilot and dispatch only if missing
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          TARGET_WORKFLOW_NAME: "InfluRank autopilot v4"
+          TARGET_BRANCH: "main"
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          TODAY_UTC="$(date -u +%F)"
+          echo "Checking ${TARGET_WORKFLOW_NAME} for ${TODAY_UTC} UTC..."
+
+          WORKFLOW_ID="$(
+            gh api "repos/${REPO}/actions/workflows?per_page=100" \
+              --jq ".workflows[] | select(.name == \"${TARGET_WORKFLOW_NAME}\") | .id" \
+              | head -n 1
+          )"
+
+          if [ -z "${WORKFLOW_ID}" ]; then
+            echo "::error::Could not find workflow named: ${TARGET_WORKFLOW_NAME}"
+            exit 1
+          fi
+
+          echo "Target workflow id: ${WORKFLOW_ID}"
+
+          RUN_STATE="$(
+            gh api "repos/${REPO}/actions/workflows/${WORKFLOW_ID}/runs?branch=${TARGET_BRANCH}&per_page=50" \
+              --jq '
+                [
+                  .workflow_runs[]
+                  | select(.created_at[0:10] == "'"${TODAY_UTC}"'")
+                  | select(
+                      .status == "queued"
+                      or .status == "in_progress"
+                      or (.status == "completed" and .conclusion == "success")
+                    )
+                ]
+                | if length > 0 then
+                    .[0].status + ":" + (.[0].conclusion // "none")
+                  else
+                    "missing"
+                  end
+              '
+          )"
+
+          echo "Today's state: ${RUN_STATE}"
+
+          if [ "${RUN_STATE}" != "missing" ]; then
+            echo "Autopilot already succeeded or is queued/running today. Nothing to do."
+            exit 0
+          fi
+
+          echo "::warning::No successful/active autopilot run found today. Dispatching fallback run on main."
+
+          gh api \
+            --method POST \
+            "repos/${REPO}/actions/workflows/${WORKFLOW_ID}/dispatches" \
+            -f ref="${TARGET_BRANCH}"
+
+          echo "Fallback autopilot dispatch requested."
