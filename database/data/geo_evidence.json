@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "updated_at": "2026-10-12T13:11:48.692099+00:00",
-  "events_count": 2138,
-  "creators_with_any_geo_evidence": 877,
-  "ranked_creators_with_primary_city": 136,
+  "updated_at": "2026-10-13T12:59:21.145723+00:00",
+  "events_count": 2224,
+  "creators_with_any_geo_evidence": 907,
+  "ranked_creators_with_primary_city": 144,
   "events": [
     {
       "key": "..morganspamx|discovery_text|7681007396902243616|kraków",
@@ -22,6 +22,33 @@
       "ref": "7689531941661510945",
       "weight": 15.0,
       "observed_at": "2026-09-25T17:51:15.000Z"
+    },
+    {
+      "key": ".elejsona|bio|current_bio|wrocław",
+      "username": ".elejsona",
+      "city": "Wrocław",
+      "source": "bio",
+      "ref": "current_bio",
+      "weight": 95.0,
+      "observed_at": "2026-10-13T12:27:45.758877+00:00"
+    },
+    {
+      "key": ".elejsona|post_text|7679507542233435425|wrocław",
+      "username": ".elejsona",
+      "city": "Wrocław",
+      "source": "post_text",
+      "ref": "7679507542233435425",
+      "weight": 18.0,
+      "observed_at": "2026-08-29T17:31:27.000Z"
+    },
+    {
+      "key": ".elejsona|post_text|7682454649063951648|wrocław",
+      "username": ".elejsona",
+      "city": "Wrocław",
+      "source": "post_text",
+      "ref": "7682454649063951648",
+      "weight": 18.0,
+      "observed_at": "2026-09-06T16:07:44.000Z"
     },
     {
       "key": ".vsky.music|poi|7680968317548498209|bielsko-biała",
@@ -112,6 +139,15 @@
       "ref": "7692021064280329505",
       "weight": 75.0,
       "observed_at": "2026-10-02T10:50:19.000Z"
+    },
+    {
+      "key": "_ewa_wojewoda_|discovery_text|7671952146941725985|świnoujście",
+      "username": "_ewa_wojewoda_",
+      "city": "Świnoujście",
+      "source": "discovery_text",
+      "ref": "7671952146941725985",
+      "weight": 15.0,
+      "observed_at": "2026-08-09T08:52:42.000Z"
     },
     {
       "key": "_lux_finish_|discovery_text|7676114176728632608|warszawa",
@@ -429,6 +465,15 @@
       "observed_at": "2026-10-05T16:05:34.000Z"
     },
     {
+      "key": "amadeusz_braksator|post_text|7694946694282087712|warszawa",
+      "username": "amadeusz_braksator",
+      "city": "Warszawa",
+      "source": "post_text",
+      "ref": "7694946694282087712",
+      "weight": 18.0,
+      "observed_at": "2026-10-10T08:03:16.000Z"
+    },
+    {
       "key": "amazingpolandtrip|post_text|7214160478023568646|gdynia",
       "username": "amazingpolandtrip",
       "city": "Gdynia",
@@ -564,6 +609,15 @@
       "observed_at": "2026-10-02T07:07:00.000Z"
     },
     {
+      "key": "andrzejeewscy|poi|7695862254255852833|warszawa",
+      "username": "andrzejeewscy",
+      "city": "Warszawa",
+      "source": "poi",
+      "ref": "7695862254255852833",
+      "weight": 75.0,
+      "observed_at": "2026-10-13T07:15:00.000Z"
+    },
+    {
       "key": "andrzejkoo|poi|7676875780537814290|wronki",
       "username": "andrzejkoo",
       "city": "Wronki",
@@ -654,6 +708,15 @@
       "observed_at": "2025-02-02T19:51:03.000Z"
     },
     {
+      "key": "anitaherbafotografie|post_text|7693867936674565409|warszawa",
+      "username": "anitaherbafotografie",
+      "city": "Warszawa",
+      "source": "post_text",
+      "ref": "7693867936674565409",
+      "weight": 18.0,
+      "observed_at": "2026-10-07T10:17:13.000Z"
+    },
+    {
       "key": "anitaherbafotografie|discovery_text|7690999284572966177|wrocław",
       "username": "anitaherbafotografie",
       "city": "Wrocław",
@@ -697,6 +760,33 @@
       "ref": "7693153884084178209",
       "weight": 18.0,
       "observed_at": "2026-10-05T12:06:17.000Z"
+    },
+    {
+      "key": "anitaherbafotografie|post_text|7694388011454188832|wrocław",
+      "username": "anitaherbafotografie",
+      "city": "Wrocław",
+      "source": "post_text",
+      "ref": "7694388011454188832",
+      "weight": 18.0,
+      "observed_at": "2026-10-08T19:55:17.000Z"
+    },
+    {
+      "key": "anitaherbafotografie|post_text|7694742904518036768|wrocław",
+      "username": "anitaherbafotografie",
+      "city": "Wrocław",
+      "source": "post_text",
+      "ref": "7694742904518036768",
+      "weight": 18.0,
+      "observed_at": "2026-10-09T18:52:26.000Z"
+    },
+    {
+      "key": "anitaherbafotografie|post_text|7694760174178831648|wrocław",
+      "username": "anitaherbafotografie",
+      "city": "Wrocław",
+      "source": "post_text",
+      "ref": "7694760174178831648",
+      "weight": 18.0,
+      "observed_at": "2026-10-09T19:59:28.000Z"
     },
     {
       "key": "anna_still_alive|poi|7690966681857936672|szczecin",
@@ -904,6 +994,15 @@
       "ref": "7688072267695279393",
       "weight": 15.0,
       "observed_at": "2026-09-21T19:26:57.000Z"
+    },
+    {
+      "key": "antonisyrekdabrowski|post_text|7693979669086965024|warszawa",
+      "username": "antonisyrekdabrowski",
+      "city": "Warszawa",
+      "source": "post_text",
+      "ref": "7693979669086965024",
+      "weight": 18.0,
+      "observed_at": "2026-10-07T17:30:42.000Z"
     },
     {
       "key": "antsdiary29|discovery_text|7664613383244860692|kraków",
@@ -2139,6 +2238,15 @@
       "observed_at": "2026-10-03T21:24:33.000Z"
     },
     {
+      "key": "byomi.beauty|bio|current_bio|kraków",
+      "username": "byomi.beauty",
+      "city": "Kraków",
+      "source": "bio",
+      "ref": "current_bio",
+      "weight": 95.0,
+      "observed_at": "2026-10-13T12:27:45.758877+00:00"
+    },
+    {
       "key": "byrosettka|discovery_text|7683065064013778208|warszawa",
       "username": "byrosettka",
       "city": "Warszawa",
@@ -2490,6 +2598,24 @@
       "observed_at": "2026-10-01T17:23:18.000Z"
     },
     {
+      "key": "comeonmariah|post_text|7680152770522942742|rzeszów",
+      "username": "comeonmariah",
+      "city": "Rzeszów",
+      "source": "post_text",
+      "ref": "7680152770522942742",
+      "weight": 18.0,
+      "observed_at": "2026-08-31T11:15:23.000Z"
+    },
+    {
+      "key": "comeonmariah|post_text|7680152770522942742|warszawa",
+      "username": "comeonmariah",
+      "city": "Warszawa",
+      "source": "post_text",
+      "ref": "7680152770522942742",
+      "weight": 18.0,
+      "observed_at": "2026-08-31T11:15:23.000Z"
+    },
+    {
       "key": "coomfyfood|post_text|7486874525725068546|łódź",
       "username": "coomfyfood",
       "city": "Łódź",
@@ -2524,6 +2650,15 @@
       "ref": "7673895298275495201",
       "weight": 15.0,
       "observed_at": "2026-08-14T14:33:04.000Z"
+    },
+    {
+      "key": "cukiernianakamiennej|poi|7675745961397718305|ruda śląska",
+      "username": "cukiernianakamiennej",
+      "city": "Ruda Śląska",
+      "source": "poi",
+      "ref": "7675745961397718305",
+      "weight": 75.0,
+      "observed_at": "2026-08-19T14:14:36.000Z"
     },
     {
       "key": "cyclisek|discovery_text|7695498464288918816|kraków",
@@ -2607,6 +2742,15 @@
       "observed_at": "2026-09-29T10:59:15.000Z"
     },
     {
+      "key": "czerwinski_szymon|post_text|7694754180413541665|sopot",
+      "username": "czerwinski_szymon",
+      "city": "Sopot",
+      "source": "post_text",
+      "ref": "7694754180413541665",
+      "weight": 18.0,
+      "observed_at": "2026-10-09T19:36:11.000Z"
+    },
+    {
       "key": "czlowiekodjedzenia|post_text|7017820509417082117|warszawa",
       "username": "czlowiekodjedzenia",
       "city": "Warszawa",
@@ -2677,6 +2821,15 @@
       "ref": "7685787339523673376",
       "weight": 75.0,
       "observed_at": "2026-09-15T15:40:17.000Z"
+    },
+    {
+      "key": "daj.czekolade|poi|7662812544897420576|warszawa",
+      "username": "daj.czekolade",
+      "city": "Warszawa",
+      "source": "poi",
+      "ref": "7662812544897420576",
+      "weight": 75.0,
+      "observed_at": "2026-07-15T17:46:21.000Z"
     },
     {
       "key": "damesa_com_pl|discovery_text|7676924349747678497|poznań",
@@ -3318,6 +3471,24 @@
       "observed_at": "2026-08-24T14:30:47.000Z"
     },
     {
+      "key": "dobrowolska.dietetyk|post_text|7684952294130994464|wrocław",
+      "username": "dobrowolska.dietetyk",
+      "city": "Wrocław",
+      "source": "post_text",
+      "ref": "7684952294130994464",
+      "weight": 18.0,
+      "observed_at": "2026-09-13T09:39:53.000Z"
+    },
+    {
+      "key": "dobrowolska.dietetyk|post_text|7688651366696291616|wrocław",
+      "username": "dobrowolska.dietetyk",
+      "city": "Wrocław",
+      "source": "post_text",
+      "ref": "7688651366696291616",
+      "weight": 18.0,
+      "observed_at": "2026-09-23T08:54:12.000Z"
+    },
+    {
       "key": "doktorweronika.makeup|poi|7691276410421333281|ostrów wielkopolski",
       "username": "doktorweronika.makeup",
       "city": "Ostrów Wielkopolski",
@@ -3325,6 +3496,15 @@
       "ref": "7691276410421333281",
       "weight": 75.0,
       "observed_at": "2026-09-30T10:40:41.000Z"
+    },
+    {
+      "key": "dom_bazy|post_text|7694662727066832160|poznań",
+      "username": "dom_bazy",
+      "city": "Poznań",
+      "source": "post_text",
+      "ref": "7694662727066832160",
+      "weight": 18.0,
+      "observed_at": "2026-10-09T13:41:19.000Z"
     },
     {
       "key": "domek_przy_tamie|poi|7677520624041938208|swieradow-zdroj",
@@ -3606,6 +3786,15 @@
       "observed_at": "2026-09-26T22:45:48.000Z"
     },
     {
+      "key": "dziennik._.manifestacji|poi|7678738700339023136|warszawa",
+      "username": "dziennik._.manifestacji",
+      "city": "Warszawa",
+      "source": "poi",
+      "ref": "7678738700339023136",
+      "weight": 75.0,
+      "observed_at": "2026-08-27T15:47:57.000Z"
+    },
+    {
       "key": "dziurawscianie|post_text|7688824466939464992|warszawa",
       "username": "dziurawscianie",
       "city": "Warszawa",
@@ -3840,6 +4029,24 @@
       "observed_at": "2026-10-07T14:22:14.000Z"
     },
     {
+      "key": "explore.warsaw|discovery_text|7694333507060927776|warszawa",
+      "username": "explore.warsaw",
+      "city": "Warszawa",
+      "source": "discovery_text",
+      "ref": "7694333507060927776",
+      "weight": 15.0,
+      "observed_at": "2026-10-08T16:23:45.000Z"
+    },
+    {
+      "key": "explore.warsaw|poi|7694333507060927776|warszawa",
+      "username": "explore.warsaw",
+      "city": "Warszawa",
+      "source": "poi",
+      "ref": "7694333507060927776",
+      "weight": 75.0,
+      "observed_at": "2026-10-08T16:23:45.000Z"
+    },
+    {
       "key": "facetwkuchni|poi|7693217887636524321|wodzisław śląski",
       "username": "facetwkuchni",
       "city": "Wodzisław Śląski",
@@ -3939,6 +4146,15 @@
       "observed_at": "2026-10-02T13:23:51.000Z"
     },
     {
+      "key": "fastway_road_trip|poi|7693909651867405600|leszno",
+      "username": "fastway_road_trip",
+      "city": "Leszno",
+      "source": "poi",
+      "ref": "7693909651867405600",
+      "weight": 75.0,
+      "observed_at": "2026-10-07T12:59:03.000Z"
+    },
+    {
       "key": "fede_zanellato|discovery_text|7690186687971986720|warszawa",
       "username": "fede_zanellato",
       "city": "Warszawa",
@@ -3955,6 +4171,15 @@
       "ref": "7690186687971986720",
       "weight": 75.0,
       "observed_at": "2026-09-27T12:11:59.000Z"
+    },
+    {
+      "key": "fenoloftaleina37|poi|7671007838398926113|kielce",
+      "username": "fenoloftaleina37",
+      "city": "Kielce",
+      "source": "poi",
+      "ref": "7671007838398926113",
+      "weight": 75.0,
+      "observed_at": "2026-08-06T19:48:16.000Z"
     },
     {
       "key": "filipexo|post_text|7695072635490815254|gdańsk",
@@ -4938,6 +5163,24 @@
       "observed_at": "2026-07-23T09:39:04.000Z"
     },
     {
+      "key": "glos_patriotow|post_text|7695054345062206753|warszawa",
+      "username": "glos_patriotow",
+      "city": "Warszawa",
+      "source": "post_text",
+      "ref": "7695054345062206753",
+      "weight": 18.0,
+      "observed_at": "2026-10-10T15:01:01.000Z"
+    },
+    {
+      "key": "glos_patriotow|post_text|7695375686894144800|warszawa",
+      "username": "glos_patriotow",
+      "city": "Warszawa",
+      "source": "post_text",
+      "ref": "7695375686894144800",
+      "weight": 18.0,
+      "observed_at": "2026-10-11T11:47:59.000Z"
+    },
+    {
       "key": "glos_patriotow|post_text|7666841561002413334|wrocław",
       "username": "glos_patriotow",
       "city": "Wrocław",
@@ -5829,6 +6072,42 @@
       "observed_at": "2026-10-04T10:53:44.000Z"
     },
     {
+      "key": "hannakawarszaw|poi|7685768957105687840|warszawa",
+      "username": "hannakawarszaw",
+      "city": "Warszawa",
+      "source": "poi",
+      "ref": "7685768957105687840",
+      "weight": 75.0,
+      "observed_at": "2026-09-15T14:29:00.000Z"
+    },
+    {
+      "key": "hannakawarszaw|poi|7689184075831168289|warszawa",
+      "username": "hannakawarszaw",
+      "city": "Warszawa",
+      "source": "poi",
+      "ref": "7689184075831168289",
+      "weight": 75.0,
+      "observed_at": "2026-09-24T19:21:23.000Z"
+    },
+    {
+      "key": "hannakawarszaw|poi|7689480890451348769|warszawa",
+      "username": "hannakawarszaw",
+      "city": "Warszawa",
+      "source": "poi",
+      "ref": "7689480890451348769",
+      "weight": 75.0,
+      "observed_at": "2026-09-25T14:33:12.000Z"
+    },
+    {
+      "key": "hannakawarszaw|poi|7693541342848224545|warszawa",
+      "username": "hannakawarszaw",
+      "city": "Warszawa",
+      "source": "poi",
+      "ref": "7693541342848224545",
+      "weight": 75.0,
+      "observed_at": "2026-10-06T13:09:49.000Z"
+    },
+    {
       "key": "hej.iva|poi|7691669548302486816|warszawa",
       "username": "hej.iva",
       "city": "Warszawa",
@@ -6124,6 +6403,15 @@
       "ref": "7686890173543550230",
       "weight": 18.0,
       "observed_at": "2026-09-18T14:59:53.000Z"
+    },
+    {
+      "key": "id_miley|poi|7693941998591446304|gdynia",
+      "username": "id_miley",
+      "city": "Gdynia",
+      "source": "poi",
+      "ref": "7693941998591446304",
+      "weight": 75.0,
+      "observed_at": "2026-10-07T15:04:31.000Z"
     },
     {
       "key": "ig.patiwojtasik|discovery_text|7685347252784729376|sopot",
@@ -6466,6 +6754,15 @@
       "ref": "7684231943017254177",
       "weight": 15.0,
       "observed_at": "2026-09-11T11:04:34.000Z"
+    },
+    {
+      "key": "international_couple|poi|7691736992660376865|warszawa",
+      "username": "international_couple",
+      "city": "Warszawa",
+      "source": "poi",
+      "ref": "7691736992660376865",
+      "weight": 75.0,
+      "observed_at": "2026-10-01T16:27:59.000Z"
     },
     {
       "key": "internaziomale420|discovery_text|7677971647797775649|sopot",
@@ -7962,6 +8259,15 @@
       "observed_at": "2024-05-27T14:20:12.000Z"
     },
     {
+      "key": "konfederacja_extra|post_text|7695690141570043168|kraków",
+      "username": "konfederacja_extra",
+      "city": "Kraków",
+      "source": "post_text",
+      "ref": "7695690141570043168",
+      "weight": 18.0,
+      "observed_at": "2026-10-12T08:08:17.000Z"
+    },
+    {
       "key": "konradberkowicz|post_text|7643537496533470497|kraków",
       "username": "konradberkowicz",
       "city": "Kraków",
@@ -8511,6 +8817,15 @@
       "observed_at": "2026-10-09T16:14:52.000Z"
     },
     {
+      "key": "l.ourens|post_text|7686897599609113889|gdańsk",
+      "username": "l.ourens",
+      "city": "Gdańsk",
+      "source": "post_text",
+      "ref": "7686897599609113889",
+      "weight": 18.0,
+      "observed_at": "2026-09-18T15:28:39.000Z"
+    },
+    {
       "key": "l.ourens|discovery_text|7673515992852516128|wrocław",
       "username": "l.ourens",
       "city": "Wrocław",
@@ -8518,6 +8833,15 @@
       "ref": "7673515992852516128",
       "weight": 15.0,
       "observed_at": "2026-08-13T14:01:11.000Z"
+    },
+    {
+      "key": "l.ourens|post_text|7686897599609113889|zakopane",
+      "username": "l.ourens",
+      "city": "Zakopane",
+      "source": "post_text",
+      "ref": "7686897599609113889",
+      "weight": 18.0,
+      "observed_at": "2026-09-18T15:28:39.000Z"
     },
     {
       "key": "lagadoprzodu|post_text|7670620402787290390|gdańsk",
@@ -8707,6 +9031,15 @@
       "ref": "7686164286808362272",
       "weight": 75.0,
       "observed_at": "2026-09-16T16:03:03.000Z"
+    },
+    {
+      "key": "leszek.czartoszewski|poi|7693890398699261216|racibórz",
+      "username": "leszek.czartoszewski",
+      "city": "Racibórz",
+      "source": "poi",
+      "ref": "7693890398699261216",
+      "weight": 75.0,
+      "observed_at": "2026-10-07T11:44:18.000Z"
     },
     {
       "key": "leszek.czartoszewski8|poi|7661606559222353184|rybnik",
@@ -9879,6 +10212,15 @@
       "observed_at": "2026-10-09T22:14:23.000Z"
     },
     {
+      "key": "mediaexpertpl|post_text|7695744483056569632|warszawa",
+      "username": "mediaexpertpl",
+      "city": "Warszawa",
+      "source": "post_text",
+      "ref": "7695744483056569632",
+      "weight": 18.0,
+      "observed_at": "2026-10-12T11:39:08.000Z"
+    },
+    {
       "key": "mega.projekty|discovery_text|7690572990286744854|warszawa",
       "username": "mega.projekty",
       "city": "Warszawa",
@@ -9933,6 +10275,15 @@
       "observed_at": "2026-09-08T13:20:36.000Z"
     },
     {
+      "key": "melianthing|discovery_text|7673420864108383508|warszawa",
+      "username": "melianthing",
+      "city": "Warszawa",
+      "source": "discovery_text",
+      "ref": "7673420864108383508",
+      "weight": 15.0,
+      "observed_at": "2026-08-13T07:52:03.000Z"
+    },
+    {
       "key": "melianthing|discovery_text|7692737981085453600|warszawa",
       "username": "melianthing",
       "city": "Warszawa",
@@ -9940,6 +10291,15 @@
       "ref": "7692737981085453600",
       "weight": 15.0,
       "observed_at": "2026-10-04T09:12:20.000Z"
+    },
+    {
+      "key": "melianthing|poi|7673420864108383508|warszawa",
+      "username": "melianthing",
+      "city": "Warszawa",
+      "source": "poi",
+      "ref": "7673420864108383508",
+      "weight": 75.0,
+      "observed_at": "2026-08-13T07:52:03.000Z"
     },
     {
       "key": "melianthing|poi|7692737981085453600|warszawa",
@@ -10329,6 +10689,15 @@
       "observed_at": "2026-10-03T17:08:23.000Z"
     },
     {
+      "key": "mojesolopov|post_text|7681267672465689889|radom",
+      "username": "mojesolopov",
+      "city": "Radom",
+      "source": "post_text",
+      "ref": "7681267672465689889",
+      "weight": 18.0,
+      "observed_at": "2026-09-03T11:21:43.000Z"
+    },
+    {
       "key": "monia.ink|poi|7683877243717684512|nadarzyn",
       "username": "monia.ink",
       "city": "Nadarzyn",
@@ -10408,6 +10777,78 @@
       "ref": "7686700185530944790",
       "weight": 75.0,
       "observed_at": "2026-09-18T02:43:13.000Z"
+    },
+    {
+      "key": "mozga_m|poi|7679826661629578528|szczecin",
+      "username": "mozga_m",
+      "city": "Szczecin",
+      "source": "poi",
+      "ref": "7679826661629578528",
+      "weight": 75.0,
+      "observed_at": "2026-08-30T14:09:48.000Z"
+    },
+    {
+      "key": "mozga_m|poi|7685079399313591585|szczecin",
+      "username": "mozga_m",
+      "city": "Szczecin",
+      "source": "poi",
+      "ref": "7685079399313591585",
+      "weight": 75.0,
+      "observed_at": "2026-09-13T17:53:07.000Z"
+    },
+    {
+      "key": "mozga_m|poi|7687665339609402657|szczecin",
+      "username": "mozga_m",
+      "city": "Szczecin",
+      "source": "poi",
+      "ref": "7687665339609402657",
+      "weight": 75.0,
+      "observed_at": "2026-09-20T17:07:52.000Z"
+    },
+    {
+      "key": "mozga_m|poi|7693965484504452385|szczecin",
+      "username": "mozga_m",
+      "city": "Szczecin",
+      "source": "poi",
+      "ref": "7693965484504452385",
+      "weight": 75.0,
+      "observed_at": "2026-10-07T16:35:40.000Z"
+    },
+    {
+      "key": "mozga_m|poi|7695440454715706657|szczecin",
+      "username": "mozga_m",
+      "city": "Szczecin",
+      "source": "poi",
+      "ref": "7695440454715706657",
+      "weight": 75.0,
+      "observed_at": "2026-10-11T15:59:17.000Z"
+    },
+    {
+      "key": "mozga_m|post_text|7364753385901264160|szczecin",
+      "username": "mozga_m",
+      "city": "Szczecin",
+      "source": "post_text",
+      "ref": "7364753385901264160",
+      "weight": 18.0,
+      "observed_at": "2024-05-03T12:44:40.000Z"
+    },
+    {
+      "key": "mozga_m|post_text|7411199076147924257|szczecin",
+      "username": "mozga_m",
+      "city": "Szczecin",
+      "source": "post_text",
+      "ref": "7411199076147924257",
+      "weight": 18.0,
+      "observed_at": "2024-09-05T16:37:36.000Z"
+    },
+    {
+      "key": "mozga_m|post_text|7425693949139946774|szczecin",
+      "username": "mozga_m",
+      "city": "Szczecin",
+      "source": "post_text",
+      "ref": "7425693949139946774",
+      "weight": 18.0,
+      "observed_at": "2024-10-14T18:05:11.000Z"
     },
     {
       "key": "mr.relax86|poi|7693514282612313377|wronki",
@@ -11074,6 +11515,15 @@
       "ref": "7662385813216300320",
       "weight": 75.0,
       "observed_at": "2026-07-14T14:10:24.000Z"
+    },
+    {
+      "key": "nowakuje|poi|7676117032781352224|wrocław",
+      "username": "nowakuje",
+      "city": "Wrocław",
+      "source": "poi",
+      "ref": "7676117032781352224",
+      "weight": 75.0,
+      "observed_at": "2026-08-20T14:14:34.000Z"
     },
     {
       "key": "nowakuje|poi|7692338144628313377|wrocław",
@@ -12363,6 +12813,15 @@
       "observed_at": "2026-10-06T18:01:25.000Z"
     },
     {
+      "key": "olvctp|post_text|7694292225361988897|wrocław",
+      "username": "olvctp",
+      "city": "Wrocław",
+      "source": "post_text",
+      "ref": "7694292225361988897",
+      "weight": 18.0,
+      "observed_at": "2026-10-08T13:43:31.000Z"
+    },
+    {
       "key": "omecz.bedzie|post_text|7557724756846447874|kielce",
       "username": "omecz.bedzie",
       "city": "Kielce",
@@ -12696,6 +13155,15 @@
       "observed_at": "2026-08-28T14:11:50.000Z"
     },
     {
+      "key": "panbabcia90|post_text|7695339023685995809|kraków",
+      "username": "panbabcia90",
+      "city": "Kraków",
+      "source": "post_text",
+      "ref": "7695339023685995809",
+      "weight": 18.0,
+      "observed_at": "2026-10-11T09:25:43.000Z"
+    },
+    {
       "key": "pangeriatrykpoleca|poi|7694442160275393814|toruń",
       "username": "pangeriatrykpoleca",
       "city": "Toruń",
@@ -12721,6 +13189,24 @@
       "ref": "7660057867193503008",
       "weight": 75.0,
       "observed_at": "2026-07-08T07:36:50.000Z"
+    },
+    {
+      "key": "panipolak|post_text|7685275776278646049|gdańsk",
+      "username": "panipolak",
+      "city": "Gdańsk",
+      "source": "post_text",
+      "ref": "7685275776278646049",
+      "weight": 18.0,
+      "observed_at": "2026-09-14T06:35:15.000Z"
+    },
+    {
+      "key": "panipolak|post_text|7695021898542894369|kraków",
+      "username": "panipolak",
+      "city": "Kraków",
+      "source": "post_text",
+      "ref": "7695021898542894369",
+      "weight": 18.0,
+      "observed_at": "2026-10-10T12:55:05.000Z"
     },
     {
       "key": "panna.weronka|poi|7686612736087837984|wrocław",
@@ -13641,12 +14127,30 @@
       "observed_at": "2026-09-17T17:43:14.000Z"
     },
     {
+      "key": "populartravel|post_text|7693173033933999392|kraków",
+      "username": "populartravel",
+      "city": "Kraków",
+      "source": "post_text",
+      "ref": "7693173033933999392",
+      "weight": 18.0,
+      "observed_at": "2026-10-05T13:20:32.000Z"
+    },
+    {
       "key": "populartravel|discovery_text|7674620745275723041|warszawa",
       "username": "populartravel",
       "city": "Warszawa",
       "source": "discovery_text",
       "ref": "7674620745275723041",
       "weight": 15.0,
+      "observed_at": "2026-08-16T13:28:13.000Z"
+    },
+    {
+      "key": "populartravel|post_text|7674620745275723041|warszawa",
+      "username": "populartravel",
+      "city": "Warszawa",
+      "source": "post_text",
+      "ref": "7674620745275723041",
+      "weight": 18.0,
       "observed_at": "2026-08-16T13:28:13.000Z"
     },
     {
@@ -13774,6 +14278,15 @@
       "ref": "7690297319501122848",
       "weight": 75.0,
       "observed_at": "2026-09-27T19:21:20.000Z"
+    },
+    {
+      "key": "prawomarcina|post_text|7695530908371209504|kraków",
+      "username": "prawomarcina",
+      "city": "Kraków",
+      "source": "post_text",
+      "ref": "7695530908371209504",
+      "weight": 18.0,
+      "observed_at": "2026-10-11T21:50:22.000Z"
     },
     {
       "key": "prawovsrzeczywistosc|post_text|7695504048090500355|gdańsk",
@@ -13909,6 +14422,15 @@
       "ref": "7694151543557246230",
       "weight": 75.0,
       "observed_at": "2026-10-08T04:37:56.000Z"
+    },
+    {
+      "key": "proudpolish0|post_text|7685757303118646550|warszawa",
+      "username": "proudpolish0",
+      "city": "Warszawa",
+      "source": "post_text",
+      "ref": "7685757303118646550",
+      "weight": 18.0,
+      "observed_at": "2026-09-15T13:43:48.000Z"
     },
     {
       "key": "przekaz426|poi|7690078656533663009|wrocław",
@@ -14395,6 +14917,24 @@
       "ref": "7666872324276243745",
       "weight": 18.0,
       "observed_at": "2026-07-26T16:20:22.000Z"
+    },
+    {
+      "key": "rozgootowany97|bio|current_bio|opole",
+      "username": "rozgootowany97",
+      "city": "Opole",
+      "source": "bio",
+      "ref": "current_bio",
+      "weight": 95.0,
+      "observed_at": "2026-10-13T12:27:45.758877+00:00"
+    },
+    {
+      "key": "rozgootowany97|post_text|7670953116048592161|opole",
+      "username": "rozgootowany97",
+      "city": "Opole",
+      "source": "post_text",
+      "ref": "7670953116048592161",
+      "weight": 18.0,
+      "observed_at": "2026-08-06T16:15:54.000Z"
     },
     {
       "key": "roznieckamarta|poi|7693982133211106593|warszawa",
@@ -15756,6 +16296,69 @@
       "observed_at": "2026-10-06T07:09:16.000Z"
     },
     {
+      "key": "swiatremont|post_text|7693993010274569490|poznań",
+      "username": "swiatremont",
+      "city": "Poznań",
+      "source": "post_text",
+      "ref": "7693993010274569490",
+      "weight": 18.0,
+      "observed_at": "2026-10-07T18:22:35.000Z"
+    },
+    {
+      "key": "swiatremont|post_text|7694210929243852039|poznań",
+      "username": "swiatremont",
+      "city": "Poznań",
+      "source": "post_text",
+      "ref": "7694210929243852039",
+      "weight": 18.0,
+      "observed_at": "2026-10-08T08:28:13.000Z"
+    },
+    {
+      "key": "swiatremont|post_text|7694671591686360328|poznań",
+      "username": "swiatremont",
+      "city": "Poznań",
+      "source": "post_text",
+      "ref": "7694671591686360328",
+      "weight": 18.0,
+      "observed_at": "2026-10-09T14:15:46.000Z"
+    },
+    {
+      "key": "swiatremont|post_text|7694693032200834322|poznań",
+      "username": "swiatremont",
+      "city": "Poznań",
+      "source": "post_text",
+      "ref": "7694693032200834322",
+      "weight": 18.0,
+      "observed_at": "2026-10-09T15:38:58.000Z"
+    },
+    {
+      "key": "swiatremont|post_text|7694735953449045266|poznań",
+      "username": "swiatremont",
+      "city": "Poznań",
+      "source": "post_text",
+      "ref": "7694735953449045266",
+      "weight": 18.0,
+      "observed_at": "2026-10-09T18:25:31.000Z"
+    },
+    {
+      "key": "swiatremont|post_text|7695767318802255112|poznań",
+      "username": "swiatremont",
+      "city": "Poznań",
+      "source": "post_text",
+      "ref": "7695767318802255112",
+      "weight": 18.0,
+      "observed_at": "2026-10-12T13:07:45.000Z"
+    },
+    {
+      "key": "swiatremont|post_text|7696042871803153716|poznań",
+      "username": "swiatremont",
+      "city": "Poznań",
+      "source": "post_text",
+      "ref": "7696042871803153716",
+      "weight": 18.0,
+      "observed_at": "2026-10-13T06:57:02.000Z"
+    },
+    {
       "key": "swiatremont|poi|7687614376408321287|tarnowo podgorne",
       "username": "swiatremont",
       "city": "Tarnowo Podgorne",
@@ -16683,6 +17286,42 @@
       "observed_at": "2026-09-06T17:55:33.000Z"
     },
     {
+      "key": "travelnati|bio|current_bio|zakopane",
+      "username": "travelnati",
+      "city": "Zakopane",
+      "source": "bio",
+      "ref": "current_bio",
+      "weight": 95.0,
+      "observed_at": "2026-10-13T12:27:45.758877+00:00"
+    },
+    {
+      "key": "travelnati|post_text|7687220138893987104|zakopane",
+      "username": "travelnati",
+      "city": "Zakopane",
+      "source": "post_text",
+      "ref": "7687220138893987104",
+      "weight": 18.0,
+      "observed_at": "2026-09-19T12:20:17.000Z"
+    },
+    {
+      "key": "travelnati|post_text|7688294977180405025|zakopane",
+      "username": "travelnati",
+      "city": "Zakopane",
+      "source": "post_text",
+      "ref": "7688294977180405025",
+      "weight": 18.0,
+      "observed_at": "2026-09-22T09:51:15.000Z"
+    },
+    {
+      "key": "travelnati|post_text|7695363925046562081|zakopane",
+      "username": "travelnati",
+      "city": "Zakopane",
+      "source": "post_text",
+      "ref": "7695363925046562081",
+      "weight": 18.0,
+      "observed_at": "2026-10-11T11:02:20.000Z"
+    },
+    {
       "key": "travelovcy|post_text|7684293999548566816|lubin",
       "username": "travelovcy",
       "city": "Lubin",
@@ -16717,6 +17356,15 @@
       "ref": "7658107305740782855",
       "weight": 15.0,
       "observed_at": "2026-07-03T18:30:00.000Z"
+    },
+    {
+      "key": "travels.daria|post_text|7456757989299588374|nowy sącz",
+      "username": "travels.daria",
+      "city": "Nowy Sącz",
+      "source": "post_text",
+      "ref": "7456757989299588374",
+      "weight": 18.0,
+      "observed_at": "2025-01-06T11:09:29.000Z"
     },
     {
       "key": "travelsbymorris|discovery_text|7658180806799625494|wrocław",
@@ -17403,6 +18051,15 @@
       "observed_at": "2026-09-29T13:27:08.000Z"
     },
     {
+      "key": "viaja_mas_por_menos|post_text|7695844478573137174|kraków",
+      "username": "viaja_mas_por_menos",
+      "city": "Kraków",
+      "source": "post_text",
+      "ref": "7695844478573137174",
+      "weight": 18.0,
+      "observed_at": "2026-10-12T18:07:10.000Z"
+    },
+    {
       "key": "viaja_mas_por_menos|discovery_text|7689827901159525654|poznań",
       "username": "viaja_mas_por_menos",
       "city": "Poznań",
@@ -17752,6 +18409,15 @@
       "ref": "7685458630338022674",
       "weight": 75.0,
       "observed_at": "2026-09-14T18:24:52.000Z"
+    },
+    {
+      "key": "vvivinizio|discovery_text|7694039404054121760|warszawa",
+      "username": "vvivinizio",
+      "city": "Warszawa",
+      "source": "discovery_text",
+      "ref": "7694039404054121760",
+      "weight": 15.0,
+      "observed_at": "2026-10-07T21:22:33.000Z"
     },
     {
       "key": "vvvvlry|discovery_text|7690680422665129223|zakopane",
@@ -18519,6 +19185,69 @@
       "observed_at": "2026-10-05T19:39:07.000Z"
     },
     {
+      "key": "wtk.tv|post_text|7695709996616666401|poznań",
+      "username": "wtk.tv",
+      "city": "Poznań",
+      "source": "post_text",
+      "ref": "7695709996616666401",
+      "weight": 18.0,
+      "observed_at": "2026-10-12T09:25:20.000Z"
+    },
+    {
+      "key": "wtk.tv|post_text|7695712863410916641|poznań",
+      "username": "wtk.tv",
+      "city": "Poznań",
+      "source": "post_text",
+      "ref": "7695712863410916641",
+      "weight": 18.0,
+      "observed_at": "2026-10-12T09:36:28.000Z"
+    },
+    {
+      "key": "wtk.tv|post_text|7695715318705982753|poznań",
+      "username": "wtk.tv",
+      "city": "Poznań",
+      "source": "post_text",
+      "ref": "7695715318705982753",
+      "weight": 18.0,
+      "observed_at": "2026-10-12T09:45:57.000Z"
+    },
+    {
+      "key": "wtk.tv|post_text|7695888158034054432|poznań",
+      "username": "wtk.tv",
+      "city": "Poznań",
+      "source": "post_text",
+      "ref": "7695888158034054432",
+      "weight": 18.0,
+      "observed_at": "2026-10-12T20:56:38.000Z"
+    },
+    {
+      "key": "wtk.tv|post_text|7695888254926605601|poznań",
+      "username": "wtk.tv",
+      "city": "Poznań",
+      "source": "post_text",
+      "ref": "7695888254926605601",
+      "weight": 18.0,
+      "observed_at": "2026-10-12T20:56:58.000Z"
+    },
+    {
+      "key": "wtk.tv|post_text|7695888466890034465|poznań",
+      "username": "wtk.tv",
+      "city": "Poznań",
+      "source": "post_text",
+      "ref": "7695888466890034465",
+      "weight": 18.0,
+      "observed_at": "2026-10-12T20:57:51.000Z"
+    },
+    {
+      "key": "wtk.tv|post_text|7695888833212140832|poznań",
+      "username": "wtk.tv",
+      "city": "Poznań",
+      "source": "post_text",
+      "ref": "7695888833212140832",
+      "weight": 18.0,
+      "observed_at": "2026-10-12T20:59:15.000Z"
+    },
+    {
       "key": "wvamila|post_text|7687967282839948576|zakopane",
       "username": "wvamila",
       "city": "Zakopane",
@@ -18645,6 +19374,15 @@
       "observed_at": "2026-10-09T16:31:47.000Z"
     },
     {
+      "key": "xmichaldaniel|post_text|7694661660027522337|tarnów",
+      "username": "xmichaldaniel",
+      "city": "Tarnów",
+      "source": "post_text",
+      "ref": "7694661660027522337",
+      "weight": 18.0,
+      "observed_at": "2026-10-09T13:37:15.000Z"
+    },
+    {
       "key": "xxspqpqsxx|discovery_text|7672806959686438177|sopot",
       "username": "xxspqpqsxx",
       "city": "Sopot",
@@ -18688,6 +19426,15 @@
       "ref": "7691626007324806407",
       "weight": 18.0,
       "observed_at": "2026-10-01T09:17:22.000Z"
+    },
+    {
+      "key": "yanakonotopova|post_text|7694962302809918738|lublin",
+      "username": "yanakonotopova",
+      "city": "Lublin",
+      "source": "post_text",
+      "ref": "7694962302809918738",
+      "weight": 18.0,
+      "observed_at": "2026-10-10T09:03:53.000Z"
     },
     {
       "key": "younews_pl|post_text|7667834522041437462|katowice",
@@ -18987,6 +19734,24 @@
       "observed_at": "2026-10-09T18:35:15.000Z"
     },
     {
+      "key": "zesmakiemnaty|poi|7665437569731120417|lublin",
+      "username": "zesmakiemnaty",
+      "city": "Lublin",
+      "source": "poi",
+      "ref": "7665437569731120417",
+      "weight": 75.0,
+      "observed_at": "2026-07-22T19:32:47.000Z"
+    },
+    {
+      "key": "zesmakiemnaty|poi|7671006374649777441|lublin",
+      "username": "zesmakiemnaty",
+      "city": "Lublin",
+      "source": "poi",
+      "ref": "7671006374649777441",
+      "weight": 75.0,
+      "observed_at": "2026-08-06T19:42:35.000Z"
+    },
+    {
       "key": "zesmakiemnaty|poi|7674335574697807137|lublin",
       "username": "zesmakiemnaty",
       "city": "Lublin",
@@ -18994,6 +19759,15 @@
       "ref": "7674335574697807137",
       "weight": 75.0,
       "observed_at": "2026-08-15T19:01:36.000Z"
+    },
+    {
+      "key": "zesmakiemnaty|poi|7675085454806502688|zakopane",
+      "username": "zesmakiemnaty",
+      "city": "Zakopane",
+      "source": "poi",
+      "ref": "7675085454806502688",
+      "weight": 75.0,
+      "observed_at": "2026-08-17T19:31:30.000Z"
     },
     {
       "key": "zespolnewtime|post_text|7475634595296251158|nowy sącz",
