@@ -1,70 +1,64 @@
 {
   "meta": {
-    "run_at": "2026-11-01T11:17:00.283760+00:00",
+    "run_at": "2026-11-02T12:26:27.693334+00:00",
     "actor": "apidojo~tiktok-scraper-api",
     "filterVersion": "v4-strong-pl-evidence",
     "seedIndices": [
-      583,
-      579,
-      587,
-      588,
-      586,
-      71,
-      138,
-      158,
-      427,
-      456,
-      480,
-      496,
-      499,
-      500,
-      505,
-      525,
-      543,
-      559,
-      15,
-      65,
-      101,
-      119,
-      581,
-      591,
-      595
+      611,
+      620,
+      613,
+      627,
+      625,
+      617,
+      619,
+      623,
+      215,
+      600,
+      182,
+      202,
+      211,
+      7,
+      8,
+      19,
+      32,
+      47,
+      54,
+      55,
+      58,
+      64,
+      84,
+      93,
+      95
     ],
-    "startSeed": 583,
+    "startSeed": 611,
     "seeds_requested": [
-      "poznań",
-      "macierzynstwo",
-      "randka",
-      "medycyna",
-      "slub",
-      "kuchnia polska tiktok",
-      "obiad",
-      "szkoła",
-      "dlacb",
-      "beka",
-      "glowup",
-      "recipes",
-      "reprezentacjapolski",
-      "cleaning",
-      "recipe",
-      "kimoco",
-      "lewica",
-      "lalka",
-      "humor polska",
-      "jedzenie polska",
-      "szkoła polska",
-      "wokal polska",
-      "nieruchomosci",
-      "polacywuk",
-      "wiara"
+      "niedziela",
+      "kocham",
+      "liceum",
+      "jelita",
+      "wiedza",
+      "wrzesień",
+      "zwierzeta",
+      "cytaty",
+      "polskirap",
+      "związki",
+      "polskitiktok",
+      "polski",
+      "kuchnia",
+      "polska fitness",
+      "polska gaming",
+      "memy polska",
+      "dom polska tiktok",
+      "outfit polska",
+      "trendy moda polska",
+      "gaming polska",
+      "fortnite polska",
+      "roblox polska",
+      "taniec polska",
+      "gadżety polska",
+      "edukacja polska"
     ],
-    "seeds_completed": [
-      "poznań",
-      "macierzynstwo",
-      "randka",
-      "medycyna",
-      "slub"
-    ],
+    "seeds_completed": [],
     "resultsPerSeed": 20,
     "location": "PL",
     "dateRange": "LAST_THREE_MONTHS",
@@ -73,66 +67,12 @@
     "minStrongPLSignals": 1,
     "minPLConfidence": 50.0,
     "stats": {
-      "posts_in": 50,
-      "unique_creators": 46,
-      "below_min_strong_pl_signals": 7,
-      "below_min_followers": 27,
-      "below_min_pl_confidence": 1,
-      "accepted_candidates_latest_run": 11
+      "unique_creators": 0,
+      "accepted_candidates_latest_run": 0
     },
     "per_seed": [
       {
-        "seed": "poznań",
-        "rows_returned": 10,
-        "usable_posts": 10,
-        "demo_rows": 0,
-        "status": "productive",
-        "accepted_candidates": 4,
-        "new_candidates": 2,
-        "known_or_cross_seed_candidates": 2
-      },
-      {
-        "seed": "macierzynstwo",
-        "rows_returned": 10,
-        "usable_posts": 10,
-        "demo_rows": 0,
-        "status": "productive",
-        "accepted_candidates": 3,
-        "new_candidates": 1,
-        "known_or_cross_seed_candidates": 2
-      },
-      {
-        "seed": "randka",
-        "rows_returned": 10,
-        "usable_posts": 10,
-        "demo_rows": 0,
-        "status": "productive",
-        "accepted_candidates": 2,
-        "new_candidates": 0,
-        "known_or_cross_seed_candidates": 2
-      },
-      {
-        "seed": "medycyna",
-        "rows_returned": 10,
-        "usable_posts": 10,
-        "demo_rows": 0,
-        "status": "productive",
-        "accepted_candidates": 2,
-        "new_candidates": 1,
-        "known_or_cross_seed_candidates": 1
-      },
-      {
-        "seed": "slub",
-        "rows_returned": 10,
-        "usable_posts": 10,
-        "demo_rows": 0,
-        "status": "productive",
-        "accepted_candidates": 0,
-        "new_candidates": 0,
-        "known_or_cross_seed_candidates": 0
-      },
-      {
-        "seed": "kuchnia polska tiktok",
+        "seed": "niedziela",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -142,7 +82,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "obiad",
+        "seed": "kocham",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -152,7 +92,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "szkoła",
+        "seed": "liceum",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -162,7 +102,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "dlacb",
+        "seed": "jelita",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -172,7 +112,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "beka",
+        "seed": "wiedza",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -182,7 +122,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "glowup",
+        "seed": "wrzesień",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -192,7 +132,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "recipes",
+        "seed": "zwierzeta",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -202,7 +142,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "reprezentacjapolski",
+        "seed": "cytaty",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -212,7 +152,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "cleaning",
+        "seed": "polskirap",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -222,7 +162,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "recipe",
+        "seed": "związki",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -232,7 +172,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "kimoco",
+        "seed": "polskitiktok",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -242,7 +182,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "lewica",
+        "seed": "polski",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -252,7 +192,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "lalka",
+        "seed": "kuchnia",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -262,7 +202,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "humor polska",
+        "seed": "polska fitness",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -272,7 +212,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "jedzenie polska",
+        "seed": "polska gaming",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -282,7 +222,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "szkoła polska",
+        "seed": "memy polska",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -292,7 +232,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "wokal polska",
+        "seed": "dom polska tiktok",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -302,7 +242,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "nieruchomosci",
+        "seed": "outfit polska",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -312,7 +252,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "polacywuk",
+        "seed": "trendy moda polska",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -322,7 +262,57 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "wiara",
+        "seed": "gaming polska",
+        "rows_returned": 10,
+        "usable_posts": 0,
+        "demo_rows": 10,
+        "status": "demo_only",
+        "accepted_candidates": 0,
+        "new_candidates": 0,
+        "known_or_cross_seed_candidates": 0
+      },
+      {
+        "seed": "fortnite polska",
+        "rows_returned": 10,
+        "usable_posts": 0,
+        "demo_rows": 10,
+        "status": "demo_only",
+        "accepted_candidates": 0,
+        "new_candidates": 0,
+        "known_or_cross_seed_candidates": 0
+      },
+      {
+        "seed": "roblox polska",
+        "rows_returned": 10,
+        "usable_posts": 0,
+        "demo_rows": 10,
+        "status": "demo_only",
+        "accepted_candidates": 0,
+        "new_candidates": 0,
+        "known_or_cross_seed_candidates": 0
+      },
+      {
+        "seed": "taniec polska",
+        "rows_returned": 10,
+        "usable_posts": 0,
+        "demo_rows": 10,
+        "status": "demo_only",
+        "accepted_candidates": 0,
+        "new_candidates": 0,
+        "known_or_cross_seed_candidates": 0
+      },
+      {
+        "seed": "gadżety polska",
+        "rows_returned": 10,
+        "usable_posts": 0,
+        "demo_rows": 10,
+        "status": "demo_only",
+        "accepted_candidates": 0,
+        "new_candidates": 0,
+        "known_or_cross_seed_candidates": 0
+      },
+      {
+        "seed": "edukacja polska",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -334,2171 +324,9 @@
     ],
     "errors": [],
     "migration": {
-      "legacy_rows_revalidated": 135,
+      "legacy_rows_revalidated": 13,
       "legacy_rows_quarantined": 0
     }
   },
-  "posts": [
-    {
-      "seed": "poznań",
-      "id": "7695824242192960800",
-      "title": "Poznaniaki ,pozdrawiam ! #poznan ",
-      "views": 18104,
-      "likes": 1083,
-      "comments": 4,
-      "shares": 18,
-      "bookmarks": 49,
-      "hashtags": [
-        "poznan"
-      ],
-      "uploadedAtFormatted": "2026-10-12T16:48:35.000Z",
-      "channel": {
-        "id": "7095491993828819973",
-        "name": "PANTERA.REE&DARKDRON",
-        "username": "ree.dron.production",
-        "profile_url": "https://www.tiktok.com/@ree.dron.production",
-        "followers": 61389,
-        "following": 0,
-        "provider_verified": true
-      },
-      "subtitle_languages": [
-        "nl",
-        "en"
-      ],
-      "poi": null,
-      "polish_signals": [
-        "title_marker_pl"
-      ],
-      "pl_evidence": {
-        "strong_signals": [],
-        "weak_signals": [
-          "title_marker_pl"
-        ],
-        "negative_signals": [
-          "subtitle_foreign"
-        ],
-        "pl_confidence": 0.0
-      }
-    },
-    {
-      "seed": "poznań",
-      "id": "7690114952861895968",
-      "title": "Gdzie warto zjeść w Poznaniu? 6 polecajek z moich ostatnich wizyt w tym mieście 😎 #poznan #jedzenie #restauracja ",
-      "views": 190495,
-      "likes": 7841,
-      "comments": 77,
-      "shares": 1906,
-      "bookmarks": 5464,
-      "hashtags": [
-        "poznan",
-        "jedzenie",
-        "restauracja"
-      ],
-      "uploadedAtFormatted": "2026-09-27T07:33:41.000Z",
-      "channel": {
-        "id": "6722396089692029957",
-        "name": "Maciej je",
-        "username": "maciej_je",
-        "profile_url": "https://www.tiktok.com/@maciej_je",
-        "followers": 72232,
-        "following": 125,
-        "provider_verified": true
-      },
-      "subtitle_languages": [
-        "en",
-        "pl"
-      ],
-      "poi": {
-        "poiName": "Poznań",
-        "address": "Poznan, Greater Poland, Poland",
-        "cityName": "",
-        "regionCode": "798544"
-      },
-      "polish_signals": [
-        "poi_pl",
-        "polish_text",
-        "subtitle_pl",
-        "title_marker_pl"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "poi_pl",
-          "polish_text",
-          "subtitle_pl"
-        ],
-        "weak_signals": [
-          "title_marker_pl"
-        ],
-        "negative_signals": [],
-        "pl_confidence": 100.0
-      }
-    },
-    {
-      "seed": "poznań",
-      "id": "7699193211746618646",
-      "title": "Looking for things to do in Poznań, Poland? 🇵🇱✨ From adrenaline-filled alpine coaster rides and relaxing thermal baths to water parks, the famous Poznań goats, football match atmosphere, beautiful churches and fun restaurants with unique experiences — there’s so much more to this city than you might think! We used Ubers to get around and found them really cheap too. 📌 Save this for your next city break and add Poznań to your travel list! #Poznan #PolandTravel #CityBreak #TravelTok #ThingsToDo",
-      "views": 4236,
-      "likes": 162,
-      "comments": 87,
-      "shares": 39,
-      "bookmarks": 84,
-      "hashtags": [
-        "poznan",
-        "polandtravel",
-        "citybreak",
-        "traveltok",
-        "thingstodo"
-      ],
-      "uploadedAtFormatted": "2026-10-21T18:41:58.000Z",
-      "channel": {
-        "id": "6818472065088832518",
-        "name": "nakita",
-        "username": "nakitalamacraft",
-        "profile_url": "https://www.tiktok.com/@nakitalamacraft",
-        "followers": 3642,
-        "following": 3279,
-        "provider_verified": true
-      },
-      "subtitle_languages": [
-        "ja"
-      ],
-      "poi": {
-        "poiName": "Poznań",
-        "address": "Poznan, Greater Poland, Poland",
-        "cityName": "",
-        "regionCode": "798544"
-      },
-      "polish_signals": [
-        "flag_pl",
-        "hashtag_pl",
-        "poi_pl",
-        "polish_text",
-        "title_marker_pl"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "flag_pl",
-          "poi_pl",
-          "polish_text"
-        ],
-        "weak_signals": [
-          "hashtag_pl",
-          "title_marker_pl"
-        ],
-        "negative_signals": [
-          "subtitle_foreign"
-        ],
-        "pl_confidence": 90.0
-      }
-    },
-    {
-      "seed": "poznań",
-      "id": "7699592791877340449",
-      "title": "Poznań nocą 🌙 #dlaciebie #dc #poznan #night ",
-      "views": 1290,
-      "likes": 54,
-      "comments": 0,
-      "shares": 0,
-      "bookmarks": 0,
-      "hashtags": [
-        "dlaciebie",
-        "dc",
-        "poznan",
-        "night"
-      ],
-      "uploadedAtFormatted": "2026-10-22T20:32:29.000Z",
-      "channel": {
-        "id": "6949693746234033157",
-        "name": "Motorniczy",
-        "username": "okiemmotorniczego",
-        "profile_url": "https://www.tiktok.com/@okiemmotorniczego",
-        "followers": 55164,
-        "following": 89,
-        "provider_verified": true
-      },
-      "subtitle_languages": [],
-      "poi": null,
-      "polish_signals": [
-        "polish_text",
-        "title_marker_pl"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "polish_text"
-        ],
-        "weak_signals": [
-          "title_marker_pl"
-        ],
-        "negative_signals": [],
-        "pl_confidence": 72.5
-      }
-    },
-    {
-      "seed": "poznań",
-      "id": "7690558318930087200",
-      "title": "Adres do tych pyszności - Szkolna 5, 61-834 Poznań #kawaii #hellokitty #citybreak #dc ",
-      "views": 350177,
-      "likes": 43006,
-      "comments": 255,
-      "shares": 18445,
-      "bookmarks": 9722,
-      "hashtags": [
-        "kawaii",
-        "hellokitty",
-        "citybreak",
-        "dc"
-      ],
-      "uploadedAtFormatted": "2026-09-28T12:14:08.000Z",
-      "channel": {
-        "id": "6810547701827519494",
-        "name": "falarzówka",
-        "username": "falarzowka",
-        "profile_url": "https://www.tiktok.com/@falarzowka",
-        "followers": 2168,
-        "following": 134,
-        "provider_verified": true
-      },
-      "subtitle_languages": [
-        "pl",
-        "en"
-      ],
-      "poi": null,
-      "polish_signals": [
-        "polish_text",
-        "subtitle_pl",
-        "title_marker_pl"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "polish_text",
-          "subtitle_pl"
-        ],
-        "weak_signals": [
-          "title_marker_pl"
-        ],
-        "negative_signals": [],
-        "pl_confidence": 97.5
-      }
-    },
-    {
-      "seed": "poznań",
-      "id": "7676470813473754400",
-      "title": "#debiec #poznan #fyp #dc #trend ",
-      "views": 3132,
-      "likes": 100,
-      "comments": 9,
-      "shares": 23,
-      "bookmarks": 13,
-      "hashtags": [
-        "debiec",
-        "poznan",
-        "fyp",
-        "dc",
-        "trend"
-      ],
-      "uploadedAtFormatted": "2026-08-21T13:07:24.000Z",
-      "channel": {
-        "id": "7588485601834451990",
-        "name": "Szydelko2137",
-        "username": "szydelko2137",
-        "profile_url": "https://www.tiktok.com/@szydelko2137",
-        "followers": 212,
-        "following": 110,
-        "provider_verified": true
-      },
-      "subtitle_languages": [],
-      "poi": null,
-      "polish_signals": [
-        "title_marker_pl"
-      ],
-      "pl_evidence": {
-        "strong_signals": [],
-        "weak_signals": [
-          "title_marker_pl"
-        ],
-        "negative_signals": [],
-        "pl_confidence": 10.0
-      }
-    },
-    {
-      "seed": "poznań",
-      "id": "7680629855469309217",
-      "title": "48 houres in Poznań 🤍🫐🦢 #poland #poznan #poznań #poznanfoodie #polandtiktok ",
-      "views": 23027,
-      "likes": 1455,
-      "comments": 30,
-      "shares": 216,
-      "bookmarks": 542,
-      "hashtags": [
-        "poland",
-        "poznan",
-        "poznań",
-        "poznanfoodie",
-        "polandtiktok"
-      ],
-      "uploadedAtFormatted": "2026-09-01T18:06:38.000Z",
-      "channel": {
-        "id": "27181779",
-        "name": "Zuzannalexandra",
-        "username": "zuzannalexandrax",
-        "profile_url": "https://www.tiktok.com/@zuzannalexandrax",
-        "followers": 5785,
-        "following": 1329,
-        "provider_verified": true
-      },
-      "subtitle_languages": [
-        "en"
-      ],
-      "poi": {
-        "poiName": "Poznań",
-        "address": "Poznan, Greater Poland, Poland",
-        "cityName": "",
-        "regionCode": "798544"
-      },
-      "polish_signals": [
-        "hashtag_pl",
-        "poi_pl",
-        "polish_text",
-        "title_marker_pl"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "poi_pl",
-          "polish_text"
-        ],
-        "weak_signals": [
-          "hashtag_pl",
-          "title_marker_pl"
-        ],
-        "negative_signals": [
-          "subtitle_foreign"
-        ],
-        "pl_confidence": 80.0
-      }
-    },
-    {
-      "seed": "poznań",
-      "id": "7702534170525928737",
-      "title": "#poznan #niszowe #bajera",
-      "views": 899,
-      "likes": 73,
-      "comments": 1,
-      "shares": 5,
-      "bookmarks": 2,
-      "hashtags": [
-        "poznan",
-        "niszowe",
-        "bajera"
-      ],
-      "uploadedAtFormatted": "2026-10-30T18:46:33.000Z",
-      "channel": {
-        "id": "7641542485642462230",
-        "name": "majaassss",
-        "username": "majaassss4",
-        "profile_url": "https://www.tiktok.com/@majaassss4",
-        "followers": 168,
-        "following": 125,
-        "provider_verified": true
-      },
-      "subtitle_languages": [
-        "en",
-        "pl"
-      ],
-      "poi": null,
-      "polish_signals": [
-        "subtitle_pl",
-        "title_marker_pl"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "subtitle_pl"
-        ],
-        "weak_signals": [
-          "title_marker_pl"
-        ],
-        "negative_signals": [],
-        "pl_confidence": 87.5
-      }
-    },
-    {
-      "seed": "poznań",
-      "id": "7701722546382621984",
-      "title": "Pocztówka z 📍Poznania 🥐🐐🥔 #cityaesthetic #Polandtravel #citybreak #Poznan #Poland ",
-      "views": 876,
-      "likes": 36,
-      "comments": 3,
-      "shares": 8,
-      "bookmarks": 5,
-      "hashtags": [
-        "cityaesthetic",
-        "polandtravel",
-        "citybreak",
-        "poznan",
-        "poland"
-      ],
-      "uploadedAtFormatted": "2026-10-28T14:17:02.000Z",
-      "channel": {
-        "id": "6899467657918841861",
-        "name": "Trójmiasto Atrakcje 🌊",
-        "username": "ticketto3city",
-        "profile_url": "https://www.tiktok.com/@ticketto3city",
-        "followers": 14887,
-        "following": 3,
-        "provider_verified": true
-      },
-      "subtitle_languages": [],
-      "poi": {
-        "poiName": "Poznań",
-        "address": "Poznan, Greater Poland, Poland",
-        "cityName": "",
-        "regionCode": "798544"
-      },
-      "polish_signals": [
-        "hashtag_pl",
-        "poi_pl",
-        "polish_text",
-        "title_marker_pl"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "poi_pl",
-          "polish_text"
-        ],
-        "weak_signals": [
-          "hashtag_pl",
-          "title_marker_pl"
-        ],
-        "negative_signals": [],
-        "pl_confidence": 100.0
-      }
-    },
-    {
-      "seed": "poznań",
-      "id": "7699087692885249313",
-      "title": "Poland is Beautiful and safe  #poland #poznań #miasto #dlaciebie #travel ",
-      "views": 6277,
-      "likes": 270,
-      "comments": 15,
-      "shares": 10,
-      "bookmarks": 15,
-      "hashtags": [
-        "poland",
-        "poznań",
-        "miasto",
-        "dlaciebie",
-        "travel"
-      ],
-      "uploadedAtFormatted": "2026-10-21T11:52:27.000Z",
-      "channel": {
-        "id": "7464379952348365846",
-        "name": "The travel walk",
-        "username": "thetravelwalk",
-        "profile_url": "https://www.tiktok.com/@thetravelwalk",
-        "followers": 17251,
-        "following": 113,
-        "provider_verified": true
-      },
-      "subtitle_languages": [],
-      "poi": null,
-      "polish_signals": [
-        "hashtag_pl",
-        "polish_text",
-        "title_marker_pl"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "polish_text"
-        ],
-        "weak_signals": [
-          "hashtag_pl",
-          "title_marker_pl"
-        ],
-        "negative_signals": [],
-        "pl_confidence": 80.0
-      }
-    },
-    {
-      "seed": "macierzynstwo",
-      "id": "7702485435083148576",
-      "title": "Co robiiiić? 😅🙈 #macierzynstwo #wychowanie #wystrojwnetrz #rodzicielstwo #pokojdziecka ",
-      "views": 481717,
-      "likes": 32771,
-      "comments": 745,
-      "shares": 154,
-      "bookmarks": 1101,
-      "hashtags": [
-        "macierzynstwo",
-        "wychowanie",
-        "wystrojwnetrz",
-        "rodzicielstwo",
-        "pokojdziecka"
-      ],
-      "uploadedAtFormatted": "2026-10-30T15:37:25.000Z",
-      "channel": {
-        "id": "6907634787750937605",
-        "name": "Antonina Zych",
-        "username": "antoninazych",
-        "profile_url": "https://www.tiktok.com/@antoninazych",
-        "followers": 845649,
-        "following": 272,
-        "provider_verified": true
-      },
-      "subtitle_languages": [
-        "pl"
-      ],
-      "poi": null,
-      "polish_signals": [
-        "polish_text",
-        "subtitle_pl"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "polish_text",
-          "subtitle_pl"
-        ],
-        "weak_signals": [],
-        "negative_signals": [],
-        "pl_confidence": 90.0
-      }
-    },
-    {
-      "seed": "macierzynstwo",
-      "id": "7701359666932108577",
-      "title": "Moja córka po 3 minutach na TikToku, kiedy ja po 25 latach nadal nie umiem tańczyć 😂😭 #viral #treanding #dc #dlaciebie #macierzynstwo ",
-      "views": 171291,
-      "likes": 2964,
-      "comments": 83,
-      "shares": 261,
-      "bookmarks": 186,
-      "hashtags": [
-        "viral",
-        "treanding",
-        "dc",
-        "dlaciebie",
-        "macierzynstwo"
-      ],
-      "uploadedAtFormatted": "2026-10-27T14:48:57.000Z",
-      "channel": {
-        "id": "156839524264886272",
-        "name": "MAGDA 🌸",
-        "username": "madeelka.p",
-        "profile_url": "https://www.tiktok.com/@madeelka.p",
-        "followers": 325,
-        "following": 327,
-        "provider_verified": true
-      },
-      "subtitle_languages": [],
-      "poi": null,
-      "polish_signals": [
-        "polish_text"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "polish_text"
-        ],
-        "weak_signals": [],
-        "negative_signals": [],
-        "pl_confidence": 65.0
-      }
-    },
-    {
-      "seed": "macierzynstwo",
-      "id": "7694413495143632160",
-      "title": "6 dni vs 6 miesięcy 🥹🤍 Ten sam uśmiech, tylko szczęścia coraz więcej ❤️ czy ktoś może zatrzymać czas? 🥺 #6monthsold #babytok #macierzynstwo #babyboy  ",
-      "views": 538841,
-      "likes": 19793,
-      "comments": 82,
-      "shares": 1849,
-      "bookmarks": 979,
-      "hashtags": [
-        "6monthsold",
-        "babytok",
-        "macierzynstwo",
-        "babyboy"
-      ],
-      "uploadedAtFormatted": "2026-10-08T21:34:11.000Z",
-      "channel": {
-        "id": "6748160808750498822",
-        "name": "Julita",
-        "username": "xcyzj",
-        "profile_url": "https://www.tiktok.com/@xcyzj",
-        "followers": 227,
-        "following": 309,
-        "provider_verified": true
-      },
-      "subtitle_languages": [
-        "en",
-        "pt"
-      ],
-      "poi": null,
-      "polish_signals": [
-        "polish_text"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "polish_text"
-        ],
-        "weak_signals": [],
-        "negative_signals": [
-          "subtitle_foreign"
-        ],
-        "pl_confidence": 40.0
-      }
-    },
-    {
-      "seed": "macierzynstwo",
-      "id": "7696902917336337686",
-      "title": "Ale zmiana 🤭🩵 #dc #ciaza #plec #macierzynstwo #pregant ",
-      "views": 244103,
-      "likes": 16370,
-      "comments": 537,
-      "shares": 773,
-      "bookmarks": 589,
-      "hashtags": [
-        "dc",
-        "ciaza",
-        "plec",
-        "macierzynstwo",
-        "pregant"
-      ],
-      "uploadedAtFormatted": "2026-10-15T14:34:25.000Z",
-      "channel": {
-        "id": "6782659286533309446",
-        "name": "natalia.jancz",
-        "username": "natalia.jancz",
-        "profile_url": "https://www.tiktok.com/@natalia.jancz",
-        "followers": 66818,
-        "following": 802,
-        "provider_verified": true
-      },
-      "subtitle_languages": [
-        "pl"
-      ],
-      "poi": null,
-      "polish_signals": [
-        "subtitle_pl"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "subtitle_pl"
-        ],
-        "weak_signals": [],
-        "negative_signals": [],
-        "pl_confidence": 80.0
-      }
-    },
-    {
-      "seed": "macierzynstwo",
-      "id": "7685347252784729376",
-      "title": "Gwiazda 🙋‍♀️ @INTERNAZIOMALE  #zabsonziomal #sopot #macierzynstwo #przedszkolak #internazionale ",
-      "views": 626753,
-      "likes": 72077,
-      "comments": 538,
-      "shares": 15637,
-      "bookmarks": 4479,
-      "hashtags": [
-        "zabsonziomal",
-        "sopot",
-        "macierzynstwo",
-        "przedszkolak",
-        "internazionale"
-      ],
-      "uploadedAtFormatted": "2026-09-14T11:12:34.000Z",
-      "channel": {
-        "id": "227906585660985344",
-        "name": "Patrycja Wojtasik-Gugała",
-        "username": "ig.patiwojtasik",
-        "profile_url": "https://www.tiktok.com/@ig.patiwojtasik",
-        "followers": 8324,
-        "following": 1051,
-        "provider_verified": true
-      },
-      "subtitle_languages": [
-        "pl"
-      ],
-      "poi": null,
-      "polish_signals": [
-        "subtitle_pl"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "subtitle_pl"
-        ],
-        "weak_signals": [],
-        "negative_signals": [],
-        "pl_confidence": 80.0
-      }
-    },
-    {
-      "seed": "macierzynstwo",
-      "id": "7702823641393712417",
-      "title": "a miały iść na drzemkę...🫣😁😅 #twins #macierzynstwo #rodzicielstwo #blizniaczki ",
-      "views": 57718,
-      "likes": 2807,
-      "comments": 41,
-      "shares": 511,
-      "bookmarks": 114,
-      "hashtags": [
-        "twins",
-        "macierzynstwo",
-        "rodzicielstwo",
-        "blizniaczki"
-      ],
-      "uploadedAtFormatted": "2026-10-31T13:29:49.000Z",
-      "channel": {
-        "id": "6533266137348576271",
-        "name": "Żuczki :)",
-        "username": "druzynazuczkow",
-        "profile_url": "https://www.tiktok.com/@druzynazuczkow",
-        "followers": 7727,
-        "following": 386,
-        "provider_verified": true
-      },
-      "subtitle_languages": [
-        "pl"
-      ],
-      "poi": null,
-      "polish_signals": [
-        "polish_text",
-        "subtitle_pl"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "polish_text",
-          "subtitle_pl"
-        ],
-        "weak_signals": [],
-        "negative_signals": [],
-        "pl_confidence": 90.0
-      }
-    },
-    {
-      "seed": "macierzynstwo",
-      "id": "7699060387655748897",
-      "title": "Zostałam mamą dwójki dzieci z różnicą zaledwie 10 miesięcy. 🥹❤️ Myślałam, że wiem już, czym jest macierzyństwo… ale życie z dwójką maluchów szybko zweryfikowało moje wyobrażenia. 😂 Są rzeczy, na które naprawdę nikt mnie nie przygotował! Mamy 2 under 2! 🫶 Co Was najbardziej zaskoczyło po pojawieniu się drugiego dziecka? 👀 #2#2under2t#twoundertwom#macierzynstwom#mamadwojkimomtoker",
-      "views": 35126,
-      "likes": 899,
-      "comments": 109,
-      "shares": 62,
-      "bookmarks": 99,
-      "hashtags": [
-        "2under2",
-        "twoundertwo",
-        "macierzynstwo",
-        "mamadwojki"
-      ],
-      "uploadedAtFormatted": "2026-10-21T10:06:30.000Z",
-      "channel": {
-        "id": "111124948533788672",
-        "name": "Nicola Brzostowska",
-        "username": "nicolabrzostowska",
-        "profile_url": "https://www.tiktok.com/@nicolabrzostowska",
-        "followers": 2367,
-        "following": 548,
-        "provider_verified": true
-      },
-      "subtitle_languages": [
-        "pl"
-      ],
-      "poi": null,
-      "polish_signals": [
-        "polish_text",
-        "subtitle_pl"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "polish_text",
-          "subtitle_pl"
-        ],
-        "weak_signals": [],
-        "negative_signals": [],
-        "pl_confidence": 90.0
-      }
-    },
-    {
-      "seed": "macierzynstwo",
-      "id": "7702355626114026785",
-      "title": "Trzeba się pośmiać ❤️😂 w końcu dziś dzień dyni 🩷 #mama #macierzyństwo #dynia #jesień #przedszkole ",
-      "views": 329846,
-      "likes": 8685,
-      "comments": 166,
-      "shares": 2156,
-      "bookmarks": 464,
-      "hashtags": [
-        "mama",
-        "macierzyństwo",
-        "dynia",
-        "jesień",
-        "przedszkole"
-      ],
-      "uploadedAtFormatted": "2026-10-30T07:13:44.000Z",
-      "channel": {
-        "id": "6821580703084561414",
-        "name": "edyta_z_littlestar",
-        "username": "edyta_z_littlestar",
-        "profile_url": "https://www.tiktok.com/@edyta_z_littlestar",
-        "followers": 17073,
-        "following": 300,
-        "provider_verified": true
-      },
-      "subtitle_languages": [],
-      "poi": null,
-      "polish_signals": [
-        "polish_text"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "polish_text"
-        ],
-        "weak_signals": [],
-        "negative_signals": [],
-        "pl_confidence": 65.0
-      }
-    },
-    {
-      "seed": "macierzynstwo",
-      "id": "7695432074907372832",
-      "title": "najwspanialszy dźwięk 🥹 #macierzynstwo #niemowlak ",
-      "views": 385993,
-      "likes": 66702,
-      "comments": 178,
-      "shares": 7501,
-      "bookmarks": 3388,
-      "hashtags": [
-        "macierzynstwo",
-        "niemowlak"
-      ],
-      "uploadedAtFormatted": "2026-10-11T15:26:47.000Z",
-      "channel": {
-        "id": "6755560639336285190",
-        "name": "karolinarassek",
-        "username": "karorassek",
-        "profile_url": "https://www.tiktok.com/@karorassek",
-        "followers": 2392,
-        "following": 280,
-        "provider_verified": true
-      },
-      "subtitle_languages": [],
-      "poi": null,
-      "polish_signals": [
-        "polish_text"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "polish_text"
-        ],
-        "weak_signals": [],
-        "negative_signals": [],
-        "pl_confidence": 65.0
-      }
-    },
-    {
-      "seed": "macierzynstwo",
-      "id": "7698442155420830998",
-      "title": "Tak to już jest, że zamiast spać to człowiek scrolluje i szczerzy zęby do telefonu 🤡😁 @Eryk Nadolny, @pod_mazurskim_dachem, @Błażej Krajewski uwielbiam 🤩 mimo iż się przez was nie wysypiam 😁 ❤️ #macierzynstwo #mamadwojki ",
-      "views": 341654,
-      "likes": 5553,
-      "comments": 110,
-      "shares": 140,
-      "bookmarks": 1275,
-      "hashtags": [
-        "macierzynstwo",
-        "mamadwojki"
-      ],
-      "uploadedAtFormatted": "2026-10-19T18:07:29.000Z",
-      "channel": {
-        "id": "106534972236120064",
-        "name": "Ania_Kamińska 🌸",
-        "username": "ania__kaminska",
-        "profile_url": "https://www.tiktok.com/@ania__kaminska",
-        "followers": 5422,
-        "following": 173,
-        "provider_verified": true
-      },
-      "subtitle_languages": [
-        "pl"
-      ],
-      "poi": null,
-      "polish_signals": [
-        "polish_text",
-        "subtitle_pl"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "polish_text",
-          "subtitle_pl"
-        ],
-        "weak_signals": [],
-        "negative_signals": [],
-        "pl_confidence": 90.0
-      }
-    },
-    {
-      "seed": "randka",
-      "id": "7699565704051232033",
-      "title": "Kawa czy spacer na pierwszą randkę? 😊 #Polska #PierwszaRandka #RandkiWPolsce #SingleWPolsce #PoznajmySie",
-      "views": 3626,
-      "likes": 84,
-      "comments": 24,
-      "shares": 1,
-      "bookmarks": 7,
-      "hashtags": [
-        "polska",
-        "pierwszarandka",
-        "randkiwpolsce",
-        "singlewpolsce",
-        "poznajmysie"
-      ],
-      "uploadedAtFormatted": "2026-10-22T18:47:22.000Z",
-      "channel": {
-        "id": "7620569576263484438",
-        "name": "z14ba1",
-        "username": "z14ba1",
-        "profile_url": "https://www.tiktok.com/@z14ba1",
-        "followers": 388,
-        "following": 392,
-        "provider_verified": true
-      },
-      "subtitle_languages": [],
-      "poi": null,
-      "polish_signals": [
-        "hashtag_pl",
-        "polish_text",
-        "title_marker_pl"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "polish_text"
-        ],
-        "weak_signals": [
-          "hashtag_pl",
-          "title_marker_pl"
-        ],
-        "negative_signals": [],
-        "pl_confidence": 80.0
-      }
-    },
-    {
-      "seed": "randka",
-      "id": "7699183967748050209",
-      "title": "Warszawa, Kraków, Gdańsk… czy gdzieś indziej? 📍 #Polska #RandkiWPolsce #SingleWPolsce #PoznajmySie #Randki",
-      "views": 6405,
-      "likes": 181,
-      "comments": 71,
-      "shares": 2,
-      "bookmarks": 20,
-      "hashtags": [
-        "polska",
-        "randkiwpolsce",
-        "singlewpolsce",
-        "poznajmysie",
-        "randki"
-      ],
-      "uploadedAtFormatted": "2026-10-21T18:06:03.000Z",
-      "channel": {
-        "id": "7620569576263484438",
-        "name": "z14ba1",
-        "username": "z14ba1",
-        "profile_url": "https://www.tiktok.com/@z14ba1",
-        "followers": 388,
-        "following": 392,
-        "provider_verified": true
-      },
-      "subtitle_languages": [],
-      "poi": null,
-      "polish_signals": [
-        "hashtag_pl",
-        "polish_text",
-        "title_marker_pl"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "polish_text"
-        ],
-        "weak_signals": [
-          "hashtag_pl",
-          "title_marker_pl"
-        ],
-        "negative_signals": [],
-        "pl_confidence": 80.0
-      }
-    },
-    {
-      "seed": "randka",
-      "id": "7693902779387104545",
-      "title": "Storytime?🤡 #randka #date #tinder #fail #redflag EDIT STORYTIME NA PROFILU",
-      "views": 643977,
-      "likes": 36761,
-      "comments": 1023,
-      "shares": 2412,
-      "bookmarks": 6011,
-      "hashtags": [
-        "randka",
-        "date",
-        "tinder",
-        "fail",
-        "redflag"
-      ],
-      "uploadedAtFormatted": "2026-10-07T12:32:22.000Z",
-      "channel": {
-        "id": "6973280473410814982",
-        "name": "paula.vidaloca",
-        "username": "paula.vidaloca",
-        "profile_url": "https://www.tiktok.com/@paula.vidaloca",
-        "followers": 3064,
-        "following": 119,
-        "provider_verified": true
-      },
-      "subtitle_languages": [],
-      "poi": {
-        "poiName": "Niezły Meksyk Mexican Restaurant",
-        "address": "Różana 15/2, 61-577 Poznań, Poland",
-        "cityName": "Poznań",
-        "regionCode": "798544"
-      },
-      "polish_signals": [
-        "poi_pl"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "poi_pl"
-        ],
-        "weak_signals": [],
-        "negative_signals": [],
-        "pl_confidence": 80.0
-      }
-    },
-    {
-      "seed": "randka",
-      "id": "7690141962673982743",
-      "title": "#dc #program #randka ",
-      "views": 605594,
-      "likes": 17713,
-      "comments": 823,
-      "shares": 7909,
-      "bookmarks": 2086,
-      "hashtags": [
-        "dc",
-        "program",
-        "randka"
-      ],
-      "uploadedAtFormatted": "2026-09-27T09:18:31.000Z",
-      "channel": {
-        "id": "7409694547338363936",
-        "name": "Wow!",
-        "username": "wow.news1991",
-        "profile_url": "https://www.tiktok.com/@wow.news1991",
-        "followers": 76134,
-        "following": 3,
-        "provider_verified": true
-      },
-      "subtitle_languages": [
-        "pl"
-      ],
-      "poi": null,
-      "polish_signals": [
-        "subtitle_pl"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "subtitle_pl"
-        ],
-        "weak_signals": [],
-        "negative_signals": [],
-        "pl_confidence": 80.0
-      }
-    },
-    {
-      "seed": "randka",
-      "id": "7676388240819113249",
-      "title": "Jeszcze nie zapytała o finanse 😎🤭🤪 #humor #para #love #couple #randka ",
-      "views": 719356,
-      "likes": 11825,
-      "comments": 1134,
-      "shares": 5004,
-      "bookmarks": 1585,
-      "hashtags": [
-        "humor",
-        "para",
-        "love",
-        "couple",
-        "randka"
-      ],
-      "uploadedAtFormatted": "2026-08-21T07:47:01.000Z",
-      "channel": {
-        "id": "7062796966858212357",
-        "name": "kultumisie",
-        "username": "kultumisie",
-        "profile_url": "https://www.tiktok.com/@kultumisie",
-        "followers": 16204,
-        "following": 193,
-        "provider_verified": true
-      },
-      "subtitle_languages": [
-        "pl"
-      ],
-      "poi": {
-        "poiName": "Zgierz",
-        "address": "Zgierz, Łódzkie, Polska",
-        "cityName": "",
-        "regionCode": "798544"
-      },
-      "polish_signals": [
-        "poi_pl",
-        "polish_text",
-        "subtitle_pl"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "poi_pl",
-          "polish_text",
-          "subtitle_pl"
-        ],
-        "weak_signals": [],
-        "negative_signals": [],
-        "pl_confidence": 100.0
-      }
-    },
-    {
-      "seed": "randka",
-      "id": "7701673674205711648",
-      "title": "Kawa czy spacer na pierwszą randkę? 😊 #Polska #PierwszaRandka #RandkiWPolsce #SingleWPolsce #PoznajmySie",
-      "views": 672,
-      "likes": 4,
-      "comments": 0,
-      "shares": 0,
-      "bookmarks": 0,
-      "hashtags": [
-        "polska",
-        "pierwszarandka",
-        "randkiwpolsce",
-        "singlewpolsce",
-        "poznajmysie"
-      ],
-      "uploadedAtFormatted": "2026-10-28T11:07:25.000Z",
-      "channel": {
-        "id": "7701362744079598614",
-        "name": "Pqqiwuuui",
-        "username": "pqqiwuuui",
-        "profile_url": "https://www.tiktok.com/@pqqiwuuui",
-        "followers": 2,
-        "following": 0,
-        "provider_verified": true
-      },
-      "subtitle_languages": [
-        "pl"
-      ],
-      "poi": null,
-      "polish_signals": [
-        "hashtag_pl",
-        "polish_text",
-        "subtitle_pl",
-        "title_marker_pl"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "polish_text",
-          "subtitle_pl"
-        ],
-        "weak_signals": [
-          "hashtag_pl",
-          "title_marker_pl"
-        ],
-        "negative_signals": [],
-        "pl_confidence": 100.0
-      }
-    },
-    {
-      "seed": "randka",
-      "id": "7699862033038118177",
-      "title": "Prawdziwi gentlameni istnieją na prawdę. I nawet znajdą się na tinderze 😦🫣😚🌸❤️ #tinder #date #randka #standardy #gentleman ",
-      "views": 115823,
-      "likes": 1642,
-      "comments": 226,
-      "shares": 131,
-      "bookmarks": 234,
-      "hashtags": [
-        "tinder",
-        "date",
-        "randka",
-        "standardy",
-        "gentleman"
-      ],
-      "uploadedAtFormatted": "2026-10-23T13:57:17.000Z",
-      "channel": {
-        "id": "7630189652558251040",
-        "name": "Patrycja Łącka",
-        "username": "tajednaszczesciara",
-        "profile_url": "https://www.tiktok.com/@tajednaszczesciara",
-        "followers": 2280,
-        "following": 65,
-        "provider_verified": true
-      },
-      "subtitle_languages": [],
-      "poi": null,
-      "polish_signals": [
-        "polish_text"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "polish_text"
-        ],
-        "weak_signals": [],
-        "negative_signals": [],
-        "pl_confidence": 65.0
-      }
-    },
-    {
-      "seed": "randka",
-      "id": "7695093488093793568",
-      "title": "#Polska #PolishDating #Randki #PoważnyZwiązek #Miłość",
-      "views": 97038,
-      "likes": 4608,
-      "comments": 1358,
-      "shares": 22,
-      "bookmarks": 174,
-      "hashtags": [
-        "polska",
-        "polishdating",
-        "randki",
-        "poważnyzwiązek",
-        "miłość"
-      ],
-      "uploadedAtFormatted": "2026-10-10T17:32:53.000Z",
-      "channel": {
-        "id": "7693858921644426262",
-        "name": "Iytr",
-        "username": "iytr869",
-        "profile_url": "https://www.tiktok.com/@iytr869",
-        "followers": 1881,
-        "following": 99,
-        "provider_verified": true
-      },
-      "subtitle_languages": [],
-      "poi": null,
-      "polish_signals": [
-        "hashtag_pl",
-        "polish_text",
-        "title_marker_pl"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "polish_text"
-        ],
-        "weak_signals": [
-          "hashtag_pl",
-          "title_marker_pl"
-        ],
-        "negative_signals": [],
-        "pl_confidence": 80.0
-      }
-    },
-    {
-      "seed": "randka",
-      "id": "7700275574299757857",
-      "title": "#Polska #PolishDating #Randki #PoważnyZwiązek #Miłość",
-      "views": 5971,
-      "likes": 179,
-      "comments": 20,
-      "shares": 1,
-      "bookmarks": 12,
-      "hashtags": [
-        "polska",
-        "polishdating",
-        "randki",
-        "poważnyzwiązek",
-        "miłość"
-      ],
-      "uploadedAtFormatted": "2026-10-24T16:42:01.000Z",
-      "channel": {
-        "id": "7687309363707479073",
-        "name": "Fdd",
-        "username": "fdd186",
-        "profile_url": "https://www.tiktok.com/@fdd186",
-        "followers": 971,
-        "following": 669,
-        "provider_verified": true
-      },
-      "subtitle_languages": [],
-      "poi": null,
-      "polish_signals": [
-        "hashtag_pl",
-        "polish_text",
-        "title_marker_pl"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "polish_text"
-        ],
-        "weak_signals": [
-          "hashtag_pl",
-          "title_marker_pl"
-        ],
-        "negative_signals": [],
-        "pl_confidence": 80.0
-      }
-    },
-    {
-      "seed": "randka",
-      "id": "7701258453733444897",
-      "title": "#Polska #PolishDating #Randki #PoważnyZwiązek #Miłość",
-      "views": 75604,
-      "likes": 1110,
-      "comments": 126,
-      "shares": 53,
-      "bookmarks": 56,
-      "hashtags": [
-        "polska",
-        "polishdating",
-        "randki",
-        "poważnyzwiązek",
-        "miłość"
-      ],
-      "uploadedAtFormatted": "2026-10-27T08:16:11.000Z",
-      "channel": {
-        "id": "7687309363707479073",
-        "name": "Fdd",
-        "username": "fdd186",
-        "profile_url": "https://www.tiktok.com/@fdd186",
-        "followers": 971,
-        "following": 669,
-        "provider_verified": true
-      },
-      "subtitle_languages": [],
-      "poi": null,
-      "polish_signals": [
-        "hashtag_pl",
-        "polish_text",
-        "title_marker_pl"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "polish_text"
-        ],
-        "weak_signals": [
-          "hashtag_pl",
-          "title_marker_pl"
-        ],
-        "negative_signals": [],
-        "pl_confidence": 80.0
-      }
-    },
-    {
-      "seed": "medycyna",
-      "id": "7697316044318297376",
-      "title": "[REKLAMA] jeśli jesteś studentem medycyny to rozwiązanie ułatwi ci naukę!!👩‍🎓🩺#studia #medycyna #pielegniarstwo #StudyTips #4102 ",
-      "views": 30525,
-      "likes": 1243,
-      "comments": 5,
-      "shares": 322,
-      "bookmarks": 1031,
-      "hashtags": [
-        "studia",
-        "medycyna",
-        "pielegniarstwo",
-        "studytips",
-        "4102"
-      ],
-      "uploadedAtFormatted": "2026-10-16T17:17:32.000Z",
-      "channel": {
-        "id": "7637187180277318678",
-        "name": "learnwithsrokola",
-        "username": "learnwithsrokola",
-        "profile_url": "https://www.tiktok.com/@learnwithsrokola",
-        "followers": 1237,
-        "following": 56,
-        "provider_verified": true
-      },
-      "subtitle_languages": [
-        "pl"
-      ],
-      "poi": null,
-      "polish_signals": [
-        "polish_text",
-        "subtitle_pl"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "polish_text",
-          "subtitle_pl"
-        ],
-        "weak_signals": [],
-        "negative_signals": [],
-        "pl_confidence": 90.0
-      }
-    },
-    {
-      "seed": "medycyna",
-      "id": "7677280143051738401",
-      "title": "Kochani, podzielcie się w komentarzu swoimi polecajkami 👀 TOP 3 - najlepsze aplikacje na medycynie 🩺 Znacie te aplikacje? A może mieliście okazję z nich korzystać? 🙌🏻 @michalinabartos  #medicalstudent #medicaltiktok #medschool #medycyna #studentmedycyny ",
-      "views": 114589,
-      "likes": 7373,
-      "comments": 10,
-      "shares": 390,
-      "bookmarks": 4637,
-      "hashtags": [
-        "medicalstudent",
-        "medicaltiktok",
-        "medschool",
-        "medycyna",
-        "studentmedycyny"
-      ],
-      "uploadedAtFormatted": "2026-08-23T17:28:01.000Z",
-      "channel": {
-        "id": "7361737799484376096",
-        "name": "Medka.eu",
-        "username": "medka.eu",
-        "profile_url": "https://www.tiktok.com/@medka.eu",
-        "followers": 2199,
-        "following": 73,
-        "provider_verified": true
-      },
-      "subtitle_languages": [
-        "pl"
-      ],
-      "poi": null,
-      "polish_signals": [
-        "polish_text",
-        "subtitle_pl"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "polish_text",
-          "subtitle_pl"
-        ],
-        "weak_signals": [],
-        "negative_signals": [],
-        "pl_confidence": 90.0
-      }
-    },
-    {
-      "seed": "medycyna",
-      "id": "7701318318501973270",
-      "title": "współpraca| jesteście na jednym z tych kierunków? #studia #prawo #medycyna #matematyka #4302 ",
-      "views": 452450,
-      "likes": 4313,
-      "comments": 125,
-      "shares": 1160,
-      "bookmarks": 680,
-      "hashtags": [
-        "studia",
-        "prawo",
-        "medycyna",
-        "matematyka",
-        "4302"
-      ],
-      "uploadedAtFormatted": "2026-10-27T12:08:30.000Z",
-      "channel": {
-        "id": "7630731383402202114",
-        "name": "Marie",
-        "username": "maarielaura",
-        "profile_url": "https://www.tiktok.com/@maarielaura",
-        "followers": 2928,
-        "following": 64,
-        "provider_verified": true
-      },
-      "subtitle_languages": [
-        "pl"
-      ],
-      "poi": null,
-      "polish_signals": [
-        "polish_text",
-        "subtitle_pl"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "polish_text",
-          "subtitle_pl"
-        ],
-        "weak_signals": [],
-        "negative_signals": [],
-        "pl_confidence": 90.0
-      }
-    },
-    {
-      "seed": "medycyna",
-      "id": "7702887108830121249",
-      "title": "Czy Wy sobie wyobrażacie ze w przyszłym tygodniu  mam OSTATNI egzamin z Pediatrii?🥹🥹 vlog z nauki z tego tygodnia 🥹 #pediatria #lekarski #medycyna #nauka #egzamin",
-      "views": 8996,
-      "likes": 345,
-      "comments": 5,
-      "shares": 3,
-      "bookmarks": 27,
-      "hashtags": [
-        "pediatria",
-        "lekarski",
-        "medycyna",
-        "nauka",
-        "egzamin"
-      ],
-      "uploadedAtFormatted": "2026-10-31T17:36:07.000Z",
-      "channel": {
-        "id": "7001168940680954886",
-        "name": "Nataliapruchniewicz",
-        "username": "nataliapruchniewicz",
-        "profile_url": "https://www.tiktok.com/@nataliapruchniewicz",
-        "followers": 40919,
-        "following": 206,
-        "provider_verified": true
-      },
-      "subtitle_languages": [
-        "pl"
-      ],
-      "poi": null,
-      "polish_signals": [
-        "polish_text",
-        "subtitle_pl"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "polish_text",
-          "subtitle_pl"
-        ],
-        "weak_signals": [],
-        "negative_signals": [],
-        "pl_confidence": 90.0
-      }
-    },
-    {
-      "seed": "medycyna",
-      "id": "7700985169297149216",
-      "title": "kolejny study vlog ale tym razem z malym updatem😜😜 #studyvlog #nauka #lekarski #medycyna #study ",
-      "views": 14762,
-      "likes": 1963,
-      "comments": 13,
-      "shares": 36,
-      "bookmarks": 112,
-      "hashtags": [
-        "studyvlog",
-        "nauka",
-        "lekarski",
-        "medycyna",
-        "study"
-      ],
-      "uploadedAtFormatted": "2026-10-26T14:35:38.000Z",
-      "channel": {
-        "id": "7290223179803886624",
-        "name": "ig: emilia.szymczuk",
-        "username": "emilia.szymczuk",
-        "profile_url": "https://www.tiktok.com/@emilia.szymczuk",
-        "followers": 37215,
-        "following": 140,
-        "provider_verified": true
-      },
-      "subtitle_languages": [
-        "pl"
-      ],
-      "poi": null,
-      "polish_signals": [
-        "polish_text",
-        "subtitle_pl"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "polish_text",
-          "subtitle_pl"
-        ],
-        "weak_signals": [],
-        "negative_signals": [],
-        "pl_confidence": 90.0
-      }
-    },
-    {
-      "seed": "medycyna",
-      "id": "7702154528455478561",
-      "title": "study vlooog!! w koncu skonczylam te anki z immunologii z ktorymi sie tak meczylam🙈🙈 #studyvlog #nauka #lekarski #medycyna #studia ",
-      "views": 11122,
-      "likes": 1537,
-      "comments": 13,
-      "shares": 10,
-      "bookmarks": 125,
-      "hashtags": [
-        "studyvlog",
-        "nauka",
-        "lekarski",
-        "medycyna",
-        "studia"
-      ],
-      "uploadedAtFormatted": "2026-10-29T18:13:20.000Z",
-      "channel": {
-        "id": "7290223179803886624",
-        "name": "ig: emilia.szymczuk",
-        "username": "emilia.szymczuk",
-        "profile_url": "https://www.tiktok.com/@emilia.szymczuk",
-        "followers": 37215,
-        "following": 140,
-        "provider_verified": true
-      },
-      "subtitle_languages": [
-        "pl"
-      ],
-      "poi": null,
-      "polish_signals": [
-        "polish_text",
-        "subtitle_pl"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "polish_text",
-          "subtitle_pl"
-        ],
-        "weak_signals": [],
-        "negative_signals": [],
-        "pl_confidence": 90.0
-      }
-    },
-    {
-      "seed": "medycyna",
-      "id": "7701413155561278752",
-      "title": "#medycyna ",
-      "views": 38751,
-      "likes": 3386,
-      "comments": 20,
-      "shares": 82,
-      "bookmarks": 148,
-      "hashtags": [
-        "medycyna"
-      ],
-      "uploadedAtFormatted": "2026-10-27T18:16:25.000Z",
-      "channel": {
-        "id": "7051139451410269190",
-        "name": "wika🩺🫂",
-        "username": "wikaszylak",
-        "profile_url": "https://www.tiktok.com/@wikaszylak",
-        "followers": 16243,
-        "following": 1593,
-        "provider_verified": true
-      },
-      "subtitle_languages": [],
-      "poi": null,
-      "polish_signals": [],
-      "pl_evidence": {
-        "strong_signals": [],
-        "weak_signals": [],
-        "negative_signals": [],
-        "pl_confidence": 0.0
-      }
-    },
-    {
-      "seed": "medycyna",
-      "id": "7691223593816132887",
-      "title": "#anatomia #medycyna #studentmedycyny #nauka #egzaminy ",
-      "views": 333860,
-      "likes": 29313,
-      "comments": 49,
-      "shares": 2604,
-      "bookmarks": 7953,
-      "hashtags": [
-        "anatomia",
-        "medycyna",
-        "studentmedycyny",
-        "nauka",
-        "egzaminy"
-      ],
-      "uploadedAtFormatted": "2026-09-30T07:15:50.000Z",
-      "channel": {
-        "id": "7631258011999011862",
-        "name": "medwithmia",
-        "username": "medwithmia_",
-        "profile_url": "https://www.tiktok.com/@medwithmia_",
-        "followers": 7591,
-        "following": 1,
-        "provider_verified": true
-      },
-      "subtitle_languages": [],
-      "poi": null,
-      "polish_signals": [],
-      "pl_evidence": {
-        "strong_signals": [],
-        "weak_signals": [],
-        "negative_signals": [],
-        "pl_confidence": 0.0
-      }
-    },
-    {
-      "seed": "medycyna",
-      "id": "7702468456905444626",
-      "title": "#medycyna #studia #dc ",
-      "views": 34129,
-      "likes": 2813,
-      "comments": 34,
-      "shares": 423,
-      "bookmarks": 161,
-      "hashtags": [
-        "medycyna",
-        "studia",
-        "dc"
-      ],
-      "uploadedAtFormatted": "2026-10-30T14:31:37.000Z",
-      "channel": {
-        "id": "6572900867538763782",
-        "name": "Sonik",
-        "username": "sonik_sk",
-        "profile_url": "https://www.tiktok.com/@sonik_sk",
-        "followers": 722,
-        "following": 411,
-        "provider_verified": true
-      },
-      "subtitle_languages": [],
-      "poi": null,
-      "polish_signals": [],
-      "pl_evidence": {
-        "strong_signals": [],
-        "weak_signals": [],
-        "negative_signals": [],
-        "pl_confidence": 0.0
-      }
-    },
-    {
-      "seed": "medycyna",
-      "id": "7693964581017767201",
-      "title": "Ale potem podobno jest lepiej (na stażu xd) + ja na siebie mega dużo wzięłam 🫪 #lekdent #medstudent #medycyna #stomatologia #dentistry ",
-      "views": 73061,
-      "likes": 6276,
-      "comments": 22,
-      "shares": 56,
-      "bookmarks": 377,
-      "hashtags": [
-        "lekdent",
-        "medstudent",
-        "medycyna",
-        "stomatologia",
-        "dentistry"
-      ],
-      "uploadedAtFormatted": "2026-10-07T16:32:09.000Z",
-      "channel": {
-        "id": "6911606215161316357",
-        "name": "digitalzosia",
-        "username": "digitalzosia",
-        "profile_url": "https://www.tiktok.com/@digitalzosia",
-        "followers": 7590,
-        "following": 450,
-        "provider_verified": true
-      },
-      "subtitle_languages": [
-        "pl"
-      ],
-      "poi": {
-        "poiName": "Medical University of Warsaw",
-        "address": "Żwirki i Wigury 61, 02-091 Warszawa, Poland",
-        "cityName": "Warsaw",
-        "regionCode": "798544"
-      },
-      "polish_signals": [
-        "poi_pl",
-        "polish_text",
-        "subtitle_pl"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "poi_pl",
-          "polish_text",
-          "subtitle_pl"
-        ],
-        "weak_signals": [],
-        "negative_signals": [],
-        "pl_confidence": 100.0
-      }
-    },
-    {
-      "seed": "slub",
-      "id": "7698320047747501334",
-      "title": "Kamila pyta, co się stało, a Margareta mówi wprost, dlaczego nie chce ślubu. Co sądzisz o tej rozmowie? Fragment programu „Kochaj albo wróć”. #KlipNoJutsu #KochajAlboWroc #Margareta #Slub #RealityShow",
-      "views": 267921,
-      "likes": 6552,
-      "comments": 58,
-      "shares": 1095,
-      "bookmarks": 540,
-      "hashtags": [
-        "klipnojutsu",
-        "kochajalbowroc",
-        "margareta",
-        "slub",
-        "realityshow"
-      ],
-      "uploadedAtFormatted": "2026-10-20T17:00:00.000Z",
-      "channel": {
-        "id": "7697969759069307926",
-        "name": "Klip no Jutsu",
-        "username": "klip.no.jutsu",
-        "profile_url": "https://www.tiktok.com/@klip.no.jutsu",
-        "followers": 197,
-        "following": 186,
-        "provider_verified": false
-      },
-      "subtitle_languages": [
-        "pl"
-      ],
-      "poi": null,
-      "polish_signals": [
-        "polish_text",
-        "subtitle_pl"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "polish_text",
-          "subtitle_pl"
-        ],
-        "weak_signals": [],
-        "negative_signals": [],
-        "pl_confidence": 90.0
-      }
-    },
-    {
-      "seed": "slub",
-      "id": "7684279909316873505",
-      "title": "#slub #dc #viral #fyp #foryoupage❤️❤️ ",
-      "views": 539774,
-      "likes": 35079,
-      "comments": 709,
-      "shares": 2595,
-      "bookmarks": 3489,
-      "hashtags": [
-        "slub",
-        "dc",
-        "viral",
-        "fyp",
-        "foryoupage❤️❤️"
-      ],
-      "uploadedAtFormatted": "2026-09-11T14:10:41.000Z",
-      "channel": {
-        "id": "7483626749340255254",
-        "name": "Kapela Strupki",
-        "username": "kapela_strupki",
-        "profile_url": "https://www.tiktok.com/@kapela_strupki",
-        "followers": 6672,
-        "following": 0,
-        "provider_verified": false
-      },
-      "subtitle_languages": [],
-      "poi": null,
-      "polish_signals": [],
-      "pl_evidence": {
-        "strong_signals": [],
-        "weak_signals": [],
-        "negative_signals": [],
-        "pl_confidence": 0.0
-      }
-    },
-    {
-      "seed": "slub",
-      "id": "7685492005715119391",
-      "title": "restock thurs. (5pm pst) | los feliz crop muscle tee ii (slub) | #slub #slubtee #muscletee #croptee #fittedtee @Seth ",
-      "views": 230835,
-      "likes": 253,
-      "comments": 4,
-      "shares": 17,
-      "bookmarks": 69,
-      "hashtags": [
-        "slub",
-        "slubtee",
-        "muscletee",
-        "croptee",
-        "fittedtee"
-      ],
-      "uploadedAtFormatted": "2026-09-14T20:34:30.000Z",
-      "channel": {
-        "id": "7112206862482342958",
-        "name": "Pool House New York",
-        "username": "poolhousenewyork",
-        "profile_url": "https://www.tiktok.com/@poolhousenewyork",
-        "followers": 50442,
-        "following": 201,
-        "provider_verified": false
-      },
-      "subtitle_languages": [
-        "en"
-      ],
-      "poi": null,
-      "polish_signals": [],
-      "pl_evidence": {
-        "strong_signals": [],
-        "weak_signals": [],
-        "negative_signals": [
-          "subtitle_foreign"
-        ],
-        "pl_confidence": 0.0
-      }
-    },
-    {
-      "seed": "slub",
-      "id": "7700981130295643414",
-      "title": "Tie pohľady nezostanú bez povšimnutia. 👀 Čo vymyslela Andrejka dnes sa dozviete už o 17:55 na Markíze.  #tvmarkiza #slub #slubmarkiza",
-      "views": 8914,
-      "likes": 502,
-      "comments": 10,
-      "shares": 49,
-      "bookmarks": 47,
-      "hashtags": [
-        "tvmarkiza",
-        "slub",
-        "slubmarkiza"
-      ],
-      "uploadedAtFormatted": "2026-10-26T14:20:00.000Z",
-      "channel": {
-        "id": "6741338591442158597",
-        "name": "Televízia Markíza",
-        "username": "tvmarkiza",
-        "profile_url": "https://www.tiktok.com/@tvmarkiza",
-        "followers": 327083,
-        "following": 171,
-        "provider_verified": false
-      },
-      "subtitle_languages": [
-        "en"
-      ],
-      "poi": null,
-      "polish_signals": [
-        "polish_text"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "polish_text"
-        ],
-        "weak_signals": [],
-        "negative_signals": [
-          "subtitle_foreign"
-        ],
-        "pl_confidence": 40.0
-      }
-    },
-    {
-      "seed": "slub",
-      "id": "7693704567971761422",
-      "title": "slub pocket tees 🤩 @Distorted.Nyc thx for the special treatment w/ the beanie <3 || #streetwear #slub #babytee #outfitinspo #haeyunlove ",
-      "views": 6439,
-      "likes": 540,
-      "comments": 14,
-      "shares": 25,
-      "bookmarks": 48,
-      "hashtags": [
-        "streetwear",
-        "slub",
-        "babytee",
-        "outfitinspo",
-        "haeyunlove"
-      ],
-      "uploadedAtFormatted": "2026-10-06T23:43:33.000Z",
-      "channel": {
-        "id": "7412846511904605226",
-        "name": "joanna",
-        "username": "haeyunlove",
-        "profile_url": "https://www.tiktok.com/@haeyunlove",
-        "followers": 11188,
-        "following": 134,
-        "provider_verified": false
-      },
-      "subtitle_languages": [
-        "en"
-      ],
-      "poi": null,
-      "polish_signals": [],
-      "pl_evidence": {
-        "strong_signals": [],
-        "weak_signals": [],
-        "negative_signals": [
-          "subtitle_foreign"
-        ],
-        "pl_confidence": 0.0
-      }
-    },
-    {
-      "seed": "slub",
-      "id": "7700599048742407457",
-      "title": "Ewelina & Michał 🤍 #slub #polskiewesele #naszdzien #vhs #wesele2026 ",
-      "views": 235757,
-      "likes": 15533,
-      "comments": 74,
-      "shares": 8960,
-      "bookmarks": 960,
-      "hashtags": [
-        "slub",
-        "polskiewesele",
-        "naszdzien",
-        "vhs",
-        "wesele2026"
-      ],
-      "uploadedAtFormatted": "2026-10-25T13:37:16.000Z",
-      "channel": {
-        "id": "6985956953739461638",
-        "name": "Videoblonski Paweł Błoński",
-        "username": "videoblonski",
-        "profile_url": "https://www.tiktok.com/@videoblonski",
-        "followers": 2480,
-        "following": 1172,
-        "provider_verified": false
-      },
-      "subtitle_languages": [
-        "pl"
-      ],
-      "poi": {
-        "poiName": "Gmina Sobolew",
-        "address": "Sobolew, Garwolin, Masovian, Poland",
-        "cityName": "Sobolew",
-        "regionCode": "798544"
-      },
-      "polish_signals": [
-        "hashtag_pl",
-        "poi_pl",
-        "polish_text",
-        "subtitle_pl",
-        "title_marker_pl"
-      ],
-      "pl_evidence": {
-        "strong_signals": [
-          "poi_pl",
-          "polish_text",
-          "subtitle_pl"
-        ],
-        "weak_signals": [
-          "hashtag_pl",
-          "title_marker_pl"
-        ],
-        "negative_signals": [],
-        "pl_confidence": 100.0
-      }
-    },
-    {
-      "seed": "slub",
-      "id": "7688689219153186069",
-      "title": "Slub Shirt in the Philippines? #GOTSTYLE® #slubshirt #slubtee ",
-      "views": 57466,
-      "likes": 477,
-      "comments": 8,
-      "shares": 23,
-      "bookmarks": 82,
-      "hashtags": [
-        "gotstyle®",
-        "slubshirt",
-        "slubtee"
-      ],
-      "uploadedAtFormatted": "2026-09-23T11:21:05.000Z",
-      "channel": {
-        "id": "6964903362187461634",
-        "name": "GOT STYLE",
-        "username": "gotstyleph",
-        "profile_url": "https://www.tiktok.com/@gotstyleph",
-        "followers": 132065,
-        "following": 233,
-        "provider_verified": false
-      },
-      "subtitle_languages": [],
-      "poi": null,
-      "polish_signals": [],
-      "pl_evidence": {
-        "strong_signals": [],
-        "weak_signals": [],
-        "negative_signals": [],
-        "pl_confidence": 0.0
-      }
-    },
-    {
-      "seed": "slub",
-      "id": "7676411803236158728",
-      "title": "Featuring our new Slub tees.",
-      "views": 24067,
-      "likes": 1025,
-      "comments": 3,
-      "shares": 48,
-      "bookmarks": 104,
-      "hashtags": [],
-      "uploadedAtFormatted": "2026-08-21T09:18:28.000Z",
-      "channel": {
-        "id": "6902385468646884353",
-        "name": "Mutimer",
-        "username": "mutimer.co",
-        "profile_url": "https://www.tiktok.com/@mutimer.co",
-        "followers": 176679,
-        "following": 123,
-        "provider_verified": false
-      },
-      "subtitle_languages": [
-        "en"
-      ],
-      "poi": null,
-      "polish_signals": [],
-      "pl_evidence": {
-        "strong_signals": [],
-        "weak_signals": [],
-        "negative_signals": [
-          "subtitle_foreign"
-        ],
-        "pl_confidence": 0.0
-      }
-    },
-    {
-      "seed": "slub",
-      "id": "7694851390694378782",
-      "title": "thank you @Distorted.Nyc luv these #babytee #targetaudience #slub ",
-      "views": 62262,
-      "likes": 8074,
-      "comments": 33,
-      "shares": 173,
-      "bookmarks": 1245,
-      "hashtags": [
-        "babytee",
-        "targetaudience",
-        "slub"
-      ],
-      "uploadedAtFormatted": "2026-10-10T01:53:39.000Z",
-      "channel": {
-        "id": "111419129114312704",
-        "name": "Madison",
-        "username": "sushiluvr19",
-        "profile_url": "https://www.tiktok.com/@sushiluvr19",
-        "followers": 12943,
-        "following": 778,
-        "provider_verified": false
-      },
-      "subtitle_languages": [],
-      "poi": null,
-      "polish_signals": [],
-      "pl_evidence": {
-        "strong_signals": [],
-        "weak_signals": [],
-        "negative_signals": [],
-        "pl_confidence": 0.0
-      }
-    },
-    {
-      "seed": "slub",
-      "id": "7685857915135102222",
-      "title": "restock thurs. (5pm pst) | slub los feliz crop muscle polo | #slub #polo #cropshirt #menswear #croppolo @jose ",
-      "views": 309473,
-      "likes": 644,
-      "comments": 4,
-      "shares": 46,
-      "bookmarks": 230,
-      "hashtags": [
-        "slub",
-        "polo",
-        "cropshirt",
-        "menswear",
-        "croppolo"
-      ],
-      "uploadedAtFormatted": "2026-09-15T20:14:30.000Z",
-      "channel": {
-        "id": "7112206862482342958",
-        "name": "Pool House New York",
-        "username": "poolhousenewyork",
-        "profile_url": "https://www.tiktok.com/@poolhousenewyork",
-        "followers": 50442,
-        "following": 201,
-        "provider_verified": false
-      },
-      "subtitle_languages": [
-        "en"
-      ],
-      "poi": null,
-      "polish_signals": [],
-      "pl_evidence": {
-        "strong_signals": [],
-        "weak_signals": [],
-        "negative_signals": [
-          "subtitle_foreign"
-        ],
-        "pl_confidence": 0.0
-      }
-    }
-  ]
+  "posts": []
 }

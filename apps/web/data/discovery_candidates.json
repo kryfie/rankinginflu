@@ -1,71 +1,65 @@
 {
   "meta": {
     "latest_run": {
-      "run_at": "2026-11-01T11:17:00.283760+00:00",
+      "run_at": "2026-11-02T12:26:27.693334+00:00",
       "actor": "apidojo~tiktok-scraper-api",
       "filterVersion": "v4-strong-pl-evidence",
       "seedIndices": [
-        583,
-        579,
-        587,
-        588,
-        586,
-        71,
-        138,
-        158,
-        427,
-        456,
-        480,
-        496,
-        499,
-        500,
-        505,
-        525,
-        543,
-        559,
-        15,
-        65,
-        101,
-        119,
-        581,
-        591,
-        595
+        611,
+        620,
+        613,
+        627,
+        625,
+        617,
+        619,
+        623,
+        215,
+        600,
+        182,
+        202,
+        211,
+        7,
+        8,
+        19,
+        32,
+        47,
+        54,
+        55,
+        58,
+        64,
+        84,
+        93,
+        95
       ],
-      "startSeed": 583,
+      "startSeed": 611,
       "seeds_requested": [
-        "poznań",
-        "macierzynstwo",
-        "randka",
-        "medycyna",
-        "slub",
-        "kuchnia polska tiktok",
-        "obiad",
-        "szkoła",
-        "dlacb",
-        "beka",
-        "glowup",
-        "recipes",
-        "reprezentacjapolski",
-        "cleaning",
-        "recipe",
-        "kimoco",
-        "lewica",
-        "lalka",
-        "humor polska",
-        "jedzenie polska",
-        "szkoła polska",
-        "wokal polska",
-        "nieruchomosci",
-        "polacywuk",
-        "wiara"
+        "niedziela",
+        "kocham",
+        "liceum",
+        "jelita",
+        "wiedza",
+        "wrzesień",
+        "zwierzeta",
+        "cytaty",
+        "polskirap",
+        "związki",
+        "polskitiktok",
+        "polski",
+        "kuchnia",
+        "polska fitness",
+        "polska gaming",
+        "memy polska",
+        "dom polska tiktok",
+        "outfit polska",
+        "trendy moda polska",
+        "gaming polska",
+        "fortnite polska",
+        "roblox polska",
+        "taniec polska",
+        "gadżety polska",
+        "edukacja polska"
       ],
-      "seeds_completed": [
-        "poznań",
-        "macierzynstwo",
-        "randka",
-        "medycyna",
-        "slub"
-      ],
+      "seeds_completed": [],
       "resultsPerSeed": 20,
       "location": "PL",
       "dateRange": "LAST_THREE_MONTHS",
@@ -74,66 +68,12 @@
       "minStrongPLSignals": 1,
       "minPLConfidence": 50.0,
       "stats": {
-        "posts_in": 50,
-        "unique_creators": 46,
-        "below_min_strong_pl_signals": 7,
-        "below_min_followers": 27,
-        "below_min_pl_confidence": 1,
-        "accepted_candidates_latest_run": 11
+        "unique_creators": 0,
+        "accepted_candidates_latest_run": 0
       },
       "per_seed": [
         {
-          "seed": "poznań",
-          "rows_returned": 10,
-          "usable_posts": 10,
-          "demo_rows": 0,
-          "status": "productive",
-          "accepted_candidates": 4,
-          "new_candidates": 2,
-          "known_or_cross_seed_candidates": 2
-        },
-        {
-          "seed": "macierzynstwo",
-          "rows_returned": 10,
-          "usable_posts": 10,
-          "demo_rows": 0,
-          "status": "productive",
-          "accepted_candidates": 3,
-          "new_candidates": 1,
-          "known_or_cross_seed_candidates": 2
-        },
-        {
-          "seed": "randka",
-          "rows_returned": 10,
-          "usable_posts": 10,
-          "demo_rows": 0,
-          "status": "productive",
-          "accepted_candidates": 2,
-          "new_candidates": 0,
-          "known_or_cross_seed_candidates": 2
-        },
-        {
-          "seed": "medycyna",
-          "rows_returned": 10,
-          "usable_posts": 10,
-          "demo_rows": 0,
-          "status": "productive",
-          "accepted_candidates": 2,
-          "new_candidates": 1,
-          "known_or_cross_seed_candidates": 1
-        },
-        {
-          "seed": "slub",
-          "rows_returned": 10,
-          "usable_posts": 10,
-          "demo_rows": 0,
-          "status": "productive",
-          "accepted_candidates": 0,
-          "new_candidates": 0,
-          "known_or_cross_seed_candidates": 0
-        },
-        {
-          "seed": "kuchnia polska tiktok",
+          "seed": "niedziela",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -143,7 +83,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "obiad",
+          "seed": "kocham",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -153,7 +93,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "szkoła",
+          "seed": "liceum",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -163,7 +103,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "dlacb",
+          "seed": "jelita",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -173,7 +113,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "beka",
+          "seed": "wiedza",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -183,7 +123,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "glowup",
+          "seed": "wrzesień",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -193,7 +133,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "recipes",
+          "seed": "zwierzeta",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -203,7 +143,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "reprezentacjapolski",
+          "seed": "cytaty",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -213,7 +153,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "cleaning",
+          "seed": "polskirap",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -223,7 +163,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "recipe",
+          "seed": "związki",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -233,7 +173,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "kimoco",
+          "seed": "polskitiktok",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -243,7 +183,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "lewica",
+          "seed": "polski",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -253,7 +193,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "lalka",
+          "seed": "kuchnia",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -263,7 +203,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "humor polska",
+          "seed": "polska fitness",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -273,7 +213,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "jedzenie polska",
+          "seed": "polska gaming",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -283,7 +223,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "szkoła polska",
+          "seed": "memy polska",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -293,7 +233,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "wokal polska",
+          "seed": "dom polska tiktok",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -303,7 +243,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "nieruchomosci",
+          "seed": "outfit polska",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -313,7 +253,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "polacywuk",
+          "seed": "trendy moda polska",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -323,7 +263,57 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "wiara",
+          "seed": "gaming polska",
+          "rows_returned": 10,
+          "usable_posts": 0,
+          "demo_rows": 10,
+          "status": "demo_only",
+          "accepted_candidates": 0,
+          "new_candidates": 0,
+          "known_or_cross_seed_candidates": 0
+        },
+        {
+          "seed": "fortnite polska",
+          "rows_returned": 10,
+          "usable_posts": 0,
+          "demo_rows": 10,
+          "status": "demo_only",
+          "accepted_candidates": 0,
+          "new_candidates": 0,
+          "known_or_cross_seed_candidates": 0
+        },
+        {
+          "seed": "roblox polska",
+          "rows_returned": 10,
+          "usable_posts": 0,
+          "demo_rows": 10,
+          "status": "demo_only",
+          "accepted_candidates": 0,
+          "new_candidates": 0,
+          "known_or_cross_seed_candidates": 0
+        },
+        {
+          "seed": "taniec polska",
+          "rows_returned": 10,
+          "usable_posts": 0,
+          "demo_rows": 10,
+          "status": "demo_only",
+          "accepted_candidates": 0,
+          "new_candidates": 0,
+          "known_or_cross_seed_candidates": 0
+        },
+        {
+          "seed": "gadżety polska",
+          "rows_returned": 10,
+          "usable_posts": 0,
+          "demo_rows": 10,
+          "status": "demo_only",
+          "accepted_candidates": 0,
+          "new_candidates": 0,
+          "known_or_cross_seed_candidates": 0
+        },
+        {
+          "seed": "edukacja polska",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -335,13 +325,13 @@
       ],
       "errors": [],
       "migration": {
-        "legacy_rows_revalidated": 135,
+        "legacy_rows_revalidated": 13,
         "legacy_rows_quarantined": 0
       }
     },
     "registry_count": 3104,
     "eligible_count": 3101,
-    "updated_at": "2026-11-01T11:17:00.283760+00:00"
+    "updated_at": "2026-11-02T12:26:27.693334+00:00"
   },
   "creators": [
     {
@@ -54740,42 +54730,6 @@
       "followers_max_seen": 66979
     },
     {
-      "tiktok_id": "6782659286533309446",
-      "username": "natalia.jancz",
-      "display_name": "natalia.jancz",
-      "profile_url": "https://www.tiktok.com/@natalia.jancz",
-      "avatar_url": "https://p19-common-sign.tiktokcdn.com/tos-maliva-avt-0068/2d01716dd71e13bdc48d48b57f1f0ad6~tplv-tiktokx-cropcenter-q:1080:1080:q70.heic?dr=10796&refresh_token=688f6271&x-expires=1793617200&x-signature=KeGewLHHOr9vhBt8zxR9wsf6rWg%3D&t=223449c4&ps=87d6e48a&shp=d05b14bd&shcp=c1333099&idc=my&sc=avatar&s=SEARCH",
-      "followers": 66818,
-      "provider_verified": true,
-      "found_by": [
-        "macierzynstwo",
-        "macierzyństwo"
-      ],
-      "posts_seen": 1,
-      "max_views_seen": 244103,
-      "max_likes_seen": 16370,
-      "latest_post_at": "2026-10-15T14:34:25.000Z",
-      "polish_signal_count": 2,
-      "polish_signals": [
-        "polish_text",
-        "subtitle_pl"
-      ],
-      "polish_strong_signal_count": 2,
-      "polish_strong_signals": [
-        "polish_text",
-        "subtitle_pl"
-      ],
-      "polish_weak_signals": [],
-      "pl_confidence": 90.0,
-      "discovery_eligible": true,
-      "first_discovered_at": "2026-10-18T08:51:46.679046+00:00",
-      "last_discovered_at": "2026-11-01T11:17:00.283760+00:00",
-      "discovery_runs_seen": 2,
-      "posts_seen_latest_run": 1,
-      "posts_seen_total": 6,
-      "followers_max_seen": 66818
-    },
-    {
       "tiktok_id": "7360644854495314976",
       "username": "zbigniewboguckipl",
       "display_name": "ZbigniewBogucki",
@@ -81509,50 +81463,6 @@
       "followers_max_seen": 17472
     },
     {
-      "tiktok_id": "7464379952348365846",
-      "username": "thetravelwalk",
-      "display_name": "The travel walk",
-      "profile_url": "https://www.tiktok.com/@thetravelwalk",
-      "avatar_url": "https://p16-common-sign.tiktokcdn-eu.com/tos-no1a-avt-0068c001-no/57c9bfe3380b00a0f0473c7ca888de15~tplv-tiktokx-cropcenter-q:1080:1080:q70.heic?dr=9608&refresh_token=f92b4302&x-expires=1793617200&x-signature=wuo1MKRorf24TmGfWX8GflymHqQ%3D&t=223449c4&ps=87d6e48a&shp=d05b14bd&shcp=c1333099&idc=no1a&s=SEARCH&sc=avatar",
-      "followers": 17251,
-      "provider_verified": true,
-      "found_by": [
-        "kraków",
-        "polska beauty",
-        "poznań",
-        "street food polska",
-        "travel polska"
-      ],
-      "posts_seen": 1,
-      "max_views_seen": 70654,
-      "max_likes_seen": 2623,
-      "latest_post_at": "2026-10-21T11:52:27.000Z",
-      "polish_signal_count": 4,
-      "polish_signals": [
-        "flag_pl",
-        "hashtag_pl",
-        "polish_text",
-        "title_marker_pl"
-      ],
-      "polish_strong_signal_count": 2,
-      "polish_strong_signals": [
-        "flag_pl",
-        "polish_text"
-      ],
-      "polish_weak_signals": [
-        "hashtag_pl",
-        "title_marker_pl"
-      ],
-      "pl_confidence": 85.0,
-      "discovery_eligible": true,
-      "first_discovered_at": "2026-10-01T10:41:14.725838+00:00",
-      "last_discovered_at": "2026-11-01T11:17:00.283760+00:00",
-      "discovery_runs_seen": 7,
-      "posts_seen_latest_run": 1,
-      "posts_seen_total": 8,
-      "followers_max_seen": 17251
-    },
-    {
       "tiktok_id": "6762436510521771013",
       "username": "polskiczlowieczek1",
       "display_name": "Polskiczlowieczek",
@@ -86146,6 +86056,40 @@
       "posts_seen_latest_run": 1,
       "posts_seen_total": 1,
       "followers_max_seen": 69796
+    },
+    {
+      "tiktok_id": "6782659286533309446",
+      "username": "natalia.jancz",
+      "display_name": "natalia.jancz",
+      "profile_url": "https://www.tiktok.com/@natalia.jancz",
+      "avatar_url": "https://p19-common-sign.tiktokcdn.com/tos-maliva-avt-0068/2d01716dd71e13bdc48d48b57f1f0ad6~tplv-tiktokx-cropcenter-q:1080:1080:q70.heic?dr=10796&refresh_token=688f6271&x-expires=1793617200&x-signature=KeGewLHHOr9vhBt8zxR9wsf6rWg%3D&t=223449c4&ps=87d6e48a&shp=d05b14bd&shcp=c1333099&idc=my&sc=avatar&s=SEARCH",
+      "followers": 66818,
+      "provider_verified": true,
+      "found_by": [
+        "macierzynstwo",
+        "macierzyństwo"
+      ],
+      "posts_seen": 1,
+      "max_views_seen": 244103,
+      "max_likes_seen": 16370,
+      "latest_post_at": "2026-10-15T14:34:25.000Z",
+      "polish_signal_count": 1,
+      "polish_signals": [
+        "subtitle_pl"
+      ],
+      "polish_strong_signal_count": 1,
+      "polish_strong_signals": [
+        "subtitle_pl"
+      ],
+      "polish_weak_signals": [],
+      "pl_confidence": 80.0,
+      "discovery_eligible": true,
+      "first_discovered_at": "2026-10-18T08:51:46.679046+00:00",
+      "last_discovered_at": "2026-11-01T11:17:00.283760+00:00",
+      "discovery_runs_seen": 2,
+      "posts_seen_latest_run": 1,
+      "posts_seen_total": 6,
+      "followers_max_seen": 66818
     },
     {
       "tiktok_id": "160533654283325440",
@@ -91185,6 +91129,48 @@
       "posts_seen_latest_run": 2,
       "posts_seen_total": 2,
       "followers_max_seen": 17591
+    },
+    {
+      "tiktok_id": "7464379952348365846",
+      "username": "thetravelwalk",
+      "display_name": "The travel walk",
+      "profile_url": "https://www.tiktok.com/@thetravelwalk",
+      "avatar_url": "https://p16-common-sign.tiktokcdn-eu.com/tos-no1a-avt-0068c001-no/57c9bfe3380b00a0f0473c7ca888de15~tplv-tiktokx-cropcenter-q:1080:1080:q70.heic?dr=9608&refresh_token=f92b4302&x-expires=1793617200&x-signature=wuo1MKRorf24TmGfWX8GflymHqQ%3D&t=223449c4&ps=87d6e48a&shp=d05b14bd&shcp=c1333099&idc=no1a&s=SEARCH&sc=avatar",
+      "followers": 17251,
+      "provider_verified": true,
+      "found_by": [
+        "kraków",
+        "polska beauty",
+        "poznań",
+        "street food polska",
+        "travel polska"
+      ],
+      "posts_seen": 1,
+      "max_views_seen": 70654,
+      "max_likes_seen": 2623,
+      "latest_post_at": "2026-10-21T11:52:27.000Z",
+      "polish_signal_count": 3,
+      "polish_signals": [
+        "hashtag_pl",
+        "polish_text",
+        "title_marker_pl"
+      ],
+      "polish_strong_signal_count": 1,
+      "polish_strong_signals": [
+        "polish_text"
+      ],
+      "polish_weak_signals": [
+        "hashtag_pl",
+        "title_marker_pl"
+      ],
+      "pl_confidence": 80.0,
+      "discovery_eligible": true,
+      "first_discovered_at": "2026-10-01T10:41:14.725838+00:00",
+      "last_discovered_at": "2026-11-01T11:17:00.283760+00:00",
+      "discovery_runs_seen": 7,
+      "posts_seen_latest_run": 1,
+      "posts_seen_total": 8,
+      "followers_max_seen": 17251
     },
     {
       "tiktok_id": "6819225578831791110",
