@@ -1,63 +1,63 @@
 {
   "meta": {
     "latest_run": {
-      "run_at": "2026-11-02T12:26:27.693334+00:00",
+      "run_at": "2026-11-03T11:56:34.320199+00:00",
       "actor": "apidojo~tiktok-scraper-api",
       "filterVersion": "v4-strong-pl-evidence",
       "seedIndices": [
-        611,
-        620,
-        613,
-        627,
-        625,
-        617,
-        619,
-        623,
-        215,
-        600,
-        182,
-        202,
-        211,
-        7,
-        8,
-        19,
-        32,
-        47,
-        54,
-        55,
-        58,
-        64,
-        84,
-        93,
-        95
+        27,
+        35,
+        88,
+        200,
+        49,
+        46,
+        170,
+        212,
+        31,
+        632,
+        633,
+        246,
+        249,
+        250,
+        629,
+        634,
+        251,
+        124,
+        160,
+        169,
+        179,
+        193,
+        208,
+        217,
+        219
       ],
-      "startSeed": 611,
+      "startSeed": 27,
       "seeds_requested": [
-        "niedziela",
-        "kocham",
-        "liceum",
-        "jelita",
-        "wiedza",
-        "wrzesień",
-        "zwierzeta",
-        "cytaty",
-        "polskirap",
-        "związki",
-        "polskitiktok",
-        "polski",
-        "kuchnia",
-        "polska fitness",
-        "polska gaming",
-        "memy polska",
-        "dom polska tiktok",
-        "outfit polska",
-        "trendy moda polska",
-        "gaming polska",
-        "fortnite polska",
-        "roblox polska",
-        "taniec polska",
-        "gadżety polska",
-        "edukacja polska"
+        "dzień z życia polska",
+        "makijaż polska",
+        "telefony polska",
+        "rodzina",
+        "buty polska",
+        "stylizacje polska",
+        "czekotubka",
+        "współpraca",
+        "codzienność polska",
+        "polandtiktok",
+        "turcja",
+        "zdroweodżywianie",
+        "szybkiprzepis",
+        "domowejedzenie",
+        "okekel",
+        "retro",
+        "kuchniapolska",
+        "nowa muzyka polska",
+        "rossmann",
+        "autumn",
+        "zabawne",
+        "krakow",
+        "praca",
+        "standup",
+        "nostalgia"
       ],
       "seeds_completed": [],
       "resultsPerSeed": 20,
@@ -73,7 +73,7 @@
       },
       "per_seed": [
         {
-          "seed": "niedziela",
+          "seed": "dzień z życia polska",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -83,7 +83,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "kocham",
+          "seed": "makijaż polska",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -93,7 +93,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "liceum",
+          "seed": "telefony polska",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -103,7 +103,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "jelita",
+          "seed": "rodzina",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -113,7 +113,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "wiedza",
+          "seed": "buty polska",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -123,7 +123,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "wrzesień",
+          "seed": "stylizacje polska",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -133,7 +133,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "zwierzeta",
+          "seed": "czekotubka",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -143,7 +143,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "cytaty",
+          "seed": "współpraca",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -153,7 +153,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "polskirap",
+          "seed": "codzienność polska",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -163,7 +163,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "związki",
+          "seed": "polandtiktok",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -173,7 +173,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "polskitiktok",
+          "seed": "turcja",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -183,7 +183,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "polski",
+          "seed": "zdroweodżywianie",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -193,7 +193,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "kuchnia",
+          "seed": "szybkiprzepis",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -203,7 +203,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "polska fitness",
+          "seed": "domowejedzenie",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -213,7 +213,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "polska gaming",
+          "seed": "okekel",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -223,7 +223,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "memy polska",
+          "seed": "retro",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -233,7 +233,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "dom polska tiktok",
+          "seed": "kuchniapolska",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -243,7 +243,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "outfit polska",
+          "seed": "nowa muzyka polska",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -253,7 +253,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "trendy moda polska",
+          "seed": "rossmann",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -263,7 +263,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "gaming polska",
+          "seed": "autumn",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -273,7 +273,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "fortnite polska",
+          "seed": "zabawne",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -283,7 +283,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "roblox polska",
+          "seed": "krakow",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -293,7 +293,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "taniec polska",
+          "seed": "praca",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -303,7 +303,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "gadżety polska",
+          "seed": "standup",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -313,7 +313,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "edukacja polska",
+          "seed": "nostalgia",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -325,13 +325,13 @@
       ],
       "errors": [],
       "migration": {
-        "legacy_rows_revalidated": 13,
+        "legacy_rows_revalidated": 0,
         "legacy_rows_quarantined": 0
       }
     },
     "registry_count": 3104,
     "eligible_count": 3101,
-    "updated_at": "2026-11-02T12:26:27.693334+00:00"
+    "updated_at": "2026-11-03T11:56:34.320199+00:00"
   },
   "creators": [
     {
