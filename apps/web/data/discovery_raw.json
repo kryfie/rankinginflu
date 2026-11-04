@@ -1,62 +1,62 @@
 {
   "meta": {
-    "run_at": "2026-11-03T11:56:34.320199+00:00",
+    "run_at": "2026-11-04T12:09:43.361914+00:00",
     "actor": "apidojo~tiktok-scraper-api",
     "filterVersion": "v4-strong-pl-evidence",
     "seedIndices": [
-      27,
-      35,
-      88,
-      200,
-      49,
-      46,
-      170,
-      212,
-      31,
-      632,
-      633,
-      246,
-      249,
-      250,
-      629,
-      634,
-      251,
-      124,
-      160,
-      169,
-      179,
-      193,
-      208,
-      217,
-      219
+      165,
+      228,
+      267,
+      151,
+      159,
+      254,
+      258,
+      276,
+      297,
+      343,
+      353,
+      356,
+      365,
+      392,
+      396,
+      455,
+      458,
+      498,
+      501,
+      527,
+      539,
+      552,
+      569,
+      573,
+      17
     ],
-    "startSeed": 27,
+    "startSeed": 165,
     "seeds_requested": [
-      "dzień z życia polska",
-      "makijaż polska",
-      "telefony polska",
-      "rodzina",
-      "buty polska",
-      "stylizacje polska",
-      "czekotubka",
-      "współpraca",
-      "codzienność polska",
-      "polandtiktok",
-      "turcja",
-      "zdroweodżywianie",
-      "szybkiprzepis",
-      "domowejedzenie",
-      "okekel",
-      "retro",
-      "kuchniapolska",
-      "nowa muzyka polska",
-      "rossmann",
-      "autumn",
-      "zabawne",
-      "krakow",
-      "praca",
-      "standup",
-      "nostalgia"
+      "jesień",
+      "prezent",
+      "pielegnacjawlosow",
+      "pielegnacja",
+      "polecajka",
+      "szybkiobiad",
+      "prostyprzepis",
+      "wypieki",
+      "budowa",
+      "dziewczyna",
+      "pociąg",
+      "pumpkinspice",
+      "sopot",
+      "cover",
+      "zakopane",
+      "smiesznefilmiki",
+      "skincaretips",
+      "sukces",
+      "taniec",
+      "tvn",
+      "curlyhair",
+      "tanio",
+      "soup",
+      "autumnvibes",
+      "komedia polska"
     ],
     "seeds_completed": [],
     "resultsPerSeed": 20,
@@ -72,7 +72,7 @@
     },
     "per_seed": [
       {
-        "seed": "dzień z życia polska",
+        "seed": "jesień",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -82,7 +82,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "makijaż polska",
+        "seed": "prezent",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -92,7 +92,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "telefony polska",
+        "seed": "pielegnacjawlosow",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -102,7 +102,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "rodzina",
+        "seed": "pielegnacja",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -112,7 +112,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "buty polska",
+        "seed": "polecajka",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -122,7 +122,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "stylizacje polska",
+        "seed": "szybkiobiad",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -132,7 +132,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "czekotubka",
+        "seed": "prostyprzepis",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -142,7 +142,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "współpraca",
+        "seed": "wypieki",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -152,7 +152,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "codzienność polska",
+        "seed": "budowa",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -162,7 +162,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "polandtiktok",
+        "seed": "dziewczyna",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -172,7 +172,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "turcja",
+        "seed": "pociąg",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -182,7 +182,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "zdroweodżywianie",
+        "seed": "pumpkinspice",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -192,7 +192,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "szybkiprzepis",
+        "seed": "sopot",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -202,7 +202,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "domowejedzenie",
+        "seed": "cover",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -212,7 +212,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "okekel",
+        "seed": "zakopane",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -222,7 +222,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "retro",
+        "seed": "smiesznefilmiki",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -232,7 +232,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "kuchniapolska",
+        "seed": "skincaretips",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -242,7 +242,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "nowa muzyka polska",
+        "seed": "sukces",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -252,7 +252,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "rossmann",
+        "seed": "taniec",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -262,7 +262,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "autumn",
+        "seed": "tvn",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -272,7 +272,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "zabawne",
+        "seed": "curlyhair",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -282,7 +282,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "krakow",
+        "seed": "tanio",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -292,7 +292,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "praca",
+        "seed": "soup",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -302,7 +302,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "standup",
+        "seed": "autumnvibes",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -312,7 +312,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "nostalgia",
+        "seed": "komedia polska",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
