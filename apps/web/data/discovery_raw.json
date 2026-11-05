@@ -1,62 +1,62 @@
 {
   "meta": {
-    "run_at": "2026-11-04T12:09:43.361914+00:00",
+    "run_at": "2026-11-05T12:22:50.790738+00:00",
     "actor": "apidojo~tiktok-scraper-api",
     "filterVersion": "v4-strong-pl-evidence",
     "seedIndices": [
-      165,
-      228,
-      267,
-      151,
-      159,
-      254,
-      258,
-      276,
-      297,
-      343,
-      353,
-      356,
-      365,
-      392,
-      396,
-      455,
-      458,
-      498,
-      501,
-      527,
-      539,
-      552,
-      569,
-      573,
-      17
+      322,
+      40,
+      325,
+      277,
+      24,
+      156,
+      220,
+      37,
+      100,
+      14,
+      50,
+      118,
+      218,
+      283,
+      299,
+      148,
+      590,
+      155,
+      622,
+      28,
+      56,
+      59,
+      60,
+      78,
+      83
     ],
-    "startSeed": 165,
+    "startSeed": 322,
     "seeds_requested": [
-      "jesień",
-      "prezent",
-      "pielegnacjawlosow",
-      "pielegnacja",
-      "polecajka",
-      "szybkiobiad",
-      "prostyprzepis",
-      "wypieki",
-      "budowa",
-      "dziewczyna",
-      "pociąg",
-      "pumpkinspice",
-      "sopot",
-      "cover",
-      "zakopane",
-      "smiesznefilmiki",
-      "skincaretips",
-      "sukces",
-      "taniec",
-      "tvn",
-      "curlyhair",
-      "tanio",
-      "soup",
-      "autumnvibes",
-      "komedia polska"
+      "ciąża",
+      "włosy polska",
+      "pieniądze",
+      "fryzura",
+      "rozrywka polska",
+      "kobieta",
+      "pielegnacjatwarzy",
+      "kosmetyki polska",
+      "język angielski polska",
+      "polska finanse",
+      "fashion polska",
+      "hip hop polska",
+      "trening",
+      "przekąska",
+      "prezydent",
+      "gotowanie",
+      "relaks",
+      "smieszne",
+      "inwestycje",
+      "polska mama",
+      "gry polska",
+      "valorant polska",
+      "league of legends polska",
+      "bieganie polska",
+      "crossfit polska"
     ],
     "seeds_completed": [],
     "resultsPerSeed": 20,
@@ -72,7 +72,7 @@
     },
     "per_seed": [
       {
-        "seed": "jesień",
+        "seed": "ciąża",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -82,7 +82,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "prezent",
+        "seed": "włosy polska",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -92,7 +92,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "pielegnacjawlosow",
+        "seed": "pieniądze",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -102,7 +102,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "pielegnacja",
+        "seed": "fryzura",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -112,7 +112,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "polecajka",
+        "seed": "rozrywka polska",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -122,7 +122,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "szybkiobiad",
+        "seed": "kobieta",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -132,7 +132,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "prostyprzepis",
+        "seed": "pielegnacjatwarzy",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -142,7 +142,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "wypieki",
+        "seed": "kosmetyki polska",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -152,7 +152,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "budowa",
+        "seed": "język angielski polska",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -162,7 +162,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "dziewczyna",
+        "seed": "polska finanse",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -172,7 +172,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "pociąg",
+        "seed": "fashion polska",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -182,7 +182,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "pumpkinspice",
+        "seed": "hip hop polska",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -192,7 +192,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "sopot",
+        "seed": "trening",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -202,7 +202,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "cover",
+        "seed": "przekąska",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -212,7 +212,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "zakopane",
+        "seed": "prezydent",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -222,7 +222,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "smiesznefilmiki",
+        "seed": "gotowanie",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -232,7 +232,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "skincaretips",
+        "seed": "relaks",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -242,7 +242,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "sukces",
+        "seed": "smieszne",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -252,7 +252,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "taniec",
+        "seed": "inwestycje",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -262,7 +262,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "tvn",
+        "seed": "polska mama",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -272,7 +272,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "curlyhair",
+        "seed": "gry polska",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -282,7 +282,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "tanio",
+        "seed": "valorant polska",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -292,7 +292,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "soup",
+        "seed": "league of legends polska",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -302,7 +302,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "autumnvibes",
+        "seed": "bieganie polska",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -312,7 +312,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "komedia polska",
+        "seed": "crossfit polska",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
