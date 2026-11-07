@@ -1,62 +1,62 @@
 {
   "meta": {
-    "run_at": "2026-11-06T12:07:39.049408+00:00",
+    "run_at": "2026-11-07T11:04:48.275300+00:00",
     "actor": "apidojo~tiktok-scraper-api",
     "filterVersion": "v4-strong-pl-evidence",
     "seedIndices": [
-      335,
-      332,
-      252,
-      324,
-      351,
-      6,
-      261,
-      289,
-      317,
-      44,
-      82,
-      76,
-      309,
-      318,
-      313,
-      89,
-      103,
-      112,
-      135,
-      137,
-      139,
-      168,
-      180,
-      197,
-      204
+      142,
+      85,
+      284,
+      360,
+      225,
+      234,
+      278,
+      189,
+      163,
+      295,
+      257,
+      291,
+      302,
+      306,
+      315,
+      316,
+      371,
+      376,
+      379,
+      381,
+      398,
+      403,
+      412,
+      421,
+      435
     ],
-    "startSeed": 335,
+    "startSeed": 142,
     "seeds_requested": [
-      "relacje",
-      "babcia",
-      "wspomnienia",
-      "wywiad",
-      "porady",
-      "polska moda",
-      "podróż",
-      "mieszkanie",
-      "odchudzanie",
-      "perfumy polska",
-      "stadiony polska",
-      "siłownia polska",
-      "ziemniaki",
-      "nauka",
-      "święta",
-      "komputery polska",
-      "studia polska",
-      "morze polska",
-      "śmieszne",
-      "humor",
-      "makeup",
-      "rhode",
-      "foodtok",
-      "pies",
-      "mama"
+      "reklama",
+      "technologia polska",
+      "polecam",
+      "polacy",
+      "konfederacja",
+      "kabaret",
+      "ludzie",
+      "piłkanożna",
+      "motywacja",
+      "remont",
+      "weekend",
+      "hair",
+      "outfitinspo",
+      "diy",
+      "test",
+      "gaming",
+      "lody",
+      "europa",
+      "premiera",
+      "krem",
+      "tutorial",
+      "tata",
+      "spacer",
+      "pdrn",
+      "tortilla"
     ],
     "seeds_completed": [],
     "resultsPerSeed": 20,
@@ -72,7 +72,7 @@
     },
     "per_seed": [
       {
-        "seed": "relacje",
+        "seed": "reklama",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -82,7 +82,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "babcia",
+        "seed": "technologia polska",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -92,7 +92,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "wspomnienia",
+        "seed": "polecam",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -102,7 +102,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "wywiad",
+        "seed": "polacy",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -112,7 +112,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "porady",
+        "seed": "konfederacja",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -122,7 +122,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "polska moda",
+        "seed": "kabaret",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -132,7 +132,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "podróż",
+        "seed": "ludzie",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -142,7 +142,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "mieszkanie",
+        "seed": "piłkanożna",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -152,7 +152,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "odchudzanie",
+        "seed": "motywacja",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -162,7 +162,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "perfumy polska",
+        "seed": "remont",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -172,7 +172,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "stadiony polska",
+        "seed": "weekend",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -182,7 +182,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "siłownia polska",
+        "seed": "hair",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -192,7 +192,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "ziemniaki",
+        "seed": "outfitinspo",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -202,7 +202,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "nauka",
+        "seed": "diy",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -212,7 +212,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "święta",
+        "seed": "test",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -222,7 +222,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "komputery polska",
+        "seed": "gaming",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -232,7 +232,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "studia polska",
+        "seed": "lody",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -242,7 +242,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "morze polska",
+        "seed": "europa",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -252,7 +252,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "śmieszne",
+        "seed": "premiera",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -262,7 +262,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "humor",
+        "seed": "krem",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -272,7 +272,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "makeup",
+        "seed": "tutorial",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -282,7 +282,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "rhode",
+        "seed": "tata",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -292,7 +292,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "foodtok",
+        "seed": "spacer",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -302,7 +302,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "pies",
+        "seed": "pdrn",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -312,7 +312,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "mama",
+        "seed": "tortilla",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
