@@ -2,8 +2,9 @@
   "meta": {
     "purpose": "Queue for authoritative profile enrichment",
     "count": 4507,
-    "updated_at": "2026-11-10T12:40:09.201040+00:00",
-    "discovery_filter_version": "v4-strong-pl-evidence"
+    "updated_at": "2026-11-10T14:39:15.468583+00:00",
+    "discovery_filter_version": "v4-strong-pl-evidence",
+    "related_mentions_enabled": true
   },
   "items": [
     {
@@ -749,7 +750,8 @@
       ],
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00"
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "edwardwarchocki",
@@ -1011,7 +1013,7 @@
       ],
       "last_discovered_at": "2026-10-30T10:52:28.625435+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -1686,7 +1688,7 @@
       ],
       "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -1838,7 +1840,7 @@
       ],
       "last_discovered_at": "2026-10-26T10:08:47.745148+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -2070,7 +2072,7 @@
       ],
       "last_discovered_at": "2026-10-03T09:52:50.307511+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -2094,7 +2096,7 @@
       ],
       "last_discovered_at": "2026-10-10T10:37:28.620033+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -2278,9 +2280,10 @@
         "czosnek"
       ],
       "last_discovered_at": "2026-10-30T10:52:28.625435+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "wirtualnapolskanews",
@@ -2305,7 +2308,7 @@
       ],
       "last_discovered_at": "2026-10-12T12:00:31.933117+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -2843,7 +2846,7 @@
       ],
       "last_discovered_at": "2026-10-06T11:17:30.032862+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -3047,7 +3050,7 @@
       ],
       "last_discovered_at": "2026-10-26T10:08:47.745148+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -3071,7 +3074,7 @@
       ],
       "last_discovered_at": "2026-10-03T09:52:50.307511+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -3123,7 +3126,7 @@
       ],
       "last_discovered_at": "2026-10-26T10:08:47.745148+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -3469,7 +3472,7 @@
       ],
       "last_discovered_at": "2026-10-03T09:52:50.307511+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -3876,7 +3879,7 @@
       ],
       "last_discovered_at": "2026-10-21T09:22:45.829607+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -4342,7 +4345,7 @@
       ],
       "last_discovered_at": "2026-10-10T10:37:28.620033+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -4369,7 +4372,7 @@
       ],
       "last_discovered_at": "2026-10-26T10:08:47.745148+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -5192,7 +5195,7 @@
       ],
       "last_discovered_at": "2026-10-19T09:55:12.688632+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-03T12:29:59.162323+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -5595,7 +5598,8 @@
       ],
       "last_discovered_at": "2026-10-21T09:22:45.829607+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00"
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "camprestcom",
@@ -5819,8 +5823,8 @@
         "hotele polska"
       ],
       "last_discovered_at": "2026-10-01T16:06:49.709173+00:00",
-      "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T14:25:13.332486+00:00",
+      "status": "enriched",
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -5844,7 +5848,8 @@
       ],
       "last_discovered_at": "2026-10-06T11:17:30.032862+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00"
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "blyskwiedzy5",
@@ -5868,7 +5873,7 @@
       ],
       "last_discovered_at": "2026-10-26T10:08:47.745148+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -6023,8 +6028,9 @@
       ],
       "last_discovered_at": "2026-10-06T11:17:30.032862+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "patrycjazoltak",
@@ -6316,7 +6322,7 @@
       ],
       "last_discovered_at": "2026-10-01T18:03:23.783059+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -6417,7 +6423,7 @@
       ],
       "last_discovered_at": "2026-10-16T09:02:27.125524+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -6544,7 +6550,7 @@
       ],
       "last_discovered_at": "2026-10-23T09:21:43.369739+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -6665,7 +6671,7 @@
       ],
       "last_discovered_at": "2026-10-01T15:54:53.206711+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -6713,7 +6719,7 @@
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -6739,7 +6745,7 @@
       ],
       "last_discovered_at": "2026-10-05T11:30:31.063084+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -6765,7 +6771,7 @@
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -6792,7 +6798,7 @@
       ],
       "last_discovered_at": "2026-10-30T10:52:28.625435+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -6841,8 +6847,9 @@
       ],
       "last_discovered_at": "2026-10-01T10:41:14.725838+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "natalia_wojciechowska_",
@@ -6866,7 +6873,7 @@
       ],
       "last_discovered_at": "2026-10-01T16:06:49.709173+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -6915,7 +6922,7 @@
       ],
       "last_discovered_at": "2026-10-01T18:03:23.783059+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -7021,7 +7028,7 @@
       ],
       "last_discovered_at": "2026-10-23T09:21:43.369739+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -7099,7 +7106,7 @@
       ],
       "last_discovered_at": "2026-10-01T15:54:53.206711+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -7179,8 +7186,8 @@
         "hotele polska"
       ],
       "last_discovered_at": "2026-10-25T09:09:54.310334+00:00",
-      "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T14:25:13.332486+00:00",
+      "status": "enriched",
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -7305,7 +7312,7 @@
       ],
       "last_discovered_at": "2026-10-03T09:52:50.307511+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -7457,7 +7464,7 @@
       ],
       "last_discovered_at": "2026-10-01T15:54:53.206711+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -7509,7 +7516,7 @@
       ],
       "last_discovered_at": "2026-10-10T10:37:28.620033+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -7558,7 +7565,7 @@
       ],
       "last_discovered_at": "2026-10-10T10:37:28.620033+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -7635,7 +7642,7 @@
       ],
       "last_discovered_at": "2026-10-01T15:54:53.206711+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -7659,7 +7666,7 @@
       ],
       "last_discovered_at": "2026-10-10T10:37:28.620033+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -7683,8 +7690,8 @@
         "smartfony polska"
       ],
       "last_discovered_at": "2026-10-25T09:09:54.310334+00:00",
-      "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T14:25:13.332486+00:00",
+      "status": "enriched",
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -7745,7 +7752,7 @@
       ],
       "last_discovered_at": "2026-10-26T10:08:47.745148+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -7797,7 +7804,7 @@
       ],
       "last_discovered_at": "2026-10-01T15:54:53.206711+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -7821,7 +7828,7 @@
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -7847,7 +7854,7 @@
       ],
       "last_discovered_at": "2026-10-30T10:52:28.625435+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -7975,7 +7982,7 @@
       ],
       "last_discovered_at": "2026-10-01T15:54:53.206711+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -8026,7 +8033,7 @@
       ],
       "last_discovered_at": "2026-10-25T09:09:54.310334+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -8075,7 +8082,7 @@
       ],
       "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -8127,7 +8134,7 @@
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -8201,7 +8208,7 @@
       ],
       "last_discovered_at": "2026-10-19T09:55:12.688632+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -8250,7 +8257,7 @@
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -8350,7 +8357,7 @@
       ],
       "last_discovered_at": "2026-10-01T15:54:53.206711+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -8374,7 +8381,7 @@
       ],
       "last_discovered_at": "2026-10-21T09:22:45.829607+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-03T12:29:59.162323+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -8401,7 +8408,7 @@
       ],
       "last_discovered_at": "2026-10-30T10:52:28.625435+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-03T12:29:59.162323+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -8426,7 +8433,7 @@
       ],
       "last_discovered_at": "2026-10-26T10:08:47.745148+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -8479,7 +8486,7 @@
       ],
       "last_discovered_at": "2026-10-01T15:54:53.206711+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -8607,7 +8614,7 @@
       ],
       "last_discovered_at": "2026-10-01T16:06:49.709173+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -8705,7 +8712,7 @@
       ],
       "last_discovered_at": "2026-10-10T10:37:28.620033+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-03T12:29:59.162323+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -8827,7 +8834,7 @@
       ],
       "last_discovered_at": "2026-10-01T16:06:49.709173+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -8878,7 +8885,7 @@
       ],
       "last_discovered_at": "2026-10-20T09:26:11.307386+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -8951,7 +8958,7 @@
       ],
       "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -8976,7 +8983,7 @@
       ],
       "last_discovered_at": "2026-10-24T08:53:11.033144+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-03T12:29:59.162323+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -9026,7 +9033,7 @@
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -9197,7 +9204,7 @@
       ],
       "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -9303,7 +9310,7 @@
       ],
       "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -9401,7 +9408,7 @@
       ],
       "last_discovered_at": "2026-10-20T09:26:11.307386+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -9451,7 +9458,7 @@
       ],
       "last_discovered_at": "2026-10-26T10:08:47.745148+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -9652,7 +9659,7 @@
       ],
       "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -9713,7 +9720,7 @@
       ],
       "last_discovered_at": "2026-10-01T15:54:53.206711+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -9837,7 +9844,7 @@
       ],
       "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -9913,7 +9920,7 @@
       ],
       "last_discovered_at": "2026-10-26T10:08:47.745148+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -10109,7 +10116,7 @@
       ],
       "last_discovered_at": "2026-10-01T15:54:53.206711+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -10136,7 +10143,7 @@
       ],
       "last_discovered_at": "2026-10-01T16:06:49.709173+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -10211,7 +10218,7 @@
       ],
       "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -10237,7 +10244,8 @@
       ],
       "last_discovered_at": "2026-10-30T10:52:28.625435+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00"
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "techkominfo_pl",
@@ -10336,7 +10344,7 @@
       ],
       "last_discovered_at": "2026-10-01T15:54:53.206711+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -10361,7 +10369,7 @@
       ],
       "last_discovered_at": "2026-10-18T08:51:46.679046+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -10412,7 +10420,7 @@
       ],
       "last_discovered_at": "2026-10-01T15:54:53.206711+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -10436,7 +10444,8 @@
       ],
       "last_discovered_at": "2026-10-23T09:21:43.369739+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00"
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "r.s.roo",
@@ -10461,7 +10470,7 @@
       ],
       "last_discovered_at": "2026-10-31T10:24:15.856719+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -10736,7 +10745,7 @@
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -10789,7 +10798,7 @@
       ],
       "last_discovered_at": "2026-10-02T09:41:36.657099+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -10898,7 +10907,7 @@
       ],
       "last_discovered_at": "2026-10-26T10:08:47.745148+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -11194,7 +11203,7 @@
       ],
       "last_discovered_at": "2026-10-10T10:37:28.620033+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -11470,7 +11479,7 @@
       ],
       "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -11494,7 +11503,7 @@
       ],
       "last_discovered_at": "2026-10-02T10:38:38.762252+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -11589,7 +11598,7 @@
       ],
       "last_discovered_at": "2026-10-25T09:09:54.310334+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -11615,7 +11624,7 @@
       ],
       "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -11687,7 +11696,7 @@
       ],
       "last_discovered_at": "2026-10-01T15:54:53.206711+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -11759,7 +11768,7 @@
       ],
       "last_discovered_at": "2026-10-19T09:55:12.688632+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -11962,7 +11971,7 @@
       ],
       "last_discovered_at": "2026-10-01T15:54:53.206711+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -12014,8 +12023,9 @@
       ],
       "last_discovered_at": "2026-10-31T10:24:15.856719+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "jolarska",
@@ -12039,7 +12049,7 @@
       ],
       "last_discovered_at": "2026-10-08T11:22:48.849537+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -12113,7 +12123,7 @@
       ],
       "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -12211,7 +12221,7 @@
       ],
       "last_discovered_at": "2026-10-01T15:54:53.206711+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -12236,7 +12246,7 @@
       ],
       "last_discovered_at": "2026-10-26T10:08:47.745148+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -12260,7 +12270,7 @@
       ],
       "last_discovered_at": "2026-10-26T10:08:47.745148+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -12284,7 +12294,7 @@
       ],
       "last_discovered_at": "2026-10-26T10:08:47.745148+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -12361,7 +12371,7 @@
       ],
       "last_discovered_at": "2026-10-01T15:54:53.206711+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -12436,7 +12446,7 @@
       ],
       "last_discovered_at": "2026-11-01T11:17:00.283760+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -12460,7 +12470,7 @@
       ],
       "last_discovered_at": "2026-10-01T16:06:49.709173+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -12538,7 +12548,7 @@
       ],
       "last_discovered_at": "2026-10-02T10:38:38.762252+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -12694,7 +12704,7 @@
       ],
       "last_discovered_at": "2026-10-25T09:09:54.310334+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -12776,7 +12786,7 @@
       ],
       "last_discovered_at": "2026-10-25T09:09:54.310334+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -12856,8 +12866,9 @@
       ],
       "last_discovered_at": "2026-10-24T08:53:11.033144+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "filipbrymora_standup",
@@ -13032,7 +13043,7 @@
       ],
       "last_discovered_at": "2026-10-18T08:51:46.679046+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -13058,7 +13069,7 @@
       ],
       "last_discovered_at": "2026-10-25T09:09:54.310334+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -13585,7 +13596,7 @@
       ],
       "last_discovered_at": "2026-10-26T10:08:47.745148+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -13636,7 +13647,7 @@
       ],
       "last_discovered_at": "2026-10-18T08:51:46.679046+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -13784,7 +13795,7 @@
       ],
       "last_discovered_at": "2026-10-25T09:09:54.310334+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-02T13:40:42.684484+00:00",
+      "last_profile_scan_at": "2026-11-10T14:39:15.468583+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -14489,7 +14500,8 @@
       ],
       "last_discovered_at": "2026-10-18T08:51:46.679046+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00"
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "menlogick",
@@ -15379,8 +15391,9 @@
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "nataliasisik",
@@ -16343,7 +16356,8 @@
       ],
       "last_discovered_at": "2026-10-24T08:53:11.033144+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00"
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "piotrsierpinskihair",
@@ -18534,8 +18548,9 @@
       ],
       "last_discovered_at": "2026-10-16T09:02:27.125524+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "m.onikaczaja",
@@ -19544,8 +19559,9 @@
       ],
       "last_discovered_at": "2026-10-21T09:22:45.829607+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "proste.jedzenie",
@@ -19638,8 +19654,9 @@
       ],
       "last_discovered_at": "2026-10-09T11:20:25.769186+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "3qq_poland",
@@ -29421,7 +29438,8 @@
       ],
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00"
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "pandawojtekyt",
@@ -33149,7 +33167,8 @@
       ],
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00"
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "exobari",
@@ -36270,7 +36289,8 @@
       ],
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00"
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "tvp3_katowice",
@@ -42372,7 +42392,8 @@
       ],
       "last_discovered_at": "2026-10-12T12:00:31.933117+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00"
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "depresja.z.mioci",
@@ -45643,7 +45664,8 @@
       ],
       "last_discovered_at": "2026-10-11T10:50:06.830450+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00"
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "umyslusekret",
@@ -48652,7 +48674,8 @@
       ],
       "last_discovered_at": "2026-10-02T10:38:38.762252+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00"
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "zaczi_tt",
@@ -49923,7 +49946,8 @@
       ],
       "last_discovered_at": "2026-10-31T10:24:15.856719+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00"
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "konecka.travel",
@@ -50451,7 +50475,8 @@
       ],
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00"
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "krystiannowak.us",
@@ -51067,7 +51092,8 @@
       ],
       "last_discovered_at": "2026-10-31T10:24:15.856719+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00"
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "expatpolska",
@@ -56583,7 +56609,8 @@
       ],
       "last_discovered_at": "2026-10-31T10:24:15.856719+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00"
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "pvvtkvv_",
@@ -57082,7 +57109,8 @@
       ],
       "last_discovered_at": "2026-10-01T10:41:14.725838+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00"
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "arek_explozja_",
@@ -57167,7 +57195,8 @@
       ],
       "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00"
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "latinobebecitka.fanpage",
@@ -63112,7 +63141,8 @@
       ],
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00"
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "topewoman51",
@@ -63131,7 +63161,8 @@
       ],
       "last_discovered_at": "2026-10-12T12:00:31.933117+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00"
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "oskar_mazurek1993",
@@ -67070,7 +67101,8 @@
       ],
       "last_discovered_at": "2026-10-11T10:50:06.830450+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00"
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "djkinoloffcial",
@@ -68082,7 +68114,8 @@
       ],
       "last_discovered_at": "2026-10-28T10:35:37.957025+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00"
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "nieperfekcyjni.pl",
@@ -68409,7 +68442,8 @@
       ],
       "last_discovered_at": "2026-10-19T09:55:12.688632+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00"
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "emiliamarchewka",
@@ -68573,7 +68607,8 @@
       ],
       "last_discovered_at": "2026-10-04T10:35:32.866256+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00"
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "laurasadowskaa",
@@ -68652,7 +68687,8 @@
       ],
       "last_discovered_at": "2026-10-04T10:35:32.866256+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00"
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "punktzwrotny777",
@@ -69032,7 +69068,8 @@
       ],
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00"
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "gazelka_92",
@@ -70106,7 +70143,8 @@
       ],
       "last_discovered_at": "2026-10-23T09:21:43.369739+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00"
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "barefootbrit",
@@ -71044,7 +71082,7 @@
         "siodmywswiecie.pl",
         "warto_zobaczycc"
       ],
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00",
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -71130,7 +71168,7 @@
       "related_source_creators": [
         "martinskolsky"
       ],
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00",
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -71361,7 +71399,7 @@
       "related_source_creators": [
         "mooomeczeeek"
       ],
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00",
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -72656,7 +72694,7 @@
         "em.nalepa",
         "patrycja.skin"
       ],
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00",
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -73396,7 +73434,7 @@
       "related_source_creators": [
         "anex_rezi0"
       ],
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00",
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -73438,7 +73476,7 @@
       "related_source_creators": [
         "anex_rezi0"
       ],
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00",
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -73879,7 +73917,7 @@
       "related_source_creators": [
         "kaszub9710"
       ],
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00",
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -73984,7 +74022,7 @@
       "related_source_creators": [
         "stanislav_lastochkin"
       ],
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00",
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -74005,7 +74043,7 @@
       "related_source_creators": [
         "katarajsiemanko"
       ],
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00",
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -74337,7 +74375,7 @@
         "patrycjaxsobolewska",
         "veronika.bernat"
       ],
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00",
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -75135,7 +75173,7 @@
       "related_source_creators": [
         "edytabe_"
       ],
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00",
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -75793,8 +75831,8 @@
       "related_source_creators": [
         "innaenigma4"
       ],
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "yz.bicky9",
@@ -76150,8 +76188,8 @@
       "related_source_creators": [
         "akademiastudio7"
       ],
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "bartekdesanta7",
@@ -76775,8 +76813,8 @@
       "related_source_creators": [
         "bieszczadzkaheca"
       ],
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "misterpolska",
@@ -76922,8 +76960,8 @@
       "related_source_creators": [
         "krakowiakiwlondynie"
       ],
-      "last_profile_scan_at": "2026-11-09T13:25:06.715130+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "aniusia3127",
@@ -78267,8 +78305,8 @@
       "related_source_creators": [
         "nieznajomy015"
       ],
-      "last_profile_scan_at": "2026-11-08T11:42:01.948153+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "ewamala6",
@@ -78498,8 +78536,8 @@
       "related_source_creators": [
         "nieznajomy015"
       ],
-      "last_profile_scan_at": "2026-11-08T11:42:01.948153+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "norwid_kielce33",
@@ -79115,8 +79153,8 @@
       "related_source_creators": [
         "nieznajomy015"
       ],
-      "last_profile_scan_at": "2026-11-08T11:42:01.948153+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "allaura.eu",
@@ -79373,8 +79411,8 @@
       "related_source_creators": [
         "yaneck_kiufiu"
       ],
-      "last_profile_scan_at": "2026-11-08T11:42:01.948153+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "gierszol33",
@@ -79801,8 +79839,8 @@
       "related_source_creators": [
         "modernlady4"
       ],
-      "last_profile_scan_at": "2026-11-08T11:42:01.948153+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "cleo",
@@ -79865,8 +79903,8 @@
       "related_source_creators": [
         "trueboyzz"
       ],
-      "last_profile_scan_at": "2026-11-08T11:42:01.948153+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "kacpiandkari",
@@ -80570,12 +80608,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-10T10:37:27.635795+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 7.0,
       "related_source_creators": [
         "newonce"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "doradcasmaku",
@@ -80589,12 +80629,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-10T10:37:27.635795+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 7.0,
       "related_source_creators": [
         "pieknytalerz"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "alakieliszczyk7",
@@ -80608,12 +80650,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-10T10:37:27.635795+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 6.0,
       "related_source_creators": [
         "jzulxsa.2"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "stanislaw.wryk",
@@ -80627,12 +80671,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-10T10:37:27.635795+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 6.0,
       "related_source_creators": [
         "wydarzenia.polsat"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "jar69t",
@@ -80646,12 +80692,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-10T10:37:27.635795+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 6.0,
       "related_source_creators": [
         "mmfituk"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "handmade.byagata",
@@ -80665,12 +80713,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-10T10:37:27.635795+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 6.0,
       "related_source_creators": [
         "mmfituk"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "jack_sobczynski",
@@ -80684,12 +80734,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-10T10:37:27.635795+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 6.0,
       "related_source_creators": [
         "newonce"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "yakuza_auto_detailing",
@@ -80703,12 +80755,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-10T10:37:27.635795+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 6.0,
       "related_source_creators": [
         "jasperrr55"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "obiady.domowe.i.w",
@@ -80722,12 +80776,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-10T10:37:27.635795+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 6.0,
       "related_source_creators": [
         "sewcioseweryn1"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "kubanczyk.official",
@@ -80741,12 +80797,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-10T10:37:27.635795+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 6.0,
       "related_source_creators": [
         "sileslbc"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "marina_official",
@@ -80760,12 +80818,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-10T10:37:27.635795+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 6.0,
       "related_source_creators": [
         "sileslbc"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "thefloor.tvn",
@@ -80779,12 +80839,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-10T10:37:27.635795+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 6.0,
       "related_source_creators": [
         "przemekkucyk"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "player.pl",
@@ -80798,13 +80860,15 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-10T11:09:18.610123+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 11.0,
       "related_source_creators": [
         "przemekkucyk",
         "ttv.pl"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "nyxcosmetics_uk",
@@ -80818,13 +80882,15 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-10T11:09:18.610123+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 10.0,
       "related_source_creators": [
         "angieangie2502",
         "mank.anita"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "palniczek024",
@@ -80838,13 +80904,15 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-10T11:09:18.610123+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 10.0,
       "related_source_creators": [
         "czech_guy_in_warsaw",
         "lei_li_tik_toker_"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "cocolitapl",
@@ -80858,13 +80926,15 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-10T11:09:18.610123+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 10.0,
       "related_source_creators": [
         "magdalenaadamczykmua",
         "tynk.aa0"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "podravka_pl",
@@ -80878,13 +80948,15 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-10T11:09:18.610123+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 10.0,
       "related_source_creators": [
         "amadeusz_braksator",
         "crispynka"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "vhs_skin",
@@ -80898,13 +80970,15 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-10T11:09:18.610123+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 10.0,
       "related_source_creators": [
         "ceglowsk4",
         "koffeswinka"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "stylowybaaazar",
@@ -80918,13 +80992,15 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-10T11:09:18.610123+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 10.0,
       "related_source_creators": [
         "carmelova",
         "patrycjaa.stanek"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "grubalka",
@@ -80938,12 +81014,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-10T11:09:18.610123+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 9.0,
       "related_source_creators": [
         "hellozdrowie"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "driftopen.com",
@@ -80957,12 +81035,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-10T11:09:18.610123+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 8.0,
       "related_source_creators": [
         "mlody.pelikan"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "xx_k0nr4d_xx",
@@ -80976,12 +81056,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-10T11:09:18.610123+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 7.0,
       "related_source_creators": [
         "lei_li_tik_toker_"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "tomek4356",
@@ -80995,12 +81077,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-10T11:09:18.610123+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 7.0,
       "related_source_creators": [
         "lei_li_tik_toker_"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "damiancichyciecho",
@@ -81014,12 +81098,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-10T11:09:18.610123+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 6.0,
       "related_source_creators": [
         "lei_li_tik_toker_"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "urbandecayuk",
@@ -81033,12 +81119,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-10T11:09:18.610123+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 6.0,
       "related_source_creators": [
         "mank.anita"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "klonowa_optyk",
@@ -81052,12 +81140,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-10T11:09:18.610123+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 6.0,
       "related_source_creators": [
         "just.ja81"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "domcia_lux",
@@ -81071,12 +81161,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-10T11:09:18.610123+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 6.0,
       "related_source_creators": [
         "carmelova"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "luxmadame_domcia_",
@@ -81090,12 +81182,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-10T11:09:18.610123+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 6.0,
       "related_source_creators": [
         "carmelova"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "mybitelab",
@@ -81109,12 +81203,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-10T11:09:18.610123+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 6.0,
       "related_source_creators": [
         "vkarolkaa"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "maniek89_goat_pl",
@@ -81128,12 +81224,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-10T11:09:18.610123+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 6.0,
       "related_source_creators": [
         "lei_li_tik_toker_"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "szymool",
@@ -81147,12 +81245,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-10T11:09:18.610123+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 6.0,
       "related_source_creators": [
         "berzerker_scmz"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "isadoraofficial",
@@ -81166,13 +81266,15 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-11T10:50:05.999420+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 10.0,
       "related_source_creators": [
         "poniatovsska",
         "zofsz"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "dethleffs_official",
@@ -81186,12 +81288,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-11T10:50:05.999420+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 7.0,
       "related_source_creators": [
         "polskicaravaning"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "ponadwymiar",
@@ -81205,12 +81309,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-11T10:50:05.999420+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 7.0,
       "related_source_creators": [
         "polskicaravaning"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "goodevas_",
@@ -81224,12 +81330,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-11T10:50:05.999420+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 6.0,
       "related_source_creators": [
         "mami_i_leos"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "charazinsky",
@@ -81243,12 +81351,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-11T10:50:05.999420+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 6.0,
       "related_source_creators": [
         "jasperrr55"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "kam_fit_pro",
@@ -81262,12 +81372,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-11T10:50:05.999420+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 6.0,
       "related_source_creators": [
         "angieangie2502"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "ladysariel",
@@ -81281,12 +81393,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-11T10:50:05.999420+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 6.0,
       "related_source_creators": [
         "internaziomale420"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "anyawifey_",
@@ -81300,12 +81414,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-11T10:50:05.999420+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 6.0,
       "related_source_creators": [
         "internaziomale420"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "whiteeefox1",
@@ -81319,12 +81435,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-11T10:50:05.999420+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 6.0,
       "related_source_creators": [
         "internaziomale420"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-10T13:07:27.509632+00:00",
+      "enrichment_error": "ApifyEnrichmentError: Could not read profile Actor run UUxwg6U7Lbb5tlSmG: HTTP 502\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
     },
     {
       "username": "juliamaksymiak_tp",
