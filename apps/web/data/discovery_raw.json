@@ -1,62 +1,32 @@
 {
   "meta": {
-    "run_at": "2026-11-10T12:40:09.201040+00:00",
+    "run_at": "2026-11-11T11:53:32.025617+00:00",
     "actor": "apidojo~tiktok-scraper-api",
     "filterVersion": "v4-strong-pl-evidence",
     "seedIndices": [
-      451,
-      121,
-      187,
-      417,
-      25,
-      117,
-      63,
-      80,
-      94,
-      123,
-      57,
-      61,
-      122,
-      605,
-      606,
-      609,
-      616,
-      621,
-      214,
-      294,
-      350,
-      361,
-      2,
-      0,
-      1
+      460,
+      461,
+      490,
+      269,
+      292,
+      296,
+      475,
+      327,
+      336,
+      312
     ],
-    "startSeed": 451,
+    "startSeed": 460,
     "seeds_requested": [
-      "rozmowa",
-      "koncerty polska",
-      "muzyka",
-      "domowewypieki",
-      "lifestyle polska",
-      "rap polska",
-      "esport polska",
-      "sport polska",
-      "aplikacje polska",
-      "producent muzyczny polska",
-      "minecraft polska",
-      "cs2 polska",
-      "dj polska",
-      "trip",
-      "italy",
-      "makeuptutorial",
-      "cosmetics",
-      "mcdonald",
-      "jesiennyklimat",
-      "finanse",
-      "dzieciństwo",
-      "lata90",
-      "polska",
-      "polskatiktok",
-      "tiktokpolska"
+      "piosenka",
+      "współpracapłatna",
+      "nowości",
+      "włosy",
+      "pierogi",
+      "wybory",
+      "żona",
+      "tatry",
+      "las",
+      "kot"
     ],
     "seeds_completed": [],
     "resultsPerSeed": 20,
@@ -72,7 +42,7 @@
     },
     "per_seed": [
       {
-        "seed": "rozmowa",
+        "seed": "piosenka",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -82,7 +52,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "koncerty polska",
+        "seed": "współpracapłatna",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -92,7 +62,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "muzyka",
+        "seed": "nowości",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -102,7 +72,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "domowewypieki",
+        "seed": "włosy",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -112,7 +82,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "lifestyle polska",
+        "seed": "pierogi",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -122,7 +92,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "rap polska",
+        "seed": "wybory",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -132,7 +102,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "esport polska",
+        "seed": "żona",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -142,7 +112,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "sport polska",
+        "seed": "tatry",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -152,7 +122,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "aplikacje polska",
+        "seed": "las",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -162,157 +132,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "producent muzyczny polska",
-        "rows_returned": 10,
-        "usable_posts": 0,
-        "demo_rows": 10,
-        "status": "demo_only",
-        "accepted_candidates": 0,
-        "new_candidates": 0,
-        "known_or_cross_seed_candidates": 0
-      },
-      {
-        "seed": "minecraft polska",
-        "rows_returned": 10,
-        "usable_posts": 0,
-        "demo_rows": 10,
-        "status": "demo_only",
-        "accepted_candidates": 0,
-        "new_candidates": 0,
-        "known_or_cross_seed_candidates": 0
-      },
-      {
-        "seed": "cs2 polska",
-        "rows_returned": 10,
-        "usable_posts": 0,
-        "demo_rows": 10,
-        "status": "demo_only",
-        "accepted_candidates": 0,
-        "new_candidates": 0,
-        "known_or_cross_seed_candidates": 0
-      },
-      {
-        "seed": "dj polska",
-        "rows_returned": 10,
-        "usable_posts": 0,
-        "demo_rows": 10,
-        "status": "demo_only",
-        "accepted_candidates": 0,
-        "new_candidates": 0,
-        "known_or_cross_seed_candidates": 0
-      },
-      {
-        "seed": "trip",
-        "rows_returned": 10,
-        "usable_posts": 0,
-        "demo_rows": 10,
-        "status": "demo_only",
-        "accepted_candidates": 0,
-        "new_candidates": 0,
-        "known_or_cross_seed_candidates": 0
-      },
-      {
-        "seed": "italy",
-        "rows_returned": 10,
-        "usable_posts": 0,
-        "demo_rows": 10,
-        "status": "demo_only",
-        "accepted_candidates": 0,
-        "new_candidates": 0,
-        "known_or_cross_seed_candidates": 0
-      },
-      {
-        "seed": "makeuptutorial",
-        "rows_returned": 10,
-        "usable_posts": 0,
-        "demo_rows": 10,
-        "status": "demo_only",
-        "accepted_candidates": 0,
-        "new_candidates": 0,
-        "known_or_cross_seed_candidates": 0
-      },
-      {
-        "seed": "cosmetics",
-        "rows_returned": 10,
-        "usable_posts": 0,
-        "demo_rows": 10,
-        "status": "demo_only",
-        "accepted_candidates": 0,
-        "new_candidates": 0,
-        "known_or_cross_seed_candidates": 0
-      },
-      {
-        "seed": "mcdonald",
-        "rows_returned": 10,
-        "usable_posts": 0,
-        "demo_rows": 10,
-        "status": "demo_only",
-        "accepted_candidates": 0,
-        "new_candidates": 0,
-        "known_or_cross_seed_candidates": 0
-      },
-      {
-        "seed": "jesiennyklimat",
-        "rows_returned": 10,
-        "usable_posts": 0,
-        "demo_rows": 10,
-        "status": "demo_only",
-        "accepted_candidates": 0,
-        "new_candidates": 0,
-        "known_or_cross_seed_candidates": 0
-      },
-      {
-        "seed": "finanse",
-        "rows_returned": 10,
-        "usable_posts": 0,
-        "demo_rows": 10,
-        "status": "demo_only",
-        "accepted_candidates": 0,
-        "new_candidates": 0,
-        "known_or_cross_seed_candidates": 0
-      },
-      {
-        "seed": "dzieciństwo",
-        "rows_returned": 10,
-        "usable_posts": 0,
-        "demo_rows": 10,
-        "status": "demo_only",
-        "accepted_candidates": 0,
-        "new_candidates": 0,
-        "known_or_cross_seed_candidates": 0
-      },
-      {
-        "seed": "lata90",
-        "rows_returned": 10,
-        "usable_posts": 0,
-        "demo_rows": 10,
-        "status": "demo_only",
-        "accepted_candidates": 0,
-        "new_candidates": 0,
-        "known_or_cross_seed_candidates": 0
-      },
-      {
-        "seed": "polska",
-        "rows_returned": 10,
-        "usable_posts": 0,
-        "demo_rows": 10,
-        "status": "demo_only",
-        "accepted_candidates": 0,
-        "new_candidates": 0,
-        "known_or_cross_seed_candidates": 0
-      },
-      {
-        "seed": "polskatiktok",
-        "rows_returned": 10,
-        "usable_posts": 0,
-        "demo_rows": 10,
-        "status": "demo_only",
-        "accepted_candidates": 0,
-        "new_candidates": 0,
-        "known_or_cross_seed_candidates": 0
-      },
-      {
-        "seed": "tiktokpolska",
+        "seed": "kot",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
