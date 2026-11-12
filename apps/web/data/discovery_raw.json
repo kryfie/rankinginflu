@@ -1,32 +1,58 @@
 {
   "meta": {
-    "run_at": "2026-11-11T11:53:32.025617+00:00",
+    "run_at": "2026-11-12T12:44:19.188626+00:00",
     "actor": "apidojo~tiktok-scraper-api",
     "filterVersion": "v4-strong-pl-evidence",
     "seedIndices": [
-      460,
-      461,
-      490,
-      269,
-      292,
-      296,
-      475,
-      327,
-      336,
-      312
+      506,
+      516,
+      378,
+      395,
+      420,
+      503,
+      442,
+      397,
+      521,
+      386,
+      522,
+      437,
+      445,
+      446,
+      449,
+      447,
+      473,
+      345,
+      429,
+      440,
+      443,
+      452,
+      463
     ],
-    "startSeed": 460,
+    "startSeed": 506,
     "seeds_requested": [
-      "piosenka",
-      "współpracapłatna",
-      "nowości",
-      "włosy",
-      "pierogi",
-      "wybory",
-      "żona",
-      "tatry",
-      "las",
-      "kot"
+      "pasja",
+      "niespodzianka",
+      "ślub",
+      "lekarz",
+      "wspolpraca",
+      "rozwojosobisty",
+      "zdrowejedzenie",
+      "milosc",
+      "prawojazdy",
+      "silownia",
+      "koreanskapielęgnacja",
+      "pyszne",
+      "zapachy",
+      "pomysłnaobiad",
+      "salatka",
+      "comfortfood",
+      "pieniadze",
+      "morze",
+      "inwestowanie",
+      "białko",
+      "pasta",
+      "karmel",
+      "motoryzacja"
     ],
     "seeds_completed": [],
     "resultsPerSeed": 20,
@@ -42,7 +68,7 @@
     },
     "per_seed": [
       {
-        "seed": "piosenka",
+        "seed": "pasja",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -52,7 +78,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "współpracapłatna",
+        "seed": "niespodzianka",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -62,7 +88,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "nowości",
+        "seed": "ślub",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -72,7 +98,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "włosy",
+        "seed": "lekarz",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -82,7 +108,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "pierogi",
+        "seed": "wspolpraca",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -92,7 +118,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "wybory",
+        "seed": "rozwojosobisty",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -102,7 +128,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "żona",
+        "seed": "zdrowejedzenie",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -112,7 +138,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "tatry",
+        "seed": "milosc",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -122,7 +148,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "las",
+        "seed": "prawojazdy",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -132,7 +158,137 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "kot",
+        "seed": "silownia",
+        "rows_returned": 10,
+        "usable_posts": 0,
+        "demo_rows": 10,
+        "status": "demo_only",
+        "accepted_candidates": 0,
+        "new_candidates": 0,
+        "known_or_cross_seed_candidates": 0
+      },
+      {
+        "seed": "koreanskapielęgnacja",
+        "rows_returned": 10,
+        "usable_posts": 0,
+        "demo_rows": 10,
+        "status": "demo_only",
+        "accepted_candidates": 0,
+        "new_candidates": 0,
+        "known_or_cross_seed_candidates": 0
+      },
+      {
+        "seed": "pyszne",
+        "rows_returned": 10,
+        "usable_posts": 0,
+        "demo_rows": 10,
+        "status": "demo_only",
+        "accepted_candidates": 0,
+        "new_candidates": 0,
+        "known_or_cross_seed_candidates": 0
+      },
+      {
+        "seed": "zapachy",
+        "rows_returned": 10,
+        "usable_posts": 0,
+        "demo_rows": 10,
+        "status": "demo_only",
+        "accepted_candidates": 0,
+        "new_candidates": 0,
+        "known_or_cross_seed_candidates": 0
+      },
+      {
+        "seed": "pomysłnaobiad",
+        "rows_returned": 10,
+        "usable_posts": 0,
+        "demo_rows": 10,
+        "status": "demo_only",
+        "accepted_candidates": 0,
+        "new_candidates": 0,
+        "known_or_cross_seed_candidates": 0
+      },
+      {
+        "seed": "salatka",
+        "rows_returned": 10,
+        "usable_posts": 0,
+        "demo_rows": 10,
+        "status": "demo_only",
+        "accepted_candidates": 0,
+        "new_candidates": 0,
+        "known_or_cross_seed_candidates": 0
+      },
+      {
+        "seed": "comfortfood",
+        "rows_returned": 10,
+        "usable_posts": 0,
+        "demo_rows": 10,
+        "status": "demo_only",
+        "accepted_candidates": 0,
+        "new_candidates": 0,
+        "known_or_cross_seed_candidates": 0
+      },
+      {
+        "seed": "pieniadze",
+        "rows_returned": 10,
+        "usable_posts": 0,
+        "demo_rows": 10,
+        "status": "demo_only",
+        "accepted_candidates": 0,
+        "new_candidates": 0,
+        "known_or_cross_seed_candidates": 0
+      },
+      {
+        "seed": "morze",
+        "rows_returned": 10,
+        "usable_posts": 0,
+        "demo_rows": 10,
+        "status": "demo_only",
+        "accepted_candidates": 0,
+        "new_candidates": 0,
+        "known_or_cross_seed_candidates": 0
+      },
+      {
+        "seed": "inwestowanie",
+        "rows_returned": 10,
+        "usable_posts": 0,
+        "demo_rows": 10,
+        "status": "demo_only",
+        "accepted_candidates": 0,
+        "new_candidates": 0,
+        "known_or_cross_seed_candidates": 0
+      },
+      {
+        "seed": "białko",
+        "rows_returned": 10,
+        "usable_posts": 0,
+        "demo_rows": 10,
+        "status": "demo_only",
+        "accepted_candidates": 0,
+        "new_candidates": 0,
+        "known_or_cross_seed_candidates": 0
+      },
+      {
+        "seed": "pasta",
+        "rows_returned": 10,
+        "usable_posts": 0,
+        "demo_rows": 10,
+        "status": "demo_only",
+        "accepted_candidates": 0,
+        "new_candidates": 0,
+        "known_or_cross_seed_candidates": 0
+      },
+      {
+        "seed": "karmel",
+        "rows_returned": 10,
+        "usable_posts": 0,
+        "demo_rows": 10,
+        "status": "demo_only",
+        "accepted_candidates": 0,
+        "new_candidates": 0,
+        "known_or_cross_seed_candidates": 0
+      },
+      {
+        "seed": "motoryzacja",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
