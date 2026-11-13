@@ -1,59 +1,47 @@
 {
   "meta": {
     "latest_run": {
-      "run_at": "2026-11-12T12:44:19.188626+00:00",
+      "run_at": "2026-11-13T12:14:27.508892+00:00",
       "actor": "apidojo~tiktok-scraper-api",
       "filterVersion": "v4-strong-pl-evidence",
       "seedIndices": [
-        506,
-        516,
-        378,
-        395,
-        420,
-        503,
-        442,
-        397,
-        521,
-        386,
-        522,
-        437,
-        445,
-        446,
-        449,
-        447,
-        473,
-        345,
-        429,
-        440,
-        443,
-        452,
-        463
+        534,
+        549,
+        113,
+        134,
+        551,
+        493,
+        30,
+        45,
+        48,
+        108,
+        133,
+        485,
+        495,
+        62,
+        102,
+        131,
+        491
       ],
-      "startSeed": 506,
+      "startSeed": 534,
       "seeds_requested": [
-        "pasja",
-        "niespodzianka",
-        "ślub",
-        "lekarz",
-        "wspolpraca",
-        "rozwojosobisty",
-        "zdrowejedzenie",
-        "milosc",
-        "prawojazdy",
-        "silownia",
-        "koreanskapielęgnacja",
-        "pyszne",
-        "zapachy",
-        "pomysłnaobiad",
-        "salatka",
-        "comfortfood",
-        "pieniadze",
-        "morze",
-        "inwestowanie",
-        "białko",
-        "pasta",
-        "karmel",
-        "motoryzacja"
+        "adhd",
+        "szczęście",
+        "kamper polska",
+        "przedsiębiorca polska",
+        "ogród",
+        "promocje",
+        "rodzina polska",
+        "moda polska tiktok",
+        "streetwear polska",
+        "city break polska",
+        "nieruchomości polska",
+        "metamorfoza",
+        "inspiracja",
+        "streamer polska",
+        "matura polska",
+        "krypto polska",
+        "opening"
       ],
       "seeds_completed": [],
       "resultsPerSeed": 20,
@@ -69,7 +57,7 @@
       },
       "per_seed": [
         {
-          "seed": "pasja",
+          "seed": "adhd",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -79,7 +67,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "niespodzianka",
+          "seed": "szczęście",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -89,7 +77,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "ślub",
+          "seed": "kamper polska",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -99,7 +87,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "lekarz",
+          "seed": "przedsiębiorca polska",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -109,7 +97,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "wspolpraca",
+          "seed": "ogród",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -119,7 +107,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "rozwojosobisty",
+          "seed": "promocje",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -129,7 +117,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "zdrowejedzenie",
+          "seed": "rodzina polska",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -139,7 +127,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "milosc",
+          "seed": "moda polska tiktok",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -149,7 +137,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "prawojazdy",
+          "seed": "streetwear polska",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -159,7 +147,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "silownia",
+          "seed": "city break polska",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -169,7 +157,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "koreanskapielęgnacja",
+          "seed": "nieruchomości polska",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -179,7 +167,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "pyszne",
+          "seed": "metamorfoza",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -189,7 +177,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "zapachy",
+          "seed": "inspiracja",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -199,7 +187,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "pomysłnaobiad",
+          "seed": "streamer polska",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -209,7 +197,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "salatka",
+          "seed": "matura polska",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -219,7 +207,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "comfortfood",
+          "seed": "krypto polska",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -229,67 +217,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "pieniadze",
-          "rows_returned": 10,
-          "usable_posts": 0,
-          "demo_rows": 10,
-          "status": "demo_only",
-          "accepted_candidates": 0,
-          "new_candidates": 0,
-          "known_or_cross_seed_candidates": 0
-        },
-        {
-          "seed": "morze",
-          "rows_returned": 10,
-          "usable_posts": 0,
-          "demo_rows": 10,
-          "status": "demo_only",
-          "accepted_candidates": 0,
-          "new_candidates": 0,
-          "known_or_cross_seed_candidates": 0
-        },
-        {
-          "seed": "inwestowanie",
-          "rows_returned": 10,
-          "usable_posts": 0,
-          "demo_rows": 10,
-          "status": "demo_only",
-          "accepted_candidates": 0,
-          "new_candidates": 0,
-          "known_or_cross_seed_candidates": 0
-        },
-        {
-          "seed": "białko",
-          "rows_returned": 10,
-          "usable_posts": 0,
-          "demo_rows": 10,
-          "status": "demo_only",
-          "accepted_candidates": 0,
-          "new_candidates": 0,
-          "known_or_cross_seed_candidates": 0
-        },
-        {
-          "seed": "pasta",
-          "rows_returned": 10,
-          "usable_posts": 0,
-          "demo_rows": 10,
-          "status": "demo_only",
-          "accepted_candidates": 0,
-          "new_candidates": 0,
-          "known_or_cross_seed_candidates": 0
-        },
-        {
-          "seed": "karmel",
-          "rows_returned": 10,
-          "usable_posts": 0,
-          "demo_rows": 10,
-          "status": "demo_only",
-          "accepted_candidates": 0,
-          "new_candidates": 0,
-          "known_or_cross_seed_candidates": 0
-        },
-        {
-          "seed": "motoryzacja",
+          "seed": "opening",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -307,7 +235,7 @@
     },
     "registry_count": 3104,
     "eligible_count": 3101,
-    "updated_at": "2026-11-12T12:44:19.188626+00:00"
+    "updated_at": "2026-11-13T12:14:27.508892+00:00"
   },
   "creators": [
     {
