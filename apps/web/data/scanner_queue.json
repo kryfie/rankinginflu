@@ -2,9 +2,8 @@
   "meta": {
     "purpose": "Queue for authoritative profile enrichment",
     "count": 4509,
-    "updated_at": "2026-11-13T12:54:10.136100+00:00",
-    "discovery_filter_version": "v4-strong-pl-evidence",
-    "related_mentions_enabled": true
+    "updated_at": "2026-11-14T11:28:59.566520+00:00",
+    "discovery_filter_version": "v4-strong-pl-evidence"
   },
   "items": [
     {
@@ -31,8 +30,7 @@
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "monika.kociolek",
@@ -590,8 +588,7 @@
       "last_discovered_at": "2026-10-15T09:09:37.684467+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "polishballers",
@@ -752,8 +749,7 @@
       ],
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00"
     },
     {
       "username": "edwardwarchocki",
@@ -1317,8 +1313,7 @@
       "last_discovered_at": "2026-10-25T09:09:54.310334+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "starsfromthestars",
@@ -2150,8 +2145,7 @@
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "kuchenne_mecyje",
@@ -2178,8 +2172,7 @@
       "last_discovered_at": "2026-10-28T10:35:37.957025+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "turbotate",
@@ -2287,8 +2280,7 @@
       "last_discovered_at": "2026-10-30T10:52:28.625435+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "No public profile/post rows returned."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "wirtualnapolskanews",
@@ -2366,8 +2358,7 @@
       "last_discovered_at": "2026-10-20T09:26:11.307386+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "kaskaztiktoka",
@@ -2447,8 +2438,7 @@
       "last_discovered_at": "2026-10-28T10:35:37.957025+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "justyna.dobrosz_oracz",
@@ -2473,8 +2463,7 @@
       "last_discovered_at": "2026-10-24T08:53:11.033144+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "oklahomaburgerpolska",
@@ -2528,8 +2517,7 @@
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "be_a_mom_",
@@ -2782,8 +2770,7 @@
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "wtk.tv",
@@ -3433,8 +3420,7 @@
       "last_discovered_at": "2026-10-28T10:35:37.957025+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "stop.cham.official",
@@ -3460,8 +3446,7 @@
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "cholewawa_rozix",
@@ -3612,8 +3597,7 @@
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "patrycjaxsobolewska",
@@ -4506,8 +4490,7 @@
       "last_discovered_at": "2026-10-15T09:09:37.684467+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "blogo.pl",
@@ -5438,8 +5421,7 @@
       "last_discovered_at": "2026-10-21T09:22:45.829607+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "amjapan5",
@@ -5613,8 +5595,7 @@
       ],
       "last_discovered_at": "2026-10-21T09:22:45.829607+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00"
     },
     {
       "username": "camprestcom",
@@ -5816,8 +5797,7 @@
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "2mundoos",
@@ -5864,8 +5844,7 @@
       ],
       "last_discovered_at": "2026-10-06T11:17:30.032862+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00"
     },
     {
       "username": "blyskwiedzy5",
@@ -6045,8 +6024,7 @@
       "last_discovered_at": "2026-10-06T11:17:30.032862+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "No public profile/post rows returned."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "patrycjazoltak",
@@ -6242,8 +6220,7 @@
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "gegonius",
@@ -6316,8 +6293,7 @@
       "last_discovered_at": "2026-10-23T09:21:43.369739+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "rmasny",
@@ -6415,8 +6391,7 @@
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "kanal.gefmo",
@@ -6544,8 +6519,7 @@
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "milosc.official",
@@ -6643,8 +6617,7 @@
       "last_discovered_at": "2026-10-15T09:09:37.684467+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "majapadzik",
@@ -6869,8 +6842,7 @@
       "last_discovered_at": "2026-10-01T10:41:14.725838+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "No public profile/post rows returned."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "natalia_wojciechowska_",
@@ -6997,8 +6969,7 @@
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "luxcreator1",
@@ -7104,8 +7075,7 @@
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "orange_polska",
@@ -7311,8 +7281,7 @@
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "kapitanburgerpolice",
@@ -7905,8 +7874,7 @@
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "2cytramon2",
@@ -8084,8 +8052,7 @@
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "bites_family",
@@ -8210,8 +8177,7 @@
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "tylko_pytam",
@@ -8260,8 +8226,7 @@
       "last_discovered_at": "2026-10-25T09:09:54.310334+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "mami_i_leos",
@@ -8542,8 +8507,7 @@
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "tvp3.lodz",
@@ -8693,8 +8657,7 @@
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "inspiracja25",
@@ -8889,8 +8852,7 @@
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "dm_polska",
@@ -9039,8 +9001,7 @@
       "last_discovered_at": "2026-10-15T09:09:37.684467+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "theamerykanka",
@@ -9164,8 +9125,7 @@
       "last_discovered_at": "2026-10-27T09:49:33.000652+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "auchan.pl",
@@ -9214,8 +9174,7 @@
       "last_discovered_at": "2026-10-24T08:53:11.033144+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "zu.wis",
@@ -9369,8 +9328,7 @@
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "vitalianus33",
@@ -9571,8 +9529,7 @@
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "pier_dolle",
@@ -10053,8 +10010,7 @@
       "last_discovered_at": "2026-10-05T11:30:31.063084+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "djspider2000",
@@ -10080,8 +10036,7 @@
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "babciajadzia_pl",
@@ -10107,8 +10062,7 @@
       "last_discovered_at": "2026-10-19T09:55:12.688632+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "realanns",
@@ -10283,8 +10237,7 @@
       ],
       "last_discovered_at": "2026-10-30T10:52:28.625435+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00"
     },
     {
       "username": "techkominfo_pl",
@@ -10483,8 +10436,7 @@
       ],
       "last_discovered_at": "2026-10-23T09:21:43.369739+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00"
     },
     {
       "username": "r.s.roo",
@@ -10636,8 +10588,7 @@
       "last_discovered_at": "2026-10-27T09:49:33.000652+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "arturikamil",
@@ -10998,8 +10949,7 @@
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "kamil.szerszenski",
@@ -11120,8 +11070,7 @@
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "kierunek_poznan",
@@ -11220,8 +11169,7 @@
       "last_discovered_at": "2026-10-15T09:09:37.684467+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "grzech.31",
@@ -11345,8 +11293,7 @@
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "tytanowyreddit2",
@@ -11572,8 +11519,7 @@
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "mlodzi_polscy_pilkarze",
@@ -11596,8 +11542,7 @@
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "anix_majewsky_priv",
@@ -11791,8 +11736,7 @@
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "gieeciaa",
@@ -12071,8 +12015,7 @@
       "last_discovered_at": "2026-10-31T10:24:15.856719+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "No public profile/post rows returned."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "jolarska",
@@ -12243,8 +12186,7 @@
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "kacpermarciniak_",
@@ -12676,8 +12618,7 @@
       "last_discovered_at": "2026-10-16T09:02:27.125524+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "lucasiino_pl",
@@ -12784,8 +12725,7 @@
       "last_discovered_at": "2026-10-27T09:49:33.000652+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run kRzO19uqMvJVYHYl1 ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "fanpage.tescopolska",
@@ -12885,8 +12825,7 @@
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "nasticaropl",
@@ -12918,8 +12857,7 @@
       "last_discovered_at": "2026-10-24T08:53:11.033144+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "No public profile/post rows returned."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "filipbrymora_standup",
@@ -12969,8 +12907,7 @@
       "last_discovered_at": "2026-10-15T09:09:37.684467+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "polski.gringo",
@@ -13046,8 +12983,7 @@
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "antsdiary29",
@@ -13380,8 +13316,7 @@
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "mariia_ugc",
@@ -14531,8 +14466,7 @@
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "nina_jato",
@@ -14555,8 +14489,7 @@
       ],
       "last_discovered_at": "2026-10-18T08:51:46.679046+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00"
     },
     {
       "username": "menlogick",
@@ -14848,8 +14781,7 @@
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "arkadiuszczartoryski",
@@ -15120,8 +15052,7 @@
       "last_discovered_at": "2026-10-09T11:20:25.769186+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "No public profile/post rows returned."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "lukasz_maciejewski",
@@ -15145,8 +15076,7 @@
       "last_discovered_at": "2026-10-15T09:09:37.684467+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "ts.podbeskidziebb",
@@ -15396,8 +15326,7 @@
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "mistrzkulkopczyns",
@@ -15423,8 +15352,7 @@
       "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "No public profile/post rows returned."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "sybupigwa",
@@ -15452,8 +15380,7 @@
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "No public profile/post rows returned."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "nataliasisik",
@@ -15477,8 +15404,7 @@
       "last_discovered_at": "2026-10-10T10:37:28.620033+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "No public profile/post rows returned."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "prawomarcina",
@@ -15509,8 +15435,7 @@
       "last_discovered_at": "2026-10-28T10:35:37.957025+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "No public profile/post rows returned."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "marta.rentel",
@@ -15533,8 +15458,7 @@
       "last_discovered_at": "2026-10-01T18:03:23.783059+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "No public profile/post rows returned."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "przemekkucyk",
@@ -15584,8 +15508,7 @@
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "bleckitoja",
@@ -15632,8 +15555,7 @@
       "last_discovered_at": "2026-10-23T09:21:43.369739+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "jacob4yt",
@@ -15656,8 +15578,7 @@
       "last_discovered_at": "2026-10-18T08:51:46.679046+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "No public profile/post rows returned."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "gretakazarenn",
@@ -15704,8 +15625,7 @@
       "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "No public profile/post rows returned."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "oficjalnezero",
@@ -15805,8 +15725,7 @@
       "last_discovered_at": "2026-10-30T10:52:28.625435+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "broda_cza_swiat",
@@ -15831,8 +15750,7 @@
       "last_discovered_at": "2026-10-16T09:02:27.125524+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "No public profile/post rows returned."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "tvp",
@@ -15856,8 +15774,7 @@
       "last_discovered_at": "2026-10-18T08:51:46.679046+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "emilka.kostyk",
@@ -15880,8 +15797,7 @@
       "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "No public profile/post rows returned."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "kotolga11",
@@ -15929,8 +15845,7 @@
       "last_discovered_at": "2026-10-18T08:51:46.679046+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "mikolaj_kurcewicz",
@@ -16004,8 +15919,7 @@
       "last_discovered_at": "2026-10-23T09:21:43.369739+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "No public profile/post rows returned."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "polishrzeznik",
@@ -16056,8 +15970,7 @@
       "last_discovered_at": "2026-10-27T09:49:33.000652+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "No public profile/post rows returned."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "katarzynacichopek",
@@ -16080,8 +15993,7 @@
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "justyna_steczkowska",
@@ -16104,8 +16016,7 @@
       "last_discovered_at": "2026-10-02T09:41:36.657099+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "No public profile/post rows returned."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "hbomaxpl",
@@ -16244,8 +16155,7 @@
       "last_discovered_at": "2026-10-21T09:22:45.829607+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "radio_rmffm",
@@ -16270,8 +16180,7 @@
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "global_influ",
@@ -16296,8 +16205,7 @@
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "wielzi",
@@ -16344,8 +16252,7 @@
       "last_discovered_at": "2026-10-27T09:49:33.000652+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "No public profile/post rows returned."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "the_couple_",
@@ -16368,8 +16275,7 @@
       "last_discovered_at": "2026-10-11T10:50:06.830450+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "No public profile/post rows returned."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "olx.polska",
@@ -16392,8 +16298,7 @@
       "last_discovered_at": "2026-10-20T09:26:11.307386+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "No public profile/post rows returned."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "techmatepl",
@@ -16438,8 +16343,7 @@
       ],
       "last_discovered_at": "2026-10-24T08:53:11.033144+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00"
     },
     {
       "username": "piotrsierpinskihair",
@@ -16465,8 +16369,7 @@
       "last_discovered_at": "2026-10-21T09:22:45.829607+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "suziebandit",
@@ -16561,8 +16464,7 @@
       "last_discovered_at": "2026-10-25T09:09:54.310334+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "stylovewarkocze",
@@ -16586,8 +16488,7 @@
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "hebe_poland",
@@ -16614,8 +16515,7 @@
       "last_discovered_at": "2026-10-27T09:49:33.000652+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "olisannaa",
@@ -16638,8 +16538,7 @@
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "popkillerpl",
@@ -16662,8 +16561,7 @@
       "last_discovered_at": "2026-10-01T15:54:53.206711+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "anitaherbafotografie",
@@ -16688,8 +16586,7 @@
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "elifstachera",
@@ -16715,8 +16612,7 @@
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "przemekgorczyk",
@@ -16741,8 +16637,7 @@
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "krzysztofbosak_official",
@@ -16765,8 +16660,7 @@
       "last_discovered_at": "2026-10-03T09:52:50.307511+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "ingpolska",
@@ -16812,8 +16706,7 @@
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "magdalenkakieltyka",
@@ -16836,8 +16729,7 @@
       "last_discovered_at": "2026-10-05T11:30:31.063084+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "sonialelito",
@@ -16860,8 +16752,7 @@
       "last_discovered_at": "2026-10-03T09:52:50.307511+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "olapersak",
@@ -16892,8 +16783,7 @@
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "cocoolanut",
@@ -16919,8 +16809,7 @@
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "serekszop_w_kuchni",
@@ -16944,8 +16833,7 @@
       "last_discovered_at": "2026-10-20T09:26:11.307386+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "wytworniafilmowlodz",
@@ -16991,8 +16879,7 @@
       "last_discovered_at": "2026-10-14T09:31:48.018598+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "ciekawus",
@@ -17015,8 +16902,7 @@
       "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "kacperbisanz",
@@ -17039,8 +16925,7 @@
       "last_discovered_at": "2026-10-01T18:03:23.783059+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "maja_stopka",
@@ -17065,8 +16950,7 @@
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "krzychublues",
@@ -17114,8 +16998,7 @@
       "last_discovered_at": "2026-10-12T12:00:31.933117+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "pierwszy.nos",
@@ -17188,8 +17071,7 @@
       "last_discovered_at": "2026-10-26T10:08:47.745148+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "marina.polski_",
@@ -17217,8 +17099,7 @@
       "last_discovered_at": "2026-10-30T10:52:28.625435+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "wierniukmaja",
@@ -17241,8 +17122,7 @@
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "suwerennapolskapl",
@@ -17269,8 +17149,7 @@
       "last_discovered_at": "2026-10-25T09:09:54.310334+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "zdrowyruch.pl",
@@ -17293,8 +17172,7 @@
       "last_discovered_at": "2026-10-20T09:26:11.307386+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "esz_atelier",
@@ -17317,8 +17195,7 @@
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "118sektor",
@@ -17364,8 +17241,7 @@
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "dagna.olejniczak",
@@ -17390,8 +17266,7 @@
       "last_discovered_at": "2026-10-26T10:08:47.745148+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "weronnie",
@@ -17415,8 +17290,7 @@
       "last_discovered_at": "2026-10-17T08:34:24.139328+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "ytjasminaworkert",
@@ -17439,8 +17313,7 @@
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "geopolitai",
@@ -17464,8 +17337,7 @@
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "onaciaglegotuje",
@@ -17495,8 +17367,7 @@
       "last_discovered_at": "2026-10-25T09:09:54.310334+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:54:10.136100+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "Actor run RszauLOMnMP5YBTEj ended with status=FAILED. statusMessage=None of the 50 account(s) could be reached. Each is in the dataset with an \"error\" field explaining why."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "sabinasmolinska",
@@ -18664,8 +18535,7 @@
       "last_discovered_at": "2026-10-16T09:02:27.125524+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "No public profile/post rows returned."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "m.onikaczaja",
@@ -19675,8 +19545,7 @@
       "last_discovered_at": "2026-10-21T09:22:45.829607+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "No public profile/post rows returned."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "proste.jedzenie",
@@ -19770,8 +19639,7 @@
       "last_discovered_at": "2026-10-09T11:20:25.769186+00:00",
       "status": "enrichment_error",
       "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts",
-      "enrichment_error": "No public profile/post rows returned."
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "3qq_poland",
@@ -29553,8 +29421,7 @@
       ],
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00"
     },
     {
       "username": "pandawojtekyt",
@@ -33282,8 +33149,7 @@
       ],
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00"
     },
     {
       "username": "exobari",
@@ -36404,8 +36270,7 @@
       ],
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00"
     },
     {
       "username": "tvp3_katowice",
@@ -42507,8 +42372,7 @@
       ],
       "last_discovered_at": "2026-10-12T12:00:31.933117+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00"
     },
     {
       "username": "depresja.z.mioci",
@@ -45779,8 +45643,7 @@
       ],
       "last_discovered_at": "2026-10-11T10:50:06.830450+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00"
     },
     {
       "username": "umyslusekret",
@@ -48789,8 +48652,7 @@
       ],
       "last_discovered_at": "2026-10-02T10:38:38.762252+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00"
     },
     {
       "username": "zaczi_tt",
@@ -50061,8 +49923,7 @@
       ],
       "last_discovered_at": "2026-10-31T10:24:15.856719+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00"
     },
     {
       "username": "konecka.travel",
@@ -50590,8 +50451,7 @@
       ],
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00"
     },
     {
       "username": "krystiannowak.us",
@@ -51207,8 +51067,7 @@
       ],
       "last_discovered_at": "2026-10-31T10:24:15.856719+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00"
     },
     {
       "username": "expatpolska",
@@ -56724,8 +56583,7 @@
       ],
       "last_discovered_at": "2026-10-31T10:24:15.856719+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00"
     },
     {
       "username": "pvvtkvv_",
@@ -57224,8 +57082,7 @@
       ],
       "last_discovered_at": "2026-10-01T10:41:14.725838+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00"
     },
     {
       "username": "arek_explozja_",
@@ -57310,8 +57167,7 @@
       ],
       "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00"
     },
     {
       "username": "latinobebecitka.fanpage",
@@ -63256,8 +63112,7 @@
       ],
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00"
     },
     {
       "username": "topewoman51",
@@ -63276,8 +63131,7 @@
       ],
       "last_discovered_at": "2026-10-12T12:00:31.933117+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00"
     },
     {
       "username": "oskar_mazurek1993",
@@ -67216,8 +67070,7 @@
       ],
       "last_discovered_at": "2026-10-11T10:50:06.830450+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00"
     },
     {
       "username": "djkinoloffcial",
@@ -68229,8 +68082,7 @@
       ],
       "last_discovered_at": "2026-10-28T10:35:37.957025+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00"
     },
     {
       "username": "nieperfekcyjni.pl",
@@ -68557,8 +68409,7 @@
       ],
       "last_discovered_at": "2026-10-19T09:55:12.688632+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00"
     },
     {
       "username": "emiliamarchewka",
@@ -68722,8 +68573,7 @@
       ],
       "last_discovered_at": "2026-10-04T10:35:32.866256+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00"
     },
     {
       "username": "laurasadowskaa",
@@ -68802,8 +68652,7 @@
       ],
       "last_discovered_at": "2026-10-04T10:35:32.866256+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00"
     },
     {
       "username": "punktzwrotny777",
@@ -69183,8 +69032,7 @@
       ],
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00"
     },
     {
       "username": "gazelka_92",
@@ -70258,8 +70106,7 @@
       ],
       "last_discovered_at": "2026-10-23T09:21:43.369739+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-13T12:52:31.266577+00:00"
     },
     {
       "username": "barefootbrit",

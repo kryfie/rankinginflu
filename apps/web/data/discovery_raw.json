@@ -1,46 +1,42 @@
 {
   "meta": {
-    "run_at": "2026-11-13T12:14:27.508892+00:00",
+    "run_at": "2026-11-14T11:28:59.566520+00:00",
     "actor": "apidojo~tiktok-scraper-api",
     "filterVersion": "v4-strong-pl-evidence",
     "seedIndices": [
-      534,
-      549,
-      113,
-      134,
-      551,
-      493,
-      30,
-      45,
-      48,
-      108,
-      133,
-      485,
-      495,
-      62,
-      102,
-      131,
-      491
+      566,
+      393,
+      557,
+      519,
+      307,
+      508,
+      515,
+      263,
+      303,
+      339,
+      221,
+      511,
+      520,
+      222,
+      358
     ],
-    "startSeed": 534,
+    "startSeed": 566,
     "seeds_requested": [
-      "adhd",
-      "szczęście",
-      "kamper polska",
-      "przedsiębiorca polska",
-      "ogród",
-      "promocje",
-      "rodzina polska",
-      "moda polska tiktok",
-      "streetwear polska",
-      "city break polska",
-      "nieruchomości polska",
-      "metamorfoza",
-      "inspiracja",
-      "streamer polska",
-      "matura polska",
-      "krypto polska",
-      "opening"
+      "gdańsk",
+      "mecz",
+      "sprzatanie",
+      "jajka",
+      "paliwo",
+      "ceny",
+      "cebula",
+      "grzyby",
+      "szkola",
+      "prawda",
+      "warsaw",
+      "niemcy",
+      "jabłka",
+      "prl",
+      "polishgirl"
     ],
     "seeds_completed": [],
     "resultsPerSeed": 20,
@@ -56,7 +52,7 @@
     },
     "per_seed": [
       {
-        "seed": "adhd",
+        "seed": "gdańsk",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -66,7 +62,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "szczęście",
+        "seed": "mecz",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -76,7 +72,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "kamper polska",
+        "seed": "sprzatanie",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -86,7 +82,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "przedsiębiorca polska",
+        "seed": "jajka",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -96,7 +92,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "ogród",
+        "seed": "paliwo",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -106,7 +102,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "promocje",
+        "seed": "ceny",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -116,7 +112,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "rodzina polska",
+        "seed": "cebula",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -126,7 +122,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "moda polska tiktok",
+        "seed": "grzyby",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -136,7 +132,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "streetwear polska",
+        "seed": "szkola",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -146,7 +142,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "city break polska",
+        "seed": "prawda",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -156,7 +152,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "nieruchomości polska",
+        "seed": "warsaw",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -166,7 +162,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "metamorfoza",
+        "seed": "niemcy",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -176,7 +172,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "inspiracja",
+        "seed": "jabłka",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -186,7 +182,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "streamer polska",
+        "seed": "prl",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -196,27 +192,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "matura polska",
-        "rows_returned": 10,
-        "usable_posts": 0,
-        "demo_rows": 10,
-        "status": "demo_only",
-        "accepted_candidates": 0,
-        "new_candidates": 0,
-        "known_or_cross_seed_candidates": 0
-      },
-      {
-        "seed": "krypto polska",
-        "rows_returned": 10,
-        "usable_posts": 0,
-        "demo_rows": 10,
-        "status": "demo_only",
-        "accepted_candidates": 0,
-        "new_candidates": 0,
-        "known_or_cross_seed_candidates": 0
-      },
-      {
-        "seed": "opening",
+        "seed": "polishgirl",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
