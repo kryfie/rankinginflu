@@ -1,23 +1,27 @@
 {
   "meta": {
     "latest_run": {
-      "run_at": "2026-11-16T12:46:20.376828+00:00",
+      "run_at": "2026-11-17T13:28:39.744831+00:00",
       "actor": "apidojo~tiktok-scraper-api",
       "filterVersion": "v4-strong-pl-evidence",
       "seedIndices": [
-        560,
-        571,
-        574,
-        564,
-        558
+        592,
+        582,
+        584,
+        585,
+        578,
+        593,
+        598
       ],
-      "startSeed": 560,
+      "startSeed": 592,
       "seeds_requested": [
-        "zabawki",
-        "wypadek",
-        "frytki",
-        "mąż",
-        "wycieczka"
+        "świadomość",
+        "informacje",
+        "macierzyństwo",
+        "zwierzęta",
+        "dzik",
+        "telewizja",
+        "konie"
       ],
       "seeds_completed": [],
       "resultsPerSeed": 20,
@@ -33,7 +37,7 @@
       },
       "per_seed": [
         {
-          "seed": "zabawki",
+          "seed": "świadomość",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -43,7 +47,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "wypadek",
+          "seed": "informacje",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -53,7 +57,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "frytki",
+          "seed": "macierzyństwo",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -63,7 +67,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "mąż",
+          "seed": "zwierzęta",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -73,7 +77,27 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "wycieczka",
+          "seed": "dzik",
+          "rows_returned": 10,
+          "usable_posts": 0,
+          "demo_rows": 10,
+          "status": "demo_only",
+          "accepted_candidates": 0,
+          "new_candidates": 0,
+          "known_or_cross_seed_candidates": 0
+        },
+        {
+          "seed": "telewizja",
+          "rows_returned": 10,
+          "usable_posts": 0,
+          "demo_rows": 10,
+          "status": "demo_only",
+          "accepted_candidates": 0,
+          "new_candidates": 0,
+          "known_or_cross_seed_candidates": 0
+        },
+        {
+          "seed": "konie",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -91,7 +115,7 @@
     },
     "registry_count": 3104,
     "eligible_count": 3101,
-    "updated_at": "2026-11-16T12:46:20.376828+00:00"
+    "updated_at": "2026-11-17T13:28:39.744831+00:00"
   },
   "creators": [
     {
