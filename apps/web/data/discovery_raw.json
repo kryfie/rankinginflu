@@ -1,26 +1,28 @@
 {
   "meta": {
-    "run_at": "2026-11-17T13:28:39.744831+00:00",
+    "run_at": "2026-11-18T13:03:47.602909+00:00",
     "actor": "apidojo~tiktok-scraper-api",
     "filterVersion": "v4-strong-pl-evidence",
     "seedIndices": [
-      592,
-      582,
-      584,
-      585,
-      578,
-      593,
-      598
+      604,
+      608,
+      607,
+      624,
+      615,
+      618,
+      610,
+      612
     ],
-    "startSeed": 592,
+    "startSeed": 604,
     "seeds_requested": [
-      "świadomość",
-      "informacje",
-      "macierzyństwo",
-      "zwierzęta",
-      "dzik",
-      "telewizja",
-      "konie"
+      "przeprowadzka",
+      "przemoc",
+      "benzyna",
+      "mężczyzna",
+      "brwi",
+      "suplementy",
+      "wojskopolskie",
+      "wyzwanie"
     ],
     "seeds_completed": [],
     "resultsPerSeed": 20,
@@ -36,7 +38,7 @@
     },
     "per_seed": [
       {
-        "seed": "świadomość",
+        "seed": "przeprowadzka",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -46,7 +48,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "informacje",
+        "seed": "przemoc",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -56,7 +58,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "macierzyństwo",
+        "seed": "benzyna",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -66,7 +68,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "zwierzęta",
+        "seed": "mężczyzna",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -76,7 +78,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "dzik",
+        "seed": "brwi",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -86,7 +88,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "telewizja",
+        "seed": "suplementy",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -96,7 +98,17 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "konie",
+        "seed": "wojskopolskie",
+        "rows_returned": 10,
+        "usable_posts": 0,
+        "demo_rows": 10,
+        "status": "demo_only",
+        "accepted_candidates": 0,
+        "new_candidates": 0,
+        "known_or_cross_seed_candidates": 0
+      },
+      {
+        "seed": "wyzwanie",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
