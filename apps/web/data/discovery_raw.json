@@ -1,28 +1,28 @@
 {
   "meta": {
-    "run_at": "2026-11-18T13:03:47.602909+00:00",
+    "run_at": "2026-11-19T13:10:06.949958+00:00",
     "actor": "apidojo~tiktok-scraper-api",
     "filterVersion": "v4-strong-pl-evidence",
     "seedIndices": [
-      604,
-      608,
-      607,
-      624,
-      615,
-      618,
-      610,
-      612
+      39,
+      183,
+      196,
+      21,
+      38,
+      36,
+      11,
+      628
     ],
-    "startSeed": 604,
+    "startSeed": 39,
     "seeds_requested": [
-      "przeprowadzka",
-      "przemoc",
-      "benzyna",
-      "mężczyzna",
-      "brwi",
-      "suplementy",
-      "wojskopolskie",
-      "wyzwanie"
+      "pielęgnacja polska",
+      "życie",
+      "zdrowie",
+      "stand up polska",
+      "skincare polska",
+      "makeup polska",
+      "polska jedzenie",
+      "pielęgnacjawłosów"
     ],
     "seeds_completed": [],
     "resultsPerSeed": 20,
@@ -38,7 +38,7 @@
     },
     "per_seed": [
       {
-        "seed": "przeprowadzka",
+        "seed": "pielęgnacja polska",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -48,7 +48,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "przemoc",
+        "seed": "życie",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -58,7 +58,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "benzyna",
+        "seed": "zdrowie",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -68,7 +68,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "mężczyzna",
+        "seed": "stand up polska",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -78,7 +78,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "brwi",
+        "seed": "skincare polska",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -88,7 +88,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "suplementy",
+        "seed": "makeup polska",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -98,7 +98,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "wojskopolskie",
+        "seed": "polska jedzenie",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -108,7 +108,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "wyzwanie",
+        "seed": "pielęgnacjawłosów",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
