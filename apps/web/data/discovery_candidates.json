@@ -1,39 +1,33 @@
 {
   "meta": {
     "latest_run": {
-      "run_at": "2026-11-20T12:54:25.395042+00:00",
+      "run_at": "2026-11-21T12:40:18.892415+00:00",
       "actor": "apidojo~tiktok-scraper-api",
       "filterVersion": "v4-strong-pl-evidence",
       "seedIndices": [
-        97,
-        145,
-        239,
-        279,
-        26,
-        72,
-        176,
-        236,
-        109,
-        153,
-        4,
-        172,
-        12
+        188,
+        79,
+        149,
+        209,
+        229,
+        237,
+        298,
+        10,
+        81,
+        126
       ],
-      "startSeed": 97,
+      "startSeed": 188,
       "seeds_requested": [
-        "ciekawostki polska",
-        "kosmetyki",
-        "pielęgnacja",
-        "dziecko",
-        "vlog polska",
-        "desery polska",
-        "współpracareklamowa",
-        "śniadanie",
-        "loty polska",
-        "ciekawostki",
-        "polski humor",
-        "przepisy",
-        "polska podróże"
+        "podróże",
+        "piłka nożna polska",
+        "makijaz",
+        "haulzakupowy",
+        "cynamonki",
+        "kolacja",
+        "taniekosmetyki",
+        "polska edukacja",
+        "kibice polska",
+        "inwestowanie polska"
       ],
       "seeds_completed": [],
       "resultsPerSeed": 20,
@@ -49,7 +43,7 @@
       },
       "per_seed": [
         {
-          "seed": "ciekawostki polska",
+          "seed": "podróże",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -59,7 +53,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "kosmetyki",
+          "seed": "piłka nożna polska",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -69,7 +63,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "pielęgnacja",
+          "seed": "makijaz",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -79,7 +73,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "dziecko",
+          "seed": "haulzakupowy",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -89,7 +83,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "vlog polska",
+          "seed": "cynamonki",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -99,7 +93,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "desery polska",
+          "seed": "kolacja",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -109,7 +103,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "współpracareklamowa",
+          "seed": "taniekosmetyki",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -119,7 +113,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "śniadanie",
+          "seed": "polska edukacja",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -129,7 +123,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "loty polska",
+          "seed": "kibice polska",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -139,37 +133,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "ciekawostki",
-          "rows_returned": 10,
-          "usable_posts": 0,
-          "demo_rows": 10,
-          "status": "demo_only",
-          "accepted_candidates": 0,
-          "new_candidates": 0,
-          "known_or_cross_seed_candidates": 0
-        },
-        {
-          "seed": "polski humor",
-          "rows_returned": 10,
-          "usable_posts": 0,
-          "demo_rows": 10,
-          "status": "demo_only",
-          "accepted_candidates": 0,
-          "new_candidates": 0,
-          "known_or_cross_seed_candidates": 0
-        },
-        {
-          "seed": "przepisy",
-          "rows_returned": 10,
-          "usable_posts": 0,
-          "demo_rows": 10,
-          "status": "demo_only",
-          "accepted_candidates": 0,
-          "new_candidates": 0,
-          "known_or_cross_seed_candidates": 0
-        },
-        {
-          "seed": "polska podróże",
+          "seed": "inwestowanie polska",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -187,7 +151,7 @@
     },
     "registry_count": 3104,
     "eligible_count": 3101,
-    "updated_at": "2026-11-20T12:54:25.395042+00:00"
+    "updated_at": "2026-11-21T12:40:18.892415+00:00"
   },
   "creators": [
     {
