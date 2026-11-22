@@ -1,32 +1,34 @@
 {
   "meta": {
-    "run_at": "2026-11-21T12:40:18.892415+00:00",
+    "run_at": "2026-11-22T12:36:41.578636+00:00",
     "actor": "apidojo~tiktok-scraper-api",
     "filterVersion": "v4-strong-pl-evidence",
     "seedIndices": [
-      188,
-      79,
-      149,
-      209,
-      229,
-      237,
-      298,
-      10,
-      81,
-      126
+      272,
+      310,
+      348,
+      223,
+      253,
+      311,
+      326,
+      5,
+      323,
+      341,
+      77
     ],
-    "startSeed": 188,
+    "startSeed": 272,
     "seeds_requested": [
-      "podróże",
-      "piłka nożna polska",
-      "makijaz",
-      "haulzakupowy",
-      "cynamonki",
-      "kolacja",
-      "taniekosmetyki",
-      "polska edukacja",
-      "kibice polska",
-      "inwestowanie polska"
+      "nowość",
+      "sniadanie",
+      "emocje",
+      "redukcja",
+      "nawrocki",
+      "ubrania",
+      "fakty",
+      "polska beauty",
+      "związek",
+      "samolot",
+      "trening polska"
     ],
     "seeds_completed": [],
     "resultsPerSeed": 20,
@@ -42,7 +44,7 @@
     },
     "per_seed": [
       {
-        "seed": "podróże",
+        "seed": "nowość",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -52,7 +54,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "piłka nożna polska",
+        "seed": "sniadanie",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -62,7 +64,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "makijaz",
+        "seed": "emocje",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -72,7 +74,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "haulzakupowy",
+        "seed": "redukcja",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -82,7 +84,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "cynamonki",
+        "seed": "nawrocki",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -92,7 +94,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "kolacja",
+        "seed": "ubrania",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -102,7 +104,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "taniekosmetyki",
+        "seed": "fakty",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -112,7 +114,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "polska edukacja",
+        "seed": "polska beauty",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -122,7 +124,7 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "kibice polska",
+        "seed": "związek",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
@@ -132,7 +134,17 @@
         "known_or_cross_seed_candidates": 0
       },
       {
-        "seed": "inwestowanie polska",
+        "seed": "samolot",
+        "rows_returned": 10,
+        "usable_posts": 0,
+        "demo_rows": 10,
+        "status": "demo_only",
+        "accepted_candidates": 0,
+        "new_candidates": 0,
+        "known_or_cross_seed_candidates": 0
+      },
+      {
+        "seed": "trening polska",
         "rows_returned": 10,
         "usable_posts": 0,
         "demo_rows": 10,
