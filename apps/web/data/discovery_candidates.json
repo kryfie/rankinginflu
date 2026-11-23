@@ -1,35 +1,33 @@
 {
   "meta": {
     "latest_run": {
-      "run_at": "2026-11-22T12:36:41.578636+00:00",
+      "run_at": "2026-11-23T14:40:41.145692+00:00",
       "actor": "apidojo~tiktok-scraper-api",
       "filterVersion": "v4-strong-pl-evidence",
       "seedIndices": [
-        272,
-        310,
-        348,
-        223,
-        253,
-        311,
-        326,
-        5,
-        323,
-        341,
-        77
+        241,
+        147,
+        308,
+        355,
+        128,
+        143,
+        150,
+        268,
+        106,
+        242
       ],
-      "startSeed": 272,
+      "startSeed": 241,
       "seeds_requested": [
-        "nowość",
-        "sniadanie",
-        "emocje",
-        "redukcja",
-        "nawrocki",
-        "ubrania",
-        "fakty",
-        "polska beauty",
-        "związek",
-        "samolot",
-        "trening polska"
+        "wlosy",
+        "makijaż",
+        "sernik",
+        "spedzzemnadzien",
+        "biznes polska",
+        "przepis",
+        "zakupy",
+        "paznokcie",
+        "travel polska",
+        "perfumy"
       ],
       "seeds_completed": [],
       "resultsPerSeed": 20,
@@ -45,7 +43,7 @@
       },
       "per_seed": [
         {
-          "seed": "nowość",
+          "seed": "wlosy",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -55,7 +53,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "sniadanie",
+          "seed": "makijaż",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -65,7 +63,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "emocje",
+          "seed": "sernik",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -75,7 +73,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "redukcja",
+          "seed": "spedzzemnadzien",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -85,7 +83,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "nawrocki",
+          "seed": "biznes polska",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -95,7 +93,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "ubrania",
+          "seed": "przepis",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -105,7 +103,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "fakty",
+          "seed": "zakupy",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -115,7 +113,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "polska beauty",
+          "seed": "paznokcie",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -125,7 +123,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "związek",
+          "seed": "travel polska",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -135,17 +133,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "samolot",
-          "rows_returned": 10,
-          "usable_posts": 0,
-          "demo_rows": 10,
-          "status": "demo_only",
-          "accepted_candidates": 0,
-          "new_candidates": 0,
-          "known_or_cross_seed_candidates": 0
-        },
-        {
-          "seed": "trening polska",
+          "seed": "perfumy",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -163,7 +151,7 @@
     },
     "registry_count": 3104,
     "eligible_count": 3101,
-    "updated_at": "2026-11-22T12:36:41.578636+00:00"
+    "updated_at": "2026-11-23T14:40:41.145692+00:00"
   },
   "creators": [
     {
