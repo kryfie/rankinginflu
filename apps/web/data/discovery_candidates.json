@@ -1,33 +1,25 @@
 {
   "meta": {
     "latest_run": {
-      "run_at": "2026-11-23T14:40:41.145692+00:00",
+      "run_at": "2026-11-24T14:53:06.988311+00:00",
       "actor": "apidojo~tiktok-scraper-api",
       "filterVersion": "v4-strong-pl-evidence",
       "seedIndices": [
-        241,
-        147,
-        308,
-        355,
-        128,
-        143,
-        150,
-        268,
-        106,
-        242
+        125,
+        167,
+        92,
+        73,
+        74,
+        104
       ],
-      "startSeed": 241,
+      "startSeed": 125,
       "seeds_requested": [
-        "wlosy",
-        "makijaż",
-        "sernik",
-        "spedzzemnadzien",
-        "biznes polska",
-        "przepis",
-        "zakupy",
-        "paznokcie",
-        "travel polska",
-        "perfumy"
+        "finanse polska",
+        "polityka",
+        "sztuczna inteligencja polska",
+        "foodie polska",
+        "test jedzenia polska",
+        "psychologia polska"
       ],
       "seeds_completed": [],
       "resultsPerSeed": 20,
@@ -43,7 +35,7 @@
       },
       "per_seed": [
         {
-          "seed": "wlosy",
+          "seed": "finanse polska",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -53,7 +45,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "makijaż",
+          "seed": "polityka",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -63,7 +55,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "sernik",
+          "seed": "sztuczna inteligencja polska",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -73,7 +65,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "spedzzemnadzien",
+          "seed": "foodie polska",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -83,7 +75,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "biznes polska",
+          "seed": "test jedzenia polska",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -93,47 +85,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "przepis",
-          "rows_returned": 10,
-          "usable_posts": 0,
-          "demo_rows": 10,
-          "status": "demo_only",
-          "accepted_candidates": 0,
-          "new_candidates": 0,
-          "known_or_cross_seed_candidates": 0
-        },
-        {
-          "seed": "zakupy",
-          "rows_returned": 10,
-          "usable_posts": 0,
-          "demo_rows": 10,
-          "status": "demo_only",
-          "accepted_candidates": 0,
-          "new_candidates": 0,
-          "known_or_cross_seed_candidates": 0
-        },
-        {
-          "seed": "paznokcie",
-          "rows_returned": 10,
-          "usable_posts": 0,
-          "demo_rows": 10,
-          "status": "demo_only",
-          "accepted_candidates": 0,
-          "new_candidates": 0,
-          "known_or_cross_seed_candidates": 0
-        },
-        {
-          "seed": "travel polska",
-          "rows_returned": 10,
-          "usable_posts": 0,
-          "demo_rows": 10,
-          "status": "demo_only",
-          "accepted_candidates": 0,
-          "new_candidates": 0,
-          "known_or_cross_seed_candidates": 0
-        },
-        {
-          "seed": "perfumy",
+          "seed": "psychologia polska",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -151,7 +103,7 @@
     },
     "registry_count": 3104,
     "eligible_count": 3101,
-    "updated_at": "2026-11-23T14:40:41.145692+00:00"
+    "updated_at": "2026-11-24T14:53:06.988311+00:00"
   },
   "creators": [
     {
