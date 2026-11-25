@@ -1,25 +1,33 @@
 {
   "meta": {
     "latest_run": {
-      "run_at": "2026-11-24T14:53:06.988311+00:00",
+      "run_at": "2026-11-25T14:24:06.839846+00:00",
       "actor": "apidojo~tiktok-scraper-api",
       "filterVersion": "v4-strong-pl-evidence",
       "seedIndices": [
-        125,
-        167,
-        92,
-        73,
-        74,
-        104
+        411,
+        174,
+        227,
+        247,
+        286,
+        238,
+        243,
+        262,
+        265,
+        354
       ],
-      "startSeed": 125,
+      "startSeed": 411,
       "seeds_requested": [
-        "finanse polska",
-        "polityka",
-        "sztuczna inteligencja polska",
-        "foodie polska",
-        "test jedzenia polska",
-        "psychologia polska"
+        "prawo",
+        "dynia",
+        "zupa",
+        "jesiennestylizacje",
+        "makaron",
+        "kurczak",
+        "okazja",
+        "sałatka",
+        "rossmannpolska",
+        "edukacja"
       ],
       "seeds_completed": [],
       "resultsPerSeed": 20,
@@ -35,7 +43,7 @@
       },
       "per_seed": [
         {
-          "seed": "finanse polska",
+          "seed": "prawo",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -45,7 +53,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "polityka",
+          "seed": "dynia",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -55,7 +63,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "sztuczna inteligencja polska",
+          "seed": "zupa",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -65,7 +73,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "foodie polska",
+          "seed": "jesiennestylizacje",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -75,7 +83,7 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "test jedzenia polska",
+          "seed": "makaron",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -85,7 +93,47 @@
           "known_or_cross_seed_candidates": 0
         },
         {
-          "seed": "psychologia polska",
+          "seed": "kurczak",
+          "rows_returned": 10,
+          "usable_posts": 0,
+          "demo_rows": 10,
+          "status": "demo_only",
+          "accepted_candidates": 0,
+          "new_candidates": 0,
+          "known_or_cross_seed_candidates": 0
+        },
+        {
+          "seed": "okazja",
+          "rows_returned": 10,
+          "usable_posts": 0,
+          "demo_rows": 10,
+          "status": "demo_only",
+          "accepted_candidates": 0,
+          "new_candidates": 0,
+          "known_or_cross_seed_candidates": 0
+        },
+        {
+          "seed": "sałatka",
+          "rows_returned": 10,
+          "usable_posts": 0,
+          "demo_rows": 10,
+          "status": "demo_only",
+          "accepted_candidates": 0,
+          "new_candidates": 0,
+          "known_or_cross_seed_candidates": 0
+        },
+        {
+          "seed": "rossmannpolska",
+          "rows_returned": 10,
+          "usable_posts": 0,
+          "demo_rows": 10,
+          "status": "demo_only",
+          "accepted_candidates": 0,
+          "new_candidates": 0,
+          "known_or_cross_seed_candidates": 0
+        },
+        {
+          "seed": "edukacja",
           "rows_returned": 10,
           "usable_posts": 0,
           "demo_rows": 10,
@@ -103,7 +151,7 @@
     },
     "registry_count": 3104,
     "eligible_count": 3101,
-    "updated_at": "2026-11-24T14:53:06.988311+00:00"
+    "updated_at": "2026-11-25T14:24:06.839846+00:00"
   },
   "creators": [
     {
