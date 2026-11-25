@@ -2,8 +2,9 @@
   "meta": {
     "purpose": "Queue for authoritative profile enrichment",
     "count": 4509,
-    "updated_at": "2026-11-25T14:24:06.839846+00:00",
-    "discovery_filter_version": "v4-strong-pl-evidence"
+    "updated_at": "2026-11-25T16:10:32.620639+00:00",
+    "discovery_filter_version": "v4-strong-pl-evidence",
+    "related_mentions_enabled": true
   },
   "items": [
     {
@@ -317,7 +318,7 @@
       ],
       "last_discovered_at": "2026-10-25T09:09:54.310334+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -430,7 +431,7 @@
       ],
       "last_discovered_at": "2026-10-24T08:53:11.033144+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -480,7 +481,7 @@
       ],
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -563,7 +564,7 @@
       ],
       "last_discovered_at": "2026-10-24T08:53:11.033144+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -614,7 +615,7 @@
       ],
       "last_discovered_at": "2026-10-02T10:38:38.762252+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -749,7 +750,8 @@
       ],
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "edwardwarchocki",
@@ -796,7 +798,7 @@
       ],
       "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -934,7 +936,7 @@
       ],
       "last_discovered_at": "2026-10-24T08:53:11.033144+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -959,7 +961,7 @@
       ],
       "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -1070,7 +1072,7 @@
       ],
       "last_discovered_at": "2026-10-27T09:49:33.000652+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -1123,7 +1125,7 @@
       ],
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -1149,7 +1151,7 @@
       ],
       "last_discovered_at": "2026-10-09T11:20:25.769186+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -1227,7 +1229,7 @@
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -1285,7 +1287,7 @@
       ],
       "last_discovered_at": "2026-10-21T09:22:45.829607+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -1336,7 +1338,7 @@
       ],
       "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -1360,7 +1362,7 @@
       ],
       "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -1469,7 +1471,7 @@
       ],
       "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -1493,7 +1495,7 @@
       ],
       "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -1601,7 +1603,7 @@
       ],
       "last_discovered_at": "2026-10-28T10:35:37.957025+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -1662,7 +1664,7 @@
       ],
       "last_discovered_at": "2026-10-21T09:22:45.829607+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -1712,7 +1714,7 @@
       ],
       "last_discovered_at": "2026-10-01T15:54:53.206711+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -1737,7 +1739,7 @@
       ],
       "last_discovered_at": "2026-10-01T15:54:53.206711+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -1788,7 +1790,7 @@
       ],
       "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -1891,7 +1893,7 @@
       ],
       "last_discovered_at": "2026-10-03T09:52:50.307511+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -2020,7 +2022,7 @@
       ],
       "last_discovered_at": "2026-10-25T09:09:54.310334+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -2046,7 +2048,7 @@
       ],
       "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -2221,7 +2223,7 @@
       ],
       "last_discovered_at": "2026-10-01T16:06:49.709173+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -2279,8 +2281,9 @@
       ],
       "last_discovered_at": "2026-10-30T10:52:28.625435+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "wirtualnapolskanews",
@@ -2330,7 +2333,7 @@
       ],
       "last_discovered_at": "2026-10-10T10:37:28.620033+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -2488,7 +2491,7 @@
       ],
       "last_discovered_at": "2026-10-27T09:49:33.000652+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -2615,7 +2618,7 @@
       ],
       "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -2641,7 +2644,7 @@
       ],
       "last_discovered_at": "2026-10-24T08:53:11.033144+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -2719,7 +2722,7 @@
       ],
       "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -2743,7 +2746,7 @@
       ],
       "last_discovered_at": "2026-10-09T11:20:25.769186+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -2818,7 +2821,7 @@
       ],
       "last_discovered_at": "2026-10-01T16:06:49.709173+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -2891,7 +2894,7 @@
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -2916,8 +2919,9 @@
       ],
       "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "pawel.paczul",
@@ -2965,7 +2969,7 @@
       ],
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -2989,7 +2993,7 @@
       ],
       "last_discovered_at": "2026-10-18T08:51:46.679046+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -3097,7 +3101,7 @@
       ],
       "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -3229,7 +3233,7 @@
       ],
       "last_discovered_at": "2026-10-30T10:52:28.625435+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -3255,7 +3259,7 @@
       ],
       "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -3309,7 +3313,7 @@
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -3341,7 +3345,7 @@
       ],
       "last_discovered_at": "2026-10-28T10:35:37.957025+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -3394,7 +3398,7 @@
       ],
       "last_discovered_at": "2026-10-30T10:52:28.625435+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -3493,7 +3497,7 @@
       ],
       "last_discovered_at": "2026-10-02T09:41:36.657099+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -3620,7 +3624,7 @@
       ],
       "last_discovered_at": "2026-10-01T18:03:23.783059+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -3744,7 +3748,7 @@
       ],
       "last_discovered_at": "2026-10-24T08:53:11.033144+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -3795,7 +3799,7 @@
       ],
       "last_discovered_at": "2026-10-25T09:09:54.310334+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -3851,7 +3855,7 @@
       ],
       "last_discovered_at": "2026-10-26T10:08:47.745148+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -3901,7 +3905,7 @@
       ],
       "last_discovered_at": "2026-10-01T18:03:23.783059+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -3949,7 +3953,7 @@
       ],
       "last_discovered_at": "2026-10-01T16:06:49.709173+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -3975,7 +3979,7 @@
       ],
       "last_discovered_at": "2026-10-21T09:22:45.829607+00:00",
       "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
       "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
@@ -4002,9 +4006,10 @@
         "śniadanie"
       ],
       "last_discovered_at": "2026-10-13T11:49:34.721144+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "polsatnews.pl",
@@ -4034,9 +4039,10 @@
         "wypadek"
       ],
       "last_discovered_at": "2026-10-26T10:08:47.745148+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "zubek.urbex",
@@ -4109,9 +4115,10 @@
         "skincare polska"
       ],
       "last_discovered_at": "2026-10-20T09:26:11.307386+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "holiday.stop",
@@ -4399,9 +4406,10 @@
         "przepis"
       ],
       "last_discovered_at": "2026-10-28T10:35:37.957025+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "thepolishsyn",
@@ -4426,9 +4434,10 @@
         "polski tata"
       ],
       "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-18T13:34:05.478241+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "joanniepl",
@@ -4513,9 +4522,10 @@
         "hotele polska"
       ],
       "last_discovered_at": "2026-10-27T09:49:33.000652+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "mshorts2110",
@@ -4663,9 +4673,10 @@
         "hotele polska"
       ],
       "last_discovered_at": "2026-10-25T09:09:54.310334+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "szaman.8282",
@@ -4712,9 +4723,10 @@
         "macierzyństwo"
       ],
       "last_discovered_at": "2026-10-18T08:51:46.679046+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "hiszpan_uczy",
@@ -4787,9 +4799,10 @@
         "poznań"
       ],
       "last_discovered_at": "2026-11-01T11:17:00.283760+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "zanzibartek",
@@ -4837,9 +4850,10 @@
         "codzienność polska"
       ],
       "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "karolinapajaczkowska",
@@ -4861,9 +4875,10 @@
         "wojsko"
       ],
       "last_discovered_at": "2026-10-09T11:20:25.769186+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "adam.lewicki.pl",
@@ -4989,9 +5004,10 @@
         "siłownia polska"
       ],
       "last_discovered_at": "2026-10-01T16:06:49.709173+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "3dinfopl",
@@ -5040,9 +5056,10 @@
         "telefony polska"
       ],
       "last_discovered_at": "2026-10-25T09:09:54.310334+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "melodiatvpolska_",
@@ -5167,9 +5184,10 @@
         "współpracareklamowa"
       ],
       "last_discovered_at": "2026-10-27T09:49:33.000652+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "zoto.reddit",
@@ -5239,9 +5257,10 @@
         "valorant polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "dompolak00",
@@ -5264,9 +5283,10 @@
         "język angielski polska"
       ],
       "last_discovered_at": "2026-10-01T15:54:53.206711+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "w_krainie_jezior",
@@ -5288,9 +5308,10 @@
         "wakacje polska"
       ],
       "last_discovered_at": "2026-10-01T16:06:49.709173+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "mrdiy.poland",
@@ -5444,9 +5465,10 @@
         "giełda polska"
       ],
       "last_discovered_at": "2026-10-01T16:06:49.709173+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "sileslbc",
@@ -5468,9 +5490,10 @@
         "koncerty polska"
       ],
       "last_discovered_at": "2026-10-01T16:06:49.709173+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "zjadlbym.cos",
@@ -5595,7 +5618,8 @@
       ],
       "last_discovered_at": "2026-10-21T09:22:45.829607+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "camprestcom",
@@ -5667,9 +5691,10 @@
         "edukacja polska"
       ],
       "last_discovered_at": "2026-10-01T15:54:53.206711+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "dudaxo",
@@ -5741,9 +5766,10 @@
         "zabawne"
       ],
       "last_discovered_at": "2026-10-02T10:38:38.762252+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "edyta.baranowska",
@@ -5769,9 +5795,10 @@
         "skincare polska"
       ],
       "last_discovered_at": "2026-10-20T09:26:11.307386+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "sadowskitrenuje",
@@ -5819,9 +5846,10 @@
         "hotele polska"
       ],
       "last_discovered_at": "2026-10-01T16:06:49.709173+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "finansowyparasol",
@@ -5844,7 +5872,8 @@
       ],
       "last_discovered_at": "2026-10-06T11:17:30.032862+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "blyskwiedzy5",
@@ -5942,9 +5971,10 @@
         "przedsiębiorca polska"
       ],
       "last_discovered_at": "2026-10-01T18:03:23.783059+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "rybalikeachef",
@@ -5992,9 +6022,10 @@
         "historia polska"
       ],
       "last_discovered_at": "2026-10-25T09:09:54.310334+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "zajaczkowska.ewa",
@@ -6023,8 +6054,9 @@
       ],
       "last_discovered_at": "2026-10-06T11:17:30.032862+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "patrycjazoltak",
@@ -6070,9 +6102,10 @@
         "matura polska"
       ],
       "last_discovered_at": "2026-10-01T15:54:53.206711+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "biesiekierska.prawo",
@@ -6168,9 +6201,10 @@
         "pieniądze polska"
       ],
       "last_discovered_at": "2026-10-01T18:03:23.783059+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "berzerker_scmz",
@@ -6194,9 +6228,10 @@
         "streamer polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "stylizacje",
@@ -6242,9 +6277,10 @@
         "programowanie polska"
       ],
       "last_discovered_at": "2026-10-25T09:09:54.310334+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "onelife_photo",
@@ -6339,9 +6375,10 @@
         "polityka"
       ],
       "last_discovered_at": "2026-10-25T09:09:54.310334+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "fenoxpl",
@@ -6841,8 +6878,9 @@
       ],
       "last_discovered_at": "2026-10-01T10:41:14.725838+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "natalia_wojciechowska_",
@@ -7179,9 +7217,10 @@
         "hotele polska"
       ],
       "last_discovered_at": "2026-10-25T09:09:54.310334+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "oliwkabrodowskamakeup",
@@ -7331,9 +7370,10 @@
         "vinted polska"
       ],
       "last_discovered_at": "2026-10-18T08:51:46.679046+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "tvp3.poznan",
@@ -7356,9 +7396,10 @@
         "sztuczna inteligencja polska"
       ],
       "last_discovered_at": "2026-10-25T09:09:54.310334+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "szybkonatalerzu",
@@ -7532,9 +7573,10 @@
         "wiara"
       ],
       "last_discovered_at": "2026-10-18T08:51:46.679046+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "pl2050",
@@ -7683,9 +7725,10 @@
         "smartfony polska"
       ],
       "last_discovered_at": "2026-10-25T09:09:54.310334+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "archiwum.tajemnic",
@@ -7716,9 +7759,10 @@
         "wakacje polska"
       ],
       "last_discovered_at": "2026-10-27T09:49:33.000652+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "zofsz",
@@ -7771,9 +7815,10 @@
         "tegodnia"
       ],
       "last_discovered_at": "2026-10-26T10:08:47.745148+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "powarszawsku",
@@ -8275,9 +8320,10 @@
         "śmieszne polska"
       ],
       "last_discovered_at": "2026-10-30T10:52:28.625435+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "dawid_zychowicz",
@@ -8325,9 +8371,10 @@
         "polska fitness"
       ],
       "last_discovered_at": "2026-10-01T10:41:14.725838+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "mlody.fifii",
@@ -8752,9 +8799,10 @@
         "vlog polska"
       ],
       "last_discovered_at": "2026-10-21T09:22:45.829607+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": ".nasticaro",
@@ -8776,9 +8824,10 @@
         "polacy"
       ],
       "last_discovered_at": "2026-10-24T08:53:11.033144+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "ciekawskiludek",
@@ -9049,9 +9098,10 @@
         "dzień z życia polska"
       ],
       "last_discovered_at": "2026-10-01T10:41:14.725838+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "zielewgarnku",
@@ -9230,9 +9280,10 @@
         "życie"
       ],
       "last_discovered_at": "2026-10-09T11:20:25.769186+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "irynaidamian",
@@ -9278,9 +9329,10 @@
         "polityka"
       ],
       "last_discovered_at": "2026-10-25T09:09:54.310334+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "nudy_z_zycia",
@@ -9475,9 +9527,10 @@
         "reklama"
       ],
       "last_discovered_at": "2026-10-24T08:53:11.033144+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "dr.oetker_polska",
@@ -9551,9 +9604,10 @@
         "stand up polska"
       ],
       "last_discovered_at": "2026-10-01T10:41:14.725838+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "kamilwarzocha",
@@ -9687,8 +9741,9 @@
       ],
       "last_discovered_at": "2026-10-30T10:52:28.625435+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "variaty99",
@@ -9760,9 +9815,10 @@
         "urlop"
       ],
       "last_discovered_at": "2026-10-08T11:22:48.849537+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T15:51:03.594156+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "paniodgara",
@@ -10237,7 +10293,8 @@
       ],
       "last_discovered_at": "2026-10-30T10:52:28.625435+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "techkominfo_pl",
@@ -10436,7 +10493,8 @@
       ],
       "last_discovered_at": "2026-10-23T09:21:43.369739+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "r.s.roo",
@@ -10461,8 +10519,9 @@
       ],
       "last_discovered_at": "2026-10-31T10:24:15.856719+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "tuzawszejestproblem",
@@ -11069,8 +11128,9 @@
       ],
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "kierunek_poznan",
@@ -12014,8 +12074,9 @@
       ],
       "last_discovered_at": "2026-10-31T10:24:15.856719+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "jolarska",
@@ -12856,8 +12917,9 @@
       ],
       "last_discovered_at": "2026-10-24T08:53:11.033144+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "filipbrymora_standup",
@@ -14489,7 +14551,8 @@
       ],
       "last_discovered_at": "2026-10-18T08:51:46.679046+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "menlogick",
@@ -15253,8 +15316,9 @@
       ],
       "last_discovered_at": "2026-10-30T10:52:28.625435+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "andrzej_popiel",
@@ -15379,8 +15443,9 @@
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "nataliasisik",
@@ -16343,7 +16408,8 @@
       ],
       "last_discovered_at": "2026-10-24T08:53:11.033144+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "piotrsierpinskihair",
@@ -16901,8 +16967,9 @@
       ],
       "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "kacperbisanz",
@@ -18534,8 +18601,9 @@
       ],
       "last_discovered_at": "2026-10-16T09:02:27.125524+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "m.onikaczaja",
@@ -19544,8 +19612,9 @@
       ],
       "last_discovered_at": "2026-10-21T09:22:45.829607+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "proste.jedzenie",
@@ -19638,8 +19707,9 @@
       ],
       "last_discovered_at": "2026-10-09T11:20:25.769186+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "3qq_poland",
@@ -20601,9 +20671,10 @@
         "kluski"
       ],
       "last_discovered_at": "2026-10-26T10:08:47.745148+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T14:21:55.601687+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "takzwanyjules",
@@ -20623,9 +20694,10 @@
         "minecraft polska"
       ],
       "last_discovered_at": "2026-10-01T14:23:52.261170+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T14:21:55.601687+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "partyzancilubelszczyzny",
@@ -20645,9 +20717,10 @@
         "ciekawostki polska"
       ],
       "last_discovered_at": "2026-10-01T15:54:53.206711+00:00",
-      "status": "enriched",
-      "last_profile_scan_at": "2026-11-17T14:21:55.601687+00:00",
-      "enrichment_source": "simple.actor/tiktok-profile-posts"
+      "status": "enrichment_error",
+      "last_profile_scan_at": "2026-11-25T16:10:32.620639+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts",
+      "enrichment_error": "Actor run rProIaW1lGSWOz0HL ended with status=ABORTED. statusMessage=Actor aborted. You've reached the maximum usage for your current billing cycle."
     },
     {
       "username": "rakow.czestochowa",
@@ -29421,7 +29494,8 @@
       ],
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "pandawojtekyt",
@@ -33149,7 +33223,8 @@
       ],
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "exobari",
@@ -36270,7 +36345,8 @@
       ],
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "tvp3_katowice",
@@ -42372,7 +42448,8 @@
       ],
       "last_discovered_at": "2026-10-12T12:00:31.933117+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "depresja.z.mioci",
@@ -45643,7 +45720,8 @@
       ],
       "last_discovered_at": "2026-10-11T10:50:06.830450+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "umyslusekret",
@@ -48652,7 +48730,8 @@
       ],
       "last_discovered_at": "2026-10-02T10:38:38.762252+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "zaczi_tt",
@@ -49923,7 +50002,8 @@
       ],
       "last_discovered_at": "2026-10-31T10:24:15.856719+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "konecka.travel",
@@ -50451,7 +50531,8 @@
       ],
       "last_discovered_at": "2026-10-22T09:25:13.040014+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "krystiannowak.us",
@@ -51067,7 +51148,8 @@
       ],
       "last_discovered_at": "2026-10-31T10:24:15.856719+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "expatpolska",
@@ -56583,7 +56665,8 @@
       ],
       "last_discovered_at": "2026-10-31T10:24:15.856719+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "pvvtkvv_",
@@ -57082,7 +57165,8 @@
       ],
       "last_discovered_at": "2026-10-01T10:41:14.725838+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "arek_explozja_",
@@ -57167,7 +57251,8 @@
       ],
       "last_discovered_at": "2026-10-01T11:58:05.512106+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "latinobebecitka.fanpage",
@@ -63112,7 +63197,8 @@
       ],
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "topewoman51",
@@ -63131,7 +63217,8 @@
       ],
       "last_discovered_at": "2026-10-12T12:00:31.933117+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "oskar_mazurek1993",
@@ -67070,7 +67157,8 @@
       ],
       "last_discovered_at": "2026-10-11T10:50:06.830450+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "djkinoloffcial",
@@ -68082,7 +68170,8 @@
       ],
       "last_discovered_at": "2026-10-28T10:35:37.957025+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "nieperfekcyjni.pl",
@@ -68409,7 +68498,8 @@
       ],
       "last_discovered_at": "2026-10-19T09:55:12.688632+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "emiliamarchewka",
@@ -68573,7 +68663,8 @@
       ],
       "last_discovered_at": "2026-10-04T10:35:32.866256+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "laurasadowskaa",
@@ -68652,7 +68743,8 @@
       ],
       "last_discovered_at": "2026-10-04T10:35:32.866256+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "punktzwrotny777",
@@ -69032,7 +69124,8 @@
       ],
       "last_discovered_at": "2026-10-29T10:54:13.017688+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "gazelka_92",
@@ -70106,7 +70199,8 @@
       ],
       "last_discovered_at": "2026-10-23T09:21:43.369739+00:00",
       "status": "enrichment_error",
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00"
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "barefootbrit",
@@ -71044,7 +71138,7 @@
         "siodmywswiecie.pl",
         "warto_zobaczycc"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -71130,7 +71224,7 @@
       "related_source_creators": [
         "martinskolsky"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -71361,7 +71455,7 @@
       "related_source_creators": [
         "mooomeczeeek"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -72656,7 +72750,7 @@
         "em.nalepa",
         "patrycja.skin"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -73396,7 +73490,7 @@
       "related_source_creators": [
         "anex_rezi0"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -73438,7 +73532,7 @@
       "related_source_creators": [
         "anex_rezi0"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -73879,7 +73973,7 @@
       "related_source_creators": [
         "kaszub9710"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -73984,7 +74078,7 @@
       "related_source_creators": [
         "stanislav_lastochkin"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -74005,7 +74099,7 @@
       "related_source_creators": [
         "katarajsiemanko"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -74330,15 +74424,15 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-01T18:51:43.743825+00:00",
-      "status": "enrichment_error",
+      "status": "enriched",
       "source": "related_mentions",
       "related_score": 10.0,
       "related_source_creators": [
         "patrycjaxsobolewska",
         "veronika.bernat"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
-      "enrichment_error": "No public profile/post rows returned."
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "lyko_pl",
@@ -75135,7 +75229,7 @@
       "related_source_creators": [
         "edytabe_"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -75793,7 +75887,7 @@
       "related_source_creators": [
         "innaenigma4"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -76150,7 +76244,7 @@
       "related_source_creators": [
         "akademiastudio7"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -76775,7 +76869,7 @@
       "related_source_creators": [
         "bieszczadzkaheca"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -76922,7 +77016,7 @@
       "related_source_creators": [
         "krakowiakiwlondynie"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -78267,7 +78361,7 @@
       "related_source_creators": [
         "nieznajomy015"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -78498,7 +78592,7 @@
       "related_source_creators": [
         "nieznajomy015"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -79115,7 +79209,7 @@
       "related_source_creators": [
         "nieznajomy015"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -79373,7 +79467,7 @@
       "related_source_creators": [
         "yaneck_kiufiu"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -79801,7 +79895,7 @@
       "related_source_creators": [
         "modernlady4"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -79865,7 +79959,7 @@
       "related_source_creators": [
         "trueboyzz"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -80618,7 +80712,7 @@
       "related_source_creators": [
         "jzulxsa.2"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -81066,7 +81160,7 @@
       "related_source_creators": [
         "lei_li_tik_toker_"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -81256,7 +81350,7 @@
       "related_source_creators": [
         "polskicaravaning"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -81769,7 +81863,7 @@
       "related_source_creators": [
         "zespolnewtime"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -81790,7 +81884,7 @@
       "related_source_creators": [
         "zespolnewtime"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -81832,7 +81926,7 @@
       "related_source_creators": [
         "zespolnewtime"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -81918,7 +82012,7 @@
         "elifstachera",
         "soeye_style"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -82179,7 +82273,7 @@
       "related_source_creators": [
         "glazurnik85"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -82242,7 +82336,7 @@
       "related_source_creators": [
         "glazurnik85"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -82286,7 +82380,7 @@
         "karloseeq",
         "thereslivbabyyy"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -82677,7 +82771,7 @@
       "related_source_creators": [
         "glazurnik85"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -82940,7 +83034,7 @@
         "olapersak",
         "weronika.jagus"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -83130,7 +83224,7 @@
       "related_source_creators": [
         "lucas_xcx_"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -83670,7 +83764,7 @@
         "katarzyna.pieczynska",
         "werojuszczak"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -84289,7 +84383,7 @@
       "related_source_creators": [
         "leszek.czartoszewski"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -85076,7 +85170,7 @@
       "related_source_creators": [
         "mistrzkulkopczyns"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -85139,7 +85233,7 @@
       "related_source_creators": [
         "grzegorzdudaofficial"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -85461,7 +85555,7 @@
       "related_source_creators": [
         "b_la_c_k8"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -85675,7 +85769,7 @@
         "czerwinski_szymon",
         "lisia_rodzinka"
       ],
-      "last_profile_scan_at": "2026-11-24T15:15:40.120360+00:00",
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
       "enrichment_error": "No public profile/post rows returned."
     },
     {
@@ -85775,12 +85869,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-16T09:35:33.980072+00:00",
-      "status": "pending_profile_scan",
+      "status": "enriched",
       "source": "related_mentions",
       "related_score": 6.0,
       "related_source_creators": [
         "oliwroker"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "milenazdzuj",
@@ -85794,12 +85890,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-16T09:35:33.980072+00:00",
-      "status": "pending_profile_scan",
+      "status": "enriched",
       "source": "related_mentions",
       "related_score": 6.0,
       "related_source_creators": [
         "viviensworowska"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "bukietowy_3d",
@@ -85813,12 +85911,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-16T09:35:33.980072+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 6.0,
       "related_source_creators": [
         "bukietowe_lovee"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "s4bina_0",
@@ -85832,12 +85932,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-16T09:35:33.980072+00:00",
-      "status": "pending_profile_scan",
+      "status": "enriched",
       "source": "related_mentions",
       "related_score": 6.0,
       "related_source_creators": [
         "kapitan.marcin"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "vipliveagency",
@@ -85851,12 +85953,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-16T09:35:33.980072+00:00",
-      "status": "pending_profile_scan",
+      "status": "enriched",
       "source": "related_mentions",
       "related_score": 6.0,
       "related_source_creators": [
         "mistrzkulkopczyns"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "donniebrasco7",
@@ -85870,12 +85974,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-16T09:35:33.980072+00:00",
-      "status": "pending_profile_scan",
+      "status": "enriched",
       "source": "related_mentions",
       "related_score": 6.0,
       "related_source_creators": [
         "mistrzkulkopczyns"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "krystian_pacholik",
@@ -85889,12 +85995,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-16T09:35:33.980072+00:00",
-      "status": "pending_profile_scan",
+      "status": "enriched",
       "source": "related_mentions",
       "related_score": 6.0,
       "related_source_creators": [
         "krzysztofbosak_official"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "surfeyzz",
@@ -85908,12 +86016,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-16T09:35:33.980072+00:00",
-      "status": "pending_profile_scan",
+      "status": "enriched",
       "source": "related_mentions",
       "related_score": 6.0,
       "related_source_creators": [
         "angienowicka"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "user7453341920619",
@@ -85927,12 +86037,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-16T09:35:33.980072+00:00",
-      "status": "pending_profile_scan",
+      "status": "enrichment_error",
       "source": "related_mentions",
       "related_score": 6.0,
       "related_source_creators": [
         "leszek.czartoszewski"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_error": "No public profile/post rows returned."
     },
     {
       "username": "chanel.beauty",
@@ -85946,12 +86058,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-16T09:35:33.980072+00:00",
-      "status": "pending_profile_scan",
+      "status": "enriched",
       "source": "related_mentions",
       "related_score": 6.0,
       "related_source_creators": [
         "beautyboy.jpg"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "magicfpvstudio",
@@ -85965,12 +86079,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-16T09:35:33.980072+00:00",
-      "status": "pending_profile_scan",
+      "status": "enriched",
       "source": "related_mentions",
       "related_score": 6.0,
       "related_source_creators": [
         "hipnoza_smolarz"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "secretball_mysteryboxy",
@@ -85984,12 +86100,14 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-16T09:35:33.980072+00:00",
-      "status": "pending_profile_scan",
+      "status": "enriched",
       "source": "related_mentions",
       "related_score": 6.0,
       "related_source_creators": [
         "pawlak_luberson"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "jakwfinanse_adrian",
@@ -86003,13 +86121,15 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-17T08:34:23.043508+00:00",
-      "status": "pending_profile_scan",
+      "status": "enriched",
       "source": "related_mentions",
       "related_score": 10.0,
       "related_source_creators": [
         "jakwfinanse",
         "jakwfinanse_sonia"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "targiksiazkiwkrakowie",
@@ -86023,13 +86143,15 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-17T08:34:23.043508+00:00",
-      "status": "pending_profile_scan",
+      "status": "enriched",
       "source": "related_mentions",
       "related_score": 10.0,
       "related_source_creators": [
         "juliee.2010",
         "zolwieksiazkowe"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "eryknadolny",
@@ -86043,13 +86165,15 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-17T08:34:23.043508+00:00",
-      "status": "pending_profile_scan",
+      "status": "enriched",
       "source": "related_mentions",
       "related_score": 10.0,
       "related_source_creators": [
         "suziebandit",
         "wierzbicka_kinga"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "maybelline",
@@ -86063,13 +86187,15 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-17T08:34:23.043508+00:00",
-      "status": "pending_profile_scan",
+      "status": "enriched",
       "source": "related_mentions",
       "related_score": 10.0,
       "related_source_creators": [
         "alicealicja_",
         "laurencja111"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "anastasiabeverlyhills",
@@ -86083,13 +86209,15 @@
         "related_mentions"
       ],
       "last_discovered_at": "2026-10-17T08:34:23.043508+00:00",
-      "status": "pending_profile_scan",
+      "status": "enriched",
       "source": "related_mentions",
       "related_score": 10.0,
       "related_source_creators": [
         "laurencja111",
         "poniatovsska"
-      ]
+      ],
+      "last_profile_scan_at": "2026-11-25T14:44:00.809265+00:00",
+      "enrichment_source": "simple.actor/tiktok-profile-posts"
     },
     {
       "username": "mordeczka65",
