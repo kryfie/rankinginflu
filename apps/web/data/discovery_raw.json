@@ -1,32 +1,34 @@
 {
   "meta": {
-    "run_at": "2026-11-25T14:24:06.839846+00:00",
+    "run_at": "2026-11-26T13:54:45.963303+00:00",
     "actor": "apidojo~tiktok-scraper-api",
     "filterVersion": "v4-strong-pl-evidence",
     "seedIndices": [
-      411,
-      174,
-      227,
-      247,
-      286,
-      238,
-      243,
-      262,
-      265,
-      354
+      450,
+      390,
+      405,
+      438,
+      70,
+      111,
+      171,
+      127,
+      42,
+      69,
+      99
     ],
-    "startSeed": 411,
+    "startSeed": 450,
     "seeds_requested": [
-      "prawo",
-      "dynia",
-      "zupa",
-      "jesiennestylizacje",
-      "makaron",
-      "kurczak",
-      "okazja",
-      "sałatka",
-      "rossmannpolska",
-      "edukacja"
+      "słodycze",
+      "siłownia",
+      "hiszpania",
+      "bieganie",
+      "pizza polska",
+      "góry polska",
+      "polskamuzyka",
+      "giełda polska",
+      "paznokcie polska",
+      "street food polska",
+      "matematyka polska"
     ],
     "seeds_completed": [],
     "resultsPerSeed": 20,
@@ -40,109 +42,13 @@
       "unique_creators": 0,
       "accepted_candidates_latest_run": 0
     },
-    "per_seed": [
+    "per_seed": [],
+    "errors": [
       {
-        "seed": "prawo",
-        "rows_returned": 10,
-        "usable_posts": 0,
-        "demo_rows": 10,
-        "status": "demo_only",
-        "accepted_candidates": 0,
-        "new_candidates": 0,
-        "known_or_cross_seed_candidates": 0
-      },
-      {
-        "seed": "dynia",
-        "rows_returned": 10,
-        "usable_posts": 0,
-        "demo_rows": 10,
-        "status": "demo_only",
-        "accepted_candidates": 0,
-        "new_candidates": 0,
-        "known_or_cross_seed_candidates": 0
-      },
-      {
-        "seed": "zupa",
-        "rows_returned": 10,
-        "usable_posts": 0,
-        "demo_rows": 10,
-        "status": "demo_only",
-        "accepted_candidates": 0,
-        "new_candidates": 0,
-        "known_or_cross_seed_candidates": 0
-      },
-      {
-        "seed": "jesiennestylizacje",
-        "rows_returned": 10,
-        "usable_posts": 0,
-        "demo_rows": 10,
-        "status": "demo_only",
-        "accepted_candidates": 0,
-        "new_candidates": 0,
-        "known_or_cross_seed_candidates": 0
-      },
-      {
-        "seed": "makaron",
-        "rows_returned": 10,
-        "usable_posts": 0,
-        "demo_rows": 10,
-        "status": "demo_only",
-        "accepted_candidates": 0,
-        "new_candidates": 0,
-        "known_or_cross_seed_candidates": 0
-      },
-      {
-        "seed": "kurczak",
-        "rows_returned": 10,
-        "usable_posts": 0,
-        "demo_rows": 10,
-        "status": "demo_only",
-        "accepted_candidates": 0,
-        "new_candidates": 0,
-        "known_or_cross_seed_candidates": 0
-      },
-      {
-        "seed": "okazja",
-        "rows_returned": 10,
-        "usable_posts": 0,
-        "demo_rows": 10,
-        "status": "demo_only",
-        "accepted_candidates": 0,
-        "new_candidates": 0,
-        "known_or_cross_seed_candidates": 0
-      },
-      {
-        "seed": "sałatka",
-        "rows_returned": 10,
-        "usable_posts": 0,
-        "demo_rows": 10,
-        "status": "demo_only",
-        "accepted_candidates": 0,
-        "new_candidates": 0,
-        "known_or_cross_seed_candidates": 0
-      },
-      {
-        "seed": "rossmannpolska",
-        "rows_returned": 10,
-        "usable_posts": 0,
-        "demo_rows": 10,
-        "status": "demo_only",
-        "accepted_candidates": 0,
-        "new_candidates": 0,
-        "known_or_cross_seed_candidates": 0
-      },
-      {
-        "seed": "edukacja",
-        "rows_returned": 10,
-        "usable_posts": 0,
-        "demo_rows": 10,
-        "status": "demo_only",
-        "accepted_candidates": 0,
-        "new_candidates": 0,
-        "known_or_cross_seed_candidates": 0
+        "seed": "słodycze",
+        "error": "Apify request failed: HTTP 403\n{\n  \"error\": {\n    \"type\": \"platform-feature-disabled\",\n    \"message\": \"You've used the $5.00 of monthly usage included in the Free plan, so Actor runs and other Apify services are blocked until your monthly usage cycle resets. GET https://api.apify.com/v2/users/me/limits shows when (monthlyUsageCycle.endAt). The Free plan limit can't be raised. To continue now, upgrade at https://console.apify.com/billing/subscription.\"\n  }\n}"
       }
     ],
-    "errors": [],
     "migration": {
       "legacy_rows_revalidated": 0,
       "legacy_rows_quarantined": 0
