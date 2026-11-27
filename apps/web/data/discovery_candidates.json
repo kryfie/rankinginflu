@@ -1,35 +1,59 @@
 {
   "meta": {
     "latest_run": {
-      "run_at": "2026-11-26T13:54:45.963303+00:00",
+      "run_at": "2026-11-27T13:52:54.552485+00:00",
       "actor": "apidojo~tiktok-scraper-api",
       "filterVersion": "v4-strong-pl-evidence",
       "seedIndices": [
-        450,
+        483,
+        457,
         390,
+        486,
         405,
         438,
+        488,
         70,
         111,
         171,
+        275,
+        282,
+        477,
+        484,
         127,
+        280,
+        304,
+        474,
+        492,
         42,
         69,
-        99
+        99,
+        273
       ],
-      "startSeed": 450,
+      "startSeed": 483,
       "seeds_requested": [
-        "słodycze",
+        "sephorapolska",
+        "cojem",
         "siłownia",
+        "szarlotka",
         "hiszpania",
         "bieganie",
+        "discopolo",
         "pizza polska",
         "góry polska",
         "polskamuzyka",
+        "jesienneprzepisy",
+        "biedronka",
+        "placki",
+        "gry",
         "giełda polska",
+        "łódź",
+        "zapach",
+        "cukinia",
+        "recenzja",
         "paznokcie polska",
         "street food polska",
-        "matematyka polska"
+        "matematyka polska",
+        "wroclaw"
       ],
       "seeds_completed": [],
       "resultsPerSeed": 20,
@@ -46,7 +70,7 @@
       "per_seed": [],
       "errors": [
         {
-          "seed": "słodycze",
+          "seed": "sephorapolska",
           "error": "Apify request failed: HTTP 403\n{\n  \"error\": {\n    \"type\": \"platform-feature-disabled\",\n    \"message\": \"You've used the $5.00 of monthly usage included in the Free plan, so Actor runs and other Apify services are blocked until your monthly usage cycle resets. GET https://api.apify.com/v2/users/me/limits shows when (monthlyUsageCycle.endAt). The Free plan limit can't be raised. To continue now, upgrade at https://console.apify.com/billing/subscription.\"\n  }\n}"
         }
       ],
@@ -57,7 +81,7 @@
     },
     "registry_count": 3104,
     "eligible_count": 3101,
-    "updated_at": "2026-11-26T13:54:45.963303+00:00"
+    "updated_at": "2026-11-27T13:52:54.552485+00:00"
   },
   "creators": [
     {
