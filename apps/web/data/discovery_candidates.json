@@ -1,17 +1,19 @@
 {
   "meta": {
     "latest_run": {
-      "run_at": "2026-11-27T13:52:54.552485+00:00",
+      "run_at": "2026-11-28T12:59:57.519762+00:00",
       "actor": "apidojo~tiktok-scraper-api",
       "filterVersion": "v4-strong-pl-evidence",
       "seedIndices": [
-        483,
+        450,
         457,
         390,
         486,
         405,
         438,
         488,
+        509,
+        526,
         70,
         111,
         171,
@@ -19,25 +21,27 @@
         282,
         477,
         484,
+        419,
+        479,
+        517,
         127,
         280,
         304,
         474,
         492,
-        42,
-        69,
-        99,
-        273
+        369
       ],
-      "startSeed": 483,
+      "startSeed": 450,
       "seeds_requested": [
-        "sephorapolska",
+        "słodycze",
         "cojem",
         "siłownia",
         "szarlotka",
         "hiszpania",
         "bieganie",
         "discopolo",
+        "zdrowiepsychiczne",
+        "zwiazek",
         "pizza polska",
         "góry polska",
         "polskamuzyka",
@@ -45,15 +49,15 @@
         "biedronka",
         "placki",
         "gry",
+        "girlsofwarsaw",
+        "gofry",
+        "lidlpolska",
         "giełda polska",
         "łódź",
         "zapach",
         "cukinia",
         "recenzja",
-        "paznokcie polska",
-        "street food polska",
-        "matematyka polska",
-        "wroclaw"
+        "wojsko"
       ],
       "seeds_completed": [],
       "resultsPerSeed": 20,
@@ -70,7 +74,7 @@
       "per_seed": [],
       "errors": [
         {
-          "seed": "sephorapolska",
+          "seed": "słodycze",
           "error": "Apify request failed: HTTP 403\n{\n  \"error\": {\n    \"type\": \"platform-feature-disabled\",\n    \"message\": \"You've used the $5.00 of monthly usage included in the Free plan, so Actor runs and other Apify services are blocked until your monthly usage cycle resets. GET https://api.apify.com/v2/users/me/limits shows when (monthlyUsageCycle.endAt). The Free plan limit can't be raised. To continue now, upgrade at https://console.apify.com/billing/subscription.\"\n  }\n}"
         }
       ],
@@ -81,7 +85,7 @@
     },
     "registry_count": 3104,
     "eligible_count": 3101,
-    "updated_at": "2026-11-27T13:52:54.552485+00:00"
+    "updated_at": "2026-11-28T12:59:57.519762+00:00"
   },
   "creators": [
     {
